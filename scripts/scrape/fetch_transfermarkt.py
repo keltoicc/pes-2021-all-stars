@@ -20,10 +20,12 @@ def main():
     raw_dir.mkdir(parents=True, exist_ok=True)
 
     for comp in competitions:
+        counter = 1
         for url in comp["sources"]:
-            filename = f"{comp['name']}_{url.split('/')[-1]}.html"
+            filename = f"{comp['name']}_{comp['ranking']['type']}_{counter}.html"
             print("Descargando ", filename, "...")
             fetch(url, raw_dir / filename)
+            counter += 1
 
 if __name__ == "__main__":
     main()
