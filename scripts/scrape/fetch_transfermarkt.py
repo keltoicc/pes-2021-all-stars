@@ -20,11 +20,18 @@ def main():
     raw_dir.mkdir(parents=True, exist_ok=True)
 
     for comp in competitions:
+        print(f"{comp['name']} {comp['primary']}")
+        if comp["primary"] == False:
+            print("Segunda División de ", comp["relegated_from"], ". No se descarga nada")
+            continue
         counter = 1
         for url in comp["sources"]:
             filename = f"{comp['name']}_{comp['ranking']['type']}_{counter}.html"
             print("Descargando ", filename, "...")
-            fetch(url, raw_dir / filename)
+            try:
+                fetch(url, raw_dir / filename)
+            except:
+                print("TIMEOUT")
             counter += 1
 
 if __name__ == "__main__":

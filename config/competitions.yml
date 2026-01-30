@@ -1,6 +1,7 @@
 competitions:
   - ID: 9
     name: ENGLAND_D1_LEAGUE
+    primary: yes
     teams: 20
     ranking:
       type: all_time_table
@@ -11,6 +12,7 @@ competitions:
 
   - ID: 10
     name: ITALY_D1_LEAGUE
+    primary: yes
     teams: 20
     ranking:
       type: all_time_table
@@ -20,6 +22,7 @@ competitions:
 
   - ID: 11
     name: SPAIN_D1_LEAGUE
+    primary: yes
     teams: 20
     ranking:
       type: all_time_table
@@ -29,6 +32,7 @@ competitions:
 
   - ID: 12
     name: FRANCE_D1_LEAGUE
+    primary: yes
     teams: 18
     ranking:
       type: all_time_table
@@ -38,6 +42,7 @@ competitions:
 
   - ID: 13
     name: NETHERLANDS_D1_LEAGUE
+    primary: yes
     teams: 18
     ranking:
       type: all_time_table
@@ -47,6 +52,7 @@ competitions:
 
   - ID: 14
     name: PORTUGAL_D1_LEAGUE
+    primary: yes
     teams: 18
     ranking:
       type: all_time_table
@@ -56,9 +62,19 @@ competitions:
 
   - ID: 39
     name: FAKE_PES_LEAGUE_EUROPE #BUNDESLIGA
+    primary: yes
     teams: 18
     ranking:
       type: all_time_table
       metric: points
     sources:
       - https://www.transfermarkt.es/bundesliga/ewigeTabelle/wettbewerb/L1
+
+  - ID: 67
+    name: SPAIN_D2_LEAGUE
+    primary: no
+    relegated_from: SPAIN_D1_LEAGUE
+    teams: 20
+    ranking:
+      type: all_time_table
+      metric: points
