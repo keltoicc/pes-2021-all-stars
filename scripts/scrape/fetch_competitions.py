@@ -20,7 +20,6 @@ def main():
     raw_dir.mkdir(parents=True, exist_ok=True)
 
     for comp in competitions:
-        print(f"{comp['name']} {comp['primary']}")
         if comp["primary"] == False:
             print("Segunda División de ", comp["relegated_from"], ". No se descarga nada")
             continue
