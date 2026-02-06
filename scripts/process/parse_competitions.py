@@ -77,7 +77,7 @@ def obtain_json(comp: dict, processed_dir: Path):
 
     merged = merge_clubs(all_rows)
 
-    # Convertimos a lista y ordenamos por puntos
+    # Convertimos a lista y ordenamos por puntos, partidos, victorias y diferencia de goles
     result = sorted(
         merged.values(),
         key=lambda x: (
@@ -95,10 +95,29 @@ def obtain_json(comp: dict, processed_dir: Path):
         encoding="utf-8"
     )
 
+def compute_offset(comp: dict, competitions_by_name: dict) -> int:
+    offset = 0
+    current = comp
+
+    while not current.get("primary", True):
+        parent = competitions_by_name[current["relegated_from"]]
+        offset += parent["teams"]
+        current = parent
+
+    return offset
+
+def get_teams(comp: dict, processed_dir: Path, offset: int):
+    pass
+
 def main():
     competitions = yaml.safe_load(
         Path("config/competitions.yml").read_text(encoding="utf-8")
     )["competitions"]
+
+    competitions_by_name = {
+        comp["name"]: comp
+        for comp in competitions
+    }
 
     processed_dir = Path("data/processed/competitions")
     processed_dir.mkdir(parents=True, exist_ok=True)
@@ -108,11 +127,14 @@ def main():
             print(comp["name"])
             print("Segunda División de", comp["relegated_from"], ". No es necesario generar json.")
 
+
         else:
             print(comp["name"])
             obtain_json(comp, processed_dir)
         
-        # get_teams(comp, processed_dir)
+        offset = compute_offset(comp, competitions_by_name)
+        
+        get_teams(comp, processed_dir, offset)
 
 
 if __name__ == "__main__":
