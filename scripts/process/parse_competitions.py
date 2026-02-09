@@ -93,21 +93,7 @@ def obtain_json(comp: dict, processed_dir: Path):
     output_path.write_text(
         json.dumps(result, indent=4, ensure_ascii=False),
         encoding="utf-8"
-    )
-
-def compute_offset(comp: dict, competitions_by_name: dict) -> int:
-    offset = 0
-    current = comp
-
-    while not current.get("primary", True):
-        parent = competitions_by_name[current["relegated_from"]]
-        offset += parent["teams"]
-        current = parent
-
-    return offset
-
-def get_teams(comp: dict, processed_dir: Path, offset: int):
-    pass
+    )  
 
 def main():
     competitions = yaml.safe_load(
@@ -131,11 +117,6 @@ def main():
         else:
             print(comp["name"])
             obtain_json(comp, processed_dir)
-        
-        offset = compute_offset(comp, competitions_by_name)
-        
-        get_teams(comp, processed_dir, offset)
-
 
 if __name__ == "__main__":
     main()
