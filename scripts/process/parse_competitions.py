@@ -58,7 +58,7 @@ def merge_clubs(rows: list[dict]) -> dict:
     return merged
 
 def obtain_json(comp: dict, processed_dir: Path):
-    raw_dir = Path("data/raw/transfermarkt")
+    raw_dir = Path("data/raw/transfermarkt/competitions")
 
     html_files = get_html_files(comp, raw_dir)
 
@@ -100,22 +100,16 @@ def main():
         Path("config/competitions.yml").read_text(encoding="utf-8")
     )["competitions"]
 
-    competitions_by_name = {
-        comp["name"]: comp
-        for comp in competitions
-    }
-
     processed_dir = Path("data/processed/competitions")
     processed_dir.mkdir(parents=True, exist_ok=True)
 
     for comp in competitions:
+        print(comp["name"])
+        
         if comp["primary"] == False:
-            print(comp["name"])
             print("Segunda División de", comp["relegated_from"], ". No es necesario generar json.")
 
-
         else:
-            print(comp["name"])
             obtain_json(comp, processed_dir)
 
 if __name__ == "__main__":
