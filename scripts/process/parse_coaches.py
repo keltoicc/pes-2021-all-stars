@@ -19,11 +19,13 @@ def merge_coaches(rows: list[dict]) -> dict:
             merged[coach] = {
                 "name": coach,
                 "matches": 0,
+                "points": 0,
                 "ppp": 0,
             }
 
         merged[coach]["matches"] += row["matches"]
-        merged[coach]["ppp"] += row["ppp"]
+        merged[coach]["points"] += int(row["ppp"] * row["matches"])
+        merged[coach]["ppp"] = round(merged[coach]["points"] / merged[coach]["matches"], 2) if merged[coach]["matches"] > 0 else 0
 
     return merged
 
@@ -70,7 +72,22 @@ def obtain_json(team: dict, processed_dir: Path):
 
     merged = merge_coaches(all_rows)
 
-    print(merged)
+    # Convertimos a lista y ordenamos por puntos, partidos, victorias y diferencia de goles
+    result = sorted(
+        merged.values(),
+        key=lambda x: (
+            x["matches"],
+            x["ppp"],
+        ),
+    reverse=True
+    )
+
+    output_path = processed_dir / f"{team['ID_pes']}_{team['name']}_coaches.json"
+    output_path.write_text(
+        json.dumps(result, indent=4, ensure_ascii=False),
+        encoding="utf-8"
+    )
+
 
 def main():
     teams = yaml.safe_load(
