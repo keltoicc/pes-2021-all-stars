@@ -56,7 +56,7 @@ def parse_table(html_path: Path) -> list[dict]:
 
     return data
 
-def obtain_json(team: dict, processed_dir: Path):
+def obtain_coach(team: dict):
     raw_dir = Path("data/raw/transfermarkt/teams")
 
     html_file = raw_dir / f"{slugify(team['name'])}_coaches.html"
@@ -73,7 +73,7 @@ def obtain_json(team: dict, processed_dir: Path):
     merged = merge_coaches(all_rows)
 
     # Convertimos a lista y ordenamos por puntos, partidos, victorias y diferencia de goles
-    result = sorted(
+    all_coaches = sorted(
         merged.values(),
         key=lambda x: (
             x["matches"],
@@ -82,25 +82,37 @@ def obtain_json(team: dict, processed_dir: Path):
     reverse=True
     )
 
-    output_path = processed_dir / f"{team['ID_pes']}_{team['name']}_coaches.json"
-    output_path.write_text(
-        json.dumps(result, indent=4, ensure_ascii=False),
-        encoding="utf-8"
-    )
+    top = all_coaches[0]
+    second = all_coaches[1]
 
+    if top["matches"] / second["matches"] >= 1.30:
+        return top
+    
+    subset = all_coaches[:5]
+
+    max_m = max(c["matches"] for c in subset)
+    max_ppp = max(c["ppp"] for c in subset)
+
+    def score(c):
+        m_norm = c["matches"] / max_m
+        ppp_norm = c["ppp"] / max_ppp
+
+        base = 0.70 * m_norm + 0.30 * ppp_norm
+
+        sample_factor = min(1, c["matches"] / 100)
+        return base * (0.85 + 0.15 * sample_factor)
+
+    return max(subset, key=score)
 
 def main():
     teams = yaml.safe_load(
         Path("config/teams.yml").read_text(encoding="utf-8")
     )["teams"]
 
-    processed_dir = Path("data/processed/teams/coaches")
-    processed_dir.mkdir(parents=True, exist_ok=True)
-
     for team in teams:
         print(team["name"])
-
-        obtain_json(team, processed_dir)
+        coach = obtain_coach(team)
+        team["coach"] = coach["name"] # type: ignore
 
 if __name__ == "__main__":
     main()
