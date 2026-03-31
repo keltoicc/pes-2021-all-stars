@@ -34,7 +34,7 @@ def get_teams(comp: dict, offset: int):
     end = offset + comp["teams"]
     selected = ranking[start:end]
 
-    result_dir = Path("data/processed/teams")
+    result_dir = Path("data/built/teams")
     result_dir.mkdir(parents=True, exist_ok=True)
 
     output_path = result_dir / f"{comp['ID']}_{comp['name']}.yml"

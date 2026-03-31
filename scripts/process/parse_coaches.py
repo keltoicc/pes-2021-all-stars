@@ -56,6 +56,40 @@ def parse_table(html_path: Path) -> list[dict]:
 
     return data
 
+def obtain_json(team: dict, processed_dir: Path):
+    raw_dir = Path("data/raw/transfermarkt/teams")
+
+    html_file = raw_dir / f"{slugify(team['name'])}_coaches.html"
+
+    if not html_file.exists():
+        print(f"No hay HTML para {team['name']}")
+        return
+
+    print(f"Procesando {team['name']} ficheros)")
+
+    all_rows = []
+
+    rows = parse_table(html_file)
+    all_rows.extend(rows)
+
+    merged = merge_coaches(all_rows)
+
+    # Convertimos a lista y ordenamos por puntos, partidos, victorias y diferencia de goles
+    result = sorted(
+        merged.values(),
+        key=lambda x: (
+            x["matches"],
+            x["ppp"],
+        ),
+    reverse=True
+    )
+
+    output_path = processed_dir / f"{team['name']}.json"
+    output_path.write_text(
+        json.dumps(result, indent=4, ensure_ascii=False),
+        encoding="utf-8"
+    )  
+
 def obtain_coach(team: dict):
     raw_dir = Path("data/raw/transfermarkt/teams")
 
@@ -109,10 +143,14 @@ def main():
         Path("config/teams.yml").read_text(encoding="utf-8")
     )["teams"]
 
+    processed_dir = Path("data/processed/coaches")
+    processed_dir.mkdir(parents=True, exist_ok=True)
+
     for team in teams:
-        print(team["name"])
-        coach = obtain_coach(team)
-        team["coach"] = coach["name"] # type: ignore
+        #print(team["name"])
+        #coach = obtain_coach(team)
+        #team["coach"] = coach["name"] # type: ignore
+        obtain_json(team, processed_dir)
 
 if __name__ == "__main__":
     main()
