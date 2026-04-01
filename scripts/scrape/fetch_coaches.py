@@ -26,6 +26,9 @@ def main():
     raw_dir.mkdir(parents=True, exist_ok=True)
 
     for team in teams:
+        if not team["source_coach"]:
+            print("No hay URL para", team["name"])
+            continue
         for url in team["source_coach"]:
             filename = f"{slugify(team['name'])}_coaches.html"
             print("Descargando ", filename, "...")

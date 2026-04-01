@@ -68,7 +68,6 @@ def main():
     )["teams"]
 
     for team in teams:
-        
         get_coach(team)
 
 
