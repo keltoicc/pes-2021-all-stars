@@ -15,9 +15,13 @@ def get_coach(team: dict):
     with json_file.open(encoding="utf-8") as f:
         all_coaches = json.load(f)
     
+    if len(all_coaches) == 1:
+        coach = all_coaches[0]
+        return
+
     top = all_coaches[0]
     second = all_coaches[1]
-    
+
     if top["matches"] / second["matches"] >= 1.30:
         coach = top
     
