@@ -13,14 +13,25 @@ with open(input_csv, newline="", encoding="utf-8") as f:
     for row in reader:
         id_raw = row.get("ID:", "").strip()
         name = row.get("Team name:", "").strip()
+        competition = row.get("Competition:", "").strip()
+        country = row.get("Country:", "").strip()
 
-        # Ignorar filas sin ID válido o sin nombre
-        if not id_raw.isdigit() or not name:
+        # Ignorar filas sin ID válido o equipos del sistema
+        if not id_raw.isdigit() or competition == "System teams":
             continue
+
+        if not name:
+            name = "FREE"
+        
+        if not country:
+            country = "NOT DEFINED"
 
         team = {
             "ID_pes": int(id_raw),
             "name": name,
+            "competition": competition,
+            "country": country,
+            "needed": False,
             "source_coach": []
         }
 
