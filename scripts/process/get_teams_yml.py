@@ -17,7 +17,7 @@ with open(input_csv, newline="", encoding="utf-8") as f:
         country = row.get("Country:", "").strip()
 
         # Ignorar filas sin ID válido o equipos del sistema
-        if not id_raw.isdigit() or competition == "System teams":
+        if not id_raw.isdigit() or competition.startswith("System team"):
             continue
 
         if not name:
