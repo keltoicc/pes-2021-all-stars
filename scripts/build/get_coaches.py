@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 import yaml
 
-def get_coach(team: dict):
+def get_coach(team: dict, team_id: int):
     processed_dir = Path("data/processed/coaches")
 
     json_file = processed_dir / f"{team['name']}.json"
@@ -47,11 +47,14 @@ def get_coach(team: dict):
 
     output_path = result_dir / f"{team['ID_pes']}_{team['name']}.yml"
 
+    source = f"{coach["source"]}/plus/0?saison_id=&verein_id={team_id}&gegner_id=&liga=&wettbewerb_id=&trainer_id=" if coach["source"] else None
+
     output = {
         "team": {
             "id": team["ID_pes"],
             "name": team["name"],
-            "coach": coach["name"]
+            "coach": coach["name"],
+            "source": source
         },
     }
 
@@ -72,8 +75,9 @@ def main():
     )["teams"]
 
     for team in teams:
-        get_coach(team)
-
+        for url in team["source_coach"]:
+            team_id = int(url.split("/")[-1].split("?")[0])
+            get_coach(team, team_id)
 
 if __name__ == "__main__":
     main()

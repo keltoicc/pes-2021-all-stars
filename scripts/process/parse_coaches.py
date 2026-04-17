@@ -14,6 +14,7 @@ def merge_coaches(rows: list[dict]) -> dict:
 
     for row in rows:
         coach = row["name"]
+        url = row["source"]
 
         if coach not in merged:
             merged[coach] = {
@@ -21,6 +22,7 @@ def merge_coaches(rows: list[dict]) -> dict:
                 "matches": 0,
                 "points": 0,
                 "ppp": 0,
+                "source": url,
             }
 
         merged[coach]["matches"] += row["matches"]
@@ -47,6 +49,8 @@ def parse_table(html_path: Path) -> list[dict]:
         if name.startswith("Nomination Committee"):
             continue
 
+        url = cols[2].find("a")["href"].replace("profil", "leistungsdatenDetail") if cols[2].find("a") else None # type: ignore
+
         matches = int(cols[8].get_text(strip=True).replace(".", ""))
         if matches == 0:
             ppp = 0.0
@@ -57,6 +61,7 @@ def parse_table(html_path: Path) -> list[dict]:
             "name": name,
             "matches": matches,
             "ppp": ppp,
+            "source": f"https://www.transfermarkt.com{url}" if url else None,
         })
 
     return data
