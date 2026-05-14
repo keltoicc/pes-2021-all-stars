@@ -17,30 +17,30 @@ def get_coach(team: dict, team_id: int):
     
     if len(all_coaches) == 1:
         coach = all_coaches[0]
-        return
 
-    top = all_coaches[0]
-    second = all_coaches[1]
-
-    if top["matches"] / second["matches"] >= 1.30:
-        coach = top
-    
     else:
-        subset = all_coaches[:5]
+        top = all_coaches[0]
+        second = all_coaches[1]
 
-        max_m = max(c["matches"] for c in subset)
-        max_ppp = max(c["ppp"] for c in subset)
-
-        def score(c):
-            m_norm = c["matches"] / max_m
-            ppp_norm = c["ppp"] / max_ppp
-
-            base = 0.70 * m_norm + 0.30 * ppp_norm
-
-            sample_factor = min(1, c["matches"] / 100)
-            return base * (0.85 + 0.15 * sample_factor)
+        if top["matches"] / second["matches"] >= 1.30:
+            coach = top
         
-        coach = max(subset, key=score)
+        else:
+            subset = all_coaches[:5]
+
+            max_m = max(c["matches"] for c in subset)
+            max_ppp = max(c["ppp"] for c in subset)
+
+            def score(c):
+                m_norm = c["matches"] / max_m
+                ppp_norm = c["ppp"] / max_ppp
+
+                base = 0.70 * m_norm + 0.30 * ppp_norm
+
+                sample_factor = min(1, c["matches"] / 100)
+                return base * (0.85 + 0.15 * sample_factor)
+            
+            coach = max(subset, key=score)
     
     result_dir = Path("data/built/coaches")
     result_dir.mkdir(parents=True, exist_ok=True)

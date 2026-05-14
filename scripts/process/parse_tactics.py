@@ -40,7 +40,7 @@ def parse_table(html_path: Path) -> list[dict]:
         tactic = cols[9].get_text(strip=True)
 
         # Eliminar si se desconoce la táctica
-        if tactic == "?":
+        if tactic == "?" or tactic == "":
             continue
 
         data.append({
