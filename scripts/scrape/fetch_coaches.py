@@ -26,16 +26,19 @@ def main():
     raw_dir.mkdir(parents=True, exist_ok=True)
 
     for team in teams:
-        if not team["source_coach"]:
-            print("No hay URL para", team["name"])
+        if not team["ID_transfermarkt"]:
+            print("No hay ID_transfermarkt para", team["name"])
             continue
-        for url in team["source_coach"]:
-            filename = f"{slugify(team['name'])}_coaches.html"
-            print("Descargando ", filename, "...")
-            try:
-                fetch(url, raw_dir / filename)
-            except:
-                print("TIMEOUT")
+
+        filename = f"{slugify(team['name'])}_coaches.html"
+        print("Descargando ", filename, "...")
+        
+        url = "https://www.transfermarkt.com/" + team["name_transfermark"] + "/mitarbeiterhistorie/verein/" + str(team["ID_transfermarkt"])
+        
+        try:
+            fetch(url, raw_dir / filename)
+        except:
+            print("TIMEOUT")
 
 if __name__ == "__main__":
     main()

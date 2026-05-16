@@ -1,0 +1,418 @@
+tactics:
+  '4_4_2':
+    name: 4-4-2
+    family: 4-4-2
+    variant: flat
+    slots:
+      GK: 1
+      CB: 2
+      FB: 2
+      CMF: 2
+      WINGER: 2
+      CF: 2
+    identity:
+      width: high
+      central_play: medium
+      wing_play: true
+      attack_pairs: true
+    requirements: {}
+    libero_enabled: false
+  '4_5_1':
+    name: 4-5-1
+    family: 4-5-1
+    variant: standard
+    slots:
+      GK: 1
+      CB: 2
+      FB: 2
+      DMF: 1
+      CMF: 2
+      WINGER: 2
+      CF: 1
+    identity:
+      width: medium
+      central_play: medium
+    requirements: {}
+    libero_enabled: false
+  4_4_2_sweeper:
+    name: 4-4-2 Sweeper
+    family: 4-4-2
+    variant: sweeper
+    slots:
+      GK: 1
+      LIBERO: 1
+      CB: 1
+      FB: 2
+      CMF: 2
+      WINGER: 2
+      CF: 2
+    identity: {}
+    requirements: {}
+    libero_enabled: true
+  4_3_3_defending:
+    name: 4-3-3 Defending
+    family: 4-3-3
+    variant: defending
+    slots:
+      GK: 1
+      CB: 2
+      FB: 2
+      DMF: 1
+      CMF: 2
+      WINGER: 2
+      CF: 1
+    identity:
+      width: high
+      defensive_solidity: high
+    requirements: {}
+    libero_enabled: false
+  '3_4_2_1':
+    name: 3-4-2-1
+    family: 3-4-2-1
+    variant: standard
+    slots:
+      GK: 1
+      CB: 3
+      WB: 2
+      CMF: 2
+      AMF: 2
+      CF: 1
+    identity: {}
+    requirements: {}
+    libero_enabled: false
+  '4_1_4_1':
+    name: 4-1-4-1
+    family: 4-1-4-1
+    variant: standard
+    slots:
+      GK: 1
+      CB: 2
+      FB: 2
+      DMF: 1
+      CMF: 2
+      WINGER: 2
+      CF: 1
+    identity: {}
+    requirements: {}
+    libero_enabled: false
+  '4_2_3_1':
+    name: 4-2-3-1
+    family: 4-2-3-1
+    variant: standard
+    slots:
+      GK: 1
+      CB: 2
+      FB: 2
+      DMF: 2
+      AMF: 1
+      WINGER: 2
+      CF: 1
+    identity: {}
+    requirements: {}
+    libero_enabled: false
+  4_3_3_attacking:
+    name: 4-3-3 Attacking
+    family: 4-3-3
+    variant: attacking
+    slots:
+      GK: 1
+      CB: 2
+      FB: 2
+      CMF: 3
+      WINGER: 2
+      CF: 1
+    identity:
+      width: high
+      attack_focus: wing_play
+    requirements: {}
+    libero_enabled: false
+  4_4_2_double_6:
+    name: 4-4-2 double 6
+    family: 4-4-2
+    variant: double_6
+    slots:
+      GK: 1
+      CB: 2
+      FB: 2
+      DMF: 2
+      WINGER: 2
+      SS: 1
+      CF: 1
+    identity: {}
+    requirements: {}
+    libero_enabled: false
+  '4_1_3_2':
+    name: 4-1-3-2
+    family: 4-1-3-2
+    variant: standard
+    slots:
+      GK: 1
+      CB: 2
+      FB: 2
+      DMF: 1
+      CMF: 2
+      AMF: 1
+      CF: 2
+    identity: {}
+    requirements: {}
+    libero_enabled: false
+  '4_4_1_1':
+    name: 4-4-1-1
+    family: 4-4-1-1
+    variant: standard
+    slots:
+      GK: 1
+      CB: 2
+      FB: 2
+      CMF: 2
+      WINGER: 2
+      SS: 1
+      CF: 1
+    identity: {}
+    requirements: {}
+    libero_enabled: false
+  '4_3_1_2':
+    name: 4-3-1-2
+    family: 4-3-1-2
+    variant: diamond
+    slots:
+      GK: 1
+      CB: 2
+      FB: 2
+      DMF: 1
+      CMF: 2
+      AMF: 1
+      CF: 2
+    identity:
+      width: low
+      central_play: high
+    requirements: {}
+    libero_enabled: false
+  '3_4_1_2':
+    name: 3-4-1-2
+    family: 3-4-1-2
+    variant: standard
+    slots:
+      GK: 1
+      CB: 3
+      WB: 2
+      CMF: 2
+      AMF: 1
+      CF: 2
+    identity: {}
+    requirements: {}
+    libero_enabled: false
+  4_5_1_flat:
+    name: 4-5-1 flat
+    family: 4-5-1
+    variant: flat
+    slots:
+      GK: 1
+      CB: 2
+      FB: 2
+      CMF: 3
+      WINGER: 2
+      CF: 1
+    identity: {}
+    requirements: {}
+    libero_enabled: false
+  4_4_2_sweeper_diamond:
+    name: 4-4-2 Sweeper Diamond
+    family: 4-4-2
+    variant: sweeper_diamond
+    slots:
+      GK: 1
+      LIBERO: 1
+      CB: 1
+      FB: 2
+      DMF: 1
+      CMF: 2
+      AMF: 1
+      CF: 2
+    identity: {}
+    requirements: {}
+    libero_enabled: true
+  4_4_2_diamond:
+    name: 4-4-2 Diamond
+    family: 4-4-2
+    variant: diamond
+    slots:
+      GK: 1
+      CB: 2
+      FB: 2
+      DMF: 1
+      CMF: 2
+      AMF: 1
+      CF: 2
+    identity: {}
+    requirements: {}
+    libero_enabled: false
+  4_3_3_sweeper:
+    name: 4-3-3 Sweeper
+    family: 4-3-3
+    variant: sweeper
+    slots:
+      GK: 1
+      LIBERO: 1
+      CB: 1
+      FB: 2
+      CMF: 3
+      WINGER: 2
+      CF: 1
+    identity: {}
+    requirements: {}
+    libero_enabled: true
+  '5_3_2':
+    name: 5-3-2
+    family: 5-3-2
+    variant: standard
+    slots:
+      GK: 1
+      CB: 3
+      WB: 2
+      CMF: 3
+      CF: 2
+    identity: {}
+    requirements: {}
+    libero_enabled: false
+  '4_3_2_1':
+    name: 4-3-2-1
+    family: 4-3-2-1
+    variant: christmas_tree
+    slots:
+      GK: 1
+      CB: 2
+      FB: 2
+      CMF: 3
+      AMF: 2
+      CF: 1
+    identity: {}
+    requirements: {}
+    libero_enabled: false
+  3_5_2_flat:
+    name: 3-5-2 flat
+    family: 3-5-2
+    variant: flat
+    slots:
+      GK: 1
+      CB: 3
+      WB: 2
+      CMF: 3
+      CF: 2
+    identity: {}
+    requirements: {}
+    libero_enabled: false
+  '5_4_1':
+    name: 5-4-1
+    family: 5-4-1
+    variant: standard
+    slots:
+      GK: 1
+      CB: 3
+      WB: 2
+      CMF: 2
+      WINGER: 2
+      CF: 1
+    identity: {}
+    requirements: {}
+    libero_enabled: false
+  '3_4_3':
+    name: 3-4-3
+    family: 3-4-3
+    variant: standard
+    slots:
+      GK: 1
+      CB: 3
+      WB: 2
+      CMF: 2
+      WINGER: 2
+      CF: 1
+    identity: {}
+    requirements: {}
+    libero_enabled: false
+  3_5_2_attacking:
+    name: 3-5-2 Attacking
+    family: 3-5-2
+    variant: attacking
+    slots:
+      GK: 1
+      CB: 3
+      WB: 2
+      AMF: 1
+      CMF: 2
+      CF: 2
+    identity: {}
+    requirements: {}
+    libero_enabled: false
+  '3_5_2':
+    name: 3-5-2
+    family: 3-5-2
+    variant: standard
+    slots:
+      GK: 1
+      CB: 3
+      WB: 2
+      DMF: 1
+      CMF: 2
+      CF: 2
+    identity: {}
+    requirements: {}
+    libero_enabled: false
+  3_4_3_diamond:
+    name: 3-4-3 Diamond
+    family: 3-4-3
+    variant: diamond
+    slots:
+      GK: 1
+      CB: 3
+      WB: 2
+      DMF: 1
+      CMF: 2
+      CF: 3
+    identity: {}
+    requirements: {}
+    libero_enabled: false
+  '3_1_4_2':
+    name: 3-1-4-2
+    family: 3-1-4-2
+    variant: standard
+    slots:
+      GK: 1
+      CB: 3
+      DMF: 1
+      WB: 2
+      CMF: 2
+      CF: 2
+    identity: {}
+    requirements: {}
+    libero_enabled: false
+  5_4_1_diamond:
+    name: 5-4-1 Diamond
+    family: 5-4-1
+    variant: diamond
+    slots:
+      GK: 1
+      CB: 3
+      WB: 2
+      DMF: 1
+      CMF: 2
+      AMF: 1
+      CF: 1
+    identity: {}
+    requirements: {}
+    libero_enabled: false
+  '3_3_3_1':
+    name: 3-3-3-1
+    family: 3-3-3-1
+    variant: standard
+    slots:
+      GK: 1
+      CB: 3
+      DMF: 1
+      CMF: 2
+      AMF: 2
+      WINGER: 1
+      CF: 1
+    identity: {}
+    requirements: {}
+    libero_enabled: false

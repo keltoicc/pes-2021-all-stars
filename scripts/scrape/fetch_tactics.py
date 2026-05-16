@@ -28,8 +28,8 @@ def main():
     raw_dir.mkdir(parents=True, exist_ok=True)
 
     for team in teams:
-        if not team["source_coach"]:
-            print("No hay URL para", team["name"])
+        if not team["ID_transfermarkt"]:
+            print("No hay ID para", team["name"])
             continue
         
         else:
