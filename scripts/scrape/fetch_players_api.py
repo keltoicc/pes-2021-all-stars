@@ -57,7 +57,7 @@ def get_urls(player: dict, team: dict, output_dir: Path):
 
 def main():
     teams = yaml.safe_load(
-        Path("config/teams_debug.yml").read_text(encoding="utf-8")
+        Path("config/teams.yml").read_text(encoding="utf-8")
     )["teams"]
 
     player_dir = Path("data/processed/players")
