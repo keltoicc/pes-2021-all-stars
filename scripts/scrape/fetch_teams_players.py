@@ -22,28 +22,25 @@ def main():
         Path("config/teams.yml").read_text(encoding="utf-8")
     )["teams"]
 
-    coach_dir = Path("data/built/coaches")
-
-    raw_dir = Path("data/raw/transfermarkt/coaches")
+    raw_dir = Path("data/raw/transfermarkt/teams")
     raw_dir.mkdir(parents=True, exist_ok=True)
 
     for team in teams:
         if not team["ID_transfermarkt"]:
-            print("No hay ID para", team["name"])
+            print("No hay ID_transfermarkt para", team["name"])
             continue
-        
-        coach_path = coach_dir / f"{team['ID_pes']}_{team['name']}.yml"
-        coach = yaml.safe_load(
-            Path(coach_path).read_text(encoding="utf-8")
-        )["team"]
-        url = coach["source"]
 
-        filename = f"{slugify(coach['coach'])}_{slugify(team['name'])}.html"
-        print("Descargando ", filename, "...")
-        try:
-            fetch(url, raw_dir / filename)
-        except:
-            print("TIMEOUT")
+        for page in range(1, 5):
+
+            filename = f"{team['ID_pes']}_{slugify(team['name'])}_players_{page}.html"
+            print("Descargando ", filename, "...")
+
+            url = "https://www.transfermarkt.com/" + team["name_transfermark"] + "/rekordspieler/verein/" + str(team["ID_transfermarkt"]) + "/ajax/yw1/page/" + str(page)
+            
+            try:
+                fetch(url, raw_dir / filename)
+            except:
+                print("TIMEOUT")
 
 if __name__ == "__main__":
     main()
