@@ -70,7 +70,7 @@ def main():
             print("No hay ID_transfermarkt para", team["name"])
             continue
         
-        json_file = player_dir / f"{team['ID_pes']}_{team['name']}.json"
+        json_file = player_dir / f"{team['ID_pes']}_{slugify(team['name'])}.json"
 
         if not json_file.exists():
             print(f"No hay json para {team['name']}")
