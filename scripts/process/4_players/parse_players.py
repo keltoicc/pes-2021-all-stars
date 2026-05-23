@@ -4,6 +4,8 @@ from pathlib import Path
 import yaml
 import re
 
+from .mappings.positions import POSITION_MAP
+
 def slugify(name: str) -> str:
     name = name.lower()
     name = re.sub(r"[^\w]+", "_", name)
