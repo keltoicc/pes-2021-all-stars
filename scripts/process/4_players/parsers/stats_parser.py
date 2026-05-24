@@ -1,8 +1,12 @@
 from pathlib import Path
 import json
 
+from mappings.positions import POSITION_MAP
+from mappings.competitions import COMPETITION_MAP
+
 
 def parse_stats(stats_path):
+    
     with open(stats_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
@@ -20,13 +24,13 @@ def parse_stats(stats_path):
 
         matches.append({
             "game_id": item["gameInformation"]["gameId"],
-            "season": item["gameInformation"]["season"]["display"],
-            "competition_type": item["gameInformation"]["competitionTypeId"],
+            "season": item["gameInformation"]["seasonId"],
+            "competition_type": COMPETITION_MAP.get(item["gameInformation"]["competitionTypeId"]),
 
             "club_id": item["clubsInformation"]["club"]["clubId"],
             "opponent_id": item["clubsInformation"]["opponent"]["clubId"],
 
-            "position": position_id,
+            "position": POSITION_MAP.get(position_id),
 
             "minutes": minutes,
             "started": play.get("isStarting", False),
@@ -47,8 +51,3 @@ def parse_stats(stats_path):
         })
 
     return matches
-
-
-raw_dir = Path("data/raw/transfermarkt/players/stats/8198.json")
-data = parse_stats(raw_dir)
-print(data)
