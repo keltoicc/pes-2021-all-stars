@@ -23,6 +23,7 @@ def get_urls(player: dict, team: dict, output_dir: Path):
     profile_path = output_dir / "profile"
     profile_path.mkdir(parents=True, exist_ok=True)
     filename = f"{player['ID_transfermarkt']}.json"
+
     print("Descargando", filename, "(", player['name'], ")")
     
     url = "https://tmapi-alpha.transfermarkt.technology/players?ids[]=" + str(player['ID_transfermarkt'])
@@ -67,7 +68,7 @@ def main():
 
     for team in teams:
         if not team["ID_transfermarkt"]:
-            print("No hay ID_transfermarkt para", team["name"])
+            #print("No hay ID_transfermarkt para", team["name"])
             continue
         
         json_file = player_dir / f"{team['ID_pes']}_{slugify(team['name'])}.json"
@@ -85,7 +86,12 @@ def main():
 
         for player in all_players:
             
-            get_urls(player, team, output_dir)
+            profile_path = output_dir / "profile"
+            profile_file = profile_path / f"{player['ID_transfermarkt']}.json"
+
+            if not profile_file.exists():
+            
+                get_urls(player, team, output_dir)
 
 if __name__ == "__main__":
     main()
