@@ -1,6 +1,7 @@
 import json
 
 from mappings.positions import POSITION_MAP
+from mappings.nations import NATIONS_MAP
 
 def parse_profile(profile_path):
 
@@ -19,10 +20,10 @@ def parse_profile(profile_path):
         "short_name": player.get("shortName"),
 
         "nation_1":
-            nationality.get("nationalities", {}).get("nationalityId"),
+            NATIONS_MAP.get(nationality.get("nationalities", {}).get("nationalityId")),
 
         "nation_2":
-            nationality.get("nationalities", {}).get("secondNationalityId"),
+            NATIONS_MAP.get(nationality.get("nationalities", {}).get("secondNationalityId")),
 
         "height":
             attributes.get("height"),
