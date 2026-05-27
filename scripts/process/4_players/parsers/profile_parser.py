@@ -2,6 +2,7 @@ import json
 
 from mappings.positions import POSITION_MAP
 from mappings.nations import NATIONS_MAP
+from mappings.foots import FOOT_MAP
 
 def parse_profile(profile_path):
 
@@ -27,6 +28,9 @@ def parse_profile(profile_path):
 
         "height":
             attributes.get("height"),
+        
+        "foot":
+            FOOT_MAP.get(attributes.get("preferredFootId")),
 
         "position_group":
             attributes.get("positionGroup"),
