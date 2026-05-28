@@ -73,6 +73,9 @@ def main():
             
             data = build_player(player['ID_transfermarkt'])
 
+            if not data:
+                continue
+
             output_path = output_dir / f"{player['ID_transfermarkt']}.json"
 
             with open(output_path, "w", encoding="utf-8") as f:
