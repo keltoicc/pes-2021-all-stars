@@ -18,6 +18,27 @@ def fetch(url: str, output_path: Path):
     r.raise_for_status()
     output_path.write_text(r.text, encoding="utf-8")
 
+def fetch_json(url: str, output_path: Path):
+    r = requests.get(url, headers=HEADERS, timeout=60)
+    r.raise_for_status()
+    
+    # Forzar detección correcta de encoding
+    r.encoding = r.apparent_encoding
+
+    # Parsear JSON
+    data = r.json()
+
+    # Guardar preservando caracteres especiales
+    output_path.write_text(
+        json.dumps(data, ensure_ascii=False, indent=4),
+        encoding="utf-8"
+    )
+
+def fetch_html(url: str, output_path: Path):
+    r = requests.get(url, headers=HEADERS, timeout=60)
+    r.raise_for_status()
+    output_path.write_text(r.text, encoding="utf-8")
+
 def get_urls(player: dict, team: dict, output_dir: Path):
 
     profile_path = output_dir / "profile"
@@ -29,7 +50,7 @@ def get_urls(player: dict, team: dict, output_dir: Path):
     url = "https://tmapi-alpha.transfermarkt.technology/players?ids[]=" + str(player['ID_transfermarkt'])
 
     try:
-        fetch(url, profile_path / filename)
+        fetch_json(url, profile_path / filename)
     except requests.RequestException as e:
         print(f"ERROR request: {e}")
     
@@ -40,7 +61,7 @@ def get_urls(player: dict, team: dict, output_dir: Path):
     url = "https://www.transfermarkt.com/ceapi/performance-game/" + str(player['ID_transfermarkt'])
 
     try:
-        fetch(url, stats_path / filename)
+        fetch_json(url, stats_path / filename)
     except requests.RequestException as e:
         print(f"ERROR request: {e}")
     
@@ -52,7 +73,7 @@ def get_urls(player: dict, team: dict, output_dir: Path):
     url = "https://www.transfermarkt.com/" + player['name_transfermarkt'] + "/erfolge/spieler/" + str(player['ID_transfermarkt'])
 
     try:
-        fetch(url, achievements_path / filename)
+        fetch_html(url, achievements_path / filename)
     except requests.RequestException as e:
         print(f"ERROR request: {e}")
 
@@ -88,6 +109,12 @@ def main():
             
             profile_path = output_dir / "profile"
             profile_file = profile_path / f"{player['ID_transfermarkt']}.json"
+
+            stats_path = output_dir / "stats"
+            stats_file = stats_path / f"{player['ID_transfermarkt']}.json"
+
+            achievements_path = output_dir / "achievements"
+            achievements_file = achievements_path / f"{player['ID_transfermarkt']}.html"
 
             if not profile_file.exists():
             
