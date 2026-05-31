@@ -54,7 +54,7 @@ def parse_achievements(html_path):
                 raw_title = title_cell.get_text(strip=True)
 
                 current_title = re.sub(
-                    r"^\d+x\s+",
+                    r"^\d+x\s?+",
                     "",
                     raw_title
                 )

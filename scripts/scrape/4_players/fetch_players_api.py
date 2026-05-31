@@ -116,7 +116,8 @@ def main():
             achievements_path = output_dir / "achievements"
             achievements_file = achievements_path / f"{player['ID_transfermarkt']}.html"
 
-            if not stats_file.exists():
+            #if not profile_file.exists():
+            if True:
             
                 get_urls(player, team, output_dir)
 
