@@ -18,7 +18,7 @@ for json_file in PLAYERS_DIR.glob("*.json"):
         for achievement in achievements:
             title = achievement.get("title")
             if title:
-                achievement_titles.add(title.strip().lower())
+                achievement_titles.add(title.strip())
 
     except Exception as e:
         print(f"Error procesando {json_file}: {e}")

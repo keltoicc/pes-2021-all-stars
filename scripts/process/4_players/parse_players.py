@@ -10,6 +10,7 @@ sys.path.append(str(Path(__file__).parent))
 from parsers.profile_parser import parse_profile
 from parsers.stats_parser import parse_stats
 from parsers.achievement_parser import parse_achievements
+from builders.player_clubs import build_player_clubs
 
 def slugify(name: str) -> str:
     name = name.lower()
@@ -34,11 +35,15 @@ def build_player(player_id):
 
     achievements = parse_achievements(achievements_file)
 
-    return {
+    player_data = {
         "player": profile,
         "matches": stats,
         "achievements": achievements
     }
+
+    player_data["clubs"] = build_player_clubs(player_data)
+
+    return player_data
 
 def main():
     teams = yaml.safe_load(
