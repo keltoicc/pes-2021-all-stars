@@ -47,7 +47,7 @@ def build_player(player_id):
 
 def main():
     teams = yaml.safe_load(
-        Path("config/teams.yml").read_text(encoding="utf-8")
+        Path("config/teams_debug.yml").read_text(encoding="utf-8")
     )["teams"]
 
     player_dir = Path("data/processed/players")

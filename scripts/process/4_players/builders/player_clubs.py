@@ -1,5 +1,13 @@
 from collections import defaultdict, Counter
 
+from mappings.achievements import IGNORED_TITLE
+from mappings.achievements import INDIVIDUAL_TITLE
+from mappings.achievements import NATIONAL_WORLD_TITLE
+from mappings.achievements import NATIONAL_CONTINENTAL_TITLE
+from mappings.achievements import CLUB_INTERNATIONAL_TITLE
+from mappings.achievements import CLUB_NATIONAL_TITLE
+from mappings.achievements import MINOR_TITLE
+
 def initialize_clubs():
 
     return defaultdict(
@@ -127,7 +135,30 @@ def process_matches(clubs, matches):
             comp["assists"] += match.get("assists") or 0
 
 def process_achievements(clubs, achievements):
-    pass
+    for achievement in achievements:
+        
+        club_id = achievement.get("club_id")
+
+        if club_id is None:
+            continue # pendiente de definir qué hacer si no hay club_id
+
+        club_id = str(club_id)
+
+        club = clubs[club_id]
+
+        title = achievement.get("title")
+
+        if title in IGNORED_TITLE:
+            continue
+
+        if title in INDIVIDUAL_TITLE:
+            club["awards"]["individual_titles"].append(achievement)
+        
+        elif title in NATIONAL_WORLD_TITLE or title in NATIONAL_CONTINENTAL_TITLE or title in CLUB_INTERNATIONAL_TITLE or title in CLUB_NATIONAL_TITLE or title in MINOR_TITLE:
+            club["awards"]["team_titles"].append(achievement)
+
+        else:
+            print(f"Unknown title: {title} for club_id: {club_id}")
 
 def finalize_clubs(clubs):
 
