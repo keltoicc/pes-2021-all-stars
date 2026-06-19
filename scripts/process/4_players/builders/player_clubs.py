@@ -56,8 +56,8 @@ def initialize_clubs():
             ),
 
             "awards": {
-                "team_titles": [],
-                "individual_titles": []
+                "team_titles": Counter(),
+                "individual_titles": Counter()
             }
         }
     )
@@ -137,28 +137,40 @@ def process_matches(clubs, matches):
 def process_achievements(clubs, achievements):
     for achievement in achievements:
         
-        club_id = achievement.get("club_id")
-
-        if club_id is None:
-            continue # pendiente de definir qué hacer si no hay club_id
-
-        club_id = str(club_id)
-
-        club = clubs[club_id]
+        club_list = []
 
         title = achievement.get("title")
 
         if title in IGNORED_TITLE:
             continue
 
-        if title in INDIVIDUAL_TITLE:
-            club["awards"]["individual_titles"].append(achievement)
-        
-        elif title in NATIONAL_WORLD_TITLE or title in NATIONAL_CONTINENTAL_TITLE or title in CLUB_INTERNATIONAL_TITLE or title in CLUB_NATIONAL_TITLE or title in MINOR_TITLE:
-            club["awards"]["team_titles"].append(achievement)
+        club_id = achievement.get("club_id")
+
+        if club_id is None:
+            season = achievement.get("season_id")
+            
+            if season is None:
+                continue
+            
+            for club, values in clubs.items():
+                if season in values["seasons"]:
+                    club_list.append(club)
 
         else:
-            print(f"Unknown title: {title} for club_id: {club_id}")
+            club_id = str(club_id)
+            club_list.append(club_id)
+
+        for club_id in club_list:
+            club = clubs[club_id]
+
+            if title in INDIVIDUAL_TITLE:
+                club["awards"]["individual_titles"][title] += 1
+            
+            elif title in NATIONAL_WORLD_TITLE or title in NATIONAL_CONTINENTAL_TITLE or title in CLUB_INTERNATIONAL_TITLE or title in CLUB_NATIONAL_TITLE or title in MINOR_TITLE:
+                club["awards"]["team_titles"][title] += 1
+
+            else:
+                print(f"Unknown title: {title} for club_id: {club_id}")
 
 def finalize_clubs(clubs):
 
