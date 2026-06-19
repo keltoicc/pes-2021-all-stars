@@ -5,9 +5,9 @@
         "nation_2": "France",
         "height": 1.7,
         "foot": "Left",
-        "position_group": "MIDFIELDER",
-        "position_1": "AMF",
-        "position_2": "LB",
+        "position_group": "DEFENDER",
+        "position_1": "LB",
+        "position_2": "LM",
         "position_3": "CMF",
         "former_clubs": "Blanc-Mesnil SF (1999-2005), INF Clairefontaine (2005–2008), SM Caen (2008–2010)",
         "market_value": 40000000,
@@ -15,12 +15,28 @@
     },
     "matches": [
         {
+            "game_id": "4849052",
+            "season": 2025,
+            "competition_type": "Domestic Cup",
+            "club_id": "27",
+            "opponent_id": "79",
+            "position": "AMF",
+            "minutes": 1,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
             "game_id": "4634549",
             "season": 2025,
             "competition_type": "First Tier",
             "club_id": "27",
             "opponent_id": "3",
-            "position": "",
+            "position": "LB",
             "minutes": 20,
             "started": false,
             "captain": false,
@@ -13971,6 +13987,13 @@
         },
         {
             "title": "German cup winner",
+            "season": "25/26",
+            "season_id": 2025,
+            "club_name": "Bayern Munich",
+            "club_id": 27
+        },
+        {
+            "title": "German cup winner",
             "season": "20/21",
             "season_id": 2020,
             "club_name": "Borussia Dortmund",
@@ -14139,27 +14162,27 @@
                 2025
             ],
             "stats": {
-                "matches": 159,
-                "participations": 159,
-                "minutes": 5272,
+                "matches": 160,
+                "participations": 160,
+                "minutes": 5273,
                 "starts": 59,
                 "captain_matches": 0,
                 "goals": 14,
                 "assists": 8,
                 "goals_conceded": 61,
-                "points": 363,
-                "clean_sheets": 116,
-                "wins": 114,
+                "points": 366,
+                "clean_sheets": 117,
+                "wins": 115,
                 "draws": 21,
                 "losses": 24,
-                "goal_matches": 146,
-                "assist_matches": 151,
+                "goal_matches": 147,
+                "assist_matches": 152,
                 "goal_contributions": 22
             },
             "positions": {
+                "AMF": 14,
+                "LB": 48,
                 "RW": 2,
-                "AMF": 13,
-                "LB": 47,
                 "RB": 13,
                 "CMF": 13,
                 "LM": 3,
@@ -14167,15 +14190,21 @@
             },
             "derived": {
                 "season_count": 3,
-                "points_per_match": 2.283,
-                "minutes_per_match": 33.2,
-                "win_rate": 0.717,
+                "points_per_match": 2.288,
+                "minutes_per_match": 33.0,
+                "win_rate": 0.7188,
                 "goals_per_90": 0.239,
                 "assists_per_90": 0.137,
-                "contributions_per_90": 0.376,
+                "contributions_per_90": 0.375,
                 "primary_position": "LB"
             },
             "competitions": {
+                "Domestic Cup": {
+                    "matches": 11,
+                    "minutes": 230,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "First Tier": {
                     "matches": 102,
                     "minutes": 3566,
@@ -14188,12 +14217,6 @@
                     "goals": 2,
                     "assists": 2
                 },
-                "Domestic Cup": {
-                    "matches": 10,
-                    "minutes": 229,
-                    "goals": 0,
-                    "assists": 0
-                },
                 "Domestic Super Cup": {
                     "matches": 2,
                     "minutes": 10,
@@ -14204,6 +14227,7 @@
             "awards": {
                 "team_titles": {
                     "German Champion": 2,
+                    "German cup winner": 1,
                     "German Super Cup winner": 1
                 },
                 "individual_titles": {}
