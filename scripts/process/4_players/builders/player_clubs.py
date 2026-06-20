@@ -62,6 +62,30 @@ def initialize_clubs():
         }
     )
 
+def initialize_career():
+    return {
+        "club": {
+            "seasons": set(),
+            "matches": 0,
+            "minutes": 0,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
+            "individual_titles": 0
+        },
+        "national": {
+            "seasons": set(),
+            "matches": 0,
+            "minutes": 0,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
+            "individual_titles": 0
+        }
+    }
+
 def process_matches(clubs, matches):
 
     for match in matches:
@@ -202,11 +226,60 @@ def finalize_clubs(clubs):
         
         club["competitions"] = dict(club["competitions"])
 
+def is_national_team(club):
+    competitions = club.get("competitions", {})
+
+    return any(
+        "national" in competition.lower()
+        for competition in competitions
+    )
+
+def build_career(clubs):
+
+    career = initialize_career()
+
+    for club in clubs.values():
+
+        target = (
+            career["national"]
+            if is_national_team(club)
+            else career["club"]
+        )
+
+        target["seasons"].update(
+            club.get("seasons", [])
+        )
+
+        stats = club.get("stats", {})
+
+        target["matches"] += stats.get("matches", 0)
+        target["minutes"] += stats.get("minutes", 0)
+        target["goals"] += stats.get("goals", 0)
+        target["assists"] += stats.get("assists", 0)
+        target["goal_contributions"] += stats.get(
+            "goal_contributions", 0
+        )
+
+        awards = club.get("awards", {})
+
+        target["team_titles"] += sum(
+            awards.get("team_titles", {}).values()
+        )
+
+        target["individual_titles"] += sum(
+            awards.get("individual_titles", {}).values()
+        )
+
+    for scope in ("club", "national"):
+        career[scope]["season_count"] = len(
+            career[scope]["seasons"]
+        )
+
+        del career[scope]["seasons"]
+
+    return career
+
 def build_player_clubs(player_data):
-    """
-    Construye la estructura agregada por clubes
-    a partir de un jugador normalizado.
-    """
 
     matches = player_data["matches"]
     achievements = player_data["achievements"]

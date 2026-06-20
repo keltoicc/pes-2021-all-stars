@@ -1,4 +1,3 @@
-from bs4 import BeautifulSoup
 import json
 from pathlib import Path
 import yaml
@@ -11,6 +10,7 @@ from parsers.profile_parser import parse_profile
 from parsers.stats_parser import parse_stats
 from parsers.achievement_parser import parse_achievements
 from builders.player_clubs import build_player_clubs
+from builders.player_clubs import build_career
 
 def slugify(name: str) -> str:
     name = name.lower()
@@ -42,6 +42,7 @@ def build_player(player_id):
     }
 
     player_data["clubs"] = build_player_clubs(player_data)
+    player_data["career"] = build_career(player_data["clubs"])
 
     return player_data
 
