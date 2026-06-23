@@ -7,6 +7,10 @@ import sys
 
 sys.path.append(str(Path(__file__).parent))
 
+MAX_SEASONS = 10
+MAX_MATCHES = 300
+MAX_MINUTES = 25000
+
 def slugify(name: str) -> str:
     name = name.lower()
     name = re.sub(r"[^\w]+", "_", name)
@@ -48,20 +52,43 @@ def build_career_stats(player_data):
         "minutes": minutes
     }
 
-def calc_presence(club, career):
+def calc_presence(club):
     season_count = club.get("derived", {}).get("season_count", 0)
     matches = club.get("stats", {}).get("matches", 0)
     minutes = club.get("stats", {}).get("minutes", 0)
 
-    season_score = season_count / career["seasons"] if career["seasons"] else 0
-    match_score = matches / career["matches"] if career["matches"] else 0
-    minute_score = minutes / career["minutes"] if career["minutes"] else 0
+    season_score = min(season_count / MAX_SEASONS, 1.0)
+    match_score = min(matches / MAX_MATCHES, 1.0)
+    minute_score = min(minutes / MAX_MINUTES, 1.0)
 
-    presence_score = season_score * 0.4 + match_score * 0.3 + minute_score * 0.3
+    presence_score = season_score * 0.4 + match_score * 0.2 + minute_score * 0.4
     return presence_score
 
 def calc_sporting(club):
-    pass
+    matches = club.get("stats", {}).get("matches", 0)
+
+    if matches == 0:
+        return 0.0
+
+    starts = club.get("stats", {}).get("starts", 0)
+    captain_matches = club.get("stats", {}).get("captain_matches", 0)
+    minutes = club.get("stats", {}).get("minutes", 0)
+    contributions_per_90 = club.get("derived", {}).get("contributions_per_90", 0)
+
+    starter_rate = starts / matches
+    captain_rate = captain_matches / matches
+    minutes_per_match = minutes / matches
+
+    captain_score = min(captain_rate * 4, 1.0)
+    minutes_score = min(minutes_per_match / 90, 1.0)
+
+    protagonism_score = (starter_rate * 0.5 + minutes_score * 0.3 + captain_score * 0.2)
+
+    impact_score = min(contributions_per_90 / 0.8, 1.0)
+
+    sporting_score = protagonism_score * 0.7 + impact_score * 0.3
+
+    return sporting_score
 
 def calc_titles(club):
     pass
@@ -80,28 +107,29 @@ def calculate_score(player_id):
     with normalized_file.open(encoding="utf-8") as f:
         player_data = json.load(f)
     
+    # print(player_data.get("player", {}).get("short_name"))
+    
     career = build_career_stats(player_data)
 
     clubs = initialize_clubs()
 
     for club_id, club_data in player_data.get("clubs", {}).items():
 
-        presence_score = calc_presence(club_data, career) or 0.0
+        presence_score = calc_presence(club_data) or 0.0
         sporting_score = calc_sporting(club_data) or 0.0
         titles_score = calc_titles(club_data) or 0.0
         individual_score = calc_individual(club_data) or 0.0
         total_score = presence_score * 0.35 + sporting_score * 0.35 + titles_score * 0.20 + individual_score * 0.10
 
-        print(presence_score, sporting_score, titles_score, individual_score, total_score)
+        print(f"Puntuaciones para {club_id}: {presence_score}, {sporting_score}, {titles_score}, {individual_score}, {total_score}")
 
-        continue
         clubs[club_id]["importance"]["presence"] = presence_score
         clubs[club_id]["importance"]["sporting"] = sporting_score
-        clubs[club_id]["importance"]["titles"] = titles_score
-        clubs[club_id]["importance"]["individual"] = individual_score
-        clubs[club_id]["importance"]["total"] = total_score
+        #clubs[club_id]["importance"]["titles"] = titles_score
+        #clubs[club_id]["importance"]["individual"] = individual_score
+        #clubs[club_id]["importance"]["total"] = total_score
 
-        for position, count in club.get("positions", {}).items():
+        for position, count in club_data.get("positions", {}).items():
             clubs[club_id]["positions"][position] += count
     
     data = {
