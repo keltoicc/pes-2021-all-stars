@@ -4,12 +4,32 @@ from pathlib import Path
 import yaml
 import re
 import sys
+import math
 
 sys.path.append(str(Path(__file__).parent))
+
+from mappings.achievements import TITLE_POINTS
+from mappings.achievements import INDIVIDUAL_AWARD_POINTS
+from mappings.achievements import NATIONAL_WORLD_TITLE
+from mappings.achievements import NATIONAL_CONTINENTAL_TITLE
+from mappings.achievements import CLUB_INTERNATIONAL_TITLE
+from mappings.achievements import CLUB_NATIONAL_TITLE
+from mappings.achievements import MINOR_TITLE
+
 
 MAX_SEASONS = 10
 MAX_MATCHES = 300
 MAX_MINUTES = 25000
+
+TITLE_WEIGHTS = {
+    "NATIONAL_WORLD_TITLE": 100,
+    "NATIONAL_CONTINENTAL_TITLE": 60,
+    "CLUB_INTERNATIONAL_TITLE": 50,
+    "CLUB_NATIONAL_TITLE": 25,
+    "MINOR_TITLE": 10,
+}
+
+DEFAULT_INDIVIDUAL_AWARD_POINTS = 10
 
 def slugify(name: str) -> str:
     name = name.lower()
@@ -52,6 +72,42 @@ def build_career_stats(player_data):
         "minutes": minutes
     }
 
+def get_title_category(title):
+
+    if title in NATIONAL_WORLD_TITLE:
+        return "NATIONAL_WORLD_TITLE"
+
+    if title in NATIONAL_CONTINENTAL_TITLE:
+        return "NATIONAL_CONTINENTAL_TITLE"
+
+    if title in CLUB_INTERNATIONAL_TITLE:
+        return "CLUB_INTERNATIONAL_TITLE"
+
+    if title in CLUB_NATIONAL_TITLE:
+        return "CLUB_NATIONAL_TITLE"
+
+    if title in MINOR_TITLE:
+        return "MINOR_TITLE"
+
+    return None
+
+def get_title_weight(title):
+    if title in TITLE_POINTS:
+        return TITLE_POINTS[title]
+
+    category = get_title_category(title)
+
+    if category is None:
+        return 0
+
+    return TITLE_WEIGHTS[category]
+
+def get_individual_award_weight(title):
+    return INDIVIDUAL_AWARD_POINTS.get(
+        title,
+        DEFAULT_INDIVIDUAL_AWARD_POINTS
+    )
+
 def calc_presence(club):
     season_count = club.get("derived", {}).get("season_count", 0)
     matches = club.get("stats", {}).get("matches", 0)
@@ -91,10 +147,44 @@ def calc_sporting(club):
     return sporting_score
 
 def calc_titles(club):
-    pass
+
+    team_titles = (
+        club.get("awards", {})
+            .get("team_titles", {})
+    )
+
+    raw_score = 0
+
+    for title, count in team_titles.items():
+
+        weight = get_title_weight(title)
+
+        raw_score += weight * count
+
+    return min(
+        math.log1p(raw_score) / math.log1p(500),
+        1.0
+    )
 
 def calc_individual(club):
-    pass
+
+    individual_titles = (
+        club.get("awards", {})
+            .get("individual_titles", {})
+    )
+
+    raw_score = 0
+
+    for title, count in individual_titles.items():
+
+        weight = get_individual_award_weight(title)
+
+        raw_score += weight * count
+
+    return min(
+        math.log1p(raw_score) / math.log1p(300),
+        1.0
+    )
 
 def calculate_score(player_id):
 
@@ -121,17 +211,33 @@ def calculate_score(player_id):
         individual_score = calc_individual(club_data) or 0.0
         total_score = presence_score * 0.35 + sporting_score * 0.35 + titles_score * 0.20 + individual_score * 0.10
 
-        print(f"Puntuaciones para {club_id}: {presence_score}, {sporting_score}, {titles_score}, {individual_score}, {total_score}")
+        # print(f"Puntuaciones para {club_id}: {presence_score}, {sporting_score}, {titles_score}, {individual_score}, {total_score}")
 
         clubs[club_id]["importance"]["presence"] = presence_score
         clubs[club_id]["importance"]["sporting"] = sporting_score
-        #clubs[club_id]["importance"]["titles"] = titles_score
-        #clubs[club_id]["importance"]["individual"] = individual_score
-        #clubs[club_id]["importance"]["total"] = total_score
+        clubs[club_id]["importance"]["titles"] = titles_score
+        clubs[club_id]["importance"]["individual"] = individual_score
+        clubs[club_id]["importance"]["total"] = total_score
+
+        matches = club_data.get("stats", {}).get("matches", 0)
+        
+        positions = {}
 
         for position, count in club_data.get("positions", {}).items():
-            clubs[club_id]["positions"][position] += count
-    
+            if count >= 10 or (matches > 0 and count / matches >= 0.2):
+                positions[position] = count
+
+        if not positions:
+            player = player_data.get("player", {})
+
+            for field in ("position_1", "position_2", "position_3"):
+                position = player.get(field)
+
+                if position:
+                    positions[position] = None
+        
+        clubs[club_id]["positions"] = positions
+            
     data = {
         "player_id": player_id,
         "profile": player_data.get("player"),
@@ -139,7 +245,7 @@ def calculate_score(player_id):
     }
 
     # print(data)
-    # return data
+    return data
 
 def main():
 
