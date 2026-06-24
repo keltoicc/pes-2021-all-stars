@@ -235,6 +235,10 @@ def calculate_score(player_id):
 
                 if position:
                     positions[position] = None
+                
+            if not positions:
+                position_group = player.get("position_group")
+                positions[position_group] = None
         
         clubs[club_id]["positions"] = positions
             
@@ -253,7 +257,7 @@ def main():
         Path("config/teams_debug.yml").read_text(encoding="utf-8")
     )["teams"]
 
-    player_dir = Path("data/processed/players")
+    teams_dir = Path("data/processed/players")
     output_dir = Path("data/built/players/scores")
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -261,7 +265,7 @@ def main():
         if not team["ID_transfermarkt"]:
             continue
 
-        json_file = player_dir / f"{team['ID_pes']}_{slugify(team['name'])}.json"
+        json_file = teams_dir / f"{team['ID_pes']}_{slugify(team['name'])}.json"
 
         if not json_file.exists():
             print(f"No hay json para {team['name']}")
