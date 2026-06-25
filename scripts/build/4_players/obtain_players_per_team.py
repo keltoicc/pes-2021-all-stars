@@ -2,11 +2,43 @@ import json
 from pathlib import Path
 import yaml
 import re
+import sys
+
+sys.path.append(str(Path(__file__).parent))
+
+from mappings.roles import TACTICAL_ROLES
+from mappings.roles import GROUP_TO_ROLES
+from mappings.roles import ROLE_MAP
+from mappings.tactics import TACTICS
 
 def slugify(name: str) -> str:
     name = name.lower()
     name = re.sub(r"[^\w]+", "_", name)
     return name.strip("_")
+
+def build_team_players(team, teams_dir):
+    json_file = teams_dir / f"{team['ID_pes']}_{slugify(team['name'])}.json"
+
+    if not json_file.exists():
+        return None
+
+    with json_file.open(encoding="utf-8") as f:
+        all_players = json.load(f)
+
+    players = []
+
+    for player in all_players:
+        data = obtain_players(
+            str(player["ID_transfermarkt"]),
+            str(team["ID_transfermarkt"])
+        )
+
+        if data:
+            players.append(data)
+
+    players.sort(key=lambda x: x["score"], reverse=True)
+
+    return players
 
 def obtain_players(player_id, team_id):
     
@@ -29,6 +61,68 @@ def obtain_players(player_id, team_id):
             }
             return data
 
+def obtain_tactics(team, tactics_dir):
+    tactic_file = tactics_dir / f"{team['ID_pes']}_{slugify(team['name'])}.yml"
+    
+    if not tactic_file.exists():
+        print(f"No hay yml para {tactic_file}")
+        return None
+    
+    tactic_data = yaml.safe_load(
+        tactic_file.read_text(encoding="utf-8")
+    )["team"]
+
+    return tactic_data.get("tactic")
+
+def expand_tactic(tactic_name):
+    slots = []
+
+    for role, count in TACTICS[tactic_name].items():
+        if role == "UTILITY":
+            continue
+
+        slots.extend([role] * count)
+
+    return slots
+
+def get_player_roles(player):
+    roles = {}
+
+    positions = player.get("positions", {})
+
+    total = sum(
+        count
+        for count in positions.values()
+        if count is not None
+    )
+
+    for position, count in positions.items():
+
+        if count is None:
+            continue
+
+        position_weight = count / total
+
+        for role, role_positions in ROLE_MAP.items():
+
+            if position not in role_positions:
+                continue
+
+            role_weight = role_positions[position]
+
+            roles[role] = roles.get(role, 0) + (
+                position_weight * role_weight
+            )
+
+    return roles
+
+def select_squad(players, tactic):
+
+    slots = expand_tactic(tactic)
+
+    #slots.sort(key=lambda role: role_candidate_count[role])
+    print(slots)
+
 def main():
 
     teams = yaml.safe_load(
@@ -36,6 +130,7 @@ def main():
     )["teams"]
 
     teams_dir = Path("data/processed/players")
+    tactics_dir = Path("data/built/tactics")
     output_dir = Path("data/built/players/teams")
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -43,31 +138,16 @@ def main():
         if not team["ID_transfermarkt"]:
             continue
 
-        json_file = teams_dir / f"{team['ID_pes']}_{slugify(team['name'])}.json"
+        players = build_team_players(team, teams_dir)
 
-        if not json_file.exists():
-            print(f"No hay json para {team['name']}")
+        if not players:
             continue
 
-        # Obtener los jugadores del json
-        with json_file.open(encoding="utf-8") as f:
-            all_players = json.load(f)
-        
-        players = []
+        tactic = obtain_tactics(team, tactics_dir)
 
-        for player in all_players:
+        select_squad(players, tactic)
 
-            print(f"{player['ID_transfermarkt']} {player['name']}")
-        
-            data = obtain_players(str(player['ID_transfermarkt']), str(team['ID_transfermarkt']))
-
-            if not data:
-                continue
-
-            players.append(data)
-
-        players.sort(key=lambda x: x["score"], reverse=True)
-
+        continue
         output_path = output_dir / f"{team['ID_pes']}_{slugify(team['name'])}.json"
 
         with open(output_path, "w", encoding="utf-8") as f:
