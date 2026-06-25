@@ -2,7 +2,6 @@ import json
 from pathlib import Path
 import yaml
 import re
-import sys
 
 def slugify(name: str) -> str:
     name = name.lower()
@@ -69,7 +68,7 @@ def main():
 
         players.sort(key=lambda x: x["score"], reverse=True)
 
-        output_path = output_dir / f"{team['ID_transfermarkt']}_{slugify(team['name'])}.json"
+        output_path = output_dir / f"{team['ID_pes']}_{slugify(team['name'])}.json"
 
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(players, f, indent=4, ensure_ascii=False)
