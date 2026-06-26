@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 TACTICAL_ROLES = [
     "GOALKEEPER",
 
@@ -112,3 +114,11 @@ ROLE_MAP = {
         "SS": 0.5
     }
 }
+
+POSITION_TO_ROLES = defaultdict(dict)
+
+for role, positions in ROLE_MAP.items():
+    for position, weight in positions.items():
+        POSITION_TO_ROLES[position][role] = weight
+
+POSITION_TO_ROLES = dict(POSITION_TO_ROLES)

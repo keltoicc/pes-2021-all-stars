@@ -3,12 +3,14 @@ from pathlib import Path
 import yaml
 import re
 import sys
+from collections import defaultdict
 
 sys.path.append(str(Path(__file__).parent))
 
 from mappings.roles import TACTICAL_ROLES
 from mappings.roles import GROUP_TO_ROLES
 from mappings.roles import ROLE_MAP
+from mappings.roles import POSITION_TO_ROLES
 from mappings.tactics import TACTICS
 
 def slugify(name: str) -> str:
@@ -89,6 +91,7 @@ def get_player_roles(player):
     roles = {}
 
     positions = player.get("positions", {})
+    total_positions = len(positions)
 
     total = sum(
         count
@@ -98,30 +101,60 @@ def get_player_roles(player):
 
     for position, count in positions.items():
 
+        # print(f"Position: {position}, Count: {count}, Total: {total}")
+
         if count is None:
-            continue
+            position_weight = 1.0 / total_positions
 
-        position_weight = count / total
+        else:
+            position_weight = count / total
+        
+        # print(position_weight)
 
-        for role, role_positions in ROLE_MAP.items():
+        mapping = POSITION_TO_ROLES.get(position) or GROUP_TO_ROLES.get(position)
 
-            if position not in role_positions:
-                continue
-
-            role_weight = role_positions[position]
-
-            roles[role] = roles.get(role, 0) + (
-                position_weight * role_weight
-            )
+        if mapping:
+            for role, role_weight in mapping.items():
+                roles[role] = roles.get(role, 0) + position_weight * role_weight
 
     return roles
 
 def select_squad(players, tactic):
 
     slots = expand_tactic(tactic)
+    #print(slots)
 
-    #slots.sort(key=lambda role: role_candidate_count[role])
-    print(slots)
+    role_candidates = defaultdict(list)
+
+    for player in players:
+        roles = get_player_roles(player)
+        
+        for role, role_weight in roles.items():
+
+            role_candidates[role].append({
+                "player": player,
+                "score": player["score"] * role_weight,
+                "role_weight": role_weight
+            })
+    
+    for candidates in role_candidates.values():
+        candidates.sort(key=lambda c: c["score"], reverse=True)
+    
+    #print(role_candidates)
+
+    slots.sort(
+        key=lambda role: len(role_candidates[role])
+    )
+
+    for role, candidates in role_candidates.items():
+        print(f"\n{role}")
+
+        for candidate in candidates[:5]:
+            print(
+                candidate["player"]["name"],
+                round(candidate["score"], 3)
+            )
+
 
 def main():
 
