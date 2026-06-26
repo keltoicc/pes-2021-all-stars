@@ -119,6 +119,9 @@ def get_player_roles(player):
 
     return roles
 
+def versatility(player):
+    return sum(player["roles"].values())
+
 def select_squad(players, tactic):
 
     slots = expand_tactic(tactic)
@@ -128,8 +131,15 @@ def select_squad(players, tactic):
 
     for player in players:
         roles = get_player_roles(player)
+        player["roles"] = roles
         
         for role, role_weight in roles.items():
+
+            role_score = (
+                player["score"]
+                * role_weight
+                / versatility(player)
+            )
 
             role_candidates[role].append({
                 "player": player,
@@ -146,6 +156,7 @@ def select_squad(players, tactic):
         key=lambda role: len(role_candidates[role])
     )
 
+    '''
     for role, candidates in role_candidates.items():
         print(f"\n{role}")
 
@@ -154,7 +165,33 @@ def select_squad(players, tactic):
                 candidate["player"]["name"],
                 round(candidate["score"], 3)
             )
+    '''
 
+    selected_ids = set()
+    selected_squad = []
+
+    for role in slots:
+
+        candidates = role_candidates.get(role, [])
+
+        for candidate in candidates:
+
+            player = candidate["player"]
+
+            if player["ID_transfermarkt"] in selected_ids:
+                continue
+
+            selected_ids.add(player["ID_transfermarkt"])
+
+            selected_squad.append({
+                "role": role,
+                "player": player,
+                "score": candidate["score"]
+            })
+
+            break
+        
+    return selected_squad
 
 def main():
 
@@ -178,13 +215,13 @@ def main():
 
         tactic = obtain_tactics(team, tactics_dir)
 
-        select_squad(players, tactic)
+        squad = select_squad(players, tactic)
 
-        continue
+        #continue
         output_path = output_dir / f"{team['ID_pes']}_{slugify(team['name'])}.json"
 
         with open(output_path, "w", encoding="utf-8") as f:
-            json.dump(players, f, indent=4, ensure_ascii=False)
+            json.dump(squad, f, indent=4, ensure_ascii=False)
 
 if __name__ == "__main__":
     main()

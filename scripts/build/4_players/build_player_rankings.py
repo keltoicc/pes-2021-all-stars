@@ -98,6 +98,7 @@ def get_title_weight(title):
     category = get_title_category(title)
 
     if category is None:
+        print(f"El premio {title} no está clasificado en ninguna categoría")
         return 0
 
     return TITLE_WEIGHTS[category]
