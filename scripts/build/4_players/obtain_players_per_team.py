@@ -4,6 +4,7 @@ import yaml
 import re
 import sys
 from collections import defaultdict
+import math
 
 sys.path.append(str(Path(__file__).parent))
 
@@ -122,6 +123,9 @@ def get_player_roles(player):
 def versatility(player):
     return sum(player["roles"].values())
 
+def role_factor(weight):
+    return math.sqrt(weight)
+
 def select_squad(players, tactic):
 
     slots = expand_tactic(tactic)
@@ -135,15 +139,10 @@ def select_squad(players, tactic):
         
         for role, role_weight in roles.items():
 
-            role_score = (
-                player["score"]
-                * role_weight
-                / versatility(player)
-            )
-
             role_candidates[role].append({
+                "player_id": player["ID_transfermarkt"],
                 "player": player,
-                "score": player["score"] * role_weight,
+                "score": player["score"] * role_factor(role_weight),
                 "role_weight": role_weight
             })
     
@@ -162,15 +161,20 @@ def select_squad(players, tactic):
 
         for candidate in candidates[:5]:
             print(
+                candidate["player"]["ID_transfermarkt"],
                 candidate["player"]["name"],
                 round(candidate["score"], 3)
-            )
+            ) 
+    return
     '''
 
     selected_ids = set()
-    selected_squad = []
+    assignment_by_role = defaultdict(list)
+    player_to_role = {}
 
     for role in slots:
+
+        assigned = False
 
         candidates = role_candidates.get(role, [])
 
@@ -182,16 +186,26 @@ def select_squad(players, tactic):
                 continue
 
             selected_ids.add(player["ID_transfermarkt"])
+            player_to_role[player["ID_transfermarkt"]] = role
 
-            selected_squad.append({
-                "role": role,
+            assignment_by_role[role].append({
                 "player": player,
-                "score": candidate["score"]
+                "score": candidate["score"],
+                "role_weight": candidate["role_weight"]
             })
 
+            assigned = True
             break
+
+        if not assigned:
+            print(f"No hay candidatos para {role}")
         
-    return selected_squad
+    return {
+        "squad": selected_squad,
+        "assignment_by_role": assignment_by_role,
+        "player_to_role": player_to_role,
+        "selected_ids": selected_ids
+    }
 
 def main():
 
@@ -217,7 +231,9 @@ def main():
 
         squad = select_squad(players, tactic)
 
-        #continue
+        if not squad:
+            continue           
+
         output_path = output_dir / f"{team['ID_pes']}_{slugify(team['name'])}.json"
 
         with open(output_path, "w", encoding="utf-8") as f:
