@@ -130,8 +130,8 @@ TACTICS = {
         "CENTER_BACK": 4,
         "FULLBACK": 4,
 
-        "DEFENSIVE_MID": 4,
-        "CENTRAL_MID": 2,
+        "DEFENSIVE_MID": 3,
+        "CENTRAL_MID": 1,
         "WIDE_MID": 4,
 
         "STRIKER": 4,

@@ -77,17 +77,6 @@ def obtain_tactics(team, tactics_dir):
 
     return tactic_data.get("tactic")
 
-def expand_tactic(tactic_name):
-    slots = []
-
-    for role, count in TACTICS[tactic_name].items():
-        if role == "UTILITY":
-            continue
-
-        slots.extend([role] * count)
-
-    return slots
-
 def get_player_roles(player):
     roles = {}
 
@@ -120,39 +109,137 @@ def get_player_roles(player):
 
     return roles
 
-def versatility(player):
-    return sum(player["roles"].values())
-
 def role_factor(weight):
     return math.sqrt(weight)
 
-def select_squad(players, tactic):
-
-    slots = expand_tactic(tactic)
-    #print(slots)
+def build_role_candidates(players):
 
     role_candidates = defaultdict(list)
 
     for player in players:
+
         roles = get_player_roles(player)
-        player["roles"] = roles
-        
+
         for role, role_weight in roles.items():
 
             role_candidates[role].append({
-                "player_id": player["ID_transfermarkt"],
                 "player": player,
                 "score": player["score"] * role_factor(role_weight),
                 "role_weight": role_weight
             })
-    
-    for candidates in role_candidates.values():
-        candidates.sort(key=lambda c: c["score"], reverse=True)
-    
-    #print(role_candidates)
 
-    slots.sort(
-        key=lambda role: len(role_candidates[role])
+    return role_candidates
+
+def utility_score(player):
+
+    roles = get_player_roles(player)
+
+    return (
+        player["score"] *
+        sum(roles.values())
+    )
+
+def get_selected_ids(assignment_by_role):
+    return {
+        entry["player"]["ID_transfermarkt"]
+        for entries in assignment_by_role.values()
+        for entry in entries
+    }
+
+def build_initial_solution(roles, role_candidates):
+
+    squad = []
+    selected = set()
+
+    for role, count in roles:
+
+        for _ in range(count):
+
+            candidates = role_candidates.get(role, [])
+
+            for candidate in candidates:
+
+                player = candidate["player"]
+                pid = player["ID_transfermarkt"]
+
+                if pid in selected:
+                    continue
+
+                squad.append({
+                    "role": role,
+                    "player": player,
+                    "score": candidate["score"],
+                    "role_weight": candidate["role_weight"]
+                })
+
+                selected.add(pid)
+                break
+
+            else:
+                print(f"No hay candidatos para {role}")
+
+    return squad
+
+def add_utility_player(squad, players):
+
+    selected_ids = {
+        x["player"]["ID_transfermarkt"]
+        for x in squad
+    }
+
+    remaining_players = [
+        player
+        for player in players
+        if player["ID_transfermarkt"] not in selected_ids
+    ]
+
+    utility = max(
+        remaining_players,
+        key=utility_score,
+        default=None
+    )
+
+    if utility is None:
+        return
+
+    squad.append({
+        "role": "UTILITY",
+        "player": utility,
+        "score": utility_score(utility),
+        "role_weight": None
+    })
+
+def build_selected_squad(assignment_by_role):
+
+    squad = []
+
+    for role, entries in assignment_by_role.items():
+
+        for entry in entries:
+
+            squad.append({
+                "role": role,
+                "player": entry["player"],
+                "score": entry["score"],
+                "role_weight": entry["role_weight"]
+            })
+
+    return squad
+
+def select_squad(players, tactic):
+
+    role_candidates = build_role_candidates(players)
+
+    roles = sorted(
+        (
+            (role, count)
+            for role, count in TACTICS[tactic].items()
+            if role != "UTILITY"
+        ),
+        key=lambda x: (
+            len(role_candidates[x[0]]),
+            -x[1]
+        )
     )
 
     '''
@@ -168,43 +255,95 @@ def select_squad(players, tactic):
     return
     '''
 
-    selected_ids = set()
-    assignment_by_role = defaultdict(list)
-    player_to_role = {}
+    squad = build_initial_solution(roles, role_candidates)
 
-    for role in slots:
+    add_utility_player(squad, players)
 
-        assigned = False
+    return {
+        "squad": squad
+    }, role_candidates
 
-        candidates = role_candidates.get(role, [])
+def find_best_swap(solution, role_candidates):
 
-        for candidate in candidates:
+    squad = solution["squad"]
+    selected_set = {x["player"]["ID_transfermarkt"] for x in squad}
 
-            player = candidate["player"]
+    best_move = None
+    best_delta = 0
 
-            if player["ID_transfermarkt"] in selected_ids:
+    for i, current in enumerate(squad):
+
+        current_role = current["role"]
+        current_score = current["score"]
+
+        candidates = role_candidates.get(current_role, [])
+
+        original_best = (
+            max(candidates, key=lambda c: c["score"])["score"]
+            if candidates
+            else 0
+        )
+
+        for cand in candidates:
+
+            pid = cand["player"]["ID_transfermarkt"]
+
+            if pid in selected_set:
                 continue
 
-            selected_ids.add(player["ID_transfermarkt"])
-            player_to_role[player["ID_transfermarkt"]] = role
+            delta = (
+                cand["score"]
+                - current_score
+                - 0.1 * original_best
+            )
 
-            assignment_by_role[role].append({
-                "player": player,
-                "score": candidate["score"],
-                "role_weight": candidate["role_weight"]
-            })
+            if delta > best_delta:
+                best_delta = delta
+                best_move = (i, cand)
 
-            assigned = True
+    return best_move
+
+def optimize_solution(solution, role_candidates, min_delta=0, max_iters=50):
+
+    squad = solution["squad"]
+
+    improved = True
+    iters = 0
+
+    while improved and iters < max_iters:
+
+        improved = False
+        iters += 1
+
+        move = find_best_swap(solution, role_candidates)
+
+        if not move:
             break
 
-        if not assigned:
-            print(f"No hay candidatos para {role}")
-        
+        i, candidate = move
+
+        old = squad[i]
+
+        delta = candidate["score"] - old["score"]
+
+        if delta <= min_delta:
+            continue
+
+        squad[i] = {
+            "role": old["role"],
+            "player": candidate["player"],
+            "score": candidate["score"],
+            "role_weight": candidate["role_weight"]
+        }
+
+        improved = True
+
+    return solution
+
+def export_solution(solution, tactic):
     return {
-        "squad": selected_squad,
-        "assignment_by_role": assignment_by_role,
-        "player_to_role": player_to_role,
-        "selected_ids": selected_ids
+        "tactic": tactic,
+        "players": solution["squad"]
     }
 
 def main():
@@ -229,15 +368,24 @@ def main():
 
         tactic = obtain_tactics(team, tactics_dir)
 
-        squad = select_squad(players, tactic)
+        solution, role_candidates = select_squad(players, tactic)
 
-        if not squad:
-            continue           
+        solution = optimize_solution(solution, role_candidates)
+
+        #continue
+
+        if not solution:
+            continue
 
         output_path = output_dir / f"{team['ID_pes']}_{slugify(team['name'])}.json"
 
         with open(output_path, "w", encoding="utf-8") as f:
-            json.dump(squad, f, indent=4, ensure_ascii=False)
+            json.dump(
+                export_solution(solution, tactic),
+                f,
+                indent=4,
+                ensure_ascii=False
+            )
 
 if __name__ == "__main__":
     main()
