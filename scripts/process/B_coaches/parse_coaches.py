@@ -102,13 +102,17 @@ def obtain_json(team: dict, processed_dir: Path):
 
 def main():
     teams = yaml.safe_load(
-        Path("config/teams.yml").read_text(encoding="utf-8")
+        Path("config/teams_debug.yml").read_text(encoding="utf-8")
     )["teams"]
 
     processed_dir = Path("data/processed/coaches")
     processed_dir.mkdir(parents=True, exist_ok=True)
 
     for team in teams:
+        if not team["ID_transfermarkt"]:
+            #print("No hay ID_transfermarkt para", team["name"])
+            continue
+        
         obtain_json(team, processed_dir)
 
 if __name__ == "__main__":

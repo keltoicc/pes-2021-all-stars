@@ -71,10 +71,14 @@ def get_coach(team: dict, team_id: int):
 
 def main():
     teams = yaml.safe_load(
-        Path("config/teams.yml").read_text(encoding="utf-8")
+        Path("config/teams_debug.yml").read_text(encoding="utf-8")
     )["teams"]
 
     for team in teams:
+        if not team["ID_transfermarkt"]:
+            #print("No hay ID_transfermarkt para", team["name"])
+            continue
+        
         team_id = team["ID_transfermarkt"]
         get_coach(team, team_id)
 

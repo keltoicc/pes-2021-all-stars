@@ -19,7 +19,7 @@ def fetch(url: str, output_path: Path):
 
 def main():
     teams = yaml.safe_load(
-        Path("config/teams.yml").read_text(encoding="utf-8")
+        Path("config/teams_debug.yml").read_text(encoding="utf-8")
     )["teams"]
 
     coach_dir = Path("data/built/coaches")
@@ -29,7 +29,7 @@ def main():
 
     for team in teams:
         if not team["ID_transfermarkt"]:
-            print("No hay ID para", team["name"])
+            #print("No hay ID para", team["name"])
             continue
         
         coach_path = coach_dir / f"{team['ID_pes']}_{team['name']}.yml"
