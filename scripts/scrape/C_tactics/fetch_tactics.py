@@ -17,9 +17,9 @@ def fetch(url: str, output_path: Path):
     r.raise_for_status()
     output_path.write_text(r.text, encoding="utf-8")
 
-def main():
+def main(yml = "teams"):
     teams = yaml.safe_load(
-        Path("config/teams_debug.yml").read_text(encoding="utf-8")
+        Path(f"config/{yml}.yml").read_text(encoding="utf-8")
     )["teams"]
 
     coach_dir = Path("data/built/coaches")

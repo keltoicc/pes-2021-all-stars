@@ -50,9 +50,9 @@ def get_urls(player: dict, team: dict, output_path: Path):
     except:
         print("TIMEOUT")
 
-def main():
+def main(yml = "teams"):
     teams = yaml.safe_load(
-        Path("config/teams.yml").read_text(encoding="utf-8")
+        Path(f"config/{yml}.yml").read_text(encoding="utf-8")
     )["teams"]
 
     player_dir = Path("data/processed/players")
@@ -62,7 +62,7 @@ def main():
 
     for team in teams:
         if not team["ID_transfermarkt"]:
-            print("No hay ID_transfermarkt para", team["name"])
+            # print("No hay ID_transfermarkt para", team["name"])
             continue
         
         json_file = player_dir / f"{team['ID_pes']}_{slugify(team['name'])}.json"

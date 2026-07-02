@@ -100,9 +100,9 @@ def obtain_json(team: dict, processed_dir: Path):
         encoding="utf-8"
     )  
 
-def main():
+def main(yml = "teams"):
     teams = yaml.safe_load(
-        Path("config/teams_debug.yml").read_text(encoding="utf-8")
+        Path(f"config/{yml}.yml").read_text(encoding="utf-8")
     )["teams"]
 
     processed_dir = Path("data/processed/coaches")

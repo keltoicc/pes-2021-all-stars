@@ -8,14 +8,13 @@ import math
 
 sys.path.append(str(Path(__file__).parent))
 
-from mappings.achievements import TITLE_POINTS
-from mappings.achievements import INDIVIDUAL_AWARD_POINTS
-from mappings.achievements import NATIONAL_WORLD_TITLE
-from mappings.achievements import NATIONAL_CONTINENTAL_TITLE
-from mappings.achievements import CLUB_INTERNATIONAL_TITLE
-from mappings.achievements import CLUB_NATIONAL_TITLE
-from mappings.achievements import MINOR_TITLE
-
+from build.D_players.mappings.achievements import TITLE_POINTS
+from build.D_players.mappings.achievements import INDIVIDUAL_AWARD_POINTS
+from build.D_players.mappings.achievements import NATIONAL_WORLD_TITLE
+from build.D_players.mappings.achievements import NATIONAL_CONTINENTAL_TITLE
+from build.D_players.mappings.achievements import CLUB_INTERNATIONAL_TITLE
+from build.D_players.mappings.achievements import CLUB_NATIONAL_TITLE
+from build.D_players.mappings.achievements import MINOR_TITLE
 
 MAX_SEASONS = 10
 MAX_MATCHES = 300
@@ -252,10 +251,10 @@ def calculate_score(player_id):
     # print(data)
     return data
 
-def main():
+def main(yml = "teams"):
 
     teams = yaml.safe_load(
-        Path("config/teams_debug.yml").read_text(encoding="utf-8")
+        Path(f"config/{yml}.yml").read_text(encoding="utf-8")
     )["teams"]
 
     teams_dir = Path("data/processed/players")

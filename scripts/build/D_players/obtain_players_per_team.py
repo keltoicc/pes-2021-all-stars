@@ -346,10 +346,10 @@ def export_solution(solution, tactic):
         "players": solution["squad"]
     }
 
-def main():
+def main(yml = "teams"):
 
     teams = yaml.safe_load(
-        Path("config/teams_debug.yml").read_text(encoding="utf-8")
+        Path(f"config/{yml}.yml").read_text(encoding="utf-8")
     )["teams"]
 
     teams_dir = Path("data/processed/players")

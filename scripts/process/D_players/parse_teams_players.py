@@ -28,6 +28,7 @@ def parse_table(html_path: Path) -> list[dict]:
             continue
 
         name = cols[3].get_text(strip=True)
+        team = cols[4].get_text(strip=True)
         matches = cols[7].get_text(strip=True)
         link = cols[3].select_one('a[href]')
         if link:
@@ -43,6 +44,7 @@ def parse_table(html_path: Path) -> list[dict]:
             "matches": matches,
             "ID_transfermarkt": ID_transfermarkt,
             "name_transfermarkt": name_transfermarkt,
+            "team": team,
         })
 
     return data
@@ -71,15 +73,20 @@ def obtain_json(team: dict, processed_dir: Path):
         encoding="utf-8"
     ) 
 
-def main():
+def main(yml = "teams"):
     teams = yaml.safe_load(
-        Path("config/teams.yml").read_text(encoding="utf-8")
+        Path(f"config/{yml}.yml").read_text(encoding="utf-8")
     )["teams"]
 
     processed_dir = Path("data/processed/players")
     processed_dir.mkdir(parents=True, exist_ok=True)
 
     for team in teams:
+
+        if not team["ID_transfermarkt"]:
+            # print("No hay ID_transfermarkt para", team["name"])
+            continue
+        
         obtain_json(team, processed_dir)
 
 if __name__ == "__main__":

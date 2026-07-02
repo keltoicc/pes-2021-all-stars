@@ -51,9 +51,9 @@ def get_tactic(coach: dict, team: dict):
     
     print(f"Generado {output_path.name}")
 
-def main():
+def main(yml = "teams"):
     teams = yaml.safe_load(
-        Path("config/teams_debug.yml").read_text(encoding="utf-8")
+        Path(f"config/{yml}.yml").read_text(encoding="utf-8")
     )["teams"]
 
     coach_dir = Path("data/built/coaches")

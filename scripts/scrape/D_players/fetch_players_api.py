@@ -77,9 +77,9 @@ def get_urls(player: dict, team: dict, output_dir: Path):
     except requests.RequestException as e:
         print(f"ERROR request: {e}")
 
-def main():
+def main(yml = "teams"):
     teams = yaml.safe_load(
-        Path("config/teams.yml").read_text(encoding="utf-8")
+        Path(f"config/{yml}.yml").read_text(encoding="utf-8")
     )["teams"]
 
     player_dir = Path("data/processed/players")
@@ -116,9 +116,12 @@ def main():
             achievements_path = output_dir / "achievements"
             achievements_file = achievements_path / f"{player['ID_transfermarkt']}.html"
 
-            #if not profile_file.exists():
-            if True:
+            if not profile_file.exists() or not stats_file.exists() or not achievements_file.exists():
             
+                get_urls(player, team, output_dir)
+
+            elif player['team'] != "retired" and player['team'] != "---":
+
                 get_urls(player, team, output_dir)
 
 if __name__ == "__main__":
