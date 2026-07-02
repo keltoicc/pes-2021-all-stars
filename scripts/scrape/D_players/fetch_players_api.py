@@ -117,11 +117,13 @@ def main(yml = "teams"):
             achievements_file = achievements_path / f"{player['ID_transfermarkt']}.html"
 
             if not profile_file.exists() or not stats_file.exists() or not achievements_file.exists():
-            
+                
+                # print("Faltan ficheros para", player['name'], "(", player['ID_transfermarkt'], ")")
                 get_urls(player, team, output_dir)
 
-            elif player['team'] != "retired" and player['team'] != "---":
-
+            elif (player['team'] != "Retired") and (player['team'] != "---"):
+                
+                # print("El jugador", player['name'], "no se ha retirado. Actualizando datos...")
                 get_urls(player, team, output_dir)
 
 if __name__ == "__main__":
