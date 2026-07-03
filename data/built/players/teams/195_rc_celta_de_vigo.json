@@ -1,5 +1,6 @@
 {
     "tactic": "4-2-3-1",
+    "total_score": 10.61,
     "players": [
         {
             "role": "GOALKEEPER",
@@ -7,11 +8,18 @@
                 "ID_transfermarkt": "7537",
                 "name": "J. Pinto",
                 "score": 0.5694518871606777,
-                "positions": {
-                    "GK": 76
+                "roles": {
+                    "GOALKEEPER": {
+                        "weight": 1.0,
+                        "score": 0.5694518871606777
+                    },
+                    "UTILITY": {
+                        "weight": 1.0,
+                        "score": 0.5694518871606777
+                    }
                 }
             },
-            "score": 0.5694518871606777,
+            "score": 0.57,
             "role_weight": 1.0
         },
         {
@@ -20,11 +28,42 @@
                 "ID_transfermarkt": "7536",
                 "name": "P. Cavallero",
                 "score": 0.4463557701109787,
-                "positions": {
-                    "GK": 23
+                "roles": {
+                    "GOALKEEPER": {
+                        "weight": 1.0,
+                        "score": 0.4463557701109787
+                    },
+                    "UTILITY": {
+                        "weight": 1.0,
+                        "score": 0.4463557701109787
+                    }
                 }
             },
-            "score": 0.4463557701109787,
+            "score": 0.45,
+            "role_weight": 1.0
+        },
+        {
+            "role": "STRIKER",
+            "player": {
+                "ID_transfermarkt": "253546",
+                "name": "V. Gudelj",
+                "score": 0.5366116564784723,
+                "roles": {
+                    "SECOND_STRIKER": {
+                        "weight": 0.4,
+                        "score": 0.3393830106935643
+                    },
+                    "STRIKER": {
+                        "weight": 1.0,
+                        "score": 0.5366116564784723
+                    },
+                    "UTILITY": {
+                        "weight": 1.4,
+                        "score": 0.5366116564784723
+                    }
+                }
+            },
+            "score": 0.54,
             "role_weight": 1.0
         },
         {
@@ -33,27 +72,35 @@
                 "ID_transfermarkt": "72047",
                 "name": "Iago Aspas",
                 "score": 0.5981920319074333,
-                "positions": {
-                    "RW": 114,
-                    "CF": 314,
-                    "SS": 14
+                "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.15475113122171946,
+                        "score": 0.235319295752221
+                    },
+                    "WINGER": {
+                        "weight": 0.2579185520361991,
+                        "score": 0.30379590449653654
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.31583710407239823,
+                        "score": 0.33618025190398787
+                    },
+                    "STRIKER": {
+                        "weight": 0.7262443438914028,
+                        "score": 0.5097790754726104
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.019004524886877826,
+                        "score": 0.08246489914356744
+                    },
+                    "UTILITY": {
+                        "weight": 1.4737556561085974,
+                        "score": 0.5981920319074333
+                    }
                 }
             },
-            "score": 0.5097790754726104,
-            "role_weight": 0.7262443438914028
-        },
-        {
-            "role": "STRIKER",
-            "player": {
-                "ID_transfermarkt": "253546",
-                "name": "V. Gudelj",
-                "score": 0.5366116564784723,
-                "positions": {
-                    "CF": 11
-                }
-            },
-            "score": 0.5366116564784723,
-            "role_weight": 1.0
+            "score": 0.51,
+            "role_weight": 0.7262
         },
         {
             "role": "FULLBACK",
@@ -61,27 +108,23 @@
                 "ID_transfermarkt": "119905",
                 "name": "Hugo Mallo",
                 "score": 0.5451196969696969,
-                "positions": {
-                    "RB": 358
+                "roles": {
+                    "FULLBACK": {
+                        "weight": 1.0,
+                        "score": 0.5451196969696969
+                    },
+                    "WING_BACK": {
+                        "weight": 0.7,
+                        "score": 0.4560798601309138
+                    },
+                    "UTILITY": {
+                        "weight": 1.7,
+                        "score": 0.5451196969696969
+                    }
                 }
             },
-            "score": 0.5451196969696969,
+            "score": 0.55,
             "role_weight": 1.0
-        },
-        {
-            "role": "FULLBACK",
-            "player": {
-                "ID_transfermarkt": "29183",
-                "name": "Jorge Otero",
-                "score": 0.48140738375086617,
-                "positions": {
-                    "RB": null,
-                    "LB": null,
-                    "CB": null
-                }
-            },
-            "score": 0.39306748286594395,
-            "role_weight": 0.6666666666666666
         },
         {
             "role": "FULLBACK",
@@ -89,11 +132,22 @@
                 "ID_transfermarkt": "7546",
                 "name": "J. Velasco",
                 "score": 0.47876339414031777,
-                "positions": {
-                    "RB": 31
+                "roles": {
+                    "FULLBACK": {
+                        "weight": 1.0,
+                        "score": 0.47876339414031777
+                    },
+                    "WING_BACK": {
+                        "weight": 0.7,
+                        "score": 0.40056219404498233
+                    },
+                    "UTILITY": {
+                        "weight": 1.7,
+                        "score": 0.47876339414031777
+                    }
                 }
             },
-            "score": 0.47876339414031777,
+            "score": 0.48,
             "role_weight": 1.0
         },
         {
@@ -102,11 +156,46 @@
                 "ID_transfermarkt": "7542",
                 "name": "Juanfran",
                 "score": 0.4677471126087862,
-                "positions": {
-                    "LB": 26
+                "roles": {
+                    "FULLBACK": {
+                        "weight": 1.0,
+                        "score": 0.4677471126087862
+                    },
+                    "WING_BACK": {
+                        "weight": 0.7,
+                        "score": 0.3913453116465043
+                    },
+                    "UTILITY": {
+                        "weight": 1.7,
+                        "score": 0.4677471126087862
+                    }
                 }
             },
-            "score": 0.4677471126087862,
+            "score": 0.47,
+            "role_weight": 1.0
+        },
+        {
+            "role": "FULLBACK",
+            "player": {
+                "ID_transfermarkt": "277084",
+                "name": "Atilano",
+                "score": 0.40762354471544715,
+                "roles": {
+                    "FULLBACK": {
+                        "weight": 1.0,
+                        "score": 0.40762354471544715
+                    },
+                    "WING_BACK": {
+                        "weight": 0.7,
+                        "score": 0.34104232573753995
+                    },
+                    "UTILITY": {
+                        "weight": 1.7,
+                        "score": 0.40762354471544715
+                    }
+                }
+            },
+            "score": 0.41,
             "role_weight": 1.0
         },
         {
@@ -115,25 +204,23 @@
                 "ID_transfermarkt": "7540",
                 "name": "F. Cáceres",
                 "score": 0.587324366395798,
-                "positions": {
-                    "CB": 49
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.587324366395798
+                    },
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.4153010422345612
+                    },
+                    "UTILITY": {
+                        "weight": 1.5,
+                        "score": 0.587324366395798
+                    }
                 }
             },
-            "score": 0.587324366395798,
+            "score": 0.59,
             "role_weight": 1.0
-        },
-        {
-            "role": "CENTER_BACK",
-            "player": {
-                "ID_transfermarkt": "313941",
-                "name": "Pepe Villar",
-                "score": 0.4535295227272727,
-                "positions": {
-                    "DEFENDER": null
-                }
-            },
-            "score": 0.37945002251898663,
-            "role_weight": 0.7
         },
         {
             "role": "CENTER_BACK",
@@ -141,11 +228,22 @@
                 "ID_transfermarkt": "7544",
                 "name": "S. Fernández",
                 "score": 0.45352914539738876,
-                "positions": {
-                    "CB": 34
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.45352914539738876
+                    },
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.3206935341762333
+                    },
+                    "UTILITY": {
+                        "weight": 1.5,
+                        "score": 0.45352914539738876
+                    }
                 }
             },
-            "score": 0.45352914539738876,
+            "score": 0.45,
             "role_weight": 1.0
         },
         {
@@ -154,51 +252,47 @@
                 "ID_transfermarkt": "30677",
                 "name": "G. Cabral",
                 "score": 0.43709315940170934,
-                "positions": {
-                    "CB": 224
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.43709315940170934
+                    },
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.3090715370232012
+                    },
+                    "UTILITY": {
+                        "weight": 1.5,
+                        "score": 0.43709315940170934
+                    }
                 }
             },
-            "score": 0.43709315940170934,
+            "score": 0.44,
             "role_weight": 1.0
         },
         {
-            "role": "DEFENSIVE_MID",
+            "role": "CENTER_BACK",
             "player": {
-                "ID_transfermarkt": "102588",
-                "name": "Mazinho",
-                "score": 0.30897511666666666,
-                "positions": {
-                    "DMF": 11
+                "ID_transfermarkt": "7488",
+                "name": "G. Djorovic",
+                "score": 0.4211792182056875,
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.4211792182056875
+                    },
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.29781868128809025
+                    },
+                    "UTILITY": {
+                        "weight": 1.5,
+                        "score": 0.4211792182056875
+                    }
                 }
             },
-            "score": 0.30897511666666666,
+            "score": 0.42,
             "role_weight": 1.0
-        },
-        {
-            "role": "DEFENSIVE_MID",
-            "player": {
-                "ID_transfermarkt": "7557",
-                "name": "Vágner",
-                "score": 0.3808331524779766,
-                "positions": {
-                    "DMF": 11
-                }
-            },
-            "score": 0.3808331524779766,
-            "role_weight": 1.0
-        },
-        {
-            "role": "DEFENSIVE_MID",
-            "player": {
-                "ID_transfermarkt": "7551",
-                "name": "E. Giovanella",
-                "score": 0.44325468376948185,
-                "positions": {
-                    "CMF": 22
-                }
-            },
-            "score": 0.3433436016735277,
-            "role_weight": 0.6
         },
         {
             "role": "DEFENSIVE_MID",
@@ -206,13 +300,107 @@
                 "ID_transfermarkt": "15715",
                 "name": "B. Oubiña",
                 "score": 0.4249397913486005,
-                "positions": {
-                    "DMF": 114,
-                    "CMF": 19
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 0.9428571428571428,
+                        "score": 0.4126200696924798
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.5714285714285714,
+                        "score": 0.3212242885954495
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.05714285714285714,
+                        "score": 0.10158003917288703
+                    },
+                    "UTILITY": {
+                        "weight": 1.5714285714285714,
+                        "score": 0.4249397913486005
+                    }
                 }
             },
-            "score": 0.4126200696924798,
-            "role_weight": 0.9428571428571428
+            "score": 0.41,
+            "role_weight": 0.9429
+        },
+        {
+            "role": "DEFENSIVE_MID",
+            "player": {
+                "ID_transfermarkt": "7557",
+                "name": "Vágner",
+                "score": 0.3808331524779766,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 1.0,
+                        "score": 0.3808331524779766
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.5,
+                        "score": 0.2692897046178277
+                    },
+                    "UTILITY": {
+                        "weight": 1.5,
+                        "score": 0.3808331524779766
+                    }
+                }
+            },
+            "score": 0.38,
+            "role_weight": 1.0
+        },
+        {
+            "role": "DEFENSIVE_MID",
+            "player": {
+                "ID_transfermarkt": "423444",
+                "name": "F. Beltrán",
+                "score": 0.4201892844900105,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 0.725925925925926,
+                        "score": 0.35800667705776457
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.8425925925925927,
+                        "score": 0.3857036879237338
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.2740740740740741,
+                        "score": 0.2199778488445699
+                    },
+                    "UTILITY": {
+                        "weight": 1.8425925925925928,
+                        "score": 0.4201892844900105
+                    }
+                }
+            },
+            "score": 0.36,
+            "role_weight": 0.7259
+        },
+        {
+            "role": "DEFENSIVE_MID",
+            "player": {
+                "ID_transfermarkt": "7551",
+                "name": "E. Giovanella",
+                "score": 0.44325468376948185,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 0.6,
+                        "score": 0.3433436016735277
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 1.0,
+                        "score": 0.44325468376948185
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.4,
+                        "score": 0.2803388768498464
+                    },
+                    "UTILITY": {
+                        "weight": 2.0,
+                        "score": 0.44325468376948185
+                    }
+                }
+            },
+            "score": 0.34,
+            "role_weight": 0.6
         },
         {
             "role": "ATTACKING_MID",
@@ -220,13 +408,39 @@
                 "ID_transfermarkt": "7556",
                 "name": "A. Mostovoy",
                 "score": 0.6391074881782763,
-                "positions": {
-                    "AMF": 27,
-                    "LM": 14
+                "roles": {
+                    "CENTRAL_MID": {
+                        "weight": 0.4609756097560975,
+                        "score": 0.4339232091590044
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.6585365853658537,
+                        "score": 0.5186374338410341
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.3951219512195122,
+                        "score": 0.40173482879721517
+                    },
+                    "WING_BACK": {
+                        "weight": 0.13658536585365855,
+                        "score": 0.23619787777567575
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.34146341463414637,
+                        "score": 0.3734616361346004
+                    },
+                    "WINGER": {
+                        "weight": 0.23902439024390243,
+                        "score": 0.312460422397834
+                    },
+                    "UTILITY": {
+                        "weight": 2.231707317073171,
+                        "score": 0.6391074881782763
+                    }
                 }
             },
-            "score": 0.5186374338410341,
-            "role_weight": 0.6585365853658537
+            "score": 0.52,
+            "role_weight": 0.6585
         },
         {
             "role": "ATTACKING_MID",
@@ -234,11 +448,50 @@
                 "ID_transfermarkt": "7560",
                 "name": "Jesuli",
                 "score": 0.42789374727171003,
-                "positions": {
-                    "AMF": null
+                "roles": {
+                    "CENTRAL_MID": {
+                        "weight": 0.7,
+                        "score": 0.3580015939461139
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 1.0,
+                        "score": 0.42789374727171003
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.6,
+                        "score": 0.33144507142592367
+                    },
+                    "UTILITY": {
+                        "weight": 2.3,
+                        "score": 0.42789374727171003
+                    }
                 }
             },
-            "score": 0.42789374727171003,
+            "score": 0.43,
+            "role_weight": 1.0
+        },
+        {
+            "role": "WINGER",
+            "player": {
+                "ID_transfermarkt": "7552",
+                "name": "G. López",
+                "score": 0.5572220281916279,
+                "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.6,
+                        "score": 0.43162232706521897
+                    },
+                    "WINGER": {
+                        "weight": 1.0,
+                        "score": 0.5572220281916279
+                    },
+                    "UTILITY": {
+                        "weight": 1.6,
+                        "score": 0.5572220281916279
+                    }
+                }
+            },
+            "score": 0.56,
             "role_weight": 1.0
         },
         {
@@ -247,25 +500,27 @@
                 "ID_transfermarkt": "7472",
                 "name": "V. Karpin",
                 "score": 0.559907137478676,
-                "positions": {
-                    "RM": 28
+                "roles": {
+                    "WING_BACK": {
+                        "weight": 0.4,
+                        "score": 0.35411636652352857
+                    },
+                    "WIDE_MID": {
+                        "weight": 1.0,
+                        "score": 0.559907137478676
+                    },
+                    "WINGER": {
+                        "weight": 0.7,
+                        "score": 0.4684519204995274
+                    },
+                    "UTILITY": {
+                        "weight": 2.1,
+                        "score": 0.559907137478676
+                    }
                 }
             },
-            "score": 0.4684519204995274,
+            "score": 0.47,
             "role_weight": 0.7
-        },
-        {
-            "role": "WINGER",
-            "player": {
-                "ID_transfermarkt": "7552",
-                "name": "G. López",
-                "score": 0.5572220281916279,
-                "positions": {
-                    "LW": 48
-                }
-            },
-            "score": 0.5572220281916279,
-            "role_weight": 1.0
         },
         {
             "role": "WINGER",
@@ -273,11 +528,22 @@
                 "ID_transfermarkt": "466782",
                 "name": "M. Jiménez",
                 "score": 0.40491264042838016,
-                "positions": {
-                    "LW": null
+                "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.6,
+                        "score": 0.3136439826095977
+                    },
+                    "WINGER": {
+                        "weight": 1.0,
+                        "score": 0.40491264042838016
+                    },
+                    "UTILITY": {
+                        "weight": 1.6,
+                        "score": 0.40491264042838016
+                    }
                 }
             },
-            "score": 0.40491264042838016,
+            "score": 0.4,
             "role_weight": 1.0
         },
         {
@@ -286,27 +552,59 @@
                 "ID_transfermarkt": "70934",
                 "name": "Nolito",
                 "score": 0.4090546141975308,
-                "positions": {
-                    "LM": 36,
-                    "LW": 114
+                "roles": {
+                    "WING_BACK": {
+                        "weight": 0.096,
+                        "score": 0.12674093667810696
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.696,
+                        "score": 0.34126041591110207
+                    },
+                    "WINGER": {
+                        "weight": 0.9279999999999999,
+                        "score": 0.39405358598007684
+                    },
+                    "UTILITY": {
+                        "weight": 1.72,
+                        "score": 0.4090546141975308
+                    }
                 }
             },
-            "score": 0.39405358598007684,
-            "role_weight": 0.9279999999999999
+            "score": 0.39,
+            "role_weight": 0.928
         },
         {
             "role": "UTILITY",
             "player": {
-                "ID_transfermarkt": "423444",
-                "name": "F. Beltrán",
-                "score": 0.4201892844900105,
-                "positions": {
-                    "CMF": 148,
-                    "DMF": 68
+                "ID_transfermarkt": "29183",
+                "name": "Jorge Otero",
+                "score": 0.48140738375086617,
+                "roles": {
+                    "FULLBACK": {
+                        "weight": 0.6666666666666666,
+                        "score": 0.39306748286594395
+                    },
+                    "WING_BACK": {
+                        "weight": 0.4666666666666666,
+                        "score": 0.32886385064430296
+                    },
+                    "CENTER_BACK": {
+                        "weight": 0.3333333333333333,
+                        "score": 0.277940682598436
+                    },
+                    "SWEEPER": {
+                        "weight": 0.16666666666666666,
+                        "score": 0.19653374143297198
+                    },
+                    "UTILITY": {
+                        "weight": 1.6333333333333333,
+                        "score": 0.48140738375086617
+                    }
                 }
             },
-            "score": 0.774237663088075,
-            "role_weight": null
+            "score": 0.48,
+            "role_weight": 1.6333
         }
     ]
 }
