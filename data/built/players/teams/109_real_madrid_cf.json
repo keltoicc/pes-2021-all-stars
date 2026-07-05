@@ -1,6 +1,6 @@
 {
     "tactic": "3-4-2-1",
-    "total_score": 16.71,
+    "total_score": 16.9,
     "players": [
         {
             "role": "GOALKEEPER",
@@ -57,6 +57,10 @@
                         "weight": 0.48226950354609927,
                         "score": 0.5460885163775955
                     },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.9645390070921985,
+                        "score": 0.7722857861173976
+                    },
                     "DEFENSIVE_MID": {
                         "weight": 0.03546099290780142,
                         "score": 0.14807903983412815
@@ -66,7 +70,7 @@
                         "score": 0.1047076932183049
                     },
                     "UTILITY": {
-                        "weight": 1.5,
+                        "weight": 2.4645390070921986,
                         "score": 0.7863540789473684
                     }
                 }
@@ -97,134 +101,18 @@
                         "weight": 0.44333333333333336,
                         "score": 0.5257526945751511
                     },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.8866666666666667,
+                        "score": 0.7435265911223782
+                    },
                     "UTILITY": {
-                        "weight": 1.5,
+                        "weight": 2.3866666666666667,
                         "score": 0.789616680373542
                     }
                 }
             },
             "score": 0.74,
             "role_weight": 0.8867
-        },
-        {
-            "role": "CENTER_BACK",
-            "player": {
-                "ID_transfermarkt": "25557",
-                "name": "S. Ramos",
-                "score": 0.8533022542550743,
-                "roles": {
-                    "CENTER_BACK": {
-                        "weight": 0.7372372372372372,
-                        "score": 0.7326668202915108
-                    },
-                    "SWEEPER": {
-                        "weight": 0.3686186186186186,
-                        "score": 0.5180736769785129
-                    },
-                    "DEFENSIVE_MID": {
-                        "weight": 0.021021021021021023,
-                        "score": 0.12371711847944683
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 0.010510510510510511,
-                        "score": 0.08748121342567639
-                    },
-                    "FULLBACK": {
-                        "weight": 0.24174174174174173,
-                        "score": 0.4195451610445066
-                    },
-                    "WING_BACK": {
-                        "weight": 0.1692192192192192,
-                        "score": 0.35101666557173994
-                    },
-                    "UTILITY": {
-                        "weight": 1.5483483483483482,
-                        "score": 0.8533022542550743
-                    }
-                }
-            },
-            "score": 0.73,
-            "role_weight": 0.7372
-        },
-        {
-            "role": "CENTER_BACK",
-            "player": {
-                "ID_transfermarkt": "14132",
-                "name": "Pepe",
-                "score": 0.7245455295406211,
-                "roles": {
-                    "CENTER_BACK": {
-                        "weight": 0.9697885196374623,
-                        "score": 0.713516795596662
-                    },
-                    "SWEEPER": {
-                        "weight": 0.48489425981873113,
-                        "score": 0.5045325646568954
-                    },
-                    "DEFENSIVE_MID": {
-                        "weight": 0.030211480362537766,
-                        "score": 0.1259365188448941
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 0.015105740181268883,
-                        "score": 0.08905056647425205
-                    },
-                    "UTILITY": {
-                        "weight": 1.5,
-                        "score": 0.7245455295406211
-                    }
-                }
-            },
-            "score": 0.71,
-            "role_weight": 0.9698
-        },
-        {
-            "role": "CENTER_BACK",
-            "player": {
-                "ID_transfermarkt": "164770",
-                "name": "R. Varane",
-                "score": 0.6753624125874125,
-                "roles": {
-                    "CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.6753624125874125
-                    },
-                    "SWEEPER": {
-                        "weight": 0.5,
-                        "score": 0.4775533416990663
-                    },
-                    "UTILITY": {
-                        "weight": 1.5,
-                        "score": 0.6753624125874125
-                    }
-                }
-            },
-            "score": 0.68,
-            "role_weight": 1.0
-        },
-        {
-            "role": "CENTER_BACK",
-            "player": {
-                "ID_transfermarkt": "348603",
-                "name": "J. Ipiña",
-                "score": 0.6746720599887154,
-                "roles": {
-                    "CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.6746720599887154
-                    },
-                    "SWEEPER": {
-                        "weight": 0.5,
-                        "score": 0.4770651886951179
-                    },
-                    "UTILITY": {
-                        "weight": 1.5,
-                        "score": 0.6746720599887154
-                    }
-                }
-            },
-            "score": 0.67,
-            "role_weight": 1.0
         },
         {
             "role": "STRIKER",
@@ -283,116 +171,132 @@
             "role_weight": 0.9756
         },
         {
-            "role": "WING_BACK",
+            "role": "WIDE_MID",
             "player": {
-                "ID_transfermarkt": "7518",
-                "name": "Roberto Carlos",
-                "score": 0.7672413093311758,
+                "ID_transfermarkt": "117613",
+                "name": "Míchel",
+                "score": 0.8420156943981557,
                 "roles": {
-                    "FULLBACK": {
-                        "weight": 0.9789674952198852,
-                        "score": 0.7591299287630944
-                    },
                     "WING_BACK": {
-                        "weight": 0.6936902485659655,
-                        "score": 0.6390204733190048
+                        "weight": 0.35211267605633806,
+                        "score": 0.499644391011546
                     },
                     "WIDE_MID": {
-                        "weight": 0.021032504780114723,
-                        "score": 0.11126984317575171
+                        "weight": 0.8802816901408451,
+                        "score": 0.7900071478621233
                     },
                     "WINGER": {
-                        "weight": 0.014722753346080305,
-                        "score": 0.09309502994386686
+                        "weight": 0.6161971830985915,
+                        "score": 0.6609674012924334
+                    },
+                    "DEFENSIVE_MID": {
+                        "weight": 0.07183098591549295,
+                        "score": 0.22567118017978488
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.11971830985915492,
+                        "score": 0.2913402408517601
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.04788732394366197,
+                        "score": 0.18425974703071918
                     },
                     "UTILITY": {
-                        "weight": 1.7084130019120458,
-                        "score": 0.7672413093311758
+                        "weight": 2.0880281690140845,
+                        "score": 0.8420156943981557
                     }
                 }
             },
-            "score": 0.64,
-            "role_weight": 0.6937
+            "score": 0.79,
+            "role_weight": 0.8803
         },
         {
-            "role": "WING_BACK",
+            "role": "WIDE_MID",
             "player": {
-                "ID_transfermarkt": "44501",
-                "name": "Marcelo",
-                "score": 0.7561026591565274,
+                "ID_transfermarkt": "3446",
+                "name": "Luís Figo",
+                "score": 0.7378512887836798,
                 "roles": {
-                    "FULLBACK": {
-                        "weight": 0.9361702127659575,
-                        "score": 0.731573852412425
-                    },
                     "WING_BACK": {
-                        "weight": 0.6808510638297872,
-                        "score": 0.6238882776054505
+                        "weight": 0.047488584474885846,
+                        "score": 0.16079163540202246
                     },
                     "WIDE_MID": {
-                        "weight": 0.06382978723404255,
-                        "score": 0.19102599207965187
+                        "weight": 0.6474885844748858,
+                        "score": 0.5937244012427814
                     },
                     "WINGER": {
-                        "weight": 0.04468085106382978,
-                        "score": 0.15982381160205966
+                        "weight": 0.9643835616438357,
+                        "score": 0.724592341836632
                     },
                     "UTILITY": {
-                        "weight": 1.725531914893617,
-                        "score": 0.7561026591565274
+                        "weight": 1.6593607305936073,
+                        "score": 0.7378512887836798
                     }
                 }
             },
-            "score": 0.62,
-            "role_weight": 0.6809
+            "score": 0.59,
+            "role_weight": 0.6475
         },
         {
-            "role": "WING_BACK",
+            "role": "WIDE_MID",
             "player": {
-                "ID_transfermarkt": "138927",
-                "name": "D. Carvajal",
-                "score": 0.6865652842679126,
+                "ID_transfermarkt": "8198",
+                "name": "Cristiano Ronaldo",
+                "score": 0.9032554592164418,
                 "roles": {
-                    "FULLBACK": {
-                        "weight": 1.0,
-                        "score": 0.6865652842679126
+                    "SECOND_STRIKER": {
+                        "weight": 0.13348729792147807,
+                        "score": 0.33001263374979706
                     },
-                    "WING_BACK": {
-                        "weight": 0.7,
-                        "score": 0.574421728952967
+                    "STRIKER": {
+                        "weight": 0.2644341801385681,
+                        "score": 0.4644825366249466
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.43094688221709004,
+                        "score": 0.5929559981789194
+                    },
+                    "WINGER": {
+                        "weight": 0.7182448036951501,
+                        "score": 0.7655029019935835
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.020785219399538105,
+                        "score": 0.13022306161734484
                     },
                     "UTILITY": {
-                        "weight": 1.7,
-                        "score": 0.6865652842679126
+                        "weight": 1.5678983833718245,
+                        "score": 0.9032554592164418
                     }
                 }
             },
-            "score": 0.57,
-            "role_weight": 0.7
+            "score": 0.59,
+            "role_weight": 0.4309
         },
         {
-            "role": "WING_BACK",
+            "role": "WIDE_MID",
             "player": {
-                "ID_transfermarkt": "7515",
-                "name": "M. Salgado",
-                "score": 0.6838438716814159,
+                "ID_transfermarkt": "170723",
+                "name": "Paco Gento",
+                "score": 0.7585093057366361,
                 "roles": {
-                    "FULLBACK": {
-                        "weight": 1.0,
-                        "score": 0.6838438716814159
+                    "WIDE_MID": {
+                        "weight": 0.6,
+                        "score": 0.5875387818122684
                     },
-                    "WING_BACK": {
-                        "weight": 0.7,
-                        "score": 0.5721448318261384
+                    "WINGER": {
+                        "weight": 1.0,
+                        "score": 0.7585093057366361
                     },
                     "UTILITY": {
-                        "weight": 1.7,
-                        "score": 0.6838438716814159
+                        "weight": 1.6,
+                        "score": 0.7585093057366361
                     }
                 }
             },
-            "score": 0.57,
-            "role_weight": 0.7
+            "score": 0.59,
+            "role_weight": 0.6
         },
         {
             "role": "SECOND_STRIKER",
@@ -454,7 +358,7 @@
                         "score": 0.24876921108845762
                     },
                     "UTILITY": {
-                        "weight": 1.8729768786127168,
+                        "weight": 1.8729768786127166,
                         "score": 0.9348708882461477
                     }
                 }
@@ -643,40 +547,180 @@
             "role_weight": 0.8901
         },
         {
-            "role": "UTILITY",
+            "role": "WIDE_CENTER_BACK",
             "player": {
-                "ID_transfermarkt": "8198",
-                "name": "Cristiano Ronaldo",
-                "score": 0.9032554592164418,
+                "ID_transfermarkt": "25557",
+                "name": "S. Ramos",
+                "score": 0.8533022542550743,
                 "roles": {
-                    "SECOND_STRIKER": {
-                        "weight": 0.13348729792147807,
-                        "score": 0.33001263374979706
+                    "CENTER_BACK": {
+                        "weight": 0.7372372372372372,
+                        "score": 0.7326668202915108
                     },
-                    "STRIKER": {
-                        "weight": 0.2644341801385681,
-                        "score": 0.4644825366249466
+                    "SWEEPER": {
+                        "weight": 0.3686186186186186,
+                        "score": 0.5180736769785129
                     },
-                    "WIDE_MID": {
-                        "weight": 0.43094688221709004,
-                        "score": 0.5929559981789194
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.9306306306306307,
+                        "score": 0.8231738475442243
                     },
-                    "WINGER": {
-                        "weight": 0.7182448036951501,
-                        "score": 0.7655029019935835
+                    "DEFENSIVE_MID": {
+                        "weight": 0.021021021021021023,
+                        "score": 0.12371711847944683
                     },
-                    "ATTACKING_MID": {
-                        "weight": 0.020785219399538105,
-                        "score": 0.13022306161734484
+                    "CENTRAL_MID": {
+                        "weight": 0.010510510510510511,
+                        "score": 0.08748121342567639
+                    },
+                    "FULLBACK": {
+                        "weight": 0.24174174174174173,
+                        "score": 0.4195451610445066
+                    },
+                    "WING_BACK": {
+                        "weight": 0.1692192192192192,
+                        "score": 0.35101666557173994
                     },
                     "UTILITY": {
-                        "weight": 1.5678983833718245,
-                        "score": 0.9032554592164418
+                        "weight": 2.478978978978979,
+                        "score": 0.8533022542550743
                     }
                 }
             },
-            "score": 0.9,
-            "role_weight": 1.5679
+            "score": 0.82,
+            "role_weight": 0.9306
+        },
+        {
+            "role": "WIDE_CENTER_BACK",
+            "player": {
+                "ID_transfermarkt": "14132",
+                "name": "Pepe",
+                "score": 0.7245455295406211,
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 0.9697885196374623,
+                        "score": 0.713516795596662
+                    },
+                    "SWEEPER": {
+                        "weight": 0.48489425981873113,
+                        "score": 0.5045325646568954
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.9697885196374623,
+                        "score": 0.713516795596662
+                    },
+                    "DEFENSIVE_MID": {
+                        "weight": 0.030211480362537766,
+                        "score": 0.1259365188448941
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.015105740181268883,
+                        "score": 0.08905056647425205
+                    },
+                    "UTILITY": {
+                        "weight": 2.4697885196374623,
+                        "score": 0.7245455295406211
+                    }
+                }
+            },
+            "score": 0.71,
+            "role_weight": 0.9698
+        },
+        {
+            "role": "WIDE_CENTER_BACK",
+            "player": {
+                "ID_transfermarkt": "7518",
+                "name": "Roberto Carlos",
+                "score": 0.7672413093311758,
+                "roles": {
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.7831739961759082,
+                        "score": 0.6789864497875407
+                    },
+                    "FULLBACK": {
+                        "weight": 0.9789674952198852,
+                        "score": 0.7591299287630944
+                    },
+                    "WING_BACK": {
+                        "weight": 0.6936902485659655,
+                        "score": 0.6390204733190048
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.021032504780114723,
+                        "score": 0.11126984317575171
+                    },
+                    "WINGER": {
+                        "weight": 0.014722753346080305,
+                        "score": 0.09309502994386686
+                    },
+                    "UTILITY": {
+                        "weight": 2.491586998087954,
+                        "score": 0.7672413093311758
+                    }
+                }
+            },
+            "score": 0.68,
+            "role_weight": 0.7832
+        },
+        {
+            "role": "WIDE_CENTER_BACK",
+            "player": {
+                "ID_transfermarkt": "164770",
+                "name": "R. Varane",
+                "score": 0.6753624125874125,
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.6753624125874125
+                    },
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.4775533416990663
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.6753624125874125
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.6753624125874125
+                    }
+                }
+            },
+            "score": 0.68,
+            "role_weight": 1.0
+        },
+        {
+            "role": "UTILITY",
+            "player": {
+                "ID_transfermarkt": "117598",
+                "name": "E. Butragueño",
+                "score": 0.8446064289473697,
+                "roles": {
+                    "SECOND_STRIKER": {
+                        "weight": 0.3288888888888889,
+                        "score": 0.48437194829604013
+                    },
+                    "STRIKER": {
+                        "weight": 0.8222222222222222,
+                        "score": 0.7658592956544005
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.10666666666666667,
+                        "score": 0.2758473045860415
+                    },
+                    "WINGER": {
+                        "weight": 0.17777777777777778,
+                        "score": 0.3561173389193145
+                    },
+                    "UTILITY": {
+                        "weight": 1.4355555555555557,
+                        "score": 0.8446064289473697
+                    }
+                }
+            },
+            "score": 0.84,
+            "role_weight": 1.4356
         }
     ]
 }
