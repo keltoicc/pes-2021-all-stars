@@ -60,7 +60,7 @@ TITLE_POINTS = {
     "AFC U20 Asian Cup Champion": 62,
     "GCC Champions League Winner": 61,
     "ASEAN Club Championship Winner": 60,
-    "UI Cup winner": 60,
+    # "UI Cup winner": 60,
     "CONCACAF-U20-Championship-Champion": 60,
     "Under-20 South American Championship winner": 60,
     "UNCAF Club Winner": 58,
@@ -85,7 +85,8 @@ TITLE_POINTS = {
     "Pan American Games winner": 38,
     "Panamerican Champion": 35,
     "Winner South American Games": 30,
-    "FIFA African-Asian-Pacific Cup Champion": 25
+    "FIFA African-Asian-Pacific Cup Champion": 25,
+    "UI Cup winner": 20
 }
 
 INDIVIDUAL_AWARD_POINTS = {

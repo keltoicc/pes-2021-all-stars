@@ -3,16 +3,14 @@ from pathlib import Path
 import yaml
 import re
 import sys
-from collections import defaultdict
 import math
 
 sys.path.append(str(Path(__file__).parent))
 
-from mappings.roles import TACTICAL_ROLES
 from mappings.roles import GROUP_TO_ROLES
-from mappings.roles import ROLE_MAP
 from mappings.roles import POSITION_TO_ROLES
 from mappings.tactics import TACTICS
+from builders.hungarian import hungarian
 
 def slugify(name: str) -> str:
     name = name.lower()
@@ -56,13 +54,76 @@ def obtain_players(player_id, team_id):
     
     for club_id, club_data in player_data.get("clubs", {}).items():
         if club_id == team_id:
+            positions = club_data.get("positions", {})
+
+            roles = build_player_roles(
+                positions,
+                club_data["importance"]["total"]
+            )
+            
             data = {
                 "ID_transfermarkt": player_id,
-                "name": player_data.get("profile", {}).get("short_name"),
-                "score": club_data.get("importance", {}).get("total"),
-                "positions": club_data.get("positions"),
+                "name": player_data["profile"]["short_name"],
+                "score": club_data["importance"]["total"],
+                "roles": roles
             }
             return data
+
+def build_player_roles(positions, player_score):
+
+    roles = {}
+
+    total_positions = len(positions)
+
+    total = sum(
+        count
+        for count in positions.values()
+        if count is not None
+    )
+
+    for position, count in positions.items():
+
+        if count is None:
+            position_weight = 1 / total_positions
+        else:
+            position_weight = count / total
+
+        mapping = (
+            POSITION_TO_ROLES.get(position)
+            or GROUP_TO_ROLES.get(position)
+        )
+
+        if not mapping:
+            continue
+
+        for role, role_weight in mapping.items():
+
+            weight = position_weight * role_weight
+
+            if role not in roles:
+                roles[role] = {
+                    "weight": 0,
+                    "score": 0
+                }
+
+            roles[role]["weight"] += weight
+
+    for role, data in roles.items():
+
+        data["score"] = (
+            player_score *
+            role_factor(data["weight"])
+        )
+    
+    roles["UTILITY"] = {
+        "weight": sum(
+            role["weight"]
+            for role in roles.values()
+        ),
+        "score": player_score
+    }
+
+    return roles
 
 def obtain_tactics(team, tactics_dir):
     tactic_file = tactics_dir / f"{team['ID_pes']}_{slugify(team['name'])}.yml"
@@ -77,276 +138,123 @@ def obtain_tactics(team, tactics_dir):
 
     return tactic_data.get("tactic")
 
-def get_player_roles(player):
-    roles = {}
-
-    positions = player.get("positions", {})
-    total_positions = len(positions)
-
-    total = sum(
-        count
-        for count in positions.values()
-        if count is not None
-    )
-
-    for position, count in positions.items():
-
-        # print(f"Position: {position}, Count: {count}, Total: {total}")
-
-        if count is None:
-            position_weight = 1.0 / total_positions
-
-        else:
-            position_weight = count / total
-        
-        # print(position_weight)
-
-        mapping = POSITION_TO_ROLES.get(position) or GROUP_TO_ROLES.get(position)
-
-        if mapping:
-            for role, role_weight in mapping.items():
-                roles[role] = roles.get(role, 0) + position_weight * role_weight
-
-    return roles
-
 def role_factor(weight):
     return math.sqrt(weight)
 
-def build_role_candidates(players):
+def build_slots(tactic):
 
-    role_candidates = defaultdict(list)
+    slots = []
 
-    for player in players:
+    slot_id = 0
 
-        roles = get_player_roles(player)
-
-        for role, role_weight in roles.items():
-
-            role_candidates[role].append({
-                "player": player,
-                "score": player["score"] * role_factor(role_weight),
-                "role_weight": role_weight
-            })
-
-    return role_candidates
-
-def utility_score(player):
-
-    roles = get_player_roles(player)
-
-    return (
-        player["score"] *
-        sum(roles.values())
-    )
-
-def get_selected_ids(assignment_by_role):
-    return {
-        entry["player"]["ID_transfermarkt"]
-        for entries in assignment_by_role.values()
-        for entry in entries
-    }
-
-def build_initial_solution(roles, role_candidates):
-
-    squad = []
-    selected = set()
-
-    for role, count in roles:
+    for role, count in TACTICS[tactic].items():
 
         for _ in range(count):
 
-            candidates = role_candidates.get(role, [])
-
-            for candidate in candidates:
-
-                player = candidate["player"]
-                pid = player["ID_transfermarkt"]
-
-                if pid in selected:
-                    continue
-
-                squad.append({
-                    "role": role,
-                    "player": player,
-                    "score": candidate["score"],
-                    "role_weight": candidate["role_weight"]
-                })
-
-                selected.add(pid)
-                break
-
-            else:
-                print(f"No hay candidatos para {role}")
-
-    return squad
-
-def add_utility_player(squad, players):
-
-    selected_ids = {
-        x["player"]["ID_transfermarkt"]
-        for x in squad
-    }
-
-    remaining_players = [
-        player
-        for player in players
-        if player["ID_transfermarkt"] not in selected_ids
-    ]
-
-    utility = max(
-        remaining_players,
-        key=utility_score,
-        default=None
-    )
-
-    if utility is None:
-        return
-
-    squad.append({
-        "role": "UTILITY",
-        "player": utility,
-        "score": utility_score(utility),
-        "role_weight": None
-    })
-
-def build_selected_squad(assignment_by_role):
-
-    squad = []
-
-    for role, entries in assignment_by_role.items():
-
-        for entry in entries:
-
-            squad.append({
-                "role": role,
-                "player": entry["player"],
-                "score": entry["score"],
-                "role_weight": entry["role_weight"]
+            slots.append({
+                "id": slot_id,
+                "role": role
             })
 
-    return squad
+            slot_id += 1
 
-def select_squad(players, tactic):
+    return slots
 
-    role_candidates = build_role_candidates(players)
+def build_assignment_matrix(players, slots):
 
-    roles = sorted(
-        (
-            (role, count)
-            for role, count in TACTICS[tactic].items()
-            if role != "UTILITY"
-        ),
-        key=lambda x: (
-            len(role_candidates[x[0]]),
-            -x[1]
-        )
+    matrix = []
+
+    for player in players:
+
+        row = []
+
+        for slot in slots:
+
+            role_data = player["roles"].get(slot["role"])
+
+            if role_data is None:
+                score = 0
+            else:
+                score = role_data["score"]
+
+            row.append(score)
+
+        matrix.append(row)
+
+    return matrix
+
+def build_cost_matrix(score_matrix):
+
+    max_score = max(
+        max(row)
+        for row in score_matrix
     )
 
-    '''
-    for role, candidates in role_candidates.items():
-        print(f"\n{role}")
+    cost_matrix = []
 
-        for candidate in candidates[:5]:
-            print(
-                candidate["player"]["ID_transfermarkt"],
-                candidate["player"]["name"],
-                round(candidate["score"], 3)
-            ) 
-    return
-    '''
+    for row in score_matrix:
 
-    squad = build_initial_solution(roles, role_candidates)
+        cost_matrix.append([
+            max_score - score
+            for score in row
+        ])
 
-    add_utility_player(squad, players)
+    return cost_matrix
 
-    return {
-        "squad": squad
-    }, role_candidates
+def hungarian_assignment(players, slots):
 
-def find_best_swap(solution, role_candidates):
+    score_matrix = build_assignment_matrix(
+        players,
+        slots
+    )
 
-    squad = solution["squad"]
-    selected_set = {x["player"]["ID_transfermarkt"] for x in squad}
+    cost_matrix = build_cost_matrix(
+        score_matrix
+    )
 
-    best_move = None
-    best_delta = 0
+    assignment = hungarian(cost_matrix)
 
-    for i, current in enumerate(squad):
+    solution = {
+        "slots": [],
+        "total_score": 0
+    }
 
-        current_role = current["role"]
-        current_score = current["score"]
+    for player_index, slot_index in assignment:
 
-        candidates = role_candidates.get(current_role, [])
+        player = players[player_index]
+        slot = slots[slot_index]
 
-        original_best = (
-            max(candidates, key=lambda c: c["score"])["score"]
-            if candidates
-            else 0
-        )
+        role_data = player["roles"][slot["role"]]
 
-        for cand in candidates:
+        solution["slots"].append({
+            "role": slot["role"],
+            "player": player,
+            "score": role_data["score"],
+            "role_weight": role_data["weight"]
+        })
 
-            pid = cand["player"]["ID_transfermarkt"]
-
-            if pid in selected_set:
-                continue
-
-            delta = (
-                cand["score"]
-                - current_score
-                - 0.1 * original_best
-            )
-
-            if delta > best_delta:
-                best_delta = delta
-                best_move = (i, cand)
-
-    return best_move
-
-def optimize_solution(solution, role_candidates, min_delta=0, max_iters=50):
-
-    squad = solution["squad"]
-
-    improved = True
-    iters = 0
-
-    while improved and iters < max_iters:
-
-        improved = False
-        iters += 1
-
-        move = find_best_swap(solution, role_candidates)
-
-        if not move:
-            break
-
-        i, candidate = move
-
-        old = squad[i]
-
-        delta = candidate["score"] - old["score"]
-
-        if delta <= min_delta:
-            continue
-
-        squad[i] = {
-            "role": old["role"],
-            "player": candidate["player"],
-            "score": candidate["score"],
-            "role_weight": candidate["role_weight"]
-        }
-
-        improved = True
+        solution["total_score"] += role_data["score"]
 
     return solution
 
 def export_solution(solution, tactic):
+
     return {
         "tactic": tactic,
-        "players": solution["squad"]
+        "total_score": round(solution["total_score"], 2),
+        "players": [
+            {
+                "role": slot["role"],
+                "player": slot["player"],
+                "score": round(slot["score"], 2),
+                "role_weight": round(slot["role_weight"], 4)
+            }
+            for slot in solution["slots"]
+        ]
     }
 
-def main(yml = "teams"):
+#def main(yml = "teams"):
+def main(yml = "teams_debug"):
 
     teams = yaml.safe_load(
         Path(f"config/{yml}.yml").read_text(encoding="utf-8")
@@ -368,14 +276,12 @@ def main(yml = "teams"):
 
         tactic = obtain_tactics(team, tactics_dir)
 
-        solution, role_candidates = select_squad(players, tactic)
+        slots = build_slots(tactic)
 
-        solution = optimize_solution(solution, role_candidates)
-
-        #continue
-
-        if not solution:
-            continue
+        solution = hungarian_assignment(
+            players,
+            slots
+        )
 
         output_path = output_dir / f"{team['ID_pes']}_{slugify(team['name'])}.json"
 
