@@ -22,30 +22,30 @@ TACTICAL_ROLES = [
 
 GROUP_TO_ROLES = {
     "GOALKEEPER": {
-        "GOALKEEPER": 1.0
+        "GOALKEEPER": 1.0,
     },
 
     "DEFENDER": {
-        "CENTER_BACK": 0.3,
-        "WIDE_CENTER_BACK": 0.25,
-        "FULLBACK": 0.2,
-        "WING_BACK": 0.15,
-        "SWEEPER": 0.1,
+        "CENTER_BACK": 1.0,
+        "WIDE_CENTER_BACK": 0.8,
+        "FULLBACK": 0.8,
+        "WING_BACK": 0.5,
+        "SWEEPER": 0.4,
     },
 
     "MIDFIELDER": {
-        "CENTRAL_MID": 0.4,
-        "DEFENSIVE_MID": 0.25,
-        "ATTACKING_MID": 0.2,
-        "WIDE_MID": 0.1,
-        "WINGER": 0.05
+        "DEFENSIVE_MID": 0.8,
+        "CENTRAL_MID": 1.0,
+        "ATTACKING_MID": 0.8,
+        "WINGER": 0.6,
+        "WING_BACK": 0.4,
     },
 
     "FORWARD": {
-        "STRIKER": 0.55,
-        "SECOND_STRIKER": 0.25,
-        "WINGER": 0.2
-    }
+        "STRIKER": 1.0,
+        "SECOND_STRIKER": 0.9,
+        "WINGER": 0.8,
+    },
 }
 
 ROLE_MAP = {
