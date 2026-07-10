@@ -67,7 +67,8 @@ TACTICS = {
         "DEFENSIVE_MID": 3,
         "CENTRAL_MID": 3,
 
-        "WINGER": 4,
+        "WINGER": 3,
+        "SECOND_STRIKER": 1,
         "STRIKER": 2,
 
         "UTILITY": 1
@@ -76,9 +77,10 @@ TACTICS = {
     "3-4-2-1": {
         "GOALKEEPER": 2,
 
-        "CENTER_BACK": 6,
+        "CENTER_BACK": 2,
+        "WIDE_CENTER_BACK": 4,
 
-        "WING_BACK": 4,
+        "WIDE_MID": 4,
         "DEFENSIVE_MID": 2,
         "CENTRAL_MID": 2,
 
@@ -115,7 +117,8 @@ TACTICS = {
         "DEFENSIVE_MID": 4,
 
         "ATTACKING_MID": 2,
-        "WINGER": 4,
+        "WINGER": 3,
+        "SECOND_STRIKER": 1,
 
         "STRIKER": 2,
 
@@ -132,7 +135,8 @@ TACTICS = {
         "CENTRAL_MID": 3,
         "ATTACKING_MID": 1,
 
-        "WINGER": 4,
+        "WINGER": 3,
+        "SECOND_STRIKER": 1,
         "STRIKER": 2,
 
         "UTILITY": 1
@@ -276,7 +280,8 @@ TACTICS = {
         "CENTRAL_MID": 3,
         "ATTACKING_MID": 1,
 
-        "WINGER": 4,
+        "WINGER": 3,
+        "SECOND_STRIKER": 1,
         "STRIKER": 2,
 
         "UTILITY": 1
@@ -403,7 +408,8 @@ TACTICS = {
         "CENTRAL_MID": 4,
         "ATTACKING_MID": 2,
 
-        "WINGER": 4,
+        "WINGER": 3,
+        "SECOND_STRIKER": 1,
         "STRIKER": 2,
 
         "UTILITY": 1

@@ -110,7 +110,7 @@ ROLE_MAP = {
         "LW": 1.0,
         "RW": 1.0,
         "LM": 0.7,
-        "RM": 0.7
+        "RM": 0.7,
     },
 
     "SECOND_STRIKER": {
