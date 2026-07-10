@@ -205,9 +205,10 @@ TACTICS = {
     "3-4-1-2": {
         "GOALKEEPER": 2,
 
-        "CENTER_BACK": 6,
+        "CENTER_BACK": 2,
+        "WIDE_CENTER_BACK": 4,
 
-        "WING_BACK": 4,
+        "WIDE_MID": 4,
         "DEFENSIVE_MID": 2,
         "CENTRAL_MID": 2,
 
@@ -284,7 +285,8 @@ TACTICS = {
     "5-3-2": {
         "GOALKEEPER": 2,
 
-        "CENTER_BACK": 6,
+        "CENTER_BACK": 2,
+        "WIDE_CENTER_BACK": 4,
         "WING_BACK": 4,
 
         "DEFENSIVE_MID": 2,
@@ -314,9 +316,10 @@ TACTICS = {
     "3-5-2 flat": {
         "GOALKEEPER": 2,
 
-        "CENTER_BACK": 6,
+        "CENTER_BACK": 2,
+        "WIDE_CENTER_BACK": 4,
 
-        "WING_BACK": 4,
+        "WIDE_MID": 4,
         "DEFENSIVE_MID": 2,
         "CENTRAL_MID": 3,
         "ATTACKING_MID": 1,
@@ -329,7 +332,8 @@ TACTICS = {
     "5-4-1": {
         "GOALKEEPER": 2,
 
-        "CENTER_BACK": 6,
+        "CENTER_BACK": 2,
+        "WIDE_CENTER_BACK": 4,
         "WING_BACK": 4,
 
         "DEFENSIVE_MID": 2,
@@ -344,9 +348,10 @@ TACTICS = {
     "3-4-3": {
         "GOALKEEPER": 2,
 
-        "CENTER_BACK": 6,
+        "CENTER_BACK": 2,
+        "WIDE_CENTER_BACK": 4,
 
-        "WING_BACK": 4,
+        "WIDE_MID": 4,
         "DEFENSIVE_MID": 2,
         "CENTRAL_MID": 2,
 
@@ -359,9 +364,10 @@ TACTICS = {
     "3-5-2 Attacking": {
         "GOALKEEPER": 2,
 
-        "CENTER_BACK": 6,
+        "CENTER_BACK": 2,
+        "WIDE_CENTER_BACK": 4,
 
-        "WING_BACK": 4,
+        "WIDE_MID": 4,
         "DEFENSIVE_MID": 1,
         "CENTRAL_MID": 3,
         "ATTACKING_MID": 2,
@@ -374,9 +380,10 @@ TACTICS = {
     "3-5-2": {
         "GOALKEEPER": 2,
 
-        "CENTER_BACK": 6,
+        "CENTER_BACK": 2,
+        "WIDE_CENTER_BACK": 4,
 
-        "WING_BACK": 4,
+        "WIDE_MID": 4,
         "DEFENSIVE_MID": 2,
         "CENTRAL_MID": 3,
         "ATTACKING_MID": 1,
@@ -389,7 +396,8 @@ TACTICS = {
     "3-4-3 Diamond": {
         "GOALKEEPER": 2,
 
-        "CENTER_BACK": 6,
+        "CENTER_BACK": 2,
+        "WIDE_CENTER_BACK": 4,
 
         "DEFENSIVE_MID": 2,
         "CENTRAL_MID": 4,
@@ -404,11 +412,12 @@ TACTICS = {
     "3-1-4-2": {
         "GOALKEEPER": 2,
 
-        "CENTER_BACK": 6,
+        "CENTER_BACK": 2,
+        "WIDE_CENTER_BACK": 4,
 
         "DEFENSIVE_MID": 2,
 
-        "WING_BACK": 4,
+        "WIDE_MID": 4,
         "CENTRAL_MID": 2,
         "ATTACKING_MID": 2,
 
@@ -420,7 +429,8 @@ TACTICS = {
     "5-4-1 Diamond": {
         "GOALKEEPER": 2,
 
-        "CENTER_BACK": 6,
+        "CENTER_BACK": 2,
+        "WIDE_CENTER_BACK": 4,
         "WING_BACK": 4,
 
         "DEFENSIVE_MID": 2,
@@ -435,9 +445,10 @@ TACTICS = {
     "3-3-3-1": {
         "GOALKEEPER": 2,
 
-        "CENTER_BACK": 6,
+        "CENTER_BACK": 2,
+        "WIDE_CENTER_BACK": 4,
 
-        "WING_BACK": 4,
+        "WIDE_MID": 4,
         "DEFENSIVE_MID": 2,
 
         "CENTRAL_MID": 2,

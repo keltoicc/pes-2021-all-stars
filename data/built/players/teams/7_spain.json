@@ -1,6 +1,6 @@
 {
     "tactic": "4-3-3 Attacking",
-    "total_score": 12.24,
+    "total_score": 12.27,
     "players": [
         {
             "role": "CENTER_BACK",
@@ -17,6 +17,10 @@
                         "weight": 0.3083832335329341,
                         "score": 0.41499488756301184
                     },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.9233532934131736,
+                        "score": 0.7180940345117472
+                    },
                     "FULLBACK": {
                         "weight": 0.38323353293413176,
                         "score": 0.4626250222838211
@@ -26,7 +30,7 @@
                         "score": 0.38705986341930904
                     },
                     "UTILITY": {
-                        "weight": 1.5766467065868264,
+                        "weight": 2.5,
                         "score": 0.7473041045317359
                     }
                 }
@@ -251,34 +255,6 @@
             "role_weight": 1.0
         },
         {
-            "role": "ATTACKING_MID",
-            "player": {
-                "ID_transfermarkt": "7349",
-                "name": "Raúl",
-                "score": 0.5846412539498711,
-                "roles": {
-                    "SECOND_STRIKER": {
-                        "weight": 0.8090909090909091,
-                        "score": 0.525881772298912
-                    },
-                    "STRIKER": {
-                        "weight": 0.6590909090909091,
-                        "score": 0.4746375765394402
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.40909090909090906,
-                        "score": 0.3739378024594646
-                    },
-                    "UTILITY": {
-                        "weight": 1.8772727272727272,
-                        "score": 0.5846412539498711
-                    }
-                }
-            },
-            "score": 0.37,
-            "role_weight": 0.4091
-        },
-        {
             "role": "CENTRAL_MID",
             "player": {
                 "ID_transfermarkt": "8806",
@@ -349,6 +325,10 @@
                 "name": "Jordi Alba",
                 "score": 0.5492544754245492,
                 "roles": {
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.8,
+                        "score": 0.49126813759811183
+                    },
                     "FULLBACK": {
                         "weight": 1.0,
                         "score": 0.5492544754245492
@@ -358,7 +338,7 @@
                         "score": 0.4595392639826631
                     },
                     "UTILITY": {
-                        "weight": 1.7,
+                        "weight": 2.5,
                         "score": 0.5492544754245492
                     }
                 }
@@ -381,8 +361,12 @@
                         "weight": 0.5,
                         "score": 0.38088861369568106
                     },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.5386578432419187
+                    },
                     "UTILITY": {
-                        "weight": 1.5,
+                        "weight": 2.5,
                         "score": 0.5386578432419187
                     }
                 }
@@ -391,23 +375,59 @@
             "role_weight": 1.0
         },
         {
+            "role": "ATTACKING_MID",
+            "player": {
+                "ID_transfermarkt": "293385",
+                "name": "Dani Olmo",
+                "score": 0.5249614311710407,
+                "roles": {
+                    "CENTRAL_MID": {
+                        "weight": 0.36590909090909085,
+                        "score": 0.3175513744368443
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.5227272727272727,
+                        "score": 0.37954648766037474
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.3136363636363636,
+                        "score": 0.29399544516403
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.2863636363636364,
+                        "score": 0.28092237495986716
+                    },
+                    "WINGER": {
+                        "weight": 0.4772727272727273,
+                        "score": 0.3626692265988669
+                    },
+                    "UTILITY": {
+                        "weight": 1.9659090909090908,
+                        "score": 0.5249614311710407
+                    }
+                }
+            },
+            "score": 0.38,
+            "role_weight": 0.5227
+        },
+        {
             "role": "WINGER",
             "player": {
                 "ID_transfermarkt": "398184",
                 "name": "F. Torres",
-                "score": 0.518649857490743,
+                "score": 0.5175178091703294,
                 "roles": {
                     "WIDE_MID": {
                         "weight": 0.6,
-                        "score": 0.40174445211489956
+                        "score": 0.40086757125648675
                     },
                     "WINGER": {
                         "weight": 1.0,
-                        "score": 0.518649857490743
+                        "score": 0.5175178091703294
                     },
                     "UTILITY": {
                         "weight": 1.6,
-                        "score": 0.518649857490743
+                        "score": 0.5175178091703294
                     }
                 }
             },
@@ -453,6 +473,10 @@
                         "weight": 0.410958904109589,
                         "score": 0.32962428189602483
                     },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.9643835616438355,
+                        "score": 0.5049459565791534
+                    },
                     "FULLBACK": {
                         "weight": 0.1780821917808219,
                         "score": 0.21698526630481235
@@ -462,7 +486,7 @@
                         "score": 0.1815428986640878
                     },
                     "UTILITY": {
-                        "weight": 1.5356164383561643,
+                        "weight": 2.5,
                         "score": 0.5141857059704309
                     }
                 }
@@ -473,25 +497,25 @@
         {
             "role": "WINGER",
             "player": {
-                "ID_transfermarkt": "65278",
-                "name": "Pedro",
-                "score": 0.4892581503126258,
+                "ID_transfermarkt": "937958",
+                "name": "Lamine Yamal",
+                "score": 0.5117961780585667,
                 "roles": {
                     "WIDE_MID": {
                         "weight": 0.6,
-                        "score": 0.37897773363140896
+                        "score": 0.3964356148546869
                     },
                     "WINGER": {
                         "weight": 1.0,
-                        "score": 0.4892581503126258
+                        "score": 0.5117961780585667
                     },
                     "UTILITY": {
                         "weight": 1.6,
-                        "score": 0.4892581503126258
+                        "score": 0.5117961780585667
                     }
                 }
             },
-            "score": 0.49,
+            "score": 0.51,
             "role_weight": 1.0
         },
         {
@@ -501,6 +525,10 @@
                 "name": "J. Capdevila",
                 "score": 0.4825592129303283,
                 "roles": {
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.8,
+                        "score": 0.4316140813124038
+                    },
                     "FULLBACK": {
                         "weight": 1.0,
                         "score": 0.4825592129303283
@@ -510,7 +538,7 @@
                         "score": 0.40373800389455106
                     },
                     "UTILITY": {
-                        "weight": 1.7,
+                        "weight": 2.5,
                         "score": 0.4825592129303283
                     }
                 }
@@ -521,17 +549,17 @@
         {
             "role": "GOALKEEPER",
             "player": {
-                "ID_transfermarkt": "150653",
-                "name": "J. Iribar",
-                "score": 0.46728376554503953,
+                "ID_transfermarkt": "262396",
+                "name": "Unai Simón",
+                "score": 0.46803095723090676,
                 "roles": {
                     "GOALKEEPER": {
                         "weight": 1.0,
-                        "score": 0.46728376554503953
+                        "score": 0.46803095723090676
                     },
                     "UTILITY": {
                         "weight": 1.0,
-                        "score": 0.46728376554503953
+                        "score": 0.46803095723090676
                     }
                 }
             },
@@ -553,8 +581,12 @@
                         "weight": 0.5,
                         "score": 0.32744073374058896
                     },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.46307112652933835
+                    },
                     "UTILITY": {
-                        "weight": 1.5,
+                        "weight": 2.5,
                         "score": 0.46307112652933835
                     }
                 }
@@ -569,6 +601,10 @@
                 "name": "D. Carvajal",
                 "score": 0.45035541698922876,
                 "roles": {
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.8,
+                        "score": 0.4028101305692717
+                    },
                     "FULLBACK": {
                         "weight": 1.0,
                         "score": 0.45035541698922876
@@ -578,7 +614,7 @@
                         "score": 0.3767943751279728
                     },
                     "UTILITY": {
-                        "weight": 1.7,
+                        "weight": 2.5,
                         "score": 0.45035541698922876
                     }
                 }
@@ -593,6 +629,10 @@
                 "name": "Á. Arbeloa",
                 "score": 0.43436701981260883,
                 "roles": {
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.8,
+                        "score": 0.3885096733939965
+                    },
                     "FULLBACK": {
                         "weight": 1.0,
                         "score": 0.43436701981260883
@@ -602,7 +642,7 @@
                         "score": 0.36341752232194463
                     },
                     "UTILITY": {
-                        "weight": 1.7,
+                        "weight": 2.5,
                         "score": 0.43436701981260883
                     }
                 }

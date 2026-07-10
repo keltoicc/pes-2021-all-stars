@@ -5,6 +5,7 @@ TACTICAL_ROLES = [
 
     "CENTER_BACK",
     "SWEEPER",
+    "WIDE_CENTER_BACK",
     "FULLBACK",
     "WING_BACK",
 
@@ -25,9 +26,11 @@ GROUP_TO_ROLES = {
     },
 
     "DEFENDER": {
-        "CENTER_BACK": 0.7,
-        "FULLBACK": 0.25,
-        "WING_BACK": 0.05
+        "CENTER_BACK": 0.3,
+        "WIDE_CENTER_BACK": 0.25,
+        "FULLBACK": 0.2,
+        "WING_BACK": 0.15,
+        "SWEEPER": 0.1,
     },
 
     "MIDFIELDER": {
@@ -58,6 +61,13 @@ ROLE_MAP = {
     "SWEEPER": {
         "SW": 1.0,
         "CB": 0.5
+    },
+
+    "WIDE_CENTER_BACK": {
+        "CB": 1.0,
+        "LB": 0.8,
+        "RB": 0.8,
+        "SW": 0.7,
     },
     
     "FULLBACK": {

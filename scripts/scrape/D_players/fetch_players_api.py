@@ -45,7 +45,7 @@ def get_urls(player: dict, team: dict, output_dir: Path):
     profile_path.mkdir(parents=True, exist_ok=True)
     filename = f"{player['ID_transfermarkt']}.json"
 
-    print("Descargando", filename, "(", player['name'], ")")
+    # print("Descargando", filename, "(", player['name'], ")")
     
     url = "https://tmapi-alpha.transfermarkt.technology/players?ids[]=" + str(player['ID_transfermarkt'])
 
@@ -56,7 +56,7 @@ def get_urls(player: dict, team: dict, output_dir: Path):
     
     stats_path = output_dir / "stats"
     stats_path.mkdir(parents=True, exist_ok=True)
-    print("Descargando ", filename, "...")
+    # print("Descargando ", filename, "...")
 
     url = "https://www.transfermarkt.com/ceapi/performance-game/" + str(player['ID_transfermarkt'])
 
@@ -68,7 +68,7 @@ def get_urls(player: dict, team: dict, output_dir: Path):
     achievements_path = output_dir / "achievements"
     achievements_path.mkdir(parents=True, exist_ok=True)
     filename = f"{player['ID_transfermarkt']}.html"
-    print("Descargando ", filename, "...")
+    # print("Descargando ", filename, "...")
     
     url = "https://www.transfermarkt.com/" + player['name_transfermarkt'] + "/erfolge/spieler/" + str(player['ID_transfermarkt'])
 
@@ -105,6 +105,8 @@ def main(yml = "teams"):
         output_dir = Path("data/raw/transfermarkt/players")
         output_dir.mkdir(parents=True, exist_ok=True)
 
+        print(f"Procesando jugadores de {team['name']}")
+
         for player in all_players:
             
             profile_path = output_dir / "profile"
@@ -116,14 +118,16 @@ def main(yml = "teams"):
             achievements_path = output_dir / "achievements"
             achievements_file = achievements_path / f"{player['ID_transfermarkt']}.html"
 
+            team_name = player.get("team")
+
             if not profile_file.exists() or not stats_file.exists() or not achievements_file.exists():
                 
-                # print("Faltan ficheros para", player['name'], "(", player['ID_transfermarkt'], ")")
+                print("Faltan ficheros para", player['name'], "(", player['ID_transfermarkt'], ")")
                 get_urls(player, team, output_dir)
 
-            elif (player['team'] != "Retired") and (player['team'] != "---"):
+            elif team_name not in ("Retired", "---"):
                 
-                # print("El jugador", player['name'], "no se ha retirado. Actualizando datos...")
+                print("El jugador", player['name'], "no se ha retirado. Actualizando datos...")
                 get_urls(player, team, output_dir)
 
 if __name__ == "__main__":
