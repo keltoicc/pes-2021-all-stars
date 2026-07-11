@@ -22,8 +22,8 @@ import process.D_players.parse_players as parse_players
 import build.D_players.build_player_rankings as build_player_rankings
 import build.D_players.obtain_players_per_team as obtain_players_per_team
 
-# YML = "teams"
-YML = "teams_debug"
+YML = "teams"
+#YML = "teams_debug"
 
 def obtain_teams_by_competition():
 
@@ -109,9 +109,9 @@ def main():
 
     # obtain_teams_by_competition()
 
-    # obtain_coaches_by_team()
+    obtain_coaches_by_team()
 
-    # obtain_tactics_by_coach()
+    obtain_tactics_by_coach()
 
     obtain_players_by_team()
 

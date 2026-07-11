@@ -15,6 +15,38 @@
     },
     "matches": [
         {
+            "game_id": "4808359",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3588",
+            "opponent_id": "3556",
+            "position": "CMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4884494",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3588",
+            "opponent_id": "3668",
+            "position": "CMF",
+            "minutes": 85,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
             "game_id": "4850094",
             "season": 2025,
             "competition_type": "Play-Offs",
@@ -8643,14 +8675,14 @@
         {
             "title": "Euro participant",
             "season": "2024",
-            "season_id": 2023,
+            "season_id": 2024,
             "club_name": "Slovenia",
             "club_id": 3588
         },
         {
             "title": "European Under-21 participant",
             "season": "2021",
-            "season_id": 2020,
+            "season_id": 2021,
             "club_name": "Slovenia U21",
             "club_id": 16272
         },
@@ -8658,6 +8690,13 @@
             "title": "Greek cup winner",
             "season": "2024",
             "season_id": 2023,
+            "club_name": "Panathinaikos",
+            "club_id": 265
+        },
+        {
+            "title": "Europa League participant",
+            "season": "25/26",
+            "season_id": 2025,
             "club_name": "Panathinaikos",
             "club_id": 265
         },
@@ -8674,9 +8713,78 @@
             "season_id": 2020,
             "club_name": "HNK Rijeka",
             "club_id": 144
+        },
+        {
+            "title": "Conference League participant",
+            "season": "24/25",
+            "season_id": 2024,
+            "club_name": "Panathinaikos",
+            "club_id": 265
         }
     ],
     "clubs": {
+        "3588": {
+            "seasons": [
+                2018,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
+            "stats": {
+                "matches": 68,
+                "participations": 68,
+                "minutes": 4263,
+                "starts": 47,
+                "captain_matches": 0,
+                "goals": 6,
+                "assists": 4,
+                "goals_conceded": 49,
+                "points": 102,
+                "clean_sheets": 37,
+                "wins": 26,
+                "draws": 24,
+                "losses": 18,
+                "goal_matches": 62,
+                "assist_matches": 64,
+                "goal_contributions": 10
+            },
+            "positions": {
+                "CMF": 41,
+                "AMF": 2,
+                "DMF": 6
+            },
+            "derived": {
+                "season_count": 7,
+                "points_per_match": 1.5,
+                "minutes_per_match": 62.7,
+                "win_rate": 0.3824,
+                "goals_per_90": 0.127,
+                "assists_per_90": 0.084,
+                "contributions_per_90": 0.211,
+                "primary_position": "CMF"
+            },
+            "competitions": {
+                "National Team": {
+                    "matches": 36,
+                    "minutes": 2326,
+                    "goals": 3,
+                    "assists": 1
+                },
+                "National team's qualifiers": {
+                    "matches": 32,
+                    "minutes": 1937,
+                    "goals": 3,
+                    "assists": 3
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "265": {
             "seasons": [
                 2022,
@@ -8749,68 +8857,6 @@
                 "team_titles": {
                     "Greek cup winner": 1
                 },
-                "individual_titles": {}
-            }
-        },
-        "3588": {
-            "seasons": [
-                2018,
-                2020,
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 66,
-                "participations": 66,
-                "minutes": 4088,
-                "starts": 45,
-                "captain_matches": 0,
-                "goals": 6,
-                "assists": 4,
-                "goals_conceded": 46,
-                "points": 101,
-                "clean_sheets": 37,
-                "wins": 26,
-                "draws": 23,
-                "losses": 17,
-                "goal_matches": 60,
-                "assist_matches": 62,
-                "goal_contributions": 10
-            },
-            "positions": {
-                "CMF": 39,
-                "AMF": 2,
-                "DMF": 6
-            },
-            "derived": {
-                "season_count": 7,
-                "points_per_match": 1.53,
-                "minutes_per_match": 61.9,
-                "win_rate": 0.3939,
-                "goals_per_90": 0.132,
-                "assists_per_90": 0.088,
-                "contributions_per_90": 0.22,
-                "primary_position": "CMF"
-            },
-            "competitions": {
-                "National Team": {
-                    "matches": 34,
-                    "minutes": 2151,
-                    "goals": 3,
-                    "assists": 1
-                },
-                "National team's qualifiers": {
-                    "matches": 32,
-                    "minutes": 1937,
-                    "goals": 3,
-                    "assists": 3
-                }
-            },
-            "awards": {
-                "team_titles": {},
                 "individual_titles": {}
             }
         },
@@ -9370,8 +9416,8 @@
             "season_count": 2
         },
         "national": {
-            "matches": 505,
-            "minutes": 27918,
+            "matches": 507,
+            "minutes": 28093,
             "goals": 32,
             "assists": 32,
             "goal_contributions": 64,

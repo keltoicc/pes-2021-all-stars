@@ -15,13 +15,45 @@
     },
     "matches": [
         {
+            "game_id": "4884498",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3503",
+            "opponent_id": "11953",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 1
+        },
+        {
+            "game_id": "4884491",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3503",
+            "opponent_id": "3587",
+            "position": "LW",
+            "minutes": 67,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
             "game_id": "4870848",
             "season": 2025,
             "competition_type": "Play-Offs",
             "club_id": "197",
             "opponent_id": "1897",
-            "position": "LM",
-            "minutes": 77,
+            "position": "LW",
+            "minutes": 76,
             "started": true,
             "captain": true,
             "goals": 0,
@@ -11493,12 +11525,12 @@
             "club_id": "25960",
             "opponent_id": "26099",
             "position": "",
-            "minutes": 90,
+            "minutes": 62,
             "started": true,
             "captain": false,
             "goals": 0,
             "assists": 0,
-            "goals_conceded": 1,
+            "goals_conceded": 0,
             "participation": "played",
             "club_points": 1
         },
@@ -12019,42 +12051,35 @@
         {
             "title": "Euro participant",
             "season": "2024",
-            "season_id": 2023,
+            "season_id": 2024,
             "club_name": "Slovakia",
             "club_id": 3503
         },
         {
             "title": "Euro participant",
             "season": "2021",
-            "season_id": 2020,
+            "season_id": 2021,
             "club_name": "Slovakia",
             "club_id": 3503
         },
         {
             "title": "European Under-21 participant",
             "season": "2017",
-            "season_id": 2016,
+            "season_id": 2017,
             "club_name": "Slovakia U21",
             "club_id": 24965
         },
         {
             "title": "Under-17 World Cup participant",
-            "season": "2014",
-            "season_id": 2013,
-            "club_name": "Slovakia U17",
-            "club_id": 25792
-        },
-        {
-            "title": "Under-17 World Cup participant",
             "season": "2013",
-            "season_id": 2012,
+            "season_id": 2013,
             "club_name": "Slovakia U17",
             "club_id": 25792
         },
         {
             "title": "Euro Under-17 participant",
             "season": "2013",
-            "season_id": 2012,
+            "season_id": 2013,
             "club_name": "Slovakia U17",
             "club_id": 25792
         },
@@ -12094,6 +12119,13 @@
             "club_id": 197
         },
         {
+            "title": "Champions League participant",
+            "season": "24/25",
+            "season_id": 2024,
+            "club_name": "AC Sparta Prague",
+            "club_id": 197
+        },
+        {
             "title": "Europa League participant",
             "season": "23/24",
             "season_id": 2023,
@@ -12109,6 +12141,13 @@
         },
         {
             "title": "Conference League participant",
+            "season": "25/26",
+            "season_id": 2025,
+            "club_name": "AC Sparta Prague",
+            "club_id": 197
+        },
+        {
+            "title": "Conference League participant",
             "season": "21/22",
             "season_id": 2021,
             "club_name": "AC Sparta Prague",
@@ -12116,6 +12155,70 @@
         }
     ],
     "clubs": {
+        "3503": {
+            "seasons": [
+                2018,
+                2019,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
+            "stats": {
+                "matches": 79,
+                "participations": 79,
+                "minutes": 3362,
+                "starts": 39,
+                "captain_matches": 0,
+                "goals": 9,
+                "assists": 10,
+                "goals_conceded": 45,
+                "points": 121,
+                "clean_sheets": 51,
+                "wins": 34,
+                "draws": 19,
+                "losses": 26,
+                "goal_matches": 71,
+                "assist_matches": 71,
+                "goal_contributions": 19
+            },
+            "positions": {
+                "LW": 40,
+                "LM": 1,
+                "RW": 8,
+                "AMF": 1
+            },
+            "derived": {
+                "season_count": 8,
+                "points_per_match": 1.532,
+                "minutes_per_match": 42.6,
+                "win_rate": 0.4304,
+                "goals_per_90": 0.241,
+                "assists_per_90": 0.268,
+                "contributions_per_90": 0.509,
+                "primary_position": "LW"
+            },
+            "competitions": {
+                "National Team": {
+                    "matches": 42,
+                    "minutes": 2076,
+                    "goals": 4,
+                    "assists": 8
+                },
+                "National team's qualifiers": {
+                    "matches": 37,
+                    "minutes": 1286,
+                    "goals": 5,
+                    "assists": 2
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "197": {
             "seasons": [
                 2021,
@@ -12127,7 +12230,7 @@
             "stats": {
                 "matches": 244,
                 "participations": 244,
-                "minutes": 11921,
+                "minutes": 11920,
                 "starts": 146,
                 "captain_matches": 30,
                 "goals": 59,
@@ -12143,8 +12246,7 @@
                 "goal_contributions": 95
             },
             "positions": {
-                "LM": 1,
-                "LW": 157,
+                "LW": 158,
                 "CF": 9,
                 "AMF": 4,
                 "SS": 1,
@@ -12163,7 +12265,7 @@
             "competitions": {
                 "Play-Offs": {
                     "matches": 25,
-                    "minutes": 939,
+                    "minutes": 938,
                     "goals": 5,
                     "assists": 0
                 },
@@ -12191,70 +12293,6 @@
                     "Czech champion": 2,
                     "Czech cup winner": 1
                 },
-                "individual_titles": {}
-            }
-        },
-        "3503": {
-            "seasons": [
-                2018,
-                2019,
-                2020,
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 77,
-                "participations": 77,
-                "minutes": 3295,
-                "starts": 38,
-                "captain_matches": 0,
-                "goals": 8,
-                "assists": 10,
-                "goals_conceded": 44,
-                "points": 117,
-                "clean_sheets": 50,
-                "wins": 33,
-                "draws": 18,
-                "losses": 26,
-                "goal_matches": 70,
-                "assist_matches": 69,
-                "goal_contributions": 18
-            },
-            "positions": {
-                "LW": 39,
-                "LM": 1,
-                "RW": 8,
-                "AMF": 1
-            },
-            "derived": {
-                "season_count": 8,
-                "points_per_match": 1.519,
-                "minutes_per_match": 42.8,
-                "win_rate": 0.4286,
-                "goals_per_90": 0.219,
-                "assists_per_90": 0.273,
-                "contributions_per_90": 0.492,
-                "primary_position": "LW"
-            },
-            "competitions": {
-                "National Team": {
-                    "matches": 40,
-                    "minutes": 2009,
-                    "goals": 3,
-                    "assists": 8
-                },
-                "National team's qualifiers": {
-                    "matches": 37,
-                    "minutes": 1286,
-                    "goals": 5,
-                    "assists": 2
-                }
-            },
-            "awards": {
-                "team_titles": {},
                 "individual_titles": {}
             }
         },
@@ -12565,14 +12603,14 @@
             "stats": {
                 "matches": 17,
                 "participations": 17,
-                "minutes": 307,
+                "minutes": 279,
                 "starts": 3,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 0,
-                "goals_conceded": 8,
+                "goals_conceded": 7,
                 "points": 22,
-                "clean_sheets": 11,
+                "clean_sheets": 12,
                 "wins": 5,
                 "draws": 7,
                 "losses": 5,
@@ -12587,7 +12625,7 @@
             "derived": {
                 "season_count": 2,
                 "points_per_match": 1.294,
-                "minutes_per_match": 18.1,
+                "minutes_per_match": 16.4,
                 "win_rate": 0.2941,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
@@ -12597,7 +12635,7 @@
             "competitions": {
                 "Youth National Team Qualifiers": {
                     "matches": 9,
-                    "minutes": 275,
+                    "minutes": 247,
                     "goals": 0,
                     "assists": 0
                 },
@@ -12831,11 +12869,11 @@
             "season_count": 5
         },
         "national": {
-            "matches": 586,
-            "minutes": 24877,
-            "goals": 94,
+            "matches": 588,
+            "minutes": 24915,
+            "goals": 95,
             "assists": 71,
-            "goal_contributions": 165,
+            "goal_contributions": 166,
             "team_titles": 5,
             "individual_titles": 0,
             "season_count": 15

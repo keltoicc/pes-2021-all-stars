@@ -10,10 +10,26 @@
         "position_2": "LB",
         "position_3": "",
         "former_clubs": "",
-        "market_value": 1200000,
-        "prime_date": "2025-12-11"
+        "market_value": 1500000,
+        "prime_date": "2026-06-02"
     },
     "matches": [
+        {
+            "game_id": "4838711",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3433",
+            "opponent_id": "6303",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
         {
             "game_id": "4850784",
             "season": 2025,
@@ -6883,28 +6899,28 @@
         {
             "title": "World Cup participant",
             "season": "2022",
-            "season_id": 2021,
+            "season_id": 2022,
             "club_name": "Australia",
             "club_id": 3433
         },
         {
             "title": "Olympics participant",
             "season": "20/21",
-            "season_id": 2020,
+            "season_id": 2021,
             "club_name": "Australia Olympic Team",
             "club_id": 53845
         },
         {
             "title": "Asian Cup participant",
             "season": "22/23",
-            "season_id": 2022,
+            "season_id": 2023,
             "club_name": "Australia",
             "club_id": 3433
         },
         {
             "title": "Under-17 World Cup participant",
             "season": "2015",
-            "season_id": 2014,
+            "season_id": 2015,
             "club_name": "Australia U17",
             "club_id": 32269
         },
@@ -6914,9 +6930,75 @@
             "season_id": 2016,
             "club_name": "Brisbane Roar",
             "club_id": 7831
+        },
+        {
+            "title": "Conference League participant",
+            "season": "24/25",
+            "season_id": 2024,
+            "club_name": "Heart of Midlothian FC",
+            "club_id": 43
         }
     ],
     "clubs": {
+        "3433": {
+            "seasons": [
+                2019,
+                2021,
+                2022,
+                2023,
+                2025
+            ],
+            "stats": {
+                "matches": 50,
+                "participations": 50,
+                "minutes": 2363,
+                "starts": 26,
+                "captain_matches": 0,
+                "goals": 1,
+                "assists": 0,
+                "goals_conceded": 23,
+                "points": 97,
+                "clean_sheets": 34,
+                "wins": 30,
+                "draws": 7,
+                "losses": 13,
+                "goal_matches": 49,
+                "assist_matches": 50,
+                "goal_contributions": 1
+            },
+            "positions": {
+                "CB": 20,
+                "LB": 6
+            },
+            "derived": {
+                "season_count": 5,
+                "points_per_match": 1.94,
+                "minutes_per_match": 47.3,
+                "win_rate": 0.6,
+                "goals_per_90": 0.038,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.038,
+                "primary_position": "CB"
+            },
+            "competitions": {
+                "National Team": {
+                    "matches": 28,
+                    "minutes": 1522,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "National team's qualifiers": {
+                    "matches": 22,
+                    "minutes": 841,
+                    "goals": 1,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "2440": {
             "seasons": [
                 2024,
@@ -6964,65 +7046,6 @@
                     "matches": 4,
                     "minutes": 450,
                     "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
-        "3433": {
-            "seasons": [
-                2019,
-                2021,
-                2022,
-                2023,
-                2025
-            ],
-            "stats": {
-                "matches": 49,
-                "participations": 49,
-                "minutes": 2363,
-                "starts": 26,
-                "captain_matches": 0,
-                "goals": 1,
-                "assists": 0,
-                "goals_conceded": 23,
-                "points": 97,
-                "clean_sheets": 33,
-                "wins": 30,
-                "draws": 7,
-                "losses": 12,
-                "goal_matches": 48,
-                "assist_matches": 49,
-                "goal_contributions": 1
-            },
-            "positions": {
-                "CB": 20,
-                "LB": 6
-            },
-            "derived": {
-                "season_count": 5,
-                "points_per_match": 1.98,
-                "minutes_per_match": 48.2,
-                "win_rate": 0.6122,
-                "goals_per_90": 0.038,
-                "assists_per_90": 0.0,
-                "contributions_per_90": 0.038,
-                "primary_position": "CB"
-            },
-            "competitions": {
-                "National Team": {
-                    "matches": 27,
-                    "minutes": 1522,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "National team's qualifiers": {
-                    "matches": 22,
-                    "minutes": 841,
-                    "goals": 1,
                     "assists": 0
                 }
             },
@@ -7433,7 +7456,7 @@
             "season_count": 7
         },
         "national": {
-            "matches": 232,
+            "matches": 233,
             "minutes": 12188,
             "goals": 2,
             "assists": 3,

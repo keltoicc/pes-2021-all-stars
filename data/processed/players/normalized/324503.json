@@ -15,6 +15,38 @@
     },
     "matches": [
         {
+            "game_id": "4862438",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3378",
+            "opponent_id": "3376",
+            "position": "",
+            "minutes": 2,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4884495",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3378",
+            "opponent_id": "3557",
+            "position": "CF",
+            "minutes": 62,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
             "game_id": "4648938",
             "season": 2025,
             "competition_type": "First Tier",
@@ -9873,9 +9905,30 @@
         {
             "title": "Euro Under-17 participant",
             "season": "2015",
-            "season_id": 2014,
+            "season_id": 2015,
             "club_name": "Greece U17",
             "club_id": 26469
+        },
+        {
+            "title": "Champions League participant",
+            "season": "25/26",
+            "season_id": 2025,
+            "club_name": "SL Benfica",
+            "club_id": 294
+        },
+        {
+            "title": "Champions League participant",
+            "season": "24/25",
+            "season_id": 2024,
+            "club_name": "SL Benfica",
+            "club_id": 294
+        },
+        {
+            "title": "FIFA Club World Cup participant",
+            "season": "2025",
+            "season_id": 2024,
+            "club_name": "SL Benfica",
+            "club_id": 294
         },
         {
             "title": "Conference League participant",
@@ -9907,6 +9960,69 @@
         }
     ],
     "clubs": {
+        "3378": {
+            "seasons": [
+                2018,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
+            "stats": {
+                "matches": 70,
+                "participations": 70,
+                "minutes": 3021,
+                "starts": 36,
+                "captain_matches": 4,
+                "goals": 10,
+                "assists": 5,
+                "goals_conceded": 28,
+                "points": 117,
+                "clean_sheets": 49,
+                "wins": 34,
+                "draws": 15,
+                "losses": 21,
+                "goal_matches": 62,
+                "assist_matches": 67,
+                "goal_contributions": 15
+            },
+            "positions": {
+                "CF": 35,
+                "LW": 1
+            },
+            "derived": {
+                "season_count": 7,
+                "points_per_match": 1.671,
+                "minutes_per_match": 43.2,
+                "win_rate": 0.4857,
+                "goals_per_90": 0.298,
+                "assists_per_90": 0.149,
+                "contributions_per_90": 0.447,
+                "primary_position": "CF"
+            },
+            "competitions": {
+                "National Team": {
+                    "matches": 38,
+                    "minutes": 1670,
+                    "goals": 7,
+                    "assists": 3
+                },
+                "National team's qualifiers": {
+                    "matches": 32,
+                    "minutes": 1351,
+                    "goals": 3,
+                    "assists": 2
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {
+                    "Top goal scorer": 1
+                }
+            }
+        },
         "294": {
             "seasons": [
                 2024,
@@ -9981,69 +10097,6 @@
                     "Portuguese Super Cup winner": 1
                 },
                 "individual_titles": {}
-            }
-        },
-        "3378": {
-            "seasons": [
-                2018,
-                2020,
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 68,
-                "participations": 68,
-                "minutes": 2957,
-                "starts": 35,
-                "captain_matches": 3,
-                "goals": 10,
-                "assists": 5,
-                "goals_conceded": 27,
-                "points": 116,
-                "clean_sheets": 48,
-                "wins": 34,
-                "draws": 14,
-                "losses": 20,
-                "goal_matches": 60,
-                "assist_matches": 65,
-                "goal_contributions": 15
-            },
-            "positions": {
-                "CF": 34,
-                "LW": 1
-            },
-            "derived": {
-                "season_count": 7,
-                "points_per_match": 1.706,
-                "minutes_per_match": 43.5,
-                "win_rate": 0.5,
-                "goals_per_90": 0.304,
-                "assists_per_90": 0.152,
-                "contributions_per_90": 0.457,
-                "primary_position": "CF"
-            },
-            "competitions": {
-                "National Team": {
-                    "matches": 36,
-                    "minutes": 1606,
-                    "goals": 7,
-                    "assists": 3
-                },
-                "National team's qualifiers": {
-                    "matches": 32,
-                    "minutes": 1351,
-                    "goals": 3,
-                    "assists": 2
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {
-                    "Top goal scorer": 1
-                }
             }
         },
         "1090": {
@@ -10654,8 +10707,8 @@
             "season_count": 5
         },
         "national": {
-            "matches": 465,
-            "minutes": 30714,
+            "matches": 467,
+            "minutes": 30778,
             "goals": 193,
             "assists": 67,
             "goal_contributions": 260,

@@ -3,7 +3,7 @@
         "short_name": "J. Sheehan",
         "nation_1": "Wales",
         "nation_2": "",
-        "height": 1.84,
+        "height": 1.72,
         "foot": "Right",
         "position_group": "MIDFIELDER",
         "position_1": "CMF",
@@ -15,20 +15,52 @@
     },
     "matches": [
         {
+            "game_id": "4884500",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3864",
+            "opponent_id": "3447",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4838703",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3864",
+            "opponent_id": "3441",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
             "game_id": "4885997",
             "season": 2025,
             "competition_type": "Play-Offs",
             "club_id": "355",
             "opponent_id": "1098",
-            "position": null,
-            "minutes": 0,
-            "started": false,
+            "position": "CMF",
+            "minutes": 90,
+            "started": true,
             "captain": false,
             "goals": 0,
             "assists": 0,
-            "goals_conceded": 0,
-            "participation": "not in squad",
-            "club_points": 0
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
         },
         {
             "game_id": "4876340",
@@ -61,22 +93,6 @@
             "goals_conceded": 0,
             "participation": "played",
             "club_points": 3
-        },
-        {
-            "game_id": "4868656",
-            "season": 2025,
-            "competition_type": "National Team",
-            "club_id": "3864",
-            "opponent_id": "3447",
-            "position": null,
-            "minutes": 0,
-            "started": false,
-            "captain": false,
-            "goals": 0,
-            "assists": 0,
-            "goals_conceded": 0,
-            "participation": "not in squad",
-            "club_points": 0
         },
         {
             "game_id": "4640089",
@@ -11433,6 +11449,66 @@
         }
     ],
     "clubs": {
+        "3864": {
+            "seasons": [
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
+            "stats": {
+                "matches": 65,
+                "participations": 65,
+                "minutes": 1317,
+                "starts": 12,
+                "captain_matches": 1,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 11,
+                "points": 90,
+                "clean_sheets": 58,
+                "wins": 23,
+                "draws": 21,
+                "losses": 21,
+                "goal_matches": 65,
+                "assist_matches": 65,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "DMF": 10,
+                "CMF": 5
+            },
+            "derived": {
+                "season_count": 6,
+                "points_per_match": 1.385,
+                "minutes_per_match": 20.3,
+                "win_rate": 0.3538,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "DMF"
+            },
+            "competitions": {
+                "National Team": {
+                    "matches": 36,
+                    "minutes": 937,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "National team's qualifiers": {
+                    "matches": 29,
+                    "minutes": 380,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "355": {
             "seasons": [
                 2021,
@@ -11444,40 +11520,40 @@
             "stats": {
                 "matches": 288,
                 "participations": 288,
-                "minutes": 13032,
-                "starts": 150,
+                "minutes": 13122,
+                "starts": 151,
                 "captain_matches": 3,
                 "goals": 17,
                 "assists": 28,
-                "goals_conceded": 179,
-                "points": 492,
-                "clean_sheets": 180,
-                "wins": 143,
+                "goals_conceded": 180,
+                "points": 495,
+                "clean_sheets": 179,
+                "wins": 144,
                 "draws": 63,
-                "losses": 82,
+                "losses": 81,
                 "goal_matches": 273,
                 "assist_matches": 262,
                 "goal_contributions": 45
             },
             "positions": {
+                "CMF": 69,
                 "DMF": 75,
-                "CMF": 68,
                 "AMF": 8
             },
             "derived": {
                 "season_count": 5,
-                "points_per_match": 1.708,
-                "minutes_per_match": 45.2,
-                "win_rate": 0.4965,
+                "points_per_match": 1.719,
+                "minutes_per_match": 45.6,
+                "win_rate": 0.5,
                 "goals_per_90": 0.117,
-                "assists_per_90": 0.193,
-                "contributions_per_90": 0.311,
+                "assists_per_90": 0.192,
+                "contributions_per_90": 0.309,
                 "primary_position": "DMF"
             },
             "competitions": {
                 "Play-Offs": {
                     "matches": 8,
-                    "minutes": 501,
+                    "minutes": 591,
                     "goals": 0,
                     "assists": 1
                 },
@@ -11510,66 +11586,6 @@
                 "team_titles": {
                     "Football League Trophy Winner": 1
                 },
-                "individual_titles": {}
-            }
-        },
-        "3864": {
-            "seasons": [
-                2020,
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 64,
-                "participations": 64,
-                "minutes": 1137,
-                "starts": 10,
-                "captain_matches": 1,
-                "goals": 0,
-                "assists": 0,
-                "goals_conceded": 8,
-                "points": 89,
-                "clean_sheets": 59,
-                "wins": 23,
-                "draws": 20,
-                "losses": 21,
-                "goal_matches": 64,
-                "assist_matches": 64,
-                "goal_contributions": 0
-            },
-            "positions": {
-                "DMF": 8,
-                "CMF": 5
-            },
-            "derived": {
-                "season_count": 6,
-                "points_per_match": 1.391,
-                "minutes_per_match": 17.8,
-                "win_rate": 0.3594,
-                "goals_per_90": 0.0,
-                "assists_per_90": 0.0,
-                "contributions_per_90": 0.0,
-                "primary_position": "DMF"
-            },
-            "competitions": {
-                "National Team": {
-                    "matches": 35,
-                    "minutes": 757,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "National team's qualifiers": {
-                    "matches": 29,
-                    "minutes": 380,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
                 "individual_titles": {}
             }
         },
@@ -11949,7 +11965,7 @@
     "career": {
         "club": {
             "matches": 626,
-            "minutes": 29999,
+            "minutes": 30089,
             "goals": 35,
             "assists": 44,
             "goal_contributions": 79,
@@ -11958,8 +11974,8 @@
             "season_count": 14
         },
         "national": {
-            "matches": 87,
-            "minutes": 2932,
+            "matches": 88,
+            "minutes": 3112,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,

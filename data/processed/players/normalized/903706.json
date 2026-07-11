@@ -15,12 +15,44 @@
     },
     "matches": [
         {
+            "game_id": "4890561",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "53982",
+            "opponent_id": "10533",
+            "position": "LW",
+            "minutes": 76,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4890546",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "53982",
+            "opponent_id": "3445",
+            "position": "CF",
+            "minutes": 62,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
             "game_id": "4870848",
             "season": 2025,
             "competition_type": "Play-Offs",
             "club_id": "197",
             "opponent_id": "1897",
-            "position": "SS",
+            "position": "CF",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -4399,6 +4431,20 @@
             "club_id": 28082
         },
         {
+            "title": "Champions League participant",
+            "season": "24/25",
+            "season_id": 2024,
+            "club_name": "AC Sparta Prague",
+            "club_id": 197
+        },
+        {
+            "title": "Conference League participant",
+            "season": "25/26",
+            "season_id": 2025,
+            "club_name": "AC Sparta Prague",
+            "club_id": 197
+        },
+        {
             "title": "Conference League participant",
             "season": "22/23",
             "season_id": 2022,
@@ -4421,6 +4467,68 @@
         }
     ],
     "clubs": {
+        "53982": {
+            "seasons": [
+                2022,
+                2023,
+                2024,
+                2025
+            ],
+            "stats": {
+                "matches": 31,
+                "participations": 31,
+                "minutes": 892,
+                "starts": 9,
+                "captain_matches": 0,
+                "goals": 7,
+                "assists": 2,
+                "goals_conceded": 12,
+                "points": 53,
+                "clean_sheets": 23,
+                "wins": 16,
+                "draws": 5,
+                "losses": 10,
+                "goal_matches": 27,
+                "assist_matches": 29,
+                "goal_contributions": 9
+            },
+            "positions": {
+                "LW": 1,
+                "CF": 10,
+                "RM": 1,
+                "LM": 1
+            },
+            "derived": {
+                "season_count": 4,
+                "points_per_match": 1.71,
+                "minutes_per_match": 28.8,
+                "win_rate": 0.5161,
+                "goals_per_90": 0.706,
+                "assists_per_90": 0.202,
+                "contributions_per_90": 0.908,
+                "primary_position": "CF"
+            },
+            "competitions": {
+                "National Team": {
+                    "matches": 13,
+                    "minutes": 612,
+                    "goals": 7,
+                    "assists": 1
+                },
+                "National team's qualifiers": {
+                    "matches": 18,
+                    "minutes": 280,
+                    "goals": 0,
+                    "assists": 1
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {
+                    "Top goal scorer": 2
+                }
+            }
+        },
         "197": {
             "seasons": [
                 2024,
@@ -4445,9 +4553,8 @@
                 "goal_contributions": 32
             },
             "positions": {
-                "SS": 1,
+                "CF": 59,
                 "RW": 9,
-                "CF": 58,
                 "LW": 16
             },
             "derived": {
@@ -4489,67 +4596,6 @@
             "awards": {
                 "team_titles": {},
                 "individual_titles": {}
-            }
-        },
-        "53982": {
-            "seasons": [
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 29,
-                "participations": 29,
-                "minutes": 754,
-                "starts": 7,
-                "captain_matches": 0,
-                "goals": 6,
-                "assists": 2,
-                "goals_conceded": 10,
-                "points": 50,
-                "clean_sheets": 22,
-                "wins": 15,
-                "draws": 5,
-                "losses": 9,
-                "goal_matches": 26,
-                "assist_matches": 27,
-                "goal_contributions": 8
-            },
-            "positions": {
-                "CF": 9,
-                "RM": 1,
-                "LM": 1
-            },
-            "derived": {
-                "season_count": 4,
-                "points_per_match": 1.724,
-                "minutes_per_match": 26.0,
-                "win_rate": 0.5172,
-                "goals_per_90": 0.716,
-                "assists_per_90": 0.239,
-                "contributions_per_90": 0.955,
-                "primary_position": "CF"
-            },
-            "competitions": {
-                "National team's qualifiers": {
-                    "matches": 18,
-                    "minutes": 280,
-                    "goals": 0,
-                    "assists": 1
-                },
-                "National Team": {
-                    "matches": 11,
-                    "minutes": 474,
-                    "goals": 6,
-                    "assists": 1
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {
-                    "Top goal scorer": 2
-                }
             }
         },
         "455": {
@@ -4838,11 +4884,11 @@
             "season_count": 4
         },
         "national": {
-            "matches": 224,
-            "minutes": 9593,
-            "goals": 66,
+            "matches": 226,
+            "minutes": 9731,
+            "goals": 67,
             "assists": 17,
-            "goal_contributions": 83,
+            "goal_contributions": 84,
             "team_titles": 2,
             "individual_titles": 4,
             "season_count": 5
