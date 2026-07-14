@@ -22,9 +22,9 @@ import process.D_players.parse_players as parse_players
 import build.D_players.build_player_rankings as build_player_rankings
 import build.D_players.obtain_players_per_team as obtain_players_per_team
 
-YML = "teams"
+#YML = "teams"
 #YML = "teams_debug"
-#YML = "teams_to_add"
+YML = "teams_to_add"
 
 def obtain_teams_by_competition():
 
