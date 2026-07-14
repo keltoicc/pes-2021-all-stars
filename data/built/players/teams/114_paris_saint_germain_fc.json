@@ -1,6 +1,6 @@
 {
     "tactic": "4-3-1-2",
-    "total_score": 14.66,
+    "total_score": 14.57,
     "players": [
         {
             "role": "UTILITY",
@@ -226,7 +226,7 @@
                         "score": 0.38565603634419626
                     },
                     "UTILITY": {
-                        "weight": 1.8887468030690537,
+                        "weight": 1.8887468030690535,
                         "score": 0.6915470365786578
                     }
                 }
@@ -271,7 +271,7 @@
             "role_weight": 0.8731
         },
         {
-            "role": "ATTACKING_MID",
+            "role": "SECOND_STRIKER",
             "player": {
                 "ID_transfermarkt": "102705",
                 "name": "Safet Susic",
@@ -523,30 +523,6 @@
             "role_weight": 1.0
         },
         {
-            "role": "STRIKER",
-            "player": {
-                "ID_transfermarkt": "8542",
-                "name": "George Weah",
-                "score": 0.5935658251899074,
-                "roles": {
-                    "SECOND_STRIKER": {
-                        "weight": 0.4,
-                        "score": 0.37540398976749073
-                    },
-                    "STRIKER": {
-                        "weight": 1.0,
-                        "score": 0.5935658251899074
-                    },
-                    "UTILITY": {
-                        "weight": 1.4,
-                        "score": 0.5935658251899074
-                    }
-                }
-            },
-            "score": 0.59,
-            "role_weight": 1.0
-        },
-        {
             "role": "CENTER_BACK",
             "player": {
                 "ID_transfermarkt": "5372",
@@ -657,6 +633,34 @@
             },
             "score": 0.51,
             "role_weight": 0.9326
+        },
+        {
+            "role": "ATTACKING_MID",
+            "player": {
+                "ID_transfermarkt": "117635",
+                "name": "Valdo",
+                "score": 0.5013738874363645,
+                "roles": {
+                    "CENTRAL_MID": {
+                        "weight": 0.7,
+                        "score": 0.4194794899660013
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 1.0,
+                        "score": 0.5013738874363645
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.6,
+                        "score": 0.38836254325286235
+                    },
+                    "UTILITY": {
+                        "weight": 2.3,
+                        "score": 0.5013738874363645
+                    }
+                }
+            },
+            "score": 0.5,
+            "role_weight": 1.0
         }
     ]
 }

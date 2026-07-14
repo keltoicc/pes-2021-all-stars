@@ -24,6 +24,7 @@ import build.D_players.obtain_players_per_team as obtain_players_per_team
 
 YML = "teams"
 #YML = "teams_debug"
+#YML = "teams_to_add"
 
 def obtain_teams_by_competition():
 

@@ -1,9 +1,9 @@
 {
     "tactic": "4-4-2",
-    "total_score": 17.13,
+    "total_score": 17.29,
     "players": [
         {
-            "role": "UTILITY",
+            "role": "WINGER",
             "player": {
                 "ID_transfermarkt": "148455",
                 "name": "M. Salah",
@@ -26,13 +26,13 @@
                         "score": 0.242324920710426
                     },
                     "UTILITY": {
-                        "weight": 1.5847926267281105,
+                        "weight": 1.5847926267281107,
                         "score": 0.8787917559997721
                     }
                 }
             },
-            "score": 0.88,
-            "role_weight": 1.5848
+            "score": 0.84,
+            "role_weight": 0.924
         },
         {
             "role": "CENTRAL_MID",
@@ -42,41 +42,41 @@
                 "score": 0.8782783839462303,
                 "roles": {
                     "CENTRAL_MID": {
-                        "weight": 0.7662,
-                        "score": 0.7687821089747459
+                        "weight": 0.7678714859437751,
+                        "score": 0.7696202115799438
                     },
                     "ATTACKING_MID": {
-                        "weight": 0.4748,
-                        "score": 0.6051841556724527
+                        "weight": 0.4746987951807229,
+                        "score": 0.605119653969399
                     },
                     "SECOND_STRIKER": {
-                        "weight": 0.1596,
-                        "score": 0.3508719395809095
+                        "weight": 0.15903614457831325,
+                        "score": 0.350251588408033
                     },
                     "DEFENSIVE_MID": {
-                        "weight": 0.42919999999999997,
-                        "score": 0.5753896567877554
+                        "weight": 0.43092369477911646,
+                        "score": 0.5765438999874877
                     },
                     "WING_BACK": {
-                        "weight": 0.038400000000000004,
-                        "score": 0.17210671142275816
+                        "weight": 0.03775100401606426,
+                        "score": 0.17064613148193483
                     },
                     "WIDE_MID": {
-                        "weight": 0.096,
-                        "score": 0.27212460434861707
+                        "weight": 0.09437751004016064,
+                        "score": 0.26981522468973923
                     },
                     "WINGER": {
-                        "weight": 0.0672,
-                        "score": 0.22767577869488873
+                        "weight": 0.06606425702811244,
+                        "score": 0.22574361304821478
                     },
                     "UTILITY": {
-                        "weight": 2.0314,
+                        "weight": 2.030722891566265,
                         "score": 0.8782783839462303
                     }
                 }
             },
             "score": 0.77,
-            "role_weight": 0.7662
+            "role_weight": 0.7679
         },
         {
             "role": "STRIKER",
@@ -129,6 +129,38 @@
             },
             "score": 0.83,
             "role_weight": 1.0
+        },
+        {
+            "role": "SECOND_STRIKER",
+            "player": {
+                "ID_transfermarkt": "135269",
+                "name": "K. Dalglish",
+                "score": 0.8287810330124447,
+                "roles": {
+                    "ATTACKING_MID": {
+                        "weight": 0.5712389380530973,
+                        "score": 0.6263956095640749
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.8880530973451327,
+                        "score": 0.7810148116413347
+                    },
+                    "STRIKER": {
+                        "weight": 0.5066371681415929,
+                        "score": 0.5899134895252605
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.07278761061946902,
+                        "score": 0.2235983194406003
+                    },
+                    "UTILITY": {
+                        "weight": 2.038716814159292,
+                        "score": 0.8287810330124447
+                    }
+                }
+            },
+            "score": 0.78,
+            "role_weight": 0.8881
         },
         {
             "role": "CENTER_BACK",
@@ -235,36 +267,52 @@
             "role_weight": 1.0
         },
         {
-            "role": "STRIKER",
+            "role": "UTILITY",
             "player": {
-                "ID_transfermarkt": "85458",
-                "name": "K. Keegan",
-                "score": 0.8000738977712478,
+                "ID_transfermarkt": "87436",
+                "name": "John Barnes",
+                "score": 0.8029546520196775,
                 "roles": {
+                    "ATTACKING_MID": {
+                        "weight": 0.07533632286995516,
+                        "score": 0.22039068154107075
+                    },
                     "SECOND_STRIKER": {
-                        "weight": 0.36834532374100726,
-                        "score": 0.4855765243947579
+                        "weight": 0.053811659192825115,
+                        "score": 0.18626412220695346
                     },
                     "STRIKER": {
-                        "weight": 0.920863309352518,
-                        "score": 0.7677638976978745
+                        "weight": 0.026905829596412557,
+                        "score": 0.1317086239042966
+                    },
+                    "DEFENSIVE_MID": {
+                        "weight": 0.1452914798206278,
+                        "score": 0.30606318415994205
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.14798206278026907,
+                        "score": 0.3088841026326848
+                    },
+                    "WING_BACK": {
+                        "weight": 0.10582959641255606,
+                        "score": 0.26121288062102954
                     },
                     "WIDE_MID": {
-                        "weight": 0.0474820143884892,
-                        "score": 0.17433904775461798
+                        "weight": 0.5605381165919282,
+                        "score": 0.6011648694195615
                     },
                     "WINGER": {
-                        "weight": 0.07913669064748201,
-                        "score": 0.22507074284909834
+                        "weight": 0.6784753363228699,
+                        "score": 0.66139065003326
                     },
                     "UTILITY": {
-                        "weight": 1.4158273381294966,
-                        "score": 0.8000738977712478
+                        "weight": 1.794170403587444,
+                        "score": 0.8029546520196775
                     }
                 }
             },
-            "score": 0.77,
-            "role_weight": 0.9209
+            "score": 0.8,
+            "role_weight": 1.7942
         },
         {
             "role": "CENTRAL_MID",
@@ -314,7 +362,7 @@
                         "score": 0.11029814436118883
                     },
                     "UTILITY": {
-                        "weight": 1.8727078891257998,
+                        "weight": 1.8727078891257996,
                         "score": 0.7962205323084284
                     }
                 }
@@ -493,42 +541,6 @@
             },
             "score": 0.73,
             "role_weight": 1.0
-        },
-        {
-            "role": "WIDE_MID",
-            "player": {
-                "ID_transfermarkt": "176090",
-                "name": "S. Heighway",
-                "score": 0.7270005192307691,
-                "roles": {
-                    "WING_BACK": {
-                        "weight": 0.2829736211031175,
-                        "score": 0.38672985225126616
-                    },
-                    "WIDE_MID": {
-                        "weight": 0.7520383693045563,
-                        "score": 0.6304559104730597
-                    },
-                    "WINGER": {
-                        "weight": 0.5695443645083933,
-                        "score": 0.5486539377544827
-                    },
-                    "SECOND_STRIKER": {
-                        "weight": 0.08729016786570744,
-                        "score": 0.21479164563045147
-                    },
-                    "STRIKER": {
-                        "weight": 0.2182254196642686,
-                        "score": 0.33961541128398987
-                    },
-                    "UTILITY": {
-                        "weight": 1.910071942446043,
-                        "score": 0.7270005192307691
-                    }
-                }
-            },
-            "score": 0.63,
-            "role_weight": 0.752
         },
         {
             "role": "CENTER_BACK",
@@ -722,7 +734,7 @@
                         "score": 0.13200327710406395
                     },
                     "UTILITY": {
-                        "weight": 2.0903100775193804,
+                        "weight": 2.09031007751938,
                         "score": 0.6704934908619749
                     }
                 }

@@ -1,6 +1,6 @@
 {
     "tactic": "4-4-2 double 6",
-    "total_score": 9.66,
+    "total_score": 9.58,
     "players": [
         {
             "role": "UTILITY",
@@ -455,30 +455,6 @@
             "role_weight": 1.0
         },
         {
-            "role": "STRIKER",
-            "player": {
-                "ID_transfermarkt": "79527",
-                "name": "S. Akamine",
-                "score": 0.39061835069444445,
-                "roles": {
-                    "SECOND_STRIKER": {
-                        "weight": 0.4,
-                        "score": 0.24704873681057185
-                    },
-                    "STRIKER": {
-                        "weight": 1.0,
-                        "score": 0.39061835069444445
-                    },
-                    "UTILITY": {
-                        "weight": 1.4,
-                        "score": 0.39061835069444445
-                    }
-                }
-            },
-            "score": 0.39,
-            "role_weight": 1.0
-        },
-        {
             "role": "FULLBACK",
             "player": {
                 "ID_transfermarkt": "50131",
@@ -551,6 +527,42 @@
             "role_weight": 0.56
         },
         {
+            "role": "WINGER",
+            "player": {
+                "ID_transfermarkt": "27749",
+                "name": "Y. Ota",
+                "score": 0.3777389,
+                "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.43448275862068964,
+                        "score": 0.24898775242157273
+                    },
+                    "WINGER": {
+                        "weight": 0.7241379310344828,
+                        "score": 0.32144180617945556
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.19310344827586207,
+                        "score": 0.16599183494771516
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.27586206896551724,
+                        "score": 0.19839819004542178
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.16551724137931034,
+                        "score": 0.15367857719272254
+                    },
+                    "UTILITY": {
+                        "weight": 1.793103448275862,
+                        "score": 0.3777389
+                    }
+                }
+            },
+            "score": 0.32,
+            "role_weight": 0.7241
+        },
+        {
             "role": "GOALKEEPER",
             "player": {
                 "ID_transfermarkt": "121543",
@@ -569,6 +581,42 @@
             },
             "score": 0.37,
             "role_weight": 1.0
+        },
+        {
+            "role": "SECOND_STRIKER",
+            "player": {
+                "ID_transfermarkt": "353567",
+                "name": "T. Nishimura",
+                "score": 0.35678187054328986,
+                "roles": {
+                    "SECOND_STRIKER": {
+                        "weight": 0.5644444444444445,
+                        "score": 0.2680484989271145
+                    },
+                    "STRIKER": {
+                        "weight": 0.7000000000000001,
+                        "score": 0.298505129275626
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.21333333333333335,
+                        "score": 0.1647904872001173
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.07333333333333333,
+                        "score": 0.09661698727905142
+                    },
+                    "WINGER": {
+                        "weight": 0.12222222222222222,
+                        "score": 0.12473199423083331
+                    },
+                    "UTILITY": {
+                        "weight": 1.6733333333333336,
+                        "score": 0.35678187054328986
+                    }
+                }
+            },
+            "score": 0.27,
+            "role_weight": 0.5644
         },
         {
             "role": "DEFENSIVE_MID",
@@ -642,40 +690,12 @@
                         "score": 0.23316035591900885
                     },
                     "UTILITY": {
-                        "weight": 2.0999999999999996,
+                        "weight": 2.1,
                         "score": 0.2786799279569892
                     }
                 }
             },
             "score": 0.28,
-            "role_weight": 1.0
-        },
-        {
-            "role": "WIDE_MID",
-            "player": {
-                "ID_transfermarkt": "733439",
-                "name": "Ryoma Kida",
-                "score": 0.27392273508771925,
-                "roles": {
-                    "WING_BACK": {
-                        "weight": 0.4,
-                        "score": 0.17324394915602315
-                    },
-                    "WIDE_MID": {
-                        "weight": 1.0,
-                        "score": 0.27392273508771925
-                    },
-                    "WINGER": {
-                        "weight": 0.7,
-                        "score": 0.22918020280677773
-                    },
-                    "UTILITY": {
-                        "weight": 2.0999999999999996,
-                        "score": 0.27392273508771925
-                    }
-                }
-            },
-            "score": 0.27,
             "role_weight": 1.0
         }
     ]

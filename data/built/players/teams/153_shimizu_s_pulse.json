@@ -1,6 +1,6 @@
 {
     "tactic": "4-4-2 double 6",
-    "total_score": 11.47,
+    "total_score": 11.61,
     "players": [
         {
             "role": "UTILITY",
@@ -62,7 +62,7 @@
                         "score": 0.5373495014400284
                     },
                     "UTILITY": {
-                        "weight": 2.0999999999999996,
+                        "weight": 2.1,
                         "score": 0.6422554973326948
                     }
                 }
@@ -375,6 +375,38 @@
             "role_weight": 1.0
         },
         {
+            "role": "SECOND_STRIKER",
+            "player": {
+                "ID_transfermarkt": "569870",
+                "name": "F. Oliva",
+                "score": 0.5218857284684154,
+                "roles": {
+                    "CENTRAL_MID": {
+                        "weight": 0.35,
+                        "score": 0.3087517607280208
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.8,
+                        "score": 0.46678878613694963
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.8,
+                        "score": 0.46678878613694963
+                    },
+                    "STRIKER": {
+                        "weight": 0.25,
+                        "score": 0.2609428642342077
+                    },
+                    "UTILITY": {
+                        "weight": 2.2,
+                        "score": 0.5218857284684154
+                    }
+                }
+            },
+            "score": 0.47,
+            "role_weight": 0.8
+        },
+        {
             "role": "CENTER_BACK",
             "player": {
                 "ID_transfermarkt": "77390",
@@ -555,6 +587,42 @@
             "role_weight": 1.0
         },
         {
+            "role": "WINGER",
+            "player": {
+                "ID_transfermarkt": "77379",
+                "name": "J. Fujimoto",
+                "score": 0.4418414778177615,
+                "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.5605263157894737,
+                        "score": 0.33079922712710846
+                    },
+                    "WINGER": {
+                        "weight": 0.9342105263157895,
+                        "score": 0.42705996586719197
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.046052631578947366,
+                        "score": 0.09481863715318521
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.06578947368421052,
+                        "score": 0.11332994782358402
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.039473684210526314,
+                        "score": 0.08778500010945929
+                    },
+                    "UTILITY": {
+                        "weight": 1.6460526315789474,
+                        "score": 0.4418414778177615
+                    }
+                }
+            },
+            "score": 0.43,
+            "role_weight": 0.9342
+        },
+        {
             "role": "CENTER_BACK",
             "player": {
                 "ID_transfermarkt": "79879",
@@ -589,66 +657,6 @@
             },
             "score": 0.42,
             "role_weight": 0.9234
-        },
-        {
-            "role": "STRIKER",
-            "player": {
-                "ID_transfermarkt": "151632",
-                "name": "Baron",
-                "score": 0.42651580543191125,
-                "roles": {
-                    "SECOND_STRIKER": {
-                        "weight": 0.4,
-                        "score": 0.26975228064521123
-                    },
-                    "STRIKER": {
-                        "weight": 1.0,
-                        "score": 0.42651580543191125
-                    },
-                    "UTILITY": {
-                        "weight": 1.4,
-                        "score": 0.42651580543191125
-                    }
-                }
-            },
-            "score": 0.43,
-            "role_weight": 1.0
-        },
-        {
-            "role": "WIDE_MID",
-            "player": {
-                "ID_transfermarkt": "265666",
-                "name": "Carlinhos Junior",
-                "score": 0.42274946883273673,
-                "roles": {
-                    "SECOND_STRIKER": {
-                        "weight": 0.15145631067961166,
-                        "score": 0.16452305203413153
-                    },
-                    "STRIKER": {
-                        "weight": 0.3786407766990291,
-                        "score": 0.260133786015127
-                    },
-                    "WING_BACK": {
-                        "weight": 0.24854368932038834,
-                        "score": 0.21075818064483015
-                    },
-                    "WIDE_MID": {
-                        "weight": 0.6213592233009708,
-                        "score": 0.33323794317543903
-                    },
-                    "WINGER": {
-                        "weight": 0.43495145631067955,
-                        "score": 0.27880686637932356
-                    },
-                    "UTILITY": {
-                        "weight": 1.8349514563106795,
-                        "score": 0.42274946883273673
-                    }
-                }
-            },
-            "score": 0.33,
-            "role_weight": 0.6214
         },
         {
             "role": "FULLBACK",

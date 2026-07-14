@@ -3892,7 +3892,7 @@
             "competition_type": "First Tier",
             "club_id": "5",
             "opponent_id": "416",
-            "position": "GK",
+            "position": "",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -8541,6 +8541,22 @@
             "goals_conceded": 0,
             "participation": "played",
             "club_points": 3
+        },
+        {
+            "game_id": "2938253",
+            "season": 1932,
+            "competition_type": "Second Tier",
+            "club_id": "1390",
+            "opponent_id": "276",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
         },
         {
             "game_id": "2929633",
@@ -17219,7 +17235,7 @@
         {
             "title": "European champion",
             "season": "1968",
-            "season_id": 1968,
+            "season_id": 1967,
             "club_name": "Italy",
             "club_id": 3376
         },
@@ -17233,35 +17249,35 @@
         {
             "title": "World Cup participant",
             "season": "1974",
-            "season_id": 1974,
+            "season_id": 1973,
             "club_name": "Italy",
             "club_id": 3376
         },
         {
             "title": "World Cup participant",
             "season": "1970",
-            "season_id": 1970,
+            "season_id": 1969,
             "club_name": "Italy",
             "club_id": 3376
         },
         {
             "title": "World Cup participant",
             "season": "1966",
-            "season_id": 1966,
+            "season_id": 1965,
             "club_name": "Italy",
             "club_id": 3376
         },
         {
             "title": "World Cup participant",
             "season": "1962",
-            "season_id": 1962,
+            "season_id": 1961,
             "club_name": "Italy",
             "club_id": 3376
         },
         {
             "title": "Euro participant",
             "season": "1968",
-            "season_id": 1968,
+            "season_id": 1967,
             "club_name": "Italy",
             "club_id": 3376
         },
@@ -17303,7 +17319,7 @@
         {
             "title": "World Cup runner-up",
             "season": "1970",
-            "season_id": 1970,
+            "season_id": 1969,
             "club_name": "Italy",
             "club_id": 3376
         },
@@ -17447,7 +17463,7 @@
                 "goal_contributions": 1
             },
             "positions": {
-                "GK": 33
+                "GK": 32
             },
             "derived": {
                 "season_count": 6,
@@ -17559,6 +17575,7 @@
         },
         "1390": {
             "seasons": [
+                1932,
                 1968,
                 1969,
                 1970,
@@ -17567,8 +17584,8 @@
                 1973
             ],
             "stats": {
-                "matches": 239,
-                "participations": 239,
+                "matches": 240,
+                "participations": 240,
                 "minutes": 20243,
                 "starts": 227,
                 "captain_matches": 0,
@@ -17576,22 +17593,22 @@
                 "assists": 0,
                 "goals_conceded": 193,
                 "points": 366,
-                "clean_sheets": 106,
+                "clean_sheets": 107,
                 "wins": 93,
                 "draws": 87,
-                "losses": 59,
-                "goal_matches": 239,
-                "assist_matches": 239,
+                "losses": 60,
+                "goal_matches": 240,
+                "assist_matches": 240,
                 "goal_contributions": 0
             },
             "positions": {
                 "GK": 4
             },
             "derived": {
-                "season_count": 6,
-                "points_per_match": 1.531,
-                "minutes_per_match": 84.7,
-                "win_rate": 0.3891,
+                "season_count": 7,
+                "points_per_match": 1.525,
+                "minutes_per_match": 84.3,
+                "win_rate": 0.3875,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
@@ -17619,6 +17636,12 @@
                 "Further Cup": {
                     "matches": 4,
                     "minutes": 360,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Second Tier": {
+                    "matches": 1,
+                    "minutes": 0,
                     "goals": 0,
                     "assists": 0
                 }
@@ -17717,14 +17740,14 @@
             "season_count": 2
         },
         "national": {
-            "matches": 1008,
+            "matches": 1009,
             "minutes": 65363,
             "goals": 0,
             "assists": 1,
             "goal_contributions": 1,
             "team_titles": 8,
             "individual_titles": 0,
-            "season_count": 23
+            "season_count": 24
         }
     }
 }

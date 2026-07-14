@@ -1,6 +1,6 @@
 {
     "tactic": "4-4-2 double 6",
-    "total_score": 9.14,
+    "total_score": 9.1,
     "players": [
         {
             "role": "UTILITY",
@@ -51,7 +51,7 @@
             "role_weight": 1.6894
         },
         {
-            "role": "WIDE_MID",
+            "role": "WINGER",
             "player": {
                 "ID_transfermarkt": "257110",
                 "name": "T. Kanamori",
@@ -86,13 +86,13 @@
                         "score": 0.3788864751891095
                     },
                     "UTILITY": {
-                        "weight": 1.8659292035398232,
+                        "weight": 1.865929203539823,
                         "score": 0.5348805368967425
                     }
                 }
             },
-            "score": 0.35,
-            "role_weight": 0.4345
+            "score": 0.38,
+            "role_weight": 0.5018
         },
         {
             "role": "DEFENSIVE_MID",
@@ -494,7 +494,7 @@
                         "score": 0.24396428122556674
                     },
                     "UTILITY": {
-                        "weight": 2.2407407407407405,
+                        "weight": 2.240740740740741,
                         "score": 0.41128827179146565
                     }
                 }
@@ -614,7 +614,7 @@
                         "score": 0.11378307782319522
                     },
                     "UTILITY": {
-                        "weight": 1.889855072463768,
+                        "weight": 1.8898550724637682,
                         "score": 0.38585719014626635
                     }
                 }
@@ -647,28 +647,40 @@
             "role_weight": 1.0
         },
         {
-            "role": "STRIKER",
+            "role": "SECOND_STRIKER",
             "player": {
-                "ID_transfermarkt": "349736",
-                "name": "Lukian",
-                "score": 0.3413892737145426,
+                "ID_transfermarkt": "27789",
+                "name": "D. Sakata",
+                "score": 0.3483454757178527,
                 "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.15625,
+                        "score": 0.13769563948541153
+                    },
+                    "WINGER": {
+                        "weight": 0.2604166666666667,
+                        "score": 0.1777643061907931
+                    },
                     "SECOND_STRIKER": {
-                        "weight": 0.4,
-                        "score": 0.21591353473772124
+                        "weight": 0.6270833333333334,
+                        "score": 0.2758498825840418
                     },
                     "STRIKER": {
-                        "weight": 1.0,
-                        "score": 0.3413892737145426
+                        "weight": 0.4635416666666667,
+                        "score": 0.23716716557900544
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.33125,
+                        "score": 0.20048787734570986
                     },
                     "UTILITY": {
-                        "weight": 1.4,
-                        "score": 0.3413892737145426
+                        "weight": 1.8385416666666667,
+                        "score": 0.3483454757178527
                     }
                 }
             },
-            "score": 0.34,
-            "role_weight": 1.0
+            "score": 0.28,
+            "role_weight": 0.6271
         },
         {
             "role": "CENTRAL_MID",

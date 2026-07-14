@@ -1,6 +1,6 @@
 {
     "tactic": "4-4-2 double 6",
-    "total_score": 13.04,
+    "total_score": 13.0,
     "players": [
         {
             "role": "STRIKER",
@@ -27,7 +27,7 @@
             "role_weight": 1.0
         },
         {
-            "role": "UTILITY",
+            "role": "WINGER",
             "player": {
                 "ID_transfermarkt": "68290",
                 "name": "Neymar",
@@ -54,13 +54,13 @@
                         "score": 0.5780612877043224
                     },
                     "UTILITY": {
-                        "weight": 1.6686440677966101,
+                        "weight": 1.6686440677966103,
                         "score": 0.7109967053946601
                     }
                 }
             },
-            "score": 0.71,
-            "role_weight": 1.6686
+            "score": 0.58,
+            "role_weight": 0.661
         },
         {
             "role": "STRIKER",
@@ -111,28 +111,44 @@
             "role_weight": 1.0
         },
         {
-            "role": "STRIKER",
+            "role": "UTILITY",
             "player": {
-                "ID_transfermarkt": "26541",
-                "name": "Bebeto",
-                "score": 0.6561241921948388,
+                "ID_transfermarkt": "3373",
+                "name": "Ronaldinho",
+                "score": 0.6672788059134808,
                 "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.26666666666666666,
+                        "score": 0.34458129367734425
+                    },
+                    "WINGER": {
+                        "weight": 0.4444444444444444,
+                        "score": 0.4448525372756538
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.2679012345679012,
+                        "score": 0.34537801449509786
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.4864197530864197,
+                        "score": 0.46538559069249014
+                    },
                     "SECOND_STRIKER": {
-                        "weight": 0.4,
-                        "score": 0.41496937505475257
+                        "weight": 0.4024691358024691,
+                        "score": 0.4233247120320003
                     },
                     "STRIKER": {
-                        "weight": 1.0,
-                        "score": 0.6561241921948388
+                        "weight": 0.08641975308641975,
+                        "score": 0.19616153062124514
                     },
                     "UTILITY": {
-                        "weight": 1.4,
-                        "score": 0.6561241921948388
+                        "weight": 1.9543209876543208,
+                        "score": 0.6672788059134808
                     }
                 }
             },
-            "score": 0.66,
-            "role_weight": 1.0
+            "score": 0.67,
+            "role_weight": 1.9543
         },
         {
             "role": "FULLBACK",
@@ -142,33 +158,69 @@
                 "score": 0.6278447854686567,
                 "roles": {
                     "WIDE_CENTER_BACK": {
-                        "weight": 0.7137254901960786,
-                        "score": 0.5304175624237037
+                        "weight": 0.712871287128713,
+                        "score": 0.5301000594329565
                     },
                     "FULLBACK": {
-                        "weight": 0.8921568627450981,
-                        "score": 0.5930248630195698
+                        "weight": 0.8910891089108911,
+                        "score": 0.5926698838843846
                     },
                     "WING_BACK": {
-                        "weight": 0.6676470588235294,
-                        "score": 0.513009918328961
+                        "weight": 0.6673267326732674,
+                        "score": 0.5128868366756282
                     },
                     "WIDE_MID": {
-                        "weight": 0.10784313725490197,
-                        "score": 0.20618095566953829
+                        "weight": 0.10891089108910891,
+                        "score": 0.2071991394206396
                     },
                     "WINGER": {
-                        "weight": 0.07549019607843137,
-                        "score": 0.17250336384129697
+                        "weight": 0.07623762376237624,
+                        "score": 0.17335523748550996
                     },
                     "UTILITY": {
-                        "weight": 2.4568627450980394,
+                        "weight": 2.4564356435643564,
                         "score": 0.6278447854686567
                     }
                 }
             },
             "score": 0.59,
-            "role_weight": 0.8922
+            "role_weight": 0.8911
+        },
+        {
+            "role": "SECOND_STRIKER",
+            "player": {
+                "ID_transfermarkt": "15511",
+                "name": "Robinho",
+                "score": 0.6262980987870844,
+                "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.15789473684210525,
+                        "score": 0.24886562910354376
+                    },
+                    "WINGER": {
+                        "weight": 0.2631578947368421,
+                        "score": 0.3212841456538189
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.4421052631578947,
+                        "score": 0.41643184769838065
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.7368421052631579,
+                        "score": 0.5376112036554039
+                    },
+                    "STRIKER": {
+                        "weight": 0.3684210526315789,
+                        "score": 0.38014852774659813
+                    },
+                    "UTILITY": {
+                        "weight": 1.9684210526315788,
+                        "score": 0.6262980987870844
+                    }
+                }
+            },
+            "score": 0.54,
+            "role_weight": 0.7368
         },
         {
             "role": "FULLBACK",
@@ -198,7 +250,7 @@
                         "score": 0.1557570503943203
                     },
                     "UTILITY": {
-                        "weight": 2.4636363636363634,
+                        "weight": 2.463636363636364,
                         "score": 0.6174403918284943
                     }
                 }
@@ -314,33 +366,13 @@
                         "score": 0.1633677474566255
                     },
                     "UTILITY": {
-                        "weight": 2.4555555555555557,
+                        "weight": 2.4555555555555553,
                         "score": 0.5857854168080248
                     }
                 }
             },
             "score": 0.55,
             "role_weight": 0.8889
-        },
-        {
-            "role": "GOALKEEPER",
-            "player": {
-                "ID_transfermarkt": "5800",
-                "name": "Dida",
-                "score": 0.5753258042929765,
-                "roles": {
-                    "GOALKEEPER": {
-                        "weight": 1.0,
-                        "score": 0.5753258042929765
-                    },
-                    "UTILITY": {
-                        "weight": 1.0,
-                        "score": 0.5753258042929765
-                    }
-                }
-            },
-            "score": 0.58,
-            "role_weight": 1.0
         },
         {
             "role": "CENTER_BACK",
@@ -374,7 +406,7 @@
             "role": "WIDE_MID",
             "player": {
                 "ID_transfermarkt": "151263",
-                "name": "M. Garrincha",
+                "name": "Mané Garrincha",
                 "score": 0.5524265463593783,
                 "roles": {
                     "WIDE_MID": {
@@ -519,6 +551,26 @@
             "role_weight": 1.0
         },
         {
+            "role": "GOALKEEPER",
+            "player": {
+                "ID_transfermarkt": "105470",
+                "name": "Alisson",
+                "score": 0.5234422662396615,
+                "roles": {
+                    "GOALKEEPER": {
+                        "weight": 1.0,
+                        "score": 0.5234422662396615
+                    },
+                    "UTILITY": {
+                        "weight": 1.0,
+                        "score": 0.5234422662396615
+                    }
+                }
+            },
+            "score": 0.52,
+            "role_weight": 1.0
+        },
+        {
             "role": "CENTER_BACK",
             "player": {
                 "ID_transfermarkt": "1599",
@@ -545,30 +597,6 @@
             },
             "score": 0.52,
             "role_weight": 1.0
-        },
-        {
-            "role": "WIDE_MID",
-            "player": {
-                "ID_transfermarkt": "52769",
-                "name": "Willian",
-                "score": 0.5218541885677922,
-                "roles": {
-                    "WIDE_MID": {
-                        "weight": 0.6,
-                        "score": 0.4042265162943288
-                    },
-                    "WINGER": {
-                        "weight": 1.0,
-                        "score": 0.5218541885677922
-                    },
-                    "UTILITY": {
-                        "weight": 1.6,
-                        "score": 0.5218541885677922
-                    }
-                }
-            },
-            "score": 0.4,
-            "role_weight": 0.6
         },
         {
             "role": "DEFENSIVE_MID",
@@ -614,7 +642,7 @@
                         "score": 0.3816850401183793
                     },
                     "UTILITY": {
-                        "weight": 2.0999999999999996,
+                        "weight": 2.1,
                         "score": 0.4562008797044327
                     }
                 }

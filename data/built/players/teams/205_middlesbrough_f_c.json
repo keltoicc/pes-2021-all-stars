@@ -1,6 +1,6 @@
 {
     "tactic": "5-3-2",
-    "total_score": 11.01,
+    "total_score": 11.13,
     "players": [
         {
             "role": "UTILITY",
@@ -10,16 +10,16 @@
                 "score": 0.6288656640006371,
                 "roles": {
                     "WING_BACK": {
-                        "weight": 0.3146666666666667,
-                        "score": 0.35276318309921006
+                        "weight": 0.316,
+                        "score": 0.3535097726816503
                     },
                     "WIDE_MID": {
-                        "weight": 0.8246666666666667,
-                        "score": 0.5710802003776331
+                        "weight": 0.8260000000000001,
+                        "score": 0.5715416794027386
                     },
                     "WINGER": {
-                        "weight": 0.614,
-                        "score": 0.4927675134811576
+                        "weight": 0.613,
+                        "score": 0.4923660734850076
                     },
                     "CENTRAL_MID": {
                         "weight": 0.105,
@@ -34,13 +34,13 @@
                         "score": 0.18865969920019113
                     },
                     "UTILITY": {
-                        "weight": 2.098333333333333,
+                        "weight": 2.1,
                         "score": 0.6288656640006371
                     }
                 }
             },
             "score": 0.63,
-            "role_weight": 2.0983
+            "role_weight": 2.1
         },
         {
             "role": "GOALKEEPER",
@@ -146,13 +146,41 @@
                         "score": 0.2926499616481183
                     },
                     "UTILITY": {
-                        "weight": 2.4999999999999996,
+                        "weight": 2.5,
                         "score": 0.5343032848256538
                     }
                 }
             },
             "score": 0.51,
             "role_weight": 0.9143
+        },
+        {
+            "role": "SECOND_STRIKER",
+            "player": {
+                "ID_transfermarkt": "241876",
+                "name": "W. Mannion",
+                "score": 0.5254670799595141,
+                "roles": {
+                    "ATTACKING_MID": {
+                        "weight": 0.6,
+                        "score": 0.4070250499326879
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 1.0,
+                        "score": 0.5254670799595141
+                    },
+                    "STRIKER": {
+                        "weight": 0.5,
+                        "score": 0.37156133552966625
+                    },
+                    "UTILITY": {
+                        "weight": 2.1,
+                        "score": 0.5254670799595141
+                    }
+                }
+            },
+            "score": 0.53,
+            "role_weight": 1.0
         },
         {
             "role": "CENTRAL_MID",
@@ -198,25 +226,25 @@
                 "score": 0.5213410926334615,
                 "roles": {
                     "DEFENSIVE_MID": {
-                        "weight": 0.9504424778761063,
-                        "score": 0.5082587648809614
+                        "weight": 0.9469026548672567,
+                        "score": 0.5073114038245821
                     },
                     "CENTRAL_MID": {
-                        "weight": 0.5619469026548672,
-                        "score": 0.3908135372802989
+                        "weight": 0.5663716814159292,
+                        "score": 0.39234915630896267
                     },
                     "ATTACKING_MID": {
-                        "weight": 0.049557522123893805,
-                        "score": 0.11605844557778226
+                        "weight": 0.05309734513274337,
+                        "score": 0.12013190424605474
                     },
                     "UTILITY": {
-                        "weight": 1.5619469026548674,
+                        "weight": 1.5663716814159292,
                         "score": 0.5213410926334615
                     }
                 }
             },
             "score": 0.51,
-            "role_weight": 0.9504
+            "role_weight": 0.9469
         },
         {
             "role": "STRIKER",
@@ -282,7 +310,7 @@
                         "score": 0.08567527906384163
                     },
                     "UTILITY": {
-                        "weight": 2.4837837837837835,
+                        "weight": 2.483783783783784,
                         "score": 0.5085828839869281
                     }
                 }
@@ -619,23 +647,23 @@
             "player": {
                 "ID_transfermarkt": "3247",
                 "name": "Ugo Ehiogu",
-                "score": 0.44312759658275963,
+                "score": 0.4428235409330856,
                 "roles": {
                     "CENTER_BACK": {
                         "weight": 1.0,
-                        "score": 0.44312759658275963
+                        "score": 0.4428235409330856
                     },
                     "SWEEPER": {
                         "weight": 0.5,
-                        "score": 0.3133385284745661
+                        "score": 0.31312352866282356
                     },
                     "WIDE_CENTER_BACK": {
                         "weight": 1.0,
-                        "score": 0.44312759658275963
+                        "score": 0.4428235409330856
                     },
                     "UTILITY": {
                         "weight": 2.5,
-                        "score": 0.44312759658275963
+                        "score": 0.4428235409330856
                     }
                 }
             },
@@ -664,30 +692,6 @@
                 }
             },
             "score": 0.43,
-            "role_weight": 1.0
-        },
-        {
-            "role": "STRIKER",
-            "player": {
-                "ID_transfermarkt": "3650",
-                "name": "J. Job",
-                "score": 0.41111571415688064,
-                "roles": {
-                    "SECOND_STRIKER": {
-                        "weight": 0.4,
-                        "score": 0.2600124077244946
-                    },
-                    "STRIKER": {
-                        "weight": 1.0,
-                        "score": 0.41111571415688064
-                    },
-                    "UTILITY": {
-                        "weight": 1.4,
-                        "score": 0.41111571415688064
-                    }
-                }
-            },
-            "score": 0.41,
             "role_weight": 1.0
         }
     ]

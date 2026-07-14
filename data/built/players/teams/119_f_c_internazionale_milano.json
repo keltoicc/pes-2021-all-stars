@@ -1,37 +1,37 @@
 {
     "tactic": "4-3-3 Attacking",
-    "total_score": 16.26,
+    "total_score": 15.93,
     "players": [
         {
-            "role": "STRIKER",
+            "role": "UTILITY",
             "player": {
                 "ID_transfermarkt": "406625",
                 "name": "L. Martínez",
-                "score": 0.8799358076295258,
+                "score": 0.8662585714056352,
                 "roles": {
                     "SECOND_STRIKER": {
                         "weight": 0.5049180327868853,
-                        "score": 0.62526113085048
+                        "score": 0.6155424171510148
                     },
                     "STRIKER": {
                         "weight": 0.912568306010929,
-                        "score": 0.840588959760447
+                        "score": 0.827523309209403
                     },
                     "ATTACKING_MID": {
                         "weight": 0.10491803278688525,
-                        "score": 0.2850204756381032
+                        "score": 0.2805902747755543
                     },
                     "UTILITY": {
                         "weight": 1.5224043715846995,
-                        "score": 0.8799358076295258
+                        "score": 0.8662585714056352
                     }
                 }
             },
-            "score": 0.84,
-            "role_weight": 0.9126
+            "score": 0.87,
+            "role_weight": 1.5224
         },
         {
-            "role": "UTILITY",
+            "role": "SECOND_STRIKER",
             "player": {
                 "ID_transfermarkt": "183779",
                 "name": "G. Meazza",
@@ -55,55 +55,71 @@
                     }
                 }
             },
-            "score": 0.84,
-            "role_weight": 1.75
+            "score": 0.7,
+            "role_weight": 0.7
         },
         {
-            "role": "SECOND_STRIKER",
+            "role": "ATTACKING_MID",
             "player": {
                 "ID_transfermarkt": "145344",
                 "name": "S. Mazzola",
                 "score": 0.8112452160347317,
                 "roles": {
                     "ATTACKING_MID": {
-                        "weight": 0.6,
-                        "score": 0.6283878422785908
+                        "weight": 0.5333333333333333,
+                        "score": 0.5924497393204989
                     },
                     "SECOND_STRIKER": {
-                        "weight": 1.0,
-                        "score": 0.8112452160347317
+                        "weight": 0.5333333333333333,
+                        "score": 0.5924497393204989
                     },
                     "STRIKER": {
-                        "weight": 0.5,
-                        "score": 0.5736369934633045
+                        "weight": 0.16666666666666666,
+                        "score": 0.33118947259316645
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.2333333333333333,
+                        "score": 0.3918686686367712
+                    },
+                    "WING_BACK": {
+                        "weight": 0.13333333333333333,
+                        "score": 0.29622486966024947
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.3333333333333333,
+                        "score": 0.4683726438564484
+                    },
+                    "WINGER": {
+                        "weight": 0.2333333333333333,
+                        "score": 0.3918686686367712
                     },
                     "UTILITY": {
-                        "weight": 2.1,
+                        "weight": 2.1666666666666665,
                         "score": 0.8112452160347317
                     }
                 }
             },
-            "score": 0.81,
-            "role_weight": 1.0
+            "score": 0.59,
+            "role_weight": 0.5333
         },
         {
             "role": "STRIKER",
             "player": {
                 "ID_transfermarkt": "116678",
                 "name": "A. Altobelli",
-                "score": 0.808981701331607,
+                "score": 0.8087129513316069,
                 "roles": {
                     "SECOND_STRIKER": {
                         "weight": 0.4,
-                        "score": 0.5116449523211898
+                        "score": 0.5114749798969557
                     },
                     "STRIKER": {
                         "weight": 1.0,
-                        "score": 0.808981701331607
+                        "score": 0.8087129513316069
                     },
                     "UTILITY": {
                         "weight": 1.4,
-                        "score": 0.808981701331607
+                        "score": 0.8087129513316069
                     }
                 }
             },
@@ -146,7 +162,7 @@
                         "score": 0.3305702274290762
                     },
                     "UTILITY": {
-                        "weight": 2.04982206405694,
+                        "weight": 2.0498220640569396,
                         "score": 0.7699313732237699
                     }
                 }
@@ -223,6 +239,30 @@
             "role_weight": 1.0
         },
         {
+            "role": "STRIKER",
+            "player": {
+                "ID_transfermarkt": "145375",
+                "name": "R. Boninsegna",
+                "score": 0.7478877499181692,
+                "roles": {
+                    "SECOND_STRIKER": {
+                        "weight": 0.4,
+                        "score": 0.4730057447759644
+                    },
+                    "STRIKER": {
+                        "weight": 1.0,
+                        "score": 0.7478877499181692
+                    },
+                    "UTILITY": {
+                        "weight": 1.4,
+                        "score": 0.7478877499181692
+                    }
+                }
+            },
+            "score": 0.75,
+            "role_weight": 1.0
+        },
+        {
             "role": "DEFENSIVE_MID",
             "player": {
                 "ID_transfermarkt": "7520",
@@ -261,34 +301,6 @@
             },
             "score": 0.69,
             "role_weight": 0.8922
-        },
-        {
-            "role": "FULLBACK",
-            "player": {
-                "ID_transfermarkt": "145342",
-                "name": "T. Burgnich",
-                "score": 0.7299869591257209,
-                "roles": {
-                    "WIDE_CENTER_BACK": {
-                        "weight": 0.8,
-                        "score": 0.6529201853173889
-                    },
-                    "FULLBACK": {
-                        "weight": 1.0,
-                        "score": 0.7299869591257209
-                    },
-                    "WING_BACK": {
-                        "weight": 0.7,
-                        "score": 0.6107509085916547
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.7299869591257209
-                    }
-                }
-            },
-            "score": 0.73,
-            "role_weight": 1.0
         },
         {
             "role": "FULLBACK",
@@ -370,7 +382,7 @@
                         "score": 0.3229203317780298
                     },
                     "UTILITY": {
-                        "weight": 1.8499999999999999,
+                        "weight": 1.85,
                         "score": 0.7220718131724602
                     }
                 }
@@ -619,31 +631,31 @@
             "role_weight": 1.0
         },
         {
-            "role": "ATTACKING_MID",
+            "role": "FULLBACK",
             "player": {
-                "ID_transfermarkt": "228107",
-                "name": "E. Beccalossi",
-                "score": 0.561758561473024,
+                "ID_transfermarkt": "237855",
+                "name": "L. Allemandi",
+                "score": 0.5452793659131242,
                 "roles": {
-                    "CENTRAL_MID": {
-                        "weight": 0.7,
-                        "score": 0.4700009329477644
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.8,
+                        "score": 0.48771269156389097
                     },
-                    "ATTACKING_MID": {
+                    "FULLBACK": {
                         "weight": 1.0,
-                        "score": 0.561758561473024
+                        "score": 0.5452793659131242
                     },
-                    "SECOND_STRIKER": {
-                        "weight": 0.6,
-                        "score": 0.43513631063489155
+                    "WING_BACK": {
+                        "weight": 0.7,
+                        "score": 0.4562134487533584
                     },
                     "UTILITY": {
-                        "weight": 2.3,
-                        "score": 0.561758561473024
+                        "weight": 2.5,
+                        "score": 0.5452793659131242
                     }
                 }
             },
-            "score": 0.56,
+            "score": 0.55,
             "role_weight": 1.0
         }
     ]

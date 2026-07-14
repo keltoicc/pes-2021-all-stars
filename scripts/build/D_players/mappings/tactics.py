@@ -7,9 +7,11 @@ TACTICS = {
         "FULLBACK": 4,
 
         "CENTRAL_MID": 4,
-        "WIDE_MID": 4,
+        "WIDE_MID": 3,
+        "WINGER": 1,
 
-        "STRIKER": 4,
+        "SECOND_STRIKER": 1,
+        "STRIKER": 3,
 
         "UTILITY": 1
     },
@@ -20,9 +22,11 @@ TACTICS = {
         "FULLBACK": 4,
 
         "CENTRAL_MID": 4,
-        "WIDE_MID": 4,
+        "WIDE_MID": 3,
+        "WINGER": 1,
 
-        "STRIKER": 4,
+        "SECOND_STRIKER": 1,
+        "STRIKER": 3,
 
         "UTILITY": 1
     },
@@ -51,9 +55,11 @@ TACTICS = {
         "FULLBACK": 4,
 
         "CENTRAL_MID": 4,
-        "WIDE_MID": 4,
+        "WIDE_MID": 3,
+        "WINGER": 1,
 
-        "STRIKER": 4,
+        "SECOND_STRIKER": 1,
+        "STRIKER": 3,
 
         "UTILITY": 1
     },
@@ -150,9 +156,11 @@ TACTICS = {
 
         "DEFENSIVE_MID": 3,
         "CENTRAL_MID": 1,
-        "WIDE_MID": 4,
+        "WIDE_MID": 3,
+        "WINGER": 1,
 
-        "STRIKER": 4,
+        "SECOND_STRIKER": 1,
+        "STRIKER": 3,
 
         "UTILITY": 1
     },
@@ -168,7 +176,8 @@ TACTICS = {
         "CENTRAL_MID": 3,
         "ATTACKING_MID": 2,
 
-        "STRIKER": 4,
+        "SECOND_STRIKER": 1,
+        "STRIKER": 3,
 
         "UTILITY": 1
     },
@@ -201,7 +210,8 @@ TACTICS = {
 
         "ATTACKING_MID": 2,
 
-        "STRIKER": 4,
+        "SECOND_STRIKER": 1,
+        "STRIKER": 3,
 
         "UTILITY": 1
     },
@@ -218,7 +228,8 @@ TACTICS = {
 
         "ATTACKING_MID": 2,
 
-        "STRIKER": 4,
+        "SECOND_STRIKER": 1,
+        "STRIKER": 3,
 
         "UTILITY": 1
     },
@@ -249,7 +260,8 @@ TACTICS = {
         "CENTRAL_MID": 4,
         "ATTACKING_MID": 2,
 
-        "STRIKER": 4,
+        "SECOND_STRIKER": 1,
+        "STRIKER": 3,
 
         "UTILITY": 1
     },
@@ -264,7 +276,8 @@ TACTICS = {
         "CENTRAL_MID": 4,
         "ATTACKING_MID": 2,
 
-        "STRIKER": 4,
+        "SECOND_STRIKER": 1,
+        "STRIKER": 3,
 
         "UTILITY": 1
     },
@@ -297,7 +310,8 @@ TACTICS = {
         "DEFENSIVE_MID": 2,
         "CENTRAL_MID": 4,
 
-        "STRIKER": 4,
+        "SECOND_STRIKER": 1,
+        "STRIKER": 3,
 
         "UTILITY": 1
     },
@@ -329,7 +343,8 @@ TACTICS = {
         "CENTRAL_MID": 3,
         "ATTACKING_MID": 1,
 
-        "STRIKER": 4,
+        "SECOND_STRIKER": 1,
+        "STRIKER": 3,
 
         "UTILITY": 1
     },
@@ -343,7 +358,8 @@ TACTICS = {
 
         "DEFENSIVE_MID": 2,
         "CENTRAL_MID": 2,
-        "WIDE_MID": 4,
+        "WIDE_MID": 3,
+        "WINGER": 1,
 
         "STRIKER": 2,
 
@@ -372,12 +388,14 @@ TACTICS = {
         "CENTER_BACK": 2,
         "WIDE_CENTER_BACK": 4,
 
-        "WIDE_MID": 4,
         "DEFENSIVE_MID": 1,
         "CENTRAL_MID": 3,
         "ATTACKING_MID": 2,
+        "WIDE_MID": 3,
+        "WINGER": 1,
 
-        "STRIKER": 4,
+        "SECOND_STRIKER": 1,
+        "STRIKER": 3,
 
         "UTILITY": 1
     },
@@ -388,12 +406,14 @@ TACTICS = {
         "CENTER_BACK": 2,
         "WIDE_CENTER_BACK": 4,
 
-        "WIDE_MID": 4,
         "DEFENSIVE_MID": 2,
         "CENTRAL_MID": 3,
         "ATTACKING_MID": 1,
+        "WIDE_MID": 3,
+        "WINGER": 1,
 
-        "STRIKER": 4,
+        "SECOND_STRIKER": 1,
+        "STRIKER": 3,
 
         "UTILITY": 1
     },
@@ -423,11 +443,13 @@ TACTICS = {
 
         "DEFENSIVE_MID": 2,
 
-        "WIDE_MID": 4,
         "CENTRAL_MID": 2,
         "ATTACKING_MID": 2,
+        "WIDE_MID": 3,
+        "WINGER": 1,
 
-        "STRIKER": 4,
+        "SECOND_STRIKER": 1,
+        "STRIKER": 3,
 
         "UTILITY": 1
     },

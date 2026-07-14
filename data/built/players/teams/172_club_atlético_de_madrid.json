@@ -1,6 +1,6 @@
 {
     "tactic": "4-4-2 double 6",
-    "total_score": 15.04,
+    "total_score": 15.16,
     "players": [
         {
             "role": "UTILITY",
@@ -219,7 +219,7 @@
             "role_weight": 1.0
         },
         {
-            "role": "STRIKER",
+            "role": "SECOND_STRIKER",
             "player": {
                 "ID_transfermarkt": "313825",
                 "name": "A. Escudero",
@@ -243,8 +243,36 @@
                     }
                 }
             },
-            "score": 0.69,
-            "role_weight": 1.0
+            "score": 0.65,
+            "role_weight": 0.9
+        },
+        {
+            "role": "WINGER",
+            "player": {
+                "ID_transfermarkt": "238662",
+                "name": "E. Collar",
+                "score": 0.6895734564634965,
+                "roles": {
+                    "STRIKER": {
+                        "weight": 1.0,
+                        "score": 0.6895734564634965
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.9,
+                        "score": 0.6541868209258823
+                    },
+                    "WINGER": {
+                        "weight": 0.8,
+                        "score": 0.6167732496527479
+                    },
+                    "UTILITY": {
+                        "weight": 2.7,
+                        "score": 0.6895734564634965
+                    }
+                }
+            },
+            "score": 0.62,
+            "role_weight": 0.8
         },
         {
             "role": "FULLBACK",
@@ -385,46 +413,6 @@
             },
             "score": 0.66,
             "role_weight": 1.0
-        },
-        {
-            "role": "WIDE_MID",
-            "player": {
-                "ID_transfermarkt": "155503",
-                "name": "J. Irureta",
-                "score": 0.6439475443404087,
-                "roles": {
-                    "CENTRAL_MID": {
-                        "weight": 0.2333333333333333,
-                        "score": 0.3110562156606797
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.3333333333333333,
-                        "score": 0.3717832880689334
-                    },
-                    "SECOND_STRIKER": {
-                        "weight": 0.19999999999999998,
-                        "score": 0.28798209661784274
-                    },
-                    "WING_BACK": {
-                        "weight": 0.13333333333333333,
-                        "score": 0.23513639725686666
-                    },
-                    "WIDE_MID": {
-                        "weight": 0.5333333333333333,
-                        "score": 0.4702727945137333
-                    },
-                    "WINGER": {
-                        "weight": 0.5666666666666667,
-                        "score": 0.484746101158628
-                    },
-                    "UTILITY": {
-                        "weight": 1.9999999999999998,
-                        "score": 0.6439475443404087
-                    }
-                }
-            },
-            "score": 0.47,
-            "role_weight": 0.5333
         },
         {
             "role": "CENTER_BACK",
@@ -601,38 +589,30 @@
         {
             "role": "WIDE_MID",
             "player": {
-                "ID_transfermarkt": "7370",
-                "name": "J. Aguilera",
-                "score": 0.604560265689446,
+                "ID_transfermarkt": "8019",
+                "name": "Simão",
+                "score": 0.5849620321277427,
                 "roles": {
-                    "WING_BACK": {
-                        "weight": 0.4745614035087719,
-                        "score": 0.4164719985260029
-                    },
                     "WIDE_MID": {
-                        "weight": 0.5842105263157894,
-                        "score": 0.4620875728599549
+                        "weight": 0.6565656565656565,
+                        "score": 0.4739873590461216
                     },
                     "WINGER": {
-                        "weight": 0.4649122807017544,
-                        "score": 0.41221625102114934
+                        "weight": 0.9575757575757575,
+                        "score": 0.5724192757003722
                     },
-                    "WIDE_CENTER_BACK": {
-                        "weight": 0.30175438596491233,
-                        "score": 0.33209810364727144
-                    },
-                    "FULLBACK": {
-                        "weight": 0.37719298245614036,
-                        "score": 0.3712969674770349
+                    "WING_BACK": {
+                        "weight": 0.05656565656565657,
+                        "score": 0.13912465316005673
                     },
                     "UTILITY": {
-                        "weight": 2.2026315789473685,
-                        "score": 0.604560265689446
+                        "weight": 1.6707070707070706,
+                        "score": 0.5849620321277427
                     }
                 }
             },
-            "score": 0.46,
-            "role_weight": 0.5842
+            "score": 0.47,
+            "role_weight": 0.6566
         },
         {
             "role": "WIDE_MID",
@@ -654,7 +634,7 @@
                         "score": 0.452081034927193
                     },
                     "UTILITY": {
-                        "weight": 2.0999999999999996,
+                        "weight": 2.1,
                         "score": 0.5403401866824823
                     }
                 }
