@@ -254,7 +254,7 @@ def export_solution(solution, tactic):
     }
 
 #def main(yml = "teams"):
-def main(yml = "teams_debug"):
+def main(yml = "teams_to_add"):
 
     teams = yaml.safe_load(
         Path(f"config/{yml}.yml").read_text(encoding="utf-8")
