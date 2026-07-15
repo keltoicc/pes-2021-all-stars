@@ -1,0 +1,702 @@
+{
+    "tactic": "4-4-2 Sweeper",
+    "total_score": 11.42,
+    "players": [
+        {
+            "role": "UTILITY",
+            "player": {
+                "ID_transfermarkt": "145348",
+                "name": "Luigi Riva",
+                "score": 0.740307779092315,
+                "roles": {
+                    "SECOND_STRIKER": {
+                        "weight": 0.4666666666666667,
+                        "score": 0.5057264909343897
+                    },
+                    "STRIKER": {
+                        "weight": 0.5,
+                        "score": 0.5234766507613287
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.19999999999999998,
+                        "score": 0.3310757036644628
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.19999999999999998,
+                        "score": 0.3310757036644628
+                    },
+                    "WINGER": {
+                        "weight": 0.3333333333333333,
+                        "score": 0.4274168955421221
+                    },
+                    "UTILITY": {
+                        "weight": 1.7,
+                        "score": 0.740307779092315
+                    }
+                }
+            },
+            "score": 0.74,
+            "role_weight": 1.7
+        },
+        {
+            "role": "SECOND_STRIKER",
+            "player": {
+                "ID_transfermarkt": "129129",
+                "name": "João Pedro",
+                "score": 0.6272178871963496,
+                "roles": {
+                    "ATTACKING_MID": {
+                        "weight": 0.6428571428571429,
+                        "score": 0.5028930944453499
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.6798319327731093,
+                        "score": 0.5171531987941645
+                    },
+                    "STRIKER": {
+                        "weight": 0.3487394957983193,
+                        "score": 0.3703983154420045
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.3415966386554622,
+                        "score": 0.36658545499066114
+                    },
+                    "DEFENSIVE_MID": {
+                        "weight": 0.04789915966386554,
+                        "score": 0.1372721331041484
+                    },
+                    "UTILITY": {
+                        "weight": 2.0609243697478994,
+                        "score": 0.6272178871963496
+                    }
+                }
+            },
+            "score": 0.52,
+            "role_weight": 0.6798
+        },
+        {
+            "role": "WIDE_MID",
+            "player": {
+                "ID_transfermarkt": "303981",
+                "name": "Nené",
+                "score": 0.626193524119252,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 0.19999999999999998,
+                        "score": 0.2800422574001603
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.3333333333333333,
+                        "score": 0.36153299971505054
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.13333333333333333,
+                        "score": 0.22865354568251306
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.5333333333333333,
+                        "score": 0.4573070913650261
+                    },
+                    "WINGER": {
+                        "weight": 0.5666666666666667,
+                        "score": 0.4713813602604972
+                    },
+                    "WING_BACK": {
+                        "weight": 0.13333333333333333,
+                        "score": 0.22865354568251306
+                    },
+                    "UTILITY": {
+                        "weight": 1.9,
+                        "score": 0.626193524119252
+                    }
+                }
+            },
+            "score": 0.46,
+            "role_weight": 0.5333
+        },
+        {
+            "role": "CENTRAL_MID",
+            "player": {
+                "ID_transfermarkt": "303988",
+                "name": "R. Greatti",
+                "score": 0.62492975403928,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 0.6,
+                        "score": 0.48406850598872575
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 1.0,
+                        "score": 0.62492975403928
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.4,
+                        "score": 0.395240280074587
+                    },
+                    "UTILITY": {
+                        "weight": 2.0,
+                        "score": 0.62492975403928
+                    }
+                }
+            },
+            "score": 0.62,
+            "role_weight": 1.0
+        },
+        {
+            "role": "FULLBACK",
+            "player": {
+                "ID_transfermarkt": "303997",
+                "name": "M. Martiradonna",
+                "score": 0.6221047961189142,
+                "roles": {
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.8,
+                        "score": 0.5564274453002158
+                    },
+                    "FULLBACK": {
+                        "weight": 1.0,
+                        "score": 0.6221047961189142
+                    },
+                    "WING_BACK": {
+                        "weight": 0.7,
+                        "score": 0.5204902152278265
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.6221047961189142
+                    }
+                }
+            },
+            "score": 0.62,
+            "role_weight": 1.0
+        },
+        {
+            "role": "STRIKER",
+            "player": {
+                "ID_transfermarkt": "20749",
+                "name": "David Suazo",
+                "score": 0.5799886524088382,
+                "roles": {
+                    "SECOND_STRIKER": {
+                        "weight": 0.34390243902439027,
+                        "score": 0.34012387989308607
+                    },
+                    "STRIKER": {
+                        "weight": 0.8597560975609756,
+                        "score": 0.5377830735378496
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.08414634146341464,
+                        "score": 0.16824304337333662
+                    },
+                    "WINGER": {
+                        "weight": 0.1402439024390244,
+                        "score": 0.21720083503339496
+                    },
+                    "UTILITY": {
+                        "weight": 1.4280487804878048,
+                        "score": 0.5799886524088382
+                    }
+                }
+            },
+            "score": 0.54,
+            "role_weight": 0.8598
+        },
+        {
+            "role": "CENTER_BACK",
+            "player": {
+                "ID_transfermarkt": "229666",
+                "name": "C. Niccolai",
+                "score": 0.571059239203873,
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.571059239203873
+                    },
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.4037998605002894
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.571059239203873
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.571059239203873
+                    }
+                }
+            },
+            "score": 0.57,
+            "role_weight": 1.0
+        },
+        {
+            "role": "GOALKEEPER",
+            "player": {
+                "ID_transfermarkt": "145362",
+                "name": "E. Albertosi",
+                "score": 0.5569269542700982,
+                "roles": {
+                    "GOALKEEPER": {
+                        "weight": 1.0,
+                        "score": 0.5569269542700982
+                    },
+                    "UTILITY": {
+                        "weight": 1.0,
+                        "score": 0.5569269542700982
+                    }
+                }
+            },
+            "score": 0.56,
+            "role_weight": 1.0
+        },
+        {
+            "role": "STRIKER",
+            "player": {
+                "ID_transfermarkt": "55801",
+                "name": "Marco Sau",
+                "score": 0.5248286474670956,
+                "roles": {
+                    "SECOND_STRIKER": {
+                        "weight": 0.48053691275167787,
+                        "score": 0.36381525862523356
+                    },
+                    "STRIKER": {
+                        "weight": 0.9328859060402684,
+                        "score": 0.5069110970006475
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.08053691275167785,
+                        "score": 0.14894125931953578
+                    },
+                    "UTILITY": {
+                        "weight": 1.4939597315436242,
+                        "score": 0.5248286474670956
+                    }
+                }
+            },
+            "score": 0.51,
+            "role_weight": 0.9329
+        },
+        {
+            "role": "CENTER_BACK",
+            "player": {
+                "ID_transfermarkt": "21964",
+                "name": "M. Villa",
+                "score": 0.5160542128140704,
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 0.9183673469387755,
+                        "score": 0.49454241425460194
+                    },
+                    "SWEEPER": {
+                        "weight": 0.45918367346938777,
+                        "score": 0.34969429470379576
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.9836734693877551,
+                        "score": 0.5118241889065756
+                    },
+                    "FULLBACK": {
+                        "weight": 0.08163265306122448,
+                        "score": 0.1474440608040201
+                    },
+                    "WING_BACK": {
+                        "weight": 0.057142857142857134,
+                        "score": 0.12336055182458329
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.5160542128140704
+                    }
+                }
+            },
+            "score": 0.49,
+            "role_weight": 0.9184
+        },
+        {
+            "role": "FULLBACK",
+            "player": {
+                "ID_transfermarkt": "17171",
+                "name": "A. Agostini",
+                "score": 0.510739568361582,
+                "roles": {
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.8,
+                        "score": 0.45681935746215924
+                    },
+                    "FULLBACK": {
+                        "weight": 1.0,
+                        "score": 0.510739568361582
+                    },
+                    "WING_BACK": {
+                        "weight": 0.7,
+                        "score": 0.42731538081740345
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.510739568361582
+                    }
+                }
+            },
+            "score": 0.51,
+            "role_weight": 1.0
+        },
+        {
+            "role": "SWEEPER",
+            "player": {
+                "ID_transfermarkt": "304003",
+                "name": "G. Tomasini",
+                "score": 0.5089713956518646,
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 0.8,
+                        "score": 0.455237855712204
+                    },
+                    "SWEEPER": {
+                        "weight": 1.0,
+                        "score": 0.5089713956518646
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.7,
+                        "score": 0.4258360213911745
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.5089713956518646
+                    }
+                }
+            },
+            "score": 0.51,
+            "role_weight": 1.0
+        },
+        {
+            "role": "STRIKER",
+            "player": {
+                "ID_transfermarkt": "335293",
+                "name": "Luigi Piras",
+                "score": 0.5070080792682926,
+                "roles": {
+                    "SECOND_STRIKER": {
+                        "weight": 0.4,
+                        "score": 0.32066006451900014
+                    },
+                    "STRIKER": {
+                        "weight": 1.0,
+                        "score": 0.5070080792682926
+                    },
+                    "UTILITY": {
+                        "weight": 1.4,
+                        "score": 0.5070080792682926
+                    }
+                }
+            },
+            "score": 0.51,
+            "role_weight": 1.0
+        },
+        {
+            "role": "CENTRAL_MID",
+            "player": {
+                "ID_transfermarkt": "235931",
+                "name": "A. Deiola",
+                "score": 0.48833313061046574,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 0.6539877300613497,
+                        "score": 0.39491259941468715
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.9325153374233128,
+                        "score": 0.4715678422243192
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.3460122699386503,
+                        "score": 0.2872512580918542
+                    },
+                    "UTILITY": {
+                        "weight": 1.9325153374233128,
+                        "score": 0.48833313061046574
+                    }
+                }
+            },
+            "score": 0.47,
+            "role_weight": 0.9325
+        },
+        {
+            "role": "CENTRAL_MID",
+            "player": {
+                "ID_transfermarkt": "29962",
+                "name": "D. Dessena",
+                "score": 0.48499055577094813,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 0.5483443708609271,
+                        "score": 0.35913685602500856
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.9139072847682119,
+                        "score": 0.46364368746471635
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.3655629139072848,
+                        "score": 0.29323401502955254
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.06887417218543046,
+                        "score": 0.12728038422674118
+                    },
+                    "FULLBACK": {
+                        "weight": 0.08609271523178808,
+                        "score": 0.14230379566664267
+                    },
+                    "WING_BACK": {
+                        "weight": 0.060264900662251646,
+                        "score": 0.1190598974583529
+                    },
+                    "UTILITY": {
+                        "weight": 2.043046357615894,
+                        "score": 0.48499055577094813
+                    }
+                }
+            },
+            "score": 0.46,
+            "role_weight": 0.9139
+        },
+        {
+            "role": "CENTER_BACK",
+            "player": {
+                "ID_transfermarkt": "102745",
+                "name": "L. Ceppitelli",
+                "score": 0.48092822162672394,
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.48092822162672394
+                    },
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.3400676067762433
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.48092822162672394
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.48092822162672394
+                    }
+                }
+            },
+            "score": 0.48,
+            "role_weight": 1.0
+        },
+        {
+            "role": "WIDE_MID",
+            "player": {
+                "ID_transfermarkt": "20735",
+                "name": "M. Esposito",
+                "score": 0.46101045620915027,
+                "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.5057142857142857,
+                        "score": 0.32784109134042316
+                    },
+                    "WINGER": {
+                        "weight": 0.8428571428571429,
+                        "score": 0.4232410289879745
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.09428571428571428,
+                        "score": 0.1415577736092993
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.15714285714285714,
+                        "score": 0.18275029990500533
+                    },
+                    "STRIKER": {
+                        "weight": 0.07857142857142857,
+                        "score": 0.12922397632670451
+                    },
+                    "UTILITY": {
+                        "weight": 1.6785714285714286,
+                        "score": 0.46101045620915027
+                    }
+                }
+            },
+            "score": 0.33,
+            "role_weight": 0.5057
+        },
+        {
+            "role": "FULLBACK",
+            "player": {
+                "ID_transfermarkt": "303996",
+                "name": "E. Mancin",
+                "score": 0.4531257490768614,
+                "roles": {
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.8,
+                        "score": 0.4052879909165498
+                    },
+                    "FULLBACK": {
+                        "weight": 1.0,
+                        "score": 0.4531257490768614
+                    },
+                    "WING_BACK": {
+                        "weight": 0.7,
+                        "score": 0.3791122012459197
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.4531257490768614
+                    }
+                }
+            },
+            "score": 0.45,
+            "role_weight": 1.0
+        },
+        {
+            "role": "GOALKEEPER",
+            "player": {
+                "ID_transfermarkt": "12907",
+                "name": "A. Cragno",
+                "score": 0.4523072138546724,
+                "roles": {
+                    "GOALKEEPER": {
+                        "weight": 1.0,
+                        "score": 0.4523072138546724
+                    },
+                    "UTILITY": {
+                        "weight": 1.0,
+                        "score": 0.4523072138546724
+                    }
+                }
+            },
+            "score": 0.45,
+            "role_weight": 1.0
+        },
+        {
+            "role": "WINGER",
+            "player": {
+                "ID_transfermarkt": "490658",
+                "name": "A. Congiu",
+                "score": 0.4338589282945736,
+                "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.6,
+                        "score": 0.3360656807776563
+                    },
+                    "WINGER": {
+                        "weight": 1.0,
+                        "score": 0.4338589282945736
+                    },
+                    "UTILITY": {
+                        "weight": 1.6,
+                        "score": 0.4338589282945736
+                    }
+                }
+            },
+            "score": 0.43,
+            "role_weight": 1.0
+        },
+        {
+            "role": "FULLBACK",
+            "player": {
+                "ID_transfermarkt": "484420",
+                "name": "M. Tiddia",
+                "score": 0.43307678873239436,
+                "roles": {
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.8,
+                        "score": 0.3873556556331795
+                    },
+                    "FULLBACK": {
+                        "weight": 1.0,
+                        "score": 0.43307678873239436
+                    },
+                    "WING_BACK": {
+                        "weight": 0.7,
+                        "score": 0.3623380375521373
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.43307678873239436
+                    }
+                }
+            },
+            "score": 0.43,
+            "role_weight": 1.0
+        },
+        {
+            "role": "CENTRAL_MID",
+            "player": {
+                "ID_transfermarkt": "227430",
+                "name": "A. Marchetti",
+                "score": 0.43122525185185184,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 0.8,
+                        "score": 0.3856995907020831
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 1.0,
+                        "score": 0.43122525185185184
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.8,
+                        "score": 0.3856995907020831
+                    },
+                    "WINGER": {
+                        "weight": 0.6,
+                        "score": 0.33402564377726424
+                    },
+                    "WING_BACK": {
+                        "weight": 0.4,
+                        "score": 0.27273079608631884
+                    },
+                    "UTILITY": {
+                        "weight": 3.6,
+                        "score": 0.43122525185185184
+                    }
+                }
+            },
+            "score": 0.43,
+            "role_weight": 1.0
+        },
+        {
+            "role": "WIDE_MID",
+            "player": {
+                "ID_transfermarkt": "223354",
+                "name": "V. Pusceddu",
+                "score": 0.37820347322623826,
+                "roles": {
+                    "WING_BACK": {
+                        "weight": 0.4931034482758621,
+                        "score": 0.26557949004170667
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.6896551724137931,
+                        "score": 0.31408088916424054
+                    },
+                    "WINGER": {
+                        "weight": 0.4827586206896552,
+                        "score": 0.26277892506199957
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.24827586206896554,
+                        "score": 0.18844853349854432
+                    },
+                    "FULLBACK": {
+                        "weight": 0.3103448275862069,
+                        "score": 0.21069186558144568
+                    },
+                    "UTILITY": {
+                        "weight": 2.224137931034483,
+                        "score": 0.37820347322623826
+                    }
+                }
+            },
+            "score": 0.31,
+            "role_weight": 0.6897
+        }
+    ]
+}
