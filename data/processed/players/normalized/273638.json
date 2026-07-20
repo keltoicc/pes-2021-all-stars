@@ -15,6 +15,22 @@
     },
     "matches": [
         {
+            "game_id": "4895149",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1403",
+            "opponent_id": "2407",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
             "game_id": "4905231",
             "season": 2025,
             "competition_type": "Domestic Cup",
@@ -980,7 +996,7 @@
             "competition_type": "First Tier",
             "club_id": "1403",
             "opponent_id": "82696",
-            "position": "",
+            "position": "DMF",
             "minutes": 20,
             "started": false,
             "captain": false,
@@ -2820,7 +2836,7 @@
             "competition_type": "First Tier",
             "club_id": "3631",
             "opponent_id": "5662",
-            "position": "",
+            "position": "DMF",
             "minutes": 4,
             "started": false,
             "captain": false,
@@ -11459,6 +11475,65 @@
         }
     ],
     "clubs": {
+        "1403": {
+            "seasons": [
+                2022,
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 84,
+                "participations": 84,
+                "minutes": 2484,
+                "starts": 31,
+                "captain_matches": 0,
+                "goals": 1,
+                "assists": 3,
+                "goals_conceded": 48,
+                "points": 67,
+                "clean_sheets": 57,
+                "wins": 19,
+                "draws": 10,
+                "losses": 55,
+                "goal_matches": 83,
+                "assist_matches": 81,
+                "goal_contributions": 4
+            },
+            "positions": {
+                "DMF": 26,
+                "CMF": 8
+            },
+            "derived": {
+                "season_count": 5,
+                "points_per_match": 0.798,
+                "minutes_per_match": 29.6,
+                "win_rate": 0.2262,
+                "goals_per_90": 0.036,
+                "assists_per_90": 0.109,
+                "contributions_per_90": 0.145,
+                "primary_position": "DMF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 76,
+                    "minutes": 2398,
+                    "goals": 1,
+                    "assists": 3
+                },
+                "International Cup": {
+                    "matches": 8,
+                    "minutes": 86,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "184": {
             "seasons": [
                 2024,
@@ -11517,64 +11592,6 @@
                 "Play-Offs": {
                     "matches": 2,
                     "minutes": 22,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
-        "1403": {
-            "seasons": [
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 83,
-                "participations": 83,
-                "minutes": 2484,
-                "starts": 31,
-                "captain_matches": 0,
-                "goals": 1,
-                "assists": 3,
-                "goals_conceded": 48,
-                "points": 67,
-                "clean_sheets": 56,
-                "wins": 19,
-                "draws": 10,
-                "losses": 54,
-                "goal_matches": 82,
-                "assist_matches": 80,
-                "goal_contributions": 4
-            },
-            "positions": {
-                "CMF": 8,
-                "DMF": 25
-            },
-            "derived": {
-                "season_count": 4,
-                "points_per_match": 0.807,
-                "minutes_per_match": 29.9,
-                "win_rate": 0.2289,
-                "goals_per_90": 0.036,
-                "assists_per_90": 0.109,
-                "contributions_per_90": 0.145,
-                "primary_position": "DMF"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 75,
-                    "minutes": 2398,
-                    "goals": 1,
-                    "assists": 3
-                },
-                "International Cup": {
-                    "matches": 8,
-                    "minutes": 86,
                     "goals": 0,
                     "assists": 0
                 }
@@ -11672,7 +11689,7 @@
                 "goal_contributions": 8
             },
             "positions": {
-                "DMF": 50,
+                "DMF": 51,
                 "CMF": 3
             },
             "derived": {
@@ -12096,14 +12113,14 @@
             "season_count": 4
         },
         "national": {
-            "matches": 668,
+            "matches": 669,
             "minutes": 19822,
             "goals": 13,
             "assists": 15,
             "goal_contributions": 28,
             "team_titles": 3,
             "individual_titles": 1,
-            "season_count": 15
+            "season_count": 16
         }
     }
 }
