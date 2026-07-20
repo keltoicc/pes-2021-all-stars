@@ -33,7 +33,7 @@ def main(yml = "teams"):
         for page in range(1, 5):
 
             filename = f"{team['ID_pes']}_{slugify(team['name'])}_players_{page}.html"
-            print("Descargando ", filename, "...")
+            #print("Descargando ", filename, "...")
 
             url = "https://www.transfermarkt.com/" + team["name_transfermark"] + "/rekordspieler/verein/" + str(team["ID_transfermarkt"]) + "/ajax/yw1/page/" + str(page)
             

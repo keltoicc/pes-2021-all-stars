@@ -66,7 +66,7 @@ def get_coach(team: dict, team_id: int):
             sort_keys=False
         )
     
-    print(f"Generado {output_path.name}")
+    #print(f"Generado {output_path.name}")
 
 
 def main(yml = "teams"):

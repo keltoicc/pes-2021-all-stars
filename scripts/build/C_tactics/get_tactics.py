@@ -49,7 +49,7 @@ def get_tactic(coach: dict, team: dict):
             sort_keys=False
         )
     
-    print(f"Generado {output_path.name}")
+    # print(f"Generado {output_path.name}")
 
 def main(yml = "teams"):
     teams = yaml.safe_load(

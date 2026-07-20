@@ -75,7 +75,7 @@ def main(yml = "teams"):
 
         for player in all_players:
 
-            print(f"{player['ID_transfermarkt']} {player['name']}")
+            # print(f"{player['ID_transfermarkt']} {player['name']}")
             
             data = build_player(player['ID_transfermarkt'])
 

@@ -58,7 +58,7 @@ def obtain_json(coach: dict, team: dict, processed_dir: Path):
         print(f"No hay HTML para {team['name']}")
         return
 
-    print(f"Procesando {html_file}")
+    # print(f"Procesando {html_file}")
 
     all_rows = []
 

@@ -58,12 +58,12 @@ def obtain_json(team: dict, processed_dir: Path):
         print(f"No hay HTML para {team['name']}")
         return
     
-    print(f"Procesando {team['name']} ({len(html_files)} ficheros)")
+    # print(f"Procesando {team['name']} ({len(html_files)} ficheros)")
 
     all_rows = []
 
     for html_file in html_files:
-        print("  -", html_file.name)
+        #print("  -", html_file.name)
         rows = parse_table(html_file)
         all_rows.extend(rows)
 
