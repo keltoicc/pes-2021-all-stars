@@ -277,7 +277,7 @@ def main(yml = "teams"):
         
         for player in all_players:
 
-            print(f"{player['ID_transfermarkt']} {player['name']}")
+            # print(f"{player['ID_transfermarkt']} {player['name']}")
         
             data = calculate_score(player['ID_transfermarkt'])
 
