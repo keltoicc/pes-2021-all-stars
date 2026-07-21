@@ -15,6 +15,22 @@
     },
     "matches": [
         {
+            "game_id": "4895113",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1804",
+            "opponent_id": "6711",
+            "position": "LW",
+            "minutes": 70,
+            "started": true,
+            "captain": true,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
             "game_id": "4776698",
             "season": 2025,
             "competition_type": "National Team",
@@ -3844,7 +3860,7 @@
             "competition_type": "First Tier",
             "club_id": "6711",
             "opponent_id": "5662",
-            "position": "CF",
+            "position": "LW",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -10772,6 +10788,89 @@
         }
     ],
     "clubs": {
+        "1804": {
+            "seasons": [
+                2015,
+                2016,
+                2017,
+                2018,
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 289,
+                "participations": 289,
+                "minutes": 11687,
+                "starts": 135,
+                "captain_matches": 51,
+                "goals": 42,
+                "assists": 41,
+                "goals_conceded": 160,
+                "points": 509,
+                "clean_sheets": 187,
+                "wins": 147,
+                "draws": 68,
+                "losses": 74,
+                "goal_matches": 253,
+                "assist_matches": 252,
+                "goal_contributions": 83
+            },
+            "positions": {
+                "LW": 33,
+                "LM": 23,
+                "CF": 56,
+                "AMF": 12,
+                "SS": 7,
+                "RW": 3
+            },
+            "derived": {
+                "season_count": 8,
+                "points_per_match": 1.761,
+                "minutes_per_match": 40.4,
+                "win_rate": 0.5087,
+                "goals_per_90": 0.323,
+                "assists_per_90": 0.316,
+                "contributions_per_90": 0.639,
+                "primary_position": "CF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 231,
+                    "minutes": 9767,
+                    "goals": 39,
+                    "assists": 35
+                },
+                "International Cup": {
+                    "matches": 25,
+                    "minutes": 1141,
+                    "goals": 1,
+                    "assists": 4
+                },
+                "International Super Cup": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 32,
+                    "minutes": 689,
+                    "goals": 2,
+                    "assists": 2
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "CONCACAF Champions League winner": 1,
+                    "Mexican Clausura champion": 1,
+                    "Campeones Cup Winner": 1,
+                    "Mexican Campeón de Campeones": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "6303": {
             "seasons": [
                 2018,
@@ -10840,88 +10939,6 @@
                 "individual_titles": {}
             }
         },
-        "1804": {
-            "seasons": [
-                2015,
-                2016,
-                2017,
-                2018,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 288,
-                "participations": 288,
-                "minutes": 11617,
-                "starts": 134,
-                "captain_matches": 50,
-                "goals": 41,
-                "assists": 41,
-                "goals_conceded": 160,
-                "points": 506,
-                "clean_sheets": 186,
-                "wins": 146,
-                "draws": 68,
-                "losses": 74,
-                "goal_matches": 253,
-                "assist_matches": 251,
-                "goal_contributions": 82
-            },
-            "positions": {
-                "LM": 23,
-                "LW": 32,
-                "CF": 56,
-                "AMF": 12,
-                "SS": 7,
-                "RW": 3
-            },
-            "derived": {
-                "season_count": 7,
-                "points_per_match": 1.757,
-                "minutes_per_match": 40.3,
-                "win_rate": 0.5069,
-                "goals_per_90": 0.318,
-                "assists_per_90": 0.318,
-                "contributions_per_90": 0.635,
-                "primary_position": "CF"
-            },
-            "competitions": {
-                "International Cup": {
-                    "matches": 25,
-                    "minutes": 1141,
-                    "goals": 1,
-                    "assists": 4
-                },
-                "First Tier": {
-                    "matches": 230,
-                    "minutes": 9697,
-                    "goals": 38,
-                    "assists": 35
-                },
-                "International Super Cup": {
-                    "matches": 1,
-                    "minutes": 90,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Domestic Cup": {
-                    "matches": 32,
-                    "minutes": 689,
-                    "goals": 2,
-                    "assists": 2
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "CONCACAF Champions League winner": 1,
-                    "Mexican Clausura champion": 1,
-                    "Campeones Cup Winner": 1,
-                    "Mexican Campeón de Campeones": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "6711": {
             "seasons": [
                 2018,
@@ -10950,9 +10967,9 @@
                 "goal_contributions": 56
             },
             "positions": {
-                "LW": 62,
+                "LW": 63,
                 "RW": 6,
-                "CF": 61,
+                "CF": 60,
                 "SS": 4,
                 "AMF": 4
             },
@@ -11237,14 +11254,14 @@
             "season_count": 5
         },
         "national": {
-            "matches": 632,
-            "minutes": 25736,
-            "goals": 80,
+            "matches": 633,
+            "minutes": 25806,
+            "goals": 81,
             "assists": 81,
-            "goal_contributions": 161,
+            "goal_contributions": 162,
             "team_titles": 7,
             "individual_titles": 0,
-            "season_count": 11
+            "season_count": 12
         }
     }
 }
