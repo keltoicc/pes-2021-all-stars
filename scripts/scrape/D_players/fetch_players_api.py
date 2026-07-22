@@ -105,7 +105,9 @@ def main(yml = "teams"):
         output_dir = Path("data/raw/transfermarkt/players")
         output_dir.mkdir(parents=True, exist_ok=True)
 
+        print("-------------------------------------------------------------------")
         print(f"Procesando jugadores de {team['name']}")
+        print("-------------------------------------------------------------------")
 
         for player in all_players:
             
