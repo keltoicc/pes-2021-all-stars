@@ -1,0 +1,61 @@
+---
+import "../styles/global.css";
+
+import Header from "../components/layout/Header.astro";
+import Footer from "../components/layout/Footer.astro";
+
+interface Props {
+    title?: string;
+    description?: string;
+}
+
+const {
+    title = "PES 2021 All Stars",
+    description = "Classic teams and players for PES 2021"
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+
+    <title>{title}</title>
+
+    <meta
+        name="description"
+        content={description}
+    />
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:title" content={title}>
+
+    <meta property="og:description" content={description}>
+
+</head>
+
+<body>
+
+    <Header />
+
+    <main>
+
+        <div class="container">
+
+            <slot />
+
+        </div>
+
+    </main>
+
+    <Footer />
+
+</body>
+
+</html>
