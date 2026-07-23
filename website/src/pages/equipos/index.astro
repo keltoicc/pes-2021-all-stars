@@ -1,16 +1,28 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { getTeams } from "../../lib/teams";
+
+const teams = getTeams();
 ---
 
-<Layout
-    title="PES 2021 All Stars"
-    description="Base de datos de equipos y jugadores clásicos para PES 2021"
->
+<Layout title="Equipos">
 
-    <h2>Bienvenido</h2>
+    <h1>Equipos</h1>
 
-    <p>
-        Página en construcción.
-    </p>
+    <ul>
+
+        {
+            teams.map(team => (
+
+                <li>
+
+                    {team.name}
+
+                </li>
+
+            ))
+        }
+
+    </ul>
 
 </Layout>

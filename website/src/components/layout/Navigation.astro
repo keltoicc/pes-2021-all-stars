@@ -1,13 +1,23 @@
+---
+const links = [
+    { href: "/", label: "Inicio" },
+    { href: "/equipos", label: "Equipos" },
+    { href: "/jugadores", label: "Jugadores" },
+    { href: "/competiciones", label: "Competiciones" },
+    { href: "/noticias", label: "Noticias" }
+];
+---
+
 <nav>
 
-    <a href="/">Inicio</a>
+    {
+        links.map(link => (
 
-    <a href="/equipos">Equipos</a>
+            <a href={link.href}>
+                {link.label}
+            </a>
 
-    <a href="/jugadores">Jugadores</a>
-
-    <a href="/competiciones">Competiciones</a>
-
-    <a href="/noticias">Noticias</a>
+        ))
+    }
 
 </nav>
