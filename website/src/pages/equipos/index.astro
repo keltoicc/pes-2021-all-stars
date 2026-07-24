@@ -2,6 +2,9 @@
 import Layout from "../../layouts/Layout.astro";
 import { teamRepository } from "../../lib/teams";
 
+import TeamCard from "../../components/teams/TeamCard.astro";
+import Grid from "../../components/ui/Grid.astro";
+
 const teams = teamRepository.getAllSorted();
 ---
 
@@ -12,19 +15,11 @@ const teams = teamRepository.getAllSorted();
     <ul>
 
         {
-            teams.map(team => (
-
-                <li>
-
-                    <a href={`/equipos/${team.slug}`}>
-
-                        {team.name}
-
-                    </a>
-
-                </li>
-
-            ))
+            <Grid>
+                {teams.map(team => (
+                    <TeamCard team={team} />
+                ))}
+            </Grid>
         }
 
     </ul>

@@ -1,0 +1,33 @@
+---
+import Card from "../ui/Card.astro";
+
+import type { Team } from "../../types/team";
+
+interface Props {
+    team: Team;
+}
+
+const { team } = Astro.props;
+---
+
+<Card>
+
+    <h2>
+
+        {team.name}
+
+    </h2>
+
+    <p>
+
+        {team.country}
+
+    </p>
+
+    <a href={`/equipos/${team.slug}`}>
+
+        Ver equipo →
+
+    </a>
+
+</Card>

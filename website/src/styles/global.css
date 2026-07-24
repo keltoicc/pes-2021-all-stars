@@ -1,41 +1,18 @@
+@import "./variables.css";
+@import "./layout.css";
+@import "./typography.css";
+@import "./components.css";
+
 * {
+
     box-sizing: border-box;
-}
-
-html {
-    font-family: system-ui, sans-serif;
-}
-
-body {
-    margin: 0;
-}
-
-main {
-    padding: 2rem;
-}
-
-.container {
-
-    max-width: var(--max-width);
-
-    margin: auto;
-
-    padding: 2rem;
 
 }
 
-:root {
+a {
 
-    --background: #111111;
+    color: inherit;
 
-    --surface: #1a1a1a;
-
-    --text: #ececec;
-
-    --primary: #2fa64a;
-
-    --border: #333333;
-
-    --max-width: 1400px;
+    text-decoration: none;
 
 }

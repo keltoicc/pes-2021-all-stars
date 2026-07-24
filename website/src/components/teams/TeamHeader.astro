@@ -6,12 +6,48 @@ interface Props {
 }
 
 const { team } = Astro.props;
+
+const sections = [
+    "Historia",
+    "Palmarés",
+    "Plantillas",
+    "Jugadores",
+    "Entrenadores",
+    "Estadio",
+    "Galería"
+];
 ---
 
-<header>
+<header class="team-header">
 
-    <h1>{team.name}</h1>
+    <div class="team-header__logo">
 
-    <p>{team.country}</p>
+        Escudo
+
+    </div>
+
+    <div class="team-header__info">
+
+        <h1>{team.name}</h1>
+
+        <p>{team.country}</p>
+
+    </div>
 
 </header>
+
+<nav class="team-navigation">
+
+    {
+        sections.map(section => (
+
+            <a href={"#" + section.toLowerCase()}>
+
+                {section}
+
+            </a>
+
+        ))
+    }
+
+</nav>
