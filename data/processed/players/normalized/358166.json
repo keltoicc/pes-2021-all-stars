@@ -15,6 +15,22 @@
     },
     "matches": [
         {
+            "game_id": "4897959",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "6890",
+            "opponent_id": "8042",
+            "position": "SS",
+            "minutes": 69,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
             "game_id": "4776668",
             "season": 2025,
             "competition_type": "National Team",
@@ -10500,6 +10516,73 @@
         }
     ],
     "clubs": {
+        "6890": {
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 45,
+                "participations": 45,
+                "minutes": 3609,
+                "starts": 42,
+                "captain_matches": 0,
+                "goals": 23,
+                "assists": 6,
+                "goals_conceded": 46,
+                "points": 74,
+                "clean_sheets": 17,
+                "wins": 21,
+                "draws": 11,
+                "losses": 13,
+                "goal_matches": 25,
+                "assist_matches": 39,
+                "goal_contributions": 29
+            },
+            "positions": {
+                "SS": 26,
+                "CF": 15,
+                "RW": 1,
+                "LW": 3
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 1.644,
+                "minutes_per_match": 80.2,
+                "win_rate": 0.4667,
+                "goals_per_90": 0.574,
+                "assists_per_90": 0.15,
+                "contributions_per_90": 0.723,
+                "primary_position": "SS"
+            },
+            "competitions": {
+                "International Cup": {
+                    "matches": 7,
+                    "minutes": 413,
+                    "goals": 0,
+                    "assists": 1
+                },
+                "First Tier": {
+                    "matches": 34,
+                    "minutes": 2928,
+                    "goals": 22,
+                    "assists": 5
+                },
+                "Domestic Cup": {
+                    "matches": 4,
+                    "minutes": 268,
+                    "goals": 1,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {
+                    "Top scorer": 1,
+                    "Top goal scorer": 1
+                }
+            }
+        },
         "3563": {
             "seasons": [
                 2014,
@@ -10566,72 +10649,6 @@
                 "team_titles": {
                     "CAFA Nations Cup winner": 1
                 },
-                "individual_titles": {
-                    "Top scorer": 1,
-                    "Top goal scorer": 1
-                }
-            }
-        },
-        "6890": {
-            "seasons": [
-                2025
-            ],
-            "stats": {
-                "matches": 44,
-                "participations": 44,
-                "minutes": 3540,
-                "starts": 41,
-                "captain_matches": 0,
-                "goals": 23,
-                "assists": 6,
-                "goals_conceded": 45,
-                "points": 73,
-                "clean_sheets": 17,
-                "wins": 21,
-                "draws": 10,
-                "losses": 13,
-                "goal_matches": 24,
-                "assist_matches": 38,
-                "goal_contributions": 29
-            },
-            "positions": {
-                "SS": 25,
-                "CF": 15,
-                "RW": 1,
-                "LW": 3
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 1.659,
-                "minutes_per_match": 80.5,
-                "win_rate": 0.4773,
-                "goals_per_90": 0.585,
-                "assists_per_90": 0.153,
-                "contributions_per_90": 0.737,
-                "primary_position": "SS"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 34,
-                    "minutes": 2928,
-                    "goals": 22,
-                    "assists": 5
-                },
-                "Domestic Cup": {
-                    "matches": 4,
-                    "minutes": 268,
-                    "goals": 1,
-                    "assists": 0
-                },
-                "International Cup": {
-                    "matches": 6,
-                    "minutes": 344,
-                    "goals": 0,
-                    "assists": 1
-                }
-            },
-            "awards": {
-                "team_titles": {},
                 "individual_titles": {
                     "Top scorer": 1,
                     "Top goal scorer": 1
@@ -11210,14 +11227,14 @@
             "season_count": 4
         },
         "national": {
-            "matches": 524,
-            "minutes": 26136,
+            "matches": 525,
+            "minutes": 26205,
             "goals": 122,
             "assists": 53,
             "goal_contributions": 175,
             "team_titles": 2,
             "individual_titles": 4,
-            "season_count": 12
+            "season_count": 13
         }
     }
 }
