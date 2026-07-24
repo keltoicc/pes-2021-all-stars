@@ -1,8 +1,8 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { getTeams } from "../../lib/teams";
+import { teamRepository } from "../../lib/teams";
 
-const teams = getTeams();
+const teams = teamRepository.getAllSorted();
 ---
 
 <Layout title="Equipos">
@@ -16,7 +16,11 @@ const teams = getTeams();
 
                 <li>
 
-                    {team.name}
+                    <a href={`/equipos/${team.slug}`}>
+
+                        {team.name}
+
+                    </a>
 
                 </li>
 

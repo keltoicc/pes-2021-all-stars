@@ -1,0 +1,17 @@
+---
+import type { Team } from "../../types/team";
+
+interface Props {
+    team: Team;
+}
+
+const { team } = Astro.props;
+---
+
+<header>
+
+    <h1>{team.name}</h1>
+
+    <p>{team.country}</p>
+
+</header>

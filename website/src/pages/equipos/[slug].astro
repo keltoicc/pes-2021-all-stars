@@ -1,0 +1,50 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import TeamHeader from "../../components/teams/TeamHeader.astro";
+import TeamHistory from "../../components/teams/TeamHistory.astro";
+import TeamAchievements from "../../components/teams/TeamAchievements.astro";
+import TeamSquads from "../../components/teams/TeamSquads.astro";
+import TeamPlayers from "../../components/teams/TeamPlayers.astro";
+import TeamManagers from "../../components/teams/TeamManagers.astro";
+import TeamStadium from "../../components/teams/TeamStadium.astro";
+import TeamGallery from "../../components/teams/TeamGallery.astro";
+
+import { teamRepository } from "../../lib/teams";
+
+export function getStaticPaths() {
+    return teamRepository.getAll().map(team => ({
+        params: {
+            slug: team.slug
+        }
+    }));
+}
+
+const { slug } = Astro.params;
+
+const team = teamRepository.getBySlug(slug!);
+
+if (!team) {
+    throw new Error("Equipo no encontrado");
+}
+---
+
+<Layout title={team.name}>
+
+    <TeamHeader team={team} />
+
+    <TeamHistory team={team} />
+
+    <TeamAchievements team={team} />
+
+    <TeamSquads team={team} />
+
+    <TeamPlayers team={team} />
+
+    <TeamManagers team={team} />
+
+    <TeamStadium team={team} />
+
+    <TeamGallery team={team} />
+
+</Layout>
