@@ -1,0 +1,53 @@
+import json
+from pathlib import Path
+import yaml
+import re
+import sys
+
+sys.path.append(str(Path(__file__).parent))
+
+def slugify(name: str) -> str:
+    name = name.lower()
+    name = re.sub(r"[^\w]+", "_", name)
+    return name.strip("_")
+
+def get_team_data(team):
+
+    data = {
+        "id": str(team['ID_pes']),
+        "slug": slugify(team['name']),
+        "name": team['name'],
+        "country": team['country']
+    }
+
+    return data
+
+def main(yml = "teams_debug"):
+
+    teams = yaml.safe_load(
+        Path(f"config/{yml}.yml").read_text(encoding="utf-8")
+    )["teams"]
+
+    teams_dir = Path("data/processed/players")
+    tactics_dir = Path("data/built/tactics")
+    output_dir = Path("data/published/teams")
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    for team in teams:
+        if not team["ID_transfermarkt"]:
+            continue
+
+        team_data = get_team_data(team)
+
+        output_path = output_dir / f"{team_data['slug']}.json"
+
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(
+                team_data,
+                f,
+                indent=4,
+                ensure_ascii=False
+            )
+
+if __name__ == "__main__":
+    main()
