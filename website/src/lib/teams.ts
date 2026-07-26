@@ -1,19 +1,23 @@
-import { Repository } from "./repository";
-
-import { teams } from "../data/teams";
-
 import type { Team } from "../types/team";
 
-class TeamRepository extends Repository<Team> {
+const teamModules = import.meta.glob("../data/teams/*.json", {
+    eager: true,
+});
 
-    getAllSorted(): Team[] {
+export class TeamRepository {
 
-        return [...this.getAll()].sort((a, b) =>
-            a.name.localeCompare(b.name)
+    static getAll(): Team[] {
+
+        return Object.values(teamModules).map(
+            (module: any) => module.default as Team
         );
 
     }
 
-}
+    static getBySlug(slug: string): Team | undefined {
 
-export const teamRepository = new TeamRepository(teams);
+        return this.getAll().find(team => team.slug === slug);
+
+    }
+
+}

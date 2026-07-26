@@ -4,6 +4,8 @@ import yaml
 import re
 import sys
 
+from publisher import publish_directory
+
 sys.path.append(str(Path(__file__).parent))
 
 def slugify(name: str) -> str:
@@ -54,6 +56,8 @@ def main(yml = "teams_debug"):
                 indent=4,
                 ensure_ascii=False
             )
+
+    publish_directory("teams")
 
 if __name__ == "__main__":
     main()
