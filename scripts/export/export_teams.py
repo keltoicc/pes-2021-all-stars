@@ -11,11 +11,17 @@ def slugify(name: str) -> str:
     name = re.sub(r"[^\w]+", "_", name)
     return name.strip("_")
 
+def slugify_web(name: str) -> str:
+    name = name.lower()
+    name = re.sub(r"\.", "", name)
+    name = re.sub(r"[^\w]+", "-", name)
+    return name.strip("-")
+
 def get_team_data(team):
 
     data = {
         "id": str(team['ID_pes']),
-        "slug": slugify(team['name']),
+        "slug": slugify_web(team['name']),
         "name": team['name'],
         "country": team['country']
     }
