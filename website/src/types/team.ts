@@ -6,10 +6,8 @@ export interface Team {
 
     country: string;
     city?: string;
-
     founded?: number;
 
     crest: string;
 
-    squads: string[];
 }

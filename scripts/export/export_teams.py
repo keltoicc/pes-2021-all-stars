@@ -23,9 +23,12 @@ def get_team_data(team):
 
     data = {
         "id": str(team['ID_pes']),
-        "slug": slugify_web(team['name']),
         "name": team['name'],
-        "country": team['country']
+        "slug": slugify_web(team['name']),
+
+        "country": team['country'],
+
+        "crest": f"/images/teams/{slugify_web(team['name'])}.png",
     }
 
     return data

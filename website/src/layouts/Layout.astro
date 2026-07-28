@@ -1,61 +1,35 @@
 ---
-import "../styles/global.css";
-
-import Header from "../components/layout/Header.astro";
-import Footer from "../components/layout/Footer.astro";
+import Header from "../components/site/Header.astro";
+import Footer from "../components/site/Footer.astro";
 
 interface Props {
-    title?: string;
-    description?: string;
+	title?: string;
 }
 
 const {
-    title = "PES 2021 All Stars",
-    description = "Classic teams and players for PES 2021"
+	title = "Classic Football Encyclopedia"
 } = Astro.props;
 ---
 
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
 
-<head>
+		<title>{title}</title>
+	</head>
 
-    <meta charset="UTF-8" />
+	<body>
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0" />
+		<Header />
 
-    <title>{title}</title>
+		<main>
+			<slot />
+		</main>
 
-    <meta
-        name="description"
-        content={description}
-    />
+		<Footer />
 
-    <meta property="og:type" content="website">
-
-    <meta property="og:title" content={title}>
-
-    <meta property="og:description" content={description}>
-
-</head>
-
-<body>
-
-    <Header />
-
-    <main>
-
-        <div class="container">
-
-            <slot />
-
-        </div>
-
-    </main>
-
-    <Footer />
-
-</body>
-
+	</body>
 </html>
