@@ -1,15 +1,15 @@
 export interface Team {
-
-    /** Identificador único */
     id: string;
-
-    /** Nombre que se mostrará */
     name: string;
-
-    /** Nombre para la URL */
+    shortName?: string;
     slug: string;
 
-    /** País */
     country: string;
+    city?: string;
 
+    founded?: number;
+
+    crest: string;
+
+    squads: string[];
 }
