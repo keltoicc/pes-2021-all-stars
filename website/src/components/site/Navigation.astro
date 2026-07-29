@@ -1,50 +1,64 @@
 ---
 const navigation = [
-    {
-        href: "/",
-        label: "Home"
-    },
-    {
-        href: "/teams",
-        label: "Teams"
-    },
-    {
-        href: "/players",
-        label: "Players"
-    },
-    {
-        href: "/competitions",
-        label: "Competitions"
-    },
-    {
-        href: "/news",
-        label: "News"
-    },
-    {
-        href: "/about",
-        label: "About"
-    }
+    { href: "/", label: "Home" },
+    { href: "/teams", label: "Teams" },
+    { href: "/players", label: "Players" },
+    { href: "/competitions", label: "Competitions" },
+    { href: "/news", label: "News" },
+    { href: "/about", label: "About" }
 ];
 ---
 
-<nav aria-label="Main navigation">
+<nav class="site-navigation" aria-label="Main navigation">
 
-    <ul>
+    <div class="container">
 
-        {
-            navigation.map(item => (
+        <ul>
 
-                <li>
+            {
+                navigation.map(item => (
 
-                    <a href={item.href}>
-                        {item.label}
-                    </a>
+                    <li>
 
-                </li>
+                        <a href={item.href}>
+                            {item.label}
+                        </a>
 
-            ))
-        }
+                    </li>
 
-    </ul>
+                ))
+            }
+
+        </ul>
+
+    </div>
 
 </nav>
+
+<style>
+.site-navigation {
+    border-top: 1px solid var(--color-border);
+    background: var(--color-surface);
+}
+
+.site-navigation ul {
+    display: flex;
+    gap: var(--space-5);
+}
+
+.site-navigation a {
+    display: block;
+
+    padding-block: var(--space-3);
+
+    color: var(--color-text-muted);
+
+    font-weight: 500;
+
+    transition: color .2s ease;
+}
+
+.site-navigation a:hover {
+    color: var(--color-primary);
+}
+</style>

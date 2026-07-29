@@ -2,7 +2,7 @@
 
     <div class="container">
 
-        <section>
+        <section class="footer__about">
 
             <h2>Classic Football Encyclopedia</h2>
 
@@ -13,33 +13,19 @@
 
         </section>
 
-        <nav aria-label="Footer navigation">
+        <nav class="footer__navigation" aria-label="Footer">
 
             <ul>
 
-                <li>
-                    <a href="/about">
-                        About
-                    </a>
-                </li>
-
-                <li>
-                    <a href="/news">
-                        News
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://github.com/">
-                        GitHub
-                    </a>
-                </li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/news">News</a></li>
+                <li><a href="https://github.com/">GitHub</a></li>
 
             </ul>
 
         </nav>
 
-        <p class="copyright">
+        <p class="footer__copyright">
 
             © 2026 Classic Football Encyclopedia
 
@@ -48,3 +34,48 @@
     </div>
 
 </footer>
+
+<style>
+.site-footer {
+    margin-top: var(--space-7);
+
+    border-top: 1px solid var(--color-border);
+
+    background: var(--color-surface);
+}
+
+.site-footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+
+    padding-block: var(--space-6);
+}
+
+.footer__about {
+    max-width: 40rem;
+}
+
+.footer__about h2 {
+    margin-bottom: var(--space-2);
+
+    font-size: 1.25rem;
+}
+
+.footer__navigation ul {
+    display: flex;
+    gap: var(--space-4);
+}
+
+.footer__navigation a {
+    color: var(--color-text-muted);
+}
+
+.footer__navigation a:hover {
+    color: var(--color-primary);
+}
+
+.footer__copyright {
+    font-size: 0.9rem;
+}
+</style>

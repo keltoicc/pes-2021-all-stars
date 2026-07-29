@@ -3,21 +3,54 @@ import Navigation from "./Navigation.astro";
 ---
 
 <header class="site-header">
-    <div class="container">
 
-        <a href="/" class="brand">
+    <div class="site-header__branding">
 
-            <span class="brand__title">
-                Classic Football Encyclopedia
-            </span>
+        <div class="container">
 
-            <span class="brand__subtitle">
-                The official database of the PES 2021 Classic Football Mod
-            </span>
+            <a href="/" class="brand">
 
-        </a>
+                <span class="brand__title">
+                    Classic Football Encyclopedia
+                </span>
 
-        <Navigation />
+                <span class="brand__subtitle">
+                    The official database of the PES 2021 Classic Football Mod
+                </span>
+
+            </a>
+
+        </div>
 
     </div>
+
+    <Navigation />
+
 </header>
+
+<style>
+.site-header {
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.site-header__branding {
+    padding-block: var(--space-5);
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.brand__title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.brand__subtitle {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+</style>

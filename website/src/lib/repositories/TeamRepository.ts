@@ -4,22 +4,10 @@ const modules = import.meta.glob("../../data/teams/*.json", {
     eager: true,
 });
 
-const teams = Object.values(modules).map(
-    (module: any) => module.default as Team
-);
+const teams: Team[] = Object.values(modules).map((module: any) => module.default);
 
-const teamsBySlug = new Map(
-    teams.map(team => [team.slug, team])
-);
-
-export class TeamRepository {
-
+export default class TeamRepository {
     static getAll(): Team[] {
         return teams;
     }
-
-    static getBySlug(slug: string): Team | undefined {
-        return teamsBySlug.get(slug);
-    }
-
 }

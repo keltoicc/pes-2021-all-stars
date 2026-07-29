@@ -1,21 +1,14 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { TeamRepository } from "../../lib/repositories/TeamRepository";
+import TeamList from "../../components/teams/TeamList.astro";
 
-import TeamCard from "../../components/teams/TeamCard.astro";
-import Grid from "../../components/ui/Grid.astro";
+import TeamRepository from "../../lib/repositories/TeamRepository";
 
 const teams = TeamRepository.getAll();
 ---
 
 <Layout title="Teams">
 
-    <h1>Teams</h1>
-
-    <Grid>
-        {teams.map(team => (
-            <TeamCard team={team} />
-        ))}
-    </Grid>
+    <TeamList teams={teams} />
 
 </Layout>
