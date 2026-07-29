@@ -1,0 +1,36 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import TeamRepository from "../../lib/repositories/TeamRepository";
+
+export function getStaticPaths() {
+
+    const teams = TeamRepository.getAll();
+
+    return teams.map(team => ({
+        params: {
+            slug: team.slug
+        },
+        props: {
+            team
+        }
+    }));
+}
+
+const { team } = Astro.props;
+---
+
+<Layout title={team.name}>
+
+    <section>
+
+        <h1>
+            {team.name}
+        </h1>
+
+        <p>
+            {team.country}
+        </p>
+
+    </section>
+
+</Layout>

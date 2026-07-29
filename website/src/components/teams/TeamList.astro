@@ -9,9 +9,21 @@ interface Props {
 const { teams } = Astro.props;
 ---
 
-<section>
+<section class="team-list">
 
-    <h1>Teams</h1>
+    <header class="team-list__header">
+
+        <h1>Teams</h1>
+
+        <p>
+            Browse every club available in the project.
+        </p>
+
+        <p class="team-list__count">
+            {teams.length} {teams.length === 1 ? "team" : "teams"}
+        </p>
+
+    </header>
 
     <ul>
 
@@ -30,5 +42,25 @@ section {
     display: flex;
     flex-direction: column;
     gap: var(--space-5);
+}
+
+.team-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-list__header {
+    margin-bottom: var(--space-6);
+}
+
+.team-list__header p {
+    margin-top: var(--space-2);
+    max-width: 65ch;
+}
+
+.team-list__count {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 </style>

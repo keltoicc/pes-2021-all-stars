@@ -22,13 +22,13 @@ def slugify_web(name: str) -> str:
 def get_team_data(team):
 
     data = {
-        "id": str(team['ID_pes']),
+        "id": team['ID_pes'],
         "name": team['name'],
         "slug": slugify_web(team['name']),
 
         "country": team['country'],
 
-        "crest": f"/images/teams/{slugify_web(team['name'])}.png",
+        "crest": f"/images/teams/{team['ID_pes']}.png",
     }
 
     return data
