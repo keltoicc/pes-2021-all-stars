@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import TeamHeader from "../../components/teams/TeamHeader.astro";
 import TeamRepository from "../../lib/repositories/TeamRepository";
 
 export function getStaticPaths() {
@@ -21,16 +22,6 @@ const { team } = Astro.props;
 
 <Layout title={team.name}>
 
-    <section>
-
-        <h1>
-            {team.name}
-        </h1>
-
-        <p>
-            {team.country}
-        </p>
-
-    </section>
+    <TeamHeader team={team} />
 
 </Layout>

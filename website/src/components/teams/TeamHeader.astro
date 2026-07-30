@@ -1,0 +1,56 @@
+---
+import type { Team } from "../../types/team";
+
+interface Props {
+    team: Team;
+}
+
+const { team } = Astro.props;
+---
+
+<header class="team-header">
+
+    <img
+        class="team-header__crest"
+        src={team.crest}
+        alt={`${team.name} crest`}
+    />
+
+    <div class="team-header__content">
+
+        <h1>{team.name}</h1>
+
+        <p>{team.country}</p>
+
+    </div>
+
+</header>
+
+<style>
+.team-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-5);
+
+    margin-bottom: var(--space-6);
+}
+
+.team-header__crest {
+    width: 96px;
+    height: 96px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+.team-header__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.team-header__content p {
+    color: var(--color-text-muted);
+}
+</style>
