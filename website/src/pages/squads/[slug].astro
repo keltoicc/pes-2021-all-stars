@@ -1,0 +1,74 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import SquadHeader from "../../components/squads/SquadHeader.astro";
+import Section from "../../components/ui/Section.astro";
+
+import SquadRepository from "../../lib/repositories/SquadRepository";
+import TeamRepository from "../../lib/repositories/TeamRepository";
+import ManagerRepository from "../../lib/repositories/ManagerRepository";
+import StadiumRepository from "../../lib/repositories/StadiumRepository";
+
+export function getStaticPaths() {
+    const squads = SquadRepository.getAll();
+
+    return squads.map(squad => ({
+        params: {
+            slug: squad.slug
+        },
+        props: {
+            squad
+        }
+    }));
+}
+
+const { squad } = Astro.props;
+
+const team = TeamRepository.getById(squad.team);
+
+if (!team) {
+    throw new Error(
+        `Team with id ${squad.team} not found for squad "${squad.name}".`
+    );
+}
+
+const manager =
+    squad.manager !== undefined
+        ? ManagerRepository.getById(squad.manager)
+        : undefined;
+
+const stadium =
+    squad.stadium !== undefined
+        ? StadiumRepository.getById(squad.stadium)
+        : undefined;
+
+---
+
+<Layout title={squad.name}>
+
+    <div class="squad-page">
+
+        <SquadHeader
+            squad={squad}
+            team={team}
+            manager={manager}
+            stadium={stadium}
+        />
+
+        <Section title="Players">
+
+            <p>No players available.</p>
+
+        </Section>
+
+    </div>
+
+</Layout>
+
+<style>
+.squad-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+</style>

@@ -50,7 +50,7 @@ def main(yml = "teams_debug"):
 
         team_data = get_team_data(team)
 
-        output_path = output_dir / f"{team_data['slug']}.json"
+        output_path = output_dir / f"{team_data['id']}-{team_data['slug']}.json"
 
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(

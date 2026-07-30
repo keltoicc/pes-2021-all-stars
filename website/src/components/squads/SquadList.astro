@@ -1,0 +1,48 @@
+---
+import type { Squad } from "../../types/squad";
+
+import SquadListItem from "./SquadListItem.astro";
+
+interface Props {
+    squads: Squad[];
+}
+
+const { squads } = Astro.props;
+---
+
+{
+    squads.length > 0 ? (
+
+        <ul class="squad-list">
+
+            {
+                squads.map(squad => (
+                    <SquadListItem squad={squad} />
+                ))
+            }
+
+        </ul>
+
+    ) : (
+
+        <p class="squad-list__empty">
+            No squads available.
+        </p>
+
+    )
+}
+
+<style>
+.squad-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+
+    margin: 0;
+    padding: 0;
+}
+
+.squad-list__empty {
+    color: var(--color-text-muted);
+}
+</style>

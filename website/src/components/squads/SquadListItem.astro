@@ -1,0 +1,30 @@
+---
+import type { Squad } from "../../types/squad";
+
+interface Props {
+    squad: Squad;
+}
+
+const { squad } = Astro.props;
+---
+
+<li class="squad-list-item">
+    <a href={`/squads/${squad.slug}`}>
+        {squad.name}
+    </a>
+</li>
+
+<style>
+.squad-list-item {
+    list-style: none;
+}
+
+.squad-list-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.squad-list-item a:hover {
+    text-decoration: underline;
+}
+</style>

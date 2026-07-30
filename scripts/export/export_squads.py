@@ -19,16 +19,17 @@ def slugify_web(name: str) -> str:
     name = re.sub(r"[^\w]+", "-", name)
     return name.strip("-")
 
-def get_squad_data(team):
+def get_squad_data(team, squad_name = "All-Time"):
 
     team_slug = slugify_web(team['name'])
 
     data = {
-        "id": f"{team_slug}-all-time",
-        "slug": "all-time",
-        "teamId": str(team['ID_pes']),
-        "name": "All-Time",
-        "description": "Selección histórica del club."
+        "id": team['ID_pes'],
+
+        "team": team['ID_pes'],
+
+        "name": squad_name,
+        "slug": f"{team_slug}-{slugify_web(squad_name)}"
     }
 
     return data
@@ -50,7 +51,7 @@ def main(yml = "teams_debug"):
 
         squad_data = get_squad_data(team)
 
-        output_path = output_dir / f"{squad_data['id']}.json"
+        output_path = output_dir / f"{squad_data['id']}-{squad_data['slug']}.json"
 
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(

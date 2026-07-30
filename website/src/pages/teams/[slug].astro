@@ -1,10 +1,15 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+
 import TeamHeader from "../../components/teams/TeamHeader.astro";
+import Section from "../../components/ui/Section.astro";
+
 import TeamRepository from "../../lib/repositories/TeamRepository";
+import SquadRepository from "../../lib/repositories/SquadRepository";
+
+import SquadList from "../../components/squads/SquadList.astro";
 
 export function getStaticPaths() {
-
     const teams = TeamRepository.getAll();
 
     return teams.map(team => ({
@@ -18,10 +23,30 @@ export function getStaticPaths() {
 }
 
 const { team } = Astro.props;
+
+const squads = SquadRepository.getByTeam(team.id);
 ---
 
 <Layout title={team.name}>
 
-    <TeamHeader team={team} />
+    <div class="team-page">
+
+        <TeamHeader team={team} />
+
+        <Section title="Available Squads">
+
+            <SquadList squads={squads} />
+
+        </Section>
+
+    </div>
 
 </Layout>
+
+<style>
+.team-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+}
+</style>

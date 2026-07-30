@@ -1,0 +1,90 @@
+---
+import type { Squad } from "../../types/squad";
+import type { Team } from "../../types/team";
+import type { Manager } from "../../types/manager";
+import type { Stadium } from "../../types/stadium";
+
+interface Props {
+    squad: Squad;
+    team: Team;
+    manager?: Manager;
+    stadium?: Stadium;
+}
+
+const { squad, team, manager, stadium } = Astro.props;
+---
+
+<header class="squad-header">
+
+    <img
+        class="squad-header__crest"
+        src={team.crest}
+        alt={`${team.name} crest`}
+    />
+
+    <div class="squad-header__content">
+
+        <h1>{squad.name}</h1>
+
+        <p class="squad-header__team">
+            {team.name}
+        </p>
+
+        {
+            (manager || stadium) && (
+
+                <dl class="squad-header__meta">
+
+                    {
+                        manager && (
+                            <>
+                                <dt>Manager</dt>
+                                <dd>{manager.name}</dd>
+                            </>
+                        )
+                    }
+
+                    {
+                        stadium && (
+                            <>
+                                <dt>Stadium</dt>
+                                <dd>{stadium.name}</dd>
+                            </>
+                        )
+                    }
+
+                </dl>
+
+            )
+        }
+
+    </div>
+
+</header>
+
+<style>
+.squad-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-5);
+}
+
+.squad-header__crest {
+    width: 96px;
+    height: 96px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+.squad-header__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.squad-header__content p {
+    color: var(--color-text-muted);
+}
+</style>
