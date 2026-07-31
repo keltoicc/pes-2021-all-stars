@@ -1,0 +1,15 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import CountryList from "../../components/countries/CountryList.astro";
+
+import CountryRepository from "../../lib/repositories/CountryRepository";
+
+const countries = CountryRepository.getAll();
+---
+
+<Layout title="Countries">
+
+    <CountryList countries={countries} />
+
+</Layout>

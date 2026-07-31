@@ -21,6 +21,22 @@ export default class TeamRepository {
         return teams;
     }
 
+    static getByCountry(countryId: number): Team[] {
+
+        const result: Team[] = [];
+
+        for (const team of teams) {
+
+            if (team.country === countryId) {
+                result.push(team);
+            }
+
+        }
+
+        return result;
+
+    }
+
     static getById(id: number): Team | undefined {
         return teamsById.get(id);
     }

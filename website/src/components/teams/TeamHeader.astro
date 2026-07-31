@@ -22,7 +22,13 @@ const { team, country } = Astro.props;
 
         <h1>{team.name}</h1>
 
-        <p>{country.name}</p>
+        <p>
+
+            <a href={`/countries/${country.slug}`}>
+                {country.name}
+            </a>
+
+        </p>
 
     </div>
 

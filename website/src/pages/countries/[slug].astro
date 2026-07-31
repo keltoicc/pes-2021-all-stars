@@ -1,0 +1,80 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import Section from "../../components/ui/Section.astro";
+import TeamList from "../../components/teams/TeamList.astro";
+
+import CountryRepository from "../../lib/repositories/CountryRepository";
+import TeamRepository from "../../lib/repositories/TeamRepository";
+
+import type { TeamSummary } from "../../viewModels/TeamSummary";
+
+export function getStaticPaths() {
+
+    return CountryRepository.getAll().map(country => ({
+        params: {
+            slug: country.slug
+        }
+    }));
+
+}
+
+const { slug } = Astro.params;
+
+if (!slug) {
+    throw new Error("Missing country slug.");
+}
+
+const country = CountryRepository.getBySlug(slug);
+
+if (!country) {
+    throw new Error(`Country "${slug}" not found.`);
+}
+
+const teams = TeamRepository.getByCountry(country.id);
+
+const summaries: TeamSummary[] = teams.map(team => ({
+    team,
+    country
+}));
+---
+
+<Layout title={country.name}>
+
+    <div class="country-page">
+
+        <header class="country-page__header">
+
+            <h1>{country.name}</h1>
+
+            <p>{country.code}</p>
+
+        </header>
+
+        <Section title="Teams">
+
+            {
+                summaries.length > 0
+                    ? <TeamList teams={summaries} />
+                    : <p>No teams available.</p>
+            }
+
+        </Section>
+
+    </div>
+
+</Layout>
+
+<style>
+.country-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+}
+
+.country-page__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+</style>
