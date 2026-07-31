@@ -1,9 +1,9 @@
 ---
 import TeamListItem from "./TeamListItem.astro";
-import type { Team } from "../../types/team";
+import type { TeamSummary } from "../../types/view/teamSummary";
 
 interface Props {
-    teams: Team[];
+    teams: TeamSummary[];
 }
 
 const { teams } = Astro.props;
@@ -28,8 +28,8 @@ const { teams } = Astro.props;
     <ul>
 
         {
-            teams.map(team => (
-                <TeamListItem team={team} />
+            teams.map(teamSummary => (
+                <TeamListItem summary={teamSummary} />
             ))
         }
 

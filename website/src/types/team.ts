@@ -4,7 +4,7 @@ export interface Team {
     shortName?: string;
     slug: string;
 
-    country: string;
+    country: number;
     city?: string;
     founded?: number;
 

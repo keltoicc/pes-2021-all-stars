@@ -1,11 +1,13 @@
 ---
 import type { Team } from "../../types/team";
+import type { Country } from "../../types/country";
 
 interface Props {
     team: Team;
+    country: Country;
 }
 
-const { team } = Astro.props;
+const { team, country } = Astro.props;
 ---
 
 <header class="team-header">
@@ -20,7 +22,7 @@ const { team } = Astro.props;
 
         <h1>{team.name}</h1>
 
-        <p>{team.country}</p>
+        <p>{country.name}</p>
 
     </div>
 

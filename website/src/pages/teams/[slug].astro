@@ -6,6 +6,7 @@ import Section from "../../components/ui/Section.astro";
 
 import TeamRepository from "../../lib/repositories/TeamRepository";
 import SquadRepository from "../../lib/repositories/SquadRepository";
+import CountryRepository from "../../lib/repositories/CountryRepository";
 
 import SquadList from "../../components/squads/SquadList.astro";
 
@@ -25,13 +26,24 @@ export function getStaticPaths() {
 const { team } = Astro.props;
 
 const squads = SquadRepository.getByTeam(team.id);
+
+const country = CountryRepository.getById(team.country);
+
+if (!country) {
+    throw new Error(
+        `Country with id ${team.country} not found for team "${team.name}".`
+    );
+}
 ---
 
 <Layout title={team.name}>
 
     <div class="team-page">
 
-        <TeamHeader team={team} />
+        <TeamHeader
+            team={team}
+            country={country}
+        />
 
         <Section title="Available Squads">
 

@@ -1,14 +1,31 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import TeamList from "../../components/teams/TeamList.astro";
+import type { TeamSummary } from "../../types/view/teamSummary";
 
 import TeamRepository from "../../lib/repositories/TeamRepository";
+import CountryRepository from "../../lib/repositories/CountryRepository";
 
 const teams = TeamRepository.getAll();
+
+const teamSummaries: TeamSummary[] = teams.map(team => {
+    const country = CountryRepository.getById(team.country);
+
+    if (!country) {
+        throw new Error(
+            `Country with id ${team.country} not found for team "${team.name}".`
+        );
+    }
+
+    return {
+        team,
+        country
+    };
+});
 ---
 
 <Layout title="Teams">
 
-    <TeamList teams={teams} />
+    <TeamList teams={teamSummaries} />
 
 </Layout>

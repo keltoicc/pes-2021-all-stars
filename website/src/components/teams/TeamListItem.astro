@@ -1,27 +1,27 @@
 ---
-import type { Team } from "../../types/team";
+import type { TeamSummary } from "../../types/view/teamSummary";
 
 interface Props {
-    team: Team;
+    summary: TeamSummary;
 }
 
-const { team } = Astro.props;
+const { summary } = Astro.props;
 ---
 
 <li>
 
-    <a href={`/teams/${team.slug}`}>
+    <a href={`/teams/${summary.team.slug}`}>
 
         <img
-            src={team.crest}
-            alt={`${team.name} crest`}
+            src={summary.team.crest}
+            alt={`${summary.team.name} crest`}
         />
 
         <div>
 
-            <h2>{team.name}</h2>
+            <h2>{summary.team.name}</h2>
 
-            <p>{team.country}</p>
+            <p>{summary.country.name}</p>
 
         </div>
 
