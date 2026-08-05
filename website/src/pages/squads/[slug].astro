@@ -3,11 +3,16 @@ import Layout from "../../layouts/Layout.astro";
 
 import SquadHeader from "../../components/squads/SquadHeader.astro";
 import Section from "../../components/ui/Section.astro";
+import SquadMemberList from "../../components/squads/SquadMemberList.astro";
 
 import SquadRepository from "../../lib/repositories/SquadRepository";
 import TeamRepository from "../../lib/repositories/TeamRepository";
 import ManagerRepository from "../../lib/repositories/ManagerRepository";
 import StadiumRepository from "../../lib/repositories/StadiumRepository";
+import PlayerRepository from "../../lib/repositories/PlayerRepository";
+import PlayerVersionRepository from "../../lib/repositories/PlayerVersionRepository";
+
+import type { SquadMemberSummary } from "../../viewModels/SquadMemberSummary";
 
 export function getStaticPaths() {
     const squads = SquadRepository.getAll();
@@ -42,6 +47,27 @@ const stadium =
         ? StadiumRepository.getById(squad.stadium)
         : undefined;
 
+const members: SquadMemberSummary[] = squad.members.map(member => {
+    const playerVersion = PlayerVersionRepository.getById(member.playerVersion);
+
+    if (!playerVersion) {
+        throw new Error(`PlayerVersion ${member.playerVersion} not found.`);
+    }
+
+    const player = PlayerRepository.getById(playerVersion.player);
+
+    if (!player) {
+        throw new Error(`Player ${playerVersion.player} not found.`);
+    }
+
+    return {
+        member,
+        playerVersion,
+        player
+    };
+});
+
+
 ---
 
 <Layout title={squad.name}>
@@ -55,11 +81,7 @@ const stadium =
             stadium={stadium}
         />
 
-        <Section title="Players">
-
-            <p>No players available.</p>
-
-        </Section>
+        <SquadMemberList members={members} />
 
     </div>
 

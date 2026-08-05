@@ -1,0 +1,23 @@
+---
+import type { SquadMemberSummary } from "../../viewModels/SquadMemberSummary";
+
+interface Props {
+    member: SquadMemberSummary;
+}
+
+const { member } = Astro.props;
+---
+
+<li>
+
+    <a href={`/player-versions/${member.playerVersion.slug}`}>
+
+        <h3>{member.player.name}</h3>
+
+        <p>
+            {member.playerVersion.version}
+        </p>
+
+    </a>
+
+</li>

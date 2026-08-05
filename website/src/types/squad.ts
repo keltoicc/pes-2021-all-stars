@@ -1,3 +1,5 @@
+import type { SquadMember } from "./squadMember";
+
 export interface Squad {
     id: number;
 
@@ -8,4 +10,6 @@ export interface Squad {
 
     manager?: number;
     stadium?: number;
+
+    members: SquadMember[];
 }

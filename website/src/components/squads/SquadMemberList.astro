@@ -1,0 +1,45 @@
+---
+import SquadMemberListItem from "./SquadMemberListItem.astro";
+
+import type { SquadMemberSummary } from "../../viewModels/SquadMemberSummary";
+
+interface Props {
+    members: SquadMemberSummary[];
+}
+
+const { members } = Astro.props;
+---
+
+<section class="squad-member-list">
+
+    <header class="squad-member-list__header">
+
+        <h2>Players</h2>
+
+        <p class="squad-member-list__count">
+            {members.length} {members.length === 1 ? "player" : "players"}
+        </p>
+
+    </header>
+
+    {
+        members.length === 0 ? (
+
+            <p>No players available.</p>
+
+        ) : (
+
+            <ul>
+
+                {
+                    members.map(member => (
+                        <SquadMemberListItem member={member} />
+                    ))
+                }
+
+            </ul>
+
+        )
+    }
+
+</section>
