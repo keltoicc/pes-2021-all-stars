@@ -1,0 +1,25 @@
+---
+import type { PlayerSummary } from "../../viewModels/PlayerSummary";
+
+interface Props {
+    player: PlayerSummary;
+}
+
+const { player } = Astro.props;
+---
+
+<li>
+
+    <a href={`/players/${player.player.slug}`}>
+
+        <div>
+
+            <h2>{player.player.name}</h2>
+
+            <p>{player.country.name}</p>
+
+        </div>
+
+    </a>
+
+</li>

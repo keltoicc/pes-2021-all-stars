@@ -1,0 +1,81 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import PlayerHeader from "../../components/players/PlayerHeader.astro";
+import Section from "../../components/ui/Section.astro";
+
+import PlayerRepository from "../../lib/repositories/PlayerRepository";
+import PlayerVersionRepository from "../../lib/repositories/PlayerVersionRepository";
+import CountryRepository from "../../lib/repositories/CountryRepository";
+
+export function getStaticPaths() {
+    const players = PlayerRepository.getAll();
+
+    return players.map(player => ({
+        params: {
+            slug: player.slug
+        },
+        props: {
+            player
+        }
+    }));
+}
+
+const { player } = Astro.props;
+
+const country = CountryRepository.getById(player.country);
+
+if (!country) {
+    throw new Error(
+        `Country with id ${player.country} not found.`
+    );
+}
+
+const versions = PlayerVersionRepository.getByPlayer(player.id);
+---
+
+<Layout title={player.name}>
+
+    <div class="player-page">
+
+        <PlayerHeader
+            player={player}
+            country={country}
+        />
+
+        <Section title="Available Versions">
+
+            <ul>
+
+                {
+                    versions.map(version => (
+
+                        <li>
+
+                            <a href={`/player-versions/${version.slug}`}>
+
+                                {version.version}
+                                ({version.fromSeason}–{version.toSeason})
+
+                            </a>
+
+                        </li>
+
+                    ))
+                }
+
+            </ul>
+
+        </Section>
+
+    </div>
+
+</Layout>
+
+<style>
+.player-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+</style>

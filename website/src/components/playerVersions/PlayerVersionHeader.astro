@@ -1,0 +1,77 @@
+---
+import type { Player } from "../../types/player";
+import type { PlayerVersion } from "../../types/playerVersion";
+import type { Country } from "../../types/country";
+
+interface Props {
+    player: Player;
+    playerVersion: PlayerVersion;
+    country: Country;
+}
+
+const {
+    player,
+    playerVersion,
+    country
+} = Astro.props;
+---
+
+<header class="player-version-header">
+
+    <div class="player-version-header__content">
+
+        <h1>
+            <a href={`/players/${player.slug}`}>
+                {player.name}
+            </a>
+        </h1>
+
+        <p class="player-version-header__version">
+            {playerVersion.version}
+        </p>
+
+        <dl>
+
+            <div>
+
+                <dt>Country</dt>
+                <dd>{country.name}</dd>
+
+            </div>
+
+            <div>
+
+                <dt>Seasons</dt>
+                <dd>
+                    {playerVersion.fromSeason}
+                    –
+                    {playerVersion.toSeason}
+                </dd>
+
+            </div>
+
+            <div>
+
+                <dt>Main Position</dt>
+                <dd>{playerVersion.mainPosition}</dd>
+
+            </div>
+
+            {
+                playerVersion.overall !== undefined && (
+
+                    <div>
+
+                        <dt>Overall</dt>
+                        <dd>{playerVersion.overall}</dd>
+
+                    </div>
+
+                )
+            }
+
+        </dl>
+
+    </div>
+
+</header>

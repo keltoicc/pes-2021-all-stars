@@ -1,0 +1,39 @@
+---
+import PlayerListItem from "./PlayerListItem.astro";
+
+import type { PlayerSummary } from "../../viewModels/PlayerSummary";
+
+interface Props {
+    players: PlayerSummary[];
+}
+
+const { players } = Astro.props;
+---
+
+<section class="player-list">
+
+    <header class="player-list__header">
+
+        <h1>Players</h1>
+
+        <p>
+            Browse every player available in the project.
+        </p>
+
+        <p class="player-list__count">
+            {players.length} {players.length === 1 ? "player" : "players"}
+        </p>
+
+    </header>
+
+    <ul>
+
+        {
+            players.map(player => (
+                <PlayerListItem player={player} />
+            ))
+        }
+
+    </ul>
+
+</section>

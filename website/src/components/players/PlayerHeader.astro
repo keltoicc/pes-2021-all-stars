@@ -1,0 +1,61 @@
+---
+import type { Player } from "../../types/player";
+import type { Country } from "../../types/country";
+
+interface Props {
+    player: Player;
+    country: Country;
+}
+
+const {
+    player,
+    country
+} = Astro.props;
+---
+
+<header class="player-header">
+
+    <div class="player-header__content">
+
+        <h1>{player.name}</h1>
+
+        <dl>
+
+            <div>
+
+                <dt>Country</dt>
+                <dd>{country.name}</dd>
+
+            </div>
+
+            {
+                player.birthDate && (
+
+                    <div>
+
+                        <dt>Birth date</dt>
+                        <dd>{player.birthDate}</dd>
+
+                    </div>
+
+                )
+            }
+
+            {
+                player.preferredFoot && (
+
+                    <div>
+
+                        <dt>Preferred foot</dt>
+                        <dd>{player.preferredFoot}</dd>
+
+                    </div>
+
+                )
+            }
+
+        </dl>
+
+    </div>
+
+</header>

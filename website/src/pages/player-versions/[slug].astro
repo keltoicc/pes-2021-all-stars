@@ -1,0 +1,81 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import PlayerVersionHeader from "../../components/playerVersions/PlayerVersionHeader.astro";
+import Section from "../../components/ui/Section.astro";
+
+import PlayerVersionRepository from "../../lib/repositories/PlayerVersionRepository";
+import PlayerRepository from "../../lib/repositories/PlayerRepository";
+import CountryRepository from "../../lib/repositories/CountryRepository";
+
+export function getStaticPaths() {
+    const playerVersions = PlayerVersionRepository.getAll();
+
+    return playerVersions.map(playerVersion => ({
+        params: {
+            slug: playerVersion.slug
+        },
+        props: {
+            playerVersion
+        }
+    }));
+}
+
+const { playerVersion } = Astro.props;
+
+const player = PlayerRepository.getById(playerVersion.player);
+
+if (!player) {
+    throw new Error(
+        `Player with id ${playerVersion.player} not found.`
+    );
+}
+
+const country = CountryRepository.getById(player.country);
+
+if (!country) {
+    throw new Error(
+        `Country with id ${player.country} not found.`
+    );
+}
+---
+
+<Layout title={player.name}>
+
+    <div class="player-version-page">
+
+        <PlayerVersionHeader
+            player={player}
+            playerVersion={playerVersion}
+            country={country}
+        />
+
+        <Section title="Positions">
+
+            <ul>
+
+                {
+                    Object.entries(playerVersion.positions).map(([position, level]) => (
+
+                        <li>
+                            {position} ({level})
+                        </li>
+
+                    ))
+                }
+
+            </ul>
+
+        </Section>
+
+    </div>
+
+</Layout>
+
+<style>
+.player-version-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+</style>
