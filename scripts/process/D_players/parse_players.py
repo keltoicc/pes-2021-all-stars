@@ -46,7 +46,7 @@ def build_player(player_id):
 
     return player_data
 
-def main(yml = "teams"):
+def main(yml = "teams_debug"):
     teams = yaml.safe_load(
         Path(f"config/{yml}.yml").read_text(encoding="utf-8")
     )["teams"]

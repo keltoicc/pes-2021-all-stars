@@ -11,6 +11,8 @@ def parse_profile(profile_path):
 
     player = data.get("data", [{}])[0]
 
+    lifeDates = player.get("lifeDates", {})
+    birthPlaceDetails = player.get("birthPlaceDetails", {})
     nationality = player.get("nationalityDetails", {})
     attributes = player.get("attributes", {})
     market_value = player.get("marketValueDetails", {})
@@ -18,7 +20,13 @@ def parse_profile(profile_path):
     highest_value = market_value.get("highest", {})
 
     return {
+        "name": player.get("name"),
+
         "short_name": player.get("shortName"),
+
+        "dateOfBirth": lifeDates.get("dateOfBirth"),
+
+        "placeOfBirth": birthPlaceDetails.get("placeOfBirth"),
 
         "nation_1":
             NATIONS_MAP.get(nationality.get("nationalities", {}).get("nationalityId")),

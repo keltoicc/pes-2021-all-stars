@@ -6,9 +6,19 @@ export interface Player {
     name: string;
     slug: string;
 
-    country: number;
-
     birthDate?: string;
+    birthPlace?: string;
+
+    country: number;
+    secondCountry?: number;
+
+    height?: number;
 
     preferredFoot?: PreferredFoot;
+
+    //career?: CareerEntry[];
+
+    //statistics?: CareerStatistics;
+
+    //honours?: Honour[];
 }
