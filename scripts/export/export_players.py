@@ -64,7 +64,7 @@ def get_player_data(id_transfermarkt) -> dict:
     name = player_data.get("name")
 
     data = {
-        "id": id_transfermarkt,
+        "id": int(id_transfermarkt),
 
         "name": name,
         "slug": f"{slugify_web(name)}",
