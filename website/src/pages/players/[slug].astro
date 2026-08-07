@@ -2,11 +2,15 @@
 import Layout from "../../layouts/Layout.astro";
 
 import PlayerHeader from "../../components/players/PlayerHeader.astro";
+import PlayerCareer from "../../components/players/PlayerCareer.astro";
 import Section from "../../components/ui/Section.astro";
 
 import PlayerRepository from "../../lib/repositories/PlayerRepository";
 import PlayerVersionRepository from "../../lib/repositories/PlayerVersionRepository";
 import CountryRepository from "../../lib/repositories/CountryRepository";
+import TeamRepository from "../../lib/repositories/TeamRepository";
+
+import type { CareerEntrySummary } from "../../viewModels/CareerEntrySummary";
 
 export function getStaticPaths() {
     const players = PlayerRepository.getAll();
@@ -31,6 +35,22 @@ if (!country) {
     );
 }
 
+const career: CareerEntrySummary[] = (player.career ?? []).map(entry => {
+
+    const team = TeamRepository.getById(entry.team);
+
+    if (!team) {
+        throw new Error(
+            `Team with id ${entry.team} not found for player "${player.name}".`
+        );
+    }
+
+    return {
+        career: entry,
+        team
+    };
+});
+
 const versions = PlayerVersionRepository.getByPlayer(player.id);
 ---
 
@@ -42,6 +62,8 @@ const versions = PlayerVersionRepository.getByPlayer(player.id);
             player={player}
             country={country}
         />
+
+        <PlayerCareer career={career} />
 
         <Section title="Available Versions">
 

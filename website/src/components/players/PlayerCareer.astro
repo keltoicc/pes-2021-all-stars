@@ -1,0 +1,55 @@
+---
+import type { CareerEntrySummary } from "../../viewModels/CareerEntrySummary";
+
+interface Props {
+    career: CareerEntrySummary[];
+}
+
+const { career } = Astro.props;
+---
+
+<section class="player-career">
+
+    <header class="player-career__header">
+
+        <h2>Career</h2>
+
+    </header>
+
+    {
+        career.length === 0 ? (
+
+            <p>No career information available.</p>
+
+        ) : (
+
+            <ul>
+
+                {
+                    career.map(entry => (
+
+                        <li>
+
+                            <a href={`/teams/${entry.team.slug}`}>
+
+                                <strong>{entry.team.name}</strong>
+
+                                <span>
+                                    {entry.career.fromSeason}
+                                    –
+                                    {entry.career.toSeason}
+                                </span>
+
+                            </a>
+
+                        </li>
+
+                    ))
+                }
+
+            </ul>
+
+        )
+    }
+
+</section>
