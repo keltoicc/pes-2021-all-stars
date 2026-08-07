@@ -3,6 +3,7 @@ from pathlib import Path
 import yaml
 import re
 import sys
+import csv
 
 from publisher import publish_directory
 
@@ -19,6 +20,50 @@ def slugify_web(name: str) -> str:
     name = re.sub(r"[^\w]+", "-", name)
     return name.strip("-")
 
+def get_country_id(country, team_name):
+
+    if not country:
+        return None
+
+    if country == "Europe" or country == "Africa" or country == "North, Central America and Caribbean" or country == "South America" or country == "Asia":
+        country = team_name
+
+    if country == "Bosnia-Herzegovina":
+        country = "Bosnia and Herzegovina"
+
+    if country == "Czechia":
+        country = "Czech Republic"
+
+    if country == "United States of America":
+        country = "USA"
+
+    if country == "South Korea":
+        country = "Republic of Korea"
+
+    if country == "North Korea":
+        country = "Korea DPR"
+
+    if country == "the Congo":
+        country = "Congo"
+    
+    countries_dir = Path(f"config/evowebid")
+
+    countries_file = countries_dir / "countries.csv"
+
+    if not countries_file.exists():
+        # print(f"No hay csv para países")
+        return None
+
+    with countries_file.open(encoding="utf-8") as f:
+        reader = csv.DictReader(f, delimiter=';')
+        for row in reader:
+            #print(row)
+            if row["English:"] == country:
+                return int(row["Country ID:"])
+
+    print(f"No se encontró el país {country} en el csv")
+    return None
+
 def get_team_data(team):
 
     data = {
@@ -26,14 +71,14 @@ def get_team_data(team):
         "name": team['name'],
         "slug": slugify_web(team['name']),
 
-        "country": team['country'],
+        "country": get_country_id(team['country'], team['name']),
 
         "crest": f"/images/teams/{team['ID_pes']}.png",
     }
 
     return data
 
-def main(yml = "teams_debug"):
+def main(yml = "teams"):
 
     teams = yaml.safe_load(
         Path(f"config/{yml}.yml").read_text(encoding="utf-8")

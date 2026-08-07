@@ -33,7 +33,7 @@ def get_country_id(country):
     countries_file = countries_dir / "countries.csv"
 
     if not countries_file.exists():
-        print(f"No hay csv para países")
+        # print(f"No hay csv para países")
         return None
 
     with countries_file.open(encoding="utf-8") as f:
@@ -45,6 +45,66 @@ def get_country_id(country):
 
     print(f"No se encontró el país {country} en el csv")
     return None
+
+def get_team_id(team_id):
+
+    teams = yaml.safe_load(
+            Path(f"config/teams.yml").read_text(encoding="utf-8")
+        )["teams"]
+
+    for team in teams:
+        if not team["ID_transfermarkt"]:
+            continue
+
+        if team['ID_transfermarkt'] == int(team_id):
+            return int(team["ID_pes"])
+
+    # print(f"No se encontró el equipo con ID_transfermarkt {team_id} en el yml")
+    return None
+
+def build_player_career(clubs: dict) -> list[dict]:
+    career = []
+
+    for team_id, team_data in clubs.items():
+        if team_data.get("type") != "club":
+            continue
+
+        pes_id = get_team_id(team_id)
+
+        if not pes_id:
+            continue
+        
+        seasons = sorted(set(team_data.get("seasons", [])))
+
+        if not seasons:
+            continue
+
+        start = seasons[0]
+        previous = seasons[0]
+
+        for season in seasons[1:]:
+            if season == previous + 1:
+                previous = season
+                continue
+
+            career.append({
+                "team": pes_id,
+                "fromSeason": start,
+                "toSeason": previous
+            })
+
+            start = season
+            previous = season
+
+        career.append({
+            "team": pes_id,
+            "fromSeason": start,
+            "toSeason": previous
+        })
+
+    career.sort(key=lambda x: (x["fromSeason"], x["toSeason"], x["team"]))
+
+    return career
 
 def get_player_data(id_transfermarkt) -> dict:
 
@@ -60,6 +120,7 @@ def get_player_data(id_transfermarkt) -> dict:
         all_data = json.load(f)
 
     player_data = all_data.get("player", {})
+    clubs = all_data.get("clubs", {})
 
     name = player_data.get("name")
 
@@ -77,6 +138,8 @@ def get_player_data(id_transfermarkt) -> dict:
 
         "height": int(player_data.get("height") * 100) if player_data.get("height") else None,
         "preferredFoot": player_data.get("foot").lower() if player_data.get("foot") else None,
+
+        "career": build_player_career(clubs)
     }
 
     return {k: v for k, v in data.items() if v is not None}
@@ -109,7 +172,7 @@ def main(yml = "teams_debug"):
 
         for player in all_players:
 
-            #print(f"{player['player']['ID_transfermarkt']} {player['player']['name']}")
+            print(f"Exportando {player['player']['name']}")
         
             player_data = get_player_data(player['player']['ID_transfermarkt'])
 

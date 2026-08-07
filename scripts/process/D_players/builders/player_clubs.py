@@ -12,6 +12,8 @@ def initialize_clubs():
 
     return defaultdict(
         lambda: {
+            "type": "",
+
             "seasons": set(),
 
             "stats": {
@@ -98,6 +100,11 @@ def process_matches(clubs, matches):
         club_id = str(club_id)
 
         club = clubs[club_id]
+
+        if is_national_team(club):
+            club["type"] = "national"
+        else:
+            club["type"] = "club"
 
         season = match.get("season")
 
@@ -230,7 +237,7 @@ def is_national_team(club):
     competitions = club.get("competitions", {})
 
     return any(
-        "national" in competition.lower()
+        "National" in competition
         for competition in competitions
     )
 

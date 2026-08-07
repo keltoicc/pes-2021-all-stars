@@ -1,4 +1,5 @@
 import type { PreferredFoot } from "../enums/preferredFoot";
+import type { CareerEntry } from "./careerEntry";
 
 export interface Player {
     id: number;
@@ -16,7 +17,7 @@ export interface Player {
 
     preferredFoot?: PreferredFoot;
 
-    //career?: CareerEntry[];
+    career?: CareerEntry[];
 
     //statistics?: CareerStatistics;
 
