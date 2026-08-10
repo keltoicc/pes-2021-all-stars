@@ -47,7 +47,7 @@ def get_country_id(country, team_name):
         country = "Congo"
 
     if country == "Serbia & Montenegro":
-            country = "Serbia and Montenegro"
+        country = "Serbia and Montenegro"
     
     countries_dir = Path(f"config/evowebid")
 
