@@ -1,0 +1,41 @@
+---
+interface Props {
+    weakFootUsage: number;
+    weakFootAccuracy: number;
+    form: number;
+    injuryResistance: number;
+}
+
+const {
+    weakFootUsage,
+    weakFootAccuracy,
+    form,
+    injuryResistance
+} = Astro.props;
+---
+
+<section class="player-version-parameters">
+
+    <h2>Parameters</h2>
+
+    <div>
+        <span>Weak Foot Usage</span>
+        <strong>{weakFootUsage}</strong>
+    </div>
+
+    <div>
+        <span>Weak Foot Accuracy</span>
+        <strong>{weakFootAccuracy}</strong>
+    </div>
+
+    <div>
+        <span>Form</span>
+        <strong>{form}</strong>
+    </div>
+
+    <div>
+        <span>Injury Resistance</span>
+        <strong>{injuryResistance}</strong>
+    </div>
+
+</section>

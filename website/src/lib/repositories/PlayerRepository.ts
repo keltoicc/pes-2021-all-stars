@@ -1,29 +1,33 @@
 import type { Player } from "../../types/player";
 
-const players = import.meta.glob("../../data/players/*.json", {
+const modules = import.meta.glob("../../data/players/*.json", {
     eager: true,
-}) as Record<string, { default: Player }>;
+});
 
-class PlayerRepository {
+const players: Player[] = Object.values(modules)
+    .map((module: any) => module.default as Player)
+    .sort((a, b) => a.name.localeCompare(b.name));
 
-    private readonly players: Player[];
+const playersById = new Map<number, Player>();
+const playersBySlug = new Map<string, Player>();
 
-    constructor() {
-        this.players = Object.values(players).map(module => module.default);
+for (const player of players) {
+    playersById.set(player.id, player);
+    playersBySlug.set(player.slug, player);
+}
+
+export default class PlayerRepository {
+
+    static getAll(): Player[] {
+        return players;
     }
 
-    getAll(): Player[] {
-        return this.players;
+    static getById(id: number): Player | undefined {
+        return playersById.get(id);
     }
 
-    getById(id: number): Player | undefined {
-        return this.players.find(player => player.id === id);
-    }
-
-    getBySlug(slug: string): Player | undefined {
-        return this.players.find(player => player.slug === slug);
+    static getBySlug(slug: string): Player | undefined {
+        return playersBySlug.get(slug);
     }
 
 }
-
-export default new PlayerRepository();

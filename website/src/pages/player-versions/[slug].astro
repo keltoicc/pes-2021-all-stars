@@ -7,6 +7,9 @@ import Section from "../../components/ui/Section.astro";
 import PlayerVersionRepository from "../../lib/repositories/PlayerVersionRepository";
 import PlayerRepository from "../../lib/repositories/PlayerRepository";
 import CountryRepository from "../../lib/repositories/CountryRepository";
+import PlayerVersionAbilities from "../../components/playerVersions/PlayerVersionAbilities.astro";
+import PlayerVersionParameters from "../../components/playerVersions/PlayerVersionParameters.astro";
+import PlayerVersionPlayingSkills from "../../components/playerVersions/PlayerVersionPlayingSkills.astro";
 
 export function getStaticPaths() {
     const playerVersions = PlayerVersionRepository.getAll();
@@ -67,6 +70,21 @@ if (!country) {
             </ul>
 
         </Section>
+
+        <PlayerVersionAbilities
+            abilities={playerVersion.abilities}
+        />
+
+        <PlayerVersionParameters
+            weakFootUsage={playerVersion.weakFootUsage}
+            weakFootAccuracy={playerVersion.weakFootAccuracy}
+            form={playerVersion.form}
+            injuryResistance={playerVersion.injuryResistance}
+        />
+
+        <PlayerVersionPlayingSkills
+            playingSkills={playerVersion.playingSkills}
+        />
 
     </div>
 

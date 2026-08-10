@@ -1,0 +1,29 @@
+---
+import type { PlayingSkills } from "../../enums/playingSkill";
+
+interface Props {
+    playingSkills?: PlayingSkills[];
+}
+
+const { playingSkills } = Astro.props;
+---
+
+{
+    playingSkills && playingSkills.length > 0 && (
+
+        <section class="player-version-playing-skills">
+
+            <h2>Playing Skills</h2>
+
+            <ul>
+                {
+                    playingSkills.map(skill => (
+                        <li>{skill}</li>
+                    ))
+                }
+            </ul>
+
+        </section>
+
+    )
+}

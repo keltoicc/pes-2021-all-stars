@@ -22,14 +22,15 @@ for (const squad of squads) {
     squadsById.set(squad.id, squad);
     squadsBySlug.set(squad.slug, squad);
 
-    if (!squadsByTeam.has(squad.team)) {
-        squadsByTeam.set(squad.team, []);
-    }
+    const teamSquads = squadsByTeam.get(squad.team) ?? [];
 
-    squadsByTeam.get(squad.team)!.push(squad);
+    teamSquads.push(squad);
+
+    squadsByTeam.set(squad.team, teamSquads);
 }
 
 export default class SquadRepository {
+
     static getAll(): Squad[] {
         return squads;
     }
@@ -45,4 +46,5 @@ export default class SquadRepository {
     static getByTeam(teamId: number): Squad[] {
         return squadsByTeam.get(teamId) ?? [];
     }
+
 }

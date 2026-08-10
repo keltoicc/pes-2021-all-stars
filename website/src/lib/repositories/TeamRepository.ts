@@ -17,24 +17,9 @@ for (const team of teams) {
 }
 
 export default class TeamRepository {
+
     static getAll(): Team[] {
         return teams;
-    }
-
-    static getByCountry(countryId: number): Team[] {
-
-        const result: Team[] = [];
-
-        for (const team of teams) {
-
-            if (team.country === countryId) {
-                result.push(team);
-            }
-
-        }
-
-        return result;
-
     }
 
     static getById(id: number): Team | undefined {
@@ -44,4 +29,9 @@ export default class TeamRepository {
     static getBySlug(slug: string): Team | undefined {
         return teamsBySlug.get(slug);
     }
+
+    static getByCountry(countryId: number): Team[] {
+        return teams.filter(team => team.country === countryId);
+    }
+
 }

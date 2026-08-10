@@ -1,0 +1,164 @@
+---
+import type { Abilities } from "../../types/abilities";
+
+interface Props {
+    abilities: Abilities;
+}
+
+const { abilities } = Astro.props;
+---
+
+<section class="player-version-abilities">
+
+    <header class="player-version-abilities__header">
+        <h2>Abilities</h2>
+    </header>
+
+    <div class="player-version-abilities__grid">
+
+        <div>
+            <span>Offensive Awareness</span>
+            <strong>{abilities.offensiveAwareness}</strong>
+        </div>
+
+        <div>
+            <span>Ball Control</span>
+            <strong>{abilities.ballControl}</strong>
+        </div>
+
+        <div>
+            <span>Dribbling</span>
+            <strong>{abilities.dribbling}</strong>
+        </div>
+
+        <div>
+            <span>Tight Possession</span>
+            <strong>{abilities.tightPossession}</strong>
+        </div>
+
+        <div>
+            <span>Low Pass</span>
+            <strong>{abilities.lowPass}</strong>
+        </div>
+
+        <div>
+            <span>Lofted Pass</span>
+            <strong>{abilities.loftedPass}</strong>
+        </div>
+
+        <div>
+            <span>Finishing</span>
+            <strong>{abilities.finishing}</strong>
+        </div>
+
+        <div>
+            <span>Heading</span>
+            <strong>{abilities.heading}</strong>
+        </div>
+
+        <div>
+            <span>Place Kicking</span>
+            <strong>{abilities.placeKicking}</strong>
+        </div>
+
+        <div>
+            <span>Curl</span>
+            <strong>{abilities.curl}</strong>
+        </div>
+
+        <div>
+            <span>Speed</span>
+            <strong>{abilities.speed}</strong>
+        </div>
+
+        <div>
+            <span>Acceleration</span>
+            <strong>{abilities.acceleration}</strong>
+        </div>
+
+        <div>
+            <span>Kicking Power</span>
+            <strong>{abilities.kickingPower}</strong>
+        </div>
+
+        <div>
+            <span>Jump</span>
+            <strong>{abilities.jump}</strong>
+        </div>
+
+        <div>
+            <span>Physical Contact</span>
+            <strong>{abilities.physicalContact}</strong>
+        </div>
+
+        <div>
+            <span>Balance</span>
+            <strong>{abilities.balance}</strong>
+        </div>
+
+        <div>
+            <span>Stamina</span>
+            <strong>{abilities.stamina}</strong>
+        </div>
+
+        <div>
+            <span>Defensive Awareness</span>
+            <strong>{abilities.defensiveAwareness}</strong>
+        </div>
+
+        <div>
+            <span>Ball Winning</span>
+            <strong>{abilities.ballWinning}</strong>
+        </div>
+
+        <div>
+            <span>Aggression</span>
+            <strong>{abilities.aggression}</strong>
+        </div>
+
+        <div>
+            <span>GK Awareness</span>
+            <strong>{abilities.gkAwareness}</strong>
+        </div>
+
+        <div>
+            <span>GK Catching</span>
+            <strong>{abilities.gkCatching}</strong>
+        </div>
+
+        <div>
+            <span>GK Clearing</span>
+            <strong>{abilities.gkClearing}</strong>
+        </div>
+
+        <div>
+            <span>GK Reflexes</span>
+            <strong>{abilities.gkReflexes}</strong>
+        </div>
+
+        <div>
+            <span>GK Reach</span>
+            <strong>{abilities.gkReach}</strong>
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+.player-version-abilities__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-2);
+}
+
+.player-version-abilities__grid > div {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-2);
+}
+
+.player-version-abilities__grid strong {
+    font-weight: 600;
+}
+</style>

@@ -1,33 +1,49 @@
 import type { PlayerVersion } from "../../types/playerVersion";
 
-const playerVersions = import.meta.glob("../../data/playerVersions/*.json", {
+const modules = import.meta.glob("../../data/playerVersions/*.json", {
     eager: true,
-}) as Record<string, { default: PlayerVersion }>;
+});
 
-class PlayerVersionRepository {
+const playerVersions: PlayerVersion[] = Object.values(modules)
+    .map((module: any) => module.default as PlayerVersion)
+    .sort((a, b) => a.player - b.player);
 
-    private readonly playerVersions: PlayerVersion[];
+const playerVersionsById = new Map<number, PlayerVersion>();
+const playerVersionsBySlug = new Map<string, PlayerVersion>();
+const playerVersionsByPlayer = new Map<number, PlayerVersion[]>();
 
-    constructor() {
-        this.playerVersions = Object.values(playerVersions).map(module => module.default);
+for (const playerVersion of playerVersions) {
+
+    playerVersionsById.set(playerVersion.id, playerVersion);
+    playerVersionsBySlug.set(playerVersion.slug, playerVersion);
+
+    const playerVersionsForPlayer =
+        playerVersionsByPlayer.get(playerVersion.player) ?? [];
+
+    playerVersionsForPlayer.push(playerVersion);
+
+    playerVersionsByPlayer.set(
+        playerVersion.player,
+        playerVersionsForPlayer
+    );
+}
+
+export default class PlayerVersionRepository {
+
+    static getAll(): PlayerVersion[] {
+        return playerVersions;
     }
 
-    getAll(): PlayerVersion[] {
-        return this.playerVersions;
+    static getById(id: number): PlayerVersion | undefined {
+        return playerVersionsById.get(id);
     }
 
-    getById(id: number): PlayerVersion | undefined {
-        return this.playerVersions.find(playerVersion => playerVersion.id === id);
+    static getBySlug(slug: string): PlayerVersion | undefined {
+        return playerVersionsBySlug.get(slug);
     }
 
-    getBySlug(slug: string): PlayerVersion | undefined {
-        return this.playerVersions.find(playerVersion => playerVersion.slug === slug);
-    }
-
-    getByPlayer(playerId: number): PlayerVersion[] {
-        return this.playerVersions.filter(playerVersion => playerVersion.player === playerId);
+    static getByPlayer(playerId: number): PlayerVersion[] {
+        return playerVersionsByPlayer.get(playerId) ?? [];
     }
 
 }
-
-export default new PlayerVersionRepository();
