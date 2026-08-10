@@ -10,6 +10,7 @@ import CountryRepository from "../../lib/repositories/CountryRepository";
 import PlayerVersionAbilities from "../../components/playerVersions/PlayerVersionAbilities.astro";
 import PlayerVersionParameters from "../../components/playerVersions/PlayerVersionParameters.astro";
 import PlayerVersionPlayingSkills from "../../components/playerVersions/PlayerVersionPlayingSkills.astro";
+import PlayerVersionComPlayingStyles from "../../components/playerVersions/PlayerVersionComPlayingStyles.astro";
 
 export function getStaticPaths() {
     const playerVersions = PlayerVersionRepository.getAll();
@@ -84,6 +85,10 @@ if (!country) {
 
         <PlayerVersionPlayingSkills
             playingSkills={playerVersion.playingSkills}
+        />
+
+        <PlayerVersionComPlayingStyles
+            comPlayingStyles={playerVersion.comPlayingStyles}
         />
 
     </div>

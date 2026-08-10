@@ -1,0 +1,29 @@
+---
+import type { ComPlayingStyles } from "../../enums/comPlayingStyle";
+
+interface Props {
+    comPlayingStyles?: ComPlayingStyles[];
+}
+
+const { comPlayingStyles } = Astro.props;
+---
+
+{
+    comPlayingStyles && comPlayingStyles.length > 0 && (
+
+        <section class="player-version-com-playing-styles">
+
+            <h2>Com Playing Styles</h2>
+
+            <ul>
+                {
+                    comPlayingStyles.map(style => (
+                        <li>{style}</li>
+                    ))
+                }
+            </ul>
+
+        </section>
+
+    )
+}
