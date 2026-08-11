@@ -12,6 +12,7 @@ import PlayerVersionParameters from "../../components/playerVersions/PlayerVersi
 import PlayerVersionPlayingSkills from "../../components/playerVersions/PlayerVersionPlayingSkills.astro";
 import PlayerVersionComPlayingStyles from "../../components/playerVersions/PlayerVersionComPlayingStyles.astro";
 import PlayerVersionPhysical from "../../components/playerVersions/PlayerVersionPhysical.astro";
+import PlayerVersionPopularity from "../../components/playerVersions/PlayerVersionPopularity.astro";
 
 export function getStaticPaths() {
     const playerVersions = PlayerVersionRepository.getAll();
@@ -75,6 +76,10 @@ if (!country) {
 
         <PlayerVersionPhysical
             player={player}
+            playerVersion={playerVersion}
+        />
+
+        <PlayerVersionPopularity
             playerVersion={playerVersion}
         />
 

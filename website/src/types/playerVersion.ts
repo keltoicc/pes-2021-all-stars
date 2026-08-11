@@ -15,7 +15,13 @@ export interface PlayerVersion {
     version: string;
     fromSeason: number;
     toSeason: number;
+    
+    // Physical
     weight?: number;
+
+    // Popularity
+    marketValue?: number;
+    reputation?: number;
 
     // Gameplay
     playingStyle?: PlayingStyle;

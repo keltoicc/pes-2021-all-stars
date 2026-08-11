@@ -1,0 +1,35 @@
+---
+import type { PlayerVersion } from "../../types/playerVersion";
+
+interface Props {
+    playerVersion: PlayerVersion;
+}
+
+const { playerVersion } = Astro.props;
+---
+
+<section class="player-version-popularity">
+
+    <h2>Popularity</h2>
+
+    {
+        playerVersion.marketValue !== undefined && (
+            <div>
+                <span>Market Value</span>
+                <strong>
+                    €{playerVersion.marketValue.toLocaleString("en-US")}
+                </strong>
+            </div>
+        )
+    }
+
+    {
+        playerVersion.reputation !== undefined && (
+            <div>
+                <span>Reputation</span>
+                <strong>{playerVersion.reputation}</strong>
+            </div>
+        )
+    }
+
+</section>
