@@ -1,0 +1,47 @@
+---
+import type { Boot } from "../../types/boot";
+import type { Glove } from "../../types/glove";
+
+interface Props {
+    boots?: Boot;
+    gloves?: Glove;
+}
+
+const { boots, gloves } = Astro.props;
+
+const hasEquipment = boots !== undefined || gloves !== undefined;
+---
+
+{
+    hasEquipment && (
+
+        <section class="player-version-equipment">
+
+            <h2>Equipment</h2>
+
+            {
+                boots && (
+                    <div>
+                        <span>Boots</span>
+                        <strong>
+                            {boots.brand} {boots.model}
+                        </strong>
+                    </div>
+                )
+            }
+
+            {
+                gloves && (
+                    <div>
+                        <span>Gloves</span>
+                        <strong>
+                            {gloves.brand} {gloves.model}
+                        </strong>
+                    </div>
+                )
+            }
+
+        </section>
+
+    )
+}

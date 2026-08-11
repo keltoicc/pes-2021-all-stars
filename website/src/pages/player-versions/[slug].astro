@@ -7,12 +7,16 @@ import Section from "../../components/ui/Section.astro";
 import PlayerVersionRepository from "../../lib/repositories/PlayerVersionRepository";
 import PlayerRepository from "../../lib/repositories/PlayerRepository";
 import CountryRepository from "../../lib/repositories/CountryRepository";
+import BootRepository from "../../lib/repositories/BootRepository";
+import GloveRepository from "../../lib/repositories/GloveRepository";
+
 import PlayerVersionAbilities from "../../components/playerVersions/PlayerVersionAbilities.astro";
 import PlayerVersionParameters from "../../components/playerVersions/PlayerVersionParameters.astro";
 import PlayerVersionPlayingSkills from "../../components/playerVersions/PlayerVersionPlayingSkills.astro";
 import PlayerVersionComPlayingStyles from "../../components/playerVersions/PlayerVersionComPlayingStyles.astro";
 import PlayerVersionPhysical from "../../components/playerVersions/PlayerVersionPhysical.astro";
 import PlayerVersionPopularity from "../../components/playerVersions/PlayerVersionPopularity.astro";
+import PlayerVersionEquipment from "../../components/playerVersions/PlayerVersionEquipment.astro";
 
 export function getStaticPaths() {
     const playerVersions = PlayerVersionRepository.getAll();
@@ -42,6 +46,28 @@ const country = CountryRepository.getById(player.country);
 if (!country) {
     throw new Error(
         `Country with id ${player.country} not found.`
+    );
+}
+
+const boots =
+    playerVersion.boots !== undefined
+        ? BootRepository.getById(playerVersion.boots)
+        : undefined;
+
+if (playerVersion.boots !== undefined && !boots) {
+    throw new Error(
+        `Boot with id ${playerVersion.boots} not found for PlayerVersion "${playerVersion.slug}".`
+    );
+}
+
+const gloves =
+    playerVersion.gloves !== undefined
+        ? GloveRepository.getById(playerVersion.gloves)
+        : undefined;
+
+if (playerVersion.gloves !== undefined && !gloves) {
+    throw new Error(
+        `Glove with id ${playerVersion.gloves} not found for PlayerVersion "${playerVersion.slug}".`
     );
 }
 ---
@@ -100,6 +126,11 @@ if (!country) {
 
         <PlayerVersionComPlayingStyles
             comPlayingStyles={playerVersion.comPlayingStyles}
+        />
+
+        <PlayerVersionEquipment
+            boots={boots}
+            gloves={gloves}
         />
 
     </div>

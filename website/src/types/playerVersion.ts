@@ -15,7 +15,20 @@ export interface PlayerVersion {
     version: string;
     fromSeason: number;
     toSeason: number;
-    
+
+    // Gameplay
+    playingStyle?: PlayingStyle;
+    mainPosition: Position;
+    positions: Positions;
+    overall?: number;
+    abilities: Abilities;
+    weakFootUsage: number;
+    weakFootAccuracy: number;
+    form: number;
+    injuryResistance: number;
+    playingSkills?: PlayingSkills[];
+    comPlayingStyles?: ComPlayingStyles[];
+
     // Physical
     weight?: number;
 
@@ -23,20 +36,9 @@ export interface PlayerVersion {
     marketValue?: number;
     reputation?: number;
 
-    // Gameplay
-    playingStyle?: PlayingStyle;
-    mainPosition: Position;
-    positions: Positions;
-    abilities: Abilities;
-    weakFootUsage: number;
-    weakFootAccuracy: number;
-    form: number;
-    injuryResistance: number;
-
-    playingSkills?: PlayingSkills[];
-    comPlayingStyles?: ComPlayingStyles[];
-
-    overall?: number;
+    // Equipment
+    boots?: number;
+    gloves?: number;
 
     // Visual
     shirtName?: string;
