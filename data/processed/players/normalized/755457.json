@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Tiago Palacios",
         "short_name": "T. Palacios",
+        "dateOfBirth": "2001-03-28",
+        "placeOfBirth": "Gregorio de Laferrere",
         "nation_1": "Uruguay",
         "nation_2": "Argentina",
         "height": 1.67,
@@ -14,6 +17,70 @@
         "prime_date": "2026-05-22"
     },
     "matches": [
+        {
+            "game_id": "4889641",
+            "season": 2025,
+            "competition_type": "First Tier",
+            "club_id": "288",
+            "opponent_id": "19775",
+            "position": "",
+            "minutes": 30,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4889625",
+            "season": 2025,
+            "competition_type": "First Tier",
+            "club_id": "288",
+            "opponent_id": "189",
+            "position": "AMF",
+            "minutes": 68,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4889605",
+            "season": 2025,
+            "competition_type": "First Tier",
+            "club_id": "288",
+            "opponent_id": "2402",
+            "position": "AMF",
+            "minutes": 70,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4889669",
+            "season": 2025,
+            "competition_type": "First Tier",
+            "club_id": "288",
+            "opponent_id": "1234",
+            "position": "CF",
+            "minutes": 85,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4857583",
             "season": 2025,
@@ -4319,6 +4386,7 @@
     ],
     "clubs": {
         "288": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -4326,27 +4394,27 @@
                 2025
             ],
             "stats": {
-                "matches": 126,
-                "participations": 126,
-                "minutes": 7705,
-                "starts": 92,
+                "matches": 130,
+                "participations": 130,
+                "minutes": 7958,
+                "starts": 95,
                 "captain_matches": 0,
                 "goals": 22,
-                "assists": 17,
-                "goals_conceded": 79,
-                "points": 195,
-                "clean_sheets": 70,
-                "wins": 54,
+                "assists": 18,
+                "goals_conceded": 83,
+                "points": 198,
+                "clean_sheets": 71,
+                "wins": 55,
                 "draws": 33,
-                "losses": 39,
-                "goal_matches": 107,
-                "assist_matches": 110,
-                "goal_contributions": 39
+                "losses": 42,
+                "goal_matches": 111,
+                "assist_matches": 113,
+                "goal_contributions": 40
             },
             "positions": {
-                "CF": 6,
+                "AMF": 20,
+                "CF": 7,
                 "RW": 40,
-                "AMF": 18,
                 "RM": 26,
                 "SS": 2,
                 "LM": 2,
@@ -4354,15 +4422,21 @@
             },
             "derived": {
                 "season_count": 4,
-                "points_per_match": 1.548,
+                "points_per_match": 1.523,
                 "minutes_per_match": 61.2,
-                "win_rate": 0.4286,
-                "goals_per_90": 0.257,
-                "assists_per_90": 0.199,
-                "contributions_per_90": 0.456,
+                "win_rate": 0.4231,
+                "goals_per_90": 0.249,
+                "assists_per_90": 0.204,
+                "contributions_per_90": 0.452,
                 "primary_position": "RW"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 90,
+                    "minutes": 5391,
+                    "goals": 13,
+                    "assists": 10
+                },
                 "Domestic Cup": {
                     "matches": 5,
                     "minutes": 241,
@@ -4381,12 +4455,6 @@
                     "goals": 2,
                     "assists": 1
                 },
-                "First Tier": {
-                    "matches": 86,
-                    "minutes": 5138,
-                    "goals": 13,
-                    "assists": 9
-                },
                 "Domestic Super Cup": {
                     "matches": 4,
                     "minutes": 196,
@@ -4404,6 +4472,7 @@
             }
         },
         "3449": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -4450,6 +4519,7 @@
             }
         },
         "36329": {
+            "type": "national",
             "seasons": [
                 2023
             ],
@@ -4504,6 +4574,7 @@
             }
         },
         "37535": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022
@@ -4569,6 +4640,7 @@
             }
         },
         "928": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -4648,24 +4720,24 @@
     },
     "career": {
         "club": {
-            "matches": 55,
-            "minutes": 1170,
-            "goals": 1,
-            "assists": 0,
-            "goal_contributions": 1,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 2
-        },
-        "national": {
-            "matches": 212,
-            "minutes": 13834,
-            "goals": 38,
-            "assists": 28,
-            "goal_contributions": 66,
+            "matches": 265,
+            "minutes": 14848,
+            "goals": 39,
+            "assists": 29,
+            "goal_contributions": 68,
             "team_titles": 4,
             "individual_titles": 0,
-            "season_count": 5
+            "season_count": 7
+        },
+        "national": {
+            "matches": 6,
+            "minutes": 409,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 1
         }
     }
 }

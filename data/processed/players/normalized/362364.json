@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Eric Remedi",
         "short_name": "Eric Remedi",
+        "dateOfBirth": "1995-06-04",
+        "placeOfBirth": "Paraná",
         "nation_1": "Argentina",
         "nation_2": "",
         "height": 1.7,
@@ -14,6 +17,54 @@
         "prime_date": "2022-08-18"
     },
     "matches": [
+        {
+            "game_id": "5009143",
+            "season": 2025,
+            "competition_type": "First Tier",
+            "club_id": "861",
+            "opponent_id": "37535",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "5008472",
+            "season": 2025,
+            "competition_type": "Play-Offs",
+            "club_id": "861",
+            "opponent_id": "2403",
+            "position": "DMF",
+            "minutes": 45,
+            "started": false,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4935188",
+            "season": 2025,
+            "competition_type": "First Tier",
+            "club_id": "861",
+            "opponent_id": "20189",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "absent",
+            "club_points": 3
+        },
         {
             "game_id": "4935177",
             "season": 2025,
@@ -7389,48 +7440,55 @@
     ],
     "clubs": {
         "861": {
+            "type": "club",
             "seasons": [
                 2024,
                 2025
             ],
             "stats": {
-                "matches": 81,
-                "participations": 81,
-                "minutes": 4302,
+                "matches": 84,
+                "participations": 84,
+                "minutes": 4347,
                 "starts": 48,
                 "captain_matches": 0,
-                "goals": 3,
+                "goals": 4,
                 "assists": 1,
                 "goals_conceded": 43,
-                "points": 157,
-                "clean_sheets": 53,
-                "wins": 47,
+                "points": 163,
+                "clean_sheets": 56,
+                "wins": 49,
                 "draws": 16,
-                "losses": 18,
-                "goal_matches": 78,
-                "assist_matches": 80,
-                "goal_contributions": 4
+                "losses": 19,
+                "goal_matches": 80,
+                "assist_matches": 83,
+                "goal_contributions": 5
             },
             "positions": {
-                "DMF": 57,
+                "DMF": 58,
                 "CMF": 6
             },
             "derived": {
                 "season_count": 2,
-                "points_per_match": 1.938,
-                "minutes_per_match": 53.1,
-                "win_rate": 0.5802,
-                "goals_per_90": 0.063,
+                "points_per_match": 1.94,
+                "minutes_per_match": 51.8,
+                "win_rate": 0.5833,
+                "goals_per_90": 0.083,
                 "assists_per_90": 0.021,
-                "contributions_per_90": 0.084,
+                "contributions_per_90": 0.104,
                 "primary_position": "DMF"
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 57,
+                    "matches": 59,
                     "minutes": 2999,
                     "goals": 1,
                     "assists": 1
+                },
+                "Play-Offs": {
+                    "matches": 5,
+                    "minutes": 377,
+                    "goals": 1,
+                    "assists": 0
                 },
                 "International Cup": {
                     "matches": 14,
@@ -7441,12 +7499,6 @@
                 "Domestic Super Cup": {
                     "matches": 1,
                     "minutes": 120,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Play-Offs": {
-                    "matches": 4,
-                    "minutes": 332,
                     "goals": 0,
                     "assists": 0
                 },
@@ -7465,6 +7517,7 @@
             }
         },
         "1775": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -7526,6 +7579,7 @@
             }
         },
         "830": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -7605,6 +7659,7 @@
             }
         },
         "218": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021
@@ -7663,6 +7718,7 @@
             }
         },
         "51663": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -7743,6 +7799,7 @@
             }
         },
         "14830": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -7784,24 +7841,24 @@
     },
     "career": {
         "club": {
-            "matches": 81,
-            "minutes": 4209,
+            "matches": 461,
+            "minutes": 25015,
+            "goals": 7,
+            "assists": 8,
+            "goal_contributions": 15,
+            "team_titles": 3,
+            "individual_titles": 0,
+            "season_count": 12
+        },
+        "national": {
+            "matches": 0,
+            "minutes": 0,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 3
-        },
-        "national": {
-            "matches": 377,
-            "minutes": 20761,
-            "goals": 6,
-            "assists": 8,
-            "goal_contributions": 14,
-            "team_titles": 3,
-            "individual_titles": 0,
-            "season_count": 10
+            "season_count": 0
         }
     }
 }

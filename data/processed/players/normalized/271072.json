@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Aaron Long",
         "short_name": "Aaron Long",
+        "dateOfBirth": "1992-10-12",
+        "placeOfBirth": "Oak Hills, California",
         "nation_1": "United States",
         "nation_2": "",
         "height": 1.86,
@@ -14,6 +17,54 @@
         "prime_date": "2021-07-09"
     },
     "matches": [
+        {
+            "game_id": "4944215",
+            "season": 2025,
+            "competition_type": "International Cup",
+            "club_id": "51828",
+            "opponent_id": "1804",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4944199",
+            "season": 2025,
+            "competition_type": "International Cup",
+            "club_id": "51828",
+            "opponent_id": "6711",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4865000",
+            "season": 2025,
+            "competition_type": "First Tier",
+            "club_id": "51828",
+            "opponent_id": "6321",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4850824",
             "season": 2025,
@@ -9930,6 +9981,7 @@
     ],
     "clubs": {
         "51828": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -9937,49 +9989,49 @@
                 2025
             ],
             "stats": {
-                "matches": 179,
-                "participations": 179,
-                "minutes": 8943,
-                "starts": 104,
-                "captain_matches": 46,
+                "matches": 182,
+                "participations": 182,
+                "minutes": 9033,
+                "starts": 105,
+                "captain_matches": 47,
                 "goals": 4,
                 "assists": 2,
-                "goals_conceded": 104,
-                "points": 321,
-                "clean_sheets": 117,
-                "wins": 96,
-                "draws": 33,
-                "losses": 50,
-                "goal_matches": 175,
-                "assist_matches": 177,
+                "goals_conceded": 105,
+                "points": 325,
+                "clean_sheets": 119,
+                "wins": 97,
+                "draws": 34,
+                "losses": 51,
+                "goal_matches": 178,
+                "assist_matches": 180,
                 "goal_contributions": 6
             },
             "positions": {
-                "CB": 103,
+                "CB": 104,
                 "LB": 1
             },
             "derived": {
                 "season_count": 4,
-                "points_per_match": 1.793,
-                "minutes_per_match": 50.0,
-                "win_rate": 0.5363,
+                "points_per_match": 1.786,
+                "minutes_per_match": 49.6,
+                "win_rate": 0.533,
                 "goals_per_90": 0.04,
                 "assists_per_90": 0.02,
                 "contributions_per_90": 0.06,
                 "primary_position": "CB"
             },
             "competitions": {
-                "First Tier": {
-                    "matches": 120,
-                    "minutes": 5612,
-                    "goals": 2,
-                    "assists": 1
-                },
                 "International Cup": {
-                    "matches": 39,
+                    "matches": 41,
                     "minutes": 2488,
                     "goals": 2,
                     "assists": 0
+                },
+                "First Tier": {
+                    "matches": 121,
+                    "minutes": 5702,
+                    "goals": 2,
+                    "assists": 1
                 },
                 "Play-Offs": {
                     "matches": 12,
@@ -10008,6 +10060,7 @@
             }
         },
         "3505": {
+            "type": "national",
             "seasons": [
                 2018,
                 2019,
@@ -10066,6 +10119,7 @@
             }
         },
         "623": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -10144,6 +10198,7 @@
             }
         },
         "39815": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -10202,6 +10257,7 @@
             }
         },
         "46720": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -10262,6 +10318,7 @@
             }
         },
         "9636": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014
@@ -10321,6 +10378,7 @@
             }
         },
         "79535": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -10367,6 +10425,7 @@
             }
         },
         "4291": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -10419,6 +10478,7 @@
             }
         },
         "31068": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -10465,6 +10525,7 @@
             }
         },
         "40835": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -10511,6 +10572,7 @@
             }
         },
         "36336": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -10559,24 +10621,24 @@
     },
     "career": {
         "club": {
-            "matches": 112,
-            "minutes": 4860,
-            "goals": 5,
-            "assists": 1,
-            "goal_contributions": 6,
-            "team_titles": 1,
-            "individual_titles": 1,
-            "season_count": 4
+            "matches": 540,
+            "minutes": 28765,
+            "goals": 23,
+            "assists": 7,
+            "goal_contributions": 30,
+            "team_titles": 3,
+            "individual_titles": 2,
+            "season_count": 14
         },
         "national": {
-            "matches": 500,
-            "minutes": 26272,
-            "goals": 21,
-            "assists": 8,
-            "goal_contributions": 29,
-            "team_titles": 2,
-            "individual_titles": 1,
-            "season_count": 11
+            "matches": 75,
+            "minutes": 2457,
+            "goals": 3,
+            "assists": 2,
+            "goal_contributions": 5,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 5
         }
     }
 }

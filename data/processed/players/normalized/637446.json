@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Alistair Johnston",
         "short_name": "A. Johnston",
+        "dateOfBirth": "1998-10-08",
+        "placeOfBirth": "Vancouver, British Columbia",
         "nation_1": "Canada",
         "nation_2": "Northern Ireland",
         "height": 1.8,
@@ -14,6 +17,38 @@
         "prime_date": "2025-06-17"
     },
     "matches": [
+        {
+            "game_id": "4910336",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "371",
+            "opponent_id": "2553",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4910373",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "371",
+            "opponent_id": "511",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776695",
             "season": 2025,
@@ -6322,7 +6357,89 @@
         }
     ],
     "clubs": {
+        "371": {
+            "type": "club",
+            "seasons": [
+                2022,
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 194,
+                "participations": 194,
+                "minutes": 10196,
+                "starts": 120,
+                "captain_matches": 1,
+                "goals": 7,
+                "assists": 24,
+                "goals_conceded": 103,
+                "points": 431,
+                "clean_sheets": 129,
+                "wins": 135,
+                "draws": 26,
+                "losses": 33,
+                "goal_matches": 187,
+                "assist_matches": 171,
+                "goal_contributions": 31
+            },
+            "positions": {
+                "RB": 120
+            },
+            "derived": {
+                "season_count": 5,
+                "points_per_match": 2.222,
+                "minutes_per_match": 52.6,
+                "win_rate": 0.6959,
+                "goals_per_90": 0.062,
+                "assists_per_90": 0.212,
+                "contributions_per_90": 0.274,
+                "primary_position": "RB"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 115,
+                    "minutes": 6134,
+                    "goals": 6,
+                    "assists": 13
+                },
+                "Domestic Cup": {
+                    "matches": 20,
+                    "minutes": 1253,
+                    "goals": 0,
+                    "assists": 5
+                },
+                "Play-Offs": {
+                    "matches": 20,
+                    "minutes": 940,
+                    "goals": 0,
+                    "assists": 4
+                },
+                "International Cup": {
+                    "matches": 28,
+                    "minutes": 1439,
+                    "goals": 0,
+                    "assists": 1
+                },
+                "League Cup": {
+                    "matches": 11,
+                    "minutes": 430,
+                    "goals": 1,
+                    "assists": 1
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Scottish champion": 4,
+                    "Scottish cup winner": 3,
+                    "Scottish league cup winner": 2
+                },
+                "individual_titles": {}
+            }
+        },
         "3510": {
+            "type": "national",
             "seasons": [
                 2020,
                 2021,
@@ -6383,86 +6500,8 @@
                 "individual_titles": {}
             }
         },
-        "371": {
-            "seasons": [
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 192,
-                "participations": 192,
-                "minutes": 10106,
-                "starts": 119,
-                "captain_matches": 1,
-                "goals": 7,
-                "assists": 24,
-                "goals_conceded": 103,
-                "points": 428,
-                "clean_sheets": 127,
-                "wins": 134,
-                "draws": 26,
-                "losses": 32,
-                "goal_matches": 185,
-                "assist_matches": 169,
-                "goal_contributions": 31
-            },
-            "positions": {
-                "RB": 119
-            },
-            "derived": {
-                "season_count": 4,
-                "points_per_match": 2.229,
-                "minutes_per_match": 52.6,
-                "win_rate": 0.6979,
-                "goals_per_90": 0.062,
-                "assists_per_90": 0.214,
-                "contributions_per_90": 0.276,
-                "primary_position": "RB"
-            },
-            "competitions": {
-                "Domestic Cup": {
-                    "matches": 20,
-                    "minutes": 1253,
-                    "goals": 0,
-                    "assists": 5
-                },
-                "Play-Offs": {
-                    "matches": 20,
-                    "minutes": 940,
-                    "goals": 0,
-                    "assists": 4
-                },
-                "First Tier": {
-                    "matches": 113,
-                    "minutes": 6044,
-                    "goals": 6,
-                    "assists": 13
-                },
-                "International Cup": {
-                    "matches": 28,
-                    "minutes": 1439,
-                    "goals": 0,
-                    "assists": 1
-                },
-                "League Cup": {
-                    "matches": 11,
-                    "minutes": 430,
-                    "goals": 1,
-                    "assists": 1
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Scottish champion": 4,
-                    "Scottish cup winner": 3,
-                    "Scottish league cup winner": 2
-                },
-                "individual_titles": {}
-            }
-        },
         "4078": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -6530,6 +6569,7 @@
             }
         },
         "63966": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -6587,6 +6627,7 @@
             }
         },
         "9783": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018
@@ -6627,6 +6668,7 @@
             }
         },
         "65749": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -6677,22 +6719,22 @@
     },
     "career": {
         "club": {
-            "matches": 70,
-            "minutes": 4486,
-            "goals": 1,
-            "assists": 1,
-            "goal_contributions": 2,
-            "team_titles": 0,
+            "matches": 306,
+            "minutes": 17795,
+            "goals": 12,
+            "assists": 29,
+            "goal_contributions": 41,
+            "team_titles": 9,
             "individual_titles": 0,
-            "season_count": 4
+            "season_count": 10
         },
         "national": {
-            "matches": 317,
-            "minutes": 17979,
-            "goals": 12,
-            "assists": 31,
-            "goal_contributions": 43,
-            "team_titles": 9,
+            "matches": 83,
+            "minutes": 4760,
+            "goals": 1,
+            "assists": 3,
+            "goal_contributions": 4,
+            "team_titles": 0,
             "individual_titles": 0,
             "season_count": 6
         }

@@ -1,10 +1,13 @@
 {
     "player": {
+        "name": "Hany Mukhtar",
         "short_name": "H. Mukhtar",
+        "dateOfBirth": "1995-03-21",
+        "placeOfBirth": "Berlin",
         "nation_1": "Germany",
         "nation_2": "",
         "height": 1.73,
-        "foot": null,
+        "foot": "Both",
         "position_group": "MIDFIELDER",
         "position_1": "AMF",
         "position_2": "SS",
@@ -14,6 +17,86 @@
         "prime_date": "2023-12-18"
     },
     "matches": [
+        {
+            "game_id": "4944220",
+            "season": 2025,
+            "competition_type": "International Cup",
+            "club_id": "63966",
+            "opponent_id": "40188",
+            "position": "",
+            "minutes": 45,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4944196",
+            "season": 2025,
+            "competition_type": "International Cup",
+            "club_id": "63966",
+            "opponent_id": "4941",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4864995",
+            "season": 2025,
+            "competition_type": "First Tier",
+            "club_id": "63966",
+            "opponent_id": "2440",
+            "position": "AMF",
+            "minutes": 73,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4850817",
+            "season": 2025,
+            "competition_type": "First Tier",
+            "club_id": "63966",
+            "opponent_id": "45604",
+            "position": "SS",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4850803",
+            "season": 2025,
+            "competition_type": "First Tier",
+            "club_id": "63966",
+            "opponent_id": "4078",
+            "position": "SS",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4945906",
             "season": 2025,
@@ -11564,6 +11647,7 @@
     ],
     "clubs": {
         "63966": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -11574,27 +11658,27 @@
                 2025
             ],
             "stats": {
-                "matches": 252,
-                "participations": 252,
-                "minutes": 19311,
-                "starts": 213,
-                "captain_matches": 65,
+                "matches": 257,
+                "participations": 257,
+                "minutes": 19609,
+                "starts": 216,
+                "captain_matches": 68,
                 "goals": 101,
                 "assists": 60,
-                "goals_conceded": 256,
-                "points": 387,
-                "clean_sheets": 96,
-                "wins": 106,
-                "draws": 69,
-                "losses": 77,
-                "goal_matches": 174,
-                "assist_matches": 199,
+                "goals_conceded": 258,
+                "points": 391,
+                "clean_sheets": 99,
+                "wins": 107,
+                "draws": 70,
+                "losses": 80,
+                "goal_matches": 179,
+                "assist_matches": 204,
                 "goal_contributions": 161
             },
             "positions": {
+                "AMF": 87,
+                "SS": 106,
                 "CF": 9,
-                "SS": 104,
-                "AMF": 86,
                 "RW": 6,
                 "LW": 6,
                 "CMF": 1,
@@ -11602,26 +11686,26 @@
             },
             "derived": {
                 "season_count": 7,
-                "points_per_match": 1.536,
-                "minutes_per_match": 76.6,
-                "win_rate": 0.4206,
-                "goals_per_90": 0.471,
-                "assists_per_90": 0.28,
-                "contributions_per_90": 0.75,
+                "points_per_match": 1.521,
+                "minutes_per_match": 76.3,
+                "win_rate": 0.4163,
+                "goals_per_90": 0.464,
+                "assists_per_90": 0.275,
+                "contributions_per_90": 0.739,
                 "primary_position": "SS"
             },
             "competitions": {
-                "First Tier": {
-                    "matches": 208,
-                    "minutes": 16224,
-                    "goals": 88,
-                    "assists": 52
-                },
                 "International Cup": {
-                    "matches": 22,
-                    "minutes": 1544,
+                    "matches": 24,
+                    "minutes": 1589,
                     "goals": 4,
                     "assists": 7
+                },
+                "First Tier": {
+                    "matches": 211,
+                    "minutes": 16477,
+                    "goals": 88,
+                    "assists": 52
                 },
                 "Play-Offs": {
                     "matches": 11,
@@ -11647,6 +11731,7 @@
             }
         },
         "206": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -11722,6 +11807,7 @@
             }
         },
         "62684": {
+            "type": "club",
             "seasons": [
                 2017,
                 2019
@@ -11765,6 +11851,7 @@
             }
         },
         "3817": {
+            "type": "national",
             "seasons": [
                 2016
             ],
@@ -11814,6 +11901,7 @@
             }
         },
         "409": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -11875,6 +11963,7 @@
             }
         },
         "5709": {
+            "type": "national",
             "seasons": [
                 2014,
                 2015
@@ -11933,6 +12022,7 @@
             }
         },
         "294": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015
@@ -11996,6 +12086,7 @@
             }
         },
         "10330": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -12044,6 +12135,7 @@
             }
         },
         "44": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -12112,6 +12204,7 @@
             }
         },
         "45": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -12167,6 +12260,7 @@
             }
         },
         "5710": {
+            "type": "national",
             "seasons": [
                 2013
             ],
@@ -12233,6 +12327,7 @@
             }
         },
         "9067": {
+            "type": "national",
             "seasons": [
                 2012
             ],
@@ -12283,6 +12378,7 @@
             }
         },
         "21066": {
+            "type": "club",
             "seasons": [
                 2010,
                 2011
@@ -12335,6 +12431,7 @@
             }
         },
         "2827": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -12374,6 +12471,7 @@
             }
         },
         "17662": {
+            "type": "national",
             "seasons": [
                 2011
             ],
@@ -12428,6 +12526,7 @@
             }
         },
         "17368": {
+            "type": "national",
             "seasons": [
                 2010
             ],
@@ -12478,6 +12577,7 @@
             }
         },
         "27300": {
+            "type": "national",
             "seasons": [
                 2009
             ],
@@ -12529,24 +12629,24 @@
     },
     "career": {
         "club": {
-            "matches": 230,
-            "minutes": 6903,
-            "goals": 38,
-            "assists": 38,
-            "goal_contributions": 76,
-            "team_titles": 6,
-            "individual_titles": 0,
-            "season_count": 8
+            "matches": 651,
+            "minutes": 37608,
+            "goals": 167,
+            "assists": 134,
+            "goal_contributions": 301,
+            "team_titles": 8,
+            "individual_titles": 2,
+            "season_count": 16
         },
         "national": {
-            "matches": 485,
-            "minutes": 34156,
-            "goals": 150,
-            "assists": 104,
-            "goal_contributions": 254,
-            "team_titles": 3,
-            "individual_titles": 2,
-            "season_count": 17
+            "matches": 69,
+            "minutes": 3749,
+            "goals": 21,
+            "assists": 8,
+            "goal_contributions": 29,
+            "team_titles": 1,
+            "individual_titles": 0,
+            "season_count": 8
         }
     }
 }

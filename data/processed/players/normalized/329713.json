@@ -1,10 +1,13 @@
 {
     "player": {
+        "name": "Ariel Lassiter",
         "short_name": "A. Lassiter",
+        "dateOfBirth": "1994-09-27",
+        "placeOfBirth": "Turrialba",
         "nation_1": "Costa Rica",
         "nation_2": "United States",
         "height": 1.78,
-        "foot": null,
+        "foot": "Both",
         "position_group": "FORWARD",
         "position_1": "LW",
         "position_2": "RW",
@@ -15,12 +18,60 @@
     },
     "matches": [
         {
+            "game_id": "4944223",
+            "season": 2025,
+            "competition_type": "International Cup",
+            "club_id": "4291",
+            "opponent_id": "3631",
+            "position": "RM",
+            "minutes": 66,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4944205",
+            "season": 2025,
+            "competition_type": "International Cup",
+            "club_id": "4291",
+            "opponent_id": "5662",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4865007",
+            "season": 2025,
+            "competition_type": "First Tier",
+            "club_id": "4291",
+            "opponent_id": "9636",
+            "position": "RW",
+            "minutes": 65,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
             "game_id": "4850825",
             "season": 2025,
             "competition_type": "First Tier",
             "club_id": "4291",
             "opponent_id": "6643",
-            "position": "RM",
+            "position": "RW",
             "minutes": 57,
             "started": true,
             "captain": false,
@@ -10184,49 +10235,56 @@
     ],
     "clubs": {
         "4291": {
+            "type": "club",
             "seasons": [
                 2024,
                 2025
             ],
             "stats": {
-                "matches": 60,
-                "participations": 60,
-                "minutes": 1293,
-                "starts": 12,
+                "matches": 63,
+                "participations": 63,
+                "minutes": 1424,
+                "starts": 14,
                 "captain_matches": 0,
                 "goals": 4,
                 "assists": 6,
-                "goals_conceded": 18,
-                "points": 80,
-                "clean_sheets": 46,
-                "wins": 22,
+                "goals_conceded": 21,
+                "points": 83,
+                "clean_sheets": 47,
+                "wins": 23,
                 "draws": 14,
-                "losses": 24,
-                "goal_matches": 56,
-                "assist_matches": 54,
+                "losses": 26,
+                "goal_matches": 59,
+                "assist_matches": 57,
                 "goal_contributions": 10
             },
             "positions": {
                 "RM": 1,
-                "RW": 6,
+                "RW": 8,
                 "LW": 2,
                 "AMF": 2,
                 "LM": 1
             },
             "derived": {
                 "season_count": 2,
-                "points_per_match": 1.333,
-                "minutes_per_match": 21.6,
-                "win_rate": 0.3667,
-                "goals_per_90": 0.278,
-                "assists_per_90": 0.418,
-                "contributions_per_90": 0.696,
+                "points_per_match": 1.317,
+                "minutes_per_match": 22.6,
+                "win_rate": 0.3651,
+                "goals_per_90": 0.253,
+                "assists_per_90": 0.379,
+                "contributions_per_90": 0.632,
                 "primary_position": "RW"
             },
             "competitions": {
+                "International Cup": {
+                    "matches": 5,
+                    "minutes": 245,
+                    "goals": 2,
+                    "assists": 0
+                },
                 "First Tier": {
-                    "matches": 51,
-                    "minutes": 881,
+                    "matches": 52,
+                    "minutes": 946,
                     "goals": 2,
                     "assists": 3
                 },
@@ -10235,12 +10293,6 @@
                     "minutes": 23,
                     "goals": 0,
                     "assists": 2
-                },
-                "International Cup": {
-                    "matches": 3,
-                    "minutes": 179,
-                    "goals": 2,
-                    "assists": 0
                 },
                 "Domestic Cup": {
                     "matches": 2,
@@ -10255,6 +10307,7 @@
             }
         },
         "8497": {
+            "type": "national",
             "seasons": [
                 2018,
                 2019,
@@ -10319,6 +10372,7 @@
             }
         },
         "432": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -10368,6 +10422,7 @@
             }
         },
         "4078": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023
@@ -10433,6 +10488,7 @@
             }
         },
         "69261": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022
@@ -10497,6 +10553,7 @@
             }
         },
         "9168": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -10549,6 +10606,7 @@
             }
         },
         "6478": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -10601,6 +10659,7 @@
             }
         },
         "1061": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -10672,6 +10731,7 @@
             }
         },
         "33285": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -10740,6 +10800,7 @@
             }
         },
         "36209": {
+            "type": "national",
             "seasons": [
                 2014,
                 2015
@@ -10787,6 +10848,7 @@
             }
         },
         "35707": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -10835,6 +10897,7 @@
             }
         },
         "7009": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -10891,6 +10954,7 @@
             }
         },
         "8821": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -10934,24 +10998,24 @@
     },
     "career": {
         "club": {
-            "matches": 291,
-            "minutes": 13994,
-            "goals": 68,
-            "assists": 33,
-            "goal_contributions": 101,
+            "matches": 544,
+            "minutes": 20037,
+            "goals": 82,
+            "assists": 49,
+            "goal_contributions": 131,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 11
+            "season_count": 13
         },
         "national": {
-            "matches": 343,
-            "minutes": 7638,
-            "goals": 17,
-            "assists": 19,
-            "goal_contributions": 36,
+            "matches": 93,
+            "minutes": 1726,
+            "goals": 3,
+            "assists": 3,
+            "goal_contributions": 6,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 12
+            "season_count": 9
         }
     }
 }

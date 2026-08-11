@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Cristian Espinoza",
         "short_name": "C. Espinoza",
+        "dateOfBirth": "1995-04-03",
+        "placeOfBirth": "Buenos Aires",
         "nation_1": "Argentina",
         "nation_2": "United States",
         "height": 1.73,
@@ -15,6 +18,54 @@
     },
     "matches": [
         {
+            "game_id": "4944220",
+            "season": 2025,
+            "competition_type": "International Cup",
+            "club_id": "63966",
+            "opponent_id": "40188",
+            "position": "RM",
+            "minutes": 45,
+            "started": true,
+            "captain": true,
+            "goals": 2,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4944196",
+            "season": 2025,
+            "competition_type": "International Cup",
+            "club_id": "63966",
+            "opponent_id": "4941",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "injured",
+            "club_points": 0
+        },
+        {
+            "game_id": "4864995",
+            "season": 2025,
+            "competition_type": "First Tier",
+            "club_id": "63966",
+            "opponent_id": "2440",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "injured",
+            "club_points": 1
+        },
+        {
             "game_id": "4850817",
             "season": 2025,
             "competition_type": "First Tier",
@@ -27,7 +78,7 @@
             "goals": 0,
             "assists": 0,
             "goals_conceded": 0,
-            "participation": "not in squad",
+            "participation": "injured",
             "club_points": 0
         },
         {
@@ -43,7 +94,7 @@
             "goals": 0,
             "assists": 0,
             "goals_conceded": 0,
-            "participation": "not in squad",
+            "participation": "injured",
             "club_points": 3
         },
         {
@@ -59,7 +110,7 @@
             "goals": 0,
             "assists": 0,
             "goals_conceded": 0,
-            "participation": "not in squad",
+            "participation": "injured",
             "club_points": 3
         },
         {
@@ -9092,53 +9143,54 @@
     ],
     "clubs": {
         "63966": {
+            "type": "club",
             "seasons": [
                 2025
             ],
             "stats": {
-                "matches": 25,
-                "participations": 25,
-                "minutes": 1553,
-                "starts": 17,
-                "captain_matches": 0,
-                "goals": 4,
+                "matches": 28,
+                "participations": 28,
+                "minutes": 1598,
+                "starts": 18,
+                "captain_matches": 1,
+                "goals": 6,
                 "assists": 8,
-                "goals_conceded": 14,
-                "points": 51,
-                "clean_sheets": 14,
+                "goals_conceded": 15,
+                "points": 52,
+                "clean_sheets": 16,
                 "wins": 15,
-                "draws": 6,
-                "losses": 4,
-                "goal_matches": 21,
-                "assist_matches": 18,
-                "goal_contributions": 12
+                "draws": 7,
+                "losses": 6,
+                "goal_matches": 23,
+                "assist_matches": 21,
+                "goal_contributions": 14
             },
             "positions": {
-                "RW": 13,
-                "RM": 4
+                "RM": 5,
+                "RW": 13
             },
             "derived": {
                 "season_count": 1,
-                "points_per_match": 2.04,
-                "minutes_per_match": 62.1,
-                "win_rate": 0.6,
-                "goals_per_90": 0.232,
-                "assists_per_90": 0.464,
-                "contributions_per_90": 0.695,
+                "points_per_match": 1.857,
+                "minutes_per_match": 57.1,
+                "win_rate": 0.5357,
+                "goals_per_90": 0.338,
+                "assists_per_90": 0.451,
+                "contributions_per_90": 0.788,
                 "primary_position": "RW"
             },
             "competitions": {
+                "International Cup": {
+                    "matches": 10,
+                    "minutes": 605,
+                    "goals": 3,
+                    "assists": 2
+                },
                 "First Tier": {
-                    "matches": 17,
+                    "matches": 18,
                     "minutes": 993,
                     "goals": 3,
                     "assists": 6
-                },
-                "International Cup": {
-                    "matches": 8,
-                    "minutes": 560,
-                    "goals": 1,
-                    "assists": 2
                 }
             },
             "awards": {
@@ -9147,6 +9199,7 @@
             }
         },
         "218": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -9224,6 +9277,7 @@
             }
         },
         "189": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -9295,6 +9349,7 @@
             }
         },
         "366": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -9343,6 +9398,7 @@
             }
         },
         "1050": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -9395,6 +9451,7 @@
             }
         },
         "1108": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -9449,6 +9506,7 @@
             }
         },
         "53819": {
+            "type": "national",
             "seasons": [
                 2015
             ],
@@ -9498,6 +9556,7 @@
             }
         },
         "2063": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -9592,6 +9651,7 @@
             }
         },
         "11940": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -9648,24 +9708,24 @@
     },
     "career": {
         "club": {
-            "matches": 44,
-            "minutes": 838,
-            "goals": 0,
-            "assists": 4,
-            "goal_contributions": 4,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 1
-        },
-        "national": {
-            "matches": 520,
-            "minutes": 28018,
-            "goals": 56,
-            "assists": 100,
+            "matches": 552,
+            "minutes": 28161,
+            "goals": 58,
+            "assists": 98,
             "goal_contributions": 156,
-            "team_titles": 4,
+            "team_titles": 3,
             "individual_titles": 0,
             "season_count": 14
+        },
+        "national": {
+            "matches": 15,
+            "minutes": 740,
+            "goals": 0,
+            "assists": 6,
+            "goal_contributions": 6,
+            "team_titles": 1,
+            "individual_titles": 0,
+            "season_count": 2
         }
     }
 }

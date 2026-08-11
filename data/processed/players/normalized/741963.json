@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Jhohan Romaña",
         "short_name": "J. Romaña",
+        "dateOfBirth": "1998-09-13",
+        "placeOfBirth": "Apartadó",
         "nation_1": "Colombia",
         "nation_2": "",
         "height": 1.85,
@@ -14,6 +17,70 @@
         "prime_date": "2026-05-22"
     },
     "matches": [
+        {
+            "game_id": "4944211",
+            "season": 2025,
+            "competition_type": "International Cup",
+            "club_id": "4941",
+            "opponent_id": "45604",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4944196",
+            "season": 2025,
+            "competition_type": "International Cup",
+            "club_id": "4941",
+            "opponent_id": "63966",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4926718",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "4941",
+            "opponent_id": "4035",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4904190",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "4941",
+            "opponent_id": "13353",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4895110",
             "season": 2026,
@@ -5098,42 +5165,52 @@
     ],
     "clubs": {
         "4941": {
+            "type": "club",
             "seasons": [
+                2025,
                 2026
             ],
             "stats": {
-                "matches": 1,
-                "participations": 1,
-                "minutes": 0,
-                "starts": 0,
+                "matches": 5,
+                "participations": 5,
+                "minutes": 270,
+                "starts": 3,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 0,
-                "goals_conceded": 0,
-                "points": 0,
-                "clean_sheets": 1,
-                "wins": 0,
+                "goals_conceded": 1,
+                "points": 6,
+                "clean_sheets": 4,
+                "wins": 2,
                 "draws": 0,
-                "losses": 1,
-                "goal_matches": 1,
-                "assist_matches": 1,
+                "losses": 3,
+                "goal_matches": 5,
+                "assist_matches": 5,
                 "goal_contributions": 0
             },
-            "positions": {},
+            "positions": {
+                "CB": 3
+            },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 0.0,
-                "minutes_per_match": 0.0,
-                "win_rate": 0.0,
+                "season_count": 2,
+                "points_per_match": 1.2,
+                "minutes_per_match": 54.0,
+                "win_rate": 0.4,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
-                "primary_position": ""
+                "primary_position": "CB"
             },
             "competitions": {
+                "International Cup": {
+                    "matches": 2,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "First Tier": {
-                    "matches": 1,
-                    "minutes": 0,
+                    "matches": 3,
+                    "minutes": 180,
                     "goals": 0,
                     "assists": 0
                 }
@@ -5144,6 +5221,7 @@
             }
         },
         "1775": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
@@ -5212,6 +5290,7 @@
             }
         },
         "629": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -5267,6 +5346,7 @@
             }
         },
         "72309": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021
@@ -5328,6 +5408,7 @@
             }
         },
         "11855": {
+            "type": "club",
             "seasons": [
                 2016,
                 2018,
@@ -5391,6 +5472,7 @@
             }
         },
         "10093": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -5447,24 +5529,24 @@
     },
     "career": {
         "club": {
-            "matches": 77,
-            "minutes": 2243,
-            "goals": 0,
-            "assists": 0,
-            "goal_contributions": 0,
-            "team_titles": 1,
-            "individual_titles": 0,
-            "season_count": 4
-        },
-        "national": {
-            "matches": 240,
-            "minutes": 13157,
+            "matches": 321,
+            "minutes": 15670,
             "goals": 3,
             "assists": 3,
             "goal_contributions": 6,
+            "team_titles": 1,
+            "individual_titles": 0,
+            "season_count": 11
+        },
+        "national": {
+            "matches": 0,
+            "minutes": 0,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 7
+            "season_count": 0
         }
     }
 }
