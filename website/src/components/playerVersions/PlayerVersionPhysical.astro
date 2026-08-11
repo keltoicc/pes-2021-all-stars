@@ -1,0 +1,59 @@
+---
+import type { Player } from "../../types/player";
+import type { PlayerVersion } from "../../types/playerVersion";
+
+import { calculatePlayerVersionAge }
+    from "../../lib/utils/calculatePlayerVersionAge";
+
+interface Props {
+    player: Player;
+    playerVersion: PlayerVersion;
+}
+
+const { player, playerVersion } = Astro.props;
+
+const age = player.birthDate
+    ? calculatePlayerVersionAge(
+        player.birthDate,
+        playerVersion.fromSeason,
+        playerVersion.toSeason
+    )
+    : undefined;
+---
+
+<section class="player-version-physical">
+
+    <h2>Physical</h2>
+
+    {
+        age && (
+            <div>
+                <span>Age</span>
+                <strong>
+                    {age.min === age.max
+                        ? age.min
+                        : `${age.min}–${age.max}`}
+                </strong>
+            </div>
+        )
+    }
+
+    {
+        player.height !== undefined && (
+            <div>
+                <span>Height</span>
+                <strong>{player.height} cm</strong>
+            </div>
+        )
+    }
+
+    {
+        playerVersion.weight !== undefined && (
+            <div>
+                <span>Weight</span>
+                <strong>{playerVersion.weight} kg</strong>
+            </div>
+        )
+    }
+
+</section>

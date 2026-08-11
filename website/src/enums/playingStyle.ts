@@ -1,0 +1,23 @@
+export enum PlayingStyle {
+    GOALPOACHER = "Goal Poacher",
+    DUMMYRUNNER = "Dummy Runner",
+    FOXINTHEBOX = "Fox in the Box",
+    TARGETMAN = "Target Man",
+    CREATIVEPLAYMAKER = "Creative Playmaker",
+    PROLIFICWINGER = "Prolific Winger",
+    ROAMINGFLANK = "Roaming Flank",
+    CROSSSPECIALIST = "Cross Specialist",
+    CLASSICNO10 = "Classic No. 10",
+    HOLEPLAYER = "Hole Player",
+    BOXTOBOX = "Box-to-Box",
+    THEDESTROYER = "The Destroyer",
+    ORCHESTRATOR = "Orchestrator",
+    ANCHORMAN = "Anchor Man",
+    BUILDUP = "Build Up",
+    OFFENSIVEFULLBACK = "Offensive Full-back",
+    FULLBACKFINISHER = "Full-back Finisher",
+    DEFENSIVEFULLBACK = "Defensive Full-back",
+    EXTRAFRONTMAN = "Extra Frontman",
+    OFFENSIVEGOALKEEPER = "Offensive Goalkeeper",
+    DEFENSIVEGOALKEEPER = "Defensive Goalkeeper"
+}

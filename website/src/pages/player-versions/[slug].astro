@@ -11,6 +11,7 @@ import PlayerVersionAbilities from "../../components/playerVersions/PlayerVersio
 import PlayerVersionParameters from "../../components/playerVersions/PlayerVersionParameters.astro";
 import PlayerVersionPlayingSkills from "../../components/playerVersions/PlayerVersionPlayingSkills.astro";
 import PlayerVersionComPlayingStyles from "../../components/playerVersions/PlayerVersionComPlayingStyles.astro";
+import PlayerVersionPhysical from "../../components/playerVersions/PlayerVersionPhysical.astro";
 
 export function getStaticPaths() {
     const playerVersions = PlayerVersionRepository.getAll();
@@ -71,6 +72,11 @@ if (!country) {
             </ul>
 
         </Section>
+
+        <PlayerVersionPhysical
+            player={player}
+            playerVersion={playerVersion}
+        />
 
         <PlayerVersionAbilities
             abilities={playerVersion.abilities}
