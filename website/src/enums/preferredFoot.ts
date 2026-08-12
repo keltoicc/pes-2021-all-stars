@@ -1,5 +1,5 @@
 export enum PreferredFoot {
-    LEFT = "Left",
-    RIGHT = "Right",
-    BOTH = "Both"
+    LEFT = "left",
+    RIGHT = "right",
+    BOTH = "both"
 }
