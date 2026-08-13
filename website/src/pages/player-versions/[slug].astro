@@ -9,6 +9,7 @@ import PlayerRepository from "../../lib/repositories/PlayerRepository";
 import CountryRepository from "../../lib/repositories/CountryRepository";
 import BootRepository from "../../lib/repositories/BootRepository";
 import GloveRepository from "../../lib/repositories/GloveRepository";
+import AppearanceRepository from "../../lib/repositories/AppearanceRepository";
 
 import PlayerVersionAbilities from "../../components/playerVersions/PlayerVersionAbilities.astro";
 import PlayerVersionParameters from "../../components/playerVersions/PlayerVersionParameters.astro";
@@ -17,6 +18,7 @@ import PlayerVersionComPlayingStyles from "../../components/playerVersions/Playe
 import PlayerVersionPhysical from "../../components/playerVersions/PlayerVersionPhysical.astro";
 import PlayerVersionPopularity from "../../components/playerVersions/PlayerVersionPopularity.astro";
 import PlayerVersionEquipment from "../../components/playerVersions/PlayerVersionEquipment.astro";
+import PlayerVersionAppearance from "../../components/playerVersions/PlayerVersionAppearance.astro";
 
 export function getStaticPaths() {
     const playerVersions = PlayerVersionRepository.getAll();
@@ -68,6 +70,20 @@ const gloves =
 if (playerVersion.gloves !== undefined && !gloves) {
     throw new Error(
         `Glove with id ${playerVersion.gloves} not found for PlayerVersion "${playerVersion.slug}".`
+    );
+}
+
+const appearance =
+    playerVersion.appearance !== undefined
+        ? AppearanceRepository.getById(playerVersion.appearance)
+        : undefined;
+
+if (
+    playerVersion.appearance !== undefined &&
+    !appearance
+) {
+    throw new Error(
+        `Appearance with id ${playerVersion.appearance} not found for PlayerVersion "${playerVersion.slug}".`
     );
 }
 ---
@@ -132,6 +148,14 @@ if (playerVersion.gloves !== undefined && !gloves) {
             boots={boots}
             gloves={gloves}
         />
+
+        {
+            appearance && (
+                <PlayerVersionAppearance
+                    appearance={appearance}
+                />
+            )
+        }
 
     </div>
 

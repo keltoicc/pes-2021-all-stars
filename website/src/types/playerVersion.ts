@@ -43,4 +43,5 @@ export interface PlayerVersion {
     // Visual
     shirtName?: string;
     nationalShirtName?: string;
+    appearance?: number;
 }

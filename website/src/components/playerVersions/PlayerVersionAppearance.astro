@@ -1,0 +1,89 @@
+---
+import type { Appearance } from "../../types/appearance";
+
+interface Props {
+    appearance: Appearance;
+}
+
+const { appearance } = Astro.props;
+---
+
+<section class="player-version-appearance">
+
+    <h2>Appearance</h2>
+
+    {
+        appearance.hairstyle && (
+            <div>
+                <h3>Hairstyle</h3>
+
+                <div>
+                    <h4>Overall</h4>
+                    <p>Style: {appearance.hairstyle.overall.style}</p>
+                    <p>Length: {appearance.hairstyle.overall.length}</p>
+                    <p>Wave Level: {appearance.hairstyle.overall.waveLevel}</p>
+                    <p>Hair Variation: {appearance.hairstyle.overall.hairVariation}</p>
+                </div>
+
+                <div>
+                    <h4>Front</h4>
+                    <p>Style: {appearance.hairstyle.front.style}</p>
+                    <p>Parted: {appearance.hairstyle.front.parted}</p>
+                    <p>Hairline: {appearance.hairstyle.front.hairline}</p>
+                    <p>Forehead Width: {appearance.hairstyle.front.foreheadWidth}</p>
+                </div>
+
+                <div>
+                    <h4>Side / Back</h4>
+                    <p>Style: {appearance.hairstyle.sideBack.style}</p>
+                    <p>Cropped: {appearance.hairstyle.sideBack.cropped}</p>
+                </div>
+
+                <div>
+                    <h4>Hair Colour / Accessory</h4>
+                    <p>
+                        Hair Colour:
+                        {appearance.hairstyle.hairColourAccessory.hairColour.preset}
+                    </p>
+
+                    <p>
+                        Accessory:
+                        {appearance.hairstyle.hairColourAccessory.accessory
+                            ? "Yes"
+                            : "No"}
+                    </p>
+
+                    {
+                        appearance.hairstyle.hairColourAccessory.accessoryColour !== undefined && (
+                            <p>
+                                Accessory Colour:
+                                {appearance.hairstyle.hairColourAccessory.accessoryColour}
+                            </p>
+                        )
+                    }
+                </div>
+            </div>
+        )
+    }
+
+    {
+        appearance.physique && (
+            <div>
+                <h3>Physique</h3>
+
+                <p>Neck Length: {appearance.physique.neckLength}</p>
+                <p>Neck Size: {appearance.physique.neckSize}</p>
+                <p>Shoulder Height: {appearance.physique.shoulderHeight}</p>
+                <p>Shoulder Width: {appearance.physique.shoulderWidth}</p>
+                <p>Chest Measurement: {appearance.physique.chestMeasurement}</p>
+                <p>Waist Size: {appearance.physique.waistSize}</p>
+                <p>Arm Size: {appearance.physique.armSize}</p>
+                <p>Thigh Size: {appearance.physique.thighSize}</p>
+                <p>Calf Size: {appearance.physique.calfSize}</p>
+                <p>Leg Length: {appearance.physique.legLength}</p>
+                <p>Arm Length: {appearance.physique.armLength}</p>
+            </div>
+        )
+    }
+
+</section>
