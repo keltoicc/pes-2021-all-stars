@@ -1,0 +1,23 @@
+---
+import type { Continent } from "../../types/continent";
+
+interface Props {
+    continent: Continent;
+}
+
+const { continent } = Astro.props;
+---
+
+<li>
+
+    <a href={`/continents/${continent.slug}`}>
+
+        <div>
+
+            <h2>{continent.name}</h2>
+
+        </div>
+
+    </a>
+
+</li>

@@ -1,0 +1,73 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import Section from "../../components/ui/Section.astro";
+import CountryList from "../../components/countries/CountryList.astro";
+
+import ContinentRepository from "../../lib/repositories/ContinentRepository";
+import CountryRepository from "../../lib/repositories/CountryRepository";
+
+export function getStaticPaths() {
+
+    return ContinentRepository.getAll().map(continent => ({
+        params: {
+            slug: continent.slug
+        }
+    }));
+
+}
+
+const { slug } = Astro.params;
+
+if (!slug) {
+    throw new Error("Missing continent slug.");
+}
+
+const continent = ContinentRepository.getBySlug(slug);
+
+if (!continent) {
+    throw new Error(`Continent "${slug}" not found.`);
+}
+
+const countries = CountryRepository
+    .getAll()
+    .filter(country => country.continent === continent.id);
+---
+
+<Layout title={continent.name}>
+
+    <div class="continent-page">
+
+        <header class="continent-page__header">
+
+            <h1>{continent.name}</h1>
+
+        </header>
+
+        <Section title="Countries">
+
+            {
+                countries.length > 0
+                    ? <CountryList countries={countries} />
+                    : <p>No countries available.</p>
+            }
+
+        </Section>
+
+    </div>
+
+</Layout>
+
+<style>
+.continent-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+}
+
+.continent-page__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+</style>

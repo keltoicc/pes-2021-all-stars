@@ -1,0 +1,38 @@
+---
+import type { Continent } from "../../types/continent";
+import ContinentListItem from "./ContinentListItem.astro";
+
+interface Props {
+    continents: Continent[];
+}
+
+const { continents } = Astro.props;
+---
+
+<section class="continent-list">
+
+    <header class="continent-list__header">
+
+        <h1>continents</h1>
+
+        <p>
+            Browse every continent represented in the project.
+        </p>
+
+        <p class="continent-list__count">
+            {continents.length} {continents.length === 1 ? "continent" : "continents"}
+        </p>
+
+    </header>
+
+    <ul>
+
+        {
+            continents.map(continent => (
+                <ContinentListItem continent={continent} />
+            ))
+        }
+
+    </ul>
+
+</section>

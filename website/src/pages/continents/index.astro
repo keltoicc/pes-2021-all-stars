@@ -1,0 +1,15 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import ContinentList from "../../components/continents/ContinentList.astro";
+
+import ContinentRepository from "../../lib/repositories/ContinentRepository";
+
+const continents = ContinentRepository.getAll();
+---
+
+<Layout title="Continents">
+
+    <ContinentList continents={continents} />
+
+</Layout>

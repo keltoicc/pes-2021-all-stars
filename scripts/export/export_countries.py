@@ -31,12 +31,17 @@ def main():
         for row in reader:
 
             name = row["English:"]
+            confederation = int(row["Confederation:"])
+
+            if confederation == 19 or confederation == 11:
+                confederation = 3
 
             country_data = {
                 "id": int(row["Country ID:"]),
                 "name": name,
                 "slug": slugify_web(name),
                 "code": row["SHORT_NAME:"],
+                "continent": confederation,
             }
 
             output_path = output_dir / f"{country_data['id']}-{country_data['slug']}.json"
