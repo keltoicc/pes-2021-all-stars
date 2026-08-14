@@ -67,6 +67,106 @@ const { appearance } = Astro.props;
     }
 
     {
+        appearance.face && (
+            <div>
+                <h3>Face</h3>
+
+                <h4>Skin Colour / Head Ratio</h4>
+                <p>Skin Colour: {appearance.face.skinColourHeadRatio.skinColour}</p>
+                <p>Head Length: {appearance.face.skinColourHeadRatio.headLength}</p>
+                <p>Head Width: {appearance.face.skinColourHeadRatio.headWidth}</p>
+                <p>Head Depth: {appearance.face.skinColourHeadRatio.headDepth}</p>
+                <p>Face Height: {appearance.face.skinColourHeadRatio.faceHeight}</p>
+                <p>Face Size: {appearance.face.skinColourHeadRatio.faceSize}</p>
+
+                <h4>Eyes</h4>
+                <p>Upper Eyelid Type: {appearance.face.eyes.upperEyelidType}</p>
+                <p>Bottom Eyelid Type: {appearance.face.eyes.bottomEyelidType}</p>
+                <p>Eye Height: {appearance.face.eyes.eyeHeight}</p>
+                <p>Horizontal Eye Position: {appearance.face.eyes.horizontalEyePosition}</p>
+                <p>Iris Colour: {appearance.face.eyes.irisColour}</p>
+                <p>Pupil Size: {appearance.face.eyes.pupilSize}</p>
+                <p>Upper Eyelid Height Inner: {appearance.face.eyes.upperEyelidHeightInner}</p>
+                <p>Upper Eyelid Width Inner: {appearance.face.eyes.upperEyelidWidthInner}</p>
+                <p>Upper Eyelid Height Outer: {appearance.face.eyes.upperEyelidHeightOuter}</p>
+                <p>Upper Eyelid Width Outer: {appearance.face.eyes.upperEyelidWidthOuter}</p>
+                <p>Inner Eye Height: {appearance.face.eyes.innerEyeHeight}</p>
+                <p>Inner Eye Position: {appearance.face.eyes.innerEyePosition}</p>
+                <p>Eye Corner Height: {appearance.face.eyes.eyeCornerHeight}</p>
+                <p>Outer Eye Position: {appearance.face.eyes.outerEyePosition}</p>
+                <p>Bottom Eyelid Height: {appearance.face.eyes.bottomEyelidHeight}</p>
+                <p>Eye Depth: {appearance.face.eyes.eyeDepth}</p>
+
+                <h4>Forehead / Brows</h4>
+                <p>Forehead: {appearance.face.foreheadBrows.forehead}</p>
+                <p>Eyebrow Type: {appearance.face.foreheadBrows.eyebrowType}</p>
+                <p>Eyebrow Thickness: {appearance.face.foreheadBrows.eyebrowThickness}</p>
+                <p>Eyebrow Style: {appearance.face.foreheadBrows.eyebrowStyle}</p>
+                <p>Eyebrow Density: {appearance.face.foreheadBrows.eyebrowDensity}</p>
+                <p>Eyebrow Colour: {appearance.face.foreheadBrows.eyebrowColour.type}</p>
+                <p>Inner Eyebrow Height: {appearance.face.foreheadBrows.innerEyebrowHeight}</p>
+                <p>Brow Width: {appearance.face.foreheadBrows.browWidth}</p>
+                <p>Outer Eyebrow Height: {appearance.face.foreheadBrows.outerEyebrowHeight}</p>
+                <p>Temple Width: {appearance.face.foreheadBrows.templeWidth}</p>
+                <p>Eyebrow Depth: {appearance.face.foreheadBrows.eyebrowDepth}</p>
+
+                <h4>Nose</h4>
+                <p>Nose Type: {appearance.face.nose.noseType}</p>
+                <p>Laughter Lines: {appearance.face.nose.laughterLines}</p>
+                <p>Nose Height: {appearance.face.nose.noseHeight}</p>
+                <p>Nostril Width: {appearance.face.nose.nostrilWidth}</p>
+                <p>Nose Width: {appearance.face.nose.noseWidth}</p>
+                <p>Nose Tip Depth: {appearance.face.nose.noseTipDepth}</p>
+                <p>Nose Depth: {appearance.face.nose.noseDepth}</p>
+
+                <h4>Mouth</h4>
+                <p>Upper Lip Type: {appearance.face.mouth.upperLipType}</p>
+                <p>Lower Lip Type: {appearance.face.mouth.lowerLipType}</p>
+                <p>Mouth Height: {appearance.face.mouth.mouthHeight}</p>
+                <p>Lip Size: {appearance.face.mouth.lipSize}</p>
+                <p>Lip Width: {appearance.face.mouth.lipWidth}</p>
+                <p>Mouth Corner Height: {appearance.face.mouth.mouthCornerHeight}</p>
+                <p>Mouth Depth: {appearance.face.mouth.mouthDepth}</p>
+
+                <h4>Facial Hair</h4>
+                <p>Facial Hair Type: {appearance.face.facialHair.facialHairType}</p>
+
+                {
+                    appearance.face.facialHair.facialHairColour && (
+                        <p>
+                            Facial Hair Colour:
+                            {appearance.face.facialHair.facialHairColour.type}
+                        </p>
+                    )
+                }
+
+                {
+                    appearance.face.facialHair.thickness !== undefined && (
+                        <p>
+                            Thickness: {appearance.face.facialHair.thickness}
+                        </p>
+                    )
+                }
+
+                <h4>Cheeks / Chin / Jaw</h4>
+                <p>Cheek Type: {appearance.face.cheeksChinJaw.cheekType}</p>
+                <p>Neck Line Type: {appearance.face.cheeksChinJaw.neckLineType}</p>
+                <p>Cheekbones: {appearance.face.cheeksChinJaw.cheekbones}</p>
+                <p>Chin Height: {appearance.face.cheeksChinJaw.chinHeight}</p>
+                <p>Chin Width: {appearance.face.cheeksChinJaw.chinWidth}</p>
+                <p>Jaw Height: {appearance.face.cheeksChinJaw.jawHeight}</p>
+                <p>Jawline: {appearance.face.cheeksChinJaw.jawline}</p>
+                <p>Chin Depth: {appearance.face.cheeksChinJaw.chinDepth}</p>
+
+                <h4>Ears</h4>
+                <p>Ear Length: {appearance.face.ears.earLength}</p>
+                <p>Ear Width: {appearance.face.ears.earWidth}</p>
+                <p>Ear Angle: {appearance.face.ears.earAngle}</p>
+            </div>
+        )
+    }
+
+    {
         appearance.physique && (
             <div>
                 <h3>Physique</h3>
