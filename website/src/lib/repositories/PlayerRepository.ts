@@ -30,4 +30,8 @@ export default class PlayerRepository {
         return playersBySlug.get(slug);
     }
 
+    static getCountryIds(): Set<number> {
+        return new Set(players.map(player => player.country));
+    }
+
 }

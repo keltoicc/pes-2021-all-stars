@@ -3,14 +3,18 @@ import type { Country } from "../../types/country";
 
 interface Props {
     country: Country;
+    hrefBase?: string;
 }
 
-const { country } = Astro.props;
+const {
+    country,
+    hrefBase = "/countries"
+} = Astro.props;
 ---
 
 <li>
 
-    <a href={`/countries/${country.slug}`}>
+    <a href={`${hrefBase}/${country.slug}`}>
 
         <div>
 

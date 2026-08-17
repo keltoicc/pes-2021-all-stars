@@ -1,0 +1,31 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+
+import PlayerList from "../../../components/players/PlayerList.astro";
+
+import PlayerRepository from "../../../lib/repositories/PlayerRepository";
+import CountryRepository from "../../../lib/repositories/CountryRepository";
+
+const players = PlayerRepository.getAll();
+
+const summaries = players.map(player => {
+    const country = CountryRepository.getById(player.country);
+
+    if (!country) {
+        throw new Error(
+            `Country with id ${player.country} not found for player "${player.name}".`
+        );
+    }
+
+    return {
+        player,
+        country
+    };
+});
+---
+
+<Layout title="All Players">
+
+    <PlayerList players={summaries} />
+
+</Layout>

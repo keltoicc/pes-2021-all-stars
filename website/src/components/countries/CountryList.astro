@@ -4,9 +4,13 @@ import CountryListItem from "./CountryListItem.astro";
 
 interface Props {
     countries: Country[];
+    hrefBase?: string;
 }
 
-const { countries } = Astro.props;
+const {
+    countries,
+    hrefBase = "/countries"
+} = Astro.props;
 ---
 
 <section class="country-list">
@@ -29,7 +33,10 @@ const { countries } = Astro.props;
 
         {
             countries.map(country => (
-                <CountryListItem country={country} />
+                <CountryListItem
+                    country={country}
+                    hrefBase={hrefBase}
+                />
             ))
         }
 

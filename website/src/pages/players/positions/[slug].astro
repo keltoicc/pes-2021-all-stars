@@ -1,0 +1,62 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+
+import PlayerList from "../../../components/players/PlayerList.astro";
+
+import PlayerQueries from "../../../lib/queries/PlayerQueries";
+import CountryRepository from "../../../lib/repositories/CountryRepository";
+
+import { Position } from "../../../enums/position";
+
+export function getStaticPaths() {
+
+    return Object.values(Position)
+        .filter(position =>
+            PlayerQueries.getByPosition(position).length > 0
+        )
+        .map(position => ({
+            params: {
+                slug: position.toLowerCase()
+            }
+        }));
+
+}
+
+const { slug } = Astro.params;
+
+if (!slug) {
+    throw new Error("Missing position slug.");
+}
+
+const position = Object.values(Position)
+    .find(position => position.toLowerCase() === slug.toLowerCase());
+
+if (!position) {
+    throw new Error(`Position "${slug}" not found.`);
+}
+
+const players = PlayerQueries.getByPosition(position);
+
+const summaries = players.map(player => {
+
+    const country = CountryRepository.getById(player.country);
+
+    if (!country) {
+        throw new Error(
+            `Country with id ${player.country} not found for player "${player.name}".`
+        );
+    }
+
+    return {
+        player,
+        country
+    };
+
+});
+---
+
+<Layout title={`Players - ${position}`}>
+
+    <PlayerList players={summaries} />
+
+</Layout>

@@ -1,31 +1,59 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
-import PlayerList from "../../components/players/PlayerList.astro";
-
-import PlayerRepository from "../../lib/repositories/PlayerRepository";
-import CountryRepository from "../../lib/repositories/CountryRepository";
-
-const players = PlayerRepository.getAll();
-
-const summaries = players.map(player => {
-    const country = CountryRepository.getById(player.country);
-
-    if (!country) {
-        throw new Error(
-            `Country with id ${player.country} not found for player "${player.name}".`
-        );
-    }
-
-    return {
-        player,
-        country
-    };
-});
+import Section from "../../components/ui/Section.astro";
 ---
 
 <Layout title="Players">
 
-    <PlayerList players={summaries} />
+    <div class="players-page">
+
+        <header class="players-page__header">
+
+            <h1>Players</h1>
+
+        </header>
+
+        <Section title="Browse Players">
+
+            <ul>
+
+                <li>
+                    <a href="/players/all-players/">
+                        All Players
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/players/countries/">
+                        By Country
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/players/positions/">
+                        By Position
+                    </a>
+                </li>
+
+            </ul>
+
+        </Section>
+
+    </div>
 
 </Layout>
+
+<style>
+.players-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+}
+
+.players-page__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+</style>

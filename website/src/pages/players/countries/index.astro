@@ -1,0 +1,56 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+
+import Section from "../../../components/ui/Section.astro";
+import CountryList from "../../../components/countries/CountryList.astro";
+
+import CountryRepository from "../../../lib/repositories/CountryRepository";
+import PlayerRepository from "../../../lib/repositories/PlayerRepository";
+
+const playerCountryIds = PlayerRepository.getCountryIds();
+
+const countries = CountryRepository
+    .getAll()
+    .filter(country => playerCountryIds.has(country.id));
+---
+
+<Layout title="Players by Country">
+
+    <div class="players-countries-page">
+
+        <header class="players-countries-page__header">
+
+            <h1>Players by Country</h1>
+
+        </header>
+
+        <Section title="Countries">
+
+            {
+                countries.length > 0
+                    ? <CountryList
+                        countries={countries}
+                        hrefBase="/players/countries"
+                    />
+                    : <p>No countries available.</p>
+            }
+
+        </Section>
+
+    </div>
+
+</Layout>
+
+<style>
+.players-countries-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+}
+
+.players-countries-page__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+</style>

@@ -34,4 +34,8 @@ export default class TeamRepository {
         return teams.filter(team => team.country === countryId);
     }
 
+    static getCountryIds(): Set<number> {
+        return new Set(teams.map(team => team.country));
+    }
+
 }

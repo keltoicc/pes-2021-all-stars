@@ -1,0 +1,64 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+
+import Section from "../../../components/ui/Section.astro";
+
+import PlayerQueries from "../../../lib/queries/PlayerQueries";
+
+import { Position } from "../../../enums/position";
+
+const positions = Object.values(Position)
+    .filter(position => PlayerQueries.getByPosition(position).length > 0);
+---
+
+<Layout title="Players by Position">
+
+    <div class="players-positions-page">
+
+        <header class="players-positions-page__header">
+
+            <h1>Players by Position</h1>
+
+        </header>
+
+        <Section title="Positions">
+
+            <ul>
+
+                {
+                    positions.map(position => (
+
+                        <li>
+
+                            <a href={`/players/positions/${position.toLowerCase()}`}>
+
+                                {position}
+
+                            </a>
+
+                        </li>
+
+                    ))
+                }
+
+            </ul>
+
+        </Section>
+
+    </div>
+
+</Layout>
+
+<style>
+.players-positions-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+}
+
+.players-positions-page__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+</style>

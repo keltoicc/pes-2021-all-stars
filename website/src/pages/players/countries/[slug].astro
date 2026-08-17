@@ -1,0 +1,51 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+
+import PlayerList from "../../../components/players/PlayerList.astro";
+
+import PlayerRepository from "../../../lib/repositories/PlayerRepository";
+import CountryRepository from "../../../lib/repositories/CountryRepository";
+
+export function getStaticPaths() {
+
+    const countries = CountryRepository
+        .getAll()
+        .filter(country =>
+            PlayerRepository.getCountryIds().has(country.id)
+        );
+
+    return countries.map(country => ({
+        params: {
+            slug: country.slug
+        }
+    }));
+
+}
+
+const { slug } = Astro.params;
+
+if (!slug) {
+    throw new Error("Missing country slug.");
+}
+
+const country = CountryRepository.getBySlug(slug);
+
+if (!country) {
+    throw new Error(`Country "${slug}" not found.`);
+}
+
+const players = PlayerRepository
+    .getAll()
+    .filter(player => player.country === country.id);
+
+const summaries = players.map(player => ({
+    player,
+    country
+}));
+---
+
+<Layout title={`Players from ${country.name}`}>
+
+    <PlayerList players={summaries} />
+
+</Layout>

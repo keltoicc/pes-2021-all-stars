@@ -5,7 +5,13 @@ import CountryList from "../../components/countries/CountryList.astro";
 
 import CountryRepository from "../../lib/repositories/CountryRepository";
 
-const countries = CountryRepository.getAll();
+import TeamRepository from "../../lib/repositories/TeamRepository";
+
+const countryIds = TeamRepository.getCountryIds();
+
+const countries = CountryRepository
+    .getAll()
+    .filter(country => countryIds.has(country.id));
 ---
 
 <Layout title="Countries">
