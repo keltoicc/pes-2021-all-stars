@@ -10,7 +10,7 @@ const { member } = Astro.props;
 
 <li>
 
-    <a href={`/player-versions/${member.playerVersion.slug}`}>
+    <a href={`${import.meta.env.BASE_URL}player-versions/${member.playerVersion.slug}`}>
 
         <h3>{member.player.name}</h3>
 

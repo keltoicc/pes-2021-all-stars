@@ -10,7 +10,7 @@ const { continent } = Astro.props;
 
 <li class="continent-list-item">
 
-    <a href={`/continents/${continent.slug}`}>
+    <a href={`${import.meta.env.BASE_URL}continents/${continent.slug}`}>
 
         <h2>{continent.name}</h2>
 

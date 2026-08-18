@@ -32,7 +32,7 @@ const { career } = Astro.props;
 
                         <li>
 
-                            <a href={`/teams/${entry.team.slug}`}>
+                            <a href={`${import.meta.env.BASE_URL}teams/${entry.team.slug}`}>
 
                                 <span class="player-career__team">
                                     {entry.team.name}

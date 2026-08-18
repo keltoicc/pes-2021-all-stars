@@ -9,7 +9,7 @@ const { squad } = Astro.props;
 ---
 
 <li class="squad-list-item">
-    <a href={`/squads/${squad.slug}`}>
+    <a href={`${import.meta.env.BASE_URL}squads/${squad.slug}`}>
         {squad.name}
     </a>
 </li>

@@ -10,7 +10,7 @@ const { player } = Astro.props;
 
 <li class="player-list-item">
 
-    <a href={`/players/${player.player.slug}`}>
+    <a href={`${import.meta.env.BASE_URL}players/${player.player.slug}`}>
 
         <div class="player-list-item__info">
 

@@ -10,7 +10,7 @@ const { summary } = Astro.props;
 
 <li class="team-list-item">
 
-    <a href={`/teams/${summary.team.slug}`}>
+    <a href={`${import.meta.env.BASE_URL}teams/${summary.team.slug}`}>
 
         <img
             src={summary.team.crest}

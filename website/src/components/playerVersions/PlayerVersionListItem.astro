@@ -10,7 +10,7 @@ const { version } = Astro.props;
 
 <li>
 
-    <a href={`/player-versions/${version.slug}`}>
+    <a href={`${import.meta.env.BASE_URL}player-versions/${version.slug}`}>
 
         <div class="player-version-list-item__main">
 
