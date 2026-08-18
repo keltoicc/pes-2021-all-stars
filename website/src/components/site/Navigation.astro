@@ -4,64 +4,124 @@ interface NavigationItem {
     label: string;
 }
 
-const navigation = [
+const navigation: NavigationItem[] = [
     { href: "/", label: "Home" },
     { href: "/teams", label: "Teams" },
     { href: "/continents", label: "Continents" },
     { href: "/players", label: "Players" },
 ];
+
+const currentPath = Astro.url.pathname;
 ---
 
 <nav class="site-navigation" aria-label="Main navigation">
 
-    <div class="container">
+    <ul>
 
-        <ul>
+        {
+            navigation.map(item => {
 
-            {
-                navigation.map(item => (
+                const isActive =
+                    item.href === "/"
+                        ? currentPath === "/"
+                        : currentPath.startsWith(item.href);
 
+                return (
                     <li>
-
-                        <a href={item.href}>
+                        <a
+                            href={item.href}
+                            class:list={{ active: isActive }}
+                            aria-current={isActive ? "page" : undefined}
+                        >
                             {item.label}
                         </a>
-
                     </li>
+                );
 
-                ))
-            }
+            })
+        }
 
-        </ul>
-
-    </div>
+    </ul>
 
 </nav>
 
 <style>
 .site-navigation {
-    border-top: 1px solid var(--color-border);
-    background: var(--color-surface);
+    flex-shrink: 0;
 }
 
 .site-navigation ul {
     display: flex;
+    align-items: stretch;
     gap: var(--space-5);
 }
 
 .site-navigation a {
-    display: block;
+    position: relative;
 
-    padding-block: var(--space-3);
+    display: flex;
+    align-items: center;
 
-    color: var(--color-text-muted);
+    min-height: 72px;
 
-    font-weight: 500;
+    color: var(--color-text-secondary);
 
-    transition: color .2s ease;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+
+    transition:
+        color 150ms ease;
 }
 
-.site-navigation a:hover {
+.site-navigation a::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+
+    height: 2px;
+
+    background: var(--color-primary);
+
+    opacity: 0;
+
+    transition: opacity 150ms ease;
+}
+
+.site-navigation a.active {
     color: var(--color-primary);
+    font-weight: var(--font-weight-semibold);
+}
+
+.site-navigation a.active::after {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+
+    .site-navigation {
+        width: 100%;
+
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .site-navigation::-webkit-scrollbar {
+        display: none;
+    }
+
+    .site-navigation ul {
+        width: max-content;
+
+        gap: var(--space-4);
+    }
+
+    .site-navigation a {
+        min-height: auto;
+
+        padding-block: var(--space-2);
+    }
 }
 </style>

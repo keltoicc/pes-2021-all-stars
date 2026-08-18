@@ -1,4 +1,5 @@
 ---
+import PageHeader from "../../components/ui/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
 
 import CountryList from "../../components/countries/CountryList.astro";
@@ -15,6 +16,11 @@ const countries = CountryRepository
 ---
 
 <Layout title="Countries">
+
+    <PageHeader
+        title="Countries"
+        description="Explore the football countries represented in the database."
+    />
 
     <CountryList countries={countries} />
 

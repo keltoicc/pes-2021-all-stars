@@ -8,11 +8,11 @@ interface Props {
 const { player } = Astro.props;
 ---
 
-<li>
+<li class="player-list-item">
 
     <a href={`/players/${player.player.slug}`}>
 
-        <div>
+        <div class="player-list-item__info">
 
             <h2>{player.player.name}</h2>
 
@@ -20,6 +20,81 @@ const { player } = Astro.props;
 
         </div>
 
+        <span class="player-list-item__arrow" aria-hidden="true">
+            →
+        </span>
+
     </a>
 
 </li>
+
+<style>
+.player-list-item {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.player-list-item:first-child {
+    border-top: 1px solid var(--color-border);
+}
+
+.player-list-item a {
+    display: flex;
+    align-items: center;
+
+    min-height: 64px;
+
+    padding-block: var(--space-3);
+
+    color: var(--color-text);
+
+    transition: color 150ms ease;
+}
+
+.player-list-item__info {
+    min-width: 0;
+}
+
+.player-list-item h2 {
+    margin: 0;
+
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-tight);
+}
+
+.player-list-item p {
+    margin-top: var(--space-1);
+
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-sm);
+}
+
+.player-list-item__arrow {
+    margin-left: auto;
+
+    color: var(--color-text-muted);
+
+    transition:
+        color 150ms ease,
+        transform 150ms ease;
+}
+
+.player-list-item a:hover {
+    color: var(--color-primary);
+}
+
+.player-list-item a:hover p {
+    color: var(--color-text-secondary);
+}
+
+.player-list-item a:hover .player-list-item__arrow {
+    color: var(--color-primary);
+    transform: translateX(3px);
+}
+
+.player-list-item a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+</style>

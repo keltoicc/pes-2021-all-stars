@@ -8,7 +8,7 @@ interface Props {
 const { summary } = Astro.props;
 ---
 
-<li>
+<li class="team-list-item">
 
     <a href={`/teams/${summary.team.slug}`}>
 
@@ -17,7 +17,7 @@ const { summary } = Astro.props;
             alt={`${summary.team.name} crest`}
         />
 
-        <div>
+        <div class="team-list-item__info">
 
             <h2>{summary.team.name}</h2>
 
@@ -25,35 +25,100 @@ const { summary } = Astro.props;
 
         </div>
 
+        <span class="team-list-item__arrow" aria-hidden="true">
+            →
+        </span>
+
     </a>
 
 </li>
 
 <style>
-li {
+.team-list-item {
     border-bottom: 1px solid var(--color-border);
 }
 
-a {
-    display: flex;
-    align-items: center;
-    gap: var(--space-4);
-
-    padding-block: var(--space-3);
+.team-list-item:first-child {
+    border-top: 1px solid var(--color-border);
 }
 
-img {
+.team-list-item a {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: var(--space-4);
+
+    min-height: 72px;
+
+    padding-block: var(--space-3);
+
+    color: var(--color-text);
+
+    transition:
+        background-color 150ms ease,
+        color 150ms ease;
+}
+
+.team-list-item img {
     width: 48px;
     height: 48px;
+
+    flex-shrink: 0;
 
     object-fit: contain;
 }
 
-h2 {
-    font-size: 1.1rem;
+.team-list-item__info {
+    min-width: 0;
 }
 
-p {
+.team-list-item h2 {
+    margin: 0;
+
+    color: inherit;
+
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-tight);
+}
+
+.team-list-item p {
+    margin-top: var(--space-1);
+
     color: var(--color-text-muted);
+
+    font-size: var(--font-size-sm);
+}
+
+.team-list-item__arrow {
+    margin-left: auto;
+
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-lg);
+
+    transition:
+        color 150ms ease,
+        transform 150ms ease;
+}
+
+.team-list-item a:hover {
+    color: var(--color-primary);
+}
+
+.team-list-item a:hover p {
+    color: var(--color-text-secondary);
+}
+
+.team-list-item a:hover .team-list-item__arrow {
+    color: var(--color-primary);
+    transform: translateX(3px);
+}
+
+.team-list-item a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
 }
 </style>

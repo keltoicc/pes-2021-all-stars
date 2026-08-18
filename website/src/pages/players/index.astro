@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
+import PageHeader from "../../components/ui/PageHeader.astro";
 import Section from "../../components/ui/Section.astro";
 ---
 
@@ -8,11 +9,10 @@ import Section from "../../components/ui/Section.astro";
 
     <div class="players-page">
 
-        <header class="players-page__header">
-
-            <h1>Players</h1>
-
-        </header>
+        <PageHeader
+            title="Players"
+            description="Browse players available in the Classic Football Encyclopedia."
+        />
 
         <Section title="Browse Players">
 
@@ -48,12 +48,5 @@ import Section from "../../components/ui/Section.astro";
 .players-page {
     display: flex;
     flex-direction: column;
-    gap: var(--space-8);
-}
-
-.players-page__header {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2);
 }
 </style>

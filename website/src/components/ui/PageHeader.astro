@@ -1,0 +1,65 @@
+---
+interface Props {
+    title: string;
+    description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<header class="page-header">
+
+    <h1 class="page-header__title">
+        {title}
+    </h1>
+
+    {description && (
+        <p class="page-header__description">
+            {description}
+        </p>
+    )}
+
+</header>
+
+<style>
+.page-header {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-2);
+
+    margin-bottom: var(--space-7);
+}
+
+.page-header__title {
+    margin: 0;
+
+    color: var(--color-text);
+
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+
+    letter-spacing: -0.02em;
+}
+
+.page-header__description {
+    max-width: 45rem;
+
+    color: var(--color-text-secondary);
+
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-relaxed);
+}
+
+@media (max-width: 768px) {
+
+    .page-header {
+        margin-bottom: var(--space-6);
+    }
+
+    .page-header__title {
+        font-size: var(--font-size-3xl);
+    }
+}
+</style>

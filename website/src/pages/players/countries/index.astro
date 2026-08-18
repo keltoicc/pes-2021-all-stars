@@ -1,4 +1,5 @@
 ---
+import PageHeader from "../../../components/ui/PageHeader.astro";
 import Layout from "../../../layouts/Layout.astro";
 
 import Section from "../../../components/ui/Section.astro";
@@ -18,11 +19,10 @@ const countries = CountryRepository
 
     <div class="players-countries-page">
 
-        <header class="players-countries-page__header">
-
-            <h1>Players by Country</h1>
-
-        </header>
+        <PageHeader
+            title="Players by Country"
+            description="Explore players by country."
+        />
 
         <Section title="Countries">
 

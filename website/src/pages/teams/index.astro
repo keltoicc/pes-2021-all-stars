@@ -1,4 +1,5 @@
 ---
+import PageHeader from "../../components/ui/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
 import TeamList from "../../components/teams/TeamList.astro";
 import type { TeamSummary } from "../../viewModels/TeamSummary";
@@ -25,6 +26,11 @@ const teamSummaries: TeamSummary[] = teams.map(team => {
 ---
 
 <Layout title="Teams">
+
+    <PageHeader
+        title="Teams"
+        description="Browse the clubs and national teams available in the database."
+    />
 
     <TeamList teams={teamSummaries} />
 

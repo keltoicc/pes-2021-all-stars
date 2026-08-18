@@ -11,19 +11,9 @@ const { continents } = Astro.props;
 
 <section class="continent-list">
 
-    <header class="continent-list__header">
-
-        <h1>Continents</h1>
-
-        <p>
-            Browse every continent represented in the project.
-        </p>
-
-        <p class="continent-list__count">
-            {continents.length} {continents.length === 1 ? "continent" : "continents"}
-        </p>
-
-    </header>
+    <div class="continent-list__meta">
+        {continents.length} {continents.length === 1 ? "continent" : "continents"}
+    </div>
 
     <ul>
 
@@ -36,3 +26,19 @@ const { continents } = Astro.props;
     </ul>
 
 </section>
+
+<style>
+.continent-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-4);
+}
+
+.continent-list__meta {
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
+</style>

@@ -2,33 +2,35 @@
 
     <div class="container">
 
-        <section class="footer__about">
+        <div class="site-footer__main">
 
-            <h2>Classic Football Encyclopedia</h2>
+            <section class="footer__about">
 
-            <p>
-                An open football database focused on legendary clubs,
-                squads and players from every era.
-            </p>
+                <h2>Classic Football Encyclopedia</h2>
 
-        </section>
+                <p>
+                    An open football database focused on legendary clubs,
+                    squads and players from every era.
+                </p>
 
-        <nav class="footer__navigation" aria-label="Footer">
+            </section>
 
-            <ul>
+            <nav class="footer__navigation" aria-label="Footer">
 
-                <li><a href="/about">About</a></li>
-                <li><a href="/news">News</a></li>
-                <li><a href="https://github.com/">GitHub</a></li>
+                <ul>
 
-            </ul>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="https://github.com/">GitHub</a></li>
 
-        </nav>
+                </ul>
+
+            </nav>
+
+        </div>
 
         <p class="footer__copyright">
-
             © 2026 Classic Football Encyclopedia
-
         </p>
 
     </div>
@@ -37,38 +39,49 @@
 
 <style>
 .site-footer {
-    margin-top: var(--space-7);
-
     border-top: 1px solid var(--color-border);
-
     background: var(--color-surface);
 }
 
 .site-footer .container {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-5);
+    padding-block: var(--space-7);
+}
 
-    padding-block: var(--space-6);
+.site-footer__main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: var(--space-7);
 }
 
 .footer__about {
-    max-width: 40rem;
+    max-width: 32rem;
 }
 
 .footer__about h2 {
     margin-bottom: var(--space-2);
 
-    font-size: 1.25rem;
+    color: var(--color-text);
+
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+}
+
+.footer__about p {
+    font-size: var(--font-size-sm);
 }
 
 .footer__navigation ul {
     display: flex;
-    gap: var(--space-4);
+    gap: var(--space-5);
 }
 
 .footer__navigation a {
-    color: var(--color-text-muted);
+    color: var(--color-text-secondary);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
 }
 
 .footer__navigation a:hover {
@@ -76,6 +89,26 @@
 }
 
 .footer__copyright {
-    font-size: 0.9rem;
+    margin-top: var(--space-6);
+    padding-top: var(--space-4);
+
+    border-top: 1px solid var(--color-border);
+
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-xs);
+}
+
+@media (max-width: 768px) {
+
+    .site-footer__main {
+        flex-direction: column;
+        gap: var(--space-5);
+    }
+
+    .footer__navigation ul {
+        flex-wrap: wrap;
+        gap: var(--space-4);
+    }
 }
 </style>

@@ -1,4 +1,5 @@
 ---
+import PageHeader from "../../../components/ui/PageHeader.astro";
 import Layout from "../../../layouts/Layout.astro";
 
 import Section from "../../../components/ui/Section.astro";
@@ -15,11 +16,10 @@ const positions = Object.values(Position)
 
     <div class="players-positions-page">
 
-        <header class="players-positions-page__header">
-
-            <h1>Players by Position</h1>
-
-        </header>
+        <PageHeader
+            title="Players by Position"
+            description="Explore players by position."
+        />
 
         <Section title="Positions">
 

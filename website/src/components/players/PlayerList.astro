@@ -12,19 +12,9 @@ const { players } = Astro.props;
 
 <section class="player-list">
 
-    <header class="player-list__header">
-
-        <h1>Players</h1>
-
-        <p>
-            Browse every player available in the project.
-        </p>
-
-        <p class="player-list__count">
-            {players.length} {players.length === 1 ? "player" : "players"}
-        </p>
-
-    </header>
+    <div class="player-list__meta">
+        {players.length} {players.length === 1 ? "player" : "players"}
+    </div>
 
     <ul>
 
@@ -37,3 +27,19 @@ const { players } = Astro.props;
     </ul>
 
 </section>
+
+<style>
+.player-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-4);
+}
+
+.player-list__meta {
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
+</style>

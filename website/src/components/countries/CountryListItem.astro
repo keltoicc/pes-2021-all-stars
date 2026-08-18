@@ -12,11 +12,11 @@ const {
 } = Astro.props;
 ---
 
-<li>
+<li class="country-list-item">
 
     <a href={`${hrefBase}/${country.slug}`}>
 
-        <div>
+        <div class="country-list-item__info">
 
             <h2>{country.name}</h2>
 
@@ -24,6 +24,81 @@ const {
 
         </div>
 
+        <span class="country-list-item__arrow" aria-hidden="true">
+            →
+        </span>
+
     </a>
 
 </li>
+
+<style>
+.country-list-item {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.country-list-item:first-child {
+    border-top: 1px solid var(--color-border);
+}
+
+.country-list-item a {
+    display: flex;
+    align-items: center;
+
+    min-height: 64px;
+
+    padding-block: var(--space-3);
+
+    color: var(--color-text);
+
+    transition: color 150ms ease;
+}
+
+.country-list-item__info {
+    min-width: 0;
+}
+
+.country-list-item h2 {
+    margin: 0;
+
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-tight);
+}
+
+.country-list-item p {
+    margin-top: var(--space-1);
+
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-sm);
+}
+
+.country-list-item__arrow {
+    margin-left: auto;
+
+    color: var(--color-text-muted);
+
+    transition:
+        color 150ms ease,
+        transform 150ms ease;
+}
+
+.country-list-item a:hover {
+    color: var(--color-primary);
+}
+
+.country-list-item a:hover p {
+    color: var(--color-text-secondary);
+}
+
+.country-list-item a:hover .country-list-item__arrow {
+    color: var(--color-primary);
+    transform: translateX(3px);
+}
+
+.country-list-item a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+</style>

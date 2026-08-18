@@ -4,53 +4,91 @@ import Navigation from "./Navigation.astro";
 
 <header class="site-header">
 
-    <div class="site-header__branding">
+    <div class="container site-header__inner">
 
-        <div class="container">
+        <a href="/" class="brand">
 
-            <a href="/" class="brand">
+            <span class="brand__title">
+                Classic Football Encyclopedia
+            </span>
 
-                <span class="brand__title">
-                    Classic Football Encyclopedia
-                </span>
+            <span class="brand__subtitle">
+                PES 2021 Classic Football Mod
+            </span>
 
-                <span class="brand__subtitle">
-                    The official database of the PES 2021 Classic Football Mod
-                </span>
+        </a>
 
-            </a>
-
-        </div>
+        <Navigation />
 
     </div>
-
-    <Navigation />
 
 </header>
 
 <style>
 .site-header {
+    position: relative;
+    z-index: 10;
+
     background: var(--color-surface);
     border-bottom: 1px solid var(--color-border);
 }
 
-.site-header__branding {
-    padding-block: var(--space-5);
+.site-header__inner {
+    min-height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--space-6);
 }
 
 .brand {
     display: flex;
     flex-direction: column;
-    gap: var(--space-1);
+
+    flex-shrink: 0;
+
+    gap: 2px;
+
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.brand:hover {
+    color: var(--color-text);
 }
 
 .brand__title {
-    font-size: 2rem;
-    font-weight: 700;
+    color: var(--color-text);
+
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    letter-spacing: -0.01em;
 }
 
 .brand__subtitle {
     color: var(--color-text-muted);
-    font-size: 0.95rem;
+
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-normal);
+}
+
+@media (max-width: 768px) {
+
+    .site-header__inner {
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: var(--space-4);
+
+        padding-block: var(--space-4);
+    }
+
+    .brand__title {
+        font-size: var(--font-size-md);
+    }
 }
 </style>
