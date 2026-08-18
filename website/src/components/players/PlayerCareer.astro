@@ -19,7 +19,9 @@ const { career } = Astro.props;
     {
         career.length === 0 ? (
 
-            <p>No career information available.</p>
+            <p class="player-career__empty">
+                No career information available.
+            </p>
 
         ) : (
 
@@ -32,12 +34,21 @@ const { career } = Astro.props;
 
                             <a href={`/teams/${entry.team.slug}`}>
 
-                                <strong>{entry.team.name}</strong>
+                                <span class="player-career__team">
+                                    {entry.team.name}
+                                </span>
 
-                                <span>
+                                <span class="player-career__seasons">
                                     {entry.career.fromSeason}
                                     –
                                     {entry.career.toSeason}
+                                </span>
+
+                                <span
+                                    class="player-career__arrow"
+                                    aria-hidden="true"
+                                >
+                                    →
                                 </span>
 
                             </a>
@@ -53,3 +64,121 @@ const { career } = Astro.props;
     }
 
 </section>
+
+<style>
+.player-career {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-4);
+
+    max-width: var(--content-width);
+}
+
+.player-career__header {
+    padding: var(--space-3) var(--space-4);
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.player-career__header h2 {
+    margin: 0;
+
+    font-size: var(--font-size-xl);
+}
+
+.player-career ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-career li {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.player-career li:first-child {
+    border-top: 1px solid var(--color-border);
+}
+
+.player-career a {
+    display: grid;
+
+    grid-template-columns: 1fr auto auto;
+
+    align-items: center;
+
+    gap: var(--space-4);
+
+    padding: var(--space-3) var(--space-4);
+
+    color: var(--color-text);
+
+    transition:
+        background-color 150ms ease,
+        color 150ms ease;
+}
+
+.player-career__team {
+    font-weight: var(--font-weight-semibold);
+}
+
+.player-career__seasons {
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+
+    white-space: nowrap;
+}
+
+.player-career__arrow {
+    color: var(--color-primary);
+
+    font-size: 1.1rem;
+
+    transition: transform 150ms ease;
+}
+
+.player-career a:hover {
+    background: var(--color-surface-muted);
+}
+
+.player-career a:hover .player-career__team {
+    color: var(--color-primary);
+}
+
+.player-career a:hover .player-career__arrow {
+    transform: translateX(3px);
+}
+
+.player-career__empty {
+    margin: 0;
+
+    padding: var(--space-4);
+
+    color: var(--color-text-muted);
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+@media (max-width: 700px) {
+    .player-career a {
+        grid-template-columns: 1fr auto;
+
+        gap: var(--space-2);
+    }
+
+    .player-career__seasons {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .player-career__arrow {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+}
+</style>

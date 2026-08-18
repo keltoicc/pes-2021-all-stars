@@ -1,9 +1,10 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import Breadcrumbs from "../../components/ui/Breadcrumbs.astro";
 
 import PlayerHeader from "../../components/players/PlayerHeader.astro";
 import PlayerCareer from "../../components/players/PlayerCareer.astro";
-import Section from "../../components/ui/Section.astro";
+import PlayerVersionList from "../../components/playerVersions/PlayerVersionList.astro";
 
 import PlayerRepository from "../../lib/repositories/PlayerRepository";
 import PlayerVersionRepository from "../../lib/repositories/PlayerVersionRepository";
@@ -58,6 +59,18 @@ const versions = PlayerVersionRepository.getByPlayer(player.id);
 
     <div class="player-page">
 
+        <Breadcrumbs
+            items={[
+                {
+                    label: "Players",
+                    href: "/players/"
+                },
+                {
+                    label: player.name
+                }
+            ]}
+        />
+
         <PlayerHeader
             player={player}
             country={country}
@@ -65,30 +78,7 @@ const versions = PlayerVersionRepository.getByPlayer(player.id);
 
         <PlayerCareer career={career} />
 
-        <Section title="Available Versions">
-
-            <ul>
-
-                {
-                    versions.map(version => (
-
-                        <li>
-
-                            <a href={`/player-versions/${version.slug}`}>
-
-                                {version.version}
-                                ({version.fromSeason}–{version.toSeason})
-
-                            </a>
-
-                        </li>
-
-                    ))
-                }
-
-            </ul>
-
-        </Section>
+        <PlayerVersionList versions={versions} />
 
     </div>
 
@@ -98,6 +88,7 @@ const versions = PlayerVersionRepository.getByPlayer(player.id);
 .player-page {
     display: flex;
     flex-direction: column;
-    gap: var(--space-4);
+    
+    gap: var(--space-6);
 }
 </style>

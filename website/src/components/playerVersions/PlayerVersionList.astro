@@ -1,0 +1,88 @@
+---
+import PlayerVersionListItem from "./PlayerVersionListItem.astro";
+
+import type { PlayerVersion } from "../../types/playerVersion";
+
+interface Props {
+    versions: PlayerVersion[];
+}
+
+const { versions } = Astro.props;
+---
+
+<section class="player-version-list">
+
+    <header class="player-version-list__header">
+
+        <p class="player-version-list__count">
+            {versions.length}
+            {versions.length === 1 ? "version" : "versions"}
+        </p>
+
+    </header>
+
+    {
+        versions.length === 0 ? (
+
+            <p class="player-version-list__empty">
+                No versions available.
+            </p>
+
+        ) : (
+
+            <ul>
+
+                {
+                    versions.map(version => (
+                        <PlayerVersionListItem version={version} />
+                    ))
+                }
+
+            </ul>
+
+        )
+    }
+
+</section>
+
+<style>
+.player-version-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-4);
+
+    max-width: var(--content-width);
+}
+
+.player-version-list__header {
+    padding: var(--space-3) var(--space-4);
+}
+
+.player-version-list__count {
+    margin: 0;
+
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+.player-version-list ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-version-list__empty {
+    margin: 0;
+
+    padding: var(--space-4);
+
+    color: var(--color-text-muted);
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+</style>

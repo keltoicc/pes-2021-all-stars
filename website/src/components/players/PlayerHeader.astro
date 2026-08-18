@@ -17,7 +17,15 @@ const {
 
     <div class="player-header__content">
 
-        <h1>{player.name}</h1>
+        <div class="player-header__identity">
+
+            <h1>{player.name}</h1>
+
+            <p class="player-header__country">
+                {country.name}
+            </p>
+
+        </div>
 
         <dl>
 
@@ -37,7 +45,6 @@ const {
                         <dd>{player.birthDate}</dd>
 
                     </div>
-
                 )
             }
 
@@ -50,7 +57,6 @@ const {
                         <dd>{player.preferredFoot}</dd>
 
                     </div>
-
                 )
             }
 
@@ -59,3 +65,111 @@ const {
     </div>
 
 </header>
+
+<style>
+.player-header {
+    padding: var(--space-5) var(--space-4);
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.player-header__content {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-6);
+}
+
+.player-header__identity {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-2);
+}
+
+.player-header h1 {
+    margin: 0;
+
+    color: var(--color-text);
+
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+}
+
+.player-header__country {
+    margin: 0;
+
+    color: var(--color-primary);
+
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+}
+
+.player-header dl {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    border-top: 1px solid var(--color-border);
+}
+
+.player-header dl > div {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-1);
+
+    padding-top: var(--space-4);
+}
+
+.player-header dl > div:not(:first-child) {
+    padding-left: var(--space-4);
+
+    border-left: 1px solid var(--color-border);
+}
+
+.player-header dt {
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+.player-header dd {
+    margin: 0;
+
+    color: var(--color-text);
+
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+}
+
+@media (max-width: 700px) {
+    .player-header {
+        padding: var(--space-4);
+    }
+
+    .player-header h1 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .player-header dl {
+        grid-template-columns: 1fr;
+    }
+
+    .player-header dl > div {
+        padding-block: var(--space-3);
+    }
+
+    .player-header dl > div:not(:first-child) {
+        padding-left: 0;
+
+        border-left: 0;
+        border-top: 1px solid var(--color-border);
+    }
+}
+</style>

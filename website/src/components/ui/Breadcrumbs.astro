@@ -1,0 +1,103 @@
+---
+interface Breadcrumb {
+    label: string;
+    href?: string;
+}
+
+interface Props {
+    items: Breadcrumb[];
+}
+
+const { items } = Astro.props;
+---
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+
+    <ol>
+
+        {
+            items.map((item, index) => {
+
+                const isLast = index === items.length - 1;
+
+                return (
+                    <li>
+
+                        {
+                            !isLast && item.href
+                                ? (
+                                    <a href={item.href}>
+                                        {item.label}
+                                    </a>
+                                )
+                                : (
+                                    <span aria-current={isLast ? "page" : undefined}>
+                                        {item.label}
+                                    </span>
+                                )
+                        }
+
+                        {
+                            !isLast && (
+                                <span
+                                    class="breadcrumbs__separator"
+                                    aria-hidden="true"
+                                >
+                                    /
+                                </span>
+                            )
+                        }
+
+                    </li>
+                );
+
+            })
+        }
+
+    </ol>
+
+</nav>
+
+<style>
+.breadcrumbs {
+    padding: var(--space-3) var(--space-4);
+
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-sm);
+}
+
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    gap: var(--space-2);
+}
+
+.breadcrumbs li {
+    display: flex;
+    align-items: center;
+
+    gap: var(--space-2);
+}
+
+.breadcrumbs a {
+    color: var(--color-text-muted);
+
+    transition: color 150ms ease;
+}
+
+.breadcrumbs a:hover {
+    color: var(--color-primary);
+}
+
+.breadcrumbs span[aria-current="page"] {
+    color: var(--color-text);
+    font-weight: var(--font-weight-medium);
+}
+
+.breadcrumbs__separator {
+    color: var(--color-border);
+}
+</style>
