@@ -14,131 +14,167 @@ const { abilities } = Astro.props;
         <h2>Abilities</h2>
     </header>
 
-    <div class="player-version-abilities__grid">
+    <div class="ability-group">
 
-        <div>
-            <span>Offensive Awareness</span>
-            <strong>{abilities.offensiveAwareness}</strong>
+        <h3>Attacking</h3>
+
+        <div class="ability-group__grid">
+
+            <div class="ability">
+                <span>Offensive Awareness</span>
+                <strong>{abilities.offensiveAwareness}</strong>
+            </div>
+
+            <div class="ability">
+                <span>Ball Control</span>
+                <strong>{abilities.ballControl}</strong>
+            </div>
+
+            <div class="ability">
+                <span>Dribbling</span>
+                <strong>{abilities.dribbling}</strong>
+            </div>
+
+            <div class="ability">
+                <span>Tight Possession</span>
+                <strong>{abilities.tightPossession}</strong>
+            </div>
+
+            <div class="ability">
+                <span>Low Pass</span>
+                <strong>{abilities.lowPass}</strong>
+            </div>
+
+            <div class="ability">
+                <span>Lofted Pass</span>
+                <strong>{abilities.loftedPass}</strong>
+            </div>
+
+            <div class="ability">
+                <span>Finishing</span>
+                <strong>{abilities.finishing}</strong>
+            </div>
+
+            <div class="ability">
+                <span>Heading</span>
+                <strong>{abilities.heading}</strong>
+            </div>
+
+            <div class="ability">
+                <span>Place Kicking</span>
+                <strong>{abilities.placeKicking}</strong>
+            </div>
+
+            <div class="ability">
+                <span>Curl</span>
+                <strong>{abilities.curl}</strong>
+            </div>
+
         </div>
 
-        <div>
-            <span>Ball Control</span>
-            <strong>{abilities.ballControl}</strong>
+    </div>
+
+    <div class="ability-group">
+
+        <h3>Physical</h3>
+
+        <div class="ability-group__grid">
+
+            <div class="ability">
+                <span>Speed</span>
+                <strong>{abilities.speed}</strong>
+            </div>
+
+            <div class="ability">
+                <span>Acceleration</span>
+                <strong>{abilities.acceleration}</strong>
+            </div>
+
+            <div class="ability">
+                <span>Kicking Power</span>
+                <strong>{abilities.kickingPower}</strong>
+            </div>
+
+            <div class="ability">
+                <span>Jump</span>
+                <strong>{abilities.jump}</strong>
+            </div>
+
+            <div class="ability">
+                <span>Physical Contact</span>
+                <strong>{abilities.physicalContact}</strong>
+            </div>
+
+            <div class="ability">
+                <span>Balance</span>
+                <strong>{abilities.balance}</strong>
+            </div>
+
+            <div class="ability">
+                <span>Stamina</span>
+                <strong>{abilities.stamina}</strong>
+            </div>
+
         </div>
 
-        <div>
-            <span>Dribbling</span>
-            <strong>{abilities.dribbling}</strong>
+    </div>
+
+    <div class="ability-group">
+
+        <h3>Defending</h3>
+
+        <div class="ability-group__grid">
+
+            <div class="ability">
+                <span>Defensive Awareness</span>
+                <strong>{abilities.defensiveAwareness}</strong>
+            </div>
+
+            <div class="ability">
+                <span>Ball Winning</span>
+                <strong>{abilities.ballWinning}</strong>
+            </div>
+
+            <div class="ability">
+                <span>Aggression</span>
+                <strong>{abilities.aggression}</strong>
+            </div>
+
         </div>
 
-        <div>
-            <span>Tight Possession</span>
-            <strong>{abilities.tightPossession}</strong>
-        </div>
+    </div>
 
-        <div>
-            <span>Low Pass</span>
-            <strong>{abilities.lowPass}</strong>
-        </div>
+    <div class="ability-group">
 
-        <div>
-            <span>Lofted Pass</span>
-            <strong>{abilities.loftedPass}</strong>
-        </div>
+        <h3>Goalkeeping</h3>
 
-        <div>
-            <span>Finishing</span>
-            <strong>{abilities.finishing}</strong>
-        </div>
+        <div class="ability-group__grid">
 
-        <div>
-            <span>Heading</span>
-            <strong>{abilities.heading}</strong>
-        </div>
+            <div class="ability">
+                <span>GK Awareness</span>
+                <strong>{abilities.gkAwareness}</strong>
+            </div>
 
-        <div>
-            <span>Place Kicking</span>
-            <strong>{abilities.placeKicking}</strong>
-        </div>
+            <div class="ability">
+                <span>GK Catching</span>
+                <strong>{abilities.gkCatching}</strong>
+            </div>
 
-        <div>
-            <span>Curl</span>
-            <strong>{abilities.curl}</strong>
-        </div>
+            <div class="ability">
+                <span>GK Clearing</span>
+                <strong>{abilities.gkClearing}</strong>
+            </div>
 
-        <div>
-            <span>Speed</span>
-            <strong>{abilities.speed}</strong>
-        </div>
+            <div class="ability">
+                <span>GK Reflexes</span>
+                <strong>{abilities.gkReflexes}</strong>
+            </div>
 
-        <div>
-            <span>Acceleration</span>
-            <strong>{abilities.acceleration}</strong>
-        </div>
+            <div class="ability">
+                <span>GK Reach</span>
+                <strong>{abilities.gkReach}</strong>
+            </div>
 
-        <div>
-            <span>Kicking Power</span>
-            <strong>{abilities.kickingPower}</strong>
-        </div>
-
-        <div>
-            <span>Jump</span>
-            <strong>{abilities.jump}</strong>
-        </div>
-
-        <div>
-            <span>Physical Contact</span>
-            <strong>{abilities.physicalContact}</strong>
-        </div>
-
-        <div>
-            <span>Balance</span>
-            <strong>{abilities.balance}</strong>
-        </div>
-
-        <div>
-            <span>Stamina</span>
-            <strong>{abilities.stamina}</strong>
-        </div>
-
-        <div>
-            <span>Defensive Awareness</span>
-            <strong>{abilities.defensiveAwareness}</strong>
-        </div>
-
-        <div>
-            <span>Ball Winning</span>
-            <strong>{abilities.ballWinning}</strong>
-        </div>
-
-        <div>
-            <span>Aggression</span>
-            <strong>{abilities.aggression}</strong>
-        </div>
-
-        <div>
-            <span>GK Awareness</span>
-            <strong>{abilities.gkAwareness}</strong>
-        </div>
-
-        <div>
-            <span>GK Catching</span>
-            <strong>{abilities.gkCatching}</strong>
-        </div>
-
-        <div>
-            <span>GK Clearing</span>
-            <strong>{abilities.gkClearing}</strong>
-        </div>
-
-        <div>
-            <span>GK Reflexes</span>
-            <strong>{abilities.gkReflexes}</strong>
-        </div>
-
-        <div>
-            <span>GK Reach</span>
-            <strong>{abilities.gkReach}</strong>
         </div>
 
     </div>
@@ -146,19 +182,81 @@ const { abilities } = Astro.props;
 </section>
 
 <style>
-.player-version-abilities__grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: var(--space-2);
-}
-
-.player-version-abilities__grid > div {
+.player-version-abilities {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+
+    gap: var(--space-6);
+
+    max-width: var(--content-width);
+}
+
+.player-version-abilities__header {
+    padding: var(--space-3) var(--space-4);
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.player-version-abilities__header h2 {
+    margin: 0;
+
+    font-size: var(--font-size-xl);
+}
+
+.ability-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-3);
+}
+
+.ability-group h3 {
+    margin: 0;
+
+    padding-inline: var(--space-4);
+
+    font-size: var(--font-size-lg);
+}
+
+.ability-group__grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
     gap: var(--space-2);
 }
 
-.player-version-abilities__grid strong {
-    font-weight: 600;
+.ability {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--space-4);
+
+    padding: var(--space-3) var(--space-4);
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.ability span {
+    color: var(--color-text);
+}
+
+.ability strong {
+    min-width: 2rem;
+
+    text-align: right;
+
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+}
+
+@media (max-width: 700px) {
+    .ability-group__grid {
+        grid-template-columns: 1fr;
+    }
 }
 </style>

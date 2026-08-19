@@ -10,26 +10,118 @@ const { playerVersion } = Astro.props;
 
 <section class="player-version-popularity">
 
-    <h2>Popularity</h2>
+    <header class="player-version-popularity__header">
+        <h2>Popularity</h2>
+    </header>
 
-    {
-        playerVersion.marketValue !== undefined && (
-            <div>
-                <span>Market Value</span>
-                <strong>
-                    €{playerVersion.marketValue.toLocaleString("en-US")}
-                </strong>
-            </div>
-        )
-    }
+    <div class="player-version-popularity__grid">
 
-    {
-        playerVersion.reputation !== undefined && (
-            <div>
-                <span>Reputation</span>
-                <strong>{playerVersion.reputation}</strong>
-            </div>
-        )
-    }
+        {
+            playerVersion.marketValue !== undefined && (
+                <div class="popularity-item">
+
+                    <span class="popularity-item__label">
+                        Market Value
+                    </span>
+
+                    <strong class="popularity-item__value">
+                        €{playerVersion.marketValue.toLocaleString("en-US")}
+                    </strong>
+
+                </div>
+            )
+        }
+
+        {
+            playerVersion.reputation !== undefined && (
+                <div class="popularity-item">
+
+                    <span class="popularity-item__label">
+                        Reputation
+                    </span>
+
+                    <strong class="popularity-item__value">
+                        {playerVersion.reputation}
+                    </strong>
+
+                </div>
+            )
+        }
+
+    </div>
 
 </section>
+
+<style>
+.player-version-popularity {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-4);
+
+    max-width: var(--content-width);
+}
+
+.player-version-popularity__header {
+    padding: var(--space-3) var(--space-4);
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.player-version-popularity__header h2 {
+    margin: 0;
+
+    font-size: var(--font-size-xl);
+}
+
+.player-version-popularity__grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    overflow: hidden;
+}
+
+.popularity-item {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-1);
+
+    padding: var(--space-4);
+
+    background: var(--color-surface);
+}
+
+.popularity-item + .popularity-item {
+    border-left: 1px solid var(--color-border);
+}
+
+.popularity-item__label {
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+.popularity-item__value {
+    color: var(--color-text);
+
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+}
+
+@media (max-width: 600px) {
+    .player-version-popularity__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .popularity-item + .popularity-item {
+        border-left: 0;
+        border-top: 1px solid var(--color-border);
+    }
+}
+</style>

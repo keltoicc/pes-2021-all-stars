@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 
 import PlayerVersionHeader from "../../components/playerVersions/PlayerVersionHeader.astro";
 import Section from "../../components/ui/Section.astro";
+import Breadcrumbs from "../../components/ui/Breadcrumbs.astro";
 
 import PlayerVersionRepository from "../../lib/repositories/PlayerVersionRepository";
 import PlayerRepository from "../../lib/repositories/PlayerRepository";
@@ -19,6 +20,7 @@ import PlayerVersionPhysical from "../../components/playerVersions/PlayerVersion
 import PlayerVersionPopularity from "../../components/playerVersions/PlayerVersionPopularity.astro";
 import PlayerVersionEquipment from "../../components/playerVersions/PlayerVersionEquipment.astro";
 import PlayerVersionAppearance from "../../components/playerVersions/PlayerVersionAppearance.astro";
+import PlayerVersionPositions from "../../components/playerVersions/PlayerVersionPositions.astro";
 
 export function getStaticPaths() {
     const playerVersions = PlayerVersionRepository.getAll();
@@ -88,9 +90,25 @@ if (
 }
 ---
 
-<Layout title={player.name}>
+<Layout title={`${player.name} — ${playerVersion.version}`}>
 
     <div class="player-version-page">
+
+        <Breadcrumbs
+            items={[
+                {
+                    label: "Players",
+                    href: `${import.meta.env.BASE_URL}players/`
+                },
+                {
+                    label: player.name,
+                    href: `${import.meta.env.BASE_URL}players/${player.slug}/`
+                },
+                {
+                    label: playerVersion.version
+                }
+            ]}
+        />
 
         <PlayerVersionHeader
             player={player}
@@ -98,23 +116,9 @@ if (
             country={country}
         />
 
-        <Section title="Positions">
-
-            <ul>
-
-                {
-                    Object.entries(playerVersion.positions).map(([position, level]) => (
-
-                        <li>
-                            {position} ({level})
-                        </li>
-
-                    ))
-                }
-
-            </ul>
-
-        </Section>
+        <PlayerVersionPositions
+            positions={playerVersion.positions}
+        />
 
         <PlayerVersionPhysical
             player={player}

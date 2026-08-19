@@ -18,7 +18,7 @@ const {
 
 <header class="player-version-header">
 
-    <div class="player-version-header__content">
+    <div class="player-version-header__identity">
 
         <h1>
             <a href={`${import.meta.env.BASE_URL}players/${player.slug}`}>
@@ -30,55 +30,192 @@ const {
             {playerVersion.version}
         </p>
 
-        <dl>
-
-            <div>
-
-                <dt>Country</dt>
-                <dd>{country.name}</dd>
-
-            </div>
-
-            <div>
-
-                <dt>Seasons</dt>
-                <dd>
-                    {playerVersion.fromSeason}
-                    –
-                    {playerVersion.toSeason}
-                </dd>
-
-            </div>
-
-            <div>
-
-                <dt>Playing Style</dt>
-                <dd>{playerVersion.playingStyle}</dd>
-
-            </div>
-
-            <div>
-
-                <dt>Main Position</dt>
-                <dd>{playerVersion.mainPosition}</dd>
-
-            </div>
-
-            {
-                playerVersion.overall !== undefined && (
-
-                    <div>
-
-                        <dt>Overall</dt>
-                        <dd>{playerVersion.overall}</dd>
-
-                    </div>
-
-                )
-            }
-
-        </dl>
-
     </div>
 
+    <dl>
+
+        <div>
+
+            <dt>Country</dt>
+            <dd>{country.name}</dd>
+
+        </div>
+
+        <div>
+
+            <dt>Seasons</dt>
+            <dd>
+                {playerVersion.fromSeason}
+                –
+                {playerVersion.toSeason}
+            </dd>
+
+        </div>
+
+        <div>
+
+            <dt>Playing Style</dt>
+            <dd>{playerVersion.playingStyle}</dd>
+
+        </div>
+
+        <div>
+
+            <dt>Main Position</dt>
+            <dd>{playerVersion.mainPosition}</dd>
+
+        </div>
+
+        {
+            playerVersion.overall !== undefined && (
+
+                <div class="player-version-header__overall">
+
+                    <dt>Overall</dt>
+                    <dd>{playerVersion.overall}</dd>
+
+                </div>
+
+            )
+        }
+
+    </dl>
+
 </header>
+
+<style>
+.player-version-header {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-6);
+
+    padding: var(--space-5) var(--space-4);
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.player-version-header__identity {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-2);
+}
+
+.player-version-header h1 {
+    margin: 0;
+
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+}
+
+.player-version-header h1 a {
+    color: var(--color-text);
+}
+
+.player-version-header h1 a:hover {
+    color: var(--color-primary);
+}
+
+.player-version-header__version {
+    margin: 0;
+
+    color: var(--color-primary);
+
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+}
+
+.player-version-header dl {
+    display: grid;
+
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+
+    border-top: 1px solid var(--color-border);
+}
+
+.player-version-header dl > div {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-1);
+
+    padding-top: var(--space-4);
+}
+
+.player-version-header dl > div:not(:first-child) {
+    padding-left: var(--space-4);
+
+    border-left: 1px solid var(--color-border);
+}
+
+.player-version-header dt {
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+.player-version-header dd {
+    margin: 0;
+
+    color: var(--color-text);
+
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+}
+
+.player-version-header__overall dd {
+    color: var(--color-primary);
+
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+}
+
+@media (max-width: 800px) {
+    .player-version-header dl {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .player-version-header dl > div:nth-child(3),
+    .player-version-header dl > div:nth-child(5) {
+        border-left: 0;
+        padding-left: 0;
+    }
+
+    .player-version-header dl > div:nth-child(n + 3) {
+        padding-top: var(--space-4);
+
+        border-top: 1px solid var(--color-border);
+    }
+}
+
+@media (max-width: 500px) {
+    .player-version-header {
+        padding: var(--space-4);
+    }
+
+    .player-version-header h1 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .player-version-header dl {
+        grid-template-columns: 1fr;
+    }
+
+    .player-version-header dl > div {
+        padding-block: var(--space-3);
+    }
+
+    .player-version-header dl > div:not(:first-child) {
+        padding-left: 0;
+
+        border-left: 0;
+        border-top: 1px solid var(--color-border);
+    }
+}
+</style>

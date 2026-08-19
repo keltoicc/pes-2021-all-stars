@@ -17,31 +17,109 @@ const hasEquipment = boots !== undefined || gloves !== undefined;
 
         <section class="player-version-equipment">
 
-            <h2>Equipment</h2>
+            <header class="player-version-equipment__header">
+                <h2>Equipment</h2>
+            </header>
 
-            {
-                boots && (
-                    <div>
-                        <span>Boots</span>
-                        <strong>
-                            {boots.brand} {boots.model}
-                        </strong>
-                    </div>
-                )
-            }
+            <div class="player-version-equipment__grid">
 
-            {
-                gloves && (
-                    <div>
-                        <span>Gloves</span>
-                        <strong>
-                            {gloves.brand} {gloves.model}
-                        </strong>
-                    </div>
-                )
-            }
+                {
+                    boots && (
+                        <div class="equipment-item">
+
+                            <span class="equipment-item__label">
+                                Boots
+                            </span>
+
+                            <strong class="equipment-item__value">
+                                {boots.brand} {boots.model}
+                            </strong>
+
+                        </div>
+                    )
+                }
+
+                {
+                    gloves && (
+                        <div class="equipment-item">
+
+                            <span class="equipment-item__label">
+                                Gloves
+                            </span>
+
+                            <strong class="equipment-item__value">
+                                {gloves.brand} {gloves.model}
+                            </strong>
+
+                        </div>
+                    )
+                }
+
+            </div>
 
         </section>
 
     )
 }
+
+<style>
+.player-version-equipment {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-4);
+
+    max-width: var(--content-width);
+}
+
+.player-version-equipment__header {
+    padding: var(--space-3) var(--space-4);
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.player-version-equipment__header h2 {
+    margin: 0;
+
+    font-size: var(--font-size-xl);
+}
+
+.player-version-equipment__grid {
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+
+    gap: var(--space-2);
+}
+
+.equipment-item {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-1);
+
+    padding: var(--space-4);
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.equipment-item__label {
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+.equipment-item__value {
+    color: var(--color-text);
+
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+}
+</style>

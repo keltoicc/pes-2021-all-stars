@@ -1,0 +1,76 @@
+---
+import type { PlayerVersion } from "../../types/playerVersion";
+
+interface Props {
+    positions: PlayerVersion["positions"];
+}
+
+const { positions } = Astro.props;
+---
+
+<section class="player-version-positions">
+
+    <header class="player-version-positions__header">
+        <h2>Positions</h2>
+    </header>
+
+    <ul>
+
+        {
+            Object.entries(positions).map(([position]) => (
+
+                <li>
+                        {position}
+                </li>
+
+            ))
+        }
+
+    </ul>
+
+</section>
+
+<style>
+.player-version-positions {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-4);
+
+    max-width: var(--content-width);
+}
+
+.player-version-positions__header {
+    padding: var(--space-3) var(--space-4);
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.player-version-positions__header h2 {
+    margin: 0;
+
+    font-size: var(--font-size-xl);
+}
+
+.player-version-positions ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: var(--space-2);
+}
+
+.player-version-positions li {
+    display: inline-flex;
+    align-items: center;
+
+    padding: var(--space-2) var(--space-3);
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+}
+</style>

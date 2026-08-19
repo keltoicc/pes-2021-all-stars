@@ -23,37 +23,136 @@ const age = player.birthDate
 
 <section class="player-version-physical">
 
-    <h2>Physical</h2>
+    <header class="player-version-physical__header">
+        <h2>Physical</h2>
+    </header>
 
-    {
-        age && (
-            <div>
-                <span>Age</span>
-                <strong>
-                    {age.min === age.max
-                        ? age.min
-                        : `${age.min}–${age.max}`}
-                </strong>
-            </div>
-        )
-    }
+    <div class="player-version-physical__grid">
 
-    {
-        player.height !== undefined && (
-            <div>
-                <span>Height</span>
-                <strong>{player.height} cm</strong>
-            </div>
-        )
-    }
+        {
+            age && (
+                <div class="physical-item">
 
-    {
-        playerVersion.weight !== undefined && (
-            <div>
-                <span>Weight</span>
-                <strong>{playerVersion.weight} kg</strong>
-            </div>
-        )
-    }
+                    <span class="physical-item__label">
+                        Age
+                    </span>
+
+                    <strong class="physical-item__value">
+                        {age.min === age.max
+                            ? age.min
+                            : `${age.min}–${age.max}`}
+                    </strong>
+
+                </div>
+            )
+        }
+
+        {
+            player.height !== undefined && (
+                <div class="physical-item">
+
+                    <span class="physical-item__label">
+                        Height
+                    </span>
+
+                    <strong class="physical-item__value">
+                        {player.height} cm
+                    </strong>
+
+                </div>
+            )
+        }
+
+        {
+            playerVersion.weight !== undefined && (
+                <div class="physical-item">
+
+                    <span class="physical-item__label">
+                        Weight
+                    </span>
+
+                    <strong class="physical-item__value">
+                        {playerVersion.weight} kg
+                    </strong>
+
+                </div>
+            )
+        }
+
+    </div>
 
 </section>
+
+<style>
+.player-version-physical {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-4);
+
+    max-width: var(--content-width);
+}
+
+.player-version-physical__header {
+    padding: var(--space-3) var(--space-4);
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.player-version-physical__header h2 {
+    margin: 0;
+
+    font-size: var(--font-size-xl);
+}
+
+.player-version-physical__grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    overflow: hidden;
+}
+
+.physical-item {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-1);
+
+    padding: var(--space-4);
+
+    background: var(--color-surface);
+}
+
+.physical-item + .physical-item {
+    border-left: 1px solid var(--color-border);
+}
+
+.physical-item__label {
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+.physical-item__value {
+    color: var(--color-text);
+
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+}
+
+@media (max-width: 600px) {
+    .player-version-physical__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .physical-item + .physical-item {
+        border-left: 0;
+        border-top: 1px solid var(--color-border);
+    }
+}
+</style>

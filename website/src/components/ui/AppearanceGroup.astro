@@ -1,0 +1,63 @@
+---
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<section class="appearance-group">
+
+    <h4 class="appearance-group__title">
+        {title}
+    </h4>
+
+    <div class="appearance-group__content">
+        <slot />
+    </div>
+
+</section>
+
+<style>
+.appearance-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-3);
+
+    padding: var(--space-4);
+
+    background: var(--color-background);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.appearance-group__title {
+    margin: 0;
+
+    color: var(--color-text);
+
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+}
+
+.appearance-group__content {
+    display: grid;
+
+    grid-template-columns: repeat(
+        2,
+        minmax(0, 1fr)
+    );
+
+    gap: var(--space-2) var(--space-5);
+}
+
+@media (max-width: 700px) {
+
+    .appearance-group__content {
+        grid-template-columns: 1fr;
+    }
+
+}
+</style>

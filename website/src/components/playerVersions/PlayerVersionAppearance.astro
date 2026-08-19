@@ -1,6 +1,9 @@
 ---
 import type { Appearance } from "../../types/appearance";
 
+import AppearanceGroup from "../ui/AppearanceGroup.astro";
+import DataGrid from "../ui/DataGrid.astro";
+
 interface Props {
     appearance: Appearance;
 }
@@ -10,180 +13,558 @@ const { appearance } = Astro.props;
 
 <section class="player-version-appearance">
 
-    <h2>Appearance</h2>
+    <header class="player-version-appearance__header">
+        <h2>Appearance</h2>
+    </header>
 
     {
         appearance.hairstyle && (
-            <div>
-                <h3>Hairstyle</h3>
+            <AppearanceGroup title="Hairstyle">
 
-                <div>
+                <div class="appearance-subgroup">
+
                     <h4>Overall</h4>
-                    <p>Style: {appearance.hairstyle.overall.style}</p>
-                    <p>Length: {appearance.hairstyle.overall.length}</p>
-                    <p>Wave Level: {appearance.hairstyle.overall.waveLevel}</p>
-                    <p>Hair Variation: {appearance.hairstyle.overall.hairVariation}</p>
+
+                    <DataGrid
+                        items={[
+                            {
+                                label: "Style",
+                                value: appearance.hairstyle.overall.style
+                            },
+                            {
+                                label: "Length",
+                                value: appearance.hairstyle.overall.length
+                            },
+                            {
+                                label: "Wave Level",
+                                value: appearance.hairstyle.overall.waveLevel
+                            },
+                            {
+                                label: "Hair Variation",
+                                value: appearance.hairstyle.overall.hairVariation
+                            }
+                        ]}
+                    />
+
                 </div>
 
-                <div>
+                <div class="appearance-subgroup">
+
                     <h4>Front</h4>
-                    <p>Style: {appearance.hairstyle.front.style}</p>
-                    <p>Parted: {appearance.hairstyle.front.parted}</p>
-                    <p>Hairline: {appearance.hairstyle.front.hairline}</p>
-                    <p>Forehead Width: {appearance.hairstyle.front.foreheadWidth}</p>
+
+                    <DataGrid
+                        items={[
+                            {
+                                label: "Style",
+                                value: appearance.hairstyle.front.style
+                            },
+                            {
+                                label: "Parted",
+                                value: appearance.hairstyle.front.parted
+                            },
+                            {
+                                label: "Hairline",
+                                value: appearance.hairstyle.front.hairline
+                            },
+                            {
+                                label: "Forehead Width",
+                                value: appearance.hairstyle.front.foreheadWidth
+                            }
+                        ]}
+                    />
+
                 </div>
 
-                <div>
+                <div class="appearance-subgroup">
+
                     <h4>Side / Back</h4>
-                    <p>Style: {appearance.hairstyle.sideBack.style}</p>
-                    <p>Cropped: {appearance.hairstyle.sideBack.cropped}</p>
+
+                    <DataGrid
+                        items={[
+                            {
+                                label: "Style",
+                                value: appearance.hairstyle.sideBack.style
+                            },
+                            {
+                                label: "Cropped",
+                                value: appearance.hairstyle.sideBack.cropped
+                            }
+                        ]}
+                    />
+
                 </div>
 
-                <div>
+                <div class="appearance-subgroup">
+
                     <h4>Hair Colour / Accessory</h4>
-                    <p>
-                        Hair Colour:
-                        {appearance.hairstyle.hairColourAccessory.hairColour.preset}
-                    </p>
 
-                    <p>
-                        Accessory:
-                        {appearance.hairstyle.hairColourAccessory.accessory
-                            ? "Yes"
-                            : "No"}
-                    </p>
+                    <DataGrid
+                        items={[
+                            {
+                                label: "Hair Colour",
+                                value:
+                                    appearance.hairstyle
+                                        .hairColourAccessory
+                                        .hairColour
+                                        .preset
+                            },
+                            {
+                                label: "Accessory",
+                                value:
+                                    appearance.hairstyle
+                                        .hairColourAccessory
+                                        .accessory
+                                        ? "Yes"
+                                        : "No"
+                            },
+                            {
+                                label: "Accessory Colour",
+                                value:
+                                    appearance.hairstyle
+                                        .hairColourAccessory
+                                        .accessoryColour
+                            }
+                        ]}
+                    />
 
-                    {
-                        appearance.hairstyle.hairColourAccessory.accessoryColour !== undefined && (
-                            <p>
-                                Accessory Colour:
-                                {appearance.hairstyle.hairColourAccessory.accessoryColour}
-                            </p>
-                        )
-                    }
                 </div>
-            </div>
+
+            </AppearanceGroup>
         )
     }
 
     {
         appearance.face && (
-            <div>
-                <h3>Face</h3>
+            <AppearanceGroup title="Face">
 
-                <h4>Skin Colour / Head Ratio</h4>
-                <p>Skin Colour: {appearance.face.skinColourHeadRatio.skinColour}</p>
-                <p>Head Length: {appearance.face.skinColourHeadRatio.headLength}</p>
-                <p>Head Width: {appearance.face.skinColourHeadRatio.headWidth}</p>
-                <p>Head Depth: {appearance.face.skinColourHeadRatio.headDepth}</p>
-                <p>Face Height: {appearance.face.skinColourHeadRatio.faceHeight}</p>
-                <p>Face Size: {appearance.face.skinColourHeadRatio.faceSize}</p>
+                <div class="appearance-subgroup">
 
-                <h4>Eyes</h4>
-                <p>Upper Eyelid Type: {appearance.face.eyes.upperEyelidType}</p>
-                <p>Bottom Eyelid Type: {appearance.face.eyes.bottomEyelidType}</p>
-                <p>Eye Height: {appearance.face.eyes.eyeHeight}</p>
-                <p>Horizontal Eye Position: {appearance.face.eyes.horizontalEyePosition}</p>
-                <p>Iris Colour: {appearance.face.eyes.irisColour}</p>
-                <p>Pupil Size: {appearance.face.eyes.pupilSize}</p>
-                <p>Upper Eyelid Height Inner: {appearance.face.eyes.upperEyelidHeightInner}</p>
-                <p>Upper Eyelid Width Inner: {appearance.face.eyes.upperEyelidWidthInner}</p>
-                <p>Upper Eyelid Height Outer: {appearance.face.eyes.upperEyelidHeightOuter}</p>
-                <p>Upper Eyelid Width Outer: {appearance.face.eyes.upperEyelidWidthOuter}</p>
-                <p>Inner Eye Height: {appearance.face.eyes.innerEyeHeight}</p>
-                <p>Inner Eye Position: {appearance.face.eyes.innerEyePosition}</p>
-                <p>Eye Corner Height: {appearance.face.eyes.eyeCornerHeight}</p>
-                <p>Outer Eye Position: {appearance.face.eyes.outerEyePosition}</p>
-                <p>Bottom Eyelid Height: {appearance.face.eyes.bottomEyelidHeight}</p>
-                <p>Eye Depth: {appearance.face.eyes.eyeDepth}</p>
+                    <h4>Skin Colour / Head Ratio</h4>
 
-                <h4>Forehead / Brows</h4>
-                <p>Forehead: {appearance.face.foreheadBrows.forehead}</p>
-                <p>Eyebrow Type: {appearance.face.foreheadBrows.eyebrowType}</p>
-                <p>Eyebrow Thickness: {appearance.face.foreheadBrows.eyebrowThickness}</p>
-                <p>Eyebrow Style: {appearance.face.foreheadBrows.eyebrowStyle}</p>
-                <p>Eyebrow Density: {appearance.face.foreheadBrows.eyebrowDensity}</p>
-                <p>Eyebrow Colour: {appearance.face.foreheadBrows.eyebrowColour.type}</p>
-                <p>Inner Eyebrow Height: {appearance.face.foreheadBrows.innerEyebrowHeight}</p>
-                <p>Brow Width: {appearance.face.foreheadBrows.browWidth}</p>
-                <p>Outer Eyebrow Height: {appearance.face.foreheadBrows.outerEyebrowHeight}</p>
-                <p>Temple Width: {appearance.face.foreheadBrows.templeWidth}</p>
-                <p>Eyebrow Depth: {appearance.face.foreheadBrows.eyebrowDepth}</p>
+                    <DataGrid
+                        items={[
+                            {
+                                label: "Skin Colour",
+                                value: appearance.face.skinColourHeadRatio.skinColour
+                            },
+                            {
+                                label: "Head Length",
+                                value: appearance.face.skinColourHeadRatio.headLength
+                            },
+                            {
+                                label: "Head Width",
+                                value: appearance.face.skinColourHeadRatio.headWidth
+                            },
+                            {
+                                label: "Head Depth",
+                                value: appearance.face.skinColourHeadRatio.headDepth
+                            },
+                            {
+                                label: "Face Height",
+                                value: appearance.face.skinColourHeadRatio.faceHeight
+                            },
+                            {
+                                label: "Face Size",
+                                value: appearance.face.skinColourHeadRatio.faceSize
+                            }
+                        ]}
+                    />
 
-                <h4>Nose</h4>
-                <p>Nose Type: {appearance.face.nose.noseType}</p>
-                <p>Laughter Lines: {appearance.face.nose.laughterLines}</p>
-                <p>Nose Height: {appearance.face.nose.noseHeight}</p>
-                <p>Nostril Width: {appearance.face.nose.nostrilWidth}</p>
-                <p>Nose Width: {appearance.face.nose.noseWidth}</p>
-                <p>Nose Tip Depth: {appearance.face.nose.noseTipDepth}</p>
-                <p>Nose Depth: {appearance.face.nose.noseDepth}</p>
+                </div>
 
-                <h4>Mouth</h4>
-                <p>Upper Lip Type: {appearance.face.mouth.upperLipType}</p>
-                <p>Lower Lip Type: {appearance.face.mouth.lowerLipType}</p>
-                <p>Mouth Height: {appearance.face.mouth.mouthHeight}</p>
-                <p>Lip Size: {appearance.face.mouth.lipSize}</p>
-                <p>Lip Width: {appearance.face.mouth.lipWidth}</p>
-                <p>Mouth Corner Height: {appearance.face.mouth.mouthCornerHeight}</p>
-                <p>Mouth Depth: {appearance.face.mouth.mouthDepth}</p>
+                <div class="appearance-subgroup">
 
-                <h4>Facial Hair</h4>
-                <p>Facial Hair Type: {appearance.face.facialHair.facialHairType}</p>
+                    <h4>Eyes</h4>
 
-                {
-                    appearance.face.facialHair.facialHairColour && (
-                        <p>
-                            Facial Hair Colour:
-                            {appearance.face.facialHair.facialHairColour.type}
-                        </p>
-                    )
-                }
+                    <DataGrid
+                        items={[
+                            {
+                                label: "Upper Eyelid Type",
+                                value: appearance.face.eyes.upperEyelidType
+                            },
+                            {
+                                label: "Bottom Eyelid Type",
+                                value: appearance.face.eyes.bottomEyelidType
+                            },
+                            {
+                                label: "Eye Height",
+                                value: appearance.face.eyes.eyeHeight
+                            },
+                            {
+                                label: "Horizontal Eye Position",
+                                value: appearance.face.eyes.horizontalEyePosition
+                            },
+                            {
+                                label: "Iris Colour",
+                                value: appearance.face.eyes.irisColour
+                            },
+                            {
+                                label: "Pupil Size",
+                                value: appearance.face.eyes.pupilSize
+                            },
+                            {
+                                label: "Upper Eyelid Height Inner",
+                                value: appearance.face.eyes.upperEyelidHeightInner
+                            },
+                            {
+                                label: "Upper Eyelid Width Inner",
+                                value: appearance.face.eyes.upperEyelidWidthInner
+                            },
+                            {
+                                label: "Upper Eyelid Height Outer",
+                                value: appearance.face.eyes.upperEyelidHeightOuter
+                            },
+                            {
+                                label: "Upper Eyelid Width Outer",
+                                value: appearance.face.eyes.upperEyelidWidthOuter
+                            },
+                            {
+                                label: "Inner Eye Height",
+                                value: appearance.face.eyes.innerEyeHeight
+                            },
+                            {
+                                label: "Inner Eye Position",
+                                value: appearance.face.eyes.innerEyePosition
+                            },
+                            {
+                                label: "Eye Corner Height",
+                                value: appearance.face.eyes.eyeCornerHeight
+                            },
+                            {
+                                label: "Outer Eye Position",
+                                value: appearance.face.eyes.outerEyePosition
+                            },
+                            {
+                                label: "Bottom Eyelid Height",
+                                value: appearance.face.eyes.bottomEyelidHeight
+                            },
+                            {
+                                label: "Eye Depth",
+                                value: appearance.face.eyes.eyeDepth
+                            }
+                        ]}
+                    />
 
-                {
-                    appearance.face.facialHair.thickness !== undefined && (
-                        <p>
-                            Thickness: {appearance.face.facialHair.thickness}
-                        </p>
-                    )
-                }
+                </div>
 
-                <h4>Cheeks / Chin / Jaw</h4>
-                <p>Cheek Type: {appearance.face.cheeksChinJaw.cheekType}</p>
-                <p>Neck Line Type: {appearance.face.cheeksChinJaw.neckLineType}</p>
-                <p>Cheekbones: {appearance.face.cheeksChinJaw.cheekbones}</p>
-                <p>Chin Height: {appearance.face.cheeksChinJaw.chinHeight}</p>
-                <p>Chin Width: {appearance.face.cheeksChinJaw.chinWidth}</p>
-                <p>Jaw Height: {appearance.face.cheeksChinJaw.jawHeight}</p>
-                <p>Jawline: {appearance.face.cheeksChinJaw.jawline}</p>
-                <p>Chin Depth: {appearance.face.cheeksChinJaw.chinDepth}</p>
+                <div class="appearance-subgroup">
 
-                <h4>Ears</h4>
-                <p>Ear Length: {appearance.face.ears.earLength}</p>
-                <p>Ear Width: {appearance.face.ears.earWidth}</p>
-                <p>Ear Angle: {appearance.face.ears.earAngle}</p>
-            </div>
+                    <h4>Forehead / Brows</h4>
+
+                    <DataGrid
+                        items={[
+                            {
+                                label: "Forehead",
+                                value: appearance.face.foreheadBrows.forehead
+                            },
+                            {
+                                label: "Eyebrow Type",
+                                value: appearance.face.foreheadBrows.eyebrowType
+                            },
+                            {
+                                label: "Eyebrow Thickness",
+                                value: appearance.face.foreheadBrows.eyebrowThickness
+                            },
+                            {
+                                label: "Eyebrow Style",
+                                value: appearance.face.foreheadBrows.eyebrowStyle
+                            },
+                            {
+                                label: "Eyebrow Density",
+                                value: appearance.face.foreheadBrows.eyebrowDensity
+                            },
+                            {
+                                label: "Eyebrow Colour",
+                                value: appearance.face.foreheadBrows.eyebrowColour.type
+                            },
+                            {
+                                label: "Inner Eyebrow Height",
+                                value: appearance.face.foreheadBrows.innerEyebrowHeight
+                            },
+                            {
+                                label: "Brow Width",
+                                value: appearance.face.foreheadBrows.browWidth
+                            },
+                            {
+                                label: "Outer Eyebrow Height",
+                                value: appearance.face.foreheadBrows.outerEyebrowHeight
+                            },
+                            {
+                                label: "Temple Width",
+                                value: appearance.face.foreheadBrows.templeWidth
+                            },
+                            {
+                                label: "Eyebrow Depth",
+                                value: appearance.face.foreheadBrows.eyebrowDepth
+                            }
+                        ]}
+                    />
+
+                </div>
+
+                <div class="appearance-subgroup">
+
+                    <h4>Nose</h4>
+
+                    <DataGrid
+                        items={[
+                            {
+                                label: "Nose Type",
+                                value: appearance.face.nose.noseType
+                            },
+                            {
+                                label: "Laughter Lines",
+                                value: appearance.face.nose.laughterLines
+                            },
+                            {
+                                label: "Nose Height",
+                                value: appearance.face.nose.noseHeight
+                            },
+                            {
+                                label: "Nostril Width",
+                                value: appearance.face.nose.nostrilWidth
+                            },
+                            {
+                                label: "Nose Width",
+                                value: appearance.face.nose.noseWidth
+                            },
+                            {
+                                label: "Nose Tip Depth",
+                                value: appearance.face.nose.noseTipDepth
+                            },
+                            {
+                                label: "Nose Depth",
+                                value: appearance.face.nose.noseDepth
+                            }
+                        ]}
+                    />
+
+                </div>
+
+                <div class="appearance-subgroup">
+
+                    <h4>Mouth</h4>
+
+                    <DataGrid
+                        items={[
+                            {
+                                label: "Upper Lip Type",
+                                value: appearance.face.mouth.upperLipType
+                            },
+                            {
+                                label: "Lower Lip Type",
+                                value: appearance.face.mouth.lowerLipType
+                            },
+                            {
+                                label: "Mouth Height",
+                                value: appearance.face.mouth.mouthHeight
+                            },
+                            {
+                                label: "Lip Size",
+                                value: appearance.face.mouth.lipSize
+                            },
+                            {
+                                label: "Lip Width",
+                                value: appearance.face.mouth.lipWidth
+                            },
+                            {
+                                label: "Mouth Corner Height",
+                                value: appearance.face.mouth.mouthCornerHeight
+                            },
+                            {
+                                label: "Mouth Depth",
+                                value: appearance.face.mouth.mouthDepth
+                            }
+                        ]}
+                    />
+
+                </div>
+
+                <div class="appearance-subgroup">
+
+                    <h4>Facial Hair</h4>
+
+                    <DataGrid
+                        items={[
+                            {
+                                label: "Facial Hair Type",
+                                value: appearance.face.facialHair.facialHairType
+                            },
+                            {
+                                label: "Facial Hair Colour",
+                                value: appearance.face.facialHair.facialHairColour?.type
+                            },
+                            {
+                                label: "Thickness",
+                                value: appearance.face.facialHair.thickness
+                            }
+                        ]}
+                    />
+
+                </div>
+
+                <div class="appearance-subgroup">
+
+                    <h4>Cheeks / Chin / Jaw</h4>
+
+                    <DataGrid
+                        items={[
+                            {
+                                label: "Cheek Type",
+                                value: appearance.face.cheeksChinJaw.cheekType
+                            },
+                            {
+                                label: "Neck Line Type",
+                                value: appearance.face.cheeksChinJaw.neckLineType
+                            },
+                            {
+                                label: "Cheekbones",
+                                value: appearance.face.cheeksChinJaw.cheekbones
+                            },
+                            {
+                                label: "Chin Height",
+                                value: appearance.face.cheeksChinJaw.chinHeight
+                            },
+                            {
+                                label: "Chin Width",
+                                value: appearance.face.cheeksChinJaw.chinWidth
+                            },
+                            {
+                                label: "Jaw Height",
+                                value: appearance.face.cheeksChinJaw.jawHeight
+                            },
+                            {
+                                label: "Jawline",
+                                value: appearance.face.cheeksChinJaw.jawline
+                            },
+                            {
+                                label: "Chin Depth",
+                                value: appearance.face.cheeksChinJaw.chinDepth
+                            }
+                        ]}
+                    />
+
+                </div>
+
+                <div class="appearance-subgroup">
+
+                    <h4>Ears</h4>
+
+                    <DataGrid
+                        items={[
+                            {
+                                label: "Ear Length",
+                                value: appearance.face.ears.earLength
+                            },
+                            {
+                                label: "Ear Width",
+                                value: appearance.face.ears.earWidth
+                            },
+                            {
+                                label: "Ear Angle",
+                                value: appearance.face.ears.earAngle
+                            }
+                        ]}
+                    />
+
+                </div>
+
+            </AppearanceGroup>
         )
     }
 
     {
         appearance.physique && (
-            <div>
-                <h3>Physique</h3>
+            <AppearanceGroup title="Physique">
 
-                <p>Neck Length: {appearance.physique.neckLength}</p>
-                <p>Neck Size: {appearance.physique.neckSize}</p>
-                <p>Shoulder Height: {appearance.physique.shoulderHeight}</p>
-                <p>Shoulder Width: {appearance.physique.shoulderWidth}</p>
-                <p>Chest Measurement: {appearance.physique.chestMeasurement}</p>
-                <p>Waist Size: {appearance.physique.waistSize}</p>
-                <p>Arm Size: {appearance.physique.armSize}</p>
-                <p>Thigh Size: {appearance.physique.thighSize}</p>
-                <p>Calf Size: {appearance.physique.calfSize}</p>
-                <p>Leg Length: {appearance.physique.legLength}</p>
-                <p>Arm Length: {appearance.physique.armLength}</p>
-            </div>
+                <div class="appearance-subgroup">
+
+                    <h4>Physical Features</h4>
+
+                    <DataGrid
+                        items={[
+                            {
+                                label: "Neck Length",
+                                value: appearance.physique.neckLength
+                            },
+                            {
+                                label: "Neck Size",
+                                value: appearance.physique.neckSize
+                            },
+                            {
+                                label: "Shoulder Height",
+                                value: appearance.physique.shoulderHeight
+                            },
+                            {
+                                label: "Shoulder Width",
+                                value: appearance.physique.shoulderWidth
+                            },
+                            {
+                                label: "Chest Measurement",
+                                value: appearance.physique.chestMeasurement
+                            },
+                            {
+                                label: "Waist Size",
+                                value: appearance.physique.waistSize
+                            },
+                            {
+                                label: "Arm Size",
+                                value: appearance.physique.armSize
+                            },
+                            {
+                                label: "Thigh Size",
+                                value: appearance.physique.thighSize
+                            },
+                            {
+                                label: "Calf Size",
+                                value: appearance.physique.calfSize
+                            },
+                            {
+                                label: "Leg Length",
+                                value: appearance.physique.legLength
+                            },
+                            {
+                                label: "Arm Length",
+                                value: appearance.physique.armLength
+                            }
+                        ]}
+                    />
+
+                </div>
+
+            </AppearanceGroup>
         )
     }
 
 </section>
+
+<style>
+.player-version-appearance {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.player-version-appearance__header {
+    padding: var(--space-3) var(--space-4);
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.player-version-appearance__header h2 {
+    margin: 0;
+
+    font-size: var(--font-size-xl);
+}
+
+.appearance-subgroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.appearance-subgroup h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+</style>
