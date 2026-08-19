@@ -12,23 +12,26 @@ const { team, country } = Astro.props;
 
 <header class="team-header">
 
-    <img
-        class="team-header__crest"
-        src={`${import.meta.env.BASE_URL}${team.crest}`}
-        alt={`${team.name} crest`}
-    />
+    <div class="team-header__crest-wrapper">
+
+        <img
+            class="team-header__crest"
+            src={`${import.meta.env.BASE_URL}${team.crest}`}
+            alt={`${team.name} crest`}
+        />
+
+    </div>
 
     <div class="team-header__content">
 
         <h1>{team.name}</h1>
 
-        <p>
-
-            <a href={`${import.meta.env.BASE_URL}countries/${country.slug}`}>
-                {country.name}
-            </a>
-
-        </p>
+        <a
+            class="team-header__country"
+            href={`${import.meta.env.BASE_URL}countries/${country.slug}/`}
+        >
+            {country.name}
+        </a>
 
     </div>
 
@@ -38,27 +41,69 @@ const { team, country } = Astro.props;
 .team-header {
     display: flex;
     align-items: center;
+
     gap: var(--space-5);
 
-    margin-bottom: var(--space-6);
+    max-width: var(--content-width);
+}
+
+.team-header__crest-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 112px;
+    height: 112px;
+
+    padding: var(--space-3);
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    flex-shrink: 0;
 }
 
 .team-header__crest {
-    width: 96px;
-    height: 96px;
+    width: 100%;
+    height: 100%;
 
     object-fit: contain;
-
-    flex-shrink: 0;
 }
 
 .team-header__content {
     display: flex;
     flex-direction: column;
+
     gap: var(--space-2);
 }
 
-.team-header__content p {
-    color: var(--color-text-muted);
+.team-header__content h1 {
+    margin: 0;
+}
+
+.team-header__country {
+    color: var(--color-primary);
+
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+}
+
+.team-header__country:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+    .team-header {
+        align-items: flex-start;
+    }
+
+    .team-header__crest-wrapper {
+        width: 80px;
+        height: 80px;
+    }
+
 }
 </style>

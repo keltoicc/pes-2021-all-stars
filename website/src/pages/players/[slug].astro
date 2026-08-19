@@ -63,7 +63,7 @@ const versions = PlayerVersionRepository.getByPlayer(player.id);
             items={[
                 {
                     label: "Players",
-                    href: "/players/"
+                    href: `${import.meta.env.BASE_URL}players/`
                 },
                 {
                     label: player.name

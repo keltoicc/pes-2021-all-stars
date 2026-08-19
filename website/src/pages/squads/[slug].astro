@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 
 import SquadHeader from "../../components/squads/SquadHeader.astro";
 import Section from "../../components/ui/Section.astro";
+import Breadcrumbs from "../../components/ui/Breadcrumbs.astro";
 import SquadMemberList from "../../components/squads/SquadMemberList.astro";
 
 import SquadRepository from "../../lib/repositories/SquadRepository";
@@ -73,6 +74,24 @@ const members: SquadMemberSummary[] = squad.members.map(member => {
 <Layout title={squad.name}>
 
     <div class="squad-page">
+
+        <Breadcrumbs
+
+            items={[
+                {
+                    label: "Teams",
+                    href: `${import.meta.env.BASE_URL}teams/`
+                },
+                {
+                    label: team.name,
+                    href: `${import.meta.env.BASE_URL}teams/${team.slug}`
+                },
+                {
+                    label: squad.name
+                }
+            ]}
+
+        />
 
         <SquadHeader
             squad={squad}

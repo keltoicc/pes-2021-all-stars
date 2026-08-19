@@ -11,24 +11,40 @@ interface Props {
     stadium?: Stadium;
 }
 
-const { squad, team, manager, stadium } = Astro.props;
+const {
+    squad,
+    team,
+    manager,
+    stadium
+} = Astro.props;
 ---
 
 <header class="squad-header">
 
-    <img
-        class="squad-header__crest"
-        src={`${import.meta.env.BASE_URL}${team.crest}`}
-        alt={`${team.name} crest`}
-    />
+    <div class="squad-header__crest-wrapper">
+
+        <img
+            class="squad-header__crest"
+            src={`${import.meta.env.BASE_URL}${team.crest}`}
+            alt={`${team.name} crest`}
+        />
+
+    </div>
 
     <div class="squad-header__content">
 
-        <h1>{squad.name}</h1>
+        <div class="squad-header__identity">
 
-        <p class="squad-header__team">
-            {team.name}
-        </p>
+            <h1>{squad.name}</h1>
+
+            <a
+                class="squad-header__team"
+                href={`${import.meta.env.BASE_URL}teams/${team.slug}/`}
+            >
+                {team.name}
+            </a>
+
+        </div>
 
         {
             (manager || stadium) && (
@@ -37,19 +53,29 @@ const { squad, team, manager, stadium } = Astro.props;
 
                     {
                         manager && (
-                            <>
+                            <div>
+
                                 <dt>Manager</dt>
-                                <dd>{manager.name}</dd>
-                            </>
+
+                                <dd>
+                                    {manager.name}
+                                </dd>
+
+                            </div>
                         )
                     }
 
                     {
                         stadium && (
-                            <>
+                            <div>
+
                                 <dt>Stadium</dt>
-                                <dd>{stadium.name}</dd>
-                            </>
+
+                                <dd>
+                                    {stadium.name}
+                                </dd>
+
+                            </div>
                         )
                     }
 
@@ -66,25 +92,140 @@ const { squad, team, manager, stadium } = Astro.props;
 .squad-header {
     display: flex;
     align-items: center;
+
     gap: var(--space-5);
+
+    max-width: var(--content-width);
+}
+
+.squad-header__crest-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 112px;
+    height: 112px;
+
+    padding: var(--space-3);
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    flex-shrink: 0;
 }
 
 .squad-header__crest {
-    width: 96px;
-    height: 96px;
+    width: 100%;
+    height: 100%;
 
     object-fit: contain;
-
-    flex-shrink: 0;
 }
 
 .squad-header__content {
     display: flex;
     flex-direction: column;
+
+    gap: var(--space-5);
+}
+
+.squad-header__identity {
+    display: flex;
+    flex-direction: column;
+
     gap: var(--space-2);
 }
 
-.squad-header__content p {
+.squad-header__identity h1 {
+    margin: 0;
+
+    color: var(--color-text);
+
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+}
+
+.squad-header__team {
+    color: var(--color-primary);
+
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+}
+
+.squad-header__team:hover {
+    text-decoration: underline;
+}
+
+.squad-header__meta {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    border-top: 1px solid var(--color-border);
+}
+
+.squad-header__meta > div {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-1);
+
+    padding-top: var(--space-4);
+}
+
+.squad-header__meta > div:not(:first-child) {
+    padding-left: var(--space-4);
+
+    border-left: 1px solid var(--color-border);
+}
+
+.squad-header__meta dt {
     color: var(--color-text-muted);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+.squad-header__meta dd {
+    margin: 0;
+
+    color: var(--color-text);
+
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+}
+
+@media (max-width: 700px) {
+
+    .squad-header {
+        align-items: flex-start;
+    }
+
+    .squad-header__crest-wrapper {
+        width: 80px;
+        height: 80px;
+    }
+
+    .squad-header__identity h1 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .squad-header__meta {
+        grid-template-columns: 1fr;
+    }
+
+    .squad-header__meta > div {
+        padding-block: var(--space-3);
+    }
+
+    .squad-header__meta > div:not(:first-child) {
+        padding-left: 0;
+
+        border-left: 0;
+        border-top: 1px solid var(--color-border);
+    }
+
 }
 </style>

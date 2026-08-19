@@ -9,22 +9,93 @@ const { squad } = Astro.props;
 ---
 
 <li class="squad-list-item">
+
     <a href={`${import.meta.env.BASE_URL}squads/${squad.slug}`}>
-        {squad.name}
+
+        <span class="squad-list-item__info">
+
+            <h2>{squad.name}</h2>
+
+        </span>
+
+        <span class="squad-list-item__arrow" aria-hidden="true">
+            →
+        </span>
+
     </a>
+
 </li>
 
 <style>
 .squad-list-item {
-    list-style: none;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.squad-list-item:first-child {
+    border-top: 1px solid var(--color-border);
 }
 
 .squad-list-item a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--space-4);
+
+    padding: var(--space-3) var(--space-4);
+
     color: inherit;
-    text-decoration: none;
+
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease;
+}
+
+.squad-list-item__info {
+    min-width: 0;
+}
+
+.squad-list-item h2 {
+    margin: 0;
+
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-tight);
+}
+
+.squad-list-item p {
+    margin-top: var(--space-1);
+
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-sm);
+}
+
+.squad-list-item__arrow {
+    margin-left: auto;
+
+    color: var(--color-text-muted);
+
+    transition:
+        color 150ms ease,
+        transform 150ms ease;
 }
 
 .squad-list-item a:hover {
-    text-decoration: underline;
+    color: var(--color-primary);
+}
+
+.squad-list-item a:hover p {
+    color: var(--color-text-secondary);
+}
+
+.squad-list-item a:hover .squad-list-item__arrow {
+    color: var(--color-primary);
+    transform: translateX(3px);
+}
+
+.squad-list-item a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
 }
 </style>

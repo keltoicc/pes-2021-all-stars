@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 
 import TeamHeader from "../../components/teams/TeamHeader.astro";
 import Section from "../../components/ui/Section.astro";
+import Breadcrumbs from "../../components/ui/Breadcrumbs.astro";
 
 import TeamRepository from "../../lib/repositories/TeamRepository";
 import SquadRepository from "../../lib/repositories/SquadRepository";
@@ -39,6 +40,20 @@ if (!country) {
 <Layout title={team.name}>
 
     <div class="team-page">
+
+        <Breadcrumbs 
+        
+            items={[
+                {
+                    label: "Teams",
+                    href: `${import.meta.env.BASE_URL}teams/`
+                },
+                {
+                    label: team.name
+                }
+            ]}
+
+        />
 
         <TeamHeader
             team={team}

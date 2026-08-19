@@ -21,20 +21,16 @@ const {
 
             <h1>{player.name}</h1>
 
-            <p class="player-header__country">
+            <a
+                class="player-header__country"
+                href={`${import.meta.env.BASE_URL}players/countries/${country.slug}/`}
+            >
                 {country.name}
-            </p>
+            </a>
 
         </div>
 
         <dl>
-
-            <div>
-
-                <dt>Country</dt>
-                <dd>{country.name}</dd>
-
-            </div>
 
             {
                 player.birthDate && (
@@ -107,6 +103,10 @@ const {
 
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
+}
+
+.player-header__country:hover {
+    text-decoration: underline;
 }
 
 .player-header dl {
