@@ -13,7 +13,7 @@ const { summary } = Astro.props;
     <a href={`${import.meta.env.BASE_URL}teams/${summary.team.slug}`}>
 
         <img
-            src={summary.team.crest}
+            src={`${import.meta.env.BASE_URL}${summary.team.crest}`}
             alt={`${summary.team.name} crest`}
         />
 

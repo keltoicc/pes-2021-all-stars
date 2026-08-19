@@ -14,7 +14,7 @@ const { team, country } = Astro.props;
 
     <img
         class="team-header__crest"
-        src={team.crest}
+        src={`${import.meta.env.BASE_URL}${team.crest}`}
         alt={`${team.name} crest`}
     />
 
