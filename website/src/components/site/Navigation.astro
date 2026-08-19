@@ -5,10 +5,10 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { href: "/", label: "Home" },
-    { href: "/teams", label: "Teams" },
-    { href: "/continents", label: "Continents" },
-    { href: "/players", label: "Players" },
+    { href: "/pes-2021-all-stars/", label: "Home" },
+    { href: "/pes-2021-all-stars/teams", label: "Teams" },
+    { href: "/pes-2021-all-stars/continents", label: "Continents" },
+    { href: "/pes-2021-all-stars/players", label: "Players" },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -22,8 +22,8 @@ const currentPath = Astro.url.pathname;
             navigation.map(item => {
 
                 const isActive =
-                    item.href === "/"
-                        ? currentPath === "/"
+                    item.href === "/pes-2021-all-stars/"
+                        ? currentPath === "/pes-2021-all-stars/"
                         : currentPath.startsWith(item.href);
 
                 return (

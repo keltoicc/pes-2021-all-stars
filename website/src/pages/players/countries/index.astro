@@ -30,7 +30,7 @@ const countries = CountryRepository
                 countries.length > 0
                     ? <CountryList
                         countries={countries}
-                        hrefBase="/players/countries"
+                        hrefBase={`${import.meta.env.BASE_URL}players/countries`}
                     />
                     : <p>No countries available.</p>
             }
