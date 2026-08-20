@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Kaku",
         "short_name": "Kaku",
+        "dateOfBirth": "1995-01-11",
+        "placeOfBirth": "Ciudadela",
         "nation_1": "Paraguay",
         "nation_2": "Argentina",
         "height": 1.71,
@@ -14,6 +17,22 @@
         "prime_date": "2025-11-28"
     },
     "matches": [
+        {
+            "game_id": "5022599",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "2150",
+            "opponent_id": "4785",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776696",
             "season": 2025,
@@ -9958,7 +9977,88 @@
         }
     ],
     "clubs": {
+        "2150": {
+            "type": "club",
+            "seasons": [
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 132,
+                "participations": 132,
+                "minutes": 8393,
+                "starts": 95,
+                "captain_matches": 0,
+                "goals": 26,
+                "assists": 33,
+                "goals_conceded": 124,
+                "points": 254,
+                "clean_sheets": 66,
+                "wins": 78,
+                "draws": 20,
+                "losses": 34,
+                "goal_matches": 107,
+                "assist_matches": 105,
+                "goal_contributions": 59
+            },
+            "positions": {
+                "DMF": 6,
+                "CMF": 6,
+                "AMF": 51,
+                "CF": 7,
+                "RM": 11,
+                "RW": 14,
+                "LW": 1
+            },
+            "derived": {
+                "season_count": 4,
+                "points_per_match": 1.924,
+                "minutes_per_match": 63.6,
+                "win_rate": 0.5909,
+                "goals_per_90": 0.279,
+                "assists_per_90": 0.354,
+                "contributions_per_90": 0.633,
+                "primary_position": "AMF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 79,
+                    "minutes": 5279,
+                    "goals": 16,
+                    "assists": 22
+                },
+                "Domestic Cup": {
+                    "matches": 8,
+                    "minutes": 433,
+                    "goals": 0,
+                    "assists": 2
+                },
+                "League Cup": {
+                    "matches": 18,
+                    "minutes": 846,
+                    "goals": 1,
+                    "assists": 4
+                },
+                "International Cup": {
+                    "matches": 27,
+                    "minutes": 1835,
+                    "goals": 9,
+                    "assists": 5
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "AFC Champions League winner": 1,
+                    "UAE Champion": 1,
+                    "UAE President's Cup winner": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3581": {
+            "type": "national",
             "seasons": [
                 2017,
                 2018,
@@ -10023,85 +10123,8 @@
                 "individual_titles": {}
             }
         },
-        "2150": {
-            "seasons": [
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 131,
-                "participations": 131,
-                "minutes": 8303,
-                "starts": 94,
-                "captain_matches": 0,
-                "goals": 25,
-                "assists": 33,
-                "goals_conceded": 122,
-                "points": 251,
-                "clean_sheets": 66,
-                "wins": 77,
-                "draws": 20,
-                "losses": 34,
-                "goal_matches": 107,
-                "assist_matches": 104,
-                "goal_contributions": 58
-            },
-            "positions": {
-                "CMF": 6,
-                "AMF": 51,
-                "DMF": 5,
-                "CF": 7,
-                "RM": 11,
-                "RW": 14,
-                "LW": 1
-            },
-            "derived": {
-                "season_count": 3,
-                "points_per_match": 1.916,
-                "minutes_per_match": 63.4,
-                "win_rate": 0.5878,
-                "goals_per_90": 0.271,
-                "assists_per_90": 0.358,
-                "contributions_per_90": 0.629,
-                "primary_position": "AMF"
-            },
-            "competitions": {
-                "Domestic Cup": {
-                    "matches": 8,
-                    "minutes": 433,
-                    "goals": 0,
-                    "assists": 2
-                },
-                "First Tier": {
-                    "matches": 78,
-                    "minutes": 5189,
-                    "goals": 15,
-                    "assists": 22
-                },
-                "League Cup": {
-                    "matches": 18,
-                    "minutes": 846,
-                    "goals": 1,
-                    "assists": 4
-                },
-                "International Cup": {
-                    "matches": 27,
-                    "minutes": 1835,
-                    "goals": 9,
-                    "assists": 5
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "AFC Champions League winner": 1,
-                    "UAE Champion": 1,
-                    "UAE President's Cup winner": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "28844": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -10168,6 +10191,7 @@
             }
         },
         "623": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -10242,6 +10266,7 @@
             }
         },
         "2063": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -10338,6 +10363,7 @@
             }
         },
         "11940": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -10388,24 +10414,24 @@
     },
     "career": {
         "club": {
-            "matches": 0,
-            "minutes": 0,
-            "goals": 0,
-            "assists": 0,
-            "goal_contributions": 0,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 0
-        },
-        "national": {
-            "matches": 616,
-            "minutes": 26867,
-            "goals": 76,
-            "assists": 94,
-            "goal_contributions": 170,
+            "matches": 530,
+            "minutes": 25729,
+            "goals": 71,
+            "assists": 92,
+            "goal_contributions": 163,
             "team_titles": 6,
             "individual_titles": 0,
-            "season_count": 13
+            "season_count": 14
+        },
+        "national": {
+            "matches": 87,
+            "minutes": 1228,
+            "goals": 6,
+            "assists": 2,
+            "goal_contributions": 8,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 9
         }
     }
 }

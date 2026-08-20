@@ -328,6 +328,7 @@ CLUB_NATIONAL_TITLE = [
     "Hungarian league cup winner",
     "Icelandic champion",
     "Icelandic cup winner",
+    "Indian Super Cup Winner",
     "Indian Super League Champion",
     "Indonesian Champion",
     "Iranian Supercup-Champion",

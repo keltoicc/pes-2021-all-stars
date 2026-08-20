@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Carlos Rodríguez",
         "short_name": "C. Rodríguez",
+        "dateOfBirth": "1997-01-03",
+        "placeOfBirth": "Monterrey",
         "nation_1": "Mexico",
         "nation_2": "",
         "height": 1.71,
@@ -8,12 +11,124 @@
         "position_group": "MIDFIELDER",
         "position_1": "CMF",
         "position_2": "DMF",
-        "position_3": "AMF",
+        "position_3": "",
         "former_clubs": "",
         "market_value": 10000000,
         "prime_date": "2022-04-11"
     },
     "matches": [
+        {
+            "game_id": "4926735",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "3711",
+            "opponent_id": "13353",
+            "position": "DMF",
+            "minutes": 68,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4944239",
+            "season": 2025,
+            "competition_type": "International Cup",
+            "club_id": "3711",
+            "opponent_id": "432",
+            "position": "AMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4944217",
+            "season": 2025,
+            "competition_type": "International Cup",
+            "club_id": "3711",
+            "opponent_id": "40058",
+            "position": "AMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4944201",
+            "season": 2025,
+            "competition_type": "International Cup",
+            "club_id": "3711",
+            "opponent_id": "25467",
+            "position": "LM",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4926720",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "3711",
+            "opponent_id": "6709",
+            "position": "CMF",
+            "minutes": 33,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4933596",
+            "season": 2025,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "3711",
+            "opponent_id": "1804",
+            "position": "SS",
+            "minutes": 89,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 1,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4904186",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "3711",
+            "opponent_id": "5662",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4895109",
             "season": 2026,
@@ -11291,6 +11406,13 @@
         },
         {
             "title": "Mexican Campeón de Campeones",
+            "season": "25/26",
+            "season_id": 2025,
+            "club_name": "CD Cruz Azul",
+            "club_id": 3711
+        },
+        {
+            "title": "Mexican Campeón de Campeones",
             "season": "21/22",
             "season_id": 2021,
             "club_name": "CD Cruz Azul",
@@ -11355,6 +11477,7 @@
     ],
     "clubs": {
         "3711": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -11364,72 +11487,74 @@
                 2026
             ],
             "stats": {
-                "matches": 218,
-                "participations": 218,
-                "minutes": 15617,
-                "starts": 180,
+                "matches": 225,
+                "participations": 225,
+                "minutes": 16167,
+                "starts": 186,
                 "captain_matches": 23,
-                "goals": 16,
-                "assists": 28,
-                "goals_conceded": 196,
-                "points": 381,
-                "clean_sheets": 95,
-                "wins": 110,
+                "goals": 17,
+                "assists": 31,
+                "goals_conceded": 204,
+                "points": 393,
+                "clean_sheets": 96,
+                "wins": 114,
                 "draws": 51,
-                "losses": 57,
-                "goal_matches": 203,
-                "assist_matches": 190,
-                "goal_contributions": 44
+                "losses": 60,
+                "goal_matches": 209,
+                "assist_matches": 194,
+                "goal_contributions": 48
             },
             "positions": {
-                "AMF": 46,
-                "CMF": 101,
-                "DMF": 35,
+                "DMF": 37,
+                "AMF": 48,
+                "LM": 2,
+                "CMF": 102,
+                "SS": 1,
                 "LW": 3,
                 "CF": 2,
-                "LM": 1,
                 "RW": 2
             },
             "derived": {
                 "season_count": 6,
-                "points_per_match": 1.748,
-                "minutes_per_match": 71.6,
-                "win_rate": 0.5046,
-                "goals_per_90": 0.092,
-                "assists_per_90": 0.161,
-                "contributions_per_90": 0.254,
+                "points_per_match": 1.747,
+                "minutes_per_match": 71.9,
+                "win_rate": 0.5067,
+                "goals_per_90": 0.095,
+                "assists_per_90": 0.173,
+                "contributions_per_90": 0.267,
                 "primary_position": "CMF"
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 185,
-                    "minutes": 13462,
+                    "matches": 188,
+                    "minutes": 13653,
                     "goals": 14,
-                    "assists": 26
+                    "assists": 27
                 },
                 "International Cup": {
-                    "matches": 32,
-                    "minutes": 2110,
+                    "matches": 35,
+                    "minutes": 2380,
                     "goals": 2,
-                    "assists": 2
+                    "assists": 3
                 },
                 "Domestic Super Cup": {
-                    "matches": 1,
-                    "minutes": 45,
-                    "goals": 0,
-                    "assists": 0
+                    "matches": 2,
+                    "minutes": 134,
+                    "goals": 1,
+                    "assists": 1
                 }
             },
             "awards": {
                 "team_titles": {
                     "CONCACAF Champions League winner": 1,
                     "Mexican Clausura champion": 1,
-                    "Mexican Campeón de Campeones": 1
+                    "Mexican Campeón de Campeones": 2
                 },
                 "individual_titles": {}
             }
         },
         "6303": {
+            "type": "national",
             "seasons": [
                 2018,
                 2019,
@@ -11497,6 +11622,7 @@
             }
         },
         "2407": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -11574,6 +11700,7 @@
             }
         },
         "53815": {
+            "type": "national",
             "seasons": [
                 2020
             ],
@@ -11623,6 +11750,7 @@
             }
         },
         "16418": {
+            "type": "national",
             "seasons": [
                 2020
             ],
@@ -11671,6 +11799,7 @@
             }
         },
         "18498": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -11713,6 +11842,7 @@
             }
         },
         "2929": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -11766,24 +11896,24 @@
     },
     "career": {
         "club": {
-            "matches": 122,
-            "minutes": 8174,
-            "goals": 14,
-            "assists": 0,
-            "goal_contributions": 14,
-            "team_titles": 0,
+            "matches": 574,
+            "minutes": 34942,
+            "goals": 38,
+            "assists": 51,
+            "goal_contributions": 89,
+            "team_titles": 8,
             "individual_titles": 0,
-            "season_count": 4
+            "season_count": 12
         },
         "national": {
-            "matches": 576,
-            "minutes": 30434,
-            "goals": 24,
-            "assists": 55,
-            "goal_contributions": 79,
-            "team_titles": 11,
+            "matches": 131,
+            "minutes": 4216,
+            "goals": 1,
+            "assists": 7,
+            "goal_contributions": 8,
+            "team_titles": 4,
             "individual_titles": 0,
-            "season_count": 11
+            "season_count": 8
         }
     }
 }

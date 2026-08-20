@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Emiliano Martínez",
         "short_name": "E. Martínez",
+        "dateOfBirth": "1992-09-02",
+        "placeOfBirth": "Mar del Plata",
         "nation_1": "Argentina",
         "nation_2": "Spain",
         "height": 1.95,
@@ -14,6 +17,54 @@
         "prime_date": "2021-07-16"
     },
     "matches": [
+        {
+            "game_id": "4895595",
+            "season": 2026,
+            "competition_type": "International Super Cup",
+            "club_id": "405",
+            "opponent_id": "583",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4776710",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3437",
+            "opponent_id": "3375",
+            "position": "GK",
+            "minutes": 120,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4776708",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3437",
+            "opponent_id": "3299",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776705",
             "season": 2025,
@@ -14670,6 +14721,13 @@
         },
         {
             "title": "World Cup participant",
+            "season": "2026",
+            "season_id": 2026,
+            "club_name": "Argentina",
+            "club_id": 3437
+        },
+        {
+            "title": "World Cup participant",
             "season": "2022",
             "season_id": 2022,
             "club_name": "Argentina",
@@ -14728,6 +14786,13 @@
             "title": "CONMEBOL-UEFA Cup of Champions winner",
             "season": "21/22",
             "season_id": 2022,
+            "club_name": "Argentina",
+            "club_id": 3437
+        },
+        {
+            "title": "World Cup runner-up",
+            "season": "2026",
+            "season_id": 2026,
             "club_name": "Argentina",
             "club_id": 3437
         },
@@ -14831,82 +14896,20 @@
         }
     ],
     "clubs": {
-        "3437": {
-            "seasons": [
-                2010,
-                2019,
-                2020,
-                2021,
-                2022,
-                2023,
-                2025
-            ],
-            "stats": {
-                "matches": 87,
-                "participations": 87,
-                "minutes": 5910,
-                "starts": 65,
-                "captain_matches": 0,
-                "goals": 0,
-                "assists": 0,
-                "goals_conceded": 31,
-                "points": 217,
-                "clean_sheets": 65,
-                "wins": 69,
-                "draws": 10,
-                "losses": 8,
-                "goal_matches": 87,
-                "assist_matches": 87,
-                "goal_contributions": 0
-            },
-            "positions": {
-                "GK": 66
-            },
-            "derived": {
-                "season_count": 7,
-                "points_per_match": 2.494,
-                "minutes_per_match": 67.9,
-                "win_rate": 0.7931,
-                "goals_per_90": 0.0,
-                "assists_per_90": 0.0,
-                "contributions_per_90": 0.0,
-                "primary_position": "GK"
-            },
-            "competitions": {
-                "National Team": {
-                    "matches": 52,
-                    "minutes": 3620,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "National team's qualifiers": {
-                    "matches": 35,
-                    "minutes": 2290,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "World Cup winner": 1,
-                    "Copa América winner": 2,
-                    "CONMEBOL-UEFA Cup of Champions winner": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "405": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 292,
-                "participations": 292,
+                "matches": 293,
+                "participations": 293,
                 "minutes": 22655,
                 "starts": 255,
                 "captain_matches": 23,
@@ -14914,28 +14917,34 @@
                 "assists": 1,
                 "goals_conceded": 305,
                 "points": 482,
-                "clean_sheets": 120,
+                "clean_sheets": 121,
                 "wins": 144,
                 "draws": 50,
-                "losses": 98,
-                "goal_matches": 292,
-                "assist_matches": 291,
+                "losses": 99,
+                "goal_matches": 293,
+                "assist_matches": 292,
                 "goal_contributions": 1
             },
             "positions": {
                 "GK": 256
             },
             "derived": {
-                "season_count": 6,
-                "points_per_match": 1.651,
-                "minutes_per_match": 77.6,
-                "win_rate": 0.4932,
+                "season_count": 7,
+                "points_per_match": 1.645,
+                "minutes_per_match": 77.3,
+                "win_rate": 0.4915,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.004,
                 "contributions_per_90": 0.004,
                 "primary_position": "GK"
             },
             "competitions": {
+                "International Super Cup": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "First Tier": {
                     "matches": 228,
                     "minutes": 18845,
@@ -14970,7 +14979,73 @@
                 }
             }
         },
+        "3437": {
+            "type": "national",
+            "seasons": [
+                2010,
+                2019,
+                2020,
+                2021,
+                2022,
+                2023,
+                2025
+            ],
+            "stats": {
+                "matches": 89,
+                "participations": 89,
+                "minutes": 6120,
+                "starts": 67,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 33,
+                "points": 220,
+                "clean_sheets": 65,
+                "wins": 70,
+                "draws": 10,
+                "losses": 9,
+                "goal_matches": 89,
+                "assist_matches": 89,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "GK": 68
+            },
+            "derived": {
+                "season_count": 7,
+                "points_per_match": 2.472,
+                "minutes_per_match": 68.8,
+                "win_rate": 0.7865,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "GK"
+            },
+            "competitions": {
+                "National Team": {
+                    "matches": 54,
+                    "minutes": 3830,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "National team's qualifiers": {
+                    "matches": 35,
+                    "minutes": 2290,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "World Cup winner": 1,
+                    "Copa América winner": 2,
+                    "CONMEBOL-UEFA Cup of Champions winner": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "11": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012,
@@ -15054,6 +15129,7 @@
             }
         },
         "1032": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -15102,6 +15178,7 @@
             }
         },
         "9249": {
+            "type": "club",
             "seasons": [
                 2010,
                 2011,
@@ -15156,6 +15233,7 @@
             }
         },
         "3709": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -15210,6 +15288,7 @@
             }
         },
         "543": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -15270,6 +15349,7 @@
             }
         },
         "1194": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -15318,6 +15398,7 @@
             }
         },
         "1035": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -15372,6 +15453,7 @@
             }
         },
         "988": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -15418,6 +15500,7 @@
             }
         },
         "11940": {
+            "type": "national",
             "seasons": [
                 2010
             ],
@@ -15464,6 +15547,7 @@
             }
         },
         "25501": {
+            "type": "national",
             "seasons": [
                 2008
             ],
@@ -15514,24 +15598,24 @@
     },
     "career": {
         "club": {
-            "matches": 221,
-            "minutes": 8902,
-            "goals": 0,
-            "assists": 0,
-            "goal_contributions": 0,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 9
-        },
-        "national": {
-            "matches": 693,
-            "minutes": 32186,
+            "matches": 819,
+            "minutes": 34908,
             "goals": 0,
             "assists": 1,
             "goal_contributions": 1,
-            "team_titles": 11,
+            "team_titles": 7,
             "individual_titles": 1,
-            "season_count": 16
+            "season_count": 17
+        },
+        "national": {
+            "matches": 98,
+            "minutes": 6390,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 4,
+            "individual_titles": 0,
+            "season_count": 8
         }
     }
 }

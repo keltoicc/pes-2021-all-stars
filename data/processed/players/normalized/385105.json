@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Gabriel Suazo",
         "short_name": "G. Suazo",
+        "dateOfBirth": "1997-08-09",
+        "placeOfBirth": "San Bernardo",
         "nation_1": "Chile",
         "nation_2": "",
         "height": 1.78,
@@ -14,6 +17,22 @@
         "prime_date": "2025-12-12"
     },
     "matches": [
+        {
+            "game_id": "4909448",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "368",
+            "opponent_id": "367",
+            "position": "LB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4876353",
             "season": 2025,
@@ -9423,7 +9442,65 @@
         }
     ],
     "clubs": {
+        "368": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 42,
+                "participations": 42,
+                "minutes": 2217,
+                "starts": 26,
+                "captain_matches": 3,
+                "goals": 0,
+                "assists": 2,
+                "goals_conceded": 38,
+                "points": 52,
+                "clean_sheets": 20,
+                "wins": 15,
+                "draws": 7,
+                "losses": 20,
+                "goal_matches": 42,
+                "assist_matches": 40,
+                "goal_contributions": 2
+            },
+            "positions": {
+                "LB": 28,
+                "LM": 1
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 1.238,
+                "minutes_per_match": 52.8,
+                "win_rate": 0.3571,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.081,
+                "contributions_per_90": 0.081,
+                "primary_position": "LB"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 39,
+                    "minutes": 2186,
+                    "goals": 0,
+                    "assists": 2
+                },
+                "Domestic Cup": {
+                    "matches": 3,
+                    "minutes": 31,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3700": {
+            "type": "national",
             "seasons": [
                 2015,
                 2016,
@@ -9489,62 +9566,8 @@
                 "individual_titles": {}
             }
         },
-        "368": {
-            "seasons": [
-                2025
-            ],
-            "stats": {
-                "matches": 41,
-                "participations": 41,
-                "minutes": 2127,
-                "starts": 25,
-                "captain_matches": 2,
-                "goals": 0,
-                "assists": 2,
-                "goals_conceded": 37,
-                "points": 49,
-                "clean_sheets": 20,
-                "wins": 14,
-                "draws": 7,
-                "losses": 20,
-                "goal_matches": 41,
-                "assist_matches": 39,
-                "goal_contributions": 2
-            },
-            "positions": {
-                "LB": 27,
-                "LM": 1
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 1.195,
-                "minutes_per_match": 51.9,
-                "win_rate": 0.3415,
-                "goals_per_90": 0.0,
-                "assists_per_90": 0.085,
-                "contributions_per_90": 0.085,
-                "primary_position": "LB"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 38,
-                    "minutes": 2096,
-                    "goals": 0,
-                    "assists": 2
-                },
-                "Domestic Cup": {
-                    "matches": 3,
-                    "minutes": 31,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "415": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -9619,6 +9642,7 @@
             }
         },
         "2433": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -9707,6 +9731,7 @@
             }
         },
         "74816": {
+            "type": "national",
             "seasons": [
                 2018,
                 2019
@@ -9763,6 +9788,7 @@
             }
         },
         "23657": {
+            "type": "national",
             "seasons": [
                 2015,
                 2016
@@ -9824,24 +9850,24 @@
     },
     "career": {
         "club": {
-            "matches": 41,
-            "minutes": 2127,
-            "goals": 0,
-            "assists": 2,
-            "goal_contributions": 2,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 1
-        },
-        "national": {
-            "matches": 542,
-            "minutes": 28832,
+            "matches": 459,
+            "minutes": 26486,
             "goals": 13,
-            "assists": 35,
-            "goal_contributions": 48,
+            "assists": 32,
+            "goal_contributions": 45,
             "team_titles": 10,
             "individual_titles": 0,
-            "season_count": 12
+            "season_count": 13
+        },
+        "national": {
+            "matches": 125,
+            "minutes": 4563,
+            "goals": 0,
+            "assists": 5,
+            "goal_contributions": 5,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 11
         }
     }
 }

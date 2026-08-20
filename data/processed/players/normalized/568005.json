@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Jeremy Sarmiento",
         "short_name": "J. Sarmiento",
+        "dateOfBirth": "2002-06-16",
+        "placeOfBirth": "Madrid",
         "nation_1": "Ecuador",
         "nation_2": "England",
         "height": 1.78,
@@ -14,6 +17,38 @@
         "prime_date": "2025-05-27"
     },
     "matches": [
+        {
+            "game_id": "4911095",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "641",
+            "opponent_id": "1198",
+            "position": "",
+            "minutes": 19,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4925987",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "641",
+            "opponent_id": "1112",
+            "position": "LM",
+            "minutes": 67,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4887853",
             "season": 2025,
@@ -5617,52 +5652,60 @@
     ],
     "clubs": {
         "641": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 20,
-                "participations": 20,
-                "minutes": 561,
-                "starts": 5,
+                "matches": 22,
+                "participations": 22,
+                "minutes": 647,
+                "starts": 6,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 0,
                 "goals_conceded": 7,
-                "points": 26,
-                "clean_sheets": 14,
-                "wins": 6,
+                "points": 32,
+                "clean_sheets": 16,
+                "wins": 8,
                 "draws": 8,
                 "losses": 6,
-                "goal_matches": 20,
-                "assist_matches": 20,
+                "goal_matches": 22,
+                "assist_matches": 22,
                 "goal_contributions": 0
             },
             "positions": {
-                "LM": 1,
+                "LM": 2,
                 "AMF": 1,
                 "LW": 4
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.3,
-                "minutes_per_match": 28.1,
-                "win_rate": 0.3,
+                "season_count": 2,
+                "points_per_match": 1.455,
+                "minutes_per_match": 29.4,
+                "win_rate": 0.3636,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
                 "primary_position": "LW"
             },
             "competitions": {
-                "Play-Offs": {
-                    "matches": 3,
-                    "minutes": 27,
+                "Second Tier": {
+                    "matches": 18,
+                    "minutes": 553,
                     "goals": 0,
                     "assists": 0
                 },
-                "Second Tier": {
-                    "matches": 17,
-                    "minutes": 534,
+                "League Cup": {
+                    "matches": 1,
+                    "minutes": 67,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Play-Offs": {
+                    "matches": 3,
+                    "minutes": 27,
                     "goals": 0,
                     "assists": 0
                 }
@@ -5673,6 +5716,7 @@
             }
         },
         "1237": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -5739,6 +5783,7 @@
             }
         },
         "2239": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -5788,6 +5833,7 @@
             }
         },
         "1132": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -5844,6 +5890,7 @@
             }
         },
         "5750": {
+            "type": "national",
             "seasons": [
                 2020,
                 2021,
@@ -5904,6 +5951,7 @@
             }
         },
         "677": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -5959,6 +6007,7 @@
             }
         },
         "984": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -6014,6 +6063,7 @@
             }
         },
         "39336": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022
@@ -6065,6 +6115,7 @@
             }
         },
         "68780": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -6106,6 +6157,7 @@
             }
         },
         "41582": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -6145,6 +6197,7 @@
             }
         },
         "31269": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -6193,6 +6246,7 @@
             }
         },
         "23260": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -6253,6 +6307,7 @@
             }
         },
         "30322": {
+            "type": "national",
             "seasons": [
                 2017
             ],
@@ -6302,6 +6357,7 @@
             }
         },
         "6932": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -6345,14 +6401,14 @@
     },
     "career": {
         "club": {
-            "matches": 275,
-            "minutes": 4767,
+            "matches": 277,
+            "minutes": 4853,
             "goals": 13,
             "assists": 4,
             "goal_contributions": 17,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 7
+            "season_count": 8
         },
         "national": {
             "matches": 74,
