@@ -64,7 +64,7 @@ def get_country_id(country):
 
     if not countries_file.exists():
         # print(f"No hay csv para países")
-        return None
+        return 0
 
     with countries_file.open(encoding="utf-8") as f:
         reader = csv.DictReader(f, delimiter=';')
@@ -74,7 +74,7 @@ def get_country_id(country):
                 return int(row["Country ID:"])
 
     print(f"No se encontró el país {country} en el csv")
-    return None
+    return 0
 
 def get_team_id(team_id):
 
