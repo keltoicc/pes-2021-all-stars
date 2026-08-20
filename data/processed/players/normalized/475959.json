@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Josko Gvardiol",
         "short_name": "J. Gvardiol",
+        "dateOfBirth": "2002-01-23",
+        "placeOfBirth": "Zagreb",
         "nation_1": "Croatia",
         "nation_2": "",
         "height": 1.85,
@@ -14,6 +17,22 @@
         "prime_date": "2023-12-19"
     },
     "matches": [
+        {
+            "game_id": "4942122",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "281",
+            "opponent_id": "11",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4776689",
             "season": 2025,
@@ -8545,7 +8564,97 @@
         }
     ],
     "clubs": {
+        "281": {
+            "type": "club",
+            "seasons": [
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 181,
+                "participations": 181,
+                "minutes": 10074,
+                "starts": 111,
+                "captain_matches": 0,
+                "goals": 13,
+                "assists": 10,
+                "goals_conceded": 122,
+                "points": 382,
+                "clean_sheets": 109,
+                "wins": 118,
+                "draws": 28,
+                "losses": 35,
+                "goal_matches": 169,
+                "assist_matches": 171,
+                "goal_contributions": 23
+            },
+            "positions": {
+                "CB": 53,
+                "LB": 68
+            },
+            "derived": {
+                "season_count": 4,
+                "points_per_match": 2.11,
+                "minutes_per_match": 55.7,
+                "win_rate": 0.6519,
+                "goals_per_90": 0.116,
+                "assists_per_90": 0.089,
+                "contributions_per_90": 0.205,
+                "primary_position": "LB"
+            },
+            "competitions": {
+                "Domestic Super Cup": {
+                    "matches": 3,
+                    "minutes": 180,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "First Tier": {
+                    "matches": 114,
+                    "minutes": 6983,
+                    "goals": 11,
+                    "assists": 4
+                },
+                "Domestic Cup": {
+                    "matches": 18,
+                    "minutes": 630,
+                    "goals": 1,
+                    "assists": 0
+                },
+                "League Cup": {
+                    "matches": 9,
+                    "minutes": 201,
+                    "goals": 0,
+                    "assists": 1
+                },
+                "International Cup": {
+                    "matches": 36,
+                    "minutes": 1990,
+                    "goals": 1,
+                    "assists": 5
+                },
+                "International Super Cup": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "FIFA Club World Cup winner": 1,
+                    "English Champion": 1,
+                    "English League Cup winner": 1,
+                    "English Super Cup winner": 1,
+                    "Uefa Supercup winner": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3556": {
+            "type": "national",
             "seasons": [
                 2020,
                 2021,
@@ -8605,94 +8714,8 @@
                 "individual_titles": {}
             }
         },
-        "281": {
-            "seasons": [
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 180,
-                "participations": 180,
-                "minutes": 9984,
-                "starts": 110,
-                "captain_matches": 0,
-                "goals": 13,
-                "assists": 10,
-                "goals_conceded": 119,
-                "points": 382,
-                "clean_sheets": 109,
-                "wins": 118,
-                "draws": 28,
-                "losses": 34,
-                "goal_matches": 168,
-                "assist_matches": 170,
-                "goal_contributions": 23
-            },
-            "positions": {
-                "LB": 68,
-                "CB": 52
-            },
-            "derived": {
-                "season_count": 3,
-                "points_per_match": 2.122,
-                "minutes_per_match": 55.5,
-                "win_rate": 0.6556,
-                "goals_per_90": 0.117,
-                "assists_per_90": 0.09,
-                "contributions_per_90": 0.207,
-                "primary_position": "LB"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 114,
-                    "minutes": 6983,
-                    "goals": 11,
-                    "assists": 4
-                },
-                "Domestic Cup": {
-                    "matches": 18,
-                    "minutes": 630,
-                    "goals": 1,
-                    "assists": 0
-                },
-                "League Cup": {
-                    "matches": 9,
-                    "minutes": 201,
-                    "goals": 0,
-                    "assists": 1
-                },
-                "International Cup": {
-                    "matches": 36,
-                    "minutes": 1990,
-                    "goals": 1,
-                    "assists": 5
-                },
-                "Domestic Super Cup": {
-                    "matches": 2,
-                    "minutes": 90,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "International Super Cup": {
-                    "matches": 1,
-                    "minutes": 90,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "FIFA Club World Cup winner": 1,
-                    "English Champion": 1,
-                    "English League Cup winner": 1,
-                    "English Super Cup winner": 1,
-                    "Uefa Supercup winner": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "23826": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022
@@ -8763,6 +8786,7 @@
             }
         },
         "11943": {
+            "type": "national",
             "seasons": [
                 2019,
                 2020
@@ -8818,6 +8842,7 @@
             }
         },
         "419": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -8890,6 +8915,7 @@
             }
         },
         "50634": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019
@@ -8933,6 +8959,7 @@
             }
         },
         "44796": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -8983,6 +9010,7 @@
             }
         },
         "17379": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -9037,6 +9065,7 @@
             }
         },
         "21141": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -9092,6 +9121,7 @@
             }
         },
         "34699": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -9142,22 +9172,22 @@
     },
     "career": {
         "club": {
-            "matches": 37,
-            "minutes": 1758,
-            "goals": 0,
-            "assists": 1,
-            "goal_contributions": 1,
-            "team_titles": 0,
+            "matches": 427,
+            "minutes": 22185,
+            "goals": 22,
+            "assists": 17,
+            "goal_contributions": 39,
+            "team_titles": 11,
             "individual_titles": 0,
-            "season_count": 3
+            "season_count": 9
         },
         "national": {
-            "matches": 485,
-            "minutes": 26084,
-            "goals": 28,
-            "assists": 17,
-            "goal_contributions": 45,
-            "team_titles": 11,
+            "matches": 96,
+            "minutes": 5747,
+            "goals": 6,
+            "assists": 1,
+            "goal_contributions": 7,
+            "team_titles": 0,
             "individual_titles": 0,
             "season_count": 9
         }

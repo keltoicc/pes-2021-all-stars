@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Nikola Vlašić",
         "short_name": "N. Vlašić",
+        "dateOfBirth": "1997-10-04",
+        "placeOfBirth": "Split",
         "nation_1": "Croatia",
         "nation_2": "",
         "height": 1.79,
@@ -14,6 +17,22 @@
         "prime_date": "2021-05-28"
     },
     "matches": [
+        {
+            "game_id": "4904458",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "416",
+            "opponent_id": "4159",
+            "position": "AMF",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776689",
             "season": 2025,
@@ -11295,7 +11314,71 @@
         }
     ],
     "clubs": {
+        "416": {
+            "type": "club",
+            "seasons": [
+                2022,
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 164,
+                "participations": 164,
+                "minutes": 11304,
+                "starts": 126,
+                "captain_matches": 31,
+                "goals": 22,
+                "assists": 19,
+                "goals_conceded": 154,
+                "points": 219,
+                "clean_sheets": 77,
+                "wins": 57,
+                "draws": 48,
+                "losses": 59,
+                "goal_matches": 142,
+                "assist_matches": 148,
+                "goal_contributions": 41
+            },
+            "positions": {
+                "AMF": 95,
+                "SS": 14,
+                "CMF": 25,
+                "CF": 4,
+                "LW": 5
+            },
+            "derived": {
+                "season_count": 5,
+                "points_per_match": 1.335,
+                "minutes_per_match": 68.9,
+                "win_rate": 0.3476,
+                "goals_per_90": 0.175,
+                "assists_per_90": 0.151,
+                "contributions_per_90": 0.326,
+                "primary_position": "AMF"
+            },
+            "competitions": {
+                "Domestic Cup": {
+                    "matches": 12,
+                    "minutes": 781,
+                    "goals": 1,
+                    "assists": 4
+                },
+                "First Tier": {
+                    "matches": 152,
+                    "minutes": 10523,
+                    "goals": 21,
+                    "assists": 15
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3556": {
+            "type": "national",
             "seasons": [
                 2016,
                 2017,
@@ -11366,68 +11449,8 @@
                 }
             }
         },
-        "416": {
-            "seasons": [
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 163,
-                "participations": 163,
-                "minutes": 11214,
-                "starts": 125,
-                "captain_matches": 30,
-                "goals": 22,
-                "assists": 19,
-                "goals_conceded": 154,
-                "points": 216,
-                "clean_sheets": 76,
-                "wins": 56,
-                "draws": 48,
-                "losses": 59,
-                "goal_matches": 141,
-                "assist_matches": 147,
-                "goal_contributions": 41
-            },
-            "positions": {
-                "AMF": 94,
-                "SS": 14,
-                "CMF": 25,
-                "CF": 4,
-                "LW": 5
-            },
-            "derived": {
-                "season_count": 4,
-                "points_per_match": 1.325,
-                "minutes_per_match": 68.8,
-                "win_rate": 0.3436,
-                "goals_per_90": 0.177,
-                "assists_per_90": 0.152,
-                "contributions_per_90": 0.329,
-                "primary_position": "AMF"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 152,
-                    "minutes": 10523,
-                    "goals": 21,
-                    "assists": 15
-                },
-                "Domestic Cup": {
-                    "matches": 11,
-                    "minutes": 691,
-                    "goals": 1,
-                    "assists": 4
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "379": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022
@@ -11499,6 +11522,7 @@
             }
         },
         "2410": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -11568,6 +11592,7 @@
             }
         },
         "11943": {
+            "type": "national",
             "seasons": [
                 2015,
                 2016,
@@ -11635,6 +11660,7 @@
             }
         },
         "29": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018
@@ -11704,6 +11730,7 @@
             }
         },
         "9261": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -11745,6 +11772,7 @@
             }
         },
         "447": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -11815,6 +11843,7 @@
             }
         },
         "17379": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -11870,6 +11899,7 @@
             }
         },
         "28207": {
+            "type": "national",
             "seasons": [
                 2013
             ],
@@ -11916,6 +11946,7 @@
             }
         },
         "21141": {
+            "type": "national",
             "seasons": [
                 2012,
                 2013
@@ -11971,6 +12002,7 @@
             }
         },
         "34699": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -12021,23 +12053,23 @@
     },
     "career": {
         "club": {
-            "matches": 164,
-            "minutes": 11304,
-            "goals": 22,
-            "assists": 19,
-            "goal_contributions": 41,
+            "matches": 537,
+            "minutes": 32451,
+            "goals": 71,
+            "assists": 63,
+            "goal_contributions": 134,
             "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 5
+            "individual_titles": 1,
+            "season_count": 13
         },
         "national": {
-            "matches": 536,
-            "minutes": 26196,
-            "goals": 68,
-            "assists": 53,
-            "goal_contributions": 121,
+            "matches": 164,
+            "minutes": 5139,
+            "goals": 19,
+            "assists": 9,
+            "goal_contributions": 28,
             "team_titles": 0,
-            "individual_titles": 2,
+            "individual_titles": 1,
             "season_count": 14
         }
     }

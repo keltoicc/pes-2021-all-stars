@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Barış Alper Yılmaz",
         "short_name": "B. Yılmaz",
+        "dateOfBirth": "2000-05-23",
+        "placeOfBirth": "Rize",
         "nation_1": "Türkiye",
         "nation_2": "",
         "height": 1.86,
@@ -14,6 +17,22 @@
         "prime_date": "2026-05-21"
     },
     "matches": [
+        {
+            "game_id": "4932844",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "141",
+            "opponent_id": "37951",
+            "position": "LW",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4868899",
             "season": 2025,
@@ -7558,7 +7577,92 @@
         }
     ],
     "clubs": {
+        "141": {
+            "type": "club",
+            "seasons": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 259,
+                "participations": 259,
+                "minutes": 12562,
+                "starts": 137,
+                "captain_matches": 1,
+                "goals": 37,
+                "assists": 36,
+                "goals_conceded": 152,
+                "points": 540,
+                "clean_sheets": 160,
+                "wins": 165,
+                "draws": 45,
+                "losses": 49,
+                "goal_matches": 226,
+                "assist_matches": 225,
+                "goal_contributions": 73
+            },
+            "positions": {
+                "LW": 89,
+                "CF": 17,
+                "RW": 71,
+                "SS": 2,
+                "LM": 1,
+                "RM": 6,
+                "RB": 9,
+                "LB": 9,
+                "AMF": 2
+            },
+            "derived": {
+                "season_count": 6,
+                "points_per_match": 2.085,
+                "minutes_per_match": 48.5,
+                "win_rate": 0.6371,
+                "goals_per_90": 0.265,
+                "assists_per_90": 0.258,
+                "contributions_per_90": 0.523,
+                "primary_position": "LW"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 183,
+                    "minutes": 8731,
+                    "goals": 30,
+                    "assists": 24
+                },
+                "Domestic Cup": {
+                    "matches": 20,
+                    "minutes": 871,
+                    "goals": 4,
+                    "assists": 3
+                },
+                "International Cup": {
+                    "matches": 52,
+                    "minutes": 2744,
+                    "goals": 2,
+                    "assists": 8
+                },
+                "Domestic Super Cup": {
+                    "matches": 4,
+                    "minutes": 216,
+                    "goals": 1,
+                    "assists": 1
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Turkish champion": 4,
+                    "Turkish cup winner": 1,
+                    "Turkish Super Cup winner": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3381": {
+            "type": "national",
             "seasons": [
                 2020,
                 2021,
@@ -7621,89 +7725,8 @@
                 "individual_titles": {}
             }
         },
-        "141": {
-            "seasons": [
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 258,
-                "participations": 258,
-                "minutes": 12472,
-                "starts": 136,
-                "captain_matches": 1,
-                "goals": 37,
-                "assists": 36,
-                "goals_conceded": 150,
-                "points": 539,
-                "clean_sheets": 160,
-                "wins": 165,
-                "draws": 44,
-                "losses": 49,
-                "goal_matches": 225,
-                "assist_matches": 224,
-                "goal_contributions": 73
-            },
-            "positions": {
-                "LW": 88,
-                "CF": 17,
-                "RW": 71,
-                "SS": 2,
-                "LM": 1,
-                "RM": 6,
-                "RB": 9,
-                "LB": 9,
-                "AMF": 2
-            },
-            "derived": {
-                "season_count": 5,
-                "points_per_match": 2.089,
-                "minutes_per_match": 48.3,
-                "win_rate": 0.6395,
-                "goals_per_90": 0.267,
-                "assists_per_90": 0.26,
-                "contributions_per_90": 0.527,
-                "primary_position": "LW"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 182,
-                    "minutes": 8641,
-                    "goals": 30,
-                    "assists": 24
-                },
-                "Domestic Cup": {
-                    "matches": 20,
-                    "minutes": 871,
-                    "goals": 4,
-                    "assists": 3
-                },
-                "International Cup": {
-                    "matches": 52,
-                    "minutes": 2744,
-                    "goals": 2,
-                    "assists": 8
-                },
-                "Domestic Super Cup": {
-                    "matches": 4,
-                    "minutes": 216,
-                    "goals": 1,
-                    "assists": 1
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Turkish champion": 4,
-                    "Turkish cup winner": 1,
-                    "Turkish Super Cup winner": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "101287": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -7746,6 +7769,7 @@
             }
         },
         "9568": {
+            "type": "national",
             "seasons": [
                 2020,
                 2021
@@ -7802,6 +7826,7 @@
             }
         },
         "12388": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -7857,6 +7882,7 @@
             }
         },
         "12524": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -7928,22 +7954,22 @@
     },
     "career": {
         "club": {
-            "matches": 143,
-            "minutes": 4026,
-            "goals": 13,
-            "assists": 9,
-            "goal_contributions": 22,
-            "team_titles": 0,
+            "matches": 402,
+            "minutes": 16588,
+            "goals": 50,
+            "assists": 45,
+            "goal_contributions": 95,
+            "team_titles": 6,
             "individual_titles": 0,
-            "season_count": 5
+            "season_count": 10
         },
         "national": {
-            "matches": 323,
-            "minutes": 14966,
-            "goals": 44,
-            "assists": 43,
-            "goal_contributions": 87,
-            "team_titles": 6,
+            "matches": 65,
+            "minutes": 2494,
+            "goals": 7,
+            "assists": 7,
+            "goal_contributions": 14,
+            "team_titles": 0,
             "individual_titles": 0,
             "season_count": 6
         }

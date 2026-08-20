@@ -1,19 +1,54 @@
 {
     "player": {
+        "name": "Nuno Mendes",
         "short_name": "Nuno Mendes",
+        "dateOfBirth": "2002-06-19",
+        "placeOfBirth": "Lisboa",
         "nation_1": "Portugal",
         "nation_2": "",
-        "height": 1.77,
+        "height": 1.8,
         "foot": "Left",
         "position_group": "DEFENDER",
         "position_1": "LB",
-        "position_2": "LM",
+        "position_2": "",
         "position_3": "",
         "former_clubs": "Despertar (2011), Sporting CP (2012-2020)",
         "market_value": 80000000,
         "prime_date": "2026-06-01"
     },
     "matches": [
+        {
+            "game_id": "4916783",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "583",
+            "opponent_id": "826",
+            "position": "LB",
+            "minutes": 26,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4895595",
+            "season": 2026,
+            "competition_type": "International Super Cup",
+            "club_id": "583",
+            "opponent_id": "405",
+            "position": "LB",
+            "minutes": 75,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776702",
             "season": 2025,
@@ -8026,6 +8061,13 @@
         },
         {
             "title": "Uefa Supercup winner",
+            "season": "26/27",
+            "season_id": 2026,
+            "club_name": "Paris Saint-Germain",
+            "club_id": 583
+        },
+        {
+            "title": "Uefa Supercup winner",
             "season": "25/26",
             "season_id": 2025,
             "club_name": "Paris Saint-Germain",
@@ -8075,7 +8117,97 @@
         }
     ],
     "clubs": {
+        "583": {
+            "type": "club",
+            "seasons": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 271,
+                "participations": 271,
+                "minutes": 12705,
+                "starts": 142,
+                "captain_matches": 0,
+                "goals": 15,
+                "assists": 24,
+                "goals_conceded": 135,
+                "points": 598,
+                "clean_sheets": 176,
+                "wins": 185,
+                "draws": 43,
+                "losses": 43,
+                "goal_matches": 256,
+                "assist_matches": 248,
+                "goal_contributions": 39
+            },
+            "positions": {
+                "LB": 144,
+                "LW": 2,
+                "LM": 22
+            },
+            "derived": {
+                "season_count": 6,
+                "points_per_match": 2.207,
+                "minutes_per_match": 46.9,
+                "win_rate": 0.6827,
+                "goals_per_90": 0.106,
+                "assists_per_90": 0.17,
+                "contributions_per_90": 0.276,
+                "primary_position": "LB"
+            },
+            "competitions": {
+                "Domestic Super Cup": {
+                    "matches": 5,
+                    "minutes": 274,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "International Super Cup": {
+                    "matches": 2,
+                    "minutes": 165,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "International Cup": {
+                    "matches": 70,
+                    "minutes": 4949,
+                    "goals": 7,
+                    "assists": 4
+                },
+                "First Tier": {
+                    "matches": 174,
+                    "minutes": 6400,
+                    "goals": 8,
+                    "assists": 16
+                },
+                "Domestic Cup": {
+                    "matches": 20,
+                    "minutes": 917,
+                    "goals": 0,
+                    "assists": 4
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "UEFA Champions League winner": 2,
+                    "FIFA Intercontinental Cup Winner": 1,
+                    "French champion": 5,
+                    "French cup winner": 2,
+                    "French Super Cup winner": 4,
+                    "Uefa Supercup winner": 2
+                },
+                "individual_titles": {
+                    "Best young player": 1
+                }
+            }
+        },
         "3300": {
+            "type": "national",
             "seasons": [
                 2020,
                 2021,
@@ -8140,94 +8272,8 @@
                 }
             }
         },
-        "583": {
-            "seasons": [
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 269,
-                "participations": 269,
-                "minutes": 12604,
-                "starts": 141,
-                "captain_matches": 0,
-                "goals": 15,
-                "assists": 24,
-                "goals_conceded": 134,
-                "points": 595,
-                "clean_sheets": 175,
-                "wins": 184,
-                "draws": 43,
-                "losses": 42,
-                "goal_matches": 254,
-                "assist_matches": 246,
-                "goal_contributions": 39
-            },
-            "positions": {
-                "LB": 142,
-                "LW": 2,
-                "LM": 22
-            },
-            "derived": {
-                "season_count": 5,
-                "points_per_match": 2.212,
-                "minutes_per_match": 46.9,
-                "win_rate": 0.684,
-                "goals_per_90": 0.107,
-                "assists_per_90": 0.171,
-                "contributions_per_90": 0.278,
-                "primary_position": "LB"
-            },
-            "competitions": {
-                "International Cup": {
-                    "matches": 70,
-                    "minutes": 4949,
-                    "goals": 7,
-                    "assists": 4
-                },
-                "First Tier": {
-                    "matches": 174,
-                    "minutes": 6400,
-                    "goals": 8,
-                    "assists": 16
-                },
-                "Domestic Cup": {
-                    "matches": 20,
-                    "minutes": 917,
-                    "goals": 0,
-                    "assists": 4
-                },
-                "Domestic Super Cup": {
-                    "matches": 4,
-                    "minutes": 248,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "International Super Cup": {
-                    "matches": 1,
-                    "minutes": 90,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "UEFA Champions League winner": 2,
-                    "FIFA Intercontinental Cup Winner": 1,
-                    "French champion": 5,
-                    "French cup winner": 2,
-                    "French Super Cup winner": 4,
-                    "Uefa Supercup winner": 1
-                },
-                "individual_titles": {
-                    "Best young player": 1
-                }
-            }
-        },
         "336": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -8310,6 +8356,7 @@
             }
         },
         "16374": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -8358,6 +8405,7 @@
             }
         },
         "67909": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -8399,6 +8447,7 @@
             }
         },
         "16371": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -8447,6 +8496,7 @@
             }
         },
         "16372": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -8495,6 +8545,7 @@
             }
         },
         "23137": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -8543,6 +8594,7 @@
             }
         },
         "31372": {
+            "type": "national",
             "seasons": [
                 2017
             ],
@@ -8593,23 +8645,23 @@
     },
     "career": {
         "club": {
-            "matches": 30,
-            "minutes": 1279,
-            "goals": 1,
-            "assists": 4,
-            "goal_contributions": 5,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 1
+            "matches": 396,
+            "minutes": 17699,
+            "goals": 17,
+            "assists": 31,
+            "goal_contributions": 48,
+            "team_titles": 19,
+            "individual_titles": 2,
+            "season_count": 8
         },
         "national": {
-            "matches": 460,
-            "minutes": 20959,
-            "goals": 18,
-            "assists": 39,
-            "goal_contributions": 57,
-            "team_titles": 19,
-            "individual_titles": 3,
+            "matches": 96,
+            "minutes": 4640,
+            "goals": 2,
+            "assists": 12,
+            "goal_contributions": 14,
+            "team_titles": 1,
+            "individual_titles": 1,
             "season_count": 9
         }
     }

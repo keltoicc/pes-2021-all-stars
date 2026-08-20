@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Oleksandr Zubkov",
         "short_name": "O. Zubkov",
+        "dateOfBirth": "1996-08-03",
+        "placeOfBirth": "Makiivka, Donetsk Oblast",
         "nation_1": "Ukraine",
         "nation_2": "",
         "height": 1.82,
@@ -14,6 +17,38 @@
         "prime_date": "2025-06-18"
     },
     "matches": [
+        {
+            "game_id": "5013624",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "2441",
+            "opponent_id": "156",
+            "position": "",
+            "minutes": 9,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4884159",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "2441",
+            "opponent_id": "653",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
         {
             "game_id": "4870632",
             "season": 2025,
@@ -5772,7 +5807,7 @@
             "assists": 0,
             "goals_conceded": 3,
             "participation": "played",
-            "club_points": 0
+            "club_points": 3
         },
         {
             "game_id": "3289880",
@@ -9862,6 +9897,13 @@
             "club_id": 21233
         },
         {
+            "title": "Greek Super Cup runner-up",
+            "season": "26/27",
+            "season_id": 2026,
+            "club_name": "AEK Athens",
+            "club_id": 2441
+        },
+        {
             "title": "Turkish cup winner",
             "season": "25/26",
             "season_id": 2025,
@@ -10038,7 +10080,61 @@
         }
     ],
     "clubs": {
+        "2441": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 2,
+                "participations": 2,
+                "minutes": 9,
+                "starts": 0,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 0,
+                "points": 1,
+                "clean_sheets": 2,
+                "wins": 0,
+                "draws": 1,
+                "losses": 1,
+                "goal_matches": 2,
+                "assist_matches": 2,
+                "goal_contributions": 0
+            },
+            "positions": {},
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 0.5,
+                "minutes_per_match": 4.5,
+                "win_rate": 0.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": ""
+            },
+            "competitions": {
+                "International Cup": {
+                    "matches": 1,
+                    "minutes": 9,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "449": {
+            "type": "club",
             "seasons": [
                 2024,
                 2025
@@ -10105,6 +10201,7 @@
             }
         },
         "3699": {
+            "type": "national",
             "seasons": [
                 2020,
                 2021,
@@ -10167,6 +10264,7 @@
             }
         },
         "660": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -10251,6 +10349,7 @@
             }
         },
         "279": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -10266,11 +10365,11 @@
                 "goals": 19,
                 "assists": 23,
                 "goals_conceded": 87,
-                "points": 321,
+                "points": 324,
                 "clean_sheets": 101,
-                "wins": 96,
+                "wins": 97,
                 "draws": 33,
-                "losses": 28,
+                "losses": 27,
                 "goal_matches": 143,
                 "assist_matches": 137,
                 "goal_contributions": 42
@@ -10283,9 +10382,9 @@
             },
             "derived": {
                 "season_count": 4,
-                "points_per_match": 2.045,
+                "points_per_match": 2.064,
                 "minutes_per_match": 45.5,
-                "win_rate": 0.6115,
+                "win_rate": 0.6178,
                 "goals_per_90": 0.239,
                 "assists_per_90": 0.29,
                 "contributions_per_90": 0.529,
@@ -10320,6 +10419,7 @@
             }
         },
         "6993": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -10381,6 +10481,7 @@
             }
         },
         "16274": {
+            "type": "national",
             "seasons": [
                 2015,
                 2016,
@@ -10440,6 +10541,7 @@
             }
         },
         "28381": {
+            "type": "national",
             "seasons": [
                 2015,
                 2016
@@ -10489,6 +10591,7 @@
             }
         },
         "41576": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -10535,6 +10638,7 @@
             }
         },
         "21233": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -10596,6 +10700,7 @@
             }
         },
         "26508": {
+            "type": "national",
             "seasons": [
                 2013
             ],
@@ -10644,6 +10749,7 @@
             }
         },
         "14300": {
+            "type": "",
             "seasons": [],
             "stats": {
                 "matches": 0,
@@ -10685,24 +10791,24 @@
     },
     "career": {
         "club": {
-            "matches": 114,
-            "minutes": 6982,
-            "goals": 27,
-            "assists": 27,
-            "goal_contributions": 54,
-            "team_titles": 2,
+            "matches": 491,
+            "minutes": 20897,
+            "goals": 66,
+            "assists": 72,
+            "goal_contributions": 138,
+            "team_titles": 15,
             "individual_titles": 0,
-            "season_count": 6
+            "season_count": 14
         },
         "national": {
-            "matches": 500,
-            "minutes": 17780,
-            "goals": 53,
-            "assists": 53,
-            "goal_contributions": 106,
-            "team_titles": 13,
+            "matches": 125,
+            "minutes": 3874,
+            "goals": 14,
+            "assists": 8,
+            "goal_contributions": 22,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 13
+            "season_count": 11
         }
     }
 }

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "André Silva",
         "short_name": "André Silva",
+        "dateOfBirth": "1995-11-06",
+        "placeOfBirth": "Baguim do Monte",
         "nation_1": "Portugal",
         "nation_2": "",
         "height": 1.86,
@@ -14,6 +17,54 @@
         "prime_date": "2021-06-01"
     },
     "matches": [
+        {
+            "game_id": "4921432",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "720",
+            "opponent_id": "2425",
+            "position": "CF",
+            "minutes": 20,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4921484",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "720",
+            "opponent_id": "2521",
+            "position": "CF",
+            "minutes": 82,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 1,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4911537",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "720",
+            "opponent_id": "2432",
+            "position": "CF",
+            "minutes": 62,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4645988",
             "season": 2025,
@@ -11332,7 +11383,7 @@
             "competition_type": "Second Tier",
             "club_id": "10331",
             "opponent_id": "10787",
-            "position": "",
+            "position": "LW",
             "minutes": 19,
             "started": false,
             "captain": false,
@@ -13737,6 +13788,13 @@
             "club_id": 16372
         },
         {
+            "title": "Portuguese Super Cup winner",
+            "season": "2027",
+            "season_id": 2026,
+            "club_name": "FC Porto",
+            "club_id": 720
+        },
+        {
             "title": "Confederations Cup participant",
             "season": "2017",
             "season_id": 2017,
@@ -13843,7 +13901,91 @@
         }
     ],
     "clubs": {
+        "720": {
+            "type": "club",
+            "seasons": [
+                2015,
+                2016,
+                2026
+            ],
+            "stats": {
+                "matches": 92,
+                "participations": 92,
+                "minutes": 4334,
+                "starts": 50,
+                "captain_matches": 0,
+                "goals": 25,
+                "assists": 12,
+                "goals_conceded": 32,
+                "points": 178,
+                "clean_sheets": 66,
+                "wins": 54,
+                "draws": 16,
+                "losses": 22,
+                "goal_matches": 73,
+                "assist_matches": 80,
+                "goal_contributions": 37
+            },
+            "positions": {
+                "CF": 49,
+                "SS": 7,
+                "RW": 1,
+                "LW": 1
+            },
+            "derived": {
+                "season_count": 3,
+                "points_per_match": 1.935,
+                "minutes_per_match": 47.1,
+                "win_rate": 0.587,
+                "goals_per_90": 0.519,
+                "assists_per_90": 0.249,
+                "contributions_per_90": 0.768,
+                "primary_position": "CF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 62,
+                    "minutes": 2978,
+                    "goals": 18,
+                    "assists": 9
+                },
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 62,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "International Cup": {
+                    "matches": 15,
+                    "minutes": 759,
+                    "goals": 5,
+                    "assists": 2
+                },
+                "League Cup": {
+                    "matches": 6,
+                    "minutes": 259,
+                    "goals": 0,
+                    "assists": 1
+                },
+                "Domestic Cup": {
+                    "matches": 8,
+                    "minutes": 276,
+                    "goals": 2,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Portuguese Super Cup winner": 1
+                },
+                "individual_titles": {
+                    "Best young player": 1,
+                    "League Player of the Year": 1
+                }
+            }
+        },
         "1531": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -13898,6 +14040,7 @@
             }
         },
         "23826": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -13969,6 +14112,7 @@
             }
         },
         "86": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -14023,6 +14167,7 @@
             }
         },
         "681": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -14083,6 +14228,7 @@
             }
         },
         "3300": {
+            "type": "national",
             "seasons": [
                 2016,
                 2017,
@@ -14144,6 +14290,7 @@
             }
         },
         "24": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -14205,6 +14352,7 @@
             }
         },
         "5": {
+            "type": "club",
             "seasons": [
                 2017,
                 2019
@@ -14266,6 +14414,7 @@
             }
         },
         "368": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -14332,80 +14481,8 @@
                 "individual_titles": {}
             }
         },
-        "720": {
-            "seasons": [
-                2015,
-                2016
-            ],
-            "stats": {
-                "matches": 89,
-                "participations": 89,
-                "minutes": 4170,
-                "starts": 48,
-                "captain_matches": 0,
-                "goals": 24,
-                "assists": 11,
-                "goals_conceded": 32,
-                "points": 169,
-                "clean_sheets": 63,
-                "wins": 51,
-                "draws": 16,
-                "losses": 22,
-                "goal_matches": 71,
-                "assist_matches": 78,
-                "goal_contributions": 35
-            },
-            "positions": {
-                "SS": 7,
-                "CF": 46,
-                "RW": 1,
-                "LW": 1
-            },
-            "derived": {
-                "season_count": 2,
-                "points_per_match": 1.899,
-                "minutes_per_match": 46.9,
-                "win_rate": 0.573,
-                "goals_per_90": 0.518,
-                "assists_per_90": 0.237,
-                "contributions_per_90": 0.755,
-                "primary_position": "CF"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 60,
-                    "minutes": 2876,
-                    "goals": 17,
-                    "assists": 8
-                },
-                "International Cup": {
-                    "matches": 15,
-                    "minutes": 759,
-                    "goals": 5,
-                    "assists": 2
-                },
-                "League Cup": {
-                    "matches": 6,
-                    "minutes": 259,
-                    "goals": 0,
-                    "assists": 1
-                },
-                "Domestic Cup": {
-                    "matches": 8,
-                    "minutes": 276,
-                    "goals": 2,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {
-                    "Best young player": 1,
-                    "League Player of the Year": 1
-                }
-            }
-        },
         "10331": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -14431,7 +14508,7 @@
             },
             "positions": {
                 "CF": 55,
-                "LW": 5,
+                "LW": 6,
                 "RW": 3
             },
             "derived": {
@@ -14463,6 +14540,7 @@
             }
         },
         "16374": {
+            "type": "national",
             "seasons": [
                 2015
             ],
@@ -14514,6 +14592,7 @@
             }
         },
         "16373": {
+            "type": "national",
             "seasons": [
                 2014,
                 2015
@@ -14572,6 +14651,7 @@
             }
         },
         "16372": {
+            "type": "national",
             "seasons": [
                 2012,
                 2013
@@ -14633,6 +14713,7 @@
             }
         },
         "41588": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -14674,6 +14755,7 @@
             }
         },
         "16371": {
+            "type": "national",
             "seasons": [
                 2012
             ],
@@ -14722,6 +14804,7 @@
             }
         },
         "23137": {
+            "type": "national",
             "seasons": [
                 2011
             ],
@@ -14782,6 +14865,7 @@
             }
         },
         "31372": {
+            "type": "national",
             "seasons": [
                 2010
             ],
@@ -14833,24 +14917,24 @@
     },
     "career": {
         "club": {
-            "matches": 208,
-            "minutes": 8997,
-            "goals": 42,
-            "assists": 6,
-            "goal_contributions": 48,
-            "team_titles": 1,
-            "individual_titles": 2,
-            "season_count": 5
+            "matches": 684,
+            "minutes": 30827,
+            "goals": 164,
+            "assists": 58,
+            "goal_contributions": 222,
+            "team_titles": 4,
+            "individual_titles": 4,
+            "season_count": 14
         },
         "national": {
-            "matches": 646,
-            "minutes": 29489,
-            "goals": 172,
-            "assists": 58,
-            "goal_contributions": 230,
-            "team_titles": 3,
-            "individual_titles": 6,
-            "season_count": 16
+            "matches": 173,
+            "minutes": 7823,
+            "goals": 51,
+            "assists": 7,
+            "goal_contributions": 58,
+            "team_titles": 1,
+            "individual_titles": 4,
+            "season_count": 12
         }
     }
 }

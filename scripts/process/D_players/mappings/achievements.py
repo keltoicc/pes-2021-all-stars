@@ -1,4 +1,5 @@
 IGNORED_TITLE = [
+    ""
     "AFC Champions League participant",
     "AFC Champions League runner-up",
     "AFC Cup Participant",
@@ -266,6 +267,7 @@ CLUB_NATIONAL_TITLE = [
     "Belgian cup winner",
     "Bolivian champion",
     "Bosnian-Herzegovinian Super Cup winner",
+    "Bosnian-Herzegovinian champion",
     "Bosnian-Herzegovinian cup winner",
     "Brazilian champion",
     "Brazilian cup winner",
@@ -546,6 +548,7 @@ MINOR_TITLE = [
     "Bhutanese Champion",
     "Bremen Cup winner",
     "Bremenliga Champion",
+    "Burgenland League champion"
     "CPL Shield Winner",
     "Campeonato Brasileiro Série B Champioen",
     "Campeão Carioca",
@@ -680,6 +683,7 @@ MINOR_TITLE = [
     "Turkish second tier champion",
     "Türkischer U21 Meister",
     "U20 Copa Libertadores winner",
+    "U20 Elite League Winner",
     "U20 Intercontinental Cup Winner",
     "U21 Eredivisie champion",
     "U21 Premier League champion",

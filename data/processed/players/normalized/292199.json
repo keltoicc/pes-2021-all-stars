@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Uğurcan Çakır",
         "short_name": "U. Çakır",
+        "dateOfBirth": "1996-04-05",
+        "placeOfBirth": "Antalya",
         "nation_1": "Türkiye",
         "nation_2": "",
         "height": 1.91,
@@ -14,6 +17,22 @@
         "prime_date": "2021-05-25"
     },
     "matches": [
+        {
+            "game_id": "4932844",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "141",
+            "opponent_id": "37951",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4868899",
             "season": 2025,
@@ -10623,7 +10642,78 @@
         }
     ],
     "clubs": {
+        "141": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 50,
+                "participations": 50,
+                "minutes": 3517,
+                "starts": 39,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 43,
+                "points": 97,
+                "clean_sheets": 23,
+                "wins": 30,
+                "draws": 7,
+                "losses": 13,
+                "goal_matches": 50,
+                "assist_matches": 50,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "GK": 39
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 1.94,
+                "minutes_per_match": 70.3,
+                "win_rate": 0.6,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "GK"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 31,
+                    "minutes": 2340,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 5,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "International Cup": {
+                    "matches": 12,
+                    "minutes": 1087,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Super Cup": {
+                    "matches": 2,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Turkish champion": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3381": {
+            "type": "national",
             "seasons": [
                 2018,
                 2020,
@@ -10683,75 +10773,8 @@
                 "individual_titles": {}
             }
         },
-        "141": {
-            "seasons": [
-                2025
-            ],
-            "stats": {
-                "matches": 49,
-                "participations": 49,
-                "minutes": 3427,
-                "starts": 38,
-                "captain_matches": 0,
-                "goals": 0,
-                "assists": 0,
-                "goals_conceded": 41,
-                "points": 96,
-                "clean_sheets": 23,
-                "wins": 30,
-                "draws": 6,
-                "losses": 13,
-                "goal_matches": 49,
-                "assist_matches": 49,
-                "goal_contributions": 0
-            },
-            "positions": {
-                "GK": 38
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 1.959,
-                "minutes_per_match": 69.9,
-                "win_rate": 0.6122,
-                "goals_per_90": 0.0,
-                "assists_per_90": 0.0,
-                "contributions_per_90": 0.0,
-                "primary_position": "GK"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 30,
-                    "minutes": 2250,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Domestic Cup": {
-                    "matches": 5,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "International Cup": {
-                    "matches": 12,
-                    "minutes": 1087,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Domestic Super Cup": {
-                    "matches": 2,
-                    "minutes": 90,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Turkish champion": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "449": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -10833,6 +10856,7 @@
             }
         },
         "9568": {
+            "type": "national",
             "seasons": [
                 2016,
                 2017,
@@ -10889,6 +10913,7 @@
             }
         },
         "12381": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -10943,6 +10968,7 @@
             }
         },
         "22586": {
+            "type": "national",
             "seasons": [
                 2015
             ],
@@ -10991,6 +11017,7 @@
             }
         },
         "22585": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -11047,24 +11074,24 @@
     },
     "career": {
         "club": {
-            "matches": 19,
-            "minutes": 810,
+            "matches": 548,
+            "minutes": 30559,
             "goals": 0,
-            "assists": 0,
-            "goal_contributions": 0,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 1
-        },
-        "national": {
-            "matches": 639,
-            "minutes": 34038,
-            "goals": 0,
-            "assists": 4,
-            "goal_contributions": 4,
+            "assists": 3,
+            "goal_contributions": 3,
             "team_titles": 5,
             "individual_titles": 0,
-            "season_count": 12
+            "season_count": 13
+        },
+        "national": {
+            "matches": 111,
+            "minutes": 4379,
+            "goals": 0,
+            "assists": 1,
+            "goal_contributions": 1,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 11
         }
     }
 }

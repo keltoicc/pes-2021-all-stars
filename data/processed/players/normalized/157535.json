@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Andreas Bouchalakis",
         "short_name": "A. Bouchalakis",
+        "dateOfBirth": "1993-04-05",
+        "placeOfBirth": "Heraklion",
         "nation_1": "Greece",
         "nation_2": "",
         "height": 1.86,
@@ -14,6 +17,22 @@
         "prime_date": "2022-06-09"
     },
     "matches": [
+        {
+            "game_id": "4884159",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "653",
+            "opponent_id": "2441",
+            "position": "",
+            "minutes": 34,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4850136",
             "season": 2025,
@@ -2540,7 +2559,7 @@
             "assists": 0,
             "goals_conceded": 1,
             "participation": "played",
-            "club_points": 0
+            "club_points": 3
         },
         {
             "game_id": "3958520",
@@ -12997,6 +13016,13 @@
             "club_id": 683
         },
         {
+            "title": "Greek Super Cup winner",
+            "season": "2027",
+            "season_id": 2026,
+            "club_name": "OFI Crete",
+            "club_id": 653
+        },
+        {
             "title": "Champions League participant",
             "season": "20/21",
             "season_id": 2020,
@@ -13068,7 +13094,57 @@
         }
     ],
     "clubs": {
+        "653": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 1,
+                "participations": 1,
+                "minutes": 34,
+                "starts": 0,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 1,
+                "points": 3,
+                "clean_sheets": 0,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "goal_matches": 1,
+                "assist_matches": 1,
+                "goal_contributions": 0
+            },
+            "positions": {},
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 3.0,
+                "minutes_per_match": 34.0,
+                "win_rate": 1.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": ""
+            },
+            "competitions": {
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 34,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Greek Super Cup winner": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "6418": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -13130,6 +13206,7 @@
             }
         },
         "44": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024
@@ -13187,6 +13264,7 @@
             }
         },
         "3378": {
+            "type": "national",
             "seasons": [
                 2016,
                 2018,
@@ -13205,11 +13283,11 @@
                 "goals": 1,
                 "assists": 0,
                 "goals_conceded": 29,
-                "points": 104,
+                "points": 107,
                 "clean_sheets": 42,
-                "wins": 30,
+                "wins": 31,
                 "draws": 14,
-                "losses": 21,
+                "losses": 20,
                 "goal_matches": 64,
                 "assist_matches": 65,
                 "goal_contributions": 1
@@ -13221,9 +13299,9 @@
             },
             "derived": {
                 "season_count": 7,
-                "points_per_match": 1.6,
+                "points_per_match": 1.646,
                 "minutes_per_match": 40.6,
-                "win_rate": 0.4615,
+                "win_rate": 0.4769,
                 "goals_per_90": 0.034,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.034,
@@ -13249,6 +13327,7 @@
             }
         },
         "683": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -13329,6 +13408,7 @@
             }
         },
         "2293": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -13377,6 +13457,7 @@
             }
         },
         "703": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -13439,6 +13520,7 @@
             }
         },
         "9317": {
+            "type": "national",
             "seasons": [
                 2013
             ],
@@ -13494,6 +13576,7 @@
             }
         },
         "5220": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012,
@@ -13561,6 +13644,7 @@
             }
         },
         "39436": {
+            "type": "national",
             "seasons": [
                 2012
             ],
@@ -13616,6 +13700,7 @@
             }
         },
         "22246": {
+            "type": "national",
             "seasons": [
                 2011
             ],
@@ -13674,6 +13759,7 @@
             }
         },
         "19326": {
+            "type": "club",
             "seasons": [
                 2010
             ],
@@ -13713,6 +13799,7 @@
             }
         },
         "31591": {
+            "type": "national",
             "seasons": [
                 2010
             ],
@@ -13761,24 +13848,24 @@
     },
     "career": {
         "club": {
-            "matches": 298,
-            "minutes": 11830,
-            "goals": 12,
-            "assists": 6,
-            "goal_contributions": 18,
-            "team_titles": 0,
+            "matches": 713,
+            "minutes": 26731,
+            "goals": 26,
+            "assists": 22,
+            "goal_contributions": 48,
+            "team_titles": 9,
             "individual_titles": 1,
-            "season_count": 9
+            "season_count": 17
         },
         "national": {
-            "matches": 508,
-            "minutes": 18800,
-            "goals": 17,
-            "assists": 16,
-            "goal_contributions": 33,
-            "team_titles": 8,
+            "matches": 94,
+            "minutes": 3933,
+            "goals": 3,
+            "assists": 0,
+            "goal_contributions": 3,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 15
+            "season_count": 11
         }
     }
 }

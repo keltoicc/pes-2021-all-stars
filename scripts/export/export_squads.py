@@ -4,7 +4,7 @@ import yaml
 import re
 import sys
 
-from publisher import publish_directory
+from .publisher import publish_directory
 
 sys.path.append(str(Path(__file__).parent))
 

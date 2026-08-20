@@ -5,7 +5,7 @@ import re
 import sys
 import csv
 
-from publisher import publish_directory
+from .publisher import publish_directory
 
 sys.path.append(str(Path(__file__).parent))
 
@@ -34,7 +34,7 @@ def get_country_id(country, team_name):
     if country == "Czechia":
         country = "Czech Republic"
 
-    if country == "United States of America":
+    if country == "United States of America" or country == "United States":
         country = "USA"
 
     if country == "South Korea":
@@ -48,6 +48,18 @@ def get_country_id(country, team_name):
 
     if country == "Serbia & Montenegro":
         country = "Serbia and Montenegro"
+
+    if country == "Cape Verde":
+        country = "Cabo Verde"
+
+    if country == "Guinea-Bissau":
+        country = "Guinea Bissau"
+
+    if country == "DR Congo":
+        country = "Congo DR"
+
+    if country == "Türkiye":
+        country = "Turkey"
     
     countries_dir = Path(f"config/evowebid")
 
@@ -76,7 +88,7 @@ def get_team_data(team):
 
         "country": get_country_id(team['country'], team['name']),
 
-        "crest": f"/images/teams/{team['ID_pes']}.png",
+        "crest": f"images/teams/{team['ID_pes']}.png",
     }
 
     return data

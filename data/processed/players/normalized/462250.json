@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "João Félix",
         "short_name": "João Félix",
+        "dateOfBirth": "1999-11-10",
+        "placeOfBirth": "Viseu",
         "nation_1": "Portugal",
         "nation_2": "",
         "height": 1.79,
@@ -14,6 +17,38 @@
         "prime_date": "2021-01-05"
     },
     "matches": [
+        {
+            "game_id": "4971033",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "18544",
+            "opponent_id": "52358",
+            "position": "SS",
+            "minutes": 79,
+            "started": true,
+            "captain": false,
+            "goals": 2,
+            "assists": 1,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4976893",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "18544",
+            "opponent_id": "27221",
+            "position": "AMF",
+            "minutes": 66,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776702",
             "season": 2025,
@@ -9653,7 +9688,82 @@
         }
     ],
     "clubs": {
+        "18544": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 51,
+                "participations": 51,
+                "minutes": 3926,
+                "starts": 45,
+                "captain_matches": 0,
+                "goals": 29,
+                "assists": 20,
+                "goals_conceded": 35,
+                "points": 128,
+                "clean_sheets": 28,
+                "wins": 42,
+                "draws": 2,
+                "losses": 7,
+                "goal_matches": 31,
+                "assist_matches": 33,
+                "goal_contributions": 49
+            },
+            "positions": {
+                "SS": 43,
+                "AMF": 2,
+                "CF": 2
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 2.51,
+                "minutes_per_match": 77.0,
+                "win_rate": 0.8235,
+                "goals_per_90": 0.665,
+                "assists_per_90": 0.458,
+                "contributions_per_90": 1.123,
+                "primary_position": "SS"
+            },
+            "competitions": {
+                "Domestic Cup": {
+                    "matches": 3,
+                    "minutes": 173,
+                    "goals": 3,
+                    "assists": 2
+                },
+                "First Tier": {
+                    "matches": 35,
+                    "minutes": 2978,
+                    "goals": 21,
+                    "assists": 14
+                },
+                "International Cup": {
+                    "matches": 11,
+                    "minutes": 595,
+                    "goals": 4,
+                    "assists": 4
+                },
+                "Domestic Super Cup": {
+                    "matches": 2,
+                    "minutes": 180,
+                    "goals": 1,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Saudi Arabian champion": 1
+                },
+                "individual_titles": {
+                    "Player of the Year": 1
+                }
+            }
+        },
         "3300": {
+            "type": "national",
             "seasons": [
                 2018,
                 2020,
@@ -9721,79 +9831,8 @@
                 }
             }
         },
-        "18544": {
-            "seasons": [
-                2025
-            ],
-            "stats": {
-                "matches": 49,
-                "participations": 49,
-                "minutes": 3781,
-                "starts": 43,
-                "captain_matches": 0,
-                "goals": 26,
-                "assists": 19,
-                "goals_conceded": 34,
-                "points": 122,
-                "clean_sheets": 27,
-                "wins": 40,
-                "draws": 2,
-                "losses": 7,
-                "goal_matches": 31,
-                "assist_matches": 32,
-                "goal_contributions": 45
-            },
-            "positions": {
-                "SS": 42,
-                "CF": 2,
-                "AMF": 1
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 2.49,
-                "minutes_per_match": 77.2,
-                "win_rate": 0.8163,
-                "goals_per_90": 0.619,
-                "assists_per_90": 0.452,
-                "contributions_per_90": 1.071,
-                "primary_position": "SS"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 34,
-                    "minutes": 2912,
-                    "goals": 20,
-                    "assists": 14
-                },
-                "International Cup": {
-                    "matches": 11,
-                    "minutes": 595,
-                    "goals": 4,
-                    "assists": 4
-                },
-                "Domestic Cup": {
-                    "matches": 2,
-                    "minutes": 94,
-                    "goals": 1,
-                    "assists": 1
-                },
-                "Domestic Super Cup": {
-                    "matches": 2,
-                    "minutes": 180,
-                    "goals": 1,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Saudi Arabian champion": 1
-                },
-                "individual_titles": {
-                    "Player of the Year": 1
-                }
-            }
-        },
         "631": {
+            "type": "club",
             "seasons": [
                 2022,
                 2024
@@ -9867,6 +9906,7 @@
             }
         },
         "5": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -9928,6 +9968,7 @@
             }
         },
         "13": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -10004,6 +10045,7 @@
             }
         },
         "131": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -10072,6 +10114,7 @@
             }
         },
         "294": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -10146,6 +10189,7 @@
             }
         },
         "16374": {
+            "type": "national",
             "seasons": [
                 2017
             ],
@@ -10201,6 +10245,7 @@
             }
         },
         "10330": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017
@@ -10252,6 +10297,7 @@
             }
         },
         "16372": {
+            "type": "national",
             "seasons": [
                 2017
             ],
@@ -10300,6 +10346,7 @@
             }
         },
         "41582": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017
@@ -10345,6 +10392,7 @@
             }
         },
         "16371": {
+            "type": "national",
             "seasons": [
                 2016
             ],
@@ -10396,24 +10444,24 @@
     },
     "career": {
         "club": {
-            "matches": 65,
-            "minutes": 3078,
-            "goals": 16,
-            "assists": 6,
-            "goal_contributions": 22,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 2
+            "matches": 487,
+            "minutes": 23008,
+            "goals": 123,
+            "assists": 64,
+            "goal_contributions": 187,
+            "team_titles": 4,
+            "individual_titles": 2,
+            "season_count": 11
         },
         "national": {
-            "matches": 528,
-            "minutes": 23615,
-            "goals": 122,
-            "assists": 66,
-            "goal_contributions": 188,
-            "team_titles": 6,
-            "individual_titles": 3,
-            "season_count": 10
+            "matches": 108,
+            "minutes": 3830,
+            "goals": 18,
+            "assists": 9,
+            "goal_contributions": 27,
+            "team_titles": 2,
+            "individual_titles": 1,
+            "season_count": 9
         }
     }
 }

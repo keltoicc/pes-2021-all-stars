@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Petros Mantalos",
         "short_name": "P. Mantalos",
+        "dateOfBirth": "1991-08-31",
+        "placeOfBirth": "Komotini",
         "nation_1": "Greece",
         "nation_2": "",
         "height": 1.77,
@@ -14,6 +17,38 @@
         "prime_date": "2021-02-12"
     },
     "matches": [
+        {
+            "game_id": "5013624",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "2441",
+            "opponent_id": "156",
+            "position": "",
+            "minutes": 32,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4884159",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "2441",
+            "opponent_id": "653",
+            "position": "",
+            "minutes": 9,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4850093",
             "season": 2025,
@@ -3276,7 +3311,7 @@
             "assists": 0,
             "goals_conceded": 2,
             "participation": "played",
-            "club_points": 0
+            "club_points": 3
         },
         {
             "game_id": "3958520",
@@ -14203,6 +14238,13 @@
             "club_id": 2441
         },
         {
+            "title": "Greek Super Cup runner-up",
+            "season": "26/27",
+            "season_id": 2026,
+            "club_name": "AEK Athens",
+            "club_id": 2441
+        },
+        {
             "title": "Champions League participant",
             "season": "18/19",
             "season_id": 2018,
@@ -14240,6 +14282,7 @@
     ],
     "clubs": {
         "2441": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -14252,24 +14295,25 @@
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 565,
-                "participations": 565,
-                "minutes": 28449,
+                "matches": 567,
+                "participations": 567,
+                "minutes": 28490,
                 "starts": 311,
                 "captain_matches": 236,
                 "goals": 69,
                 "assists": 111,
                 "goals_conceded": 282,
-                "points": 1082,
-                "clean_sheets": 380,
+                "points": 1083,
+                "clean_sheets": 382,
                 "wins": 319,
-                "draws": 125,
-                "losses": 121,
-                "goal_matches": 502,
-                "assist_matches": 469,
+                "draws": 126,
+                "losses": 122,
+                "goal_matches": 504,
+                "assist_matches": 471,
                 "goal_contributions": 180
             },
             "positions": {
@@ -14283,27 +14327,33 @@
                 "LW": 15
             },
             "derived": {
-                "season_count": 12,
-                "points_per_match": 1.915,
-                "minutes_per_match": 50.4,
-                "win_rate": 0.5646,
+                "season_count": 13,
+                "points_per_match": 1.91,
+                "minutes_per_match": 50.2,
+                "win_rate": 0.5626,
                 "goals_per_90": 0.218,
                 "assists_per_90": 0.351,
                 "contributions_per_90": 0.569,
                 "primary_position": "AMF"
             },
             "competitions": {
+                "International Cup": {
+                    "matches": 69,
+                    "minutes": 3921,
+                    "goals": 7,
+                    "assists": 7
+                },
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 9,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Play-Offs": {
                     "matches": 84,
                     "minutes": 3711,
                     "goals": 5,
                     "assists": 14
-                },
-                "International Cup": {
-                    "matches": 68,
-                    "minutes": 3889,
-                    "goals": 7,
-                    "assists": 7
                 },
                 "First Tier": {
                     "matches": 302,
@@ -14335,6 +14385,7 @@
             }
         },
         "3378": {
+            "type": "national",
             "seasons": [
                 2014,
                 2015,
@@ -14356,11 +14407,11 @@
                 "goals": 7,
                 "assists": 9,
                 "goals_conceded": 33,
-                "points": 167,
+                "points": 170,
                 "clean_sheets": 84,
-                "wins": 48,
+                "wins": 49,
                 "draws": 23,
-                "losses": 41,
+                "losses": 40,
                 "goal_matches": 105,
                 "assist_matches": 103,
                 "goal_contributions": 16
@@ -14375,9 +14426,9 @@
             },
             "derived": {
                 "season_count": 10,
-                "points_per_match": 1.491,
+                "points_per_match": 1.518,
                 "minutes_per_match": 39.6,
-                "win_rate": 0.4286,
+                "win_rate": 0.4375,
                 "goals_per_90": 0.142,
                 "assists_per_90": 0.183,
                 "contributions_per_90": 0.325,
@@ -14403,6 +14454,7 @@
             }
         },
         "128": {
+            "type": "club",
             "seasons": [
                 2009,
                 2010,
@@ -14475,6 +14527,7 @@
             }
         },
         "9317": {
+            "type": "national",
             "seasons": [
                 2011,
                 2012
@@ -14530,6 +14583,7 @@
             }
         },
         "14790": {
+            "type": "club",
             "seasons": [
                 2009,
                 2010
@@ -14572,6 +14626,7 @@
             }
         },
         "22246": {
+            "type": "national",
             "seasons": [
                 2009
             ],
@@ -14628,24 +14683,24 @@
     },
     "career": {
         "club": {
-            "matches": 13,
-            "minutes": 596,
-            "goals": 3,
-            "assists": 0,
-            "goal_contributions": 3,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 2
-        },
-        "national": {
-            "matches": 871,
-            "minutes": 39780,
-            "goals": 95,
-            "assists": 129,
-            "goal_contributions": 224,
+            "matches": 752,
+            "minutes": 34959,
+            "goals": 87,
+            "assists": 119,
+            "goal_contributions": 206,
             "team_titles": 5,
             "individual_titles": 1,
-            "season_count": 17
+            "season_count": 18
+        },
+        "national": {
+            "matches": 134,
+            "minutes": 5458,
+            "goals": 11,
+            "assists": 10,
+            "goal_contributions": 21,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 13
         }
     }
 }

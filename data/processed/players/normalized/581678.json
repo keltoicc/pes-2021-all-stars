@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Jude Bellingham",
         "short_name": "J. Bellingham",
+        "dateOfBirth": "2003-06-29",
+        "placeOfBirth": "Stourbridge",
         "nation_1": "England",
         "nation_2": "Ireland",
         "height": 1.86,
@@ -14,6 +17,54 @@
         "prime_date": "2025-06-09"
     },
     "matches": [
+        {
+            "game_id": "4776709",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3299",
+            "opponent_id": "3377",
+            "position": "AMF",
+            "minutes": 11,
+            "started": false,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4776708",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3299",
+            "opponent_id": "3437",
+            "position": "AMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4776706",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3299",
+            "opponent_id": "3440",
+            "position": "AMF",
+            "minutes": 111,
+            "started": true,
+            "captain": false,
+            "goals": 2,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776698",
             "season": 2025,
@@ -8076,6 +8127,20 @@
             "club_id": 418
         },
         {
+            "title": "VDV-Player of the season",
+            "season": "22/23",
+            "season_id": null,
+            "club_name": null,
+            "club_id": null
+        },
+        {
+            "title": "VDV-Newcomer of the season",
+            "season": "20/21",
+            "season_id": null,
+            "club_name": null,
+            "club_id": null
+        },
+        {
             "title": "Champions League participant",
             "season": "25/26",
             "season_id": 2025,
@@ -8153,20 +8218,6 @@
             "club_id": null
         },
         {
-            "title": "VDV-Player of the season",
-            "season": "22/23",
-            "season_id": null,
-            "club_name": null,
-            "club_id": null
-        },
-        {
-            "title": "VDV-Newcomer of the season",
-            "season": "20/21",
-            "season_id": null,
-            "club_name": null,
-            "club_id": null
-        },
-        {
             "title": "Player of the Year",
             "season": "22/23",
             "season_id": 2022,
@@ -8176,6 +8227,7 @@
     ],
     "clubs": {
         "3299": {
+            "type": "national",
             "seasons": [
                 2020,
                 2021,
@@ -8185,44 +8237,44 @@
                 2025
             ],
             "stats": {
-                "matches": 81,
-                "participations": 81,
-                "minutes": 3818,
-                "starts": 41,
+                "matches": 84,
+                "participations": 84,
+                "minutes": 4030,
+                "starts": 43,
                 "captain_matches": 0,
-                "goals": 10,
+                "goals": 13,
                 "assists": 11,
-                "goals_conceded": 31,
-                "points": 179,
+                "goals_conceded": 35,
+                "points": 185,
                 "clean_sheets": 59,
-                "wins": 55,
+                "wins": 57,
                 "draws": 14,
-                "losses": 12,
-                "goal_matches": 72,
-                "assist_matches": 73,
-                "goal_contributions": 21
+                "losses": 13,
+                "goal_matches": 73,
+                "assist_matches": 76,
+                "goal_contributions": 24
             },
             "positions": {
-                "AMF": 15,
+                "AMF": 18,
                 "CMF": 32,
                 "CF": 1,
                 "DMF": 2
             },
             "derived": {
                 "season_count": 6,
-                "points_per_match": 2.21,
-                "minutes_per_match": 47.1,
-                "win_rate": 0.679,
-                "goals_per_90": 0.236,
-                "assists_per_90": 0.259,
-                "contributions_per_90": 0.495,
+                "points_per_match": 2.202,
+                "minutes_per_match": 48.0,
+                "win_rate": 0.6786,
+                "goals_per_90": 0.29,
+                "assists_per_90": 0.246,
+                "contributions_per_90": 0.536,
                 "primary_position": "CMF"
             },
             "competitions": {
                 "National Team": {
-                    "matches": 55,
-                    "minutes": 2917,
-                    "goals": 10,
+                    "matches": 58,
+                    "minutes": 3129,
+                    "goals": 13,
                     "assists": 8
                 },
                 "National team's qualifiers": {
@@ -8240,6 +8292,7 @@
             }
         },
         "418": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
@@ -8325,6 +8378,7 @@
             }
         },
         "16": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -8401,6 +8455,7 @@
             }
         },
         "9565": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -8449,6 +8504,7 @@
             }
         },
         "337": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -8512,6 +8568,7 @@
             }
         },
         "23260": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -8561,6 +8618,7 @@
             }
         },
         "30322": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -8609,6 +8667,7 @@
             }
         },
         "6938": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -8650,6 +8709,7 @@
             }
         },
         "53638": {
+            "type": "national",
             "seasons": [
                 2016,
                 2017
@@ -8702,23 +8762,23 @@
     },
     "career": {
         "club": {
-            "matches": 52,
-            "minutes": 3034,
-            "goals": 4,
-            "assists": 2,
-            "goal_contributions": 6,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 2
+            "matches": 374,
+            "minutes": 24365,
+            "goals": 74,
+            "assists": 60,
+            "goal_contributions": 134,
+            "team_titles": 6,
+            "individual_titles": 1,
+            "season_count": 8
         },
         "national": {
-            "matches": 446,
-            "minutes": 26882,
-            "goals": 87,
-            "assists": 72,
-            "goal_contributions": 159,
-            "team_titles": 6,
-            "individual_titles": 2,
+            "matches": 127,
+            "minutes": 5763,
+            "goals": 20,
+            "assists": 14,
+            "goal_contributions": 34,
+            "team_titles": 0,
+            "individual_titles": 1,
             "season_count": 10
         }
     }

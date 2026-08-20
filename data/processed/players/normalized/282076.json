@@ -1,10 +1,13 @@
 {
     "player": {
+        "name": "Ianis Hagi",
         "short_name": "Ianis Hagi",
+        "dateOfBirth": "1998-10-22",
+        "placeOfBirth": "İstanbul",
         "nation_1": "Romania",
         "nation_2": "Türkiye",
         "height": 1.82,
-        "foot": null,
+        "foot": "Both",
         "position_group": "MIDFIELDER",
         "position_1": "AMF",
         "position_2": "RW",
@@ -14,6 +17,22 @@
         "prime_date": "2022-12-13"
     },
     "matches": [
+        {
+            "game_id": "4932838",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "11282",
+            "opponent_id": "2832",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "injured",
+            "club_points": 1
+        },
         {
             "game_id": "4846677",
             "season": 2025,
@@ -11652,7 +11671,64 @@
         }
     ],
     "clubs": {
+        "11282": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 39,
+                "participations": 39,
+                "minutes": 1654,
+                "starts": 19,
+                "captain_matches": 0,
+                "goals": 5,
+                "assists": 2,
+                "goals_conceded": 21,
+                "points": 47,
+                "clean_sheets": 25,
+                "wins": 10,
+                "draws": 17,
+                "losses": 12,
+                "goal_matches": 35,
+                "assist_matches": 37,
+                "goal_contributions": 7
+            },
+            "positions": {
+                "AMF": 30
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 1.205,
+                "minutes_per_match": 42.4,
+                "win_rate": 0.2564,
+                "goals_per_90": 0.272,
+                "assists_per_90": 0.109,
+                "contributions_per_90": 0.381,
+                "primary_position": "AMF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 32,
+                    "minutes": 1404,
+                    "goals": 3,
+                    "assists": 2
+                },
+                "Domestic Cup": {
+                    "matches": 7,
+                    "minutes": 250,
+                    "goals": 2,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3447": {
+            "type": "national",
             "seasons": [
                 2018,
                 2019,
@@ -11716,61 +11792,8 @@
                 "individual_titles": {}
             }
         },
-        "11282": {
-            "seasons": [
-                2025
-            ],
-            "stats": {
-                "matches": 38,
-                "participations": 38,
-                "minutes": 1654,
-                "starts": 19,
-                "captain_matches": 0,
-                "goals": 5,
-                "assists": 2,
-                "goals_conceded": 21,
-                "points": 46,
-                "clean_sheets": 24,
-                "wins": 10,
-                "draws": 16,
-                "losses": 12,
-                "goal_matches": 34,
-                "assist_matches": 36,
-                "goal_contributions": 7
-            },
-            "positions": {
-                "AMF": 30
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 1.211,
-                "minutes_per_match": 43.5,
-                "win_rate": 0.2632,
-                "goals_per_90": 0.272,
-                "assists_per_90": 0.109,
-                "contributions_per_90": 0.381,
-                "primary_position": "AMF"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 31,
-                    "minutes": 1404,
-                    "goals": 3,
-                    "assists": 2
-                },
-                "Domestic Cup": {
-                    "matches": 7,
-                    "minutes": 250,
-                    "goals": 2,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "124": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -11860,6 +11883,7 @@
             }
         },
         "12573": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -11908,6 +11932,7 @@
             }
         },
         "1108": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -11963,6 +11988,7 @@
             }
         },
         "16864": {
+            "type": "national",
             "seasons": [
                 2016,
                 2017,
@@ -12027,6 +12053,7 @@
             }
         },
         "1184": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -12098,6 +12125,7 @@
             }
         },
         "29831": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -12186,6 +12214,7 @@
             }
         },
         "430": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017
@@ -12245,6 +12274,7 @@
             }
         },
         "8505": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017
@@ -12289,6 +12319,7 @@
             }
         },
         "21428": {
+            "type": "national",
             "seasons": [
                 2016
             ],
@@ -12337,6 +12368,7 @@
             }
         },
         "37515": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -12385,6 +12417,7 @@
             }
         },
         "27851": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -12442,23 +12475,23 @@
     },
     "career": {
         "club": {
-            "matches": 103,
-            "minutes": 4361,
-            "goals": 15,
-            "assists": 7,
-            "goal_contributions": 22,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 5
-        },
-        "national": {
-            "matches": 618,
-            "minutes": 19748,
+            "matches": 601,
+            "minutes": 19462,
             "goals": 62,
-            "assists": 63,
-            "goal_contributions": 125,
+            "assists": 53,
+            "goal_contributions": 115,
             "team_titles": 6,
             "individual_titles": 1,
+            "season_count": 13
+        },
+        "national": {
+            "matches": 121,
+            "minutes": 4647,
+            "goals": 15,
+            "assists": 17,
+            "goal_contributions": 32,
+            "team_titles": 0,
+            "individual_titles": 0,
             "season_count": 12
         }
     }

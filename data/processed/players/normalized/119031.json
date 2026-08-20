@@ -1,19 +1,38 @@
 {
     "player": {
+        "name": "Kaan Ayhan",
         "short_name": "Kaan Ayhan",
+        "dateOfBirth": "1994-11-10",
+        "placeOfBirth": "Gelsenkirchen",
         "nation_1": "Türkiye",
         "nation_2": "Germany",
         "height": 1.85,
         "foot": "Right",
-        "position_group": "MIDFIELDER",
-        "position_1": "DMF",
-        "position_2": "CB",
+        "position_group": "DEFENDER",
+        "position_1": "CB",
+        "position_2": "DMF",
         "position_3": "RB",
         "former_clubs": "FC Schalke 04 (1999-2013)",
         "market_value": 9000000,
         "prime_date": "2019-12-17"
     },
     "matches": [
+        {
+            "game_id": "4932844",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "141",
+            "opponent_id": "37951",
+            "position": "CF",
+            "minutes": 1,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4868899",
             "season": 2025,
@@ -13964,7 +13983,88 @@
         }
     ],
     "clubs": {
+        "141": {
+            "type": "club",
+            "seasons": [
+                2022,
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 182,
+                "participations": 182,
+                "minutes": 6441,
+                "starts": 69,
+                "captain_matches": 4,
+                "goals": 4,
+                "assists": 7,
+                "goals_conceded": 76,
+                "points": 407,
+                "clean_sheets": 133,
+                "wins": 127,
+                "draws": 26,
+                "losses": 29,
+                "goal_matches": 178,
+                "assist_matches": 175,
+                "goal_contributions": 11
+            },
+            "positions": {
+                "CF": 1,
+                "DMF": 46,
+                "CMF": 1,
+                "CB": 30,
+                "RB": 46,
+                "LB": 4
+            },
+            "derived": {
+                "season_count": 5,
+                "points_per_match": 2.236,
+                "minutes_per_match": 35.4,
+                "win_rate": 0.6978,
+                "goals_per_90": 0.056,
+                "assists_per_90": 0.098,
+                "contributions_per_90": 0.154,
+                "primary_position": "DMF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 125,
+                    "minutes": 4245,
+                    "goals": 3,
+                    "assists": 7
+                },
+                "Domestic Cup": {
+                    "matches": 15,
+                    "minutes": 755,
+                    "goals": 1,
+                    "assists": 0
+                },
+                "International Cup": {
+                    "matches": 38,
+                    "minutes": 1327,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Super Cup": {
+                    "matches": 4,
+                    "minutes": 114,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Turkish champion": 4,
+                    "Turkish cup winner": 1,
+                    "Turkish Super Cup winner": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3381": {
+            "type": "national",
             "seasons": [
                 2014,
                 2015,
@@ -14030,84 +14130,8 @@
                 "individual_titles": {}
             }
         },
-        "141": {
-            "seasons": [
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 181,
-                "participations": 181,
-                "minutes": 6440,
-                "starts": 69,
-                "captain_matches": 4,
-                "goals": 4,
-                "assists": 7,
-                "goals_conceded": 76,
-                "points": 406,
-                "clean_sheets": 132,
-                "wins": 127,
-                "draws": 25,
-                "losses": 29,
-                "goal_matches": 177,
-                "assist_matches": 174,
-                "goal_contributions": 11
-            },
-            "positions": {
-                "DMF": 46,
-                "CMF": 1,
-                "CB": 30,
-                "RB": 46,
-                "LB": 4
-            },
-            "derived": {
-                "season_count": 4,
-                "points_per_match": 2.243,
-                "minutes_per_match": 35.6,
-                "win_rate": 0.7017,
-                "goals_per_90": 0.056,
-                "assists_per_90": 0.098,
-                "contributions_per_90": 0.154,
-                "primary_position": "DMF"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 124,
-                    "minutes": 4244,
-                    "goals": 3,
-                    "assists": 7
-                },
-                "Domestic Cup": {
-                    "matches": 15,
-                    "minutes": 755,
-                    "goals": 1,
-                    "assists": 0
-                },
-                "International Cup": {
-                    "matches": 38,
-                    "minutes": 1327,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Domestic Super Cup": {
-                    "matches": 4,
-                    "minutes": 114,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Turkish champion": 4,
-                    "Turkish cup winner": 1,
-                    "Turkish Super Cup winner": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "6574": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -14167,6 +14191,7 @@
             }
         },
         "38": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -14235,6 +14260,7 @@
             }
         },
         "33": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -14302,6 +14328,7 @@
             }
         },
         "24": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -14356,6 +14383,7 @@
             }
         },
         "9568": {
+            "type": "national",
             "seasons": [
                 2013,
                 2014,
@@ -14414,6 +14442,7 @@
             }
         },
         "34": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -14463,6 +14492,7 @@
             }
         },
         "1463": {
+            "type": "club",
             "seasons": [
                 2010,
                 2011,
@@ -14517,6 +14547,7 @@
             }
         },
         "9067": {
+            "type": "national",
             "seasons": [
                 2011
             ],
@@ -14565,6 +14596,7 @@
             }
         },
         "17662": {
+            "type": "national",
             "seasons": [
                 2010
             ],
@@ -14627,6 +14659,7 @@
             }
         },
         "21061": {
+            "type": "club",
             "seasons": [
                 2009,
                 2010
@@ -14667,6 +14700,7 @@
             }
         },
         "17368": {
+            "type": "national",
             "seasons": [
                 2009
             ],
@@ -14713,6 +14747,7 @@
             }
         },
         "22462": {
+            "type": "national",
             "seasons": [
                 2009
             ],
@@ -14761,24 +14796,24 @@
     },
     "career": {
         "club": {
-            "matches": 386,
-            "minutes": 21815,
-            "goals": 49,
-            "assists": 31,
-            "goal_contributions": 80,
-            "team_titles": 4,
+            "matches": 691,
+            "minutes": 30622,
+            "goals": 54,
+            "assists": 40,
+            "goal_contributions": 94,
+            "team_titles": 10,
             "individual_titles": 0,
-            "season_count": 13
+            "season_count": 18
         },
         "national": {
-            "matches": 476,
-            "minutes": 15744,
-            "goals": 15,
-            "assists": 13,
-            "goal_contributions": 28,
-            "team_titles": 6,
+            "matches": 172,
+            "minutes": 6938,
+            "goals": 10,
+            "assists": 4,
+            "goal_contributions": 14,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 16
+            "season_count": 15
         }
     }
 }

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Gianluigi Donnarumma",
         "short_name": "G. Donnarumma",
+        "dateOfBirth": "1999-02-25",
+        "placeOfBirth": "Castellammare di Stabia",
         "nation_1": "Italy",
         "nation_2": "",
         "height": 1.96,
@@ -9,11 +12,27 @@
         "position_1": "GK",
         "position_2": "",
         "position_3": "",
-        "former_clubs": "Club Napoli (2003-2013), AC Milan (2013-2015)",
+        "former_clubs": "Club Napoli (2003-13)",
         "market_value": 65000000,
         "prime_date": "2021-12-16"
     },
     "matches": [
+        {
+            "game_id": "4942122",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "281",
+            "opponent_id": "11",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4862438",
             "season": 2025,
@@ -12468,7 +12487,85 @@
         }
     ],
     "clubs": {
+        "281": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 58,
+                "participations": 58,
+                "minutes": 3960,
+                "starts": 44,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 44,
+                "points": 127,
+                "clean_sheets": 32,
+                "wins": 39,
+                "draws": 10,
+                "losses": 9,
+                "goal_matches": 58,
+                "assist_matches": 58,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "GK": 44
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 2.19,
+                "minutes_per_match": 68.3,
+                "win_rate": 0.6724,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "GK"
+            },
+            "competitions": {
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "First Tier": {
+                    "matches": 35,
+                    "minutes": 3060,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 6,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "League Cup": {
+                    "matches": 6,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "International Cup": {
+                    "matches": 10,
+                    "minutes": 810,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "English FA Cup winner": 1,
+                    "English League Cup winner": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3376": {
+            "type": "national",
             "seasons": [
                 2016,
                 2017,
@@ -12534,76 +12631,8 @@
                 }
             }
         },
-        "281": {
-            "seasons": [
-                2025
-            ],
-            "stats": {
-                "matches": 57,
-                "participations": 57,
-                "minutes": 3870,
-                "starts": 43,
-                "captain_matches": 0,
-                "goals": 0,
-                "assists": 0,
-                "goals_conceded": 41,
-                "points": 127,
-                "clean_sheets": 32,
-                "wins": 39,
-                "draws": 10,
-                "losses": 8,
-                "goal_matches": 57,
-                "assist_matches": 57,
-                "goal_contributions": 0
-            },
-            "positions": {
-                "GK": 43
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 2.228,
-                "minutes_per_match": 67.9,
-                "win_rate": 0.6842,
-                "goals_per_90": 0.0,
-                "assists_per_90": 0.0,
-                "contributions_per_90": 0.0,
-                "primary_position": "GK"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 35,
-                    "minutes": 3060,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Domestic Cup": {
-                    "matches": 6,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "League Cup": {
-                    "matches": 6,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "International Cup": {
-                    "matches": 10,
-                    "minutes": 810,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "English FA Cup winner": 1,
-                    "English League Cup winner": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "583": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -12687,6 +12716,7 @@
             }
         },
         "5": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -12763,6 +12793,7 @@
             }
         },
         "11947": {
+            "type": "national",
             "seasons": [
                 2015,
                 2016
@@ -12824,6 +12855,7 @@
             }
         },
         "49752": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -12872,6 +12904,7 @@
             }
         },
         "10958": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -12920,6 +12953,7 @@
             }
         },
         "23133": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -12980,6 +13014,7 @@
             }
         },
         "23243": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -13028,6 +13063,7 @@
             }
         },
         "28461": {
+            "type": "national",
             "seasons": [
                 2013
             ],
@@ -13078,24 +13114,24 @@
     },
     "career": {
         "club": {
-            "matches": 34,
-            "minutes": 854,
+            "matches": 616,
+            "minutes": 41659,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 1
+            "team_titles": 13,
+            "individual_titles": 2,
+            "season_count": 13
         },
         "national": {
-            "matches": 731,
-            "minutes": 49978,
+            "matches": 150,
+            "minutes": 9263,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
-            "team_titles": 14,
-            "individual_titles": 3,
-            "season_count": 13
+            "team_titles": 1,
+            "individual_titles": 1,
+            "season_count": 12
         }
     }
 }

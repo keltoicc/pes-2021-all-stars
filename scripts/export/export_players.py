@@ -5,7 +5,7 @@ import re
 import sys
 import csv
 
-from publisher import publish_directory
+from .publisher import publish_directory
 
 sys.path.append(str(Path(__file__).parent))
 
@@ -27,6 +27,36 @@ def get_country_id(country):
 
     if country == "Bosnia-Herzegovina":
         country = "Bosnia and Herzegovina"
+    
+    if country == "Czechia":
+        country = "Czech Republic"
+    
+    if country == "United States of America" or country == "United States":
+        country = "USA"
+    
+    if country == "South Korea":
+        country = "Republic of Korea"
+    
+    if country == "North Korea":
+        country = "Korea DPR"
+    
+    if country == "the Congo":
+        country = "Congo"
+    
+    if country == "Serbia & Montenegro":
+        country = "Serbia and Montenegro"
+
+    if country == "Cape Verde":
+        country = "Cabo Verde"
+
+    if country == "Guinea-Bissau":
+        country = "Guinea Bissau"
+
+    if country == "DR Congo":
+        country = "Congo DR"
+
+    if country == "Türkiye":
+        country = "Turkey"
     
     countries_dir = Path(f"config/evowebid")
 

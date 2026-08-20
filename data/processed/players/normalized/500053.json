@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Pavel Sulc",
         "short_name": "Pavel Sulc",
+        "dateOfBirth": "2000-12-29",
+        "placeOfBirth": "Karlovy Vary",
         "nation_1": "Czech Republic",
         "nation_2": "",
         "height": 1.77,
@@ -14,6 +17,54 @@
         "prime_date": "2026-06-01"
     },
     "matches": [
+        {
+            "game_id": "5011989",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "1041",
+            "opponent_id": "36",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 1
+        },
+        {
+            "game_id": "4973508",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "1041",
+            "opponent_id": "197",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4973498",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "1041",
+            "opponent_id": "197",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
         {
             "game_id": "4776647",
             "season": 2025,
@@ -8266,7 +8317,74 @@
         }
     ],
     "clubs": {
+        "1041": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 51,
+                "participations": 51,
+                "minutes": 2263,
+                "starts": 24,
+                "captain_matches": 0,
+                "goals": 14,
+                "assists": 7,
+                "goals_conceded": 25,
+                "points": 95,
+                "clean_sheets": 36,
+                "wins": 29,
+                "draws": 8,
+                "losses": 14,
+                "goal_matches": 41,
+                "assist_matches": 45,
+                "goal_contributions": 21
+            },
+            "positions": {
+                "AMF": 6,
+                "CF": 12,
+                "LW": 1,
+                "RW": 4,
+                "SS": 1
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 1.863,
+                "minutes_per_match": 44.4,
+                "win_rate": 0.5686,
+                "goals_per_90": 0.557,
+                "assists_per_90": 0.278,
+                "contributions_per_90": 0.835,
+                "primary_position": "CF"
+            },
+            "competitions": {
+                "International Cup": {
+                    "matches": 13,
+                    "minutes": 477,
+                    "goals": 1,
+                    "assists": 3
+                },
+                "First Tier": {
+                    "matches": 34,
+                    "minutes": 1569,
+                    "goals": 11,
+                    "assists": 3
+                },
+                "Domestic Cup": {
+                    "matches": 4,
+                    "minutes": 217,
+                    "goals": 2,
+                    "assists": 1
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3445": {
+            "type": "national",
             "seasons": [
                 2023,
                 2024,
@@ -8326,71 +8444,8 @@
                 }
             }
         },
-        "1041": {
-            "seasons": [
-                2025
-            ],
-            "stats": {
-                "matches": 48,
-                "participations": 48,
-                "minutes": 2263,
-                "starts": 24,
-                "captain_matches": 0,
-                "goals": 14,
-                "assists": 7,
-                "goals_conceded": 25,
-                "points": 91,
-                "clean_sheets": 33,
-                "wins": 28,
-                "draws": 7,
-                "losses": 13,
-                "goal_matches": 38,
-                "assist_matches": 42,
-                "goal_contributions": 21
-            },
-            "positions": {
-                "AMF": 6,
-                "CF": 12,
-                "LW": 1,
-                "RW": 4,
-                "SS": 1
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 1.896,
-                "minutes_per_match": 47.1,
-                "win_rate": 0.5833,
-                "goals_per_90": 0.557,
-                "assists_per_90": 0.278,
-                "contributions_per_90": 0.835,
-                "primary_position": "CF"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 34,
-                    "minutes": 1569,
-                    "goals": 11,
-                    "assists": 3
-                },
-                "International Cup": {
-                    "matches": 10,
-                    "minutes": 477,
-                    "goals": 1,
-                    "assists": 3
-                },
-                "Domestic Cup": {
-                    "matches": 4,
-                    "minutes": 217,
-                    "goals": 2,
-                    "assists": 1
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "941": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -8470,6 +8525,7 @@
             }
         },
         "8771": {
+            "type": "national",
             "seasons": [
                 2018,
                 2019,
@@ -8537,6 +8593,7 @@
             }
         },
         "1322": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -8601,6 +8658,7 @@
             }
         },
         "6488": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -8647,6 +8705,7 @@
             }
         },
         "8751": {
+            "type": "club",
             "seasons": [
                 2017,
                 2021
@@ -8700,6 +8759,7 @@
             }
         },
         "1321": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -8762,6 +8822,7 @@
             }
         },
         "479": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -8819,6 +8880,7 @@
             }
         },
         "22987": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -8868,6 +8930,7 @@
             }
         },
         "7975": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -8922,6 +8985,7 @@
             }
         },
         "21102": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -8977,6 +9041,7 @@
             }
         },
         "41589": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -9018,6 +9083,7 @@
             }
         },
         "13907": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018
@@ -9058,6 +9124,7 @@
             }
         },
         "25565": {
+            "type": "national",
             "seasons": [
                 2017
             ],
@@ -9106,6 +9173,7 @@
             }
         },
         "26035": {
+            "type": "national",
             "seasons": [
                 2016
             ],
@@ -9154,22 +9222,22 @@
     },
     "career": {
         "club": {
-            "matches": 190,
-            "minutes": 11024,
-            "goals": 37,
-            "assists": 19,
-            "goal_contributions": 56,
-            "team_titles": 0,
+            "matches": 426,
+            "minutes": 25350,
+            "goals": 98,
+            "assists": 57,
+            "goal_contributions": 155,
+            "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 6
+            "season_count": 10
         },
         "national": {
-            "matches": 322,
-            "minutes": 18178,
-            "goals": 73,
-            "assists": 44,
-            "goal_contributions": 117,
-            "team_titles": 1,
+            "matches": 89,
+            "minutes": 3852,
+            "goals": 12,
+            "assists": 6,
+            "goal_contributions": 18,
+            "team_titles": 0,
             "individual_titles": 1,
             "season_count": 10
         }

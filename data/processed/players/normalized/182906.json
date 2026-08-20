@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Mike Maignan",
         "short_name": "M. Maignan",
+        "dateOfBirth": "1995-07-03",
+        "placeOfBirth": "Cayenne",
         "nation_1": "France",
         "nation_2": null,
         "height": 1.91,
@@ -9,11 +12,43 @@
         "position_1": "GK",
         "position_2": "",
         "position_3": "",
-        "former_clubs": "Villiers le Bel JS (2003-2009), FC Paris Saint-Germain (2009-2015)",
+        "former_clubs": "FC Villiers-le-Bel (2003-2009), FC Paris Saint-Germain (2009-2015)",
         "market_value": 45000000,
         "prime_date": "2023-12-20"
     },
     "matches": [
+        {
+            "game_id": "4776709",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3377",
+            "opponent_id": "3299",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 6,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4776707",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3377",
+            "opponent_id": "3375",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4776703",
             "season": 2025,
@@ -14111,6 +14146,70 @@
             "club_points": 3
         },
         {
+            "game_id": "5006383",
+            "season": 2010,
+            "competition_type": "Play-Offs",
+            "club_id": "54295",
+            "opponent_id": "107692",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "5006375",
+            "season": 2010,
+            "competition_type": "Play-Offs",
+            "club_id": "54295",
+            "opponent_id": "67605",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "5006373",
+            "season": 2010,
+            "competition_type": "Play-Offs",
+            "club_id": "54295",
+            "opponent_id": "88222",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "5006372",
+            "season": 2010,
+            "competition_type": "Play-Offs",
+            "club_id": "54295",
+            "opponent_id": "107749",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
             "game_id": "3888654",
             "season": 2010,
             "competition_type": "National Team",
@@ -14369,6 +14468,7 @@
     ],
     "clubs": {
         "3377": {
+            "type": "national",
             "seasons": [
                 2018,
                 2020,
@@ -14379,31 +14479,31 @@
                 2025
             ],
             "stats": {
-                "matches": 94,
-                "participations": 94,
-                "minutes": 4110,
-                "starts": 45,
+                "matches": 96,
+                "participations": 96,
+                "minutes": 4290,
+                "starts": 47,
                 "captain_matches": 1,
                 "goals": 0,
                 "assists": 0,
-                "goals_conceded": 34,
+                "goals_conceded": 42,
                 "points": 207,
                 "clean_sheets": 72,
                 "wins": 64,
                 "draws": 15,
-                "losses": 15,
-                "goal_matches": 94,
-                "assist_matches": 94,
+                "losses": 17,
+                "goal_matches": 96,
+                "assist_matches": 96,
                 "goal_contributions": 0
             },
             "positions": {
-                "GK": 47
+                "GK": 49
             },
             "derived": {
                 "season_count": 7,
-                "points_per_match": 2.202,
-                "minutes_per_match": 43.7,
-                "win_rate": 0.6809,
+                "points_per_match": 2.156,
+                "minutes_per_match": 44.7,
+                "win_rate": 0.6667,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
@@ -14411,8 +14511,8 @@
             },
             "competitions": {
                 "National Team": {
-                    "matches": 64,
-                    "minutes": 3120,
+                    "matches": 66,
+                    "minutes": 3300,
                     "goals": 0,
                     "assists": 0
                 },
@@ -14433,6 +14533,7 @@
             }
         },
         "5": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -14508,6 +14609,7 @@
             }
         },
         "1082": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -14583,6 +14685,7 @@
             }
         },
         "12765": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016
@@ -14636,6 +14739,7 @@
             }
         },
         "9323": {
+            "type": "national",
             "seasons": [
                 2015,
                 2016
@@ -14691,6 +14795,7 @@
             }
         },
         "583": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -14765,6 +14870,7 @@
             }
         },
         "8512": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -14813,6 +14919,7 @@
             }
         },
         "41587": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -14854,6 +14961,7 @@
             }
         },
         "23658": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -14900,6 +15008,7 @@
             }
         },
         "23101": {
+            "type": "national",
             "seasons": [
                 2012,
                 2013
@@ -14955,6 +15064,7 @@
             }
         },
         "25250": {
+            "type": "national",
             "seasons": [
                 2012
             ],
@@ -15003,6 +15113,7 @@
             }
         },
         "10831": {
+            "type": "national",
             "seasons": [
                 2011
             ],
@@ -15062,7 +15173,55 @@
                 "individual_titles": {}
             }
         },
+        "54295": {
+            "type": "club",
+            "seasons": [
+                2010
+            ],
+            "stats": {
+                "matches": 4,
+                "participations": 4,
+                "minutes": 0,
+                "starts": 0,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 0,
+                "points": 9,
+                "clean_sheets": 4,
+                "wins": 3,
+                "draws": 0,
+                "losses": 1,
+                "goal_matches": 4,
+                "assist_matches": 4,
+                "goal_contributions": 0
+            },
+            "positions": {},
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 2.25,
+                "minutes_per_match": 0.0,
+                "win_rate": 0.75,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": ""
+            },
+            "competitions": {
+                "Play-Offs": {
+                    "matches": 4,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "10844": {
+            "type": "national",
             "seasons": [
                 2010
             ],
@@ -15113,24 +15272,24 @@
     },
     "career": {
         "club": {
-            "matches": 119,
-            "minutes": 5130,
-            "goals": 0,
-            "assists": 0,
-            "goal_contributions": 0,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 5
-        },
-        "national": {
-            "matches": 770,
-            "minutes": 40982,
+            "matches": 750,
+            "minutes": 39352,
             "goals": 0,
             "assists": 3,
             "goal_contributions": 3,
-            "team_titles": 4,
-            "individual_titles": 4,
-            "season_count": 16
+            "team_titles": 3,
+            "individual_titles": 2,
+            "season_count": 15
+        },
+        "national": {
+            "matches": 145,
+            "minutes": 6940,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 1,
+            "individual_titles": 2,
+            "season_count": 13
         }
     }
 }

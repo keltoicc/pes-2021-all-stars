@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Rubén Vargas",
         "short_name": "R. Vargas",
+        "dateOfBirth": "1998-08-05",
+        "placeOfBirth": "Adligenswil",
         "nation_1": "Switzerland",
         "nation_2": "Dominican Republic",
         "height": 1.79,
@@ -10,10 +13,26 @@
         "position_2": "RW",
         "position_3": "AMF",
         "former_clubs": "FC Adligenswil (-2008), FC Luzern (2008-2014), SC Kriens (2014-2016)",
-        "market_value": 13000000,
-        "prime_date": "2021-05-25"
+        "market_value": 15000000,
+        "prime_date": "2026-07-22"
     },
     "matches": [
+        {
+            "game_id": "4909448",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "368",
+            "opponent_id": "367",
+            "position": "",
+            "minutes": 20,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776705",
             "season": 2025,
@@ -8551,7 +8570,67 @@
         }
     ],
     "clubs": {
+        "368": {
+            "type": "club",
+            "seasons": [
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 62,
+                "participations": 62,
+                "minutes": 2318,
+                "starts": 29,
+                "captain_matches": 0,
+                "goals": 5,
+                "assists": 7,
+                "goals_conceded": 36,
+                "points": 71,
+                "clean_sheets": 39,
+                "wins": 19,
+                "draws": 14,
+                "losses": 29,
+                "goal_matches": 57,
+                "assist_matches": 56,
+                "goal_contributions": 12
+            },
+            "positions": {
+                "RW": 9,
+                "LW": 20,
+                "AMF": 2
+            },
+            "derived": {
+                "season_count": 3,
+                "points_per_match": 1.145,
+                "minutes_per_match": 37.4,
+                "win_rate": 0.3065,
+                "goals_per_90": 0.194,
+                "assists_per_90": 0.272,
+                "contributions_per_90": 0.466,
+                "primary_position": "LW"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 59,
+                    "minutes": 2308,
+                    "goals": 5,
+                    "assists": 7
+                },
+                "Domestic Cup": {
+                    "matches": 3,
+                    "minutes": 10,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3384": {
+            "type": "national",
             "seasons": [
                 2018,
                 2020,
@@ -8617,64 +8696,8 @@
                 "individual_titles": {}
             }
         },
-        "368": {
-            "seasons": [
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 61,
-                "participations": 61,
-                "minutes": 2298,
-                "starts": 29,
-                "captain_matches": 0,
-                "goals": 5,
-                "assists": 7,
-                "goals_conceded": 36,
-                "points": 68,
-                "clean_sheets": 38,
-                "wins": 18,
-                "draws": 14,
-                "losses": 29,
-                "goal_matches": 56,
-                "assist_matches": 55,
-                "goal_contributions": 12
-            },
-            "positions": {
-                "RW": 9,
-                "LW": 20,
-                "AMF": 2
-            },
-            "derived": {
-                "season_count": 2,
-                "points_per_match": 1.115,
-                "minutes_per_match": 37.7,
-                "win_rate": 0.2951,
-                "goals_per_90": 0.196,
-                "assists_per_90": 0.274,
-                "contributions_per_90": 0.47,
-                "primary_position": "LW"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 58,
-                    "minutes": 2288,
-                    "goals": 5,
-                    "assists": 7
-                },
-                "Domestic Cup": {
-                    "matches": 3,
-                    "minutes": 10,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "167": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -8740,6 +8763,7 @@
             }
         },
         "9534": {
+            "type": "national",
             "seasons": [
                 2017,
                 2018,
@@ -8798,6 +8822,7 @@
             }
         },
         "434": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018
@@ -8865,6 +8890,7 @@
             }
         },
         "16817": {
+            "type": "national",
             "seasons": [
                 2017,
                 2018
@@ -8915,6 +8941,7 @@
             }
         },
         "5494": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -8971,6 +8998,7 @@
             }
         },
         "14332": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -9014,6 +9042,7 @@
             }
         },
         "25022": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -9057,21 +9086,21 @@
     },
     "career": {
         "club": {
-            "matches": 344,
-            "minutes": 15358,
-            "goals": 46,
-            "assists": 27,
-            "goal_contributions": 73,
+            "matches": 430,
+            "minutes": 18878,
+            "goals": 58,
+            "assists": 40,
+            "goal_contributions": 98,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 11
+            "season_count": 13
         },
         "national": {
-            "matches": 188,
-            "minutes": 8154,
-            "goals": 29,
-            "assists": 25,
-            "goal_contributions": 54,
+            "matches": 103,
+            "minutes": 4654,
+            "goals": 17,
+            "assists": 12,
+            "goal_contributions": 29,
             "team_titles": 0,
             "individual_titles": 0,
             "season_count": 9

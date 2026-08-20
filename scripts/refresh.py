@@ -22,6 +22,9 @@ import process.D_players.parse_players as parse_players
 import build.D_players.build_player_rankings as build_player_rankings
 import build.D_players.obtain_players_per_team as obtain_players_per_team
 
+from export import export_teams
+from export import export_players
+
 #YML = "teams"
 #YML = "teams_debug"
 YML = "teams_to_add"
@@ -137,6 +140,21 @@ def obtain_players_by_team():
     except Exception as e:
         print(f"Error al obtener los jugadores: {e}")
 
+def export_to_web():
+    try:
+        print("-------------------------------------------------------------------")
+        print("Exportando información de equipos...")
+        print("-------------------------------------------------------------------")
+        export_teams.main(YML)
+
+        print("-------------------------------------------------------------------")
+        print("Exportando información de jugadores...")
+        print("-------------------------------------------------------------------")
+        export_players.main(YML)
+    
+    except Exception as e:
+        print(f"Error al obtener los jugadores: {e}")
+
 def main():
 
     # obtain_teams_by_competition()
@@ -146,6 +164,8 @@ def main():
     obtain_tactics_by_coach()
 
     obtain_players_by_team()
+
+    export_to_web()
 
 
 if __name__ == "__main__":

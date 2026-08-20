@@ -18,6 +18,54 @@
     },
     "matches": [
         {
+            "game_id": "4942122",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "11",
+            "opponent_id": "281",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4776710",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3375",
+            "opponent_id": "3437",
+            "position": "CMF",
+            "minutes": 45,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4776707",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3375",
+            "opponent_id": "3377",
+            "position": "CMF",
+            "minutes": 12,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
             "game_id": "4776704",
             "season": 2025,
             "competition_type": "National Team",
@@ -11748,9 +11796,23 @@
     ],
     "achievements": [
         {
+            "title": "World Cup winner",
+            "season": "2026",
+            "season_id": 2026,
+            "club_name": "Spain",
+            "club_id": 3375
+        },
+        {
             "title": "European champion",
             "season": "2024",
             "season_id": 2024,
+            "club_name": "Spain",
+            "club_id": 3375
+        },
+        {
+            "title": "World Cup participant",
+            "season": "2026",
+            "season_id": 2026,
             "club_name": "Spain",
             "club_id": 3375
         },
@@ -11781,6 +11843,13 @@
             "season_id": 2016,
             "club_name": "Borussia Dortmund",
             "club_id": 16
+        },
+        {
+            "title": "English Super Cup winner",
+            "season": "26/27",
+            "season_id": 2026,
+            "club_name": "Arsenal FC",
+            "club_id": 11
         },
         {
             "title": "Winner UEFA Nations League",
@@ -11896,93 +11965,29 @@
         }
     ],
     "clubs": {
-        "3375": {
-            "type": "national",
-            "seasons": [
-                2020,
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 87,
-                "participations": 87,
-                "minutes": 2243,
-                "starts": 22,
-                "captain_matches": 0,
-                "goals": 12,
-                "assists": 5,
-                "goals_conceded": 13,
-                "points": 192,
-                "clean_sheets": 77,
-                "wins": 58,
-                "draws": 18,
-                "losses": 11,
-                "goal_matches": 78,
-                "assist_matches": 82,
-                "goal_contributions": 17
-            },
-            "positions": {
-                "CMF": 39,
-                "AMF": 3,
-                "DMF": 2
-            },
-            "derived": {
-                "season_count": 6,
-                "points_per_match": 2.207,
-                "minutes_per_match": 25.8,
-                "win_rate": 0.6667,
-                "goals_per_90": 0.481,
-                "assists_per_90": 0.201,
-                "contributions_per_90": 0.682,
-                "primary_position": "CMF"
-            },
-            "competitions": {
-                "National Team": {
-                    "matches": 65,
-                    "minutes": 1354,
-                    "goals": 5,
-                    "assists": 1
-                },
-                "National team's qualifiers": {
-                    "matches": 22,
-                    "minutes": 889,
-                    "goals": 7,
-                    "assists": 4
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "European champion": 1,
-                    "Winner UEFA Nations League": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "11": {
             "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 119,
-                "participations": 119,
+                "matches": 120,
+                "participations": 120,
                 "minutes": 4540,
                 "starts": 49,
                 "captain_matches": 3,
                 "goals": 15,
                 "assists": 8,
                 "goals_conceded": 43,
-                "points": 251,
-                "clean_sheets": 83,
-                "wins": 75,
+                "points": 254,
+                "clean_sheets": 84,
+                "wins": 76,
                 "draws": 26,
                 "losses": 18,
-                "goal_matches": 106,
-                "assist_matches": 112,
+                "goal_matches": 107,
+                "assist_matches": 113,
                 "goal_contributions": 23
             },
             "positions": {
@@ -11992,16 +11997,22 @@
                 "CF": 23
             },
             "derived": {
-                "season_count": 2,
-                "points_per_match": 2.109,
-                "minutes_per_match": 38.2,
-                "win_rate": 0.6303,
+                "season_count": 3,
+                "points_per_match": 2.117,
+                "minutes_per_match": 37.8,
+                "win_rate": 0.6333,
                 "goals_per_90": 0.297,
                 "assists_per_90": 0.159,
                 "contributions_per_90": 0.456,
                 "primary_position": "CMF"
             },
             "competitions": {
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "International Cup": {
                     "matches": 29,
                     "minutes": 1332,
@@ -12029,7 +12040,74 @@
             },
             "awards": {
                 "team_titles": {
-                    "English Champion": 1
+                    "English Champion": 1,
+                    "English Super Cup winner": 1
+                },
+                "individual_titles": {}
+            }
+        },
+        "3375": {
+            "type": "national",
+            "seasons": [
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
+            "stats": {
+                "matches": 89,
+                "participations": 89,
+                "minutes": 2300,
+                "starts": 22,
+                "captain_matches": 0,
+                "goals": 12,
+                "assists": 5,
+                "goals_conceded": 13,
+                "points": 198,
+                "clean_sheets": 79,
+                "wins": 60,
+                "draws": 18,
+                "losses": 11,
+                "goal_matches": 80,
+                "assist_matches": 84,
+                "goal_contributions": 17
+            },
+            "positions": {
+                "CMF": 41,
+                "AMF": 3,
+                "DMF": 2
+            },
+            "derived": {
+                "season_count": 6,
+                "points_per_match": 2.225,
+                "minutes_per_match": 25.8,
+                "win_rate": 0.6742,
+                "goals_per_90": 0.47,
+                "assists_per_90": 0.196,
+                "contributions_per_90": 0.665,
+                "primary_position": "CMF"
+            },
+            "competitions": {
+                "National Team": {
+                    "matches": 67,
+                    "minutes": 1411,
+                    "goals": 5,
+                    "assists": 1
+                },
+                "National team's qualifiers": {
+                    "matches": 22,
+                    "minutes": 889,
+                    "goals": 7,
+                    "assists": 4
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "World Cup winner": 1,
+                    "European champion": 1,
+                    "Winner UEFA Nations League": 1
                 },
                 "individual_titles": {}
             }
@@ -12543,22 +12621,22 @@
     },
     "career": {
         "club": {
-            "matches": 595,
+            "matches": 596,
             "minutes": 30807,
             "goals": 51,
             "assists": 44,
             "goal_contributions": 95,
-            "team_titles": 3,
+            "team_titles": 4,
             "individual_titles": 0,
-            "season_count": 12
+            "season_count": 13
         },
         "national": {
-            "matches": 138,
-            "minutes": 4758,
+            "matches": 140,
+            "minutes": 4815,
             "goals": 18,
             "assists": 8,
             "goal_contributions": 26,
-            "team_titles": 4,
+            "team_titles": 5,
             "individual_titles": 0,
             "season_count": 11
         }

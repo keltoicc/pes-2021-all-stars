@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Declan Rice",
         "short_name": "Declan Rice",
+        "dateOfBirth": "1999-01-14",
+        "placeOfBirth": "London",
         "nation_1": "England",
         "nation_2": "Ireland",
         "height": 1.88,
@@ -8,12 +11,60 @@
         "position_group": "MIDFIELDER",
         "position_1": "CMF",
         "position_2": "DMF",
-        "position_3": "",
+        "position_3": "CB",
         "former_clubs": "Dickerage Lane Adventure Playground (2001-2006), Chelsea FC (2006-2013), West Ham United (2013-2017)",
         "market_value": 120000000,
         "prime_date": "2026-06-03"
     },
     "matches": [
+        {
+            "game_id": "4942122",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "11",
+            "opponent_id": "281",
+            "position": "DMF",
+            "minutes": 45,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4776709",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3299",
+            "opponent_id": "3377",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 1,
+            "assists": 1,
+            "goals_conceded": 4,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4776708",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3299",
+            "opponent_id": "3437",
+            "position": "CMF",
+            "minutes": 82,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4776706",
             "season": 2025,
@@ -10520,6 +10571,20 @@
             "club_id": 379
         },
         {
+            "title": "World Cup participant",
+            "season": "2026",
+            "season_id": 2026,
+            "club_name": "England",
+            "club_id": 3299
+        },
+        {
+            "title": "World Cup participant",
+            "season": "2022",
+            "season_id": 2022,
+            "club_name": "England",
+            "club_id": 3299
+        },
+        {
             "title": "Euro participant",
             "season": "2024",
             "season_id": 2024,
@@ -10534,16 +10599,16 @@
             "club_id": 3299
         },
         {
-            "title": "World Cup participant",
-            "season": "2022",
-            "season_id": 2022,
-            "club_name": "England",
-            "club_id": 3299
-        },
-        {
             "title": "English Champion",
             "season": "25/26",
             "season_id": 2025,
+            "club_name": "Arsenal FC",
+            "club_id": 11
+        },
+        {
+            "title": "English Super Cup winner",
+            "season": "26/27",
+            "season_id": 2026,
             "club_name": "Arsenal FC",
             "club_id": 11
         },
@@ -10565,6 +10630,13 @@
             "title": "Euro runner-up",
             "season": "2021",
             "season_id": 2021,
+            "club_name": "England",
+            "club_id": 3299
+        },
+        {
+            "title": "World Cup third place",
+            "season": "2026",
+            "season_id": 2026,
             "club_name": "England",
             "club_id": 3299
         },
@@ -10612,110 +10684,55 @@
         }
     ],
     "clubs": {
-        "3299": {
-            "seasons": [
-                2018,
-                2020,
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 97,
-                "participations": 97,
-                "minutes": 6270,
-                "starts": 73,
-                "captain_matches": 2,
-                "goals": 7,
-                "assists": 7,
-                "goals_conceded": 52,
-                "points": 216,
-                "clean_sheets": 60,
-                "wins": 67,
-                "draws": 15,
-                "losses": 15,
-                "goal_matches": 90,
-                "assist_matches": 91,
-                "goal_contributions": 14
-            },
-            "positions": {
-                "CMF": 14,
-                "DMF": 64
-            },
-            "derived": {
-                "season_count": 7,
-                "points_per_match": 2.227,
-                "minutes_per_match": 64.6,
-                "win_rate": 0.6907,
-                "goals_per_90": 0.1,
-                "assists_per_90": 0.1,
-                "contributions_per_90": 0.201,
-                "primary_position": "DMF"
-            },
-            "competitions": {
-                "National Team": {
-                    "matches": 63,
-                    "minutes": 4214,
-                    "goals": 4,
-                    "assists": 3
-                },
-                "National team's qualifiers": {
-                    "matches": 34,
-                    "minutes": 2056,
-                    "goals": 3,
-                    "assists": 4
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {
-                    "Player of the Year": 1
-                }
-            }
-        },
         "11": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 173,
-                "participations": 173,
-                "minutes": 12858,
+                "matches": 174,
+                "participations": 174,
+                "minutes": 12903,
                 "starts": 145,
                 "captain_matches": 3,
                 "goals": 21,
                 "assists": 31,
                 "goals_conceded": 112,
-                "points": 369,
-                "clean_sheets": 91,
-                "wins": 112,
+                "points": 372,
+                "clean_sheets": 92,
+                "wins": 113,
                 "draws": 33,
                 "losses": 28,
-                "goal_matches": 154,
-                "assist_matches": 144,
+                "goal_matches": 155,
+                "assist_matches": 145,
                 "goal_contributions": 52
             },
             "positions": {
+                "DMF": 71,
                 "CMF": 86,
-                "DMF": 70,
                 "RB": 1,
                 "CB": 1
             },
             "derived": {
-                "season_count": 3,
-                "points_per_match": 2.133,
-                "minutes_per_match": 74.3,
-                "win_rate": 0.6474,
-                "goals_per_90": 0.147,
-                "assists_per_90": 0.217,
-                "contributions_per_90": 0.364,
+                "season_count": 4,
+                "points_per_match": 2.138,
+                "minutes_per_match": 74.2,
+                "win_rate": 0.6494,
+                "goals_per_90": 0.146,
+                "assists_per_90": 0.216,
+                "contributions_per_90": 0.363,
                 "primary_position": "CMF"
             },
             "competitions": {
+                "Domestic Super Cup": {
+                    "matches": 2,
+                    "minutes": 126,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "International Cup": {
                     "matches": 39,
                     "minutes": 2914,
@@ -10739,23 +10756,82 @@
                     "minutes": 563,
                     "goals": 1,
                     "assists": 3
-                },
-                "Domestic Super Cup": {
-                    "matches": 1,
-                    "minutes": 81,
-                    "goals": 0,
-                    "assists": 0
                 }
             },
             "awards": {
                 "team_titles": {
                     "English Champion": 1,
-                    "English Super Cup winner": 1
+                    "English Super Cup winner": 2
                 },
                 "individual_titles": {}
             }
         },
+        "3299": {
+            "type": "national",
+            "seasons": [
+                2018,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
+            "stats": {
+                "matches": 99,
+                "participations": 99,
+                "minutes": 6442,
+                "starts": 75,
+                "captain_matches": 3,
+                "goals": 8,
+                "assists": 8,
+                "goals_conceded": 56,
+                "points": 219,
+                "clean_sheets": 61,
+                "wins": 68,
+                "draws": 15,
+                "losses": 16,
+                "goal_matches": 91,
+                "assist_matches": 92,
+                "goal_contributions": 16
+            },
+            "positions": {
+                "DMF": 65,
+                "CMF": 15
+            },
+            "derived": {
+                "season_count": 7,
+                "points_per_match": 2.212,
+                "minutes_per_match": 65.1,
+                "win_rate": 0.6869,
+                "goals_per_90": 0.112,
+                "assists_per_90": 0.112,
+                "contributions_per_90": 0.224,
+                "primary_position": "DMF"
+            },
+            "competitions": {
+                "National Team": {
+                    "matches": 65,
+                    "minutes": 4386,
+                    "goals": 5,
+                    "assists": 4
+                },
+                "National team's qualifiers": {
+                    "matches": 34,
+                    "minutes": 2056,
+                    "goals": 3,
+                    "assists": 4
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {
+                    "Player of the Year": 1
+                }
+            }
+        },
         "379": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -10836,6 +10912,7 @@
             }
         },
         "3509": {
+            "type": "national",
             "seasons": [
                 2017
             ],
@@ -10885,6 +10962,7 @@
             }
         },
         "21103": {
+            "type": "national",
             "seasons": [
                 2017
             ],
@@ -10941,6 +11019,7 @@
             }
         },
         "9267": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -10998,6 +11077,7 @@
             }
         },
         "23102": {
+            "type": "national",
             "seasons": [
                 2016
             ],
@@ -11052,6 +11132,7 @@
             }
         },
         "9955": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -11093,6 +11174,7 @@
             }
         },
         "37709": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -11141,6 +11223,7 @@
             }
         },
         "23132": {
+            "type": "national",
             "seasons": [
                 2015
             ],
@@ -11196,6 +11279,7 @@
             }
         },
         "30323": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -11244,24 +11328,24 @@
     },
     "career": {
         "club": {
-            "matches": 44,
-            "minutes": 2980,
-            "goals": 0,
-            "assists": 1,
-            "goal_contributions": 1,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 3
+            "matches": 527,
+            "minutes": 36462,
+            "goals": 36,
+            "assists": 45,
+            "goal_contributions": 81,
+            "team_titles": 4,
+            "individual_titles": 1,
+            "season_count": 12
         },
         "national": {
-            "matches": 612,
-            "minutes": 41572,
-            "goals": 45,
-            "assists": 53,
-            "goal_contributions": 98,
-            "team_titles": 3,
-            "individual_titles": 2,
-            "season_count": 12
+            "matches": 132,
+            "minutes": 8307,
+            "goals": 10,
+            "assists": 10,
+            "goal_contributions": 20,
+            "team_titles": 0,
+            "individual_titles": 1,
+            "season_count": 11
         }
     }
 }

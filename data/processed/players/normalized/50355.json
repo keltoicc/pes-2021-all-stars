@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Fedor Smolov",
         "short_name": "F. Smolov",
+        "dateOfBirth": "1990-02-09",
+        "placeOfBirth": "Saratov",
         "nation_1": "Russia",
         "nation_2": "",
         "height": 1.87,
@@ -14,6 +17,38 @@
         "prime_date": "2018-06-06"
     },
     "matches": [
+        {
+            "game_id": "5006686",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "132095",
+            "opponent_id": "20529",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4943743",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "132095",
+            "opponent_id": "143811",
+            "position": "CF",
+            "minutes": 77,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4727991",
             "season": 2025,
@@ -2469,7 +2504,7 @@
             "club_id": "3448",
             "opponent_id": "3588",
             "position": "CF",
-            "minutes": 79,
+            "minutes": 78,
             "started": true,
             "captain": false,
             "goals": 0,
@@ -15804,7 +15839,57 @@
         }
     ],
     "clubs": {
+        "132095": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 2,
+                "participations": 2,
+                "minutes": 77,
+                "starts": 1,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 1,
+                "goals_conceded": 0,
+                "points": 3,
+                "clean_sheets": 2,
+                "wins": 1,
+                "draws": 0,
+                "losses": 1,
+                "goal_matches": 2,
+                "assist_matches": 1,
+                "goal_contributions": 1
+            },
+            "positions": {
+                "CF": 1
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 1.5,
+                "minutes_per_match": 38.5,
+                "win_rate": 0.5,
+                "goals_per_90": 0.0,
+                "assists_per_90": 1.169,
+                "contributions_per_90": 1.169,
+                "primary_position": "CF"
+            },
+            "competitions": {
+                "Domestic Cup": {
+                    "matches": 2,
+                    "minutes": 77,
+                    "goals": 0,
+                    "assists": 1
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "121097": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -15853,6 +15938,7 @@
             }
         },
         "16704": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -15930,6 +16016,7 @@
             }
         },
         "121": {
+            "type": "club",
             "seasons": [
                 2006,
                 2007,
@@ -16005,6 +16092,7 @@
             }
         },
         "932": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -16081,6 +16169,7 @@
             }
         },
         "3448": {
+            "type": "national",
             "seasons": [
                 2012,
                 2013,
@@ -16094,7 +16183,7 @@
             "stats": {
                 "matches": 105,
                 "participations": 105,
-                "minutes": 2675,
+                "minutes": 2674,
                 "starts": 31,
                 "captain_matches": 4,
                 "goals": 16,
@@ -16120,7 +16209,7 @@
                 "points_per_match": 1.629,
                 "minutes_per_match": 25.5,
                 "win_rate": 0.4667,
-                "goals_per_90": 0.538,
+                "goals_per_90": 0.539,
                 "assists_per_90": 0.135,
                 "contributions_per_90": 0.673,
                 "primary_position": "CF"
@@ -16128,7 +16217,7 @@
             "competitions": {
                 "National team's qualifiers": {
                     "matches": 36,
-                    "minutes": 472,
+                    "minutes": 471,
                     "goals": 5,
                     "assists": 4
                 },
@@ -16147,6 +16236,7 @@
             }
         },
         "940": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -16195,6 +16285,7 @@
             }
         },
         "11127": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -16255,6 +16346,7 @@
             }
         },
         "2700": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013
@@ -16319,6 +16411,7 @@
             }
         },
         "11945": {
+            "type": "national",
             "seasons": [
                 2007,
                 2008,
@@ -16387,6 +16480,7 @@
             }
         },
         "11741": {
+            "type": "club",
             "seasons": [
                 2006,
                 2007,
@@ -16431,6 +16525,7 @@
             }
         },
         "234": {
+            "type": "club",
             "seasons": [
                 2010
             ],
@@ -16491,6 +16586,7 @@
             }
         },
         "21669": {
+            "type": "national",
             "seasons": [
                 2008
             ],
@@ -16545,6 +16641,7 @@
             }
         },
         "23138": {
+            "type": "national",
             "seasons": [
                 2006
             ],
@@ -16596,24 +16693,24 @@
     },
     "career": {
         "club": {
-            "matches": 125,
-            "minutes": 6966,
-            "goals": 36,
-            "assists": 3,
-            "goal_contributions": 39,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 9
+            "matches": 802,
+            "minutes": 33205,
+            "goals": 166,
+            "assists": 60,
+            "goal_contributions": 226,
+            "team_titles": 4,
+            "individual_titles": 5,
+            "season_count": 21
         },
         "national": {
-            "matches": 852,
-            "minutes": 30976,
-            "goals": 165,
-            "assists": 64,
-            "goal_contributions": 229,
-            "team_titles": 4,
-            "individual_titles": 8,
-            "season_count": 19
+            "matches": 177,
+            "minutes": 4813,
+            "goals": 35,
+            "assists": 8,
+            "goal_contributions": 43,
+            "team_titles": 0,
+            "individual_titles": 3,
+            "season_count": 14
         }
     }
 }
