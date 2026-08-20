@@ -1,0 +1,60 @@
+---
+import type { Country } from "../../types/country";
+
+interface Props {
+    country: Country;
+}
+
+const { country } = Astro.props;
+---
+
+<header class="country-header">
+
+    <div class="country-header__identity">
+
+        <h1>{country.name}</h1>
+
+        <p>{country.code}</p>
+
+    </div>
+
+</header>
+
+<style>
+.country-header {
+    padding: var(--space-5) var(--space-4);
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    max-width: var(--content-width);
+}
+
+.country-header__identity {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-2);
+}
+
+.country-header h1 {
+    margin: 0;
+
+    color: var(--color-text);
+
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+}
+
+.country-header p {
+    margin: 0;
+
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+}
+</style>
