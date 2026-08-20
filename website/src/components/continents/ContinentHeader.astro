@@ -1,0 +1,49 @@
+---
+import type { Continent } from "../../types/continent";
+
+interface Props {
+    continent: Continent;
+}
+
+const { continent } = Astro.props;
+---
+
+<header class="continent-header">
+
+    <div class="continent-header__identity">
+
+        <h1>{continent.name}</h1>
+
+    </div>
+
+</header>
+
+<style>
+.continent-header {
+    padding: var(--space-5) var(--space-4);
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    max-width: var(--content-width);
+}
+
+.continent-header__identity {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-2);
+}
+
+.continent-header h1 {
+    margin: 0;
+
+    color: var(--color-text);
+
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+}
+</style>
