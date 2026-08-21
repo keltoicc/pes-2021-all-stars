@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Khalid Eisa",
         "short_name": "Khalid Eisa",
+        "dateOfBirth": "1989-09-15",
+        "placeOfBirth": "Dubai",
         "nation_1": "United Arab Emirates",
         "nation_2": "",
         "height": 1.78,
@@ -14,6 +17,22 @@
         "prime_date": "2019-11-14"
     },
     "matches": [
+        {
+            "game_id": "5022599",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "2150",
+            "opponent_id": "4785",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4849053",
             "season": 2025,
@@ -11300,7 +11319,7 @@
             "competition_type": "National youth team",
             "club_id": "53826",
             "opponent_id": "53829",
-            "position": "",
+            "position": "GK",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -12738,6 +12757,7 @@
     ],
     "clubs": {
         "2150": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -12751,51 +12771,52 @@
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 497,
-                "participations": 497,
-                "minutes": 38997,
-                "starts": 432,
-                "captain_matches": 50,
+                "matches": 498,
+                "participations": 498,
+                "minutes": 39087,
+                "starts": 433,
+                "captain_matches": 51,
                 "goals": 0,
                 "assists": 4,
-                "goals_conceded": 500,
-                "points": 943,
+                "goals_conceded": 502,
+                "points": 946,
                 "clean_sheets": 206,
-                "wins": 279,
+                "wins": 280,
                 "draws": 106,
                 "losses": 112,
-                "goal_matches": 497,
-                "assist_matches": 493,
+                "goal_matches": 498,
+                "assist_matches": 494,
                 "goal_contributions": 4
             },
             "positions": {
-                "GK": 311
+                "GK": 312
             },
             "derived": {
-                "season_count": 13,
-                "points_per_match": 1.897,
+                "season_count": 14,
+                "points_per_match": 1.9,
                 "minutes_per_match": 78.5,
-                "win_rate": 0.5614,
+                "win_rate": 0.5622,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.009,
                 "contributions_per_90": 0.009,
                 "primary_position": "GK"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 328,
+                    "minutes": 26933,
+                    "goals": 0,
+                    "assists": 2
+                },
                 "Domestic Cup": {
                     "matches": 23,
                     "minutes": 1349,
                     "goals": 0,
                     "assists": 0
-                },
-                "First Tier": {
-                    "matches": 327,
-                    "minutes": 26843,
-                    "goals": 0,
-                    "assists": 2
                 },
                 "League Cup": {
                     "matches": 47,
@@ -12827,6 +12848,7 @@
             }
         },
         "5147": {
+            "type": "national",
             "seasons": [
                 2010,
                 2011,
@@ -12898,6 +12920,7 @@
             }
         },
         "2524": {
+            "type": "club",
             "seasons": [
                 2009,
                 2010,
@@ -12964,6 +12987,7 @@
             }
         },
         "53826": {
+            "type": "national",
             "seasons": [
                 2011
             ],
@@ -12985,7 +13009,9 @@
                 "assist_matches": 3,
                 "goal_contributions": 0
             },
-            "positions": {},
+            "positions": {
+                "GK": 1
+            },
             "derived": {
                 "season_count": 1,
                 "points_per_match": 0.333,
@@ -12994,7 +13020,7 @@
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
-                "primary_position": ""
+                "primary_position": "GK"
             },
             "competitions": {
                 "National youth team": {
@@ -13012,24 +13038,24 @@
     },
     "career": {
         "club": {
-            "matches": 0,
-            "minutes": 0,
-            "goals": 0,
-            "assists": 0,
-            "goal_contributions": 0,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 0
-        },
-        "national": {
-            "matches": 784,
-            "minutes": 48488,
+            "matches": 612,
+            "minutes": 40987,
             "goals": 0,
             "assists": 4,
             "goal_contributions": 4,
-            "team_titles": 9,
+            "team_titles": 8,
             "individual_titles": 0,
-            "season_count": 17
+            "season_count": 18
+        },
+        "national": {
+            "matches": 173,
+            "minutes": 7591,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 1,
+            "individual_titles": 0,
+            "season_count": 16
         }
     }
 }

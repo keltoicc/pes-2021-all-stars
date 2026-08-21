@@ -1,19 +1,38 @@
 {
     "player": {
+        "name": "Jassem Gaber",
         "short_name": "J. Gaber",
+        "dateOfBirth": "2002-02-20",
+        "placeOfBirth": "Doha",
         "nation_1": "Qatar",
         "nation_2": "Egypt",
         "height": 1.81,
         "foot": "Right",
-        "position_group": "MIDFIELDER",
-        "position_1": "DMF",
-        "position_2": "CB",
-        "position_3": "RB",
+        "position_group": "DEFENDER",
+        "position_1": "RB",
+        "position_2": "DMF",
+        "position_3": "CB",
         "former_clubs": "ASPIRE Academy",
         "market_value": 750000,
         "prime_date": "2024-12-10"
     },
     "matches": [
+        {
+            "game_id": "5024722",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "3229",
+            "opponent_id": "77101",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776650",
             "season": 2025,
@@ -5731,7 +5750,75 @@
         }
     ],
     "clubs": {
+        "3229": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 38,
+                "participations": 38,
+                "minutes": 1280,
+                "starts": 16,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 13,
+                "points": 78,
+                "clean_sheets": 29,
+                "wins": 24,
+                "draws": 6,
+                "losses": 8,
+                "goal_matches": 38,
+                "assist_matches": 38,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "RB": 6,
+                "CB": 1,
+                "DMF": 6,
+                "CMF": 2
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 2.053,
+                "minutes_per_match": 33.7,
+                "win_rate": 0.6316,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "RB"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 23,
+                    "minutes": 790,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 2,
+                    "minutes": 152,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "League Cup": {
+                    "matches": 13,
+                    "minutes": 338,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Qatari Stars Cup Winner": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "14162": {
+            "type": "national",
             "seasons": [
                 2019,
                 2020,
@@ -5795,72 +5882,8 @@
                 "individual_titles": {}
             }
         },
-        "3229": {
-            "seasons": [
-                2025
-            ],
-            "stats": {
-                "matches": 37,
-                "participations": 37,
-                "minutes": 1190,
-                "starts": 15,
-                "captain_matches": 0,
-                "goals": 0,
-                "assists": 0,
-                "goals_conceded": 13,
-                "points": 75,
-                "clean_sheets": 28,
-                "wins": 23,
-                "draws": 6,
-                "losses": 8,
-                "goal_matches": 37,
-                "assist_matches": 37,
-                "goal_contributions": 0
-            },
-            "positions": {
-                "RB": 5,
-                "CB": 1,
-                "DMF": 6,
-                "CMF": 2
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 2.027,
-                "minutes_per_match": 32.2,
-                "win_rate": 0.6216,
-                "goals_per_90": 0.0,
-                "assists_per_90": 0.0,
-                "contributions_per_90": 0.0,
-                "primary_position": "DMF"
-            },
-            "competitions": {
-                "Domestic Cup": {
-                    "matches": 2,
-                    "minutes": 152,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "First Tier": {
-                    "matches": 22,
-                    "minutes": 700,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "League Cup": {
-                    "matches": 13,
-                    "minutes": 338,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Qatari Stars Cup Winner": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "1230": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -5939,6 +5962,7 @@
             }
         },
         "10830": {
+            "type": "national",
             "seasons": [
                 2019,
                 2020,
@@ -6006,6 +6030,7 @@
             }
         },
         "53866": {
+            "type": "national",
             "seasons": [
                 2022
             ],
@@ -6057,23 +6082,23 @@
     },
     "career": {
         "club": {
-            "matches": 37,
-            "minutes": 1190,
-            "goals": 0,
-            "assists": 0,
-            "goal_contributions": 0,
-            "team_titles": 1,
-            "individual_titles": 0,
-            "season_count": 1
-        },
-        "national": {
-            "matches": 317,
-            "minutes": 11921,
-            "goals": 5,
-            "assists": 7,
-            "goal_contributions": 12,
+            "matches": 231,
+            "minutes": 8268,
+            "goals": 2,
+            "assists": 3,
+            "goal_contributions": 5,
             "team_titles": 2,
             "individual_titles": 1,
+            "season_count": 8
+        },
+        "national": {
+            "matches": 124,
+            "minutes": 4933,
+            "goals": 3,
+            "assists": 4,
+            "goal_contributions": 7,
+            "team_titles": 1,
+            "individual_titles": 0,
             "season_count": 7
         }
     }

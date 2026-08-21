@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Igor Sergeev",
         "short_name": "I. Sergeev",
+        "dateOfBirth": "1993-04-30",
+        "placeOfBirth": "Tashkent",
         "nation_1": "Uzbekistan",
         "nation_2": "Russia",
         "height": 1.85,
@@ -14,6 +17,38 @@
         "prime_date": "2016-07-06"
     },
     "matches": [
+        {
+            "game_id": "4974965",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "6079",
+            "opponent_id": "40472",
+            "position": "CF",
+            "minutes": 63,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4974959",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "6079",
+            "opponent_id": "87232",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
         {
             "game_id": "4776668",
             "season": 2025,
@@ -11779,7 +11814,64 @@
         }
     ],
     "clubs": {
+        "6079": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 13,
+                "participations": 13,
+                "minutes": 513,
+                "starts": 5,
+                "captain_matches": 0,
+                "goals": 4,
+                "assists": 0,
+                "goals_conceded": 7,
+                "points": 12,
+                "clean_sheets": 9,
+                "wins": 4,
+                "draws": 0,
+                "losses": 9,
+                "goal_matches": 9,
+                "assist_matches": 13,
+                "goal_contributions": 4
+            },
+            "positions": {
+                "CF": 7
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 0.923,
+                "minutes_per_match": 39.5,
+                "win_rate": 0.3077,
+                "goals_per_90": 0.702,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.702,
+                "primary_position": "CF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 12,
+                    "minutes": 513,
+                    "goals": 4,
+                    "assists": 0
+                },
+                "Play-Offs": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3563": {
+            "type": "national",
             "seasons": [
                 2011,
                 2012,
@@ -11851,61 +11943,8 @@
                 }
             }
         },
-        "6079": {
-            "seasons": [
-                2025
-            ],
-            "stats": {
-                "matches": 11,
-                "participations": 11,
-                "minutes": 450,
-                "starts": 4,
-                "captain_matches": 0,
-                "goals": 3,
-                "assists": 0,
-                "goals_conceded": 7,
-                "points": 6,
-                "clean_sheets": 7,
-                "wins": 2,
-                "draws": 0,
-                "losses": 9,
-                "goal_matches": 8,
-                "assist_matches": 11,
-                "goal_contributions": 3
-            },
-            "positions": {
-                "CF": 6
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 0.545,
-                "minutes_per_match": 40.9,
-                "win_rate": 0.1818,
-                "goals_per_90": 0.6,
-                "assists_per_90": 0.0,
-                "contributions_per_90": 0.6,
-                "primary_position": "CF"
-            },
-            "competitions": {
-                "Play-Offs": {
-                    "matches": 1,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "First Tier": {
-                    "matches": 10,
-                    "minutes": 450,
-                    "goals": 3,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "3718": {
+            "type": "club",
             "seasons": [
                 2010,
                 2011,
@@ -11996,6 +12035,7 @@
             }
         },
         "25444": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024
@@ -12067,6 +12107,7 @@
             }
         },
         "10481": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -12140,6 +12181,7 @@
             }
         },
         "10157": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -12194,6 +12236,7 @@
             }
         },
         "14456": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -12242,6 +12285,7 @@
             }
         },
         "3176": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -12298,6 +12342,7 @@
             }
         },
         "33815": {
+            "type": "national",
             "seasons": [
                 2015
             ],
@@ -12346,6 +12391,7 @@
             }
         },
         "113139": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -12392,6 +12438,7 @@
             }
         },
         "22990": {
+            "type": "national",
             "seasons": [
                 2012
             ],
@@ -12446,6 +12493,7 @@
             }
         },
         "39292": {
+            "type": "national",
             "seasons": [
                 2012
             ],
@@ -12492,6 +12540,7 @@
             }
         },
         "19739": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -12535,24 +12584,24 @@
     },
     "career": {
         "club": {
-            "matches": 63,
-            "minutes": 3454,
-            "goals": 13,
-            "assists": 3,
-            "goal_contributions": 16,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 5
+            "matches": 557,
+            "minutes": 28079,
+            "goals": 197,
+            "assists": 25,
+            "goal_contributions": 222,
+            "team_titles": 10,
+            "individual_titles": 3,
+            "season_count": 17
         },
         "national": {
-            "matches": 662,
-            "minutes": 30288,
-            "goals": 219,
-            "assists": 26,
-            "goal_contributions": 245,
-            "team_titles": 11,
-            "individual_titles": 5,
-            "season_count": 16
+            "matches": 170,
+            "minutes": 5726,
+            "goals": 36,
+            "assists": 4,
+            "goal_contributions": 40,
+            "team_titles": 1,
+            "individual_titles": 2,
+            "season_count": 15
         }
     }
 }

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Firas Al-Buraikan",
         "short_name": "F. Al-Buraikan",
+        "dateOfBirth": "2000-05-14",
+        "placeOfBirth": "Riyadh",
         "nation_1": "Saudi Arabia",
         "nation_2": "",
         "height": 1.85,
@@ -14,6 +17,38 @@
         "prime_date": "2024-06-04"
     },
     "matches": [
+        {
+            "game_id": "4971024",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "18487",
+            "opponent_id": "75312",
+            "position": "CF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4976887",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "18487",
+            "opponent_id": "52358",
+            "position": "",
+            "minutes": 8,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776662",
             "season": 2025,
@@ -7718,7 +7753,85 @@
         }
     ],
     "clubs": {
+        "18487": {
+            "type": "club",
+            "seasons": [
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 135,
+                "participations": 135,
+                "minutes": 7586,
+                "starts": 78,
+                "captain_matches": 0,
+                "goals": 30,
+                "assists": 18,
+                "goals_conceded": 81,
+                "points": 291,
+                "clean_sheets": 82,
+                "wins": 90,
+                "draws": 21,
+                "losses": 24,
+                "goal_matches": 108,
+                "assist_matches": 118,
+                "goal_contributions": 48
+            },
+            "positions": {
+                "CF": 47,
+                "RW": 6,
+                "LW": 19,
+                "AMF": 8,
+                "SS": 5
+            },
+            "derived": {
+                "season_count": 4,
+                "points_per_match": 2.156,
+                "minutes_per_match": 56.2,
+                "win_rate": 0.6667,
+                "goals_per_90": 0.356,
+                "assists_per_90": 0.214,
+                "contributions_per_90": 0.569,
+                "primary_position": "CF"
+            },
+            "competitions": {
+                "Domestic Cup": {
+                    "matches": 8,
+                    "minutes": 433,
+                    "goals": 3,
+                    "assists": 1
+                },
+                "First Tier": {
+                    "matches": 98,
+                    "minutes": 5887,
+                    "goals": 21,
+                    "assists": 15
+                },
+                "International Cup": {
+                    "matches": 26,
+                    "minutes": 1110,
+                    "goals": 6,
+                    "assists": 2
+                },
+                "Domestic Super Cup": {
+                    "matches": 3,
+                    "minutes": 156,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "AFC Champions League winner": 2,
+                    "Saudi Super Cup Winner": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3807": {
+            "type": "national",
             "seasons": [
                 2018,
                 2019,
@@ -7781,82 +7894,8 @@
                 "individual_titles": {}
             }
         },
-        "18487": {
-            "seasons": [
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 133,
-                "participations": 133,
-                "minutes": 7488,
-                "starts": 77,
-                "captain_matches": 0,
-                "goals": 30,
-                "assists": 17,
-                "goals_conceded": 80,
-                "points": 285,
-                "clean_sheets": 81,
-                "wins": 88,
-                "draws": 21,
-                "losses": 24,
-                "goal_matches": 106,
-                "assist_matches": 117,
-                "goal_contributions": 47
-            },
-            "positions": {
-                "RW": 6,
-                "LW": 19,
-                "CF": 46,
-                "AMF": 8,
-                "SS": 5
-            },
-            "derived": {
-                "season_count": 3,
-                "points_per_match": 2.143,
-                "minutes_per_match": 56.3,
-                "win_rate": 0.6617,
-                "goals_per_90": 0.361,
-                "assists_per_90": 0.204,
-                "contributions_per_90": 0.565,
-                "primary_position": "CF"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 97,
-                    "minutes": 5879,
-                    "goals": 21,
-                    "assists": 15
-                },
-                "International Cup": {
-                    "matches": 26,
-                    "minutes": 1110,
-                    "goals": 6,
-                    "assists": 2
-                },
-                "Domestic Cup": {
-                    "matches": 7,
-                    "minutes": 343,
-                    "goals": 3,
-                    "assists": 0
-                },
-                "Domestic Super Cup": {
-                    "matches": 3,
-                    "minutes": 156,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "AFC Champions League winner": 2,
-                    "Saudi Super Cup Winner": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "27221": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -7915,6 +7954,7 @@
             }
         },
         "32240": {
+            "type": "national",
             "seasons": [
                 2019,
                 2020,
@@ -7979,6 +8019,7 @@
             }
         },
         "18544": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -8053,6 +8094,7 @@
             }
         },
         "32646": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -8107,6 +8149,7 @@
             }
         },
         "28154": {
+            "type": "national",
             "seasons": [
                 2017
             ],
@@ -8157,24 +8200,24 @@
     },
     "career": {
         "club": {
-            "matches": 68,
-            "minutes": 5119,
-            "goals": 33,
-            "assists": 9,
-            "goal_contributions": 42,
-            "team_titles": 0,
+            "matches": 330,
+            "minutes": 13905,
+            "goals": 67,
+            "assists": 30,
+            "goal_contributions": 97,
+            "team_titles": 5,
             "individual_titles": 0,
-            "season_count": 3
+            "season_count": 11
         },
         "national": {
-            "matches": 408,
-            "minutes": 14809,
-            "goals": 56,
-            "assists": 27,
-            "goal_contributions": 83,
-            "team_titles": 6,
+            "matches": 148,
+            "minutes": 6121,
+            "goals": 22,
+            "assists": 7,
+            "goal_contributions": 29,
+            "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 10
+            "season_count": 9
         }
     }
 }

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Abbosbek Fayzullaev",
         "short_name": "A. Fayzullaev",
+        "dateOfBirth": "2003-10-03",
+        "placeOfBirth": "Sirdaryo",
         "nation_1": "Uzbekistan",
         "nation_2": "",
         "height": 1.67,
@@ -14,6 +17,54 @@
         "prime_date": "2025-06-04"
     },
     "matches": [
+        {
+            "game_id": "4932840",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "6890",
+            "opponent_id": "120",
+            "position": "LW",
+            "minutes": 63,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4897996",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "6890",
+            "opponent_id": "8042",
+            "position": "LW",
+            "minutes": 45,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4897959",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "6890",
+            "opponent_id": "8042",
+            "position": "LW",
+            "minutes": 29,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4776668",
             "season": 2025,
@@ -5252,7 +5303,72 @@
         }
     ],
     "clubs": {
+        "6890": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 46,
+                "participations": 46,
+                "minutes": 1522,
+                "starts": 18,
+                "captain_matches": 0,
+                "goals": 4,
+                "assists": 8,
+                "goals_conceded": 15,
+                "points": 74,
+                "clean_sheets": 35,
+                "wins": 21,
+                "draws": 11,
+                "losses": 14,
+                "goal_matches": 42,
+                "assist_matches": 38,
+                "goal_contributions": 12
+            },
+            "positions": {
+                "LW": 8,
+                "RW": 16,
+                "AMF": 5
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 1.609,
+                "minutes_per_match": 33.1,
+                "win_rate": 0.4565,
+                "goals_per_90": 0.237,
+                "assists_per_90": 0.473,
+                "contributions_per_90": 0.71,
+                "primary_position": "RW"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 35,
+                    "minutes": 1172,
+                    "goals": 3,
+                    "assists": 6
+                },
+                "International Cup": {
+                    "matches": 7,
+                    "minutes": 114,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 4,
+                    "minutes": 236,
+                    "goals": 1,
+                    "assists": 2
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3563": {
+            "type": "national",
             "seasons": [
                 2022,
                 2023,
@@ -5314,69 +5430,8 @@
                 "individual_titles": {}
             }
         },
-        "6890": {
-            "seasons": [
-                2025
-            ],
-            "stats": {
-                "matches": 43,
-                "participations": 43,
-                "minutes": 1385,
-                "starts": 17,
-                "captain_matches": 0,
-                "goals": 4,
-                "assists": 7,
-                "goals_conceded": 14,
-                "points": 70,
-                "clean_sheets": 33,
-                "wins": 20,
-                "draws": 10,
-                "losses": 13,
-                "goal_matches": 39,
-                "assist_matches": 36,
-                "goal_contributions": 11
-            },
-            "positions": {
-                "RW": 16,
-                "LW": 5,
-                "AMF": 5
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 1.628,
-                "minutes_per_match": 32.2,
-                "win_rate": 0.4651,
-                "goals_per_90": 0.26,
-                "assists_per_90": 0.455,
-                "contributions_per_90": 0.715,
-                "primary_position": "RW"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 34,
-                    "minutes": 1109,
-                    "goals": 3,
-                    "assists": 5
-                },
-                "Domestic Cup": {
-                    "matches": 4,
-                    "minutes": 236,
-                    "goals": 1,
-                    "assists": 2
-                },
-                "International Cup": {
-                    "matches": 5,
-                    "minutes": 40,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "2410": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
@@ -5445,6 +5500,7 @@
             }
         },
         "113139": {
+            "type": "national",
             "seasons": [
                 2023
             ],
@@ -5494,6 +5550,7 @@
             }
         },
         "33815": {
+            "type": "national",
             "seasons": [
                 2021,
                 2022,
@@ -5559,6 +5616,7 @@
             }
         },
         "3718": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -5632,6 +5690,7 @@
             }
         },
         "22990": {
+            "type": "national",
             "seasons": [
                 2022,
                 2023
@@ -5693,24 +5752,24 @@
     },
     "career": {
         "club": {
-            "matches": 85,
-            "minutes": 4663,
-            "goals": 8,
-            "assists": 22,
-            "goal_contributions": 30,
-            "team_titles": 2,
+            "matches": 220,
+            "minutes": 8183,
+            "goals": 22,
+            "assists": 33,
+            "goal_contributions": 55,
+            "team_titles": 6,
             "individual_titles": 1,
-            "season_count": 3
+            "season_count": 7
         },
         "national": {
-            "matches": 236,
-            "minutes": 7909,
-            "goals": 31,
-            "assists": 17,
-            "goal_contributions": 48,
-            "team_titles": 6,
+            "matches": 104,
+            "minutes": 4526,
+            "goals": 17,
+            "assists": 7,
+            "goal_contributions": 24,
+            "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 6
+            "season_count": 5
         }
     }
 }

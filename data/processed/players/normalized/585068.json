@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Aiham Ousou",
         "short_name": "Aiham Ousou",
+        "dateOfBirth": "2000-01-09",
+        "placeOfBirth": "Mölndal",
         "nation_1": "Syria",
         "nation_2": "Sweden",
         "height": 1.86,
@@ -14,6 +17,38 @@
         "prime_date": "2026-06-04"
     },
     "matches": [
+        {
+            "game_id": "4911816",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "172",
+            "opponent_id": "5026",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4911793",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "172",
+            "opponent_id": "2727",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4850196",
             "season": 2025,
@@ -6493,53 +6528,55 @@
     ],
     "clubs": {
         "172": {
+            "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 88,
-                "participations": 88,
-                "minutes": 6163,
-                "starts": 69,
-                "captain_matches": 46,
+                "matches": 90,
+                "participations": 90,
+                "minutes": 6343,
+                "starts": 71,
+                "captain_matches": 48,
                 "goals": 2,
-                "assists": 1,
-                "goals_conceded": 82,
-                "points": 123,
-                "clean_sheets": 39,
-                "wins": 34,
+                "assists": 2,
+                "goals_conceded": 83,
+                "points": 129,
+                "clean_sheets": 40,
+                "wins": 36,
                 "draws": 21,
                 "losses": 33,
-                "goal_matches": 86,
-                "assist_matches": 87,
-                "goal_contributions": 3
+                "goal_matches": 88,
+                "assist_matches": 88,
+                "goal_contributions": 4
             },
             "positions": {
-                "CB": 68
+                "CB": 70
             },
             "derived": {
-                "season_count": 2,
-                "points_per_match": 1.398,
-                "minutes_per_match": 70.0,
-                "win_rate": 0.3864,
-                "goals_per_90": 0.029,
-                "assists_per_90": 0.015,
-                "contributions_per_90": 0.044,
+                "season_count": 3,
+                "points_per_match": 1.433,
+                "minutes_per_match": 70.5,
+                "win_rate": 0.4,
+                "goals_per_90": 0.028,
+                "assists_per_90": 0.028,
+                "contributions_per_90": 0.057,
                 "primary_position": "CB"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 61,
+                    "minutes": 4693,
+                    "goals": 2,
+                    "assists": 1
+                },
                 "Play-Offs": {
                     "matches": 21,
                     "minutes": 900,
                     "goals": 0,
                     "assists": 1
-                },
-                "First Tier": {
-                    "matches": 59,
-                    "minutes": 4513,
-                    "goals": 2,
-                    "assists": 0
                 },
                 "Domestic Cup": {
                     "matches": 6,
@@ -6560,6 +6597,7 @@
             }
         },
         "13674": {
+            "type": "national",
             "seasons": [
                 2022,
                 2023,
@@ -6617,6 +6655,7 @@
             }
         },
         "62": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -6689,6 +6728,7 @@
             }
         },
         "2687": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -6738,6 +6778,7 @@
             }
         },
         "1109": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -6802,6 +6843,7 @@
             }
         },
         "3557": {
+            "type": "national",
             "seasons": [
                 2022
             ],
@@ -6850,6 +6892,7 @@
             }
         },
         "8595": {
+            "type": "national",
             "seasons": [
                 2020,
                 2021
@@ -6905,6 +6948,7 @@
             }
         },
         "6541": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -6953,6 +6997,7 @@
             }
         },
         "7009": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -7008,6 +7053,7 @@
             }
         },
         "8877": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -7064,6 +7110,7 @@
             }
         },
         "23488": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -7112,6 +7159,7 @@
             }
         },
         "7913": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -7151,6 +7199,7 @@
             }
         },
         "7903": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -7194,24 +7243,24 @@
     },
     "career": {
         "club": {
-            "matches": 68,
-            "minutes": 3285,
-            "goals": 0,
-            "assists": 1,
-            "goal_contributions": 1,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 5
-        },
-        "national": {
-            "matches": 334,
-            "minutes": 15431,
-            "goals": 5,
-            "assists": 5,
+            "matches": 366,
+            "minutes": 16836,
+            "goals": 4,
+            "assists": 6,
             "goal_contributions": 10,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 9
+            "season_count": 10
+        },
+        "national": {
+            "matches": 38,
+            "minutes": 2060,
+            "goals": 1,
+            "assists": 1,
+            "goal_contributions": 2,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 7
         }
     }
 }

@@ -1,10 +1,13 @@
 {
     "player": {
+        "name": "In-beom Hwang",
         "short_name": "I. Hwang",
+        "dateOfBirth": "1996-09-20",
+        "placeOfBirth": "Daejeon",
         "nation_1": "Korea, South",
         "nation_2": "",
         "height": 1.77,
-        "foot": null,
+        "foot": "Both",
         "position_group": "MIDFIELDER",
         "position_1": "DMF",
         "position_2": "CMF",
@@ -14,6 +17,54 @@
         "prime_date": "2024-12-17"
     },
     "matches": [
+        {
+            "game_id": "4921432",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "720",
+            "opponent_id": "2425",
+            "position": "CMF",
+            "minutes": 24,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4921484",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "720",
+            "opponent_id": "2521",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4911537",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "720",
+            "opponent_id": "2432",
+            "position": "CMF",
+            "minutes": 17,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776648",
             "season": 2025,
@@ -9608,6 +9659,13 @@
             "club_id": 3589
         },
         {
+            "title": "Portuguese Super Cup winner",
+            "season": "2027",
+            "season_id": 2026,
+            "club_name": "FC Porto",
+            "club_id": 720
+        },
+        {
             "title": "Asian Cup participant",
             "season": "22/23",
             "season_id": 2023,
@@ -9693,7 +9751,65 @@
         }
     ],
     "clubs": {
+        "720": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 3,
+                "participations": 3,
+                "minutes": 41,
+                "starts": 0,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 1,
+                "goals_conceded": 0,
+                "points": 9,
+                "clean_sheets": 3,
+                "wins": 3,
+                "draws": 0,
+                "losses": 0,
+                "goal_matches": 3,
+                "assist_matches": 2,
+                "goal_contributions": 1
+            },
+            "positions": {
+                "CMF": 2
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 3.0,
+                "minutes_per_match": 13.7,
+                "win_rate": 1.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 2.195,
+                "contributions_per_90": 2.195,
+                "primary_position": "CMF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 2,
+                    "minutes": 24,
+                    "goals": 0,
+                    "assists": 1
+                },
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 17,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Portuguese Super Cup winner": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3589": {
+            "type": "national",
             "seasons": [
                 2018,
                 2019,
@@ -9762,6 +9878,7 @@
             }
         },
         "234": {
+            "type": "club",
             "seasons": [
                 2024,
                 2025
@@ -9825,6 +9942,7 @@
             }
         },
         "159": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024
@@ -9900,6 +10018,7 @@
             }
         },
         "683": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023
@@ -9971,6 +10090,7 @@
             }
         },
         "6500": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -10025,6 +10145,7 @@
             }
         },
         "2698": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021
@@ -10088,6 +10209,7 @@
             }
         },
         "6321": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019
@@ -10152,6 +10274,7 @@
             }
         },
         "6499": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -10224,6 +10347,7 @@
             }
         },
         "76180": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -10283,6 +10407,7 @@
             }
         },
         "53812": {
+            "type": "national",
             "seasons": [
                 2017
             ],
@@ -10332,6 +10457,7 @@
             }
         },
         "34950": {
+            "type": "national",
             "seasons": [
                 2017
             ],
@@ -10390,6 +10516,7 @@
             }
         },
         "28208": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -10438,23 +10565,23 @@
     },
     "career": {
         "club": {
-            "matches": 219,
-            "minutes": 12808,
-            "goals": 20,
-            "assists": 19,
-            "goal_contributions": 39,
-            "team_titles": 1,
-            "individual_titles": 0,
-            "season_count": 7
+            "matches": 479,
+            "minutes": 26037,
+            "goals": 41,
+            "assists": 51,
+            "goal_contributions": 92,
+            "team_titles": 5,
+            "individual_titles": 2,
+            "season_count": 13
         },
         "national": {
-            "matches": 380,
-            "minutes": 19879,
-            "goals": 30,
-            "assists": 39,
-            "goal_contributions": 69,
-            "team_titles": 4,
-            "individual_titles": 3,
+            "matches": 123,
+            "minutes": 6691,
+            "goals": 9,
+            "assists": 8,
+            "goal_contributions": 17,
+            "team_titles": 1,
+            "individual_titles": 1,
             "season_count": 10
         }
     }

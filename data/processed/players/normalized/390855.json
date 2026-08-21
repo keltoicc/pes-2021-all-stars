@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Abdulelah Al-Malki",
         "short_name": "A. Al-Malki",
+        "dateOfBirth": "1994-10-11",
+        "placeOfBirth": "Al-Hada, Mecca",
         "nation_1": "Saudi Arabia",
         "nation_2": "",
         "height": 1.7,
@@ -14,6 +17,38 @@
         "prime_date": "2022-01-06"
     },
     "matches": [
+        {
+            "game_id": "4971033",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "52358",
+            "opponent_id": "18544",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 4,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4976887",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "52358",
+            "opponent_id": "18487",
+            "position": "",
+            "minutes": 22,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4887631",
             "season": 2025,
@@ -7231,6 +7266,22 @@
             "club_points": 1
         },
         {
+            "game_id": "4976651",
+            "season": 2015,
+            "competition_type": "League Cup",
+            "club_id": "17209",
+            "opponent_id": "9131",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
             "game_id": "2606882",
             "season": 2015,
             "competition_type": "First Tier",
@@ -7314,6 +7365,13 @@
             "club_id": 1114
         },
         {
+            "title": "Saudi Arabian 2nd tier champion",
+            "season": "17/18",
+            "season_id": 2017,
+            "club_name": "Al-Wehda FC",
+            "club_id": 17209
+        },
+        {
             "title": "Saudi Arabian champion",
             "season": "23/24",
             "season_id": 2023,
@@ -7323,43 +7381,57 @@
     ],
     "clubs": {
         "52358": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 20,
-                "participations": 20,
-                "minutes": 1041,
-                "starts": 14,
+                "matches": 22,
+                "participations": 22,
+                "minutes": 1153,
+                "starts": 15,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 1,
-                "goals_conceded": 11,
+                "goals_conceded": 15,
                 "points": 45,
-                "clean_sheets": 13,
+                "clean_sheets": 14,
                 "wins": 14,
                 "draws": 3,
-                "losses": 3,
-                "goal_matches": 20,
-                "assist_matches": 19,
+                "losses": 5,
+                "goal_matches": 22,
+                "assist_matches": 21,
                 "goal_contributions": 1
             },
             "positions": {
+                "DMF": 3,
                 "CMF": 14,
-                "DMF": 2,
                 "AMF": 1
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 2.25,
-                "minutes_per_match": 52.0,
-                "win_rate": 0.7,
+                "season_count": 2,
+                "points_per_match": 2.045,
+                "minutes_per_match": 52.4,
+                "win_rate": 0.6364,
                 "goals_per_90": 0.0,
-                "assists_per_90": 0.086,
-                "contributions_per_90": 0.086,
+                "assists_per_90": 0.078,
+                "contributions_per_90": 0.078,
                 "primary_position": "CMF"
             },
             "competitions": {
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "First Tier": {
+                    "matches": 1,
+                    "minutes": 22,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Play-Offs": {
                     "matches": 2,
                     "minutes": 163,
@@ -7379,6 +7451,7 @@
             }
         },
         "1114": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -7453,6 +7526,7 @@
             }
         },
         "7732": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -7508,6 +7582,7 @@
             }
         },
         "3807": {
+            "type": "national",
             "seasons": [
                 2018,
                 2019,
@@ -7569,6 +7644,7 @@
             }
         },
         "8023": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -7635,6 +7711,7 @@
             }
         },
         "17209": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -7643,21 +7720,21 @@
                 2018
             ],
             "stats": {
-                "matches": 96,
-                "participations": 96,
+                "matches": 97,
+                "participations": 97,
                 "minutes": 4564,
                 "starts": 52,
                 "captain_matches": 1,
                 "goals": 1,
                 "assists": 4,
                 "goals_conceded": 68,
-                "points": 111,
-                "clean_sheets": 55,
-                "wins": 32,
+                "points": 114,
+                "clean_sheets": 56,
+                "wins": 33,
                 "draws": 15,
                 "losses": 49,
-                "goal_matches": 95,
-                "assist_matches": 92,
+                "goal_matches": 96,
+                "assist_matches": 93,
                 "goal_contributions": 5
             },
             "positions": {
@@ -7666,9 +7743,9 @@
             },
             "derived": {
                 "season_count": 5,
-                "points_per_match": 1.156,
-                "minutes_per_match": 47.5,
-                "win_rate": 0.3333,
+                "points_per_match": 1.175,
+                "minutes_per_match": 47.1,
+                "win_rate": 0.3402,
                 "goals_per_90": 0.02,
                 "assists_per_90": 0.079,
                 "contributions_per_90": 0.099,
@@ -7688,38 +7765,40 @@
                     "assists": 2
                 },
                 "League Cup": {
-                    "matches": 4,
+                    "matches": 5,
                     "minutes": 285,
                     "goals": 0,
                     "assists": 0
                 }
             },
             "awards": {
-                "team_titles": {},
+                "team_titles": {
+                    "Saudi Arabian 2nd tier champion": 1
+                },
                 "individual_titles": {}
             }
         }
     },
     "career": {
         "club": {
-            "matches": 152,
-            "minutes": 6468,
-            "goals": 1,
-            "assists": 5,
-            "goal_contributions": 6,
+            "matches": 388,
+            "minutes": 12683,
+            "goals": 5,
+            "assists": 10,
+            "goal_contributions": 15,
+            "team_titles": 5,
+            "individual_titles": 0,
+            "season_count": 13
+        },
+        "national": {
+            "matches": 68,
+            "minutes": 2666,
+            "goals": 0,
+            "assists": 1,
+            "goal_contributions": 1,
             "team_titles": 0,
             "individual_titles": 0,
             "season_count": 7
-        },
-        "national": {
-            "matches": 301,
-            "minutes": 8769,
-            "goals": 4,
-            "assists": 6,
-            "goal_contributions": 10,
-            "team_titles": 4,
-            "individual_titles": 0,
-            "season_count": 8
         }
     }
 }

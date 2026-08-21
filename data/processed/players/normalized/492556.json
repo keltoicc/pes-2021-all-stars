@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Oston Urunov",
         "short_name": "O. Urunov",
+        "dateOfBirth": "2000-12-19",
+        "placeOfBirth": "Navoiy",
         "nation_1": "Uzbekistan",
         "nation_2": "",
         "height": 1.81,
@@ -14,6 +17,38 @@
         "prime_date": "2024-12-23"
     },
     "matches": [
+        {
+            "game_id": "4974965",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "6079",
+            "opponent_id": "40472",
+            "position": "LW",
+            "minutes": 27,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4974959",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "6079",
+            "opponent_id": "87232",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
         {
             "game_id": "4776668",
             "season": 2025,
@@ -6901,7 +6936,87 @@
         }
     ],
     "clubs": {
+        "6079": {
+            "type": "club",
+            "seasons": [
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 87,
+                "participations": 87,
+                "minutes": 3856,
+                "starts": 43,
+                "captain_matches": 0,
+                "goals": 15,
+                "assists": 4,
+                "goals_conceded": 32,
+                "points": 151,
+                "clean_sheets": 63,
+                "wins": 44,
+                "draws": 19,
+                "losses": 24,
+                "goal_matches": 73,
+                "assist_matches": 83,
+                "goal_contributions": 19
+            },
+            "positions": {
+                "LW": 61,
+                "AMF": 1
+            },
+            "derived": {
+                "season_count": 4,
+                "points_per_match": 1.736,
+                "minutes_per_match": 44.3,
+                "win_rate": 0.5057,
+                "goals_per_90": 0.35,
+                "assists_per_90": 0.093,
+                "contributions_per_90": 0.443,
+                "primary_position": "LW"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 72,
+                    "minutes": 3286,
+                    "goals": 13,
+                    "assists": 3
+                },
+                "Play-Offs": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 5,
+                    "minutes": 254,
+                    "goals": 1,
+                    "assists": 1
+                },
+                "International Cup": {
+                    "matches": 8,
+                    "minutes": 226,
+                    "goals": 1,
+                    "assists": 0
+                },
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Iranian champion": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3563": {
+            "type": "national",
             "seasons": [
                 2018,
                 2019,
@@ -6967,84 +7082,8 @@
                 "individual_titles": {}
             }
         },
-        "6079": {
-            "seasons": [
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 85,
-                "participations": 85,
-                "minutes": 3829,
-                "starts": 43,
-                "captain_matches": 0,
-                "goals": 15,
-                "assists": 4,
-                "goals_conceded": 31,
-                "points": 145,
-                "clean_sheets": 62,
-                "wins": 42,
-                "draws": 19,
-                "losses": 24,
-                "goal_matches": 71,
-                "assist_matches": 81,
-                "goal_contributions": 19
-            },
-            "positions": {
-                "LW": 60,
-                "AMF": 1
-            },
-            "derived": {
-                "season_count": 3,
-                "points_per_match": 1.706,
-                "minutes_per_match": 45.0,
-                "win_rate": 0.4941,
-                "goals_per_90": 0.353,
-                "assists_per_90": 0.094,
-                "contributions_per_90": 0.447,
-                "primary_position": "LW"
-            },
-            "competitions": {
-                "Play-Offs": {
-                    "matches": 1,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "First Tier": {
-                    "matches": 70,
-                    "minutes": 3259,
-                    "goals": 13,
-                    "assists": 3
-                },
-                "Domestic Cup": {
-                    "matches": 5,
-                    "minutes": 254,
-                    "goals": 1,
-                    "assists": 1
-                },
-                "International Cup": {
-                    "matches": 8,
-                    "minutes": 226,
-                    "goals": 1,
-                    "assists": 0
-                },
-                "Domestic Super Cup": {
-                    "matches": 1,
-                    "minutes": 90,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Iranian champion": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "113139": {
+            "type": "national",
             "seasons": [
                 2023
             ],
@@ -7093,6 +7132,7 @@
             }
         },
         "15310": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -7167,6 +7207,7 @@
             }
         },
         "11127": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -7222,6 +7263,7 @@
             }
         },
         "232": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -7291,6 +7333,7 @@
             }
         },
         "28095": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -7357,6 +7400,7 @@
             }
         },
         "15309": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019
@@ -7421,6 +7465,7 @@
             }
         },
         "33815": {
+            "type": "national",
             "seasons": [
                 2017,
                 2018,
@@ -7479,6 +7524,7 @@
             }
         },
         "3718": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -7533,24 +7579,24 @@
     },
     "career": {
         "club": {
-            "matches": 88,
-            "minutes": 2293,
-            "goals": 0,
-            "assists": 1,
-            "goal_contributions": 1,
-            "team_titles": 0,
+            "matches": 326,
+            "minutes": 14057,
+            "goals": 34,
+            "assists": 13,
+            "goal_contributions": 47,
+            "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 5
+            "season_count": 11
         },
         "national": {
-            "matches": 340,
-            "minutes": 14283,
-            "goals": 44,
-            "assists": 13,
-            "goal_contributions": 57,
-            "team_titles": 2,
+            "matches": 104,
+            "minutes": 2546,
+            "goals": 10,
+            "assists": 1,
+            "goal_contributions": 11,
+            "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 10
+            "season_count": 9
         }
     }
 }

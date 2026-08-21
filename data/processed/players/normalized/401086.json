@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Mahmoud Al-Mardi",
         "short_name": "M. Al-Mardi",
+        "dateOfBirth": "1993-10-06",
+        "placeOfBirth": "Aqaba",
         "nation_1": "Jordan",
         "nation_2": "",
         "height": 1.76,
@@ -14,6 +17,22 @@
         "prime_date": "2025-05-30"
     },
     "matches": [
+        {
+            "game_id": "4894725",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "15795",
+            "opponent_id": "3718",
+            "position": "LW",
+            "minutes": 55,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4776665",
             "season": 2025,
@@ -4235,7 +4254,7 @@
             "title": "AFC Cup Winner",
             "season": "20/21",
             "season_id": 2020,
-            "club_name": "Al-Muharraq SC",
+            "club_name": "Muharraq SC",
             "club_id": 8546
         },
         {
@@ -4249,7 +4268,7 @@
             "title": "AFC Cup Participant",
             "season": "20/21",
             "season_id": 2020,
-            "club_name": "Al-Muharraq SC",
+            "club_name": "Muharraq SC",
             "club_id": 8546
         },
         {
@@ -4310,7 +4329,72 @@
         }
     ],
     "clubs": {
+        "15795": {
+            "type": "club",
+            "seasons": [
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 51,
+                "participations": 51,
+                "minutes": 3346,
+                "starts": 41,
+                "captain_matches": 1,
+                "goals": 9,
+                "assists": 16,
+                "goals_conceded": 33,
+                "points": 110,
+                "clean_sheets": 27,
+                "wins": 34,
+                "draws": 8,
+                "losses": 9,
+                "goal_matches": 42,
+                "assist_matches": 37,
+                "goal_contributions": 25
+            },
+            "positions": {
+                "LW": 30,
+                "AMF": 2,
+                "RM": 2,
+                "CMF": 1,
+                "CF": 3,
+                "LM": 3
+            },
+            "derived": {
+                "season_count": 3,
+                "points_per_match": 2.157,
+                "minutes_per_match": 65.6,
+                "win_rate": 0.6667,
+                "goals_per_90": 0.242,
+                "assists_per_90": 0.43,
+                "contributions_per_90": 0.672,
+                "primary_position": "LW"
+            },
+            "competitions": {
+                "International Cup": {
+                    "matches": 12,
+                    "minutes": 978,
+                    "goals": 2,
+                    "assists": 3
+                },
+                "First Tier": {
+                    "matches": 39,
+                    "minutes": 2368,
+                    "goals": 7,
+                    "assists": 13
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Jordanian Champion": 2
+                },
+                "individual_titles": {}
+            }
+        },
         "15737": {
+            "type": "national",
             "seasons": [
                 2014,
                 2015,
@@ -4378,67 +4462,8 @@
                 "individual_titles": {}
             }
         },
-        "15795": {
-            "seasons": [
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 50,
-                "participations": 50,
-                "minutes": 3291,
-                "starts": 40,
-                "captain_matches": 0,
-                "goals": 9,
-                "assists": 16,
-                "goals_conceded": 30,
-                "points": 110,
-                "clean_sheets": 27,
-                "wins": 34,
-                "draws": 8,
-                "losses": 8,
-                "goal_matches": 41,
-                "assist_matches": 36,
-                "goal_contributions": 25
-            },
-            "positions": {
-                "LW": 29,
-                "AMF": 2,
-                "RM": 2,
-                "CMF": 1,
-                "CF": 3,
-                "LM": 3
-            },
-            "derived": {
-                "season_count": 2,
-                "points_per_match": 2.2,
-                "minutes_per_match": 65.8,
-                "win_rate": 0.68,
-                "goals_per_90": 0.246,
-                "assists_per_90": 0.438,
-                "contributions_per_90": 0.684,
-                "primary_position": "LW"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 39,
-                    "minutes": 2368,
-                    "goals": 7,
-                    "assists": 13
-                },
-                "International Cup": {
-                    "matches": 11,
-                    "minutes": 923,
-                    "goals": 2,
-                    "assists": 3
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "44289": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -4499,6 +4524,7 @@
             }
         },
         "15818": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -4564,6 +4590,7 @@
             }
         },
         "8546": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -4616,6 +4643,7 @@
             }
         },
         "69471": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -4664,6 +4692,7 @@
             }
         },
         "34471": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -4716,6 +4745,7 @@
             }
         },
         "13592": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -4766,6 +4796,7 @@
             }
         },
         "22722": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -4816,6 +4847,7 @@
             }
         },
         "64232": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -4864,22 +4896,22 @@
     },
     "career": {
         "club": {
-            "matches": 13,
-            "minutes": 509,
-            "goals": 1,
-            "assists": 1,
-            "goal_contributions": 2,
-            "team_titles": 0,
+            "matches": 119,
+            "minutes": 7901,
+            "goals": 22,
+            "assists": 24,
+            "goal_contributions": 46,
+            "team_titles": 3,
             "individual_titles": 0,
-            "season_count": 1
+            "season_count": 9
         },
         "national": {
-            "matches": 250,
-            "minutes": 11594,
-            "goals": 28,
-            "assists": 35,
-            "goal_contributions": 63,
-            "team_titles": 1,
+            "matches": 145,
+            "minutes": 4257,
+            "goals": 7,
+            "assists": 12,
+            "goal_contributions": 19,
+            "team_titles": 0,
             "individual_titles": 0,
             "season_count": 12
         }

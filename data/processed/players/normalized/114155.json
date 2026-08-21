@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Habib Al-Fardan",
         "short_name": "H. Al-Fardan",
+        "dateOfBirth": "1990-11-11",
+        "placeOfBirth": "Dubai",
         "nation_1": "United Arab Emirates",
         "nation_2": "",
         "height": 1.8,
@@ -14,6 +17,22 @@
         "prime_date": "2015-05-05"
     },
     "matches": [
+        {
+            "game_id": "5022602",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "94732",
+            "opponent_id": "16214",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
         {
             "game_id": "4825101",
             "season": 2025,
@@ -8180,7 +8199,7 @@
             "competition_type": "National youth team",
             "club_id": "53826",
             "opponent_id": "53829",
-            "position": "",
+            "position": "CMF",
             "minutes": 1,
             "started": false,
             "captain": false,
@@ -9218,12 +9237,14 @@
     ],
     "clubs": {
         "94732": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 4,
-                "participations": 4,
+                "matches": 5,
+                "participations": 5,
                 "minutes": 314,
                 "starts": 2,
                 "captain_matches": 0,
@@ -9231,12 +9252,12 @@
                 "assists": 1,
                 "goals_conceded": 4,
                 "points": 9,
-                "clean_sheets": 2,
+                "clean_sheets": 3,
                 "wins": 3,
                 "draws": 0,
-                "losses": 1,
-                "goal_matches": 4,
-                "assist_matches": 3,
+                "losses": 2,
+                "goal_matches": 5,
+                "assist_matches": 4,
                 "goal_contributions": 1
             },
             "positions": {
@@ -9244,16 +9265,22 @@
                 "CMF": 1
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 2.25,
-                "minutes_per_match": 78.5,
-                "win_rate": 0.75,
+                "season_count": 2,
+                "points_per_match": 1.8,
+                "minutes_per_match": 62.8,
+                "win_rate": 0.6,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.287,
                 "contributions_per_90": 0.287,
                 "primary_position": "LM"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Domestic Cup": {
                     "matches": 4,
                     "minutes": 314,
@@ -9267,6 +9294,7 @@
             }
         },
         "38040": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -9334,6 +9362,7 @@
             }
         },
         "5432": {
+            "type": "club",
             "seasons": [
                 2010,
                 2011,
@@ -9413,6 +9442,7 @@
             }
         },
         "5147": {
+            "type": "national",
             "seasons": [
                 2012,
                 2013,
@@ -9480,6 +9510,7 @@
             }
         },
         "60529": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -9526,6 +9557,7 @@
             }
         },
         "15541": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -9595,6 +9627,7 @@
             }
         },
         "53826": {
+            "type": "national",
             "seasons": [
                 2011
             ],
@@ -9616,7 +9649,9 @@
                 "assist_matches": 3,
                 "goal_contributions": 0
             },
-            "positions": {},
+            "positions": {
+                "CMF": 1
+            },
             "derived": {
                 "season_count": 1,
                 "points_per_match": 0.333,
@@ -9625,7 +9660,7 @@
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
-                "primary_position": ""
+                "primary_position": "CMF"
             },
             "competitions": {
                 "National youth team": {
@@ -9641,6 +9676,7 @@
             }
         },
         "22992": {
+            "type": "national",
             "seasons": [
                 2008
             ],
@@ -9695,24 +9731,24 @@
     },
     "career": {
         "club": {
-            "matches": 152,
-            "minutes": 5951,
-            "goals": 10,
-            "assists": 9,
-            "goal_contributions": 19,
-            "team_titles": 0,
+            "matches": 464,
+            "minutes": 21277,
+            "goals": 44,
+            "assists": 28,
+            "goal_contributions": 72,
+            "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 6
+            "season_count": 17
         },
         "national": {
-            "matches": 419,
-            "minutes": 18235,
-            "goals": 39,
-            "assists": 20,
-            "goal_contributions": 59,
-            "team_titles": 3,
+            "matches": 108,
+            "minutes": 2909,
+            "goals": 5,
+            "assists": 1,
+            "goal_contributions": 6,
+            "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 12
+            "season_count": 11
         }
     }
 }

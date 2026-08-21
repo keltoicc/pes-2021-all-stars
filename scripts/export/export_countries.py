@@ -4,7 +4,7 @@ import re
 import sys
 import csv
 
-from .publisher import publish_directory
+from publisher import publish_directory
 
 sys.path.append(str(Path(__file__).parent))
 

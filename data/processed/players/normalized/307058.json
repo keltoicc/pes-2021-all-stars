@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Mehdi Taremi",
         "short_name": "M. Taremi",
+        "dateOfBirth": "1992-07-18",
+        "placeOfBirth": "Bushehr",
         "nation_1": "Iran",
         "nation_2": "",
         "height": 1.87,
@@ -14,6 +17,38 @@
         "prime_date": "2022-11-01"
     },
     "matches": [
+        {
+            "game_id": "4973505",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "683",
+            "opponent_id": "467",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4973495",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "683",
+            "opponent_id": "467",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 1
+        },
         {
             "game_id": "4776660",
             "season": 2025,
@@ -12645,7 +12680,85 @@
         }
     ],
     "clubs": {
+        "683": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 48,
+                "participations": 48,
+                "minutes": 2123,
+                "starts": 22,
+                "captain_matches": 0,
+                "goals": 16,
+                "assists": 6,
+                "goals_conceded": 19,
+                "points": 88,
+                "clean_sheets": 32,
+                "wins": 25,
+                "draws": 13,
+                "losses": 10,
+                "goal_matches": 35,
+                "assist_matches": 42,
+                "goal_contributions": 22
+            },
+            "positions": {
+                "CF": 21,
+                "SS": 2
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 1.833,
+                "minutes_per_match": 44.2,
+                "win_rate": 0.5208,
+                "goals_per_90": 0.678,
+                "assists_per_90": 0.254,
+                "contributions_per_90": 0.933,
+                "primary_position": "CF"
+            },
+            "competitions": {
+                "International Cup": {
+                    "matches": 12,
+                    "minutes": 485,
+                    "goals": 2,
+                    "assists": 2
+                },
+                "Play-Offs": {
+                    "matches": 6,
+                    "minutes": 184,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "First Tier": {
+                    "matches": 24,
+                    "minutes": 1077,
+                    "goals": 10,
+                    "assists": 4
+                },
+                "Domestic Cup": {
+                    "matches": 5,
+                    "minutes": 271,
+                    "goals": 3,
+                    "assists": 0
+                },
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 106,
+                    "goals": 1,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Greek Super Cup winner": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3582": {
+            "type": "national",
             "seasons": [
                 2014,
                 2015,
@@ -12719,82 +12832,8 @@
                 }
             }
         },
-        "683": {
-            "seasons": [
-                2025
-            ],
-            "stats": {
-                "matches": 46,
-                "participations": 46,
-                "minutes": 2123,
-                "starts": 22,
-                "captain_matches": 0,
-                "goals": 16,
-                "assists": 6,
-                "goals_conceded": 19,
-                "points": 87,
-                "clean_sheets": 30,
-                "wins": 25,
-                "draws": 12,
-                "losses": 9,
-                "goal_matches": 33,
-                "assist_matches": 40,
-                "goal_contributions": 22
-            },
-            "positions": {
-                "CF": 21,
-                "SS": 2
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 1.891,
-                "minutes_per_match": 46.2,
-                "win_rate": 0.5435,
-                "goals_per_90": 0.678,
-                "assists_per_90": 0.254,
-                "contributions_per_90": 0.933,
-                "primary_position": "CF"
-            },
-            "competitions": {
-                "Play-Offs": {
-                    "matches": 6,
-                    "minutes": 184,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "First Tier": {
-                    "matches": 24,
-                    "minutes": 1077,
-                    "goals": 10,
-                    "assists": 4
-                },
-                "International Cup": {
-                    "matches": 10,
-                    "minutes": 485,
-                    "goals": 2,
-                    "assists": 2
-                },
-                "Domestic Cup": {
-                    "matches": 5,
-                    "minutes": 271,
-                    "goals": 3,
-                    "assists": 0
-                },
-                "Domestic Super Cup": {
-                    "matches": 1,
-                    "minutes": 106,
-                    "goals": 1,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Greek Super Cup winner": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "46": {
+            "type": "club",
             "seasons": [
                 2024,
                 2025
@@ -12863,6 +12902,7 @@
             }
         },
         "720": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -12949,6 +12989,7 @@
             }
         },
         "2425": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -13013,6 +13054,7 @@
             }
         },
         "6297": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018
@@ -13080,6 +13122,7 @@
             }
         },
         "6079": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -13157,6 +13200,7 @@
             }
         },
         "42187": {
+            "type": "club",
             "seasons": [
                 2009,
                 2013
@@ -13212,6 +13256,7 @@
             }
         },
         "17575": {
+            "type": "club",
             "seasons": [
                 2010,
                 2011
@@ -13269,23 +13314,23 @@
     },
     "career": {
         "club": {
-            "matches": 130,
-            "minutes": 5002,
-            "goals": 34,
-            "assists": 6,
-            "goal_contributions": 40,
-            "team_titles": 0,
-            "individual_titles": 1,
-            "season_count": 5
+            "matches": 649,
+            "minutes": 34104,
+            "goals": 219,
+            "assists": 108,
+            "goal_contributions": 327,
+            "team_titles": 11,
+            "individual_titles": 10,
+            "season_count": 17
         },
         "national": {
-            "matches": 643,
-            "minutes": 36946,
-            "goals": 243,
-            "assists": 127,
-            "goal_contributions": 370,
-            "team_titles": 12,
-            "individual_titles": 16,
+            "matches": 126,
+            "minutes": 7844,
+            "goals": 58,
+            "assists": 25,
+            "goal_contributions": 83,
+            "team_titles": 1,
+            "individual_titles": 7,
             "season_count": 12
         }
     }

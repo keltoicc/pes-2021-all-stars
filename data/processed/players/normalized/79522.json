@@ -1,10 +1,13 @@
 {
     "player": {
+        "name": "Yuto Nagatomo",
         "short_name": "Y. Nagatomo",
+        "dateOfBirth": "1986-09-12",
+        "placeOfBirth": "Saijo, Ehime",
         "nation_1": "Japan",
         "nation_2": "",
         "height": 1.7,
-        "foot": null,
+        "foot": "Both",
         "position_group": "DEFENDER",
         "position_1": "LB",
         "position_2": "LM",
@@ -14,6 +17,38 @@
         "prime_date": "2014-07-11"
     },
     "matches": [
+        {
+            "game_id": "4901515",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "6631",
+            "opponent_id": "3958",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 1
+        },
+        {
+            "game_id": "4901490",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "6631",
+            "opponent_id": "23568",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
         {
             "game_id": "4776682",
             "season": 2025,
@@ -18516,7 +18551,88 @@
         }
     ],
     "clubs": {
+        "6631": {
+            "type": "club",
+            "seasons": [
+                2006,
+                2007,
+                2008,
+                2009,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 357,
+                "participations": 357,
+                "minutes": 17405,
+                "starts": 193,
+                "captain_matches": 1,
+                "goals": 8,
+                "assists": 10,
+                "goals_conceded": 245,
+                "points": 539,
+                "clean_sheets": 218,
+                "wins": 158,
+                "draws": 65,
+                "losses": 134,
+                "goal_matches": 349,
+                "assist_matches": 348,
+                "goal_contributions": 18
+            },
+            "positions": {
+                "LB": 112,
+                "RB": 68,
+                "RM": 5,
+                "LM": 5,
+                "CB": 2
+            },
+            "derived": {
+                "season_count": 11,
+                "points_per_match": 1.51,
+                "minutes_per_match": 48.8,
+                "win_rate": 0.4426,
+                "goals_per_90": 0.041,
+                "assists_per_90": 0.052,
+                "contributions_per_90": 0.093,
+                "primary_position": "LB"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 263,
+                    "minutes": 14705,
+                    "goals": 7,
+                    "assists": 9
+                },
+                "League Cup": {
+                    "matches": 72,
+                    "minutes": 1706,
+                    "goals": 1,
+                    "assists": 1
+                },
+                "Domestic Cup": {
+                    "matches": 22,
+                    "minutes": 994,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Japanese league cup winner": 1
+                },
+                "individual_titles": {
+                    "J. League's Youth Player of the Year": 1,
+                    "J. League Best XI": 1
+                }
+            }
+        },
         "3435": {
+            "type": "national",
             "seasons": [
                 2007,
                 2008,
@@ -18599,85 +18715,8 @@
                 }
             }
         },
-        "6631": {
-            "seasons": [
-                2006,
-                2007,
-                2008,
-                2009,
-                2020,
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 355,
-                "participations": 355,
-                "minutes": 17405,
-                "starts": 193,
-                "captain_matches": 1,
-                "goals": 8,
-                "assists": 10,
-                "goals_conceded": 245,
-                "points": 538,
-                "clean_sheets": 216,
-                "wins": 158,
-                "draws": 64,
-                "losses": 133,
-                "goal_matches": 347,
-                "assist_matches": 346,
-                "goal_contributions": 18
-            },
-            "positions": {
-                "LB": 112,
-                "RB": 68,
-                "RM": 5,
-                "LM": 5,
-                "CB": 2
-            },
-            "derived": {
-                "season_count": 10,
-                "points_per_match": 1.515,
-                "minutes_per_match": 49.0,
-                "win_rate": 0.4451,
-                "goals_per_90": 0.041,
-                "assists_per_90": 0.052,
-                "contributions_per_90": 0.093,
-                "primary_position": "LB"
-            },
-            "competitions": {
-                "League Cup": {
-                    "matches": 72,
-                    "minutes": 1706,
-                    "goals": 1,
-                    "assists": 1
-                },
-                "First Tier": {
-                    "matches": 261,
-                    "minutes": 14705,
-                    "goals": 7,
-                    "assists": 9
-                },
-                "Domestic Cup": {
-                    "matches": 22,
-                    "minutes": 994,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Japanese league cup winner": 1
-                },
-                "individual_titles": {
-                    "J. League's Youth Player of the Year": 1,
-                    "J. League Best XI": 1
-                }
-            }
-        },
         "244": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -18746,6 +18785,7 @@
             }
         },
         "141": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -18820,6 +18860,7 @@
             }
         },
         "46": {
+            "type": "club",
             "seasons": [
                 2010,
                 2011,
@@ -18898,6 +18939,7 @@
             }
         },
         "1429": {
+            "type": "club",
             "seasons": [
                 2010
             ],
@@ -18954,6 +18996,7 @@
             }
         },
         "53813": {
+            "type": "national",
             "seasons": [
                 2007
             ],
@@ -19002,6 +19045,7 @@
             }
         },
         "24041": {
+            "type": "club",
             "seasons": [
                 2006
             ],
@@ -19050,22 +19094,22 @@
     },
     "career": {
         "club": {
-            "matches": 379,
-            "minutes": 18845,
-            "goals": 8,
-            "assists": 11,
-            "goal_contributions": 19,
-            "team_titles": 1,
+            "matches": 879,
+            "minutes": 42407,
+            "goals": 22,
+            "assists": 37,
+            "goal_contributions": 59,
+            "team_titles": 6,
             "individual_titles": 2,
-            "season_count": 11
+            "season_count": 21
         },
         "national": {
-            "matches": 764,
-            "minutes": 35924,
-            "goals": 18,
-            "assists": 54,
-            "goal_contributions": 72,
-            "team_titles": 7,
+            "matches": 266,
+            "minutes": 12362,
+            "goals": 4,
+            "assists": 28,
+            "goal_contributions": 32,
+            "team_titles": 2,
             "individual_titles": 4,
             "season_count": 19
         }

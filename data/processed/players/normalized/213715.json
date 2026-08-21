@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Shoja Khalilzadeh",
         "short_name": "S. Khalilzadeh",
+        "dateOfBirth": "1989-05-14",
+        "placeOfBirth": "Bahnemir, Mazandaran",
         "nation_1": "Iran",
         "nation_2": "",
         "height": 1.83,
@@ -14,6 +17,38 @@
         "prime_date": "2019-08-02"
     },
     "matches": [
+        {
+            "game_id": "4974963",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "12935",
+            "opponent_id": "4947",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4974961",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "12935",
+            "opponent_id": "6078",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776660",
             "season": 2025,
@@ -13422,7 +13457,83 @@
         }
     ],
     "clubs": {
+        "12935": {
+            "type": "club",
+            "seasons": [
+                2014,
+                2015,
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 175,
+                "participations": 175,
+                "minutes": 11717,
+                "starts": 131,
+                "captain_matches": 98,
+                "goals": 7,
+                "assists": 2,
+                "goals_conceded": 99,
+                "points": 320,
+                "clean_sheets": 111,
+                "wins": 93,
+                "draws": 41,
+                "losses": 41,
+                "goal_matches": 169,
+                "assist_matches": 173,
+                "goal_contributions": 9
+            },
+            "positions": {
+                "CB": 132
+            },
+            "derived": {
+                "season_count": 6,
+                "points_per_match": 1.829,
+                "minutes_per_match": 67.0,
+                "win_rate": 0.5314,
+                "goals_per_90": 0.054,
+                "assists_per_90": 0.015,
+                "contributions_per_90": 0.069,
+                "primary_position": "CB"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 132,
+                    "minutes": 8810,
+                    "goals": 5,
+                    "assists": 1
+                },
+                "International Cup": {
+                    "matches": 32,
+                    "minutes": 2160,
+                    "goals": 2,
+                    "assists": 1
+                },
+                "Domestic Cup": {
+                    "matches": 10,
+                    "minutes": 657,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Iranian champion": 1,
+                    "Iranian Supercup-Champion": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3582": {
+            "type": "national",
             "seasons": [
                 2007,
                 2009,
@@ -13494,80 +13605,8 @@
                 "individual_titles": {}
             }
         },
-        "12935": {
-            "seasons": [
-                2014,
-                2015,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 173,
-                "participations": 173,
-                "minutes": 11537,
-                "starts": 129,
-                "captain_matches": 96,
-                "goals": 7,
-                "assists": 2,
-                "goals_conceded": 99,
-                "points": 314,
-                "clean_sheets": 109,
-                "wins": 91,
-                "draws": 41,
-                "losses": 41,
-                "goal_matches": 167,
-                "assist_matches": 171,
-                "goal_contributions": 9
-            },
-            "positions": {
-                "CB": 130
-            },
-            "derived": {
-                "season_count": 5,
-                "points_per_match": 1.815,
-                "minutes_per_match": 66.7,
-                "win_rate": 0.526,
-                "goals_per_90": 0.055,
-                "assists_per_90": 0.016,
-                "contributions_per_90": 0.07,
-                "primary_position": "CB"
-            },
-            "competitions": {
-                "International Cup": {
-                    "matches": 32,
-                    "minutes": 2160,
-                    "goals": 2,
-                    "assists": 1
-                },
-                "First Tier": {
-                    "matches": 130,
-                    "minutes": 8630,
-                    "goals": 5,
-                    "assists": 1
-                },
-                "Domestic Cup": {
-                    "matches": 10,
-                    "minutes": 657,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Domestic Super Cup": {
-                    "matches": 1,
-                    "minutes": 90,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Iranian champion": 1,
-                    "Iranian Supercup-Champion": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "3612": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -13628,6 +13667,7 @@
             }
         },
         "3229": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021
@@ -13697,6 +13737,7 @@
             }
         },
         "6079": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -13772,6 +13813,7 @@
             }
         },
         "4947": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -13837,6 +13879,7 @@
             }
         },
         "19628": {
+            "type": "club",
             "seasons": [
                 2010,
                 2011,
@@ -13894,6 +13937,7 @@
             }
         },
         "32341": {
+            "type": "national",
             "seasons": [
                 2011
             ],
@@ -13943,6 +13987,7 @@
             }
         },
         "53908": {
+            "type": "club",
             "seasons": [
                 2010
             ],
@@ -13991,6 +14036,7 @@
             }
         },
         "28344": {
+            "type": "club",
             "seasons": [
                 2008,
                 2009
@@ -14040,6 +14086,7 @@
             }
         },
         "25211": {
+            "type": "national",
             "seasons": [
                 2009
             ],
@@ -14086,6 +14133,7 @@
             }
         },
         "28424": {
+            "type": "national",
             "seasons": [
                 2007
             ],
@@ -14136,22 +14184,22 @@
     },
     "career": {
         "club": {
-            "matches": 143,
-            "minutes": 9140,
-            "goals": 1,
-            "assists": 2,
-            "goal_contributions": 3,
-            "team_titles": 0,
+            "matches": 616,
+            "minutes": 41976,
+            "goals": 26,
+            "assists": 9,
+            "goal_contributions": 35,
+            "team_titles": 9,
             "individual_titles": 0,
-            "season_count": 6
+            "season_count": 19
         },
         "national": {
-            "matches": 686,
-            "minutes": 38217,
-            "goals": 27,
-            "assists": 7,
-            "goal_contributions": 34,
-            "team_titles": 9,
+            "matches": 215,
+            "minutes": 5561,
+            "goals": 2,
+            "assists": 0,
+            "goal_contributions": 2,
+            "team_titles": 0,
             "individual_titles": 0,
             "season_count": 18
         }

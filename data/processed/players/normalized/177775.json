@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Mitchell Duke",
         "short_name": "M. Duke",
+        "dateOfBirth": "1991-01-18",
+        "placeOfBirth": "Liverpool",
         "nation_1": "Australia",
         "nation_2": "",
         "height": 1.86,
@@ -14,6 +17,38 @@
         "prime_date": "2023-01-06"
     },
     "matches": [
+        {
+            "game_id": "4901512",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "23568",
+            "opponent_id": "672",
+            "position": "AMF",
+            "minutes": 63,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4901490",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "23568",
+            "opponent_id": "6631",
+            "position": "AMF",
+            "minutes": 66,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4727270",
             "season": 2025,
@@ -11362,13 +11397,6 @@
             "club_id": 6954
         },
         {
-            "title": "Australian Regular Season Champion",
-            "season": "12/13",
-            "season_id": 2012,
-            "club_name": "Central Coast Mariners",
-            "club_id": 6954
-        },
-        {
             "title": "Japanese cup winner",
             "season": "2025",
             "season_id": 2024,
@@ -11384,7 +11412,90 @@
         }
     ],
     "clubs": {
+        "23568": {
+            "type": "club",
+            "seasons": [
+                2022,
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 144,
+                "participations": 144,
+                "minutes": 4969,
+                "starts": 55,
+                "captain_matches": 4,
+                "goals": 21,
+                "assists": 10,
+                "goals_conceded": 45,
+                "points": 270,
+                "clean_sheets": 111,
+                "wins": 80,
+                "draws": 30,
+                "losses": 34,
+                "goal_matches": 125,
+                "assist_matches": 136,
+                "goal_contributions": 31
+            },
+            "positions": {
+                "AMF": 6,
+                "SS": 2,
+                "CF": 47
+            },
+            "derived": {
+                "season_count": 5,
+                "points_per_match": 1.875,
+                "minutes_per_match": 34.5,
+                "win_rate": 0.5556,
+                "goals_per_90": 0.38,
+                "assists_per_90": 0.181,
+                "contributions_per_90": 0.561,
+                "primary_position": "CF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 78,
+                    "minutes": 1734,
+                    "goals": 8,
+                    "assists": 2
+                },
+                "International Cup": {
+                    "matches": 6,
+                    "minutes": 163,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 10,
+                    "minutes": 471,
+                    "goals": 1,
+                    "assists": 1
+                },
+                "League Cup": {
+                    "matches": 8,
+                    "minutes": 275,
+                    "goals": 2,
+                    "assists": 1
+                },
+                "Second Tier": {
+                    "matches": 42,
+                    "minutes": 2326,
+                    "goals": 10,
+                    "assists": 6
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Japanese cup winner": 1,
+                    "Japanese second league Champion": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "71085": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -11438,87 +11549,8 @@
                 "individual_titles": {}
             }
         },
-        "23568": {
-            "seasons": [
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 142,
-                "participations": 142,
-                "minutes": 4840,
-                "starts": 53,
-                "captain_matches": 4,
-                "goals": 20,
-                "assists": 9,
-                "goals_conceded": 44,
-                "points": 264,
-                "clean_sheets": 110,
-                "wins": 78,
-                "draws": 30,
-                "losses": 34,
-                "goal_matches": 124,
-                "assist_matches": 135,
-                "goal_contributions": 29
-            },
-            "positions": {
-                "AMF": 4,
-                "SS": 2,
-                "CF": 47
-            },
-            "derived": {
-                "season_count": 4,
-                "points_per_match": 1.859,
-                "minutes_per_match": 34.1,
-                "win_rate": 0.5493,
-                "goals_per_90": 0.372,
-                "assists_per_90": 0.167,
-                "contributions_per_90": 0.539,
-                "primary_position": "CF"
-            },
-            "competitions": {
-                "International Cup": {
-                    "matches": 6,
-                    "minutes": 163,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "First Tier": {
-                    "matches": 76,
-                    "minutes": 1605,
-                    "goals": 7,
-                    "assists": 1
-                },
-                "Domestic Cup": {
-                    "matches": 10,
-                    "minutes": 471,
-                    "goals": 1,
-                    "assists": 1
-                },
-                "League Cup": {
-                    "matches": 8,
-                    "minutes": 275,
-                    "goals": 2,
-                    "assists": 1
-                },
-                "Second Tier": {
-                    "matches": 42,
-                    "minutes": 2326,
-                    "goals": 10,
-                    "assists": 6
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Japanese cup winner": 1,
-                    "Japanese second league Champion": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "3433": {
+            "type": "national",
             "seasons": [
                 2012,
                 2013,
@@ -11585,6 +11617,7 @@
             }
         },
         "22171": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021
@@ -11646,6 +11679,7 @@
             }
         },
         "53845": {
+            "type": "national",
             "seasons": [
                 2020
             ],
@@ -11694,6 +11728,7 @@
             }
         },
         "32270": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -11740,6 +11775,7 @@
             }
         },
         "36100": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -11800,6 +11836,7 @@
             }
         },
         "28844": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -11863,6 +11900,7 @@
             }
         },
         "1062": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -11937,6 +11975,7 @@
             }
         },
         "6954": {
+            "type": "club",
             "seasons": [
                 2010,
                 2011,
@@ -12011,24 +12050,24 @@
     },
     "career": {
         "club": {
-            "matches": 297,
-            "minutes": 14327,
-            "goals": 40,
-            "assists": 17,
-            "goal_contributions": 57,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 8
-        },
-        "national": {
-            "matches": 409,
-            "minutes": 14451,
-            "goals": 54,
-            "assists": 21,
-            "goal_contributions": 75,
+            "matches": 574,
+            "minutes": 25958,
+            "goals": 82,
+            "assists": 33,
+            "goal_contributions": 115,
             "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 16
+            "season_count": 17
+        },
+        "national": {
+            "matches": 134,
+            "minutes": 2949,
+            "goals": 13,
+            "assists": 6,
+            "goal_contributions": 19,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 13
         }
     }
 }

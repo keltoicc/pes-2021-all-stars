@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Kang-in Lee",
         "short_name": "Kang-in Lee",
+        "dateOfBirth": "2001-02-19",
+        "placeOfBirth": "Namdong-gu, Incheon",
         "nation_1": "Korea, South",
         "nation_2": "",
         "height": 1.74,
@@ -14,6 +17,22 @@
         "prime_date": "2024-12-10"
     },
     "matches": [
+        {
+            "game_id": "4909441",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "13",
+            "opponent_id": "1084",
+            "position": "",
+            "minutes": 33,
+            "started": false,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776648",
             "season": 2025,
@@ -2676,7 +2695,7 @@
             "competition_type": "Domestic Cup",
             "club_id": "583",
             "opponent_id": "417",
-            "position": "CMF",
+            "position": "AMF",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -2852,7 +2871,7 @@
             "competition_type": "National Team",
             "club_id": "3589",
             "opponent_id": "3433",
-            "position": "RM",
+            "position": "RW",
             "minutes": 120,
             "started": true,
             "captain": false,
@@ -2932,7 +2951,7 @@
             "competition_type": "National Team",
             "club_id": "3589",
             "opponent_id": "15737",
-            "position": "LM",
+            "position": "LW",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -3012,7 +3031,7 @@
             "competition_type": "Domestic Super Cup",
             "club_id": "583",
             "opponent_id": "415",
-            "position": "CMF",
+            "position": "AMF",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -8292,7 +8311,7 @@
             "competition_type": "",
             "club_id": "50635",
             "opponent_id": "69273",
-            "position": "SS",
+            "position": "AMF",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -9128,7 +9147,55 @@
         }
     ],
     "clubs": {
+        "13": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 1,
+                "participations": 1,
+                "minutes": 33,
+                "starts": 0,
+                "captain_matches": 0,
+                "goals": 1,
+                "assists": 0,
+                "goals_conceded": 0,
+                "points": 3,
+                "clean_sheets": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "goal_matches": 0,
+                "assist_matches": 1,
+                "goal_contributions": 1
+            },
+            "positions": {},
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 3.0,
+                "minutes_per_match": 33.0,
+                "win_rate": 1.0,
+                "goals_per_90": 2.727,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 2.727,
+                "primary_position": ""
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 1,
+                    "minutes": 33,
+                    "goals": 1,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3589": {
+            "type": "national",
             "seasons": [
                 2018,
                 2019,
@@ -9159,10 +9226,8 @@
             },
             "positions": {
                 "AMF": 11,
-                "RW": 22,
-                "RM": 1,
-                "LM": 1,
-                "LW": 3,
+                "RW": 23,
+                "LW": 4,
                 "CMF": 2,
                 "SS": 1
             },
@@ -9196,6 +9261,7 @@
             }
         },
         "583": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
@@ -9221,10 +9287,10 @@
             },
             "positions": {
                 "RW": 40,
-                "AMF": 48,
+                "AMF": 50,
                 "CF": 9,
                 "LM": 3,
-                "CMF": 3,
+                "CMF": 1,
                 "LW": 6,
                 "RB": 1
             },
@@ -9283,6 +9349,7 @@
             }
         },
         "53812": {
+            "type": "national",
             "seasons": [
                 2020,
                 2022
@@ -9336,6 +9403,7 @@
             }
         },
         "237": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022
@@ -9396,6 +9464,7 @@
             }
         },
         "34950": {
+            "type": "national",
             "seasons": [
                 2020,
                 2021
@@ -9459,6 +9528,7 @@
             }
         },
         "1049": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -9533,6 +9603,7 @@
             }
         },
         "22983": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -9590,6 +9661,7 @@
             }
         },
         "6182": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018
@@ -9641,6 +9713,7 @@
             }
         },
         "50635": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -9663,8 +9736,7 @@
                 "goal_contributions": 1
             },
             "positions": {
-                "SS": 1,
-                "AMF": 2
+                "AMF": 3
             },
             "derived": {
                 "season_count": 1,
@@ -9683,6 +9755,7 @@
             }
         },
         "28208": {
+            "type": "national",
             "seasons": [
                 2017
             ],
@@ -9731,22 +9804,22 @@
     },
     "career": {
         "club": {
-            "matches": 121,
-            "minutes": 6347,
-            "goals": 12,
-            "assists": 12,
-            "goal_contributions": 24,
-            "team_titles": 0,
+            "matches": 432,
+            "minutes": 15392,
+            "goals": 32,
+            "assists": 32,
+            "goal_contributions": 64,
+            "team_titles": 12,
             "individual_titles": 0,
-            "season_count": 4
+            "season_count": 10
         },
         "national": {
-            "matches": 437,
-            "minutes": 14301,
-            "goals": 38,
-            "assists": 39,
-            "goal_contributions": 77,
-            "team_titles": 13,
+            "matches": 127,
+            "minutes": 5289,
+            "goals": 19,
+            "assists": 19,
+            "goal_contributions": 38,
+            "team_titles": 1,
             "individual_titles": 1,
             "season_count": 9
         }

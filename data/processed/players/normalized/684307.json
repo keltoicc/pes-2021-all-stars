@@ -1,7 +1,10 @@
 {
     "player": {
+        "name": "Youssef Amyn",
         "short_name": "Y. Amyn",
-        "nation_1": "",
+        "dateOfBirth": "2003-08-21",
+        "placeOfBirth": "Essen",
+        "nation_1": "Iraq",
         "nation_2": "Germany",
         "height": 1.75,
         "foot": "Right",
@@ -14,6 +17,38 @@
         "prime_date": "2025-03-10"
     },
     "matches": [
+        {
+            "game_id": "4898030",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "2156",
+            "opponent_id": "3793",
+            "position": "LW",
+            "minutes": 120,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4897992",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "2156",
+            "opponent_id": "3793",
+            "position": "",
+            "minutes": 27,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4776664",
             "season": 2025,
@@ -5036,7 +5071,79 @@
         }
     ],
     "clubs": {
+        "2156": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 53,
+                "participations": 53,
+                "minutes": 857,
+                "starts": 8,
+                "captain_matches": 0,
+                "goals": 2,
+                "assists": 2,
+                "goals_conceded": 8,
+                "points": 92,
+                "clean_sheets": 46,
+                "wins": 26,
+                "draws": 14,
+                "losses": 13,
+                "goal_matches": 51,
+                "assist_matches": 52,
+                "goal_contributions": 4
+            },
+            "positions": {
+                "LW": 4,
+                "RW": 4
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 1.736,
+                "minutes_per_match": 16.2,
+                "win_rate": 0.4906,
+                "goals_per_90": 0.21,
+                "assists_per_90": 0.21,
+                "contributions_per_90": 0.42,
+                "primary_position": "LW"
+            },
+            "competitions": {
+                "International Cup": {
+                    "matches": 15,
+                    "minutes": 172,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "First Tier": {
+                    "matches": 36,
+                    "minutes": 670,
+                    "goals": 2,
+                    "assists": 2
+                },
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 15,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Cypriot Super Cup Winner": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3560": {
+            "type": "national",
             "seasons": [
                 2022,
                 2023,
@@ -5096,76 +5203,8 @@
                 "individual_titles": {}
             }
         },
-        "2156": {
-            "seasons": [
-                2025
-            ],
-            "stats": {
-                "matches": 51,
-                "participations": 51,
-                "minutes": 710,
-                "starts": 7,
-                "captain_matches": 0,
-                "goals": 2,
-                "assists": 2,
-                "goals_conceded": 5,
-                "points": 91,
-                "clean_sheets": 46,
-                "wins": 26,
-                "draws": 13,
-                "losses": 12,
-                "goal_matches": 49,
-                "assist_matches": 50,
-                "goal_contributions": 4
-            },
-            "positions": {
-                "RW": 4,
-                "LW": 3
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 1.784,
-                "minutes_per_match": 13.9,
-                "win_rate": 0.5098,
-                "goals_per_90": 0.254,
-                "assists_per_90": 0.254,
-                "contributions_per_90": 0.507,
-                "primary_position": "RW"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 36,
-                    "minutes": 670,
-                    "goals": 2,
-                    "assists": 2
-                },
-                "International Cup": {
-                    "matches": 13,
-                    "minutes": 25,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Domestic Cup": {
-                    "matches": 1,
-                    "minutes": 15,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Domestic Super Cup": {
-                    "matches": 1,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Cypriot Super Cup Winner": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "17209": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -5223,6 +5262,7 @@
             }
         },
         "23": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024
@@ -5281,6 +5321,7 @@
             }
         },
         "53808": {
+            "type": "national",
             "seasons": [
                 2023
             ],
@@ -5330,6 +5371,7 @@
             }
         },
         "39540": {
+            "type": "national",
             "seasons": [
                 2022
             ],
@@ -5385,6 +5427,7 @@
             }
         },
         "24366": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -5428,6 +5471,7 @@
             }
         },
         "1622": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -5496,6 +5540,7 @@
             }
         },
         "5710": {
+            "type": "national",
             "seasons": [
                 2021
             ],
@@ -5553,6 +5598,7 @@
             }
         },
         "10075": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021
@@ -5595,6 +5641,7 @@
             }
         },
         "21055": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -5636,22 +5683,22 @@
     },
     "career": {
         "club": {
-            "matches": 198,
-            "minutes": 5122,
-            "goals": 13,
-            "assists": 5,
-            "goal_contributions": 18,
-            "team_titles": 2,
+            "matches": 251,
+            "minutes": 5979,
+            "goals": 15,
+            "assists": 7,
+            "goal_contributions": 22,
+            "team_titles": 3,
             "individual_titles": 0,
-            "season_count": 6
+            "season_count": 8
         },
         "national": {
-            "matches": 113,
-            "minutes": 3319,
-            "goals": 7,
-            "assists": 5,
-            "goal_contributions": 12,
-            "team_titles": 1,
+            "matches": 62,
+            "minutes": 2609,
+            "goals": 5,
+            "assists": 3,
+            "goal_contributions": 8,
+            "team_titles": 0,
             "individual_titles": 0,
             "season_count": 5
         }

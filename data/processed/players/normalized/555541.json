@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Khalifa Al-Hammadi",
         "short_name": "K. Al-Hammadi",
+        "dateOfBirth": "1998-11-07",
+        "placeOfBirth": "Abu Dhabi",
         "nation_1": "United Arab Emirates",
         "nation_2": "",
         "height": 1.78,
@@ -14,6 +17,38 @@
         "prime_date": "2024-11-18"
     },
     "matches": [
+        {
+            "game_id": "5022600",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "2524",
+            "opponent_id": "17195",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4894724",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "2524",
+            "opponent_id": "8023",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 4,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4849053",
             "season": 2025,
@@ -6347,6 +6382,7 @@
     ],
     "clubs": {
         "2524": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -6356,28 +6392,29 @@
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 294,
-                "participations": 294,
-                "minutes": 19083,
-                "starts": 217,
+                "matches": 296,
+                "participations": 296,
+                "minutes": 19173,
+                "starts": 218,
                 "captain_matches": 5,
                 "goals": 11,
                 "assists": 8,
-                "goals_conceded": 294,
-                "points": 475,
-                "clean_sheets": 139,
-                "wins": 139,
+                "goals_conceded": 298,
+                "points": 478,
+                "clean_sheets": 140,
+                "wins": 140,
                 "draws": 58,
-                "losses": 97,
-                "goal_matches": 283,
-                "assist_matches": 286,
+                "losses": 98,
+                "goal_matches": 285,
+                "assist_matches": 288,
                 "goal_contributions": 19
             },
             "positions": {
-                "CB": 146,
+                "CB": 147,
                 "LB": 3,
                 "RB": 25,
                 "DMF": 1,
@@ -6386,39 +6423,39 @@
                 "LM": 2
             },
             "derived": {
-                "season_count": 9,
-                "points_per_match": 1.616,
-                "minutes_per_match": 64.9,
-                "win_rate": 0.4728,
+                "season_count": 10,
+                "points_per_match": 1.615,
+                "minutes_per_match": 64.8,
+                "win_rate": 0.473,
                 "goals_per_90": 0.052,
                 "assists_per_90": 0.038,
-                "contributions_per_90": 0.09,
+                "contributions_per_90": 0.089,
                 "primary_position": "CB"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 213,
+                    "minutes": 14989,
+                    "goals": 10,
+                    "assists": 7
+                },
+                "International Cup": {
+                    "matches": 21,
+                    "minutes": 1500,
+                    "goals": 1,
+                    "assists": 1
+                },
                 "Domestic Cup": {
                     "matches": 18,
                     "minutes": 846,
                     "goals": 0,
                     "assists": 0
                 },
-                "First Tier": {
-                    "matches": 212,
-                    "minutes": 14989,
-                    "goals": 10,
-                    "assists": 7
-                },
                 "League Cup": {
                     "matches": 43,
                     "minutes": 1718,
                     "goals": 0,
                     "assists": 0
-                },
-                "International Cup": {
-                    "matches": 20,
-                    "minutes": 1410,
-                    "goals": 1,
-                    "assists": 1
                 },
                 "Domestic Super Cup": {
                     "matches": 1,
@@ -6437,6 +6474,7 @@
             }
         },
         "5147": {
+            "type": "national",
             "seasons": [
                 2018,
                 2019,
@@ -6499,6 +6537,7 @@
             }
         },
         "34592": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -6549,24 +6588,24 @@
     },
     "career": {
         "club": {
-            "matches": 0,
-            "minutes": 0,
-            "goals": 0,
-            "assists": 0,
-            "goal_contributions": 0,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 0
-        },
-        "national": {
-            "matches": 392,
-            "minutes": 23384,
-            "goals": 14,
+            "matches": 296,
+            "minutes": 19173,
+            "goals": 11,
             "assists": 8,
-            "goal_contributions": 22,
+            "goal_contributions": 19,
             "team_titles": 3,
             "individual_titles": 0,
-            "season_count": 9
+            "season_count": 10
+        },
+        "national": {
+            "matches": 98,
+            "minutes": 4301,
+            "goals": 3,
+            "assists": 0,
+            "goal_contributions": 3,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 8
         }
     }
 }

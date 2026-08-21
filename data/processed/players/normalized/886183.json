@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Nawaf Al-Aqidi",
         "short_name": "N. Al-Aqidi",
+        "dateOfBirth": "2000-05-10",
+        "placeOfBirth": "Riyadh",
         "nation_1": "Saudi Arabia",
         "nation_2": "",
         "height": 1.86,
@@ -14,6 +17,38 @@
         "prime_date": "2025-12-18"
     },
     "matches": [
+        {
+            "game_id": "4971033",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "18544",
+            "opponent_id": "52358",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "injured",
+            "club_points": 3
+        },
+        {
+            "game_id": "4976893",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "18544",
+            "opponent_id": "27221",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "injured",
+            "club_points": 3
+        },
         {
             "game_id": "4776662",
             "season": 2025,
@@ -5962,7 +5997,84 @@
         }
     ],
     "clubs": {
+        "18544": {
+            "type": "club",
+            "seasons": [
+                2019,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 256,
+                "participations": 256,
+                "minutes": 4770,
+                "starts": 53,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 1,
+                "goals_conceded": 55,
+                "points": 546,
+                "clean_sheets": 219,
+                "wins": 169,
+                "draws": 39,
+                "losses": 48,
+                "goal_matches": 256,
+                "assist_matches": 255,
+                "goal_contributions": 1
+            },
+            "positions": {
+                "GK": 53
+            },
+            "derived": {
+                "season_count": 8,
+                "points_per_match": 2.133,
+                "minutes_per_match": 18.6,
+                "win_rate": 0.6602,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.019,
+                "contributions_per_90": 0.019,
+                "primary_position": "GK"
+            },
+            "competitions": {
+                "Domestic Cup": {
+                    "matches": 20,
+                    "minutes": 480,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "First Tier": {
+                    "matches": 182,
+                    "minutes": 3660,
+                    "goals": 0,
+                    "assists": 1
+                },
+                "International Cup": {
+                    "matches": 46,
+                    "minutes": 630,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Super Cup": {
+                    "matches": 8,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Saudi Arabian champion": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3807": {
+            "type": "national",
             "seasons": [
                 2019,
                 2020,
@@ -6022,81 +6134,8 @@
                 "individual_titles": {}
             }
         },
-        "18544": {
-            "seasons": [
-                2019,
-                2020,
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 254,
-                "participations": 254,
-                "minutes": 4770,
-                "starts": 53,
-                "captain_matches": 0,
-                "goals": 0,
-                "assists": 1,
-                "goals_conceded": 55,
-                "points": 540,
-                "clean_sheets": 217,
-                "wins": 167,
-                "draws": 39,
-                "losses": 48,
-                "goal_matches": 254,
-                "assist_matches": 253,
-                "goal_contributions": 1
-            },
-            "positions": {
-                "GK": 53
-            },
-            "derived": {
-                "season_count": 7,
-                "points_per_match": 2.126,
-                "minutes_per_match": 18.8,
-                "win_rate": 0.6575,
-                "goals_per_90": 0.0,
-                "assists_per_90": 0.019,
-                "contributions_per_90": 0.019,
-                "primary_position": "GK"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 181,
-                    "minutes": 3660,
-                    "goals": 0,
-                    "assists": 1
-                },
-                "International Cup": {
-                    "matches": 46,
-                    "minutes": 630,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Domestic Cup": {
-                    "matches": 19,
-                    "minutes": 480,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Domestic Super Cup": {
-                    "matches": 8,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Saudi Arabian champion": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "27221": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -6145,6 +6184,7 @@
             }
         },
         "32240": {
+            "type": "national",
             "seasons": [
                 2021,
                 2022
@@ -6208,6 +6248,7 @@
             }
         },
         "40079": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -6258,22 +6299,22 @@
     },
     "career": {
         "club": {
-            "matches": 29,
-            "minutes": 2070,
+            "matches": 285,
+            "minutes": 6840,
             "goals": 0,
-            "assists": 1,
-            "goal_contributions": 1,
-            "team_titles": 0,
+            "assists": 2,
+            "goal_contributions": 2,
+            "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 2
+            "season_count": 8
         },
         "national": {
-            "matches": 339,
-            "minutes": 7770,
+            "matches": 85,
+            "minutes": 3000,
             "goals": 0,
-            "assists": 1,
-            "goal_contributions": 1,
-            "team_titles": 2,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 1,
             "individual_titles": 0,
             "season_count": 7
         }

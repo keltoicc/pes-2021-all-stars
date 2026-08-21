@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Youssef Al-Hamawi",
         "short_name": "Y. Al-Hamawi",
+        "dateOfBirth": "1997-02-01",
+        "placeOfBirth": "",
         "nation_1": "Syria",
         "nation_2": "",
         "height": null,
@@ -14,6 +17,22 @@
         "prime_date": "2022-12-28"
     },
     "matches": [
+        {
+            "game_id": "4894704",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "76413",
+            "opponent_id": "13599",
+            "position": "RB",
+            "minutes": 120,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4172677",
             "season": 2023,
@@ -1388,7 +1407,57 @@
         }
     ],
     "clubs": {
+        "76413": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 1,
+                "participations": 1,
+                "minutes": 120,
+                "starts": 1,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 1,
+                "points": 3,
+                "clean_sheets": 0,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "goal_matches": 1,
+                "assist_matches": 1,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "RB": 1
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 3.0,
+                "minutes_per_match": 120.0,
+                "win_rate": 1.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "RB"
+            },
+            "competitions": {
+                "International Cup": {
+                    "matches": 1,
+                    "minutes": 120,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "42995": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -1438,6 +1507,7 @@
             }
         },
         "13674": {
+            "type": "national",
             "seasons": [
                 2017,
                 2018,
@@ -1500,6 +1570,7 @@
             }
         },
         "13685": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -1548,6 +1619,7 @@
             }
         },
         "13679": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -1599,6 +1671,7 @@
             }
         },
         "31150": {
+            "type": "national",
             "seasons": [
                 2017,
                 2018,
@@ -1661,6 +1734,7 @@
             }
         },
         "53897": {
+            "type": "national",
             "seasons": [
                 2017
             ],
@@ -1707,6 +1781,7 @@
             }
         },
         "13678": {
+            "type": "",
             "seasons": [],
             "stats": {
                 "matches": 0,
@@ -1739,31 +1814,33 @@
             },
             "competitions": {},
             "awards": {
-                "team_titles": {},
+                "team_titles": {
+                    "Syrian Champion": 1
+                },
                 "individual_titles": {}
             }
         }
     },
     "career": {
         "club": {
-            "matches": 0,
-            "minutes": 0,
+            "matches": 26,
+            "minutes": 2118,
+            "goals": 1,
+            "assists": 0,
+            "goal_contributions": 1,
+            "team_titles": 1,
+            "individual_titles": 0,
+            "season_count": 6
+        },
+        "national": {
+            "matches": 58,
+            "minutes": 1910,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 0
-        },
-        "national": {
-            "matches": 83,
-            "minutes": 3908,
-            "goals": 1,
-            "assists": 0,
-            "goal_contributions": 1,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 7
+            "season_count": 6
         }
     }
 }

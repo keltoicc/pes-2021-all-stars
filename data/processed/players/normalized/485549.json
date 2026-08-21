@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Adham Al-Quraishi",
         "short_name": "A. Al-Quraishi",
+        "dateOfBirth": "1995-03-07",
+        "placeOfBirth": "Zarqa",
         "nation_1": "Jordan",
         "nation_2": "",
         "height": 1.71,
@@ -14,6 +17,22 @@
         "prime_date": "2025-12-02"
     },
     "matches": [
+        {
+            "game_id": "4894725",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "15795",
+            "opponent_id": "3718",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
         {
             "game_id": "4854532",
             "season": 2025,
@@ -1654,13 +1673,15 @@
     ],
     "clubs": {
         "15795": {
+            "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 66,
-                "participations": 66,
+                "matches": 67,
+                "participations": 67,
                 "minutes": 3218,
                 "starts": 37,
                 "captain_matches": 1,
@@ -1668,12 +1689,12 @@
                 "assists": 5,
                 "goals_conceded": 27,
                 "points": 144,
-                "clean_sheets": 43,
+                "clean_sheets": 44,
                 "wins": 44,
                 "draws": 12,
-                "losses": 10,
-                "goal_matches": 64,
-                "assist_matches": 61,
+                "losses": 11,
+                "goal_matches": 65,
+                "assist_matches": 62,
                 "goal_contributions": 7
             },
             "positions": {
@@ -1682,27 +1703,27 @@
                 "LB": 1
             },
             "derived": {
-                "season_count": 2,
-                "points_per_match": 2.182,
-                "minutes_per_match": 48.8,
-                "win_rate": 0.6667,
+                "season_count": 3,
+                "points_per_match": 2.149,
+                "minutes_per_match": 48.0,
+                "win_rate": 0.6567,
                 "goals_per_90": 0.056,
                 "assists_per_90": 0.14,
                 "contributions_per_90": 0.196,
                 "primary_position": "RB"
             },
             "competitions": {
+                "International Cup": {
+                    "matches": 16,
+                    "minutes": 894,
+                    "goals": 0,
+                    "assists": 2
+                },
                 "First Tier": {
                     "matches": 49,
                     "minutes": 2213,
                     "goals": 2,
                     "assists": 3
-                },
-                "International Cup": {
-                    "matches": 15,
-                    "minutes": 894,
-                    "goals": 0,
-                    "assists": 2
                 },
                 "Domestic Super Cup": {
                     "matches": 2,
@@ -1712,11 +1733,14 @@
                 }
             },
             "awards": {
-                "team_titles": {},
+                "team_titles": {
+                    "Jordanian Champion": 2
+                },
                 "individual_titles": {}
             }
         },
         "15737": {
+            "type": "national",
             "seasons": [
                 2023,
                 2024,
@@ -1774,6 +1798,7 @@
             }
         },
         "69471": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -1822,6 +1847,7 @@
             }
         },
         "15796": {
+            "type": "club",
             "seasons": [
                 2016,
                 2018
@@ -1874,24 +1900,24 @@
     },
     "career": {
         "club": {
-            "matches": 0,
-            "minutes": 0,
-            "goals": 0,
-            "assists": 0,
-            "goal_contributions": 0,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 0
-        },
-        "national": {
-            "matches": 100,
-            "minutes": 4790,
+            "matches": 87,
+            "minutes": 4046,
             "goals": 2,
-            "assists": 6,
-            "goal_contributions": 8,
-            "team_titles": 0,
+            "assists": 5,
+            "goal_contributions": 7,
+            "team_titles": 2,
             "individual_titles": 0,
             "season_count": 6
+        },
+        "national": {
+            "matches": 14,
+            "minutes": 744,
+            "goals": 0,
+            "assists": 1,
+            "goal_contributions": 1,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 3
         }
     }
 }

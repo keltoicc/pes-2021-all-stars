@@ -34,10 +34,10 @@ def get_country_id(country):
     if country == "United States of America" or country == "United States":
         country = "USA"
     
-    if country == "South Korea":
+    if country == "South Korea" or country == "Korea, South":
         country = "Republic of Korea"
     
-    if country == "North Korea":
+    if country == "North Korea" or country == "Korea, North":
         country = "Korea DPR"
     
     if country == "the Congo":

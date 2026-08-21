@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Woo-young Jung",
         "short_name": "W. Jung",
+        "dateOfBirth": "1989-12-14",
+        "placeOfBirth": "Ulsan",
         "nation_1": "Korea, South",
         "nation_2": "",
         "height": 1.86,
@@ -14,6 +17,38 @@
         "prime_date": "2020-04-04"
     },
     "matches": [
+        {
+            "game_id": "4903093",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "22173",
+            "opponent_id": "23580",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4903122",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "22173",
+            "opponent_id": "35000",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4891749",
             "season": 2025,
@@ -12795,41 +12830,49 @@
     ],
     "clubs": {
         "22173": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 20,
-                "participations": 20,
-                "minutes": 1203,
-                "starts": 14,
-                "captain_matches": 5,
+                "matches": 22,
+                "participations": 22,
+                "minutes": 1383,
+                "starts": 16,
+                "captain_matches": 6,
                 "goals": 2,
-                "assists": 2,
-                "goals_conceded": 18,
-                "points": 42,
-                "clean_sheets": 9,
-                "wins": 14,
+                "assists": 3,
+                "goals_conceded": 20,
+                "points": 45,
+                "clean_sheets": 10,
+                "wins": 15,
                 "draws": 0,
-                "losses": 6,
-                "goal_matches": 18,
-                "assist_matches": 18,
-                "goal_contributions": 4
+                "losses": 7,
+                "goal_matches": 20,
+                "assist_matches": 19,
+                "goal_contributions": 5
             },
             "positions": {
-                "DMF": 14
+                "DMF": 16
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 2.1,
-                "minutes_per_match": 60.1,
-                "win_rate": 0.7,
-                "goals_per_90": 0.15,
-                "assists_per_90": 0.15,
-                "contributions_per_90": 0.299,
+                "season_count": 2,
+                "points_per_match": 2.045,
+                "minutes_per_match": 62.9,
+                "win_rate": 0.6818,
+                "goals_per_90": 0.13,
+                "assists_per_90": 0.195,
+                "contributions_per_90": 0.325,
                 "primary_position": "DMF"
             },
             "competitions": {
+                "Second Tier": {
+                    "matches": 2,
+                    "minutes": 180,
+                    "goals": 0,
+                    "assists": 1
+                },
                 "League Cup": {
                     "matches": 20,
                     "minutes": 1203,
@@ -12843,6 +12886,7 @@
             }
         },
         "3535": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
@@ -12909,6 +12953,7 @@
             }
         },
         "3589": {
+            "type": "national",
             "seasons": [
                 2014,
                 2015,
@@ -12977,6 +13022,7 @@
             }
         },
         "6070": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -13032,6 +13078,7 @@
             }
         },
         "656": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -13117,6 +13164,7 @@
             }
         },
         "3958": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -13181,6 +13229,7 @@
             }
         },
         "1326": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016
@@ -13237,6 +13286,7 @@
             }
         },
         "937": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -13297,6 +13347,7 @@
             }
         },
         "593": {
+            "type": "club",
             "seasons": [
                 2010,
                 2011
@@ -13358,6 +13409,7 @@
             }
         },
         "53812": {
+            "type": "national",
             "seasons": [
                 2011
             ],
@@ -13404,6 +13456,7 @@
             }
         },
         "34950": {
+            "type": "national",
             "seasons": [
                 2010,
                 2011
@@ -13457,6 +13510,7 @@
             }
         },
         "18915": {
+            "type": "club",
             "seasons": [
                 2008,
                 2009
@@ -13508,24 +13562,24 @@
     },
     "career": {
         "club": {
-            "matches": 373,
-            "minutes": 24475,
-            "goals": 17,
-            "assists": 31,
-            "goal_contributions": 48,
-            "team_titles": 0,
+            "matches": 648,
+            "minutes": 37793,
+            "goals": 21,
+            "assists": 38,
+            "goal_contributions": 59,
+            "team_titles": 10,
             "individual_titles": 0,
-            "season_count": 12
+            "season_count": 19
         },
         "national": {
-            "matches": 415,
-            "minutes": 19311,
-            "goals": 7,
-            "assists": 12,
-            "goal_contributions": 19,
-            "team_titles": 12,
+            "matches": 142,
+            "minutes": 6173,
+            "goals": 3,
+            "assists": 6,
+            "goal_contributions": 9,
+            "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 14
+            "season_count": 12
         }
     }
 }

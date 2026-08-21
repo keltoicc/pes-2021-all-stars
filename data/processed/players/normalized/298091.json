@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Harry Souttar",
         "short_name": "H. Souttar",
+        "dateOfBirth": "1998-10-22",
+        "placeOfBirth": "Aberdeen",
         "nation_1": "Australia",
         "nation_2": "Scotland",
         "height": 1.98,
@@ -14,6 +17,38 @@
         "prime_date": "2023-06-20"
     },
     "matches": [
+        {
+            "game_id": "4911243",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "1003",
+            "opponent_id": "1045",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4926013",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "1003",
+            "opponent_id": "1302",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776694",
             "season": 2025,
@@ -10805,7 +10840,86 @@
         }
     ],
     "clubs": {
+        "1003": {
+            "type": "club",
+            "seasons": [
+                2022,
+                2023,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 123,
+                "participations": 123,
+                "minutes": 1537,
+                "starts": 17,
+                "captain_matches": 2,
+                "goals": 1,
+                "assists": 1,
+                "goals_conceded": 24,
+                "points": 187,
+                "clean_sheets": 110,
+                "wins": 54,
+                "draws": 25,
+                "losses": 44,
+                "goal_matches": 122,
+                "assist_matches": 122,
+                "goal_contributions": 2
+            },
+            "positions": {
+                "CB": 17
+            },
+            "derived": {
+                "season_count": 4,
+                "points_per_match": 1.52,
+                "minutes_per_match": 12.5,
+                "win_rate": 0.439,
+                "goals_per_90": 0.059,
+                "assists_per_90": 0.059,
+                "contributions_per_90": 0.117,
+                "primary_position": "CB"
+            },
+            "competitions": {
+                "Third Tier": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "League Cup": {
+                    "matches": 5,
+                    "minutes": 180,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Second Tier": {
+                    "matches": 92,
+                    "minutes": 276,
+                    "goals": 1,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 7,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "First Tier": {
+                    "matches": 18,
+                    "minutes": 991,
+                    "goals": 0,
+                    "assists": 1
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "English 2nd tier champion": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3433": {
+            "type": "national",
             "seasons": [
                 2018,
                 2019,
@@ -10864,77 +10978,8 @@
                 "individual_titles": {}
             }
         },
-        "1003": {
-            "seasons": [
-                2022,
-                2023,
-                2025
-            ],
-            "stats": {
-                "matches": 121,
-                "participations": 121,
-                "minutes": 1357,
-                "starts": 15,
-                "captain_matches": 0,
-                "goals": 1,
-                "assists": 1,
-                "goals_conceded": 23,
-                "points": 183,
-                "clean_sheets": 109,
-                "wins": 53,
-                "draws": 24,
-                "losses": 44,
-                "goal_matches": 120,
-                "assist_matches": 120,
-                "goal_contributions": 2
-            },
-            "positions": {
-                "CB": 15
-            },
-            "derived": {
-                "season_count": 3,
-                "points_per_match": 1.512,
-                "minutes_per_match": 11.2,
-                "win_rate": 0.438,
-                "goals_per_90": 0.066,
-                "assists_per_90": 0.066,
-                "contributions_per_90": 0.133,
-                "primary_position": "CB"
-            },
-            "competitions": {
-                "Second Tier": {
-                    "matches": 92,
-                    "minutes": 276,
-                    "goals": 1,
-                    "assists": 0
-                },
-                "Domestic Cup": {
-                    "matches": 7,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "League Cup": {
-                    "matches": 4,
-                    "minutes": 90,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "First Tier": {
-                    "matches": 18,
-                    "minutes": 991,
-                    "goals": 0,
-                    "assists": 1
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "English 2nd tier champion": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "350": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -11001,6 +11046,7 @@
             }
         },
         "512": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -11073,6 +11119,7 @@
             }
         },
         "24219": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -11124,6 +11171,7 @@
             }
         },
         "53845": {
+            "type": "national",
             "seasons": [
                 2020
             ],
@@ -11172,6 +11220,7 @@
             }
         },
         "32270": {
+            "type": "national",
             "seasons": [
                 2019,
                 2021
@@ -11225,6 +11274,7 @@
             }
         },
         "11177": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019
@@ -11298,6 +11348,7 @@
             }
         },
         "2759": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -11352,6 +11403,7 @@
             }
         },
         "14494": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -11400,6 +11452,7 @@
             }
         },
         "17622": {
+            "type": "national",
             "seasons": [
                 2016
             ],
@@ -11448,6 +11501,7 @@
             }
         },
         "1519": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016
@@ -11521,6 +11575,7 @@
             }
         },
         "25791": {
+            "type": "national",
             "seasons": [
                 2013,
                 2014
@@ -11578,14 +11633,14 @@
     },
     "career": {
         "club": {
-            "matches": 575,
-            "minutes": 18597,
+            "matches": 577,
+            "minutes": 18777,
             "goals": 10,
             "assists": 10,
             "goal_contributions": 20,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 11
+            "season_count": 12
         },
         "national": {
             "matches": 97,

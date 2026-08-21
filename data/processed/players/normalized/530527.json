@@ -1,7 +1,10 @@
 {
     "player": {
+        "name": "Merchas Doski",
         "short_name": "M. Doski",
-        "nation_1": "",
+        "dateOfBirth": "1999-12-07",
+        "placeOfBirth": "Hannover",
+        "nation_1": "Iraq",
         "nation_2": "Germany",
         "height": 1.73,
         "foot": "Left",
@@ -14,6 +17,86 @@
         "prime_date": "2026-05-20"
     },
     "matches": [
+        {
+            "game_id": "5013753",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "941",
+            "opponent_id": "159",
+            "position": "LB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4901977",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "941",
+            "opponent_id": "5545",
+            "position": "LB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4901975",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "941",
+            "opponent_id": "814",
+            "position": "LB",
+            "minutes": 63,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 5,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4901961",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "941",
+            "opponent_id": "5225",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 1
+        },
+        {
+            "game_id": "4901913",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "941",
+            "opponent_id": "697",
+            "position": "LB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4776664",
             "season": 2025,
@@ -6572,7 +6655,80 @@
         }
     ],
     "clubs": {
+        "941": {
+            "type": "club",
+            "seasons": [
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 82,
+                "participations": 82,
+                "minutes": 3668,
+                "starts": 40,
+                "captain_matches": 0,
+                "goals": 1,
+                "assists": 4,
+                "goals_conceded": 50,
+                "points": 139,
+                "clean_sheets": 55,
+                "wins": 40,
+                "draws": 19,
+                "losses": 23,
+                "goal_matches": 81,
+                "assist_matches": 78,
+                "goal_contributions": 5
+            },
+            "positions": {
+                "LB": 24,
+                "CB": 6,
+                "LM": 29,
+                "LW": 1
+            },
+            "derived": {
+                "season_count": 3,
+                "points_per_match": 1.695,
+                "minutes_per_match": 44.7,
+                "win_rate": 0.4878,
+                "goals_per_90": 0.025,
+                "assists_per_90": 0.098,
+                "contributions_per_90": 0.123,
+                "primary_position": "LM"
+            },
+            "competitions": {
+                "International Cup": {
+                    "matches": 21,
+                    "minutes": 754,
+                    "goals": 0,
+                    "assists": 3
+                },
+                "First Tier": {
+                    "matches": 45,
+                    "minutes": 2092,
+                    "goals": 1,
+                    "assists": 1
+                },
+                "Play-Offs": {
+                    "matches": 10,
+                    "minutes": 498,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 6,
+                    "minutes": 324,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3560": {
+            "type": "national",
             "seasons": [
                 2022,
                 2023,
@@ -6630,77 +6786,8 @@
                 "individual_titles": {}
             }
         },
-        "941": {
-            "seasons": [
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 77,
-                "participations": 77,
-                "minutes": 3335,
-                "starts": 36,
-                "captain_matches": 0,
-                "goals": 1,
-                "assists": 4,
-                "goals_conceded": 37,
-                "points": 134,
-                "clean_sheets": 54,
-                "wins": 39,
-                "draws": 17,
-                "losses": 21,
-                "goal_matches": 76,
-                "assist_matches": 73,
-                "goal_contributions": 5
-            },
-            "positions": {
-                "LB": 20,
-                "CB": 6,
-                "LM": 29,
-                "LW": 1
-            },
-            "derived": {
-                "season_count": 2,
-                "points_per_match": 1.74,
-                "minutes_per_match": 43.3,
-                "win_rate": 0.5065,
-                "goals_per_90": 0.027,
-                "assists_per_90": 0.108,
-                "contributions_per_90": 0.135,
-                "primary_position": "LM"
-            },
-            "competitions": {
-                "Play-Offs": {
-                    "matches": 10,
-                    "minutes": 498,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "First Tier": {
-                    "matches": 41,
-                    "minutes": 1849,
-                    "goals": 1,
-                    "assists": 1
-                },
-                "Domestic Cup": {
-                    "matches": 6,
-                    "minutes": 324,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "International Cup": {
-                    "matches": 20,
-                    "minutes": 664,
-                    "goals": 0,
-                    "assists": 3
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "5544": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -6772,6 +6859,7 @@
             }
         },
         "40739": {
+            "type": "national",
             "seasons": [
                 2021
             ],
@@ -6827,6 +6915,7 @@
             }
         },
         "2444": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021
@@ -6885,6 +6974,7 @@
             }
         },
         "18344": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021
@@ -6932,6 +7022,7 @@
             }
         },
         "17835": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -6979,11 +7070,14 @@
                 }
             },
             "awards": {
-                "team_titles": {},
+                "team_titles": {
+                    "Landespokal Niedersachsen (Amateure) Winner": 1
+                },
                 "individual_titles": {}
             }
         },
         "5114": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -7032,6 +7126,7 @@
             }
         },
         "37615": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -7082,21 +7177,21 @@
     },
     "career": {
         "club": {
-            "matches": 159,
-            "minutes": 6836,
-            "goals": 4,
-            "assists": 0,
-            "goal_contributions": 4,
-            "team_titles": 0,
+            "matches": 347,
+            "minutes": 15600,
+            "goals": 9,
+            "assists": 9,
+            "goal_contributions": 18,
+            "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 5
+            "season_count": 10
         },
         "national": {
-            "matches": 248,
-            "minutes": 11954,
-            "goals": 6,
-            "assists": 9,
-            "goal_contributions": 15,
+            "matches": 65,
+            "minutes": 3523,
+            "goals": 1,
+            "assists": 0,
+            "goal_contributions": 1,
             "team_titles": 0,
             "individual_titles": 0,
             "season_count": 5

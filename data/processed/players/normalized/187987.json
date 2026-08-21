@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Ahmed Alaaeldin",
         "short_name": "A. Alaaeldin",
+        "dateOfBirth": "1993-01-31",
+        "placeOfBirth": "Ismailia",
         "nation_1": "Qatar",
         "nation_2": "Egypt",
         "height": 1.79,
@@ -14,6 +17,22 @@
         "prime_date": "2022-05-25"
     },
     "matches": [
+        {
+            "game_id": "5024722",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "3229",
+            "opponent_id": "77101",
+            "position": "CF",
+            "minutes": 63,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776650",
             "season": 2025,
@@ -10514,7 +10533,96 @@
         }
     ],
     "clubs": {
+        "3229": {
+            "type": "club",
+            "seasons": [
+                2010,
+                2011,
+                2012,
+                2013,
+                2015,
+                2016,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 162,
+                "participations": 162,
+                "minutes": 4465,
+                "starts": 49,
+                "captain_matches": 0,
+                "goals": 13,
+                "assists": 4,
+                "goals_conceded": 78,
+                "points": 283,
+                "clean_sheets": 113,
+                "wins": 85,
+                "draws": 28,
+                "losses": 49,
+                "goal_matches": 151,
+                "assist_matches": 159,
+                "goal_contributions": 17
+            },
+            "positions": {
+                "CF": 18,
+                "AMF": 1,
+                "RW": 11,
+                "LW": 1
+            },
+            "derived": {
+                "season_count": 8,
+                "points_per_match": 1.747,
+                "minutes_per_match": 27.6,
+                "win_rate": 0.5247,
+                "goals_per_90": 0.262,
+                "assists_per_90": 0.081,
+                "contributions_per_90": 0.343,
+                "primary_position": "CF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 124,
+                    "minutes": 3348,
+                    "goals": 8,
+                    "assists": 3
+                },
+                "Domestic Cup": {
+                    "matches": 3,
+                    "minutes": 42,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "League Cup": {
+                    "matches": 13,
+                    "minutes": 287,
+                    "goals": 2,
+                    "assists": 0
+                },
+                "International Cup": {
+                    "matches": 21,
+                    "minutes": 763,
+                    "goals": 3,
+                    "assists": 1
+                },
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 25,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Qatari champion": 1,
+                    "Qatari Stars Cup Winner": 1
+                },
+                "individual_titles": {
+                    "Top goal scorer": 1
+                }
+            }
+        },
         "14162": {
+            "type": "national",
             "seasons": [
                 2011,
                 2012,
@@ -10589,93 +10697,8 @@
                 }
             }
         },
-        "3229": {
-            "seasons": [
-                2010,
-                2011,
-                2012,
-                2013,
-                2015,
-                2016,
-                2025
-            ],
-            "stats": {
-                "matches": 161,
-                "participations": 161,
-                "minutes": 4402,
-                "starts": 48,
-                "captain_matches": 0,
-                "goals": 13,
-                "assists": 4,
-                "goals_conceded": 78,
-                "points": 280,
-                "clean_sheets": 112,
-                "wins": 84,
-                "draws": 28,
-                "losses": 49,
-                "goal_matches": 150,
-                "assist_matches": 158,
-                "goal_contributions": 17
-            },
-            "positions": {
-                "CF": 17,
-                "AMF": 1,
-                "RW": 11,
-                "LW": 1
-            },
-            "derived": {
-                "season_count": 7,
-                "points_per_match": 1.739,
-                "minutes_per_match": 27.3,
-                "win_rate": 0.5217,
-                "goals_per_90": 0.266,
-                "assists_per_90": 0.082,
-                "contributions_per_90": 0.348,
-                "primary_position": "CF"
-            },
-            "competitions": {
-                "Domestic Cup": {
-                    "matches": 3,
-                    "minutes": 42,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "First Tier": {
-                    "matches": 123,
-                    "minutes": 3285,
-                    "goals": 8,
-                    "assists": 3
-                },
-                "League Cup": {
-                    "matches": 13,
-                    "minutes": 287,
-                    "goals": 2,
-                    "assists": 0
-                },
-                "International Cup": {
-                    "matches": 21,
-                    "minutes": 763,
-                    "goals": 3,
-                    "assists": 1
-                },
-                "Domestic Super Cup": {
-                    "matches": 1,
-                    "minutes": 25,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Qatari champion": 1,
-                    "Qatari Stars Cup Winner": 1
-                },
-                "individual_titles": {
-                    "Top goal scorer": 1
-                }
-            }
-        },
         "1230": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -10737,6 +10760,7 @@
             }
         },
         "6297": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -10812,6 +10836,7 @@
             }
         },
         "10830": {
+            "type": "national",
             "seasons": [
                 2013,
                 2014,
@@ -10871,6 +10896,7 @@
             }
         },
         "88372": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -10919,24 +10945,24 @@
     },
     "career": {
         "club": {
-            "matches": 30,
-            "minutes": 1237,
-            "goals": 6,
-            "assists": 3,
-            "goal_contributions": 9,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 1
+            "matches": 420,
+            "minutes": 15877,
+            "goals": 62,
+            "assists": 32,
+            "goal_contributions": 94,
+            "team_titles": 2,
+            "individual_titles": 1,
+            "season_count": 16
         },
         "national": {
-            "matches": 619,
-            "minutes": 17524,
-            "goals": 67,
-            "assists": 32,
-            "goal_contributions": 99,
-            "team_titles": 4,
-            "individual_titles": 3,
-            "season_count": 16
+            "matches": 230,
+            "minutes": 2947,
+            "goals": 11,
+            "assists": 3,
+            "goal_contributions": 14,
+            "team_titles": 2,
+            "individual_titles": 2,
+            "season_count": 15
         }
     }
 }

@@ -37,7 +37,7 @@ def get_country_id(country, team_name):
     if country == "United States of America" or country == "United States":
         country = "USA"
 
-    if country == "South Korea":
+    if country == "South Korea" or country == "Korea, South":
         country = "Republic of Korea"
 
     if country == "North Korea":

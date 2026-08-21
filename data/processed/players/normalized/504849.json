@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Kaoru Mitoma",
         "short_name": "K. Mitoma",
+        "dateOfBirth": "1997-05-20",
+        "placeOfBirth": "Kawasaki, Kanagawa",
         "nation_1": "Japan",
         "nation_2": "",
         "height": 1.78,
@@ -14,6 +17,22 @@
         "prime_date": "2023-12-19"
     },
     "matches": [
+        {
+            "game_id": "5013813",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "1237",
+            "opponent_id": "1293",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 1
+        },
         {
             "game_id": "4626168",
             "season": 2025,
@@ -2868,7 +2887,7 @@
             "competition_type": "First Tier",
             "club_id": "1237",
             "opponent_id": "281",
-            "position": "LM",
+            "position": "LW",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -7568,47 +7587,55 @@
     ],
     "clubs": {
         "1237": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 184,
-                "participations": 184,
+                "matches": 185,
+                "participations": 185,
                 "minutes": 9709,
                 "starts": 103,
                 "captain_matches": 0,
                 "goals": 27,
                 "assists": 21,
                 "goals_conceded": 135,
-                "points": 288,
-                "clean_sheets": 103,
+                "points": 289,
+                "clean_sheets": 104,
                 "wins": 81,
-                "draws": 45,
+                "draws": 46,
                 "losses": 58,
-                "goal_matches": 158,
-                "assist_matches": 163,
+                "goal_matches": 159,
+                "assist_matches": 164,
                 "goal_contributions": 48
             },
             "positions": {
-                "LW": 96,
-                "LM": 26,
+                "LW": 97,
+                "LM": 25,
                 "AMF": 1,
                 "RM": 2
             },
             "derived": {
-                "season_count": 4,
-                "points_per_match": 1.565,
-                "minutes_per_match": 52.8,
-                "win_rate": 0.4402,
+                "season_count": 5,
+                "points_per_match": 1.562,
+                "minutes_per_match": 52.5,
+                "win_rate": 0.4378,
                 "goals_per_90": 0.25,
                 "assists_per_90": 0.195,
                 "contributions_per_90": 0.445,
                 "primary_position": "LW"
             },
             "competitions": {
+                "International Cup": {
+                    "matches": 9,
+                    "minutes": 515,
+                    "goals": 0,
+                    "assists": 1
+                },
                 "First Tier": {
                     "matches": 152,
                     "minutes": 8137,
@@ -7626,12 +7653,6 @@
                     "minutes": 236,
                     "goals": 1,
                     "assists": 0
-                },
-                "International Cup": {
-                    "matches": 8,
-                    "minutes": 515,
-                    "goals": 0,
-                    "assists": 1
                 }
             },
             "awards": {
@@ -7642,6 +7663,7 @@
             }
         },
         "3435": {
+            "type": "national",
             "seasons": [
                 2019,
                 2021,
@@ -7705,6 +7727,7 @@
             }
         },
         "3948": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -7766,6 +7789,7 @@
             }
         },
         "9598": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -7851,6 +7875,7 @@
             }
         },
         "53813": {
+            "type": "national",
             "seasons": [
                 2017,
                 2020
@@ -7900,6 +7925,7 @@
             }
         },
         "28642": {
+            "type": "national",
             "seasons": [
                 2017,
                 2018,
@@ -7967,6 +7993,7 @@
             }
         },
         "77815": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -8015,6 +8042,7 @@
             }
         },
         "29810": {
+            "type": "national",
             "seasons": [
                 2017
             ],
@@ -8063,6 +8091,7 @@
             }
         },
         "10711": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016
@@ -8115,24 +8144,24 @@
     },
     "career": {
         "club": {
-            "matches": 44,
-            "minutes": 2043,
-            "goals": 10,
-            "assists": 5,
-            "goal_contributions": 15,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 3
+            "matches": 373,
+            "minutes": 15299,
+            "goals": 67,
+            "assists": 46,
+            "goal_contributions": 113,
+            "team_titles": 3,
+            "individual_titles": 3,
+            "season_count": 12
         },
         "national": {
-            "matches": 423,
-            "minutes": 15588,
-            "goals": 71,
-            "assists": 50,
-            "goal_contributions": 121,
-            "team_titles": 3,
-            "individual_titles": 6,
-            "season_count": 10
+            "matches": 95,
+            "minutes": 2332,
+            "goals": 14,
+            "assists": 9,
+            "goal_contributions": 23,
+            "team_titles": 0,
+            "individual_titles": 3,
+            "season_count": 9
         }
     }
 }

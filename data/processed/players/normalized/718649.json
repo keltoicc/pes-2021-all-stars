@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Bruno",
         "short_name": "Bruno",
+        "dateOfBirth": "2001-06-10",
+        "placeOfBirth": "Anchieta",
         "nation_1": "United Arab Emirates",
         "nation_2": "Brazil",
         "height": 1.82,
@@ -14,6 +17,38 @@
         "prime_date": "2026-05-26"
     },
     "matches": [
+        {
+            "game_id": "5022600",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "2524",
+            "opponent_id": "17195",
+            "position": "RW",
+            "minutes": 66,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4894724",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "2524",
+            "opponent_id": "8023",
+            "position": "SS",
+            "minutes": 68,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4849053",
             "season": 2025,
@@ -4134,6 +4169,7 @@
     ],
     "clubs": {
         "2524": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -4141,28 +4177,30 @@
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 232,
-                "participations": 232,
-                "minutes": 7108,
-                "starts": 79,
+                "matches": 234,
+                "participations": 234,
+                "minutes": 7242,
+                "starts": 81,
                 "captain_matches": 0,
                 "goals": 34,
                 "assists": 6,
-                "goals_conceded": 100,
-                "points": 390,
-                "clean_sheets": 162,
-                "wins": 115,
+                "goals_conceded": 103,
+                "points": 393,
+                "clean_sheets": 163,
+                "wins": 116,
                 "draws": 45,
-                "losses": 72,
-                "goal_matches": 200,
-                "assist_matches": 226,
+                "losses": 73,
+                "goal_matches": 202,
+                "assist_matches": 228,
                 "goal_contributions": 40
             },
             "positions": {
-                "RW": 17,
+                "RW": 18,
+                "SS": 1,
                 "AMF": 11,
                 "RM": 10,
                 "LW": 11,
@@ -4172,38 +4210,38 @@
                 "DMF": 1
             },
             "derived": {
-                "season_count": 7,
-                "points_per_match": 1.681,
-                "minutes_per_match": 30.6,
+                "season_count": 8,
+                "points_per_match": 1.679,
+                "minutes_per_match": 30.9,
                 "win_rate": 0.4957,
-                "goals_per_90": 0.431,
-                "assists_per_90": 0.076,
-                "contributions_per_90": 0.506,
+                "goals_per_90": 0.423,
+                "assists_per_90": 0.075,
+                "contributions_per_90": 0.497,
                 "primary_position": "CF"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 173,
+                    "minutes": 5456,
+                    "goals": 24,
+                    "assists": 6
+                },
+                "International Cup": {
+                    "matches": 10,
+                    "minutes": 254,
+                    "goals": 1,
+                    "assists": 0
+                },
                 "Domestic Cup": {
                     "matches": 17,
                     "minutes": 367,
                     "goals": 2,
                     "assists": 0
                 },
-                "First Tier": {
-                    "matches": 172,
-                    "minutes": 5390,
-                    "goals": 24,
-                    "assists": 6
-                },
                 "League Cup": {
                     "matches": 33,
                     "minutes": 1083,
                     "goals": 7,
-                    "assists": 0
-                },
-                "International Cup": {
-                    "matches": 9,
-                    "minutes": 186,
-                    "goals": 1,
                     "assists": 0
                 },
                 "Domestic Super Cup": {
@@ -4223,6 +4261,7 @@
             }
         },
         "5147": {
+            "type": "national",
             "seasons": [
                 2023,
                 2024,
@@ -4285,24 +4324,24 @@
     },
     "career": {
         "club": {
-            "matches": 0,
-            "minutes": 0,
-            "goals": 0,
-            "assists": 0,
-            "goal_contributions": 0,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 0
-        },
-        "national": {
-            "matches": 255,
-            "minutes": 8084,
-            "goals": 36,
+            "matches": 234,
+            "minutes": 7242,
+            "goals": 34,
             "assists": 6,
-            "goal_contributions": 42,
+            "goal_contributions": 40,
             "team_titles": 3,
             "individual_titles": 0,
-            "season_count": 7
+            "season_count": 8
+        },
+        "national": {
+            "matches": 23,
+            "minutes": 976,
+            "goals": 2,
+            "assists": 0,
+            "goal_contributions": 2,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 3
         }
     }
 }

@@ -1,10 +1,13 @@
 {
     "player": {
+        "name": "Ui-jo Hwang",
         "short_name": "Ui-jo Hwang",
+        "dateOfBirth": "1992-08-28",
+        "placeOfBirth": "Seongnam, Gyeonggi",
         "nation_1": "Korea, South",
         "nation_2": "",
         "height": 1.85,
-        "foot": null,
+        "foot": "Both",
         "position_group": "MIDFIELDER",
         "position_1": "AMF",
         "position_2": "CF",
@@ -14,6 +17,22 @@
         "prime_date": "2022-05-30"
     },
     "matches": [
+        {
+            "game_id": "4932838",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "11282",
+            "opponent_id": "2832",
+            "position": "AMF",
+            "minutes": 69,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4648068",
             "season": 2025,
@@ -3044,7 +3063,7 @@
             "competition_type": "National Team",
             "club_id": "3589",
             "opponent_id": "8497",
-            "position": "CF",
+            "position": "SS",
             "minutes": 77,
             "started": true,
             "captain": false,
@@ -12185,48 +12204,50 @@
     ],
     "clubs": {
         "11282": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 92,
-                "participations": 92,
-                "minutes": 4477,
-                "starts": 51,
+                "matches": 93,
+                "participations": 93,
+                "minutes": 4546,
+                "starts": 52,
                 "captain_matches": 0,
                 "goals": 12,
                 "assists": 10,
-                "goals_conceded": 57,
-                "points": 128,
+                "goals_conceded": 58,
+                "points": 129,
                 "clean_sheets": 55,
                 "wins": 32,
-                "draws": 32,
+                "draws": 33,
                 "losses": 28,
-                "goal_matches": 82,
-                "assist_matches": 82,
+                "goal_matches": 83,
+                "assist_matches": 83,
                 "goal_contributions": 22
             },
             "positions": {
+                "AMF": 36,
                 "CF": 36,
-                "AMF": 35,
                 "LW": 8
             },
             "derived": {
-                "season_count": 3,
-                "points_per_match": 1.391,
-                "minutes_per_match": 48.7,
-                "win_rate": 0.3478,
-                "goals_per_90": 0.241,
-                "assists_per_90": 0.201,
-                "contributions_per_90": 0.442,
-                "primary_position": "CF"
+                "season_count": 4,
+                "points_per_match": 1.387,
+                "minutes_per_match": 48.9,
+                "win_rate": 0.3441,
+                "goals_per_90": 0.238,
+                "assists_per_90": 0.198,
+                "contributions_per_90": 0.436,
+                "primary_position": "AMF"
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 80,
-                    "minutes": 4197,
+                    "matches": 81,
+                    "minutes": 4266,
                     "goals": 12,
                     "assists": 9
                 },
@@ -12243,6 +12264,7 @@
             }
         },
         "703": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -12303,6 +12325,7 @@
             }
         },
         "1123": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -12364,6 +12387,7 @@
             }
         },
         "3589": {
+            "type": "national",
             "seasons": [
                 2014,
                 2015,
@@ -12395,8 +12419,9 @@
                 "goal_contributions": 23
             },
             "positions": {
-                "CF": 43,
-                "RW": 2
+                "CF": 42,
+                "RW": 2,
+                "SS": 1
             },
             "derived": {
                 "season_count": 10,
@@ -12431,6 +12456,7 @@
             }
         },
         "6500": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -12485,6 +12511,7 @@
             }
         },
         "683": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -12545,6 +12572,7 @@
             }
         },
         "40": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -12618,6 +12646,7 @@
             }
         },
         "53812": {
+            "type": "national",
             "seasons": [
                 2017,
                 2020
@@ -12672,6 +12701,7 @@
             }
         },
         "34950": {
+            "type": "national",
             "seasons": [
                 2015,
                 2017,
@@ -12740,6 +12770,7 @@
             }
         },
         "596": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -12810,6 +12841,7 @@
             }
         },
         "3610": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -12891,6 +12923,7 @@
             }
         },
         "42665": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -12937,6 +12970,7 @@
             }
         },
         "27039": {
+            "type": "club",
             "seasons": [
                 2010
             ],
@@ -12985,6 +13019,7 @@
             }
         },
         "25511": {
+            "type": "national",
             "seasons": [
                 2009
             ],
@@ -13033,24 +13068,24 @@
     },
     "career": {
         "club": {
-            "matches": 366,
-            "minutes": 19419,
-            "goals": 80,
-            "assists": 27,
-            "goal_contributions": 107,
-            "team_titles": 0,
+            "matches": 592,
+            "minutes": 31634,
+            "goals": 123,
+            "assists": 40,
+            "goal_contributions": 163,
+            "team_titles": 1,
             "individual_titles": 3,
-            "season_count": 11
+            "season_count": 16
         },
         "national": {
-            "matches": 390,
-            "minutes": 16702,
-            "goals": 75,
-            "assists": 18,
-            "goal_contributions": 93,
-            "team_titles": 2,
+            "matches": 165,
+            "minutes": 4556,
+            "goals": 32,
+            "assists": 5,
+            "goal_contributions": 37,
+            "team_titles": 1,
             "individual_titles": 6,
-            "season_count": 13
+            "season_count": 12
         }
     }
 }

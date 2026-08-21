@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Zayed Sultan",
         "short_name": "Z. Sultan",
+        "dateOfBirth": "2001-04-11",
+        "placeOfBirth": "Abu Dhabi",
         "nation_1": "United Arab Emirates",
         "nation_2": "",
         "height": 1.75,
@@ -14,6 +17,22 @@
         "prime_date": "2024-06-03"
     },
     "matches": [
+        {
+            "game_id": "5022597",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "5432",
+            "opponent_id": "38040",
+            "position": "RB",
+            "minutes": 72,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4885159",
             "season": 2025,
@@ -4109,44 +4128,46 @@
     ],
     "clubs": {
         "5432": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 33,
-                "participations": 33,
-                "minutes": 2554,
-                "starts": 28,
+                "matches": 34,
+                "participations": 34,
+                "minutes": 2626,
+                "starts": 29,
                 "captain_matches": 0,
                 "goals": 1,
                 "assists": 2,
-                "goals_conceded": 39,
-                "points": 48,
+                "goals_conceded": 41,
+                "points": 49,
                 "clean_sheets": 12,
                 "wins": 12,
-                "draws": 12,
+                "draws": 13,
                 "losses": 9,
-                "goal_matches": 32,
-                "assist_matches": 31,
+                "goal_matches": 33,
+                "assist_matches": 32,
                 "goal_contributions": 3
             },
             "positions": {
-                "RB": 28
+                "RB": 29
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.455,
-                "minutes_per_match": 77.4,
-                "win_rate": 0.3636,
-                "goals_per_90": 0.035,
-                "assists_per_90": 0.07,
-                "contributions_per_90": 0.106,
+                "season_count": 2,
+                "points_per_match": 1.441,
+                "minutes_per_match": 77.2,
+                "win_rate": 0.3529,
+                "goals_per_90": 0.034,
+                "assists_per_90": 0.069,
+                "contributions_per_90": 0.103,
                 "primary_position": "RB"
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 26,
-                    "minutes": 2104,
+                    "matches": 27,
+                    "minutes": 2176,
                     "goals": 1,
                     "assists": 1
                 },
@@ -4169,6 +4190,7 @@
             }
         },
         "5147": {
+            "type": "national",
             "seasons": [
                 2022,
                 2023,
@@ -4227,6 +4249,7 @@
             }
         },
         "2524": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -4311,6 +4334,7 @@
             }
         },
         "34592": {
+            "type": "national",
             "seasons": [
                 2021,
                 2022,
@@ -4374,6 +4398,7 @@
             }
         },
         "25513": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -4424,24 +4449,24 @@
     },
     "career": {
         "club": {
-            "matches": 33,
-            "minutes": 2554,
-            "goals": 1,
-            "assists": 2,
-            "goal_contributions": 3,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 1
-        },
-        "national": {
-            "matches": 220,
-            "minutes": 8945,
+            "matches": 198,
+            "minutes": 9585,
             "goals": 4,
-            "assists": 1,
-            "goal_contributions": 5,
+            "assists": 3,
+            "goal_contributions": 7,
             "team_titles": 3,
             "individual_titles": 0,
             "season_count": 8
+        },
+        "national": {
+            "matches": 56,
+            "minutes": 1986,
+            "goals": 1,
+            "assists": 0,
+            "goal_contributions": 1,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 6
         }
     }
 }
