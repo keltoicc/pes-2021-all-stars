@@ -30,8 +30,28 @@ export default class PlayerRepository {
         return playersBySlug.get(slug);
     }
 
+    static getByCountry(countryId: number): Player[] {
+        return players.filter(player =>
+            player.country === countryId ||
+            player.secondCountry === countryId
+        );
+    }
+
     static getCountryIds(): Set<number> {
-        return new Set(players.map(player => player.country));
+
+        const countryIds = new Set<number>();
+
+        for (const player of players) {
+
+            countryIds.add(player.country);
+
+            if (player.secondCountry !== undefined) {
+                countryIds.add(player.secondCountry);
+            }
+
+        }
+
+        return countryIds;
     }
 
 }

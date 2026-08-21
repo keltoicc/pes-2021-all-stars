@@ -36,6 +36,10 @@ if (!country) {
     );
 }
 
+const secondCountry = player.secondCountry
+    ? CountryRepository.getById(player.secondCountry)
+    : undefined;
+
 const career: CareerEntrySummary[] = (player.career ?? []).map(entry => {
 
         const team = TeamRepository.getById(entry.team);
@@ -80,6 +84,7 @@ const versions = PlayerVersionRepository.getByPlayer(player.id);
         <PlayerHeader
             player={player}
             country={country}
+            secondCountry={secondCountry}
         />
 
         <PlayerCareer career={career} />

@@ -34,14 +34,24 @@ if (!country) {
     throw new Error(`Country "${slug}" not found.`);
 }
 
-const players = PlayerRepository
-    .getAll()
-    .filter(player => player.country === country.id);
+const players = PlayerRepository.getByCountry(country.id);
 
-const summaries = players.map(player => ({
-    player,
-    country
-}));
+const summaries = players.map(player => {
+
+    const playerCountry = CountryRepository.getById(player.country);
+
+    if (!playerCountry) {
+        throw new Error(
+            `Country with id ${player.country} not found for player "${player.name}".`
+        );
+    }
+
+    return {
+        player,
+        country: playerCountry
+    };
+
+});
 ---
 
 <Layout title={`Players from ${country.name}`}>

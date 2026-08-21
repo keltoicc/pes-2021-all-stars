@@ -5,11 +5,13 @@ import type { Country } from "../../types/country";
 interface Props {
     player: Player;
     country: Country;
+    secondCountry?: Country;
 }
 
 const {
     player,
-    country
+    country,
+    secondCountry
 } = Astro.props;
 ---
 
@@ -21,12 +23,35 @@ const {
 
             <h1>{player.name}</h1>
 
-            <a
-                class="player-header__country"
-                href={`${import.meta.env.BASE_URL}players/countries/${country.slug}/`}
-            >
-                {country.name}
-            </a>
+            <div class="player-header__countries">
+
+                <a
+                    class="player-header__country"
+                    href={`${import.meta.env.BASE_URL}players/countries/${country.slug}/`}
+                >
+                    {country.name}
+                </a>
+
+                {
+                    secondCountry && (
+
+                        <>
+                            <span class="player-header__country-separator">
+                                ·
+                            </span>
+
+                            <a
+                                class="player-header__country"
+                                href={`${import.meta.env.BASE_URL}players/countries/${secondCountry.slug}/`}
+                            >
+                                {secondCountry.name}
+                            </a>
+                        </>
+
+                    )
+                }
+
+            </div>
 
         </div>
 
@@ -41,6 +66,19 @@ const {
                         <dd>{player.birthDate}</dd>
 
                     </div>
+                )
+            }
+
+            {
+                player.birthPlace && (
+
+                    <div>
+
+                        <dt>Birth place</dt>
+                        <dd>{player.birthPlace}</dd>
+
+                    </div>
+
                 )
             }
 
@@ -96,9 +134,15 @@ const {
     line-height: var(--line-height-tight);
 }
 
-.player-header__country {
-    margin: 0;
+.player-header__countries {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 
+    gap: var(--space-2);
+}
+
+.player-header__country {
     color: var(--color-primary);
 
     font-size: var(--font-size-lg);
