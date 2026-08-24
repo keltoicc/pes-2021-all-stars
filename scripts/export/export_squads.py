@@ -4,7 +4,7 @@ import yaml
 import re
 import sys
 
-from .publisher import publish_directory
+from publisher import publish_directory
 
 sys.path.append(str(Path(__file__).parent))
 
@@ -21,15 +21,35 @@ def slugify_web(name: str) -> str:
 
 def get_squad_data(team, squad_name = "All-Time"):
 
+    team_id = int(team['ID_pes'])
+
     team_slug = slugify_web(team['name'])
 
-    data = {
-        "id": team['ID_pes'],
+    players_dir = Path("data/built/players/teams")
+    players_file = players_dir / f"{team['ID_pes']}_{slugify(team['name'])}.json"
 
-        "team": team['ID_pes'],
+    with players_file.open(encoding="utf-8") as f:
+        squad = json.load(f)
+
+    members = []
+
+    for player in squad["players"]:
+        player = {
+            "playerName": player["player"]["name"],
+        }
+
+        if player:
+            members.append(player)
+
+    data = {
+        "id": team_id,
+
+        "team": team_id,
 
         "name": squad_name,
-        "slug": f"{team_slug}-{slugify_web(squad_name)}"
+        "slug": f"{team_slug}-{slugify_web(squad_name)}",
+
+        "members": members,
     }
 
     return data

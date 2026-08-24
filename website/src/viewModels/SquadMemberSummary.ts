@@ -4,6 +4,6 @@ import type { Player } from "../types/player";
 
 export interface SquadMemberSummary {
     member: SquadMember;
-    playerVersion: PlayerVersion;
-    player: Player;
+    playerVersion?: PlayerVersion;
+    player?: Player;
 }

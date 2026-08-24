@@ -49,18 +49,16 @@ const stadium =
         : undefined;
 
 const members: SquadMemberSummary[] = squad.members.map(member => {
-    const playerVersion = PlayerVersionRepository.getById(member.playerVersion);
-
+    if (member.playerVersion === undefined) {
+        return { member };
+    }
+    const playerVersion =
+        PlayerVersionRepository.getById(member.playerVersion);
     if (!playerVersion) {
-        throw new Error(`PlayerVersion ${member.playerVersion} not found.`);
+        return { member };
     }
-
-    const player = PlayerRepository.getById(playerVersion.player);
-
-    if (!player) {
-        throw new Error(`Player ${playerVersion.player} not found.`);
-    }
-
+    const player =
+        PlayerRepository.getById(playerVersion.player);
     return {
         member,
         playerVersion,

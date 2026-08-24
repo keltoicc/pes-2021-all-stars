@@ -1,3 +1,4 @@
 export interface SquadMember {
-    playerVersion: number;
+    playerName: string;
+    playerVersion?: number;
 }
