@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Kamaldeen Sulemana",
         "short_name": "K. Sulemana",
+        "dateOfBirth": "2002-02-15",
+        "placeOfBirth": "Techiman",
         "nation_1": "Ghana",
         "nation_2": "",
         "height": 1.74,
@@ -14,6 +17,38 @@
         "prime_date": "2023-06-20"
     },
     "matches": [
+        {
+            "game_id": "4893343",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "800",
+            "opponent_id": "6574",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "injured",
+            "club_points": 3
+        },
+        {
+            "game_id": "5013818",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "800",
+            "opponent_id": "1017",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "injured",
+            "club_points": 1
+        },
         {
             "game_id": "4776693",
             "season": 2025,
@@ -719,22 +754,6 @@
             "club_points": 3
         },
         {
-            "game_id": "4904437",
-            "season": 2026,
-            "competition_type": "Domestic Cup",
-            "club_id": "800",
-            "opponent_id": "0",
-            "position": null,
-            "minutes": 0,
-            "started": false,
-            "captain": false,
-            "goals": 0,
-            "assists": 0,
-            "goals_conceded": 0,
-            "participation": "not in squad",
-            "club_points": 0
-        },
-        {
             "game_id": "4620812",
             "season": 2025,
             "competition_type": "First Tier",
@@ -804,7 +823,7 @@
             "competition_type": "National Team",
             "club_id": "3441",
             "opponent_id": "3435",
-            "position": "RM",
+            "position": "LW",
             "minutes": 88,
             "started": true,
             "captain": false,
@@ -6069,7 +6088,74 @@
         }
     ],
     "clubs": {
+        "800": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 56,
+                "participations": 56,
+                "minutes": 1345,
+                "starts": 12,
+                "captain_matches": 0,
+                "goals": 3,
+                "assists": 2,
+                "goals_conceded": 24,
+                "points": 86,
+                "clean_sheets": 41,
+                "wins": 23,
+                "draws": 17,
+                "losses": 16,
+                "goal_matches": 53,
+                "assist_matches": 54,
+                "goal_contributions": 5
+            },
+            "positions": {
+                "AMF": 9,
+                "LW": 14,
+                "SS": 3,
+                "RW": 4,
+                "CF": 3
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 1.536,
+                "minutes_per_match": 24.0,
+                "win_rate": 0.4107,
+                "goals_per_90": 0.201,
+                "assists_per_90": 0.134,
+                "contributions_per_90": 0.335,
+                "primary_position": "LW"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 39,
+                    "minutes": 1002,
+                    "goals": 2,
+                    "assists": 1
+                },
+                "International Cup": {
+                    "matches": 13,
+                    "minutes": 288,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 4,
+                    "minutes": 55,
+                    "goals": 1,
+                    "assists": 1
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3441": {
+            "type": "national",
             "seasons": [
                 2019,
                 2020,
@@ -6098,9 +6184,8 @@
                 "goal_contributions": 2
             },
             "positions": {
-                "LW": 15,
+                "LW": 16,
                 "SS": 2,
-                "RM": 1,
                 "CF": 1,
                 "RW": 2,
                 "LM": 1
@@ -6134,72 +6219,8 @@
                 "individual_titles": {}
             }
         },
-        "800": {
-            "seasons": [
-                2025,
-                2026
-            ],
-            "stats": {
-                "matches": 55,
-                "participations": 55,
-                "minutes": 1345,
-                "starts": 12,
-                "captain_matches": 0,
-                "goals": 3,
-                "assists": 2,
-                "goals_conceded": 24,
-                "points": 82,
-                "clean_sheets": 40,
-                "wins": 22,
-                "draws": 16,
-                "losses": 17,
-                "goal_matches": 52,
-                "assist_matches": 53,
-                "goal_contributions": 5
-            },
-            "positions": {
-                "AMF": 9,
-                "LW": 14,
-                "SS": 3,
-                "RW": 4,
-                "CF": 3
-            },
-            "derived": {
-                "season_count": 2,
-                "points_per_match": 1.491,
-                "minutes_per_match": 24.5,
-                "win_rate": 0.4,
-                "goals_per_90": 0.201,
-                "assists_per_90": 0.134,
-                "contributions_per_90": 0.335,
-                "primary_position": "LW"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 38,
-                    "minutes": 1002,
-                    "goals": 2,
-                    "assists": 1
-                },
-                "Domestic Cup": {
-                    "matches": 5,
-                    "minutes": 55,
-                    "goals": 1,
-                    "assists": 1
-                },
-                "International Cup": {
-                    "matches": 12,
-                    "minutes": 288,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "180": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -6279,6 +6300,7 @@
             }
         },
         "273": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022
@@ -6342,6 +6364,7 @@
             }
         },
         "8154": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -6388,6 +6411,7 @@
             }
         },
         "2778": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -6453,24 +6477,24 @@
     },
     "career": {
         "club": {
-            "matches": 169,
-            "minutes": 6671,
-            "goals": 18,
-            "assists": 13,
-            "goal_contributions": 31,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 6
-        },
-        "national": {
-            "matches": 207,
-            "minutes": 4791,
-            "goals": 10,
-            "assists": 7,
-            "goal_contributions": 17,
+            "matches": 303,
+            "minutes": 9946,
+            "goals": 27,
+            "assists": 19,
+            "goal_contributions": 46,
             "team_titles": 0,
             "individual_titles": 0,
             "season_count": 8
+        },
+        "national": {
+            "matches": 74,
+            "minutes": 1516,
+            "goals": 1,
+            "assists": 1,
+            "goal_contributions": 2,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 7
         }
     }
 }

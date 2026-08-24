@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Morlaye Sylla",
         "short_name": "M. Sylla",
+        "dateOfBirth": "1998-07-27",
+        "placeOfBirth": "Conakry",
         "nation_1": "Guinea",
         "nation_2": "",
         "height": 1.7,
@@ -14,6 +17,38 @@
         "prime_date": "2024-06-06"
     },
     "matches": [
+        {
+            "game_id": "4975113",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "50532",
+            "opponent_id": "95443",
+            "position": "AMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4971034",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "50532",
+            "opponent_id": "28844",
+            "position": "AMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4890558",
             "season": 2025,
@@ -4455,7 +4490,75 @@
         }
     ],
     "clubs": {
+        "50532": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 37,
+                "participations": 37,
+                "minutes": 3035,
+                "starts": 34,
+                "captain_matches": 0,
+                "goals": 2,
+                "assists": 1,
+                "goals_conceded": 51,
+                "points": 30,
+                "clean_sheets": 10,
+                "wins": 6,
+                "draws": 12,
+                "losses": 19,
+                "goal_matches": 35,
+                "assist_matches": 36,
+                "goal_contributions": 3
+            },
+            "positions": {
+                "AMF": 7,
+                "CMF": 15,
+                "DMF": 7,
+                "RM": 1,
+                "LW": 2,
+                "RW": 2
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 0.811,
+                "minutes_per_match": 82.0,
+                "win_rate": 0.1622,
+                "goals_per_90": 0.059,
+                "assists_per_90": 0.03,
+                "contributions_per_90": 0.089,
+                "primary_position": "CMF"
+            },
+            "competitions": {
+                "Second Tier": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 2,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "First Tier": {
+                    "matches": 34,
+                    "minutes": 2855,
+                    "goals": 2,
+                    "assists": 1
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3856": {
+            "type": "national",
             "seasons": [
                 2019,
                 2020,
@@ -4520,66 +4623,8 @@
                 "individual_titles": {}
             }
         },
-        "50532": {
-            "seasons": [
-                2025
-            ],
-            "stats": {
-                "matches": 35,
-                "participations": 35,
-                "minutes": 2855,
-                "starts": 32,
-                "captain_matches": 0,
-                "goals": 2,
-                "assists": 1,
-                "goals_conceded": 48,
-                "points": 29,
-                "clean_sheets": 9,
-                "wins": 6,
-                "draws": 11,
-                "losses": 18,
-                "goal_matches": 33,
-                "assist_matches": 34,
-                "goal_contributions": 3
-            },
-            "positions": {
-                "CMF": 15,
-                "AMF": 5,
-                "DMF": 7,
-                "RM": 1,
-                "LW": 2,
-                "RW": 2
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 0.829,
-                "minutes_per_match": 81.6,
-                "win_rate": 0.1714,
-                "goals_per_90": 0.063,
-                "assists_per_90": 0.032,
-                "contributions_per_90": 0.095,
-                "primary_position": "CMF"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 34,
-                    "minutes": 2855,
-                    "goals": 2,
-                    "assists": 1
-                },
-                "Domestic Cup": {
-                    "matches": 1,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "8024": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -4654,6 +4699,7 @@
             }
         },
         "8474": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -4706,6 +4752,7 @@
             }
         },
         "56030": {
+            "type": "national",
             "seasons": [
                 2016
             ],
@@ -4755,6 +4802,7 @@
             }
         },
         "48617": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -4805,21 +4853,21 @@
     },
     "career": {
         "club": {
-            "matches": 35,
-            "minutes": 2855,
-            "goals": 2,
-            "assists": 1,
-            "goal_contributions": 3,
+            "matches": 187,
+            "minutes": 13904,
+            "goals": 14,
+            "assists": 15,
+            "goal_contributions": 29,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 1
+            "season_count": 8
         },
         "national": {
-            "matches": 241,
-            "minutes": 14010,
-            "goals": 23,
-            "assists": 17,
-            "goal_contributions": 40,
+            "matches": 91,
+            "minutes": 3141,
+            "goals": 11,
+            "assists": 3,
+            "goal_contributions": 14,
             "team_titles": 0,
             "individual_titles": 0,
             "season_count": 9

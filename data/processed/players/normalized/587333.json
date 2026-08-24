@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Sekou Sylla",
         "short_name": "Sekou Sylla",
+        "dateOfBirth": "1999-01-09",
+        "placeOfBirth": "Schiedam",
         "nation_1": "Guinea",
         "nation_2": "Netherlands",
         "height": 1.8,
@@ -14,6 +17,54 @@
         "prime_date": "2026-05-21"
     },
     "matches": [
+        {
+            "game_id": "4894687",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1268",
+            "opponent_id": "1435",
+            "position": "LB",
+            "minutes": 66,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4894679",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1268",
+            "opponent_id": "202",
+            "position": "LB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 4,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4894511",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1268",
+            "opponent_id": "1090",
+            "position": "LB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4890558",
             "season": 2025,
@@ -5472,7 +5523,81 @@
         }
     ],
     "clubs": {
+        "1268": {
+            "type": "club",
+            "seasons": [
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 83,
+                "participations": 83,
+                "minutes": 5196,
+                "starts": 60,
+                "captain_matches": 0,
+                "goals": 4,
+                "assists": 4,
+                "goals_conceded": 69,
+                "points": 159,
+                "clean_sheets": 40,
+                "wins": 49,
+                "draws": 12,
+                "losses": 22,
+                "goal_matches": 79,
+                "assist_matches": 79,
+                "goal_contributions": 8
+            },
+            "positions": {
+                "LB": 61,
+                "LM": 1,
+                "LW": 1
+            },
+            "derived": {
+                "season_count": 3,
+                "points_per_match": 1.916,
+                "minutes_per_match": 62.6,
+                "win_rate": 0.5904,
+                "goals_per_90": 0.069,
+                "assists_per_90": 0.069,
+                "contributions_per_90": 0.139,
+                "primary_position": "LB"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 3,
+                    "minutes": 246,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Second Tier": {
+                    "matches": 76,
+                    "minutes": 4700,
+                    "goals": 4,
+                    "assists": 3
+                },
+                "Domestic Cup": {
+                    "matches": 2,
+                    "minutes": 102,
+                    "goals": 0,
+                    "assists": 1
+                },
+                "Play-Offs": {
+                    "matches": 2,
+                    "minutes": 148,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Dutch second tier champion": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3856": {
+            "type": "national",
             "seasons": [
                 2021,
                 2022,
@@ -5531,72 +5656,8 @@
                 "individual_titles": {}
             }
         },
-        "1268": {
-            "seasons": [
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 80,
-                "participations": 80,
-                "minutes": 4950,
-                "starts": 57,
-                "captain_matches": 0,
-                "goals": 4,
-                "assists": 4,
-                "goals_conceded": 61,
-                "points": 159,
-                "clean_sheets": 40,
-                "wins": 49,
-                "draws": 12,
-                "losses": 19,
-                "goal_matches": 76,
-                "assist_matches": 76,
-                "goal_contributions": 8
-            },
-            "positions": {
-                "LB": 58,
-                "LM": 1,
-                "LW": 1
-            },
-            "derived": {
-                "season_count": 2,
-                "points_per_match": 1.988,
-                "minutes_per_match": 61.9,
-                "win_rate": 0.6125,
-                "goals_per_90": 0.073,
-                "assists_per_90": 0.073,
-                "contributions_per_90": 0.145,
-                "primary_position": "LB"
-            },
-            "competitions": {
-                "Second Tier": {
-                    "matches": 76,
-                    "minutes": 4700,
-                    "goals": 4,
-                    "assists": 3
-                },
-                "Domestic Cup": {
-                    "matches": 2,
-                    "minutes": 102,
-                    "goals": 0,
-                    "assists": 1
-                },
-                "Play-Offs": {
-                    "matches": 2,
-                    "minutes": 148,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Dutch second tier champion": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "133": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -5661,6 +5722,7 @@
             }
         },
         "1228": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -5716,6 +5778,7 @@
             }
         },
         "3410": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -5780,14 +5843,14 @@
     },
     "career": {
         "club": {
-            "matches": 294,
-            "minutes": 13567,
+            "matches": 297,
+            "minutes": 13813,
             "goals": 15,
             "assists": 14,
             "goal_contributions": 29,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 9
+            "season_count": 10
         },
         "national": {
             "matches": 46,

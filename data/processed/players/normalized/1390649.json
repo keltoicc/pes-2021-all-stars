@@ -1,19 +1,38 @@
 {
     "player": {
+        "name": "Yan Diomande",
         "short_name": "Y. Diomande",
+        "dateOfBirth": "2006-11-14",
+        "placeOfBirth": "Abidjan",
         "nation_1": "Cote d'Ivoire",
         "nation_2": "",
         "height": 1.8,
         "foot": "Right",
         "position_group": "FORWARD",
-        "position_1": "LW",
-        "position_2": "RW",
+        "position_1": "RW",
+        "position_2": "LW",
         "position_3": "",
         "former_clubs": "Afi Si Komoe, Yulee Hornets (Yulee High School) (-2022), DME Academy (2022-2024)",
         "market_value": 90000000,
         "prime_date": "2026-05-27"
     },
     "matches": [
+        {
+            "game_id": "4909472",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "418",
+            "opponent_id": "714",
+            "position": "RW",
+            "minutes": 26,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776684",
             "season": 2025,
@@ -1280,7 +1299,57 @@
         }
     ],
     "clubs": {
+        "418": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 1,
+                "participations": 1,
+                "minutes": 26,
+                "starts": 0,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 0,
+                "points": 3,
+                "clean_sheets": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "goal_matches": 1,
+                "assist_matches": 1,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "RW": 1
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 3.0,
+                "minutes_per_match": 26.0,
+                "win_rate": 1.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "RW"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 1,
+                    "minutes": 26,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3591": {
+            "type": "national",
             "seasons": [
                 2023,
                 2024,
@@ -1338,6 +1407,7 @@
             }
         },
         "23826": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -1393,6 +1463,7 @@
             }
         },
         "34868": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -1439,6 +1510,7 @@
             }
         },
         "1244": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -1497,14 +1569,14 @@
     },
     "career": {
         "club": {
-            "matches": 61,
-            "minutes": 3266,
+            "matches": 62,
+            "minutes": 3292,
             "goals": 15,
             "assists": 11,
             "goal_contributions": 26,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 2
+            "season_count": 3
         },
         "national": {
             "matches": 17,

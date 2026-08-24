@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Lassine Sinayoko",
         "short_name": "L. Sinayoko",
+        "dateOfBirth": "1999-12-08",
+        "placeOfBirth": "Bamako",
         "nation_1": "Mali",
         "nation_2": "France",
         "height": 1.86,
@@ -14,6 +17,22 @@
         "prime_date": "2026-06-01"
     },
     "matches": [
+        {
+            "game_id": "4894908",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "10004",
+            "opponent_id": "1095",
+            "position": "CF",
+            "minutes": 79,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4890779",
             "season": 2025,
@@ -6542,7 +6561,57 @@
         }
     ],
     "clubs": {
+        "10004": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 1,
+                "participations": 1,
+                "minutes": 79,
+                "starts": 1,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 0,
+                "points": 1,
+                "clean_sheets": 1,
+                "wins": 0,
+                "draws": 1,
+                "losses": 0,
+                "goal_matches": 1,
+                "assist_matches": 1,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "CF": 1
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 1.0,
+                "minutes_per_match": 79.0,
+                "win_rate": 0.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "CF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 1,
+                    "minutes": 79,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3674": {
+            "type": "national",
             "seasons": [
                 2019,
                 2021,
@@ -6604,6 +6673,7 @@
             }
         },
         "290": {
+            "type": "club",
             "seasons": [
                 2017,
                 2019,
@@ -6689,6 +6759,7 @@
             }
         },
         "10820": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -6747,6 +6818,7 @@
             }
         },
         "7817": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -6795,14 +6867,14 @@
     },
     "career": {
         "club": {
-            "matches": 351,
-            "minutes": 14435,
+            "matches": 352,
+            "minutes": 14514,
             "goals": 55,
             "assists": 30,
             "goal_contributions": 85,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 9
+            "season_count": 10
         },
         "national": {
             "matches": 55,

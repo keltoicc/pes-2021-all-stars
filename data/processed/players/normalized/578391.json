@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Rayan Aït-Nouri",
         "short_name": "R. Aït-Nouri",
+        "dateOfBirth": "2001-06-06",
+        "placeOfBirth": "Montreuil",
         "nation_1": "Algeria",
         "nation_2": "France",
         "height": 1.8,
@@ -14,6 +17,38 @@
         "prime_date": "2026-06-03"
     },
     "matches": [
+        {
+            "game_id": "4899189",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "281",
+            "opponent_id": "989",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4942122",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "281",
+            "opponent_id": "11",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
         {
             "game_id": "4776691",
             "season": 2025,
@@ -7580,7 +7615,89 @@
         }
     ],
     "clubs": {
+        "281": {
+            "type": "club",
+            "seasons": [
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 66,
+                "participations": 66,
+                "minutes": 1890,
+                "starts": 23,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 6,
+                "goals_conceded": 22,
+                "points": 142,
+                "clean_sheets": 53,
+                "wins": 44,
+                "draws": 10,
+                "losses": 12,
+                "goal_matches": 66,
+                "assist_matches": 60,
+                "goal_contributions": 6
+            },
+            "positions": {
+                "LW": 1,
+                "LB": 25,
+                "LM": 2,
+                "RB": 1
+            },
+            "derived": {
+                "season_count": 3,
+                "points_per_match": 2.152,
+                "minutes_per_match": 28.6,
+                "win_rate": 0.6667,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.286,
+                "contributions_per_90": 0.286,
+                "primary_position": "LB"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 39,
+                    "minutes": 976,
+                    "goals": 0,
+                    "assists": 2
+                },
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 6,
+                    "minutes": 135,
+                    "goals": 0,
+                    "assists": 1
+                },
+                "League Cup": {
+                    "matches": 6,
+                    "minutes": 155,
+                    "goals": 0,
+                    "assists": 2
+                },
+                "International Cup": {
+                    "matches": 14,
+                    "minutes": 624,
+                    "goals": 0,
+                    "assists": 1
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "English FA Cup winner": 1,
+                    "English League Cup winner": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3614": {
+            "type": "national",
             "seasons": [
                 2021,
                 2022,
@@ -7639,80 +7756,8 @@
                 "individual_titles": {}
             }
         },
-        "281": {
-            "seasons": [
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 64,
-                "participations": 64,
-                "minutes": 1890,
-                "starts": 23,
-                "captain_matches": 0,
-                "goals": 0,
-                "assists": 6,
-                "goals_conceded": 22,
-                "points": 139,
-                "clean_sheets": 51,
-                "wins": 43,
-                "draws": 10,
-                "losses": 11,
-                "goal_matches": 64,
-                "assist_matches": 58,
-                "goal_contributions": 6
-            },
-            "positions": {
-                "LW": 1,
-                "LB": 25,
-                "LM": 2,
-                "RB": 1
-            },
-            "derived": {
-                "season_count": 2,
-                "points_per_match": 2.172,
-                "minutes_per_match": 29.5,
-                "win_rate": 0.6719,
-                "goals_per_90": 0.0,
-                "assists_per_90": 0.286,
-                "contributions_per_90": 0.286,
-                "primary_position": "LB"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 38,
-                    "minutes": 976,
-                    "goals": 0,
-                    "assists": 2
-                },
-                "Domestic Cup": {
-                    "matches": 6,
-                    "minutes": 135,
-                    "goals": 0,
-                    "assists": 1
-                },
-                "League Cup": {
-                    "matches": 6,
-                    "minutes": 155,
-                    "goals": 0,
-                    "assists": 2
-                },
-                "International Cup": {
-                    "matches": 14,
-                    "minutes": 624,
-                    "goals": 0,
-                    "assists": 1
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "English FA Cup winner": 1,
-                    "English League Cup winner": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "543": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -7782,6 +7827,7 @@
             }
         },
         "9323": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -7836,6 +7882,7 @@
             }
         },
         "1420": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -7899,6 +7946,7 @@
             }
         },
         "25250": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -7947,6 +7995,7 @@
             }
         },
         "16672": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018
@@ -7994,6 +8043,7 @@
             }
         },
         "23101": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -8042,22 +8092,22 @@
     },
     "career": {
         "club": {
-            "matches": 324,
-            "minutes": 13716,
+            "matches": 390,
+            "minutes": 15606,
             "goals": 12,
-            "assists": 23,
-            "goal_contributions": 35,
-            "team_titles": 0,
+            "assists": 29,
+            "goal_contributions": 41,
+            "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 8
+            "season_count": 10
         },
         "national": {
-            "matches": 146,
-            "minutes": 5548,
+            "matches": 82,
+            "minutes": 3658,
             "goals": 0,
-            "assists": 9,
-            "goal_contributions": 9,
-            "team_titles": 2,
+            "assists": 3,
+            "goal_contributions": 3,
+            "team_titles": 0,
             "individual_titles": 0,
             "season_count": 7
         }

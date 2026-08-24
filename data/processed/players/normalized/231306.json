@@ -1,8 +1,11 @@
 {
     "player": {
+        "name": "Guélor Kanga",
         "short_name": "G. Kanga",
+        "dateOfBirth": "1990-09-01",
+        "placeOfBirth": "Oyem",
         "nation_1": "Gabon",
-        "nation_2": null,
+        "nation_2": "Serbia",
         "height": 1.67,
         "foot": "Right",
         "position_group": "MIDFIELDER",
@@ -14,6 +17,54 @@
         "prime_date": "2019-12-07"
     },
     "matches": [
+        {
+            "game_id": "4935855",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "45269",
+            "opponent_id": "24245",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "absent",
+            "club_points": 1
+        },
+        {
+            "game_id": "4935845",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "45269",
+            "opponent_id": "518",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "absent",
+            "club_points": 1
+        },
+        {
+            "game_id": "4935838",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "45269",
+            "opponent_id": "2381",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "absent",
+            "club_points": 1
+        },
         {
             "game_id": "4886145",
             "season": 2025,
@@ -8905,7 +8956,7 @@
             "started": true,
             "captain": false,
             "goals": 0,
-            "assists": 0,
+            "assists": 2,
             "goals_conceded": 1,
             "participation": "played",
             "club_points": 3
@@ -12251,25 +12302,27 @@
     ],
     "clubs": {
         "45269": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 41,
-                "participations": 41,
+                "matches": 44,
+                "participations": 44,
                 "minutes": 1966,
                 "starts": 24,
                 "captain_matches": 0,
                 "goals": 6,
                 "assists": 4,
                 "goals_conceded": 21,
-                "points": 77,
-                "clean_sheets": 26,
+                "points": 80,
+                "clean_sheets": 29,
                 "wins": 22,
-                "draws": 11,
+                "draws": 14,
                 "losses": 8,
-                "goal_matches": 35,
-                "assist_matches": 37,
+                "goal_matches": 38,
+                "assist_matches": 40,
                 "goal_contributions": 10
             },
             "positions": {
@@ -12279,27 +12332,27 @@
                 "RM": 1
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.878,
-                "minutes_per_match": 48.0,
-                "win_rate": 0.5366,
+                "season_count": 2,
+                "points_per_match": 1.818,
+                "minutes_per_match": 44.7,
+                "win_rate": 0.5,
                 "goals_per_90": 0.275,
                 "assists_per_90": 0.183,
                 "contributions_per_90": 0.458,
                 "primary_position": "CMF"
             },
             "competitions": {
+                "Second Tier": {
+                    "matches": 41,
+                    "minutes": 1934,
+                    "goals": 6,
+                    "assists": 4
+                },
                 "Play-Offs": {
                     "matches": 1,
                     "minutes": 32,
                     "goals": 0,
                     "assists": 0
-                },
-                "Second Tier": {
-                    "matches": 38,
-                    "minutes": 1934,
-                    "goals": 6,
-                    "assists": 4
                 },
                 "Domestic Cup": {
                     "matches": 2,
@@ -12314,6 +12367,7 @@
             }
         },
         "5704": {
+            "type": "national",
             "seasons": [
                 2011,
                 2012,
@@ -12338,7 +12392,7 @@
                 "starts": 71,
                 "captain_matches": 1,
                 "goals": 7,
-                "assists": 13,
+                "assists": 15,
                 "goals_conceded": 81,
                 "points": 170,
                 "clean_sheets": 85,
@@ -12346,8 +12400,8 @@
                 "draws": 38,
                 "losses": 47,
                 "goal_matches": 122,
-                "assist_matches": 117,
-                "goal_contributions": 20
+                "assist_matches": 116,
+                "goal_contributions": 22
             },
             "positions": {
                 "AMF": 36,
@@ -12365,8 +12419,8 @@
                 "minutes_per_match": 48.3,
                 "win_rate": 0.3411,
                 "goals_per_90": 0.101,
-                "assists_per_90": 0.188,
-                "contributions_per_90": 0.289,
+                "assists_per_90": 0.217,
+                "contributions_per_90": 0.318,
                 "primary_position": "AMF"
             },
             "competitions": {
@@ -12374,7 +12428,7 @@
                     "matches": 68,
                     "minutes": 2626,
                     "goals": 5,
-                    "assists": 3
+                    "assists": 5
                 },
                 "National team's qualifiers": {
                     "matches": 61,
@@ -12389,6 +12443,7 @@
             }
         },
         "159": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -12470,6 +12525,7 @@
             }
         },
         "197": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -12542,6 +12598,7 @@
             }
         },
         "1083": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -12624,6 +12681,7 @@
             }
         },
         "11746": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -12665,6 +12723,7 @@
             }
         },
         "34324": {
+            "type": "club",
             "seasons": [
                 2010
             ],
@@ -12711,6 +12770,7 @@
             }
         },
         "5312": {
+            "type": "club",
             "seasons": [
                 2007,
                 2008
@@ -12760,24 +12820,24 @@
     },
     "career": {
         "club": {
-            "matches": 47,
-            "minutes": 2478,
-            "goals": 8,
-            "assists": 4,
-            "goal_contributions": 12,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 4
-        },
-        "national": {
-            "matches": 707,
-            "minutes": 37773,
-            "goals": 97,
-            "assists": 118,
-            "goal_contributions": 215,
+            "matches": 628,
+            "minutes": 34026,
+            "goals": 98,
+            "assists": 109,
+            "goal_contributions": 207,
             "team_titles": 13,
             "individual_titles": 1,
             "season_count": 18
+        },
+        "national": {
+            "matches": 129,
+            "minutes": 6225,
+            "goals": 7,
+            "assists": 15,
+            "goal_contributions": 22,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 15
         }
     }
 }

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Lassana Fané",
         "short_name": "L. Fané",
+        "dateOfBirth": "1987-11-11",
+        "placeOfBirth": "Bamako",
         "nation_1": "Mali",
         "nation_2": "",
         "height": 1.83,
@@ -783,6 +786,22 @@
             "club_points": 1
         },
         {
+            "game_id": "4976649",
+            "season": 2015,
+            "competition_type": "League Cup",
+            "club_id": "37372",
+            "opponent_id": "55762",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
             "game_id": "2547238",
             "season": 2014,
             "competition_type": "First Tier",
@@ -1532,6 +1551,22 @@
             "assists": 0,
             "goals_conceded": 1,
             "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4985367",
+            "season": 2013,
+            "competition_type": "League Cup",
+            "club_id": "37372",
+            "opponent_id": "31008",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
             "club_points": 3
         },
         {
@@ -2436,7 +2471,7 @@
             "competition_type": "National Team",
             "club_id": "3674",
             "opponent_id": "3585",
-            "position": "",
+            "position": "DMF",
             "minutes": 32,
             "started": false,
             "captain": false,
@@ -2799,6 +2834,7 @@
     ],
     "clubs": {
         "28597": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -2853,6 +2889,7 @@
             }
         },
         "18702": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -2908,27 +2945,29 @@
             }
         },
         "37372": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
-                2014
+                2014,
+                2015
             ],
             "stats": {
-                "matches": 85,
-                "participations": 85,
+                "matches": 87,
+                "participations": 87,
                 "minutes": 4961,
                 "starts": 55,
                 "captain_matches": 0,
                 "goals": 13,
                 "assists": 2,
                 "goals_conceded": 101,
-                "points": 83,
-                "clean_sheets": 40,
-                "wins": 21,
+                "points": 89,
+                "clean_sheets": 42,
+                "wins": 23,
                 "draws": 20,
                 "losses": 44,
-                "goal_matches": 74,
-                "assist_matches": 83,
+                "goal_matches": 76,
+                "assist_matches": 85,
                 "goal_contributions": 15
             },
             "positions": {
@@ -2937,16 +2976,22 @@
                 "CB": 1
             },
             "derived": {
-                "season_count": 3,
-                "points_per_match": 0.976,
-                "minutes_per_match": 58.4,
-                "win_rate": 0.2471,
+                "season_count": 4,
+                "points_per_match": 1.023,
+                "minutes_per_match": 57.0,
+                "win_rate": 0.2644,
                 "goals_per_90": 0.236,
                 "assists_per_90": 0.036,
                 "contributions_per_90": 0.272,
                 "primary_position": "CMF"
             },
             "competitions": {
+                "League Cup": {
+                    "matches": 7,
+                    "minutes": 110,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "First Tier": {
                     "matches": 78,
                     "minutes": 4851,
@@ -2958,12 +3003,6 @@
                     "minutes": 0,
                     "goals": 0,
                     "assists": 0
-                },
-                "League Cup": {
-                    "matches": 5,
-                    "minutes": 110,
-                    "goals": 0,
-                    "assists": 0
                 }
             },
             "awards": {
@@ -2972,6 +3011,7 @@
             }
         },
         "15482": {
+            "type": "club",
             "seasons": [
                 2010,
                 2011
@@ -3021,6 +3061,7 @@
             }
         },
         "10721": {
+            "type": "club",
             "seasons": [
                 2008,
                 2009
@@ -3068,6 +3109,7 @@
             }
         },
         "3674": {
+            "type": "national",
             "seasons": [
                 2008,
                 2009
@@ -3091,7 +3133,7 @@
                 "goal_contributions": 1
             },
             "positions": {
-                "DMF": 2,
+                "DMF": 3,
                 "CMF": 1
             },
             "derived": {
@@ -3126,24 +3168,24 @@
     },
     "career": {
         "club": {
-            "matches": 101,
-            "minutes": 5403,
-            "goals": 13,
+            "matches": 161,
+            "minutes": 8457,
+            "goals": 16,
             "assists": 3,
-            "goal_contributions": 16,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 4
-        },
-        "national": {
-            "matches": 71,
-            "minutes": 3740,
-            "goals": 4,
-            "assists": 0,
-            "goal_contributions": 4,
+            "goal_contributions": 19,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 5
+            "season_count": 9
+        },
+        "national": {
+            "matches": 13,
+            "minutes": 686,
+            "goals": 1,
+            "assists": 0,
+            "goal_contributions": 1,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 2
         }
     }
 }

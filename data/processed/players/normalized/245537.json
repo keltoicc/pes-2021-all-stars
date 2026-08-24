@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Nabil Bentaleb",
         "short_name": "N. Bentaleb",
+        "dateOfBirth": "1994-11-24",
+        "placeOfBirth": "Lille",
         "nation_1": "Algeria",
         "nation_2": "France",
         "height": 1.89,
@@ -14,6 +17,22 @@
         "prime_date": "2018-12-18"
     },
     "matches": [
+        {
+            "game_id": "4894900",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1082",
+            "opponent_id": "1420",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776691",
             "season": 2025,
@@ -12630,7 +12649,74 @@
         }
     ],
     "clubs": {
+        "1082": {
+            "type": "club",
+            "seasons": [
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 145,
+                "participations": 145,
+                "minutes": 4961,
+                "starts": 56,
+                "captain_matches": 0,
+                "goals": 3,
+                "assists": 6,
+                "goals_conceded": 66,
+                "points": 253,
+                "clean_sheets": 104,
+                "wins": 73,
+                "draws": 34,
+                "losses": 38,
+                "goal_matches": 142,
+                "assist_matches": 139,
+                "goal_contributions": 9
+            },
+            "positions": {
+                "DMF": 40,
+                "CMF": 15,
+                "CB": 2
+            },
+            "derived": {
+                "season_count": 4,
+                "points_per_match": 1.745,
+                "minutes_per_match": 34.2,
+                "win_rate": 0.5034,
+                "goals_per_90": 0.054,
+                "assists_per_90": 0.109,
+                "contributions_per_90": 0.163,
+                "primary_position": "DMF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 100,
+                    "minutes": 3659,
+                    "goals": 3,
+                    "assists": 6
+                },
+                "International Cup": {
+                    "matches": 37,
+                    "minutes": 1045,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 8,
+                    "minutes": 257,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3614": {
+            "type": "national",
             "seasons": [
                 2013,
                 2014,
@@ -12697,71 +12783,8 @@
                 "individual_titles": {}
             }
         },
-        "1082": {
-            "seasons": [
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 144,
-                "participations": 144,
-                "minutes": 4871,
-                "starts": 55,
-                "captain_matches": 0,
-                "goals": 3,
-                "assists": 5,
-                "goals_conceded": 66,
-                "points": 250,
-                "clean_sheets": 103,
-                "wins": 72,
-                "draws": 34,
-                "losses": 38,
-                "goal_matches": 141,
-                "assist_matches": 139,
-                "goal_contributions": 8
-            },
-            "positions": {
-                "DMF": 39,
-                "CMF": 15,
-                "CB": 2
-            },
-            "derived": {
-                "season_count": 3,
-                "points_per_match": 1.736,
-                "minutes_per_match": 33.8,
-                "win_rate": 0.5,
-                "goals_per_90": 0.055,
-                "assists_per_90": 0.092,
-                "contributions_per_90": 0.148,
-                "primary_position": "DMF"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 99,
-                    "minutes": 3569,
-                    "goals": 3,
-                    "assists": 5
-                },
-                "International Cup": {
-                    "matches": 37,
-                    "minutes": 1045,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Domestic Cup": {
-                    "matches": 8,
-                    "minutes": 257,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "1420": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -12826,6 +12849,7 @@
             }
         },
         "33": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -12892,6 +12916,7 @@
             }
         },
         "762": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -12947,6 +12972,7 @@
             }
         },
         "34": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -12995,6 +13021,7 @@
             }
         },
         "148": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -13066,6 +13093,7 @@
             }
         },
         "9254": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -13120,6 +13148,7 @@
             }
         },
         "23101": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -13168,21 +13197,21 @@
     },
     "career": {
         "club": {
-            "matches": 127,
-            "minutes": 7485,
-            "goals": 11,
-            "assists": 8,
-            "goal_contributions": 19,
+            "matches": 614,
+            "minutes": 24942,
+            "goals": 34,
+            "assists": 28,
+            "goal_contributions": 62,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 7
+            "season_count": 15
         },
         "national": {
-            "matches": 656,
-            "minutes": 22056,
-            "goals": 29,
-            "assists": 21,
-            "goal_contributions": 50,
+            "matches": 170,
+            "minutes": 4689,
+            "goals": 6,
+            "assists": 2,
+            "goal_contributions": 8,
             "team_titles": 0,
             "individual_titles": 0,
             "season_count": 14

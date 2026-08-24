@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Amadou Haidara",
         "short_name": "A. Haidara",
+        "dateOfBirth": "1998-01-31",
+        "placeOfBirth": "Bamako",
         "nation_1": "Mali",
         "nation_2": "",
         "height": 1.78,
@@ -14,6 +17,38 @@
         "prime_date": "2022-06-09"
     },
     "matches": [
+        {
+            "game_id": "4894903",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "826",
+            "opponent_id": "290",
+            "position": "",
+            "minutes": 19,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4916783",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "826",
+            "opponent_id": "583",
+            "position": "CMF",
+            "minutes": 9,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4869246",
             "season": 2025,
@@ -9670,6 +9705,13 @@
             "club_id": 826
         },
         {
+            "title": "French Super Cup winner",
+            "season": "26/27",
+            "season_id": 2026,
+            "club_name": "RC Lens",
+            "club_id": 826
+        },
+        {
             "title": "German cup runner-up",
             "season": "20/21",
             "season_id": 2020,
@@ -9833,62 +9875,72 @@
     ],
     "clubs": {
         "826": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 23,
-                "participations": 23,
-                "minutes": 325,
+                "matches": 25,
+                "participations": 25,
+                "minutes": 353,
                 "starts": 3,
                 "captain_matches": 0,
                 "goals": 1,
                 "assists": 1,
                 "goals_conceded": 3,
-                "points": 48,
-                "clean_sheets": 20,
-                "wins": 15,
+                "points": 54,
+                "clean_sheets": 22,
+                "wins": 17,
                 "draws": 3,
                 "losses": 5,
-                "goal_matches": 22,
-                "assist_matches": 22,
+                "goal_matches": 24,
+                "assist_matches": 24,
                 "goal_contributions": 2
             },
             "positions": {
-                "CMF": 4
+                "CMF": 5
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 2.087,
+                "season_count": 2,
+                "points_per_match": 2.16,
                 "minutes_per_match": 14.1,
-                "win_rate": 0.6522,
-                "goals_per_90": 0.277,
-                "assists_per_90": 0.277,
-                "contributions_per_90": 0.554,
+                "win_rate": 0.68,
+                "goals_per_90": 0.255,
+                "assists_per_90": 0.255,
+                "contributions_per_90": 0.51,
                 "primary_position": "CMF"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 19,
+                    "minutes": 276,
+                    "goals": 1,
+                    "assists": 1
+                },
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 9,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Domestic Cup": {
                     "matches": 5,
                     "minutes": 68,
                     "goals": 0,
                     "assists": 0
-                },
-                "First Tier": {
-                    "matches": 18,
-                    "minutes": 257,
-                    "goals": 1,
-                    "assists": 1
                 }
             },
             "awards": {
                 "team_titles": {
-                    "French cup winner": 1
+                    "French cup winner": 1,
+                    "French Super Cup winner": 1
                 },
                 "individual_titles": {}
             }
         },
         "3674": {
+            "type": "national",
             "seasons": [
                 2016,
                 2017,
@@ -9956,6 +10008,7 @@
             }
         },
         "23826": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -10037,6 +10090,7 @@
             }
         },
         "46122": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -10083,6 +10137,7 @@
             }
         },
         "409": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -10151,6 +10206,7 @@
             }
         },
         "37024": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -10201,6 +10257,7 @@
             }
         },
         "50546": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -10244,6 +10301,7 @@
             }
         },
         "32441": {
+            "type": "national",
             "seasons": [
                 2016
             ],
@@ -10292,6 +10350,7 @@
             }
         },
         "31520": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -10344,22 +10403,22 @@
     },
     "career": {
         "club": {
-            "matches": 67,
-            "minutes": 3002,
-            "goals": 5,
-            "assists": 6,
-            "goal_contributions": 11,
-            "team_titles": 2,
+            "matches": 501,
+            "minutes": 20337,
+            "goals": 32,
+            "assists": 36,
+            "goal_contributions": 68,
+            "team_titles": 10,
             "individual_titles": 0,
-            "season_count": 2
+            "season_count": 11
         },
         "national": {
-            "matches": 535,
-            "minutes": 21345,
-            "goals": 31,
-            "assists": 32,
-            "goal_contributions": 63,
-            "team_titles": 8,
+            "matches": 103,
+            "minutes": 4038,
+            "goals": 4,
+            "assists": 2,
+            "goal_contributions": 6,
+            "team_titles": 1,
             "individual_titles": 0,
             "season_count": 11
         }

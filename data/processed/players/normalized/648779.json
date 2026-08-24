@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Wilfried Singo",
         "short_name": "W. Singo",
+        "dateOfBirth": "2000-12-25",
+        "placeOfBirth": "Grand-Béréby",
         "nation_1": "Cote d'Ivoire",
         "nation_2": "",
         "height": 1.82,
@@ -14,6 +17,38 @@
         "prime_date": "2025-12-17"
     },
     "matches": [
+        {
+            "game_id": "4933651",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "141",
+            "opponent_id": "39722",
+            "position": "RB",
+            "minutes": 24,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4932844",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "141",
+            "opponent_id": "37951",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 1
+        },
         {
             "game_id": "4776684",
             "season": 2025,
@@ -7020,7 +7055,80 @@
         }
     ],
     "clubs": {
+        "141": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 52,
+                "participations": 52,
+                "minutes": 1581,
+                "starts": 17,
+                "captain_matches": 0,
+                "goals": 2,
+                "assists": 3,
+                "goals_conceded": 26,
+                "points": 103,
+                "clean_sheets": 36,
+                "wins": 32,
+                "draws": 7,
+                "losses": 13,
+                "goal_matches": 50,
+                "assist_matches": 49,
+                "goal_contributions": 5
+            },
+            "positions": {
+                "RB": 12,
+                "CB": 16,
+                "DMF": 2
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 1.981,
+                "minutes_per_match": 30.4,
+                "win_rate": 0.6154,
+                "goals_per_90": 0.114,
+                "assists_per_90": 0.171,
+                "contributions_per_90": 0.285,
+                "primary_position": "CB"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 33,
+                    "minutes": 973,
+                    "goals": 2,
+                    "assists": 2
+                },
+                "Domestic Cup": {
+                    "matches": 5,
+                    "minutes": 128,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "International Cup": {
+                    "matches": 12,
+                    "minutes": 480,
+                    "goals": 0,
+                    "assists": 1
+                },
+                "Domestic Super Cup": {
+                    "matches": 2,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Turkish champion": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3591": {
+            "type": "national",
             "seasons": [
                 2019,
                 2020,
@@ -7085,77 +7193,8 @@
                 "individual_titles": {}
             }
         },
-        "141": {
-            "seasons": [
-                2025
-            ],
-            "stats": {
-                "matches": 50,
-                "participations": 50,
-                "minutes": 1557,
-                "starts": 17,
-                "captain_matches": 0,
-                "goals": 2,
-                "assists": 3,
-                "goals_conceded": 26,
-                "points": 99,
-                "clean_sheets": 34,
-                "wins": 31,
-                "draws": 6,
-                "losses": 13,
-                "goal_matches": 48,
-                "assist_matches": 47,
-                "goal_contributions": 5
-            },
-            "positions": {
-                "CB": 16,
-                "RB": 11,
-                "DMF": 2
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 1.98,
-                "minutes_per_match": 31.1,
-                "win_rate": 0.62,
-                "goals_per_90": 0.116,
-                "assists_per_90": 0.173,
-                "contributions_per_90": 0.289,
-                "primary_position": "CB"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 31,
-                    "minutes": 949,
-                    "goals": 2,
-                    "assists": 2
-                },
-                "Domestic Cup": {
-                    "matches": 5,
-                    "minutes": 128,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "International Cup": {
-                    "matches": 12,
-                    "minutes": 480,
-                    "goals": 0,
-                    "assists": 1
-                },
-                "Domestic Super Cup": {
-                    "matches": 2,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Turkish champion": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "162": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
@@ -7225,6 +7264,7 @@
             }
         },
         "416": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -7291,6 +7331,7 @@
             }
         },
         "53842": {
+            "type": "national",
             "seasons": [
                 2020
             ],
@@ -7339,6 +7380,7 @@
             }
         },
         "12130": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019
@@ -7393,24 +7435,24 @@
     },
     "career": {
         "club": {
-            "matches": 42,
-            "minutes": 2713,
-            "goals": 3,
-            "assists": 3,
-            "goal_contributions": 6,
-            "team_titles": 0,
+            "matches": 362,
+            "minutes": 16446,
+            "goals": 16,
+            "assists": 20,
+            "goal_contributions": 36,
+            "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 2
+            "season_count": 9
         },
         "national": {
-            "matches": 393,
-            "minutes": 16437,
-            "goals": 14,
-            "assists": 21,
-            "goal_contributions": 35,
-            "team_titles": 2,
+            "matches": 75,
+            "minutes": 2728,
+            "goals": 1,
+            "assists": 4,
+            "goal_contributions": 5,
+            "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 8
+            "season_count": 7
         }
     }
 }

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Maduka Okoye",
         "short_name": "M. Okoye",
+        "dateOfBirth": "1999-08-28",
+        "placeOfBirth": "Düsseldorf",
         "nation_1": "Nigeria",
         "nation_2": "Germany",
         "height": 1.98,
@@ -14,6 +17,38 @@
         "prime_date": "2026-05-29"
     },
     "matches": [
+        {
+            "game_id": "4893351",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "410",
+            "opponent_id": "1047",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4904466",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "410",
+            "opponent_id": "3037",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4884502",
             "season": 2025,
@@ -8800,7 +8835,66 @@
         }
     ],
     "clubs": {
+        "410": {
+            "type": "club",
+            "seasons": [
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 122,
+                "participations": 122,
+                "minutes": 7147,
+                "starts": 80,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 100,
+                "points": 147,
+                "clean_sheets": 64,
+                "wins": 37,
+                "draws": 36,
+                "losses": 49,
+                "goal_matches": 122,
+                "assist_matches": 122,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "GK": 80
+            },
+            "derived": {
+                "season_count": 4,
+                "points_per_match": 1.205,
+                "minutes_per_match": 58.6,
+                "win_rate": 0.3033,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "GK"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 114,
+                    "minutes": 6847,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 8,
+                    "minutes": 300,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3444": {
+            "type": "national",
             "seasons": [
                 2019,
                 2020,
@@ -8860,63 +8954,8 @@
                 "individual_titles": {}
             }
         },
-        "410": {
-            "seasons": [
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 120,
-                "participations": 120,
-                "minutes": 6967,
-                "starts": 78,
-                "captain_matches": 0,
-                "goals": 0,
-                "assists": 0,
-                "goals_conceded": 99,
-                "points": 143,
-                "clean_sheets": 63,
-                "wins": 36,
-                "draws": 35,
-                "losses": 49,
-                "goal_matches": 120,
-                "assist_matches": 120,
-                "goal_contributions": 0
-            },
-            "positions": {
-                "GK": 78
-            },
-            "derived": {
-                "season_count": 3,
-                "points_per_match": 1.192,
-                "minutes_per_match": 58.1,
-                "win_rate": 0.3,
-                "goals_per_90": 0.0,
-                "assists_per_90": 0.0,
-                "contributions_per_90": 0.0,
-                "primary_position": "GK"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 113,
-                    "minutes": 6757,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Domestic Cup": {
-                    "matches": 7,
-                    "minutes": 210,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "1010": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -8985,6 +9024,7 @@
             }
         },
         "468": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021
@@ -9046,6 +9086,7 @@
             }
         },
         "8621": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -9094,6 +9135,7 @@
             }
         },
         "38": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -9146,6 +9188,7 @@
             }
         },
         "4690": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -9196,6 +9239,7 @@
             }
         },
         "6675": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -9235,6 +9279,7 @@
             }
         },
         "4713": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -9274,6 +9319,7 @@
             }
         },
         "41569": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -9315,6 +9361,7 @@
             }
         },
         "21054": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015
@@ -9366,14 +9413,14 @@
     },
     "career": {
         "club": {
-            "matches": 462,
-            "minutes": 16908,
+            "matches": 464,
+            "minutes": 17088,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 12
+            "season_count": 13
         },
         "national": {
             "matches": 86,

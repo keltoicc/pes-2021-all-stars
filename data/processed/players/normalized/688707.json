@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Salis Abdul Samed",
         "short_name": "S. Abdul Samed",
+        "dateOfBirth": "2000-03-26",
+        "placeOfBirth": "Accra",
         "nation_1": "Ghana",
         "nation_2": "Cote d'Ivoire",
         "height": 1.79,
@@ -14,6 +17,22 @@
         "prime_date": "2023-12-18"
     },
     "matches": [
+        {
+            "game_id": "4894905",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "417",
+            "opponent_id": "1158",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 1
+        },
         {
             "game_id": "4886673",
             "season": 2025,
@@ -5640,6 +5659,13 @@
             "club_id": 3441
         },
         {
+            "title": "French cup runner-up",
+            "season": "25/26",
+            "season_id": 2025,
+            "club_name": "OGC Nice",
+            "club_id": 417
+        },
+        {
             "title": "Africa Cup participant",
             "season": "2024",
             "season_id": 2024,
@@ -5670,25 +5696,27 @@
     ],
     "clubs": {
         "417": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 50,
-                "participations": 50,
+                "matches": 51,
+                "participations": 51,
                 "minutes": 1528,
                 "starts": 19,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 1,
                 "goals_conceded": 26,
-                "points": 54,
-                "clean_sheets": 33,
+                "points": 55,
+                "clean_sheets": 34,
                 "wins": 14,
-                "draws": 12,
+                "draws": 13,
                 "losses": 24,
-                "goal_matches": 50,
-                "assist_matches": 49,
+                "goal_matches": 51,
+                "assist_matches": 50,
                 "goal_contributions": 1
             },
             "positions": {
@@ -5696,16 +5724,22 @@
                 "CMF": 1
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.08,
-                "minutes_per_match": 30.6,
-                "win_rate": 0.28,
+                "season_count": 2,
+                "points_per_match": 1.078,
+                "minutes_per_match": 30.0,
+                "win_rate": 0.2745,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.059,
                 "contributions_per_90": 0.059,
                 "primary_position": "DMF"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 35,
+                    "minutes": 913,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Play-Offs": {
                     "matches": 2,
                     "minutes": 4,
@@ -5715,12 +5749,6 @@
                 "Domestic Cup": {
                     "matches": 6,
                     "minutes": 236,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "First Tier": {
-                    "matches": 34,
-                    "minutes": 913,
                     "goals": 0,
                     "assists": 0
                 },
@@ -5737,6 +5765,7 @@
             }
         },
         "3441": {
+            "type": "national",
             "seasons": [
                 2021,
                 2022,
@@ -5795,6 +5824,7 @@
             }
         },
         "289": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -5855,6 +5885,7 @@
             }
         },
         "826": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -5917,6 +5948,7 @@
             }
         },
         "3524": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -5986,6 +6018,7 @@
             }
         },
         "16654": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -6035,24 +6068,24 @@
     },
     "career": {
         "club": {
-            "matches": 176,
-            "minutes": 3718,
-            "goals": 1,
-            "assists": 0,
-            "goal_contributions": 1,
+            "matches": 316,
+            "minutes": 10641,
+            "goals": 2,
+            "assists": 2,
+            "goal_contributions": 4,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 8
+        },
+        "national": {
+            "matches": 36,
+            "minutes": 1598,
+            "goals": 0,
+            "assists": 2,
+            "goal_contributions": 2,
             "team_titles": 0,
             "individual_titles": 0,
             "season_count": 4
-        },
-        "national": {
-            "matches": 175,
-            "minutes": 8521,
-            "goals": 1,
-            "assists": 4,
-            "goal_contributions": 5,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 5
         }
     }
 }

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Wagner Pina",
         "short_name": "Wagner Pina",
+        "dateOfBirth": "2002-11-03",
+        "placeOfBirth": "Lisboa",
         "nation_1": "Cape Verde",
         "nation_2": "Portugal",
         "height": 1.8,
@@ -14,6 +17,54 @@
         "prime_date": "2026-05-21"
     },
     "matches": [
+        {
+            "game_id": "4933644",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "449",
+            "opponent_id": "6890",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "5009518",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "449",
+            "opponent_id": "279",
+            "position": "RB",
+            "minutes": 83,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4932839",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "449",
+            "opponent_id": "10484",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4776692",
             "season": 2025,
@@ -91,7 +142,7 @@
             "goals": 0,
             "assists": 0,
             "goals_conceded": 0,
-            "participation": "not in squad",
+            "participation": "in squad",
             "club_points": 3
         },
         {
@@ -3095,7 +3146,81 @@
         }
     ],
     "clubs": {
+        "449": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 46,
+                "participations": 46,
+                "minutes": 3305,
+                "starts": 37,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 9,
+                "goals_conceded": 38,
+                "points": 94,
+                "clean_sheets": 20,
+                "wins": 28,
+                "draws": 10,
+                "losses": 8,
+                "goal_matches": 46,
+                "assist_matches": 38,
+                "goal_contributions": 9
+            },
+            "positions": {
+                "RB": 39,
+                "RW": 1,
+                "DMF": 1,
+                "RM": 1
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 2.043,
+                "minutes_per_match": 71.8,
+                "win_rate": 0.6087,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.245,
+                "contributions_per_90": 0.245,
+                "primary_position": "RB"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 36,
+                    "minutes": 2534,
+                    "goals": 0,
+                    "assists": 7
+                },
+                "International Cup": {
+                    "matches": 1,
+                    "minutes": 83,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 8,
+                    "minutes": 600,
+                    "goals": 0,
+                    "assists": 2
+                },
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 88,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Turkish cup winner": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "4311": {
+            "type": "national",
             "seasons": [
                 2023,
                 2024,
@@ -3152,72 +3277,8 @@
                 "individual_titles": {}
             }
         },
-        "449": {
-            "seasons": [
-                2025
-            ],
-            "stats": {
-                "matches": 43,
-                "participations": 43,
-                "minutes": 3132,
-                "starts": 35,
-                "captain_matches": 0,
-                "goals": 0,
-                "assists": 9,
-                "goals_conceded": 36,
-                "points": 90,
-                "clean_sheets": 19,
-                "wins": 27,
-                "draws": 9,
-                "losses": 7,
-                "goal_matches": 43,
-                "assist_matches": 35,
-                "goal_contributions": 9
-            },
-            "positions": {
-                "RB": 37,
-                "RW": 1,
-                "DMF": 1,
-                "RM": 1
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 2.093,
-                "minutes_per_match": 72.8,
-                "win_rate": 0.6279,
-                "goals_per_90": 0.0,
-                "assists_per_90": 0.259,
-                "contributions_per_90": 0.259,
-                "primary_position": "RB"
-            },
-            "competitions": {
-                "Domestic Cup": {
-                    "matches": 8,
-                    "minutes": 600,
-                    "goals": 0,
-                    "assists": 2
-                },
-                "First Tier": {
-                    "matches": 34,
-                    "minutes": 2444,
-                    "goals": 0,
-                    "assists": 7
-                },
-                "Domestic Super Cup": {
-                    "matches": 1,
-                    "minutes": 88,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Turkish cup winner": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "1465": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024
@@ -3280,6 +3341,7 @@
             }
         },
         "68403": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -3332,6 +3394,7 @@
             }
         },
         "68608": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -3396,6 +3459,7 @@
             }
         },
         "31808": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -3444,14 +3508,14 @@
     },
     "career": {
         "club": {
-            "matches": 163,
-            "minutes": 8608,
+            "matches": 166,
+            "minutes": 8781,
             "goals": 3,
             "assists": 15,
             "goal_contributions": 18,
             "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 5
+            "season_count": 6
         },
         "national": {
             "matches": 28,

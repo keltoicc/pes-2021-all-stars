@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Yan Valery",
         "short_name": "Yan Valery",
+        "dateOfBirth": "1999-02-22",
+        "placeOfBirth": "Champigny-sur-Marne",
         "nation_1": "Tunisia",
         "nation_2": "France",
         "height": 1.85,
@@ -14,6 +17,54 @@
         "prime_date": "2019-12-10"
     },
     "matches": [
+        {
+            "game_id": "4911182",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "1035",
+            "opponent_id": "1027",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4911241",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "1035",
+            "opponent_id": "1150",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4925989",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "1035",
+            "opponent_id": "355",
+            "position": "RB",
+            "minutes": 85,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776657",
             "season": 2025,
@@ -8583,7 +8634,81 @@
         }
     ],
     "clubs": {
+        "1035": {
+            "type": "club",
+            "seasons": [
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 89,
+                "participations": 89,
+                "minutes": 5513,
+                "starts": 64,
+                "captain_matches": 0,
+                "goals": 3,
+                "assists": 5,
+                "goals_conceded": 94,
+                "points": 90,
+                "clean_sheets": 39,
+                "wins": 23,
+                "draws": 21,
+                "losses": 45,
+                "goal_matches": 86,
+                "assist_matches": 84,
+                "goal_contributions": 8
+            },
+            "positions": {
+                "RB": 28,
+                "RM": 15,
+                "CB": 10,
+                "DMF": 5,
+                "CMF": 7
+            },
+            "derived": {
+                "season_count": 3,
+                "points_per_match": 1.011,
+                "minutes_per_match": 61.9,
+                "win_rate": 0.2584,
+                "goals_per_90": 0.049,
+                "assists_per_90": 0.082,
+                "contributions_per_90": 0.131,
+                "primary_position": "RB"
+            },
+            "competitions": {
+                "Third Tier": {
+                    "matches": 2,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "League Cup": {
+                    "matches": 8,
+                    "minutes": 85,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Second Tier": {
+                    "matches": 77,
+                    "minutes": 5218,
+                    "goals": 3,
+                    "assists": 5
+                },
+                "Domestic Cup": {
+                    "matches": 2,
+                    "minutes": 120,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3670": {
+            "type": "national",
             "seasons": [
                 2021,
                 2022,
@@ -8644,6 +8769,7 @@
             }
         },
         "452": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -8692,72 +8818,8 @@
                 "individual_titles": {}
             }
         },
-        "1035": {
-            "seasons": [
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 86,
-                "participations": 86,
-                "minutes": 5338,
-                "starts": 62,
-                "captain_matches": 0,
-                "goals": 3,
-                "assists": 5,
-                "goals_conceded": 93,
-                "points": 84,
-                "clean_sheets": 37,
-                "wins": 21,
-                "draws": 21,
-                "losses": 44,
-                "goal_matches": 83,
-                "assist_matches": 81,
-                "goal_contributions": 8
-            },
-            "positions": {
-                "RM": 15,
-                "CB": 10,
-                "DMF": 5,
-                "CMF": 7,
-                "RB": 26
-            },
-            "derived": {
-                "season_count": 2,
-                "points_per_match": 0.977,
-                "minutes_per_match": 62.1,
-                "win_rate": 0.2442,
-                "goals_per_90": 0.051,
-                "assists_per_90": 0.084,
-                "contributions_per_90": 0.135,
-                "primary_position": "RB"
-            },
-            "competitions": {
-                "Second Tier": {
-                    "matches": 77,
-                    "minutes": 5218,
-                    "goals": 3,
-                    "assists": 5
-                },
-                "Domestic Cup": {
-                    "matches": 2,
-                    "minutes": 120,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "League Cup": {
-                    "matches": 7,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "1420": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023
@@ -8821,6 +8883,7 @@
             }
         },
         "180": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -8888,6 +8951,7 @@
             }
         },
         "36546": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -8943,6 +9007,7 @@
             }
         },
         "337": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -8992,6 +9057,7 @@
             }
         },
         "6893": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -9040,6 +9106,7 @@
             }
         },
         "25250": {
+            "type": "national",
             "seasons": [
                 2016
             ],
@@ -9086,6 +9153,7 @@
             }
         },
         "10831": {
+            "type": "national",
             "seasons": [
                 2014,
                 2015
@@ -9151,14 +9219,14 @@
     },
     "career": {
         "club": {
-            "matches": 461,
-            "minutes": 20979,
+            "matches": 464,
+            "minutes": 21154,
             "goals": 6,
             "assists": 20,
             "goal_contributions": 26,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 11
+            "season_count": 12
         },
         "national": {
             "matches": 73,

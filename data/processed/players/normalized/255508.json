@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Iñaki Williams",
         "short_name": "I. Williams",
+        "dateOfBirth": "1994-06-15",
+        "placeOfBirth": "Bilbao",
         "nation_1": "Ghana",
         "nation_2": "Spain",
         "height": 1.86,
@@ -14,6 +17,22 @@
         "prime_date": "2019-12-20"
     },
     "matches": [
+        {
+            "game_id": "4909468",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "621",
+            "opponent_id": "368",
+            "position": "RW",
+            "minutes": 58,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4776693",
             "season": 2025,
@@ -11526,7 +11545,92 @@
         }
     ],
     "clubs": {
+        "621": {
+            "type": "club",
+            "seasons": [
+                2014,
+                2015,
+                2016,
+                2017,
+                2018,
+                2019,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 580,
+                "participations": 580,
+                "minutes": 37701,
+                "starts": 427,
+                "captain_matches": 63,
+                "goals": 115,
+                "assists": 72,
+                "goals_conceded": 451,
+                "points": 898,
+                "clean_sheets": 280,
+                "wins": 251,
+                "draws": 145,
+                "losses": 184,
+                "goal_matches": 478,
+                "assist_matches": 519,
+                "goal_contributions": 187
+            },
+            "positions": {
+                "RW": 245,
+                "CF": 203,
+                "LW": 21
+            },
+            "derived": {
+                "season_count": 13,
+                "points_per_match": 1.548,
+                "minutes_per_match": 65.0,
+                "win_rate": 0.4328,
+                "goals_per_90": 0.275,
+                "assists_per_90": 0.172,
+                "contributions_per_90": 0.446,
+                "primary_position": "RW"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 444,
+                    "minutes": 30359,
+                    "goals": 85,
+                    "assists": 59
+                },
+                "Domestic Cup": {
+                    "matches": 65,
+                    "minutes": 3781,
+                    "goals": 17,
+                    "assists": 6
+                },
+                "International Cup": {
+                    "matches": 63,
+                    "minutes": 3042,
+                    "goals": 12,
+                    "assists": 6
+                },
+                "Domestic Super Cup": {
+                    "matches": 8,
+                    "minutes": 519,
+                    "goals": 1,
+                    "assists": 1
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Spanish cup winner": 1,
+                    "Spanish Super Cup winner": 2
+                },
+                "individual_titles": {}
+            }
+        },
         "3441": {
+            "type": "national",
             "seasons": [
                 2021,
                 2022,
@@ -11586,89 +11690,8 @@
                 "individual_titles": {}
             }
         },
-        "621": {
-            "seasons": [
-                2014,
-                2015,
-                2016,
-                2017,
-                2018,
-                2019,
-                2020,
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 579,
-                "participations": 579,
-                "minutes": 37643,
-                "starts": 426,
-                "captain_matches": 62,
-                "goals": 115,
-                "assists": 72,
-                "goals_conceded": 448,
-                "points": 898,
-                "clean_sheets": 280,
-                "wins": 251,
-                "draws": 145,
-                "losses": 183,
-                "goal_matches": 477,
-                "assist_matches": 518,
-                "goal_contributions": 187
-            },
-            "positions": {
-                "RW": 244,
-                "CF": 203,
-                "LW": 21
-            },
-            "derived": {
-                "season_count": 12,
-                "points_per_match": 1.551,
-                "minutes_per_match": 65.0,
-                "win_rate": 0.4335,
-                "goals_per_90": 0.275,
-                "assists_per_90": 0.172,
-                "contributions_per_90": 0.447,
-                "primary_position": "RW"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 443,
-                    "minutes": 30301,
-                    "goals": 85,
-                    "assists": 59
-                },
-                "Domestic Cup": {
-                    "matches": 65,
-                    "minutes": 3781,
-                    "goals": 17,
-                    "assists": 6
-                },
-                "International Cup": {
-                    "matches": 63,
-                    "minutes": 3042,
-                    "goals": 12,
-                    "assists": 6
-                },
-                "Domestic Super Cup": {
-                    "matches": 8,
-                    "minutes": 519,
-                    "goals": 1,
-                    "assists": 1
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Spanish cup winner": 1,
-                    "Spanish Super Cup winner": 2
-                },
-                "individual_titles": {}
-            }
-        },
         "9567": {
+            "type": "national",
             "seasons": [
                 2014,
                 2015,
@@ -11732,6 +11755,7 @@
             }
         },
         "3375": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -11780,6 +11804,7 @@
             }
         },
         "6688": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014
@@ -11838,24 +11863,24 @@
     },
     "career": {
         "club": {
-            "matches": 62,
-            "minutes": 2500,
-            "goals": 21,
-            "assists": 6,
-            "goal_contributions": 27,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 2
-        },
-        "national": {
-            "matches": 652,
-            "minutes": 39960,
-            "goals": 120,
-            "assists": 74,
-            "goal_contributions": 194,
+            "matches": 642,
+            "minutes": 40201,
+            "goals": 136,
+            "assists": 78,
+            "goal_contributions": 214,
             "team_titles": 3,
             "individual_titles": 0,
-            "season_count": 12
+            "season_count": 14
+        },
+        "national": {
+            "matches": 73,
+            "minutes": 2317,
+            "goals": 5,
+            "assists": 2,
+            "goal_contributions": 7,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 8
         }
     }
 }

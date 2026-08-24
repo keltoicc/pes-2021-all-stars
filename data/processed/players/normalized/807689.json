@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Frank Magri",
         "short_name": "Frank Magri",
+        "dateOfBirth": "1999-09-04",
+        "placeOfBirth": "Agen",
         "nation_1": "Cameroon",
         "nation_2": "France",
         "height": 1.78,
@@ -8,12 +11,28 @@
         "position_group": "FORWARD",
         "position_1": "CF",
         "position_2": "RW",
-        "position_3": "",
+        "position_3": "LW",
         "former_clubs": "SU Agen (-2013), SA Mérignac (2013-2014), Angers SCO (2014-2018)",
         "market_value": 4000000,
         "prime_date": "2025-12-15"
     },
     "matches": [
+        {
+            "game_id": "5024732",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "6297",
+            "opponent_id": "34694",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
         {
             "game_id": "4635303",
             "season": 2025,
@@ -4887,7 +4906,55 @@
         }
     ],
     "clubs": {
+        "6297": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 1,
+                "participations": 1,
+                "minutes": 0,
+                "starts": 0,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 0,
+                "points": 3,
+                "clean_sheets": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "goal_matches": 1,
+                "assist_matches": 1,
+                "goal_contributions": 0
+            },
+            "positions": {},
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 3.0,
+                "minutes_per_match": 0.0,
+                "win_rate": 1.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": ""
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "415": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
@@ -4959,6 +5026,7 @@
             }
         },
         "3434": {
+            "type": "national",
             "seasons": [
                 2023,
                 2024
@@ -5016,6 +5084,7 @@
             }
         },
         "595": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022
@@ -5073,6 +5142,7 @@
             }
         },
         "1420": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -5119,6 +5189,7 @@
             }
         },
         "16672": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -5182,24 +5253,24 @@
     },
     "career": {
         "club": {
-            "matches": 152,
-            "minutes": 7997,
-            "goals": 41,
-            "assists": 7,
-            "goal_contributions": 48,
+            "matches": 274,
+            "minutes": 12689,
+            "goals": 57,
+            "assists": 12,
+            "goal_contributions": 69,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 7
+            "season_count": 11
         },
         "national": {
-            "matches": 151,
-            "minutes": 5588,
-            "goals": 18,
-            "assists": 5,
-            "goal_contributions": 23,
+            "matches": 30,
+            "minutes": 896,
+            "goals": 2,
+            "assists": 0,
+            "goal_contributions": 2,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 3
+            "season_count": 2
         }
     }
 }

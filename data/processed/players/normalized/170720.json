@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Mawouna Amevor",
         "short_name": "M. Amevor",
+        "dateOfBirth": "1991-12-16",
+        "placeOfBirth": "Rotterdam",
         "nation_1": "Togo",
         "nation_2": "Netherlands",
         "height": 1.91,
@@ -14,6 +17,54 @@
         "prime_date": "2022-06-23"
     },
     "matches": [
+        {
+            "game_id": "4913043",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "724",
+            "opponent_id": "384",
+            "position": "CB",
+            "minutes": 25,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4913015",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "724",
+            "opponent_id": "1228",
+            "position": "CB",
+            "minutes": 38,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4894524",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "724",
+            "opponent_id": "9715",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4887534",
             "season": 2025,
@@ -11354,42 +11405,50 @@
     ],
     "clubs": {
         "724": {
+            "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 80,
-                "participations": 80,
-                "minutes": 6326,
-                "starts": 71,
+                "matches": 83,
+                "participations": 83,
+                "minutes": 6479,
+                "starts": 73,
                 "captain_matches": 15,
                 "goals": 3,
                 "assists": 1,
-                "goals_conceded": 89,
-                "points": 129,
-                "clean_sheets": 26,
-                "wins": 39,
+                "goals_conceded": 92,
+                "points": 132,
+                "clean_sheets": 28,
+                "wins": 40,
                 "draws": 12,
-                "losses": 29,
-                "goal_matches": 77,
-                "assist_matches": 79,
+                "losses": 31,
+                "goal_matches": 80,
+                "assist_matches": 82,
                 "goal_contributions": 4
             },
             "positions": {
-                "CB": 71
+                "CB": 74
             },
             "derived": {
-                "season_count": 2,
-                "points_per_match": 1.613,
-                "minutes_per_match": 79.1,
-                "win_rate": 0.4875,
-                "goals_per_90": 0.043,
+                "season_count": 3,
+                "points_per_match": 1.59,
+                "minutes_per_match": 78.1,
+                "win_rate": 0.4819,
+                "goals_per_90": 0.042,
                 "assists_per_90": 0.014,
-                "contributions_per_90": 0.057,
+                "contributions_per_90": 0.056,
                 "primary_position": "CB"
             },
             "competitions": {
+                "Second Tier": {
+                    "matches": 41,
+                    "minutes": 3213,
+                    "goals": 2,
+                    "assists": 0
+                },
                 "Play-Offs": {
                     "matches": 2,
                     "minutes": 210,
@@ -11407,12 +11466,6 @@
                     "minutes": 297,
                     "goals": 0,
                     "assists": 0
-                },
-                "Second Tier": {
-                    "matches": 38,
-                    "minutes": 3060,
-                    "goals": 2,
-                    "assists": 0
                 }
             },
             "awards": {
@@ -11423,6 +11476,7 @@
             }
         },
         "3815": {
+            "type": "national",
             "seasons": [
                 2014,
                 2015,
@@ -11487,6 +11541,7 @@
             }
         },
         "3892": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -11552,6 +11607,7 @@
             }
         },
         "34723": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -11600,6 +11656,7 @@
             }
         },
         "12533": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -11646,6 +11703,7 @@
             }
         },
         "30650": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018
@@ -11701,6 +11759,7 @@
             }
         },
         "1455": {
+            "type": "club",
             "seasons": [
                 2010,
                 2011,
@@ -11768,6 +11827,7 @@
             }
         },
         "18335": {
+            "type": "club",
             "seasons": [
                 2011,
                 2017
@@ -11810,6 +11870,7 @@
             }
         },
         "1045": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -11878,6 +11939,7 @@
             }
         },
         "1435": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014
@@ -11942,6 +12004,7 @@
             }
         },
         "18179": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -11986,14 +12049,14 @@
     },
     "career": {
         "club": {
-            "matches": 619,
-            "minutes": 35934,
+            "matches": 622,
+            "minutes": 36087,
             "goals": 28,
             "assists": 10,
             "goal_contributions": 38,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 16
+            "season_count": 17
         },
         "national": {
             "matches": 89,

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "El Bilal Touré",
         "short_name": "E. Touré",
+        "dateOfBirth": "2001-10-03",
+        "placeOfBirth": "Adjamé",
         "nation_1": "Mali",
         "nation_2": "Cote d'Ivoire",
         "height": 1.85,
@@ -9,11 +12,43 @@
         "position_1": "LW",
         "position_2": "CF",
         "position_3": "RW",
-        "former_clubs": "Ivoire Académie (2015-2016), Afrique Football Elite (2016-2020)",
+        "former_clubs": "Ivoire Académie (2015-16)",
         "market_value": 20000000,
         "prime_date": "2024-12-20"
     },
     "matches": [
+        {
+            "game_id": "4893348",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "130",
+            "opponent_id": "1390",
+            "position": "CF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4904461",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "130",
+            "opponent_id": "1627",
+            "position": "CF",
+            "minutes": 66,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4648067",
             "season": 2025,
@@ -5843,7 +5878,63 @@
         }
     ],
     "clubs": {
+        "130": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 2,
+                "participations": 2,
+                "minutes": 156,
+                "starts": 2,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 1,
+                "goals_conceded": 1,
+                "points": 3,
+                "clean_sheets": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 1,
+                "goal_matches": 2,
+                "assist_matches": 1,
+                "goal_contributions": 1
+            },
+            "positions": {
+                "CF": 2
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 1.5,
+                "minutes_per_match": 78.0,
+                "win_rate": 0.5,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.577,
+                "contributions_per_90": 0.577,
+                "primary_position": "CF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 66,
+                    "goals": 0,
+                    "assists": 1
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "114": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -5906,6 +5997,7 @@
             }
         },
         "3674": {
+            "type": "national",
             "seasons": [
                 2019,
                 2020,
@@ -5969,6 +6061,7 @@
             }
         },
         "800": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
@@ -6041,6 +6134,7 @@
             }
         },
         "79": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -6105,6 +6199,7 @@
             }
         },
         "3302": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -6159,6 +6254,7 @@
             }
         },
         "1421": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -6231,6 +6327,7 @@
             }
         },
         "11204": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -6277,6 +6374,7 @@
             }
         },
         "46122": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -6326,6 +6424,7 @@
             }
         },
         "32441": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -6378,22 +6477,22 @@
     },
     "career": {
         "club": {
-            "matches": 38,
-            "minutes": 1417,
-            "goals": 9,
-            "assists": 2,
-            "goal_contributions": 11,
-            "team_titles": 0,
+            "matches": 287,
+            "minutes": 7812,
+            "goals": 31,
+            "assists": 15,
+            "goal_contributions": 46,
+            "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 2
+            "season_count": 8
         },
         "national": {
-            "matches": 323,
-            "minutes": 8769,
-            "goals": 31,
-            "assists": 16,
-            "goal_contributions": 47,
-            "team_titles": 3,
+            "matches": 76,
+            "minutes": 2530,
+            "goals": 9,
+            "assists": 4,
+            "goal_contributions": 13,
+            "team_titles": 1,
             "individual_titles": 0,
             "season_count": 8
         }

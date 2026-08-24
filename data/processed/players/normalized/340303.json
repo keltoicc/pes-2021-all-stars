@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Hamdy Fathy",
         "short_name": "Hamdy Fathy",
+        "dateOfBirth": "1994-09-29",
+        "placeOfBirth": "Behira",
         "nation_1": "Egypt",
         "nation_2": "",
         "height": 1.82,
@@ -14,6 +17,22 @@
         "prime_date": "2025-05-28"
     },
     "matches": [
+        {
+            "game_id": "5024714",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "13509",
+            "opponent_id": "965",
+            "position": "CMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4776701",
             "season": 2025,
@@ -10003,7 +10022,83 @@
         }
     ],
     "clubs": {
+        "13509": {
+            "type": "club",
+            "seasons": [
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 103,
+                "participations": 103,
+                "minutes": 6345,
+                "starts": 72,
+                "captain_matches": 0,
+                "goals": 6,
+                "assists": 3,
+                "goals_conceded": 99,
+                "points": 139,
+                "clean_sheets": 53,
+                "wins": 39,
+                "draws": 22,
+                "losses": 42,
+                "goal_matches": 97,
+                "assist_matches": 100,
+                "goal_contributions": 9
+            },
+            "positions": {
+                "CMF": 14,
+                "DMF": 45,
+                "CB": 10,
+                "AMF": 3
+            },
+            "derived": {
+                "season_count": 4,
+                "points_per_match": 1.35,
+                "minutes_per_match": 61.6,
+                "win_rate": 0.3786,
+                "goals_per_90": 0.085,
+                "assists_per_90": 0.043,
+                "contributions_per_90": 0.128,
+                "primary_position": "DMF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 67,
+                    "minutes": 4932,
+                    "goals": 6,
+                    "assists": 3
+                },
+                "Domestic Cup": {
+                    "matches": 6,
+                    "minutes": 570,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "League Cup": {
+                    "matches": 23,
+                    "minutes": 272,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "International Cup": {
+                    "matches": 7,
+                    "minutes": 571,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Qatari League Cup Winner": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3672": {
+            "type": "national",
             "seasons": [
                 2019,
                 2020,
@@ -10067,80 +10162,8 @@
                 "individual_titles": {}
             }
         },
-        "13509": {
-            "seasons": [
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 102,
-                "participations": 102,
-                "minutes": 6255,
-                "starts": 71,
-                "captain_matches": 0,
-                "goals": 6,
-                "assists": 3,
-                "goals_conceded": 97,
-                "points": 138,
-                "clean_sheets": 53,
-                "wins": 39,
-                "draws": 21,
-                "losses": 42,
-                "goal_matches": 96,
-                "assist_matches": 99,
-                "goal_contributions": 9
-            },
-            "positions": {
-                "DMF": 45,
-                "CB": 10,
-                "CMF": 13,
-                "AMF": 3
-            },
-            "derived": {
-                "season_count": 3,
-                "points_per_match": 1.353,
-                "minutes_per_match": 61.3,
-                "win_rate": 0.3824,
-                "goals_per_90": 0.086,
-                "assists_per_90": 0.043,
-                "contributions_per_90": 0.129,
-                "primary_position": "DMF"
-            },
-            "competitions": {
-                "Domestic Cup": {
-                    "matches": 6,
-                    "minutes": 570,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "First Tier": {
-                    "matches": 66,
-                    "minutes": 4842,
-                    "goals": 6,
-                    "assists": 3
-                },
-                "League Cup": {
-                    "matches": 23,
-                    "minutes": 272,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "International Cup": {
-                    "matches": 7,
-                    "minutes": 571,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Qatari League Cup Winner": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "7": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -10234,6 +10257,7 @@
             }
         },
         "9218": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -10302,6 +10326,7 @@
             }
         },
         "10957": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -10358,6 +10383,7 @@
             }
         },
         "26591": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -10415,24 +10441,24 @@
     },
     "career": {
         "club": {
-            "matches": 71,
-            "minutes": 4587,
-            "goals": 5,
-            "assists": 4,
-            "goal_contributions": 9,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 2
-        },
-        "national": {
-            "matches": 543,
-            "minutes": 26379,
-            "goals": 29,
-            "assists": 20,
-            "goal_contributions": 49,
+            "matches": 527,
+            "minutes": 26527,
+            "goals": 31,
+            "assists": 23,
+            "goal_contributions": 54,
             "team_titles": 15,
             "individual_titles": 0,
-            "season_count": 12
+            "season_count": 13
+        },
+        "national": {
+            "matches": 88,
+            "minutes": 4529,
+            "goals": 3,
+            "assists": 1,
+            "goal_contributions": 4,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 7
         }
     }
 }

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Hannibal",
         "short_name": "Hannibal",
+        "dateOfBirth": "2003-01-21",
+        "placeOfBirth": "Ivry-sur-Seine",
         "nation_1": "Tunisia",
         "nation_2": "France",
         "height": 1.77,
@@ -14,6 +17,54 @@
         "prime_date": "2026-03-09"
     },
     "matches": [
+        {
+            "game_id": "4911088",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "1132",
+            "opponent_id": "984",
+            "position": "DMF",
+            "minutes": 57,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4911100",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "1132",
+            "opponent_id": "379",
+            "position": "CMF",
+            "minutes": 57,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4925994",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "1132",
+            "opponent_id": "1045",
+            "position": "CMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776657",
             "season": 2025,
@@ -6207,6 +6258,38 @@
             "club_points": 0
         },
         {
+            "game_id": "5006265",
+            "season": 2018,
+            "competition_type": "Play-Offs",
+            "club_id": "107690",
+            "opponent_id": "107691",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "5006263",
+            "season": 2018,
+            "competition_type": "Play-Offs",
+            "club_id": "107690",
+            "opponent_id": "107780",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
             "game_id": "3178657",
             "season": 2018,
             "competition_type": "National Team",
@@ -6490,7 +6573,80 @@
         }
     ],
     "clubs": {
+        "1132": {
+            "type": "club",
+            "seasons": [
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 92,
+                "participations": 92,
+                "minutes": 3641,
+                "starts": 44,
+                "captain_matches": 0,
+                "goals": 2,
+                "assists": 9,
+                "goals_conceded": 46,
+                "points": 132,
+                "clean_sheets": 58,
+                "wins": 35,
+                "draws": 27,
+                "losses": 30,
+                "goal_matches": 90,
+                "assist_matches": 84,
+                "goal_contributions": 11
+            },
+            "positions": {
+                "DMF": 3,
+                "CMF": 11,
+                "AMF": 31,
+                "LM": 3
+            },
+            "derived": {
+                "season_count": 3,
+                "points_per_match": 1.435,
+                "minutes_per_match": 39.6,
+                "win_rate": 0.3804,
+                "goals_per_90": 0.049,
+                "assists_per_90": 0.222,
+                "contributions_per_90": 0.272,
+                "primary_position": "AMF"
+            },
+            "competitions": {
+                "Second Tier": {
+                    "matches": 45,
+                    "minutes": 2047,
+                    "goals": 1,
+                    "assists": 4
+                },
+                "League Cup": {
+                    "matches": 4,
+                    "minutes": 225,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "First Tier": {
+                    "matches": 38,
+                    "minutes": 1231,
+                    "goals": 1,
+                    "assists": 4
+                },
+                "Domestic Cup": {
+                    "matches": 5,
+                    "minutes": 138,
+                    "goals": 0,
+                    "assists": 1
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3670": {
+            "type": "national",
             "seasons": [
                 2019,
                 2020,
@@ -6557,77 +6713,8 @@
                 "individual_titles": {}
             }
         },
-        "1132": {
-            "seasons": [
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 89,
-                "participations": 89,
-                "minutes": 3437,
-                "starts": 41,
-                "captain_matches": 0,
-                "goals": 2,
-                "assists": 9,
-                "goals_conceded": 42,
-                "points": 128,
-                "clean_sheets": 58,
-                "wins": 34,
-                "draws": 26,
-                "losses": 29,
-                "goal_matches": 87,
-                "assist_matches": 81,
-                "goal_contributions": 11
-            },
-            "positions": {
-                "AMF": 31,
-                "DMF": 2,
-                "CMF": 9,
-                "LM": 3
-            },
-            "derived": {
-                "season_count": 2,
-                "points_per_match": 1.438,
-                "minutes_per_match": 38.6,
-                "win_rate": 0.382,
-                "goals_per_90": 0.052,
-                "assists_per_90": 0.236,
-                "contributions_per_90": 0.288,
-                "primary_position": "AMF"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 38,
-                    "minutes": 1231,
-                    "goals": 1,
-                    "assists": 4
-                },
-                "Domestic Cup": {
-                    "matches": 5,
-                    "minutes": 138,
-                    "goals": 0,
-                    "assists": 1
-                },
-                "League Cup": {
-                    "matches": 3,
-                    "minutes": 135,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Second Tier": {
-                    "matches": 43,
-                    "minutes": 1933,
-                    "goals": 1,
-                    "assists": 4
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "985": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -6711,6 +6798,7 @@
             }
         },
         "368": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -6765,6 +6853,7 @@
             }
         },
         "9251": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -6817,6 +6906,7 @@
             }
         },
         "337": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -6873,6 +6963,7 @@
             }
         },
         "41575": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -6915,6 +7006,7 @@
             }
         },
         "5242": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -6958,6 +7050,7 @@
             }
         },
         "10831": {
+            "type": "national",
             "seasons": [
                 2018,
                 2019
@@ -7012,7 +7105,55 @@
                 "individual_titles": {}
             }
         },
+        "107690": {
+            "type": "club",
+            "seasons": [
+                2018
+            ],
+            "stats": {
+                "matches": 2,
+                "participations": 2,
+                "minutes": 0,
+                "starts": 0,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 0,
+                "points": 3,
+                "clean_sheets": 2,
+                "wins": 1,
+                "draws": 0,
+                "losses": 1,
+                "goal_matches": 2,
+                "assist_matches": 2,
+                "goal_contributions": 0
+            },
+            "positions": {},
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 1.5,
+                "minutes_per_match": 0.0,
+                "win_rate": 0.5,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": ""
+            },
+            "competitions": {
+                "Play-Offs": {
+                    "matches": 2,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "10844": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -7063,22 +7204,22 @@
     },
     "career": {
         "club": {
-            "matches": 240,
-            "minutes": 10302,
-            "goals": 10,
+            "matches": 304,
+            "minutes": 10911,
+            "goals": 11,
             "assists": 35,
-            "goal_contributions": 45,
-            "team_titles": 0,
+            "goal_contributions": 46,
+            "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 7
+            "season_count": 9
         },
         "national": {
-            "matches": 161,
-            "minutes": 4200,
-            "goals": 5,
+            "matches": 102,
+            "minutes": 3795,
+            "goals": 4,
             "assists": 10,
-            "goal_contributions": 15,
-            "team_titles": 1,
+            "goal_contributions": 14,
+            "team_titles": 0,
             "individual_titles": 0,
             "season_count": 8
         }

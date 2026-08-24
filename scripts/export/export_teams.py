@@ -60,6 +60,12 @@ def get_country_id(country, team_name):
 
     if country == "Türkiye":
         country = "Turkey"
+
+    if country == "the Sudan":
+        country = "Sudan"
+
+    if country == "Cote d'Ivoire":
+        country = "Côte d'Ivoire"
     
     countries_dir = Path(f"config/evowebid")
 

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Zizo",
         "short_name": "Zizo",
+        "dateOfBirth": "1996-01-10",
+        "placeOfBirth": "Minya",
         "nation_1": "Egypt",
         "nation_2": "",
         "height": 1.75,
@@ -14,6 +17,22 @@
         "prime_date": "2024-01-11"
     },
     "matches": [
+        {
+            "game_id": "5008973",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "7",
+            "opponent_id": "9218",
+            "position": "AMF",
+            "minutes": 86,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776701",
             "season": 2025,
@@ -1572,7 +1591,7 @@
             "competition_type": "First Tier",
             "club_id": "664",
             "opponent_id": "10957",
-            "position": "LM",
+            "position": "LW",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -3300,7 +3319,7 @@
             "competition_type": "First Tier",
             "club_id": "664",
             "opponent_id": "68770",
-            "position": "LM",
+            "position": "LW",
             "minutes": 81,
             "started": true,
             "captain": false,
@@ -6212,7 +6231,7 @@
             "competition_type": "International Cup",
             "club_id": "664",
             "opponent_id": "2068",
-            "position": "LM",
+            "position": "LW",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -6324,7 +6343,7 @@
             "competition_type": "First Tier",
             "club_id": "664",
             "opponent_id": "20572",
-            "position": "LM",
+            "position": "LW",
             "minutes": 80,
             "started": true,
             "captain": false,
@@ -6852,7 +6871,7 @@
             "competition_type": "International Cup",
             "club_id": "664",
             "opponent_id": "14503",
-            "position": "LM",
+            "position": "LW",
             "minutes": 85,
             "started": true,
             "captain": false,
@@ -6884,7 +6903,7 @@
             "competition_type": "International Cup",
             "club_id": "664",
             "opponent_id": "8428",
-            "position": "LM",
+            "position": "CMF",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -6964,7 +6983,7 @@
             "competition_type": "First Tier",
             "club_id": "664",
             "opponent_id": "3369",
-            "position": "LM",
+            "position": "LW",
             "minutes": 85,
             "started": true,
             "captain": false,
@@ -10793,7 +10812,95 @@
         }
     ],
     "clubs": {
+        "7": {
+            "type": "club",
+            "seasons": [
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 49,
+                "participations": 49,
+                "minutes": 2356,
+                "starts": 28,
+                "captain_matches": 0,
+                "goals": 6,
+                "assists": 10,
+                "goals_conceded": 32,
+                "points": 86,
+                "clean_sheets": 29,
+                "wins": 24,
+                "draws": 14,
+                "losses": 11,
+                "goal_matches": 44,
+                "assist_matches": 40,
+                "goal_contributions": 16
+            },
+            "positions": {
+                "AMF": 11,
+                "RW": 6,
+                "CF": 4,
+                "RM": 5,
+                "LW": 2
+            },
+            "derived": {
+                "season_count": 3,
+                "points_per_match": 1.755,
+                "minutes_per_match": 48.1,
+                "win_rate": 0.4898,
+                "goals_per_90": 0.229,
+                "assists_per_90": 0.382,
+                "contributions_per_90": 0.611,
+                "primary_position": "AMF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 21,
+                    "minutes": 1042,
+                    "goals": 5,
+                    "assists": 4
+                },
+                "Play-Offs": {
+                    "matches": 6,
+                    "minutes": 310,
+                    "goals": 1,
+                    "assists": 2
+                },
+                "International Cup": {
+                    "matches": 13,
+                    "minutes": 835,
+                    "goals": 0,
+                    "assists": 2
+                },
+                "League Cup": {
+                    "matches": 6,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Super Cup": {
+                    "matches": 2,
+                    "minutes": 169,
+                    "goals": 0,
+                    "assists": 2
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Egyptian Super Cup Winner": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3672": {
+            "type": "national",
             "seasons": [
                 2019,
                 2020,
@@ -10860,92 +10967,8 @@
                 }
             }
         },
-        "7": {
-            "seasons": [
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 48,
-                "participations": 48,
-                "minutes": 2270,
-                "starts": 27,
-                "captain_matches": 0,
-                "goals": 5,
-                "assists": 10,
-                "goals_conceded": 30,
-                "points": 83,
-                "clean_sheets": 29,
-                "wins": 23,
-                "draws": 14,
-                "losses": 11,
-                "goal_matches": 44,
-                "assist_matches": 39,
-                "goal_contributions": 15
-            },
-            "positions": {
-                "RW": 6,
-                "CF": 4,
-                "RM": 5,
-                "LW": 2,
-                "AMF": 10
-            },
-            "derived": {
-                "season_count": 2,
-                "points_per_match": 1.729,
-                "minutes_per_match": 47.3,
-                "win_rate": 0.4792,
-                "goals_per_90": 0.198,
-                "assists_per_90": 0.396,
-                "contributions_per_90": 0.595,
-                "primary_position": "AMF"
-            },
-            "competitions": {
-                "Play-Offs": {
-                    "matches": 6,
-                    "minutes": 310,
-                    "goals": 1,
-                    "assists": 2
-                },
-                "International Cup": {
-                    "matches": 13,
-                    "minutes": 835,
-                    "goals": 0,
-                    "assists": 2
-                },
-                "First Tier": {
-                    "matches": 20,
-                    "minutes": 956,
-                    "goals": 4,
-                    "assists": 4
-                },
-                "League Cup": {
-                    "matches": 6,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Domestic Cup": {
-                    "matches": 1,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Domestic Super Cup": {
-                    "matches": 2,
-                    "minutes": 169,
-                    "goals": 0,
-                    "assists": 2
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Egyptian Super Cup Winner": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "664": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -10977,11 +11000,11 @@
                 "RM": 27,
                 "CF": 10,
                 "RW": 141,
-                "LM": 8,
+                "LW": 27,
                 "AMF": 14,
-                "CMF": 16,
-                "LW": 21,
-                "DMF": 3
+                "CMF": 17,
+                "DMF": 3,
+                "LM": 1
             },
             "derived": {
                 "season_count": 7,
@@ -11051,6 +11074,7 @@
             }
         },
         "53825": {
+            "type": "national",
             "seasons": [
                 2023
             ],
@@ -11099,6 +11123,7 @@
             }
         },
         "30951": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -11147,6 +11172,7 @@
             }
         },
         "979": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018
@@ -11211,6 +11237,7 @@
             }
         },
         "204": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -11287,6 +11314,7 @@
             }
         },
         "982": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -11340,24 +11368,24 @@
     },
     "career": {
         "club": {
-            "matches": 194,
-            "minutes": 8299,
-            "goals": 9,
-            "assists": 11,
-            "goal_contributions": 20,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 6
+            "matches": 573,
+            "minutes": 31597,
+            "goals": 99,
+            "assists": 92,
+            "goal_contributions": 191,
+            "team_titles": 10,
+            "individual_titles": 1,
+            "season_count": 14
         },
         "national": {
-            "matches": 472,
-            "minutes": 27361,
-            "goals": 94,
-            "assists": 91,
-            "goal_contributions": 185,
-            "team_titles": 10,
-            "individual_titles": 2,
-            "season_count": 8
+            "matches": 94,
+            "minutes": 4149,
+            "goals": 5,
+            "assists": 10,
+            "goal_contributions": 15,
+            "team_titles": 0,
+            "individual_titles": 1,
+            "season_count": 7
         }
     }
 }
