@@ -49,20 +49,31 @@ const stadium =
         : undefined;
 
 const members: SquadMemberSummary[] = squad.members.map(member => {
-    if (member.playerVersion === undefined) {
-        return { member };
+    if (member.playerVersion !== undefined) {
+        const playerVersion =
+            PlayerVersionRepository.getById(member.playerVersion);
+        if (!playerVersion) {
+            return { member };
+        }
+        const player =
+            PlayerRepository.getById(playerVersion.player);
+        return {
+            member,
+            playerVersion,
+            player
+        };
     }
-    const playerVersion =
-        PlayerVersionRepository.getById(member.playerVersion);
-    if (!playerVersion) {
-        return { member };
+    if (member.playerId !== undefined) {
+        const player =
+            PlayerRepository.getById(member.playerId);
+
+        return {
+            member,
+            player
+        };
     }
-    const player =
-        PlayerRepository.getById(playerVersion.player);
     return {
-        member,
-        playerVersion,
-        player
+        member
     };
 });
 

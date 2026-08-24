@@ -8,6 +8,7 @@ interface Props {
 const { member } = Astro.props;
 
 const playerVersion = member.playerVersion;
+const player = member.player;
 
 const seasons = playerVersion
     ? (
@@ -30,7 +31,7 @@ const seasons = playerVersion
                 <div class="squad-member-list-item__info">
 
                     <h3>
-                        {member.player?.name ?? member.member.playerName}
+                        {player?.name ?? member.member.playerName}
                     </h3>
 
                     <p>
@@ -42,8 +43,29 @@ const seasons = playerVersion
                 </div>
 
                 <div class="squad-member-list-item__position">
-
                     {playerVersion.mainPosition}
+                </div>
+
+                <span
+                    class="squad-member-list-item__arrow"
+                    aria-hidden="true"
+                >
+                    →
+                </span>
+
+            </a>
+
+        ) : player ? (
+
+            <a
+                href={`${import.meta.env.BASE_URL}players/${player.slug}`}
+            >
+
+                <div class="squad-member-list-item__info">
+
+                    <h3>
+                        {player.name}
+                    </h3>
 
                 </div>
 

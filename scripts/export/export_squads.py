@@ -36,6 +36,7 @@ def get_squad_data(team, squad_name = "All-Time"):
     for player in squad["players"]:
         player = {
             "playerName": player["player"]["name"],
+            "playerId": int(player["player"]["ID_transfermarkt"]),
         }
 
         if player:
