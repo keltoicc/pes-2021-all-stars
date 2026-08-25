@@ -1,0 +1,61 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+
+import TeamList from "../../../components/teams/TeamList.astro";
+
+import TeamRepository from "../../../lib/repositories/TeamRepository";
+import CountryRepository from "../../../lib/repositories/CountryRepository";
+
+export function getStaticPaths() {
+
+    const countries = CountryRepository
+        .getAll()
+        .filter(country =>
+            TeamRepository.getCountryIds().has(country.id)
+        );
+
+    return countries.map(country => ({
+        params: {
+            slug: country.slug
+        }
+    }));
+
+}
+
+const { slug } = Astro.params;
+
+if (!slug) {
+    throw new Error("Missing country slug.");
+}
+
+const country = CountryRepository.getBySlug(slug);
+
+if (!country) {
+    throw new Error(`Country "${slug}" not found.`);
+}
+
+const teams = TeamRepository.getByCountry(country.id);
+
+const summaries = teams.map(team => {
+
+    const teamCountry = CountryRepository.getById(team.country);
+
+    if (!teamCountry) {
+        throw new Error(
+            `Country with id ${team.country} not found for team "${team.name}".`
+        );
+    }
+
+    return {
+        team,
+        country: teamCountry
+    };
+
+});
+---
+
+<Layout title={`Teams from ${country.name}`}>
+
+    <TeamList teams={summaries} />
+
+</Layout>

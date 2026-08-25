@@ -1,37 +1,46 @@
 ---
-import PageHeader from "../../components/ui/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
-import TeamList from "../../components/teams/TeamList.astro";
-import type { TeamSummary } from "../../viewModels/TeamSummary";
 
-import TeamRepository from "../../lib/repositories/TeamRepository";
-import CountryRepository from "../../lib/repositories/CountryRepository";
-
-const teams = TeamRepository.getAll();
-
-const teamSummaries: TeamSummary[] = teams.map(team => {
-    const country = CountryRepository.getById(team.country);
-
-    if (!country) {
-        throw new Error(
-            `Country with id ${team.country} not found for team "${team.name}".`
-        );
-    }
-
-    return {
-        team,
-        country
-    };
-});
+import PageHeader from "../../components/ui/PageHeader.astro";
+import Section from "../../components/ui/Section.astro";
 ---
 
 <Layout title="Teams">
 
-    <PageHeader
-        title="Teams"
-        description="Browse the clubs and national teams available in the database."
-    />
+    <div class="teams-page">
 
-    <TeamList teams={teamSummaries} />
+        <PageHeader
+            title="Teams"
+            description="Browse teams available in the Classic Football Encyclopedia."
+        />
+
+        <Section title="Browse Teams">
+
+            <ul>
+
+                <li>
+                    <a href={`${import.meta.env.BASE_URL}teams/all-teams/`}>
+                        All Teams
+                    </a>
+                </li>
+
+                <li>
+                    <a href={`${import.meta.env.BASE_URL}teams/countries/`}>
+                        By Country
+                    </a>
+                </li>
+
+            </ul>
+
+        </Section>
+
+    </div>
 
 </Layout>
+
+<style>
+.teams-page {
+    display: flex;
+    flex-direction: column;
+}
+</style>

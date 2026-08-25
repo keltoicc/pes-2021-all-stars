@@ -1,0 +1,56 @@
+---
+import PageHeader from "../../../components/ui/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+
+import Section from "../../../components/ui/Section.astro";
+import CountryList from "../../../components/countries/CountryList.astro";
+
+import CountryRepository from "../../../lib/repositories/CountryRepository";
+import TeamRepository from "../../../lib/repositories/TeamRepository";
+
+const teamCountryIds = TeamRepository.getCountryIds();
+
+const countries = CountryRepository
+    .getAll()
+    .filter(country => teamCountryIds.has(country.id));
+---
+
+<Layout title="Teams by Country">
+
+    <div class="teams-countries-page">
+
+        <PageHeader
+            title="Teams by Country"
+            description="Explore teams by country."
+        />
+
+        <Section title="Countries">
+
+            {
+                countries.length > 0
+                    ? <CountryList
+                        countries={countries}
+                        hrefBase={`${import.meta.env.BASE_URL}teams/countries`}
+                    />
+                    : <p>No countries available.</p>
+            }
+
+        </Section>
+
+    </div>
+
+</Layout>
+
+<style>
+.teams-countries-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+}
+
+.teams-countries-page__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+</style>

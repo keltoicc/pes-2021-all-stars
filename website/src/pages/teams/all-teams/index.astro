@@ -1,0 +1,37 @@
+---
+import PageHeader from "../../../components/ui/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+import TeamList from "../../../components/teams/TeamList.astro";
+import type { TeamSummary } from "../../../viewModels/TeamSummary";
+
+import TeamRepository from "../../../lib/repositories/TeamRepository";
+import CountryRepository from "../../../lib/repositories/CountryRepository";
+
+const teams = TeamRepository.getAll();
+
+const teamSummaries: TeamSummary[] = teams.map(team => {
+    const country = CountryRepository.getById(team.country);
+
+    if (!country) {
+        throw new Error(
+            `Country with id ${team.country} not found for team "${team.name}".`
+        );
+    }
+
+    return {
+        team,
+        country
+    };
+});
+---
+
+<Layout title="All Teams">
+
+    <PageHeader
+        title="All Teams"
+        description="Explore all the teams."
+    />
+
+    <TeamList teams={teamSummaries} />
+
+</Layout>
