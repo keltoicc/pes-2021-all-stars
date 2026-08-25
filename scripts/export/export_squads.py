@@ -4,7 +4,7 @@ import yaml
 import re
 import sys
 
-from publisher import publish_directory
+from .publisher import publish_directory
 
 sys.path.append(str(Path(__file__).parent))
 
@@ -49,6 +49,8 @@ def get_squad_data(team, squad_name = "All-Time"):
 
         "name": squad_name,
         "slug": f"{team_slug}-{slugify_web(squad_name)}",
+
+        "formation": squad["tactic"],
 
         "members": members,
     }

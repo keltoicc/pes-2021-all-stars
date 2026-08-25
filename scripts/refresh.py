@@ -23,6 +23,7 @@ import build.D_players.build_player_rankings as build_player_rankings
 import build.D_players.obtain_players_per_team as obtain_players_per_team
 
 from export import export_teams
+from export import export_squads
 from export import export_players
 
 #YML = "teams"
@@ -146,6 +147,11 @@ def export_to_web():
         print("Exportando información de equipos...")
         print("-------------------------------------------------------------------")
         export_teams.main(YML)
+
+        print("-------------------------------------------------------------------")
+        print("Exportando información de plantillas...")
+        print("-------------------------------------------------------------------")
+        export_squads.main(YML)
 
         print("-------------------------------------------------------------------")
         print("Exportando información de jugadores...")

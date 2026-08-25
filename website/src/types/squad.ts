@@ -11,5 +11,7 @@ export interface Squad {
     manager?: number;
     stadium?: number;
 
+    formation?: string;
+
     members: SquadMember[];
 }
