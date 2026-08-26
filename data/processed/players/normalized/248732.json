@@ -1,10 +1,13 @@
 {
     "player": {
+        "name": "Paweł Dawidowicz",
         "short_name": "P. Dawidowicz",
+        "dateOfBirth": "1995-05-20",
+        "placeOfBirth": "Olsztyn",
         "nation_1": "Poland",
         "nation_2": "",
         "height": 1.89,
-        "foot": null,
+        "foot": "Both",
         "position_group": "DEFENDER",
         "position_1": "CB",
         "position_2": "DMF",
@@ -14,6 +17,22 @@
         "prime_date": "2021-12-28"
     },
     "matches": [
+        {
+            "game_id": "4968011",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "276",
+            "opponent_id": "408",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4624933",
             "season": 2025,
@@ -12983,7 +13002,85 @@
         }
     ],
     "clubs": {
+        "276": {
+            "type": "club",
+            "seasons": [
+                2018,
+                2019,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2026
+            ],
+            "stats": {
+                "matches": 282,
+                "participations": 282,
+                "minutes": 12584,
+                "starts": 145,
+                "captain_matches": 20,
+                "goals": 4,
+                "assists": 1,
+                "goals_conceded": 191,
+                "points": 330,
+                "clean_sheets": 166,
+                "wins": 84,
+                "draws": 78,
+                "losses": 120,
+                "goal_matches": 278,
+                "assist_matches": 281,
+                "goal_contributions": 5
+            },
+            "positions": {
+                "CB": 133,
+                "DMF": 31,
+                "LB": 1,
+                "RB": 2
+            },
+            "derived": {
+                "season_count": 8,
+                "points_per_match": 1.17,
+                "minutes_per_match": 44.6,
+                "win_rate": 0.2979,
+                "goals_per_90": 0.029,
+                "assists_per_90": 0.007,
+                "contributions_per_90": 0.036,
+                "primary_position": "CB"
+            },
+            "competitions": {
+                "Second Tier": {
+                    "matches": 37,
+                    "minutes": 2236,
+                    "goals": 1,
+                    "assists": 0
+                },
+                "First Tier": {
+                    "matches": 228,
+                    "minutes": 9372,
+                    "goals": 2,
+                    "assists": 1
+                },
+                "Domestic Cup": {
+                    "matches": 11,
+                    "minutes": 437,
+                    "goals": 1,
+                    "assists": 0
+                },
+                "Play-Offs": {
+                    "matches": 6,
+                    "minutes": 539,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "9644": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -13044,6 +13141,7 @@
             }
         },
         "16298": {
+            "type": "national",
             "seasons": [
                 2013,
                 2014,
@@ -13115,6 +13213,7 @@
             }
         },
         "3442": {
+            "type": "national",
             "seasons": [
                 2013,
                 2015,
@@ -13178,82 +13277,8 @@
                 "individual_titles": {}
             }
         },
-        "276": {
-            "seasons": [
-                2018,
-                2019,
-                2020,
-                2021,
-                2022,
-                2023,
-                2024
-            ],
-            "stats": {
-                "matches": 281,
-                "participations": 281,
-                "minutes": 12494,
-                "starts": 144,
-                "captain_matches": 20,
-                "goals": 4,
-                "assists": 1,
-                "goals_conceded": 189,
-                "points": 330,
-                "clean_sheets": 166,
-                "wins": 84,
-                "draws": 78,
-                "losses": 119,
-                "goal_matches": 277,
-                "assist_matches": 280,
-                "goal_contributions": 5
-            },
-            "positions": {
-                "DMF": 31,
-                "CB": 132,
-                "LB": 1,
-                "RB": 2
-            },
-            "derived": {
-                "season_count": 7,
-                "points_per_match": 1.174,
-                "minutes_per_match": 44.5,
-                "win_rate": 0.2989,
-                "goals_per_90": 0.029,
-                "assists_per_90": 0.007,
-                "contributions_per_90": 0.036,
-                "primary_position": "CB"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 228,
-                    "minutes": 9372,
-                    "goals": 2,
-                    "assists": 1
-                },
-                "Domestic Cup": {
-                    "matches": 11,
-                    "minutes": 437,
-                    "goals": 1,
-                    "assists": 0
-                },
-                "Play-Offs": {
-                    "matches": 6,
-                    "minutes": 539,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Second Tier": {
-                    "matches": 36,
-                    "minutes": 2146,
-                    "goals": 1,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "16996": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -13295,6 +13320,7 @@
             }
         },
         "458": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -13356,6 +13382,7 @@
             }
         },
         "9324": {
+            "type": "national",
             "seasons": [
                 2013,
                 2015,
@@ -13419,6 +13446,7 @@
             }
         },
         "80": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -13474,6 +13502,7 @@
             }
         },
         "10330": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -13526,6 +13555,7 @@
             }
         },
         "16299": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -13580,6 +13610,7 @@
             }
         },
         "4000": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013
@@ -13636,6 +13667,7 @@
             }
         },
         "16297": {
+            "type": "national",
             "seasons": [
                 2012
             ],
@@ -13686,18 +13718,18 @@
     },
     "career": {
         "club": {
-            "matches": 526,
-            "minutes": 23894,
+            "matches": 548,
+            "minutes": 24572,
             "goals": 8,
             "assists": 4,
             "goal_contributions": 12,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 13
+            "season_count": 15
         },
         "national": {
-            "matches": 283,
-            "minutes": 3432,
+            "matches": 262,
+            "minutes": 2844,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,

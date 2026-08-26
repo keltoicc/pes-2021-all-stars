@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Ange-Yoan Bonny",
         "short_name": "A. Bonny",
+        "dateOfBirth": "2003-10-25",
+        "placeOfBirth": "Aubervilliers",
         "nation_1": "Cote d'Ivoire",
         "nation_2": "France",
         "height": 1.89,
@@ -14,6 +17,22 @@
         "prime_date": "2026-05-29"
     },
     "matches": [
+        {
+            "game_id": "4893347",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "46",
+            "opponent_id": "2919",
+            "position": "CF",
+            "minutes": 36,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776684",
             "season": 2025,
@@ -669,22 +688,6 @@
             "goals_conceded": 1,
             "participation": "played",
             "club_points": 3
-        },
-        {
-            "game_id": "4904431",
-            "season": 2026,
-            "competition_type": "Domestic Cup",
-            "club_id": "46",
-            "opponent_id": "0",
-            "position": null,
-            "minutes": 0,
-            "started": false,
-            "captain": false,
-            "goals": 0,
-            "assists": 0,
-            "goals_conceded": 0,
-            "participation": "not in squad",
-            "club_points": 0
         },
         {
             "game_id": "4620820",
@@ -5189,7 +5192,80 @@
         }
     ],
     "clubs": {
+        "46": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 55,
+                "participations": 55,
+                "minutes": 1711,
+                "starts": 15,
+                "captain_matches": 0,
+                "goals": 7,
+                "assists": 9,
+                "goals_conceded": 20,
+                "points": 118,
+                "clean_sheets": 38,
+                "wins": 37,
+                "draws": 7,
+                "losses": 11,
+                "goal_matches": 48,
+                "assist_matches": 48,
+                "goal_contributions": 16
+            },
+            "positions": {
+                "CF": 34,
+                "SS": 7
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 2.145,
+                "minutes_per_match": 31.1,
+                "win_rate": 0.6727,
+                "goals_per_90": 0.368,
+                "assists_per_90": 0.473,
+                "contributions_per_90": 0.842,
+                "primary_position": "CF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 39,
+                    "minutes": 1166,
+                    "goals": 5,
+                    "assists": 6
+                },
+                "Domestic Cup": {
+                    "matches": 5,
+                    "minutes": 173,
+                    "goals": 2,
+                    "assists": 0
+                },
+                "International Cup": {
+                    "matches": 10,
+                    "minutes": 282,
+                    "goals": 0,
+                    "assists": 3
+                },
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Italian champion": 1,
+                    "Italian cup winner": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3591": {
+            "type": "national",
             "seasons": [
                 2025
             ],
@@ -5237,78 +5313,8 @@
                 "individual_titles": {}
             }
         },
-        "46": {
-            "seasons": [
-                2025,
-                2026
-            ],
-            "stats": {
-                "matches": 55,
-                "participations": 55,
-                "minutes": 1675,
-                "starts": 15,
-                "captain_matches": 0,
-                "goals": 7,
-                "assists": 9,
-                "goals_conceded": 20,
-                "points": 115,
-                "clean_sheets": 38,
-                "wins": 36,
-                "draws": 7,
-                "losses": 12,
-                "goal_matches": 48,
-                "assist_matches": 48,
-                "goal_contributions": 16
-            },
-            "positions": {
-                "SS": 7,
-                "CF": 33
-            },
-            "derived": {
-                "season_count": 2,
-                "points_per_match": 2.091,
-                "minutes_per_match": 30.5,
-                "win_rate": 0.6545,
-                "goals_per_90": 0.376,
-                "assists_per_90": 0.484,
-                "contributions_per_90": 0.86,
-                "primary_position": "CF"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 38,
-                    "minutes": 1130,
-                    "goals": 5,
-                    "assists": 6
-                },
-                "Domestic Cup": {
-                    "matches": 6,
-                    "minutes": 173,
-                    "goals": 2,
-                    "assists": 0
-                },
-                "International Cup": {
-                    "matches": 10,
-                    "minutes": 282,
-                    "goals": 0,
-                    "assists": 3
-                },
-                "Domestic Super Cup": {
-                    "matches": 1,
-                    "minutes": 90,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Italian champion": 1,
-                    "Italian cup winner": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "130": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -5383,6 +5389,7 @@
             }
         },
         "9323": {
+            "type": "national",
             "seasons": [
                 2024
             ],
@@ -5431,6 +5438,7 @@
             }
         },
         "23658": {
+            "type": "national",
             "seasons": [
                 2022,
                 2023
@@ -5487,6 +5495,7 @@
             }
         },
         "23101": {
+            "type": "national",
             "seasons": [
                 2021
             ],
@@ -5547,6 +5556,7 @@
             }
         },
         "5243": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -5588,6 +5598,7 @@
             }
         },
         "12761": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021
@@ -5635,6 +5646,7 @@
             }
         },
         "1175": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -5689,6 +5701,7 @@
             }
         },
         "12762": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -5730,24 +5743,24 @@
     },
     "career": {
         "club": {
-            "matches": 225,
-            "minutes": 6600,
-            "goals": 16,
-            "assists": 12,
-            "goal_contributions": 28,
-            "team_titles": 1,
+            "matches": 280,
+            "minutes": 8311,
+            "goals": 23,
+            "assists": 21,
+            "goal_contributions": 44,
+            "team_titles": 3,
             "individual_titles": 0,
-            "season_count": 6
+            "season_count": 8
         },
         "national": {
-            "matches": 96,
-            "minutes": 2921,
-            "goals": 13,
-            "assists": 9,
-            "goal_contributions": 22,
-            "team_titles": 2,
+            "matches": 41,
+            "minutes": 1246,
+            "goals": 6,
+            "assists": 0,
+            "goal_contributions": 6,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 6
+            "season_count": 5
         }
     }
 }

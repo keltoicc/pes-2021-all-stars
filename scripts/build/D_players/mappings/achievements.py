@@ -221,6 +221,7 @@ CLUB_NATIONAL_TITLE = [
     "Algerian Super Cup Winner",
     "Andorran champion",
     "Andorran cup winner",
+    "Andorran Supercup Winner",
     "Angolan Champion",
     "Angolan Cup Winner",
     "Argentine League Cup Winner",

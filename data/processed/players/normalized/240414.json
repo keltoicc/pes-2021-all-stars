@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Alex Meret",
         "short_name": "Alex Meret",
+        "dateOfBirth": "1997-03-22",
+        "placeOfBirth": "Udine",
         "nation_1": "Italy",
         "nation_2": "",
         "height": 1.9,
@@ -14,6 +17,22 @@
         "prime_date": "2019-12-12"
     },
     "matches": [
+        {
+            "game_id": "4893346",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "6195",
+            "opponent_id": "252",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4621094",
             "season": 2025,
@@ -557,22 +576,6 @@
             "goals_conceded": 0,
             "participation": "injured",
             "club_points": 3
-        },
-        {
-            "game_id": "4904438",
-            "season": 2026,
-            "competition_type": "Domestic Cup",
-            "club_id": "6195",
-            "opponent_id": "0",
-            "position": null,
-            "minutes": 0,
-            "started": false,
-            "captain": false,
-            "goals": 0,
-            "assists": 0,
-            "goals_conceded": 0,
-            "participation": "injured",
-            "club_points": 0
         },
         {
             "game_id": "4620821",
@@ -12555,6 +12558,13 @@
             "club_id": 6195
         },
         {
+            "title": "Italian Super Cup winner",
+            "season": "25/26",
+            "season_id": 2025,
+            "club_name": "SSC Napoli",
+            "club_id": 6195
+        },
+        {
             "title": "European Under-19 runner-up",
             "season": "2016",
             "season_id": 2016,
@@ -12655,6 +12665,7 @@
     ],
     "clubs": {
         "6195": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -12669,43 +12680,43 @@
             "stats": {
                 "matches": 391,
                 "participations": 391,
-                "minutes": 19945,
-                "starts": 221,
+                "minutes": 20035,
+                "starts": 222,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 1,
                 "goals_conceded": 241,
-                "points": 736,
+                "points": 739,
                 "clean_sheets": 244,
-                "wins": 218,
+                "wins": 219,
                 "draws": 82,
-                "losses": 91,
+                "losses": 90,
                 "goal_matches": 391,
                 "assist_matches": 390,
                 "goal_contributions": 1
             },
             "positions": {
-                "GK": 224
+                "GK": 225
             },
             "derived": {
                 "season_count": 9,
-                "points_per_match": 1.882,
-                "minutes_per_match": 51.0,
-                "win_rate": 0.5575,
+                "points_per_match": 1.89,
+                "minutes_per_match": 51.2,
+                "win_rate": 0.5601,
                 "goals_per_90": 0.0,
-                "assists_per_90": 0.005,
-                "contributions_per_90": 0.005,
+                "assists_per_90": 0.004,
+                "contributions_per_90": 0.004,
                 "primary_position": "GK"
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 304,
-                    "minutes": 15521,
+                    "matches": 305,
+                    "minutes": 15611,
                     "goals": 0,
                     "assists": 1
                 },
                 "Domestic Cup": {
-                    "matches": 20,
+                    "matches": 19,
                     "minutes": 554,
                     "goals": 0,
                     "assists": 0
@@ -12726,12 +12737,14 @@
             "awards": {
                 "team_titles": {
                     "Italian champion": 2,
-                    "Italian cup winner": 1
+                    "Italian cup winner": 1,
+                    "Italian Super Cup winner": 1
                 },
                 "individual_titles": {}
             }
         },
         "3376": {
+            "type": "national",
             "seasons": [
                 2016,
                 2018,
@@ -12795,6 +12808,7 @@
             }
         },
         "11947": {
+            "type": "national",
             "seasons": [
                 2015,
                 2016,
@@ -12858,6 +12872,7 @@
             }
         },
         "2722": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017
@@ -12923,6 +12938,7 @@
             }
         },
         "22276": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -12964,6 +12980,7 @@
             }
         },
         "21426": {
+            "type": "national",
             "seasons": [
                 2014,
                 2015
@@ -13025,6 +13042,7 @@
             }
         },
         "410": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015
@@ -13080,6 +13098,7 @@
             }
         },
         "10959": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -13132,6 +13151,7 @@
             }
         },
         "21746": {
+            "type": "national",
             "seasons": [
                 2013,
                 2014
@@ -13181,6 +13201,7 @@
             }
         },
         "23133": {
+            "type": "national",
             "seasons": [
                 2012,
                 2013
@@ -13242,6 +13263,7 @@
             }
         },
         "23243": {
+            "type": "national",
             "seasons": [
                 2012
             ],
@@ -13292,24 +13314,24 @@
     },
     "career": {
         "club": {
-            "matches": 223,
-            "minutes": 7958,
+            "matches": 614,
+            "minutes": 27993,
+            "goals": 0,
+            "assists": 1,
+            "goal_contributions": 1,
+            "team_titles": 5,
+            "individual_titles": 2,
+            "season_count": 15
+        },
+        "national": {
+            "matches": 167,
+            "minutes": 3700,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
             "team_titles": 1,
-            "individual_titles": 2,
-            "season_count": 6
-        },
-        "national": {
-            "matches": 558,
-            "minutes": 23645,
-            "goals": 0,
-            "assists": 1,
-            "goal_contributions": 1,
-            "team_titles": 4,
             "individual_titles": 0,
-            "season_count": 15
+            "season_count": 13
         }
     }
 }

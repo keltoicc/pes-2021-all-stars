@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Thomas Strakosha",
         "short_name": "T. Strakosha",
+        "dateOfBirth": "1995-03-19",
+        "placeOfBirth": "Athens",
         "nation_1": "Albania",
         "nation_2": "Greece",
         "height": 1.93,
@@ -14,6 +17,54 @@
         "prime_date": "2020-08-25"
     },
     "matches": [
+        {
+            "game_id": "4973516",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "2441",
+            "opponent_id": "47",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "5013624",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "2441",
+            "opponent_id": "156",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4884159",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "2441",
+            "opponent_id": "653",
+            "position": "",
+            "minutes": 1,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4850093",
             "season": 2025,
@@ -14091,6 +14142,13 @@
             "club_id": 2441
         },
         {
+            "title": "Greek Super Cup runner-up",
+            "season": "26/27",
+            "season_id": 2026,
+            "club_name": "AEK Athens",
+            "club_id": 2441
+        },
+        {
             "title": "Italian Youth champion (Primavera)",
             "season": "12/13",
             "season_id": 2012,
@@ -14149,57 +14207,65 @@
     ],
     "clubs": {
         "2441": {
+            "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 95,
-                "participations": 95,
-                "minutes": 6780,
-                "starts": 75,
+                "matches": 98,
+                "participations": 98,
+                "minutes": 6961,
+                "starts": 77,
                 "captain_matches": 1,
                 "goals": 0,
                 "assists": 0,
                 "goals_conceded": 62,
-                "points": 188,
-                "clean_sheets": 59,
-                "wins": 56,
-                "draws": 20,
-                "losses": 19,
-                "goal_matches": 95,
-                "assist_matches": 95,
+                "points": 192,
+                "clean_sheets": 62,
+                "wins": 57,
+                "draws": 21,
+                "losses": 20,
+                "goal_matches": 98,
+                "assist_matches": 98,
                 "goal_contributions": 0
             },
             "positions": {
-                "GK": 75
+                "GK": 77
             },
             "derived": {
-                "season_count": 2,
-                "points_per_match": 1.979,
-                "minutes_per_match": 71.4,
-                "win_rate": 0.5895,
+                "season_count": 3,
+                "points_per_match": 1.959,
+                "minutes_per_match": 71.0,
+                "win_rate": 0.5816,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
                 "primary_position": "GK"
             },
             "competitions": {
-                "Play-Offs": {
-                    "matches": 12,
-                    "minutes": 360,
+                "First Tier": {
+                    "matches": 53,
+                    "minutes": 4500,
                     "goals": 0,
                     "assists": 0
                 },
                 "International Cup": {
-                    "matches": 20,
-                    "minutes": 1830,
+                    "matches": 21,
+                    "minutes": 1920,
                     "goals": 0,
                     "assists": 0
                 },
-                "First Tier": {
-                    "matches": 52,
-                    "minutes": 4410,
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 1,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Play-Offs": {
+                    "matches": 12,
+                    "minutes": 360,
                     "goals": 0,
                     "assists": 0
                 },
@@ -14218,6 +14284,7 @@
             }
         },
         "3561": {
+            "type": "national",
             "seasons": [
                 2016,
                 2017,
@@ -14280,6 +14347,7 @@
             }
         },
         "1148": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023
@@ -14341,6 +14409,7 @@
             }
         },
         "398": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -14418,6 +14487,7 @@
             }
         },
         "11952": {
+            "type": "national",
             "seasons": [
                 2013,
                 2014,
@@ -14475,6 +14545,7 @@
             }
         },
         "380": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -14535,6 +14606,7 @@
             }
         },
         "12816": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013
@@ -14587,6 +14659,7 @@
             }
         },
         "26099": {
+            "type": "national",
             "seasons": [
                 2012,
                 2013
@@ -14642,6 +14715,7 @@
             }
         },
         "8476": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -14681,6 +14755,7 @@
             }
         },
         "30118": {
+            "type": "national",
             "seasons": [
                 2011
             ],
@@ -14735,24 +14810,24 @@
     },
     "career": {
         "club": {
-            "matches": 210,
-            "minutes": 5535,
+            "matches": 738,
+            "minutes": 31231,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
-            "team_titles": 2,
+            "team_titles": 7,
             "individual_titles": 0,
-            "season_count": 6
+            "season_count": 16
         },
         "national": {
-            "matches": 667,
-            "minutes": 31716,
+            "matches": 142,
+            "minutes": 6201,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
-            "team_titles": 5,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 15
+            "season_count": 14
         }
     }
 }

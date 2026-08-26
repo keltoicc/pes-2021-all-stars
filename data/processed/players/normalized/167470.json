@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Mattia Maita",
         "short_name": "M. Maita",
+        "dateOfBirth": "1994-07-29",
+        "placeOfBirth": "Messina",
         "nation_1": "Italy",
         "nation_2": "",
         "height": 1.82,
@@ -14,6 +17,54 @@
         "prime_date": "2023-06-12"
     },
     "matches": [
+        {
+            "game_id": "4968007",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "4171",
+            "opponent_id": "1385",
+            "position": "CMF",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4904469",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "4171",
+            "opponent_id": "430",
+            "position": "CMF",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 4,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4894292",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "4171",
+            "opponent_id": "1105",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4874850",
             "season": 2025,
@@ -10280,42 +10331,56 @@
     ],
     "clubs": {
         "4171": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 42,
-                "participations": 42,
-                "minutes": 3278,
-                "starts": 37,
-                "captain_matches": 36,
+                "matches": 45,
+                "participations": 45,
+                "minutes": 3548,
+                "starts": 40,
+                "captain_matches": 39,
                 "goals": 1,
-                "assists": 8,
-                "goals_conceded": 24,
-                "points": 91,
+                "assists": 9,
+                "goals_conceded": 33,
+                "points": 94,
                 "clean_sheets": 24,
-                "wins": 28,
+                "wins": 29,
                 "draws": 7,
-                "losses": 7,
-                "goal_matches": 41,
-                "assist_matches": 34,
-                "goal_contributions": 9
+                "losses": 9,
+                "goal_matches": 44,
+                "assist_matches": 36,
+                "goal_contributions": 10
             },
             "positions": {
-                "CMF": 34,
-                "DMF": 3
+                "CMF": 36,
+                "DMF": 4
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 2.167,
-                "minutes_per_match": 78.0,
-                "win_rate": 0.6667,
-                "goals_per_90": 0.027,
-                "assists_per_90": 0.22,
-                "contributions_per_90": 0.247,
+                "season_count": 2,
+                "points_per_match": 2.089,
+                "minutes_per_match": 78.8,
+                "win_rate": 0.6444,
+                "goals_per_90": 0.025,
+                "assists_per_90": 0.228,
+                "contributions_per_90": 0.254,
                 "primary_position": "CMF"
             },
             "competitions": {
+                "Second Tier": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 1
+                },
+                "Domestic Cup": {
+                    "matches": 2,
+                    "minutes": 180,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Third Tier": {
                     "matches": 38,
                     "minutes": 3113,
@@ -10331,12 +10396,14 @@
             },
             "awards": {
                 "team_titles": {
-                    "Supercoppa Serie C winner": 1
+                    "Supercoppa Serie C winner": 1,
+                    "Italienischer Drittligameister (C)": 1
                 },
                 "individual_titles": {}
             }
         },
         "332": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -10411,11 +10478,14 @@
                 }
             },
             "awards": {
-                "team_titles": {},
+                "team_titles": {
+                    "Italienischer Drittligameister (C)": 1
+                },
                 "individual_titles": {}
             }
         },
         "4097": {
+            "type": "club",
             "seasons": [
                 2011,
                 2015,
@@ -10496,6 +10566,7 @@
             }
         },
         "1386": {
+            "type": "club",
             "seasons": [
                 2010,
                 2014
@@ -10570,6 +10641,7 @@
             }
         },
         "4103": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -10632,6 +10704,7 @@
             }
         },
         "4111": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -10694,6 +10767,7 @@
             }
         },
         "12000": {
+            "type": "club",
             "seasons": [
                 2009,
                 2010,
@@ -10741,14 +10815,14 @@
     },
     "career": {
         "club": {
-            "matches": 640,
-            "minutes": 37172,
+            "matches": 643,
+            "minutes": 37442,
             "goals": 14,
-            "assists": 29,
-            "goal_contributions": 43,
-            "team_titles": 1,
+            "assists": 30,
+            "goal_contributions": 44,
+            "team_titles": 3,
             "individual_titles": 0,
-            "season_count": 17
+            "season_count": 18
         },
         "national": {
             "matches": 0,

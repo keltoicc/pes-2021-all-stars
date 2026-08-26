@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Franco Ferrari",
         "short_name": "F. Ferrari",
+        "dateOfBirth": "1995-08-10",
+        "placeOfBirth": "Rosario",
         "nation_1": "Italy",
         "nation_2": "Argentina",
         "height": 1.93,
@@ -14,6 +17,38 @@
         "prime_date": "2024-06-17"
     },
     "matches": [
+        {
+            "game_id": "4978772",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "45894",
+            "opponent_id": "4326",
+            "position": "",
+            "minutes": 9,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4979648",
+            "season": 2026,
+            "competition_type": "Further Cup",
+            "club_id": "380",
+            "opponent_id": "22048",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
         {
             "game_id": "4888827",
             "season": 2025,
@@ -7957,13 +7992,62 @@
         }
     ],
     "clubs": {
-        "380": {
+        "45894": {
+            "type": "club",
             "seasons": [
-                2025
+                2026
             ],
             "stats": {
-                "matches": 45,
-                "participations": 45,
+                "matches": 1,
+                "participations": 1,
+                "minutes": 9,
+                "starts": 0,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 0,
+                "points": 3,
+                "clean_sheets": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "goal_matches": 1,
+                "assist_matches": 1,
+                "goal_contributions": 0
+            },
+            "positions": {},
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 3.0,
+                "minutes_per_match": 9.0,
+                "win_rate": 1.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": ""
+            },
+            "competitions": {
+                "Third Tier": {
+                    "matches": 1,
+                    "minutes": 9,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
+        "380": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 46,
+                "participations": 46,
                 "minutes": 2081,
                 "starts": 21,
                 "captain_matches": 1,
@@ -7971,28 +8055,34 @@
                 "assists": 2,
                 "goals_conceded": 30,
                 "points": 80,
-                "clean_sheets": 26,
+                "clean_sheets": 27,
                 "wins": 23,
                 "draws": 11,
-                "losses": 11,
-                "goal_matches": 37,
-                "assist_matches": 43,
+                "losses": 12,
+                "goal_matches": 38,
+                "assist_matches": 44,
                 "goal_contributions": 10
             },
             "positions": {
                 "CF": 36
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.778,
-                "minutes_per_match": 46.2,
-                "win_rate": 0.5111,
+                "season_count": 2,
+                "points_per_match": 1.739,
+                "minutes_per_match": 45.2,
+                "win_rate": 0.5,
                 "goals_per_90": 0.346,
                 "assists_per_90": 0.086,
                 "contributions_per_90": 0.432,
                 "primary_position": "CF"
             },
             "competitions": {
+                "Further Cup": {
+                    "matches": 2,
+                    "minutes": 35,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Play-Offs": {
                     "matches": 6,
                     "minutes": 383,
@@ -8004,12 +8094,6 @@
                     "minutes": 1663,
                     "goals": 7,
                     "assists": 1
-                },
-                "Further Cup": {
-                    "matches": 1,
-                    "minutes": 35,
-                    "goals": 0,
-                    "assists": 0
                 }
             },
             "awards": {
@@ -8018,6 +8102,7 @@
             }
         },
         "2655": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -8090,6 +8175,7 @@
             }
         },
         "2921": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -8150,6 +8236,7 @@
             }
         },
         "1047": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -8200,6 +8287,7 @@
             }
         },
         "6195": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -8253,6 +8341,7 @@
             }
         },
         "1210": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -8301,6 +8390,7 @@
             }
         },
         "332": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -8355,6 +8445,7 @@
             }
         },
         "1408": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -8409,6 +8500,7 @@
             }
         },
         "19": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -8465,6 +8557,7 @@
             }
         },
         "1307": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -8525,6 +8618,7 @@
             }
         },
         "36745": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -8585,6 +8679,7 @@
             }
         },
         "252": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -8637,6 +8732,7 @@
             }
         },
         "47317": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016
@@ -8698,6 +8794,7 @@
             }
         },
         "27049": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -8748,24 +8845,24 @@
     },
     "career": {
         "club": {
-            "matches": 481,
-            "minutes": 22067,
+            "matches": 496,
+            "minutes": 22076,
             "goals": 123,
             "assists": 23,
             "goal_contributions": 146,
             "team_titles": 3,
             "individual_titles": 2,
-            "season_count": 12
+            "season_count": 13
         },
         "national": {
-            "matches": 13,
+            "matches": 0,
             "minutes": 0,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 2
+            "season_count": 0
         }
     }
 }

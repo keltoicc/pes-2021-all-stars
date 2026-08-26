@@ -222,7 +222,7 @@ NATIONS_MAP = {
     220: "Czechoslovakia",
     221: "Soviet Union",
     222: "222",
-    223: "223",
+    223: "Yugoslavia",
     224: "224",
     225: "225",
     226: "226",

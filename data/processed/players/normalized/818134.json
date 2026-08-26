@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Thomas Sandon",
         "short_name": "T. Sandon",
+        "dateOfBirth": "2003-07-11",
+        "placeOfBirth": "Abano Terme",
         "nation_1": "Italy",
         "nation_2": "",
         "height": 1.86,
@@ -14,6 +17,38 @@
         "prime_date": "2026-06-19"
     },
     "matches": [
+        {
+            "game_id": "4968012",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "2655",
+            "opponent_id": "4097",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4894293",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "2655",
+            "opponent_id": "1627",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4874850",
             "season": 2025,
@@ -4225,47 +4260,61 @@
     ],
     "clubs": {
         "2655": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 229,
-                "participations": 229,
-                "minutes": 10216,
-                "starts": 113,
+                "matches": 231,
+                "participations": 231,
+                "minutes": 10306,
+                "starts": 114,
                 "captain_matches": 0,
                 "goals": 3,
                 "assists": 6,
-                "goals_conceded": 98,
-                "points": 404,
-                "clean_sheets": 155,
-                "wins": 119,
+                "goals_conceded": 99,
+                "points": 407,
+                "clean_sheets": 156,
+                "wins": 120,
                 "draws": 47,
-                "losses": 63,
-                "goal_matches": 226,
-                "assist_matches": 223,
+                "losses": 64,
+                "goal_matches": 228,
+                "assist_matches": 225,
                 "goal_contributions": 9
             },
             "positions": {
-                "CB": 112,
+                "CB": 113,
                 "LM": 10,
                 "LB": 18
             },
             "derived": {
-                "season_count": 5,
-                "points_per_match": 1.764,
+                "season_count": 6,
+                "points_per_match": 1.762,
                 "minutes_per_match": 44.6,
-                "win_rate": 0.5197,
+                "win_rate": 0.5195,
                 "goals_per_90": 0.026,
-                "assists_per_90": 0.053,
+                "assists_per_90": 0.052,
                 "contributions_per_90": 0.079,
                 "primary_position": "CB"
             },
             "competitions": {
+                "Second Tier": {
+                    "matches": 39,
+                    "minutes": 228,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 5,
+                    "minutes": 270,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Third Tier": {
                     "matches": 152,
                     "minutes": 8154,
@@ -4278,21 +4327,9 @@
                     "goals": 0,
                     "assists": 0
                 },
-                "Domestic Cup": {
-                    "matches": 4,
-                    "minutes": 180,
-                    "goals": 0,
-                    "assists": 0
-                },
                 "Play-Offs": {
                     "matches": 18,
                     "minutes": 573,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Second Tier": {
-                    "matches": 38,
-                    "minutes": 228,
                     "goals": 0,
                     "assists": 0
                 }
@@ -4306,6 +4343,7 @@
             }
         },
         "14925": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021
@@ -4348,6 +4386,7 @@
             }
         },
         "21426": {
+            "type": "national",
             "seasons": [
                 2021
             ],
@@ -4404,14 +4443,14 @@
     },
     "career": {
         "club": {
-            "matches": 254,
-            "minutes": 12118,
+            "matches": 256,
+            "minutes": 12208,
             "goals": 3,
             "assists": 6,
             "goal_contributions": 9,
             "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 6
+            "season_count": 7
         },
         "national": {
             "matches": 8,
