@@ -6,7 +6,10 @@ import Layout from "../layouts/Layout.astro";
 
     <div class="home-page">
 
-        <section class="home-hero">
+        <section
+            class="home-hero"
+            style={`--hero-image: url("${import.meta.env.BASE_URL}images/home/hero.png");`}
+        >
 
             <div class="home-hero__content">
 
@@ -118,19 +121,49 @@ import Layout from "../layouts/Layout.astro";
 }
 
 .home-hero {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    min-height: 480px;
     max-width: var(--content-width);
+
+    overflow: hidden;
 
     padding: var(--space-8) var(--space-6);
 
-    background: var(--color-surface);
+    background-color: var(--color-background);
+
+    background-image:
+        linear-gradient(
+            90deg,
+            var(--color-background) 0%,
+            color-mix(
+                in srgb,
+                var(--color-background) 88%,
+                transparent
+            ) 42%,
+            transparent 100%
+        ),
+        var(--hero-image);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
 }
 
 .home-hero__content {
+    position: relative;
+    z-index: 1;
+
     display: flex;
     flex-direction: column;
+
+    max-width: 560px;
 
     gap: var(--space-3);
 }
@@ -250,7 +283,23 @@ import Layout from "../layouts/Layout.astro";
 @media (max-width: 600px) {
 
     .home-hero {
+        min-height: 420px;
+
         padding: var(--space-6) var(--space-4);
+
+        background-position: 65% center;
+
+        background-image:
+            linear-gradient(
+                90deg,
+                var(--color-background) 0%,
+                color-mix(
+                    in srgb,
+                    var(--color-background) 72%,
+                    transparent
+                ) 100%
+            ),
+            var(--hero-image);
     }
 
     .home-hero h1 {
