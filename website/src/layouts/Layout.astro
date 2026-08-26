@@ -9,7 +9,7 @@ interface Props {
 }
 
 const {
-	title = "Classic Football Encyclopedia"
+	title = "PES 2021 All-Stars"
 } = Astro.props;
 ---
 
@@ -21,6 +21,12 @@ const {
 		<meta name="generator" content={Astro.generator} />
 
 		<title>{title}</title>
+
+		<link
+			rel="icon"
+			type="image/png"
+			href={`${import.meta.env.BASE_URL}favicon.png`}
+		/>
 	</head>
 
 	<body>
