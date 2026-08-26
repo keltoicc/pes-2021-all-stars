@@ -18,6 +18,22 @@
     },
     "matches": [
         {
+            "game_id": "4889954",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "27",
+            "opponent_id": "16",
+            "position": "CF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
             "game_id": "4776709",
             "season": 2025,
             "competition_type": "National Team",
@@ -18571,6 +18587,13 @@
         },
         {
             "title": "German Super Cup winner",
+            "season": "26/27",
+            "season_id": 2026,
+            "club_name": "Bayern Munich",
+            "club_id": 27
+        },
+        {
+            "title": "German Super Cup winner",
             "season": "25/26",
             "season_id": 2025,
             "club_name": "Bayern Munich",
@@ -18617,6 +18640,13 @@
             "season_id": 2015,
             "club_name": "England U21",
             "club_id": 9565
+        },
+        {
+            "title": "World Cup third place",
+            "season": "2027",
+            "season_id": 2027,
+            "club_name": "England",
+            "club_id": 3299
         },
         {
             "title": "Under-20 World Cup participant",
@@ -18879,6 +18909,84 @@
         }
     ],
     "clubs": {
+        "27": {
+            "type": "club",
+            "seasons": [
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 161,
+                "participations": 161,
+                "minutes": 12032,
+                "starts": 135,
+                "captain_matches": 3,
+                "goals": 146,
+                "assists": 33,
+                "goals_conceded": 139,
+                "points": 369,
+                "clean_sheets": 73,
+                "wins": 116,
+                "draws": 21,
+                "losses": 24,
+                "goal_matches": 66,
+                "assist_matches": 132,
+                "goal_contributions": 179
+            },
+            "positions": {
+                "CF": 144,
+                "SS": 4
+            },
+            "derived": {
+                "season_count": 4,
+                "points_per_match": 2.292,
+                "minutes_per_match": 74.7,
+                "win_rate": 0.7205,
+                "goals_per_90": 1.092,
+                "assists_per_90": 0.247,
+                "contributions_per_90": 1.339,
+                "primary_position": "CF"
+            },
+            "competitions": {
+                "Domestic Super Cup": {
+                    "matches": 3,
+                    "minutes": 206,
+                    "goals": 1,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 11,
+                    "minutes": 609,
+                    "goals": 11,
+                    "assists": 1
+                },
+                "First Tier": {
+                    "matches": 102,
+                    "minutes": 7616,
+                    "goals": 98,
+                    "assists": 23
+                },
+                "International Cup": {
+                    "matches": 45,
+                    "minutes": 3601,
+                    "goals": 36,
+                    "assists": 9
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "German Champion": 2,
+                    "German cup winner": 1,
+                    "German Super Cup winner": 2
+                },
+                "individual_titles": {
+                    "Golden Boot winner (Europe)": 2,
+                    "Top goal scorer": 6
+                }
+            }
+        },
         "3299": {
             "type": "national",
             "seasons": [
@@ -18943,83 +19051,6 @@
                 "team_titles": {},
                 "individual_titles": {
                     "Top goal scorer": 12
-                }
-            }
-        },
-        "27": {
-            "type": "club",
-            "seasons": [
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 160,
-                "participations": 160,
-                "minutes": 11942,
-                "starts": 134,
-                "captain_matches": 3,
-                "goals": 146,
-                "assists": 33,
-                "goals_conceded": 138,
-                "points": 366,
-                "clean_sheets": 73,
-                "wins": 115,
-                "draws": 21,
-                "losses": 24,
-                "goal_matches": 65,
-                "assist_matches": 131,
-                "goal_contributions": 179
-            },
-            "positions": {
-                "CF": 143,
-                "SS": 4
-            },
-            "derived": {
-                "season_count": 3,
-                "points_per_match": 2.288,
-                "minutes_per_match": 74.6,
-                "win_rate": 0.7188,
-                "goals_per_90": 1.1,
-                "assists_per_90": 0.249,
-                "contributions_per_90": 1.349,
-                "primary_position": "CF"
-            },
-            "competitions": {
-                "Domestic Cup": {
-                    "matches": 11,
-                    "minutes": 609,
-                    "goals": 11,
-                    "assists": 1
-                },
-                "First Tier": {
-                    "matches": 102,
-                    "minutes": 7616,
-                    "goals": 98,
-                    "assists": 23
-                },
-                "International Cup": {
-                    "matches": 45,
-                    "minutes": 3601,
-                    "goals": 36,
-                    "assists": 9
-                },
-                "Domestic Super Cup": {
-                    "matches": 2,
-                    "minutes": 116,
-                    "goals": 1,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "German Champion": 2,
-                    "German cup winner": 1,
-                    "German Super Cup winner": 1
-                },
-                "individual_titles": {
-                    "Golden Boot winner (Europe)": 2,
-                    "Top goal scorer": 6
                 }
             }
         },
@@ -19668,14 +19699,14 @@
     },
     "career": {
         "club": {
-            "matches": 950,
-            "minutes": 51662,
+            "matches": 951,
+            "minutes": 51752,
             "goals": 453,
             "assists": 112,
             "goal_contributions": 565,
-            "team_titles": 4,
+            "team_titles": 5,
             "individual_titles": 16,
-            "season_count": 17
+            "season_count": 18
         },
         "national": {
             "matches": 205,

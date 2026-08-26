@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Wilfried Gnonto",
         "short_name": "W. Gnonto",
+        "dateOfBirth": "2003-11-05",
+        "placeOfBirth": "Verbania",
         "nation_1": "Italy",
         "nation_2": "Cote d'Ivoire",
         "height": 1.7,
@@ -14,6 +17,38 @@
         "prime_date": "2025-05-27"
     },
     "matches": [
+        {
+            "game_id": "5016473",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "399",
+            "opponent_id": "703",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4899186",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "399",
+            "opponent_id": "703",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
         {
             "game_id": "4626177",
             "season": 2025,
@@ -7323,28 +7358,30 @@
     ],
     "clubs": {
         "399": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 186,
-                "participations": 186,
+                "matches": 188,
+                "participations": 188,
                 "minutes": 7130,
                 "starts": 78,
                 "captain_matches": 0,
                 "goals": 23,
                 "assists": 17,
                 "goals_conceded": 94,
-                "points": 296,
-                "clean_sheets": 122,
-                "wins": 83,
+                "points": 302,
+                "clean_sheets": 124,
+                "wins": 85,
                 "draws": 47,
                 "losses": 56,
-                "goal_matches": 165,
-                "assist_matches": 170,
+                "goal_matches": 167,
+                "assist_matches": 172,
                 "goal_contributions": 40
             },
             "positions": {
@@ -7357,18 +7394,24 @@
                 "LM": 4
             },
             "derived": {
-                "season_count": 4,
-                "points_per_match": 1.591,
-                "minutes_per_match": 38.3,
-                "win_rate": 0.4462,
+                "season_count": 5,
+                "points_per_match": 1.606,
+                "minutes_per_match": 37.9,
+                "win_rate": 0.4521,
                 "goals_per_90": 0.29,
                 "assists_per_90": 0.215,
                 "contributions_per_90": 0.505,
                 "primary_position": "RW"
             },
             "competitions": {
+                "League Cup": {
+                    "matches": 6,
+                    "minutes": 168,
+                    "goals": 0,
+                    "assists": 1
+                },
                 "First Tier": {
-                    "matches": 71,
+                    "matches": 72,
                     "minutes": 1875,
                     "goals": 2,
                     "assists": 7
@@ -7378,12 +7421,6 @@
                     "minutes": 944,
                     "goals": 4,
                     "assists": 0
-                },
-                "League Cup": {
-                    "matches": 5,
-                    "minutes": 168,
-                    "goals": 0,
-                    "assists": 1
                 },
                 "Second Tier": {
                     "matches": 92,
@@ -7406,6 +7443,7 @@
             }
         },
         "11947": {
+            "type": "national",
             "seasons": [
                 2022,
                 2023,
@@ -7471,6 +7509,7 @@
             }
         },
         "3376": {
+            "type": "national",
             "seasons": [
                 2022
             ],
@@ -7528,6 +7567,7 @@
             }
         },
         "20116": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -7578,6 +7618,7 @@
             }
         },
         "260": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -7648,6 +7689,7 @@
             }
         },
         "21426": {
+            "type": "national",
             "seasons": [
                 2021
             ],
@@ -7702,6 +7744,7 @@
             }
         },
         "21746": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -7750,6 +7793,7 @@
             }
         },
         "5501": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -7807,6 +7851,7 @@
             }
         },
         "5380": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -7849,6 +7894,7 @@
             }
         },
         "75868": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -7891,6 +7937,7 @@
             }
         },
         "48967": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -7946,6 +7993,7 @@
             }
         },
         "23133": {
+            "type": "national",
             "seasons": [
                 2018,
                 2019
@@ -8007,6 +8055,7 @@
             }
         },
         "62104": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -8048,6 +8097,7 @@
             }
         },
         "23243": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -8099,22 +8149,22 @@
     },
     "career": {
         "club": {
-            "matches": 275,
-            "minutes": 9895,
-            "goals": 41,
-            "assists": 24,
-            "goal_contributions": 65,
-            "team_titles": 3,
+            "matches": 376,
+            "minutes": 12853,
+            "goals": 53,
+            "assists": 34,
+            "goal_contributions": 87,
+            "team_titles": 4,
             "individual_titles": 0,
-            "season_count": 8
+            "season_count": 10
         },
         "national": {
-            "matches": 178,
-            "minutes": 6524,
-            "goals": 29,
-            "assists": 22,
-            "goal_contributions": 51,
-            "team_titles": 1,
+            "matches": 79,
+            "minutes": 3566,
+            "goals": 17,
+            "assists": 12,
+            "goal_contributions": 29,
+            "team_titles": 0,
             "individual_titles": 0,
             "season_count": 7
         }

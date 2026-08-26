@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Jack Hunt",
         "short_name": "Jack Hunt",
+        "dateOfBirth": "1990-12-06",
+        "placeOfBirth": "Leeds",
         "nation_1": "England",
         "nation_2": "",
         "height": 1.75,
@@ -14,6 +17,54 @@
         "prime_date": "2014-01-15"
     },
     "matches": [
+        {
+            "game_id": "4911254",
+            "season": 2026,
+            "competition_type": "Fourth Tier",
+            "club_id": "1252",
+            "opponent_id": "1194",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "injured",
+            "club_points": 1
+        },
+        {
+            "game_id": "4911270",
+            "season": 2026,
+            "competition_type": "Fourth Tier",
+            "club_id": "1252",
+            "opponent_id": "2455",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "injured",
+            "club_points": 3
+        },
+        {
+            "game_id": "4925983",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "1252",
+            "opponent_id": "3537",
+            "position": "RM",
+            "minutes": 67,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4640097",
             "season": 2025,
@@ -13881,7 +13932,63 @@
         }
     ],
     "clubs": {
+        "1252": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 3,
+                "participations": 3,
+                "minutes": 67,
+                "starts": 1,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 1,
+                "points": 4,
+                "clean_sheets": 2,
+                "wins": 1,
+                "draws": 1,
+                "losses": 1,
+                "goal_matches": 3,
+                "assist_matches": 3,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "RM": 1
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 1.333,
+                "minutes_per_match": 22.3,
+                "win_rate": 0.3333,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "RM"
+            },
+            "competitions": {
+                "Fourth Tier": {
+                    "matches": 2,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "League Cup": {
+                    "matches": 1,
+                    "minutes": 67,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "1071": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -13938,6 +14045,7 @@
             }
         },
         "1098": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -13999,6 +14107,7 @@
             }
         },
         "2455": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024
@@ -14067,6 +14176,7 @@
             }
         },
         "1035": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -14152,6 +14262,7 @@
             }
         },
         "698": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -14217,6 +14328,7 @@
             }
         },
         "873": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -14271,6 +14383,7 @@
             }
         },
         "1194": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -14320,6 +14433,7 @@
             }
         },
         "703": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -14375,6 +14489,7 @@
             }
         },
         "349": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -14423,6 +14538,7 @@
             }
         },
         "1110": {
+            "type": "club",
             "seasons": [
                 2009,
                 2010,
@@ -14507,6 +14623,7 @@
             }
         },
         "1219": {
+            "type": "club",
             "seasons": [
                 2010
             ],
@@ -14573,6 +14690,7 @@
             }
         },
         "3685": {
+            "type": "club",
             "seasons": [
                 2009
             ],
@@ -14621,14 +14739,14 @@
     },
     "career": {
         "club": {
-            "matches": 866,
-            "minutes": 42771,
+            "matches": 869,
+            "minutes": 42838,
             "goals": 13,
             "assists": 61,
             "goal_contributions": 74,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 17
+            "season_count": 18
         },
         "national": {
             "matches": 0,

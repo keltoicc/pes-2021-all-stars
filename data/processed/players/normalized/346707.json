@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Sean Longstaff",
         "short_name": "S. Longstaff",
+        "dateOfBirth": "1997-10-30",
+        "placeOfBirth": "Newcastle upon Tyne",
         "nation_1": "England",
         "nation_2": "",
         "height": 1.87,
@@ -14,6 +17,38 @@
         "prime_date": "2024-12-16"
     },
     "matches": [
+        {
+            "game_id": "5016473",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "399",
+            "opponent_id": "703",
+            "position": "AMF",
+            "minutes": 67,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4899186",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "399",
+            "opponent_id": "703",
+            "position": "",
+            "minutes": 8,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4626177",
             "season": 2025,
@@ -7697,46 +7732,54 @@
     ],
     "clubs": {
         "399": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 44,
-                "participations": 44,
-                "minutes": 1307,
-                "starts": 13,
+                "matches": 46,
+                "participations": 46,
+                "minutes": 1382,
+                "starts": 14,
                 "captain_matches": 0,
                 "goals": 3,
-                "assists": 2,
+                "assists": 3,
                 "goals_conceded": 22,
-                "points": 59,
-                "clean_sheets": 28,
-                "wins": 15,
+                "points": 65,
+                "clean_sheets": 30,
+                "wins": 17,
                 "draws": 14,
                 "losses": 15,
-                "goal_matches": 41,
-                "assist_matches": 42,
-                "goal_contributions": 5
+                "goal_matches": 43,
+                "assist_matches": 43,
+                "goal_contributions": 6
             },
             "positions": {
+                "AMF": 3,
                 "CMF": 20,
-                "DMF": 1,
-                "AMF": 2
+                "DMF": 1
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.341,
-                "minutes_per_match": 29.7,
-                "win_rate": 0.3409,
-                "goals_per_90": 0.207,
-                "assists_per_90": 0.138,
-                "contributions_per_90": 0.344,
+                "season_count": 2,
+                "points_per_match": 1.413,
+                "minutes_per_match": 30.0,
+                "win_rate": 0.3696,
+                "goals_per_90": 0.195,
+                "assists_per_90": 0.195,
+                "contributions_per_90": 0.391,
                 "primary_position": "CMF"
             },
             "competitions": {
+                "League Cup": {
+                    "matches": 2,
+                    "minutes": 157,
+                    "goals": 0,
+                    "assists": 1
+                },
                 "First Tier": {
-                    "matches": 38,
-                    "minutes": 1006,
+                    "matches": 39,
+                    "minutes": 1014,
                     "goals": 2,
                     "assists": 2
                 },
@@ -7744,12 +7787,6 @@
                     "matches": 5,
                     "minutes": 211,
                     "goals": 1,
-                    "assists": 0
-                },
-                "League Cup": {
-                    "matches": 1,
-                    "minutes": 90,
-                    "goals": 0,
                     "assists": 0
                 }
             },
@@ -7759,6 +7796,7 @@
             }
         },
         "762": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -7835,6 +7873,7 @@
             }
         },
         "9253": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -7889,6 +7928,7 @@
             }
         },
         "1181": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -7957,6 +7997,7 @@
             }
         },
         "2553": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -8013,6 +8054,7 @@
             }
         },
         "6943": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -8056,24 +8098,24 @@
     },
     "career": {
         "club": {
-            "matches": 177,
-            "minutes": 10082,
-            "goals": 24,
-            "assists": 17,
-            "goal_contributions": 41,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 6
-        },
-        "national": {
-            "matches": 302,
-            "minutes": 14488,
-            "goals": 16,
-            "assists": 11,
-            "goal_contributions": 27,
+            "matches": 481,
+            "minutes": 24645,
+            "goals": 40,
+            "assists": 29,
+            "goal_contributions": 69,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 7
+            "season_count": 13
+        },
+        "national": {
+            "matches": 0,
+            "minutes": 0,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 0
         }
     }
 }

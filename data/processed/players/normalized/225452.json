@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Patrick Roberts",
         "short_name": "P. Roberts",
+        "dateOfBirth": "1997-02-05",
+        "placeOfBirth": "Kingston-upon-Thames",
         "nation_1": "England",
         "nation_2": "",
         "height": 1.67,
@@ -14,6 +17,70 @@
         "prime_date": "2018-09-07"
     },
     "matches": [
+        {
+            "game_id": "5016486",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "337",
+            "opponent_id": "1148",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4911079",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "337",
+            "opponent_id": "698",
+            "position": "",
+            "minutes": 28,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4911098",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "337",
+            "opponent_id": "350",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 1
+        },
+        {
+            "game_id": "4926010",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "337",
+            "opponent_id": "2288",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
         {
             "game_id": "4639459",
             "season": 2025,
@@ -388,7 +455,7 @@
             "competition_type": "Second Tier",
             "club_id": "337",
             "opponent_id": "1010",
-            "position": "RM",
+            "position": "RW",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -404,7 +471,7 @@
             "competition_type": "Second Tier",
             "club_id": "337",
             "opponent_id": "180",
-            "position": "RM",
+            "position": "RW",
             "minutes": 82,
             "started": true,
             "captain": false,
@@ -708,7 +775,7 @@
             "competition_type": "Second Tier",
             "club_id": "337",
             "opponent_id": "512",
-            "position": "RM",
+            "position": "RW",
             "minutes": 60,
             "started": true,
             "captain": false,
@@ -11367,45 +11434,53 @@
     ],
     "clubs": {
         "337": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 44,
-                "participations": 44,
-                "minutes": 2332,
+                "matches": 48,
+                "participations": 48,
+                "minutes": 2360,
                 "starts": 28,
                 "captain_matches": 0,
                 "goals": 5,
                 "assists": 4,
-                "goals_conceded": 32,
-                "points": 60,
-                "clean_sheets": 23,
-                "wins": 16,
-                "draws": 12,
-                "losses": 16,
-                "goal_matches": 39,
-                "assist_matches": 41,
+                "goals_conceded": 33,
+                "points": 65,
+                "clean_sheets": 26,
+                "wins": 17,
+                "draws": 14,
+                "losses": 17,
+                "goal_matches": 43,
+                "assist_matches": 45,
                 "goal_contributions": 9
             },
             "positions": {
-                "RM": 23,
-                "RW": 5
+                "RM": 20,
+                "RW": 8
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.364,
-                "minutes_per_match": 53.0,
-                "win_rate": 0.3636,
-                "goals_per_90": 0.193,
-                "assists_per_90": 0.154,
-                "contributions_per_90": 0.347,
+                "season_count": 2,
+                "points_per_match": 1.354,
+                "minutes_per_match": 49.2,
+                "win_rate": 0.3542,
+                "goals_per_90": 0.191,
+                "assists_per_90": 0.153,
+                "contributions_per_90": 0.343,
                 "primary_position": "RM"
             },
             "competitions": {
+                "League Cup": {
+                    "matches": 2,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Second Tier": {
-                    "matches": 42,
-                    "minutes": 2211,
+                    "matches": 44,
+                    "minutes": 2239,
                     "goals": 4,
                     "assists": 4
                 },
@@ -11422,6 +11497,7 @@
             }
         },
         "289": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -11511,6 +11587,7 @@
             }
         },
         "9264": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -11552,6 +11629,7 @@
             }
         },
         "1095": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -11606,6 +11684,7 @@
             }
         },
         "10846": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -11652,6 +11731,7 @@
             }
         },
         "281": {
+            "type": "club",
             "seasons": [
                 2015,
                 2017,
@@ -11732,6 +11812,7 @@
             }
         },
         "22": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -11782,6 +11863,7 @@
             }
         },
         "641": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -11841,6 +11923,7 @@
             }
         },
         "1123": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -11897,6 +11980,7 @@
             }
         },
         "33614": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -11938,6 +12022,7 @@
             }
         },
         "12321": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -11995,6 +12080,7 @@
             }
         },
         "371": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -12078,6 +12164,7 @@
             }
         },
         "22907": {
+            "type": "national",
             "seasons": [
                 2016
             ],
@@ -12126,6 +12213,7 @@
             }
         },
         "21340": {
+            "type": "national",
             "seasons": [
                 2014,
                 2015
@@ -12183,6 +12271,7 @@
             }
         },
         "9265": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -12224,6 +12313,7 @@
             }
         },
         "41593": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -12266,6 +12356,7 @@
             }
         },
         "31269": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -12314,6 +12405,7 @@
             }
         },
         "931": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014
@@ -12383,6 +12475,7 @@
             }
         },
         "9262": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014
@@ -12426,6 +12519,7 @@
             }
         },
         "23260": {
+            "type": "national",
             "seasons": [
                 2013
             ],
@@ -12489,6 +12583,7 @@
             }
         },
         "6942": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -12530,6 +12625,7 @@
             }
         },
         "30322": {
+            "type": "national",
             "seasons": [
                 2012
             ],
@@ -12581,24 +12677,24 @@
     },
     "career": {
         "club": {
-            "matches": 467,
-            "minutes": 16750,
-            "goals": 23,
-            "assists": 34,
-            "goal_contributions": 57,
-            "team_titles": 0,
+            "matches": 651,
+            "minutes": 21418,
+            "goals": 41,
+            "assists": 60,
+            "goal_contributions": 101,
+            "team_titles": 8,
             "individual_titles": 0,
-            "season_count": 11
+            "season_count": 14
         },
         "national": {
-            "matches": 237,
-            "minutes": 7556,
-            "goals": 37,
-            "assists": 40,
-            "goal_contributions": 77,
-            "team_titles": 9,
+            "matches": 57,
+            "minutes": 2916,
+            "goals": 19,
+            "assists": 14,
+            "goal_contributions": 33,
+            "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 10
+            "season_count": 5
         }
     }
 }

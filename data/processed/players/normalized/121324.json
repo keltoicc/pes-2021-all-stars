@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "John Egan",
         "short_name": "John Egan",
+        "dateOfBirth": "1992-10-20",
+        "placeOfBirth": "Cork",
         "nation_1": "Ireland",
         "nation_2": "",
         "height": 1.85,
@@ -14,6 +17,38 @@
         "prime_date": "2020-10-13"
     },
     "matches": [
+        {
+            "game_id": "5016470",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "3008",
+            "opponent_id": "512",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4899183",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "3008",
+            "opponent_id": "985",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4887853",
             "season": 2025,
@@ -14625,42 +14660,56 @@
     ],
     "clubs": {
         "3008": {
+            "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 68,
-                "participations": 68,
-                "minutes": 4603,
-                "starts": 52,
+                "matches": 70,
+                "participations": 70,
+                "minutes": 4693,
+                "starts": 53,
                 "captain_matches": 1,
                 "goals": 3,
                 "assists": 0,
                 "goals_conceded": 69,
-                "points": 103,
-                "clean_sheets": 30,
-                "wins": 29,
+                "points": 109,
+                "clean_sheets": 32,
+                "wins": 31,
                 "draws": 16,
                 "losses": 23,
-                "goal_matches": 65,
-                "assist_matches": 68,
+                "goal_matches": 67,
+                "assist_matches": 70,
                 "goal_contributions": 3
             },
             "positions": {
-                "CB": 53
+                "CB": 54
             },
             "derived": {
-                "season_count": 2,
-                "points_per_match": 1.515,
-                "minutes_per_match": 67.7,
-                "win_rate": 0.4265,
-                "goals_per_90": 0.059,
+                "season_count": 3,
+                "points_per_match": 1.557,
+                "minutes_per_match": 67.0,
+                "win_rate": 0.4429,
+                "goals_per_90": 0.058,
                 "assists_per_90": 0.0,
-                "contributions_per_90": 0.059,
+                "contributions_per_90": 0.058,
                 "primary_position": "CB"
             },
             "competitions": {
+                "League Cup": {
+                    "matches": 2,
+                    "minutes": 79,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "First Tier": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Play-Offs": {
                     "matches": 3,
                     "minutes": 270,
@@ -14678,12 +14727,6 @@
                     "minutes": 105,
                     "goals": 0,
                     "assists": 0
-                },
-                "League Cup": {
-                    "matches": 1,
-                    "minutes": 79,
-                    "goals": 0,
-                    "assists": 0
                 }
             },
             "awards": {
@@ -14692,6 +14735,7 @@
             }
         },
         "3509": {
+            "type": "national",
             "seasons": [
                 2016,
                 2017,
@@ -14755,6 +14799,7 @@
             }
         },
         "1132": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -14809,6 +14854,7 @@
             }
         },
         "350": {
+            "type": "club",
             "seasons": [
                 2011,
                 2018,
@@ -14893,6 +14939,7 @@
             }
         },
         "1148": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017
@@ -14954,6 +15001,7 @@
             }
         },
         "2814": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015
@@ -15023,6 +15071,7 @@
             }
         },
         "2793": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -15077,6 +15126,7 @@
             }
         },
         "21103": {
+            "type": "national",
             "seasons": [
                 2011,
                 2012,
@@ -15134,6 +15184,7 @@
             }
         },
         "9264": {
+            "type": "club",
             "seasons": [
                 2009,
                 2010,
@@ -15179,6 +15230,7 @@
             }
         },
         "289": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012,
@@ -15239,6 +15291,7 @@
             }
         },
         "1027": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -15293,6 +15346,7 @@
             }
         },
         "873": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -15353,6 +15407,7 @@
             }
         },
         "23102": {
+            "type": "national",
             "seasons": [
                 2009,
                 2010
@@ -15414,6 +15469,7 @@
             }
         },
         "23132": {
+            "type": "national",
             "seasons": [
                 2008
             ],
@@ -15462,14 +15518,14 @@
     },
     "career": {
         "club": {
-            "matches": 782,
-            "minutes": 43348,
+            "matches": 784,
+            "minutes": 43438,
             "goals": 32,
             "assists": 12,
             "goal_contributions": 44,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 17
+            "season_count": 18
         },
         "national": {
             "matches": 130,

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Patrick Bamford",
         "short_name": "P. Bamford",
+        "dateOfBirth": "1993-09-05",
+        "placeOfBirth": "Grantham",
         "nation_1": "England",
         "nation_2": "Ireland",
         "height": 1.85,
@@ -14,6 +17,70 @@
         "prime_date": "2021-06-08"
     },
     "matches": [
+        {
+            "game_id": "5016472",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "350",
+            "opponent_id": "164",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4911087",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "350",
+            "opponent_id": "2288",
+            "position": "CF",
+            "minutes": 78,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4911098",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "350",
+            "opponent_id": "337",
+            "position": "CF",
+            "minutes": 77,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4926017",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "350",
+            "opponent_id": "3820",
+            "position": "CF",
+            "minutes": 70,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4639402",
             "season": 2025,
@@ -12262,45 +12329,53 @@
     ],
     "clubs": {
         "350": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 32,
-                "participations": 32,
-                "minutes": 1857,
-                "starts": 22,
+                "matches": 36,
+                "participations": 36,
+                "minutes": 2082,
+                "starts": 25,
                 "captain_matches": 1,
-                "goals": 13,
+                "goals": 14,
                 "assists": 1,
                 "goals_conceded": 30,
-                "points": 50,
-                "clean_sheets": 14,
-                "wins": 15,
-                "draws": 5,
+                "points": 58,
+                "clean_sheets": 18,
+                "wins": 17,
+                "draws": 7,
                 "losses": 12,
-                "goal_matches": 21,
-                "assist_matches": 31,
-                "goal_contributions": 14
+                "goal_matches": 24,
+                "assist_matches": 35,
+                "goal_contributions": 15
             },
             "positions": {
-                "CF": 21,
+                "CF": 24,
                 "AMF": 1
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.562,
-                "minutes_per_match": 58.0,
-                "win_rate": 0.4688,
-                "goals_per_90": 0.63,
-                "assists_per_90": 0.048,
-                "contributions_per_90": 0.679,
+                "season_count": 2,
+                "points_per_match": 1.611,
+                "minutes_per_match": 57.8,
+                "win_rate": 0.4722,
+                "goals_per_90": 0.605,
+                "assists_per_90": 0.043,
+                "contributions_per_90": 0.648,
                 "primary_position": "CF"
             },
             "competitions": {
+                "League Cup": {
+                    "matches": 2,
+                    "minutes": 70,
+                    "goals": 1,
+                    "assists": 0
+                },
                 "Second Tier": {
-                    "matches": 31,
-                    "minutes": 1823,
+                    "matches": 33,
+                    "minutes": 1978,
                     "goals": 12,
                     "assists": 1
                 },
@@ -12317,6 +12392,7 @@
             }
         },
         "399": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -12399,6 +12475,7 @@
             }
         },
         "20116": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022
@@ -12441,6 +12518,7 @@
             }
         },
         "3299": {
+            "type": "national",
             "seasons": [
                 2020
             ],
@@ -12489,6 +12567,7 @@
             }
         },
         "641": {
+            "type": "club",
             "seasons": [
                 2014,
                 2016,
@@ -12568,6 +12647,7 @@
             }
         },
         "631": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012,
@@ -12651,6 +12731,7 @@
             }
         },
         "1132": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -12706,6 +12787,7 @@
             }
         },
         "1123": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -12755,6 +12837,7 @@
             }
         },
         "873": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -12810,6 +12893,7 @@
             }
         },
         "9565": {
+            "type": "national",
             "seasons": [
                 2013,
                 2014
@@ -12867,6 +12951,7 @@
             }
         },
         "9250": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012,
@@ -12921,6 +13006,7 @@
             }
         },
         "22": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -12977,6 +13063,7 @@
             }
         },
         "991": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013
@@ -13047,6 +13134,7 @@
             }
         },
         "21340": {
+            "type": "national",
             "seasons": [
                 2011
             ],
@@ -13101,6 +13189,7 @@
             }
         },
         "703": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -13159,6 +13248,7 @@
             }
         },
         "31269": {
+            "type": "national",
             "seasons": [
                 2010
             ],
@@ -13207,24 +13297,24 @@
     },
     "career": {
         "club": {
-            "matches": 678,
-            "minutes": 27467,
-            "goals": 147,
+            "matches": 750,
+            "minutes": 27692,
+            "goals": 148,
             "assists": 53,
-            "goal_contributions": 200,
+            "goal_contributions": 201,
             "team_titles": 2,
-            "individual_titles": 2,
-            "season_count": 15
+            "individual_titles": 3,
+            "season_count": 16
         },
         "national": {
-            "matches": 85,
+            "matches": 17,
             "minutes": 255,
             "goals": 1,
             "assists": 0,
             "goal_contributions": 1,
             "team_titles": 0,
-            "individual_titles": 2,
-            "season_count": 8
+            "individual_titles": 1,
+            "season_count": 5
         }
     }
 }

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Alex Mowatt",
         "short_name": "Alex Mowatt",
+        "dateOfBirth": "1995-02-13",
+        "placeOfBirth": "Doncaster",
         "nation_1": "England",
         "nation_2": "Scotland",
         "height": 1.77,
@@ -14,6 +17,54 @@
         "prime_date": "2022-05-13"
     },
     "matches": [
+        {
+            "game_id": "4911081",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "22",
+            "opponent_id": "603",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4911094",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "22",
+            "opponent_id": "358",
+            "position": "",
+            "minutes": 36,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4926014",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "984",
+            "opponent_id": "1194",
+            "position": "CMF",
+            "minutes": 73,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4639487",
             "season": 2025,
@@ -388,7 +439,7 @@
             "competition_type": "Second Tier",
             "club_id": "984",
             "opponent_id": "2288",
-            "position": "DMF",
+            "position": "CMF",
             "minutes": 60,
             "started": true,
             "captain": true,
@@ -404,7 +455,7 @@
             "competition_type": "Second Tier",
             "club_id": "984",
             "opponent_id": "1039",
-            "position": "DMF",
+            "position": "CMF",
             "minutes": 74,
             "started": true,
             "captain": true,
@@ -10593,48 +10644,105 @@
     ],
     "achievements": [],
     "clubs": {
+        "22": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 2,
+                "participations": 2,
+                "minutes": 126,
+                "starts": 1,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 4,
+                "points": 1,
+                "clean_sheets": 0,
+                "wins": 0,
+                "draws": 1,
+                "losses": 1,
+                "goal_matches": 2,
+                "assist_matches": 2,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "DMF": 1
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 0.5,
+                "minutes_per_match": 63.0,
+                "win_rate": 0.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "DMF"
+            },
+            "competitions": {
+                "Second Tier": {
+                    "matches": 2,
+                    "minutes": 126,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "984": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 199,
-                "participations": 199,
-                "minutes": 12947,
-                "starts": 148,
-                "captain_matches": 25,
+                "matches": 200,
+                "participations": 200,
+                "minutes": 13020,
+                "starts": 149,
+                "captain_matches": 26,
                 "goals": 14,
                 "assists": 13,
                 "goals_conceded": 149,
-                "points": 271,
-                "clean_sheets": 101,
-                "wins": 70,
+                "points": 274,
+                "clean_sheets": 102,
+                "wins": 71,
                 "draws": 61,
                 "losses": 68,
-                "goal_matches": 186,
-                "assist_matches": 186,
+                "goal_matches": 187,
+                "assist_matches": 187,
                 "goal_contributions": 27
             },
             "positions": {
-                "CMF": 74,
-                "DMF": 74,
+                "CMF": 77,
+                "DMF": 72,
                 "AMF": 1
             },
             "derived": {
-                "season_count": 5,
-                "points_per_match": 1.362,
+                "season_count": 6,
+                "points_per_match": 1.37,
                 "minutes_per_match": 65.1,
-                "win_rate": 0.3518,
+                "win_rate": 0.355,
                 "goals_per_90": 0.097,
                 "assists_per_90": 0.09,
-                "contributions_per_90": 0.188,
+                "contributions_per_90": 0.187,
                 "primary_position": "CMF"
             },
             "competitions": {
+                "League Cup": {
+                    "matches": 6,
+                    "minutes": 327,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Second Tier": {
                     "matches": 186,
                     "minutes": 12269,
@@ -10644,12 +10752,6 @@
                 "Domestic Cup": {
                     "matches": 6,
                     "minutes": 252,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "League Cup": {
-                    "matches": 5,
-                    "minutes": 254,
                     "goals": 0,
                     "assists": 0
                 },
@@ -10666,6 +10768,7 @@
             }
         },
         "641": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -10727,6 +10830,7 @@
             }
         },
         "349": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -10813,6 +10917,7 @@
             }
         },
         "988": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -10876,6 +10981,7 @@
             }
         },
         "399": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -10942,6 +11048,7 @@
             }
         },
         "22907": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -10990,6 +11097,7 @@
             }
         },
         "21340": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -11038,14 +11146,14 @@
     },
     "career": {
         "club": {
-            "matches": 658,
-            "minutes": 38102,
+            "matches": 661,
+            "minutes": 38301,
             "goals": 50,
             "assists": 52,
             "goal_contributions": 102,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 13
+            "season_count": 14
         },
         "national": {
             "matches": 3,

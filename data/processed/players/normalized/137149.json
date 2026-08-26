@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Liam Palmer",
         "short_name": "Liam Palmer",
+        "dateOfBirth": "1991-09-19",
+        "placeOfBirth": "Worksop",
         "nation_1": "Scotland",
         "nation_2": "England",
         "height": 1.88,
@@ -14,6 +17,70 @@
         "prime_date": "2020-02-27"
     },
     "matches": [
+        {
+            "game_id": "5016478",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "1035",
+            "opponent_id": "543",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4911182",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "1035",
+            "opponent_id": "1027",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4911241",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "1035",
+            "opponent_id": "1150",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4925989",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "1035",
+            "opponent_id": "355",
+            "position": "",
+            "minutes": 5,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4639487",
             "season": 2025,
@@ -14130,6 +14197,7 @@
     "achievements": [],
     "clubs": {
         "1035": {
+            "type": "club",
             "seasons": [
                 2009,
                 2010,
@@ -14146,46 +14214,59 @@
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 794,
-                "participations": 794,
-                "minutes": 38849,
-                "starts": 420,
-                "captain_matches": 39,
+                "matches": 798,
+                "participations": 798,
+                "minutes": 39034,
+                "starts": 422,
+                "captain_matches": 41,
                 "goals": 15,
                 "assists": 20,
-                "goals_conceded": 547,
-                "points": 1118,
-                "clean_sheets": 494,
-                "wins": 306,
+                "goals_conceded": 550,
+                "points": 1124,
+                "clean_sheets": 496,
+                "wins": 308,
                 "draws": 200,
-                "losses": 288,
-                "goal_matches": 779,
-                "assist_matches": 775,
+                "losses": 290,
+                "goal_matches": 783,
+                "assist_matches": 779,
                 "goal_contributions": 35
             },
             "positions": {
-                "CB": 96,
+                "RB": 215,
+                "CB": 97,
                 "RM": 72,
-                "RB": 214,
                 "CMF": 5,
                 "LB": 31,
                 "DMF": 22,
                 "LM": 4
             },
             "derived": {
-                "season_count": 16,
-                "points_per_match": 1.408,
+                "season_count": 17,
+                "points_per_match": 1.409,
                 "minutes_per_match": 48.9,
-                "win_rate": 0.3854,
+                "win_rate": 0.386,
                 "goals_per_90": 0.035,
                 "assists_per_90": 0.046,
                 "contributions_per_90": 0.081,
                 "primary_position": "RB"
             },
             "competitions": {
+                "League Cup": {
+                    "matches": 38,
+                    "minutes": 1746,
+                    "goals": 0,
+                    "assists": 1
+                },
+                "Third Tier": {
+                    "matches": 186,
+                    "minutes": 8324,
+                    "goals": 8,
+                    "assists": 6
+                },
                 "Second Tier": {
                     "matches": 508,
                     "minutes": 26165,
@@ -14198,23 +14279,11 @@
                     "goals": 1,
                     "assists": 1
                 },
-                "League Cup": {
-                    "matches": 36,
-                    "minutes": 1651,
-                    "goals": 0,
-                    "assists": 1
-                },
                 "Play-Offs": {
                     "matches": 10,
                     "minutes": 440,
                     "goals": 1,
                     "assists": 1
-                },
-                "Third Tier": {
-                    "matches": 184,
-                    "minutes": 8234,
-                    "goals": 8,
-                    "assists": 6
                 },
                 "Further Cup": {
                     "matches": 12,
@@ -14229,6 +14298,7 @@
             }
         },
         "3380": {
+            "type": "national",
             "seasons": [
                 2018,
                 2019,
@@ -14286,6 +14356,7 @@
             }
         },
         "1074": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -14354,6 +14425,7 @@
             }
         },
         "16868": {
+            "type": "national",
             "seasons": [
                 2010,
                 2011
@@ -14407,6 +14479,7 @@
             }
         },
         "17622": {
+            "type": "national",
             "seasons": [
                 2009
             ],
@@ -14461,14 +14534,14 @@
     },
     "career": {
         "club": {
-            "matches": 846,
-            "minutes": 42848,
+            "matches": 850,
+            "minutes": 43033,
             "goals": 15,
             "assists": 22,
             "goal_contributions": 37,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 17
+            "season_count": 18
         },
         "national": {
             "matches": 36,

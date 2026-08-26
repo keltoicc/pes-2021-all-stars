@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Eoin Toal",
         "short_name": "Eoin Toal",
+        "dateOfBirth": "1999-02-15",
+        "placeOfBirth": "Armagh",
         "nation_1": "Northern Ireland",
         "nation_2": "",
         "height": 1.91,
@@ -14,6 +17,54 @@
         "prime_date": "2026-05-12"
     },
     "matches": [
+        {
+            "game_id": "4911085",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "355",
+            "opponent_id": "1039",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 1
+        },
+        {
+            "game_id": "4911092",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "355",
+            "opponent_id": "466",
+            "position": "",
+            "minutes": 8,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4925989",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "355",
+            "opponent_id": "1035",
+            "position": "",
+            "minutes": 14,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4885997",
             "season": 2025,
@@ -7537,44 +7588,58 @@
     ],
     "clubs": {
         "355": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 233,
-                "participations": 233,
-                "minutes": 12665,
+                "matches": 236,
+                "participations": 236,
+                "minutes": 12687,
                 "starts": 141,
                 "captain_matches": 50,
                 "goals": 13,
                 "assists": 4,
-                "goals_conceded": 158,
-                "points": 406,
-                "clean_sheets": 141,
-                "wins": 118,
-                "draws": 52,
-                "losses": 63,
-                "goal_matches": 220,
-                "assist_matches": 230,
+                "goals_conceded": 159,
+                "points": 410,
+                "clean_sheets": 143,
+                "wins": 119,
+                "draws": 53,
+                "losses": 64,
+                "goal_matches": 223,
+                "assist_matches": 233,
                 "goal_contributions": 17
             },
             "positions": {
                 "CB": 141
             },
             "derived": {
-                "season_count": 4,
-                "points_per_match": 1.742,
-                "minutes_per_match": 54.4,
-                "win_rate": 0.5064,
+                "season_count": 5,
+                "points_per_match": 1.737,
+                "minutes_per_match": 53.8,
+                "win_rate": 0.5042,
                 "goals_per_90": 0.092,
                 "assists_per_90": 0.028,
                 "contributions_per_90": 0.121,
                 "primary_position": "CB"
             },
             "competitions": {
+                "Second Tier": {
+                    "matches": 2,
+                    "minutes": 8,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "League Cup": {
+                    "matches": 9,
+                    "minutes": 239,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Play-Offs": {
                     "matches": 8,
                     "minutes": 583,
@@ -7598,12 +7663,6 @@
                     "minutes": 405,
                     "goals": 0,
                     "assists": 0
-                },
-                "League Cup": {
-                    "matches": 8,
-                    "minutes": 225,
-                    "goals": 0,
-                    "assists": 0
                 }
             },
             "awards": {
@@ -7614,6 +7673,7 @@
             }
         },
         "5674": {
+            "type": "national",
             "seasons": [
                 2022,
                 2023,
@@ -7671,6 +7731,7 @@
             }
         },
         "920": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -7749,6 +7810,7 @@
             }
         },
         "17621": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -7803,6 +7865,7 @@
             }
         },
         "28031": {
+            "type": "national",
             "seasons": [
                 2017
             ],
@@ -7851,6 +7914,7 @@
             }
         },
         "25790": {
+            "type": "national",
             "seasons": [
                 2015
             ],
@@ -7901,24 +7965,24 @@
     },
     "career": {
         "club": {
-            "matches": 233,
-            "minutes": 12665,
-            "goals": 13,
+            "matches": 423,
+            "minutes": 26281,
+            "goals": 19,
             "assists": 4,
-            "goal_contributions": 17,
-            "team_titles": 1,
-            "individual_titles": 0,
-            "season_count": 4
-        },
-        "national": {
-            "matches": 236,
-            "minutes": 15889,
-            "goals": 7,
-            "assists": 1,
-            "goal_contributions": 8,
-            "team_titles": 1,
+            "goal_contributions": 23,
+            "team_titles": 2,
             "individual_titles": 0,
             "season_count": 11
+        },
+        "national": {
+            "matches": 49,
+            "minutes": 2295,
+            "goals": 1,
+            "assists": 1,
+            "goal_contributions": 2,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 7
         }
     }
 }

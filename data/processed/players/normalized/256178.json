@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Joe Gomez",
         "short_name": "Joe Gomez",
+        "dateOfBirth": "1997-05-23",
+        "placeOfBirth": "London",
         "nation_1": "England",
         "nation_2": "The Gambia",
         "height": 1.88,
@@ -14,6 +17,22 @@
         "prime_date": "2020-03-09"
     },
     "matches": [
+        {
+            "game_id": "4899190",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "31",
+            "opponent_id": "762",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "injured",
+            "club_points": 1
+        },
         {
             "game_id": "4626172",
             "season": 2025,
@@ -13375,22 +13394,6 @@
             "club_points": 3
         },
         {
-            "game_id": "2286967",
-            "season": 2012,
-            "competition_type": "National Team",
-            "club_id": "23260",
-            "opponent_id": "10933",
-            "position": null,
-            "minutes": 0,
-            "started": false,
-            "captain": false,
-            "goals": 0,
-            "assists": 0,
-            "goals_conceded": 0,
-            "participation": "in squad",
-            "club_points": 0
-        },
-        {
             "game_id": "3816967",
             "season": 2012,
             "competition_type": "National youth team",
@@ -13403,7 +13406,7 @@
             "goals": 0,
             "assists": 0,
             "goals_conceded": 0,
-            "participation": "not in squad",
+            "participation": "in squad",
             "club_points": 0
         },
         {
@@ -13641,6 +13644,7 @@
     ],
     "clubs": {
         "31": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -13652,24 +13656,25 @@
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 615,
-                "participations": 615,
+                "matches": 616,
+                "participations": 616,
                 "minutes": 17762,
                 "starts": 191,
                 "captain_matches": 6,
                 "goals": 0,
                 "assists": 12,
                 "goals_conceded": 221,
-                "points": 1248,
-                "clean_sheets": 486,
+                "points": 1249,
+                "clean_sheets": 487,
                 "wins": 375,
-                "draws": 123,
+                "draws": 124,
                 "losses": 117,
-                "goal_matches": 615,
-                "assist_matches": 603,
+                "goal_matches": 616,
+                "assist_matches": 604,
                 "goal_contributions": 12
             },
             "positions": {
@@ -13679,10 +13684,10 @@
                 "DMF": 2
             },
             "derived": {
-                "season_count": 11,
-                "points_per_match": 2.029,
-                "minutes_per_match": 28.9,
-                "win_rate": 0.6098,
+                "season_count": 12,
+                "points_per_match": 2.028,
+                "minutes_per_match": 28.8,
+                "win_rate": 0.6088,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.061,
                 "contributions_per_90": 0.061,
@@ -13690,7 +13695,7 @@
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 418,
+                    "matches": 419,
                     "minutes": 10674,
                     "goals": 0,
                     "assists": 7
@@ -13740,6 +13745,7 @@
             }
         },
         "3299": {
+            "type": "national",
             "seasons": [
                 2017,
                 2018,
@@ -13801,6 +13807,7 @@
             }
         },
         "9252": {
+            "type": "club",
             "seasons": [
                 2016,
                 2018
@@ -13844,6 +13851,7 @@
             }
         },
         "9565": {
+            "type": "national",
             "seasons": [
                 2015,
                 2016,
@@ -13907,6 +13915,7 @@
             }
         },
         "358": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -13969,6 +13978,7 @@
             }
         },
         "21340": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -14023,13 +14033,14 @@
             }
         },
         "23260": {
+            "type": "national",
             "seasons": [
                 2012,
                 2013
             ],
             "stats": {
-                "matches": 31,
-                "participations": 31,
+                "matches": 30,
+                "participations": 30,
                 "minutes": 1327,
                 "starts": 16,
                 "captain_matches": 2,
@@ -14037,12 +14048,12 @@
                 "assists": 1,
                 "goals_conceded": 15,
                 "points": 58,
-                "clean_sheets": 21,
+                "clean_sheets": 20,
                 "wins": 19,
                 "draws": 1,
-                "losses": 11,
-                "goal_matches": 31,
-                "assist_matches": 30,
+                "losses": 10,
+                "goal_matches": 30,
+                "assist_matches": 29,
                 "goal_contributions": 1
             },
             "positions": {
@@ -14050,9 +14061,9 @@
             },
             "derived": {
                 "season_count": 2,
-                "points_per_match": 1.871,
-                "minutes_per_match": 42.8,
-                "win_rate": 0.6129,
+                "points_per_match": 1.933,
+                "minutes_per_match": 44.2,
+                "win_rate": 0.6333,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.068,
                 "contributions_per_90": 0.068,
@@ -14072,7 +14083,7 @@
                     "assists": 0
                 },
                 "National Team": {
-                    "matches": 11,
+                    "matches": 10,
                     "minutes": 178,
                     "goals": 0,
                     "assists": 0
@@ -14086,6 +14097,7 @@
             }
         },
         "30322": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -14136,24 +14148,24 @@
     },
     "career": {
         "club": {
-            "matches": 69,
-            "minutes": 2491,
+            "matches": 685,
+            "minutes": 20253,
             "goals": 1,
-            "assists": 1,
-            "goal_contributions": 2,
-            "team_titles": 0,
+            "assists": 13,
+            "goal_contributions": 14,
+            "team_titles": 9,
             "individual_titles": 0,
-            "season_count": 3
+            "season_count": 13
         },
         "national": {
-            "matches": 771,
-            "minutes": 21039,
+            "matches": 155,
+            "minutes": 3277,
             "goals": 0,
-            "assists": 13,
-            "goal_contributions": 13,
-            "team_titles": 10,
+            "assists": 1,
+            "goal_contributions": 1,
+            "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 14
+            "season_count": 11
         }
     }
 }

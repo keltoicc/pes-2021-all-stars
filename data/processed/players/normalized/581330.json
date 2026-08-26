@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Eiran Cashin",
         "short_name": "E. Cashin",
+        "dateOfBirth": "2001-11-09",
+        "placeOfBirth": "Mansfield",
         "nation_1": "Ireland",
         "nation_2": "England",
         "height": 1.84,
@@ -14,6 +17,38 @@
         "prime_date": "2025-05-30"
     },
     "matches": [
+        {
+            "game_id": "4899188",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1237",
+            "opponent_id": "405",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "5013813",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "1237",
+            "opponent_id": "1293",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 1
+        },
         {
             "game_id": "4846046",
             "season": 2025,
@@ -5929,7 +5964,70 @@
         }
     ],
     "clubs": {
+        "1237": {
+            "type": "club",
+            "seasons": [
+                2024,
+                2026
+            ],
+            "stats": {
+                "matches": 20,
+                "participations": 20,
+                "minutes": 19,
+                "starts": 0,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 2,
+                "points": 37,
+                "clean_sheets": 19,
+                "wins": 11,
+                "draws": 4,
+                "losses": 5,
+                "goal_matches": 20,
+                "assist_matches": 20,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "CB": 2
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 1.85,
+                "minutes_per_match": 0.9,
+                "win_rate": 0.55,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "CB"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 16,
+                    "minutes": 19,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "International Cup": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 3,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3509": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -5976,6 +6074,7 @@
             }
         },
         "164": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -6031,6 +6130,7 @@
             }
         },
         "337": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -6085,61 +6185,8 @@
                 "individual_titles": {}
             }
         },
-        "1237": {
-            "seasons": [
-                2024
-            ],
-            "stats": {
-                "matches": 18,
-                "participations": 18,
-                "minutes": 19,
-                "starts": 0,
-                "captain_matches": 0,
-                "goals": 0,
-                "assists": 0,
-                "goals_conceded": 2,
-                "points": 33,
-                "clean_sheets": 17,
-                "wins": 10,
-                "draws": 3,
-                "losses": 5,
-                "goal_matches": 18,
-                "assist_matches": 18,
-                "goal_contributions": 0
-            },
-            "positions": {
-                "CB": 2
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 1.833,
-                "minutes_per_match": 1.1,
-                "win_rate": 0.5556,
-                "goals_per_90": 0.0,
-                "assists_per_90": 0.0,
-                "contributions_per_90": 0.0,
-                "primary_position": "CB"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 15,
-                    "minutes": 19,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Domestic Cup": {
-                    "matches": 3,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "22": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -6217,6 +6264,7 @@
             }
         },
         "21103": {
+            "type": "national",
             "seasons": [
                 2021
             ],
@@ -6266,6 +6314,7 @@
             }
         },
         "39337": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -6309,6 +6358,7 @@
             }
         },
         "10002": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -6361,6 +6411,7 @@
             }
         },
         "76463": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -6402,6 +6453,7 @@
             }
         },
         "37709": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -6452,14 +6504,14 @@
     },
     "career": {
         "club": {
-            "matches": 363,
+            "matches": 365,
             "minutes": 19765,
             "goals": 16,
             "assists": 7,
             "goal_contributions": 23,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 9
+            "season_count": 10
         },
         "national": {
             "matches": 6,

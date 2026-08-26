@@ -1,8 +1,11 @@
 {
     "player": {
+        "name": "Darnell Furlong",
         "short_name": "D. Furlong",
+        "dateOfBirth": "1995-10-31",
+        "placeOfBirth": "Luton",
         "nation_1": "England",
-        "nation_2": null,
+        "nation_2": "235",
         "height": 1.83,
         "foot": "Right",
         "position_group": "DEFENDER",
@@ -14,6 +17,38 @@
         "prime_date": "2022-05-13"
     },
     "matches": [
+        {
+            "game_id": "5016482",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "677",
+            "opponent_id": "1003",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4899185",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "677",
+            "opponent_id": "289",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
         {
             "game_id": "4639427",
             "season": 2025,
@@ -8586,41 +8621,55 @@
     ],
     "clubs": {
         "677": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 45,
-                "participations": 45,
-                "minutes": 3525,
-                "starts": 40,
+                "matches": 47,
+                "participations": 47,
+                "minutes": 3615,
+                "starts": 41,
                 "captain_matches": 0,
                 "goals": 1,
                 "assists": 4,
-                "goals_conceded": 37,
-                "points": 85,
-                "clean_sheets": 22,
-                "wins": 24,
+                "goals_conceded": 38,
+                "points": 91,
+                "clean_sheets": 23,
+                "wins": 26,
                 "draws": 13,
                 "losses": 8,
-                "goal_matches": 44,
-                "assist_matches": 41,
+                "goal_matches": 46,
+                "assist_matches": 43,
                 "goal_contributions": 5
             },
             "positions": {
-                "RB": 40
+                "RB": 41
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.889,
-                "minutes_per_match": 78.3,
-                "win_rate": 0.5333,
-                "goals_per_90": 0.026,
-                "assists_per_90": 0.102,
-                "contributions_per_90": 0.128,
+                "season_count": 2,
+                "points_per_match": 1.936,
+                "minutes_per_match": 76.9,
+                "win_rate": 0.5532,
+                "goals_per_90": 0.025,
+                "assists_per_90": 0.1,
+                "contributions_per_90": 0.124,
                 "primary_position": "RB"
             },
             "competitions": {
+                "League Cup": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "First Tier": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Second Tier": {
                     "matches": 43,
                     "minutes": 3525,
@@ -8640,6 +8689,7 @@
             }
         },
         "984": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -8721,6 +8771,7 @@
             }
         },
         "1039": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -8793,6 +8844,7 @@
             }
         },
         "352": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -8856,6 +8908,7 @@
             }
         },
         "986": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -8904,6 +8957,7 @@
             }
         },
         "1302": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -8968,14 +9022,14 @@
     },
     "career": {
         "club": {
-            "matches": 535,
-            "minutes": 35135,
+            "matches": 537,
+            "minutes": 35225,
             "goals": 16,
             "assists": 29,
             "goal_contributions": 45,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 12
+            "season_count": 13
         },
         "national": {
             "matches": 0,

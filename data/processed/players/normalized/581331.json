@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Liam Thompson",
         "short_name": "L. Thompson",
+        "dateOfBirth": "2002-04-29",
+        "placeOfBirth": "Nottingham",
         "nation_1": "England",
         "nation_2": "",
         "height": 1.73,
@@ -14,6 +17,70 @@
         "prime_date": "2026-05-28"
     },
     "matches": [
+        {
+            "game_id": "4911181",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "3820",
+            "opponent_id": "1072",
+            "position": "AMF",
+            "minutes": 85,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "5016600",
+            "season": 2026,
+            "competition_type": "Further Cup",
+            "club_id": "3820",
+            "opponent_id": "9265",
+            "position": "",
+            "minutes": 33,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4911242",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "3820",
+            "opponent_id": "2454",
+            "position": "AMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4926017",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "3820",
+            "opponent_id": "350",
+            "position": "",
+            "minutes": 30,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4639402",
             "season": 2025,
@@ -6313,7 +6380,69 @@
         }
     ],
     "clubs": {
+        "3820": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 4,
+                "participations": 4,
+                "minutes": 238,
+                "starts": 2,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 5,
+                "points": 3,
+                "clean_sheets": 0,
+                "wins": 1,
+                "draws": 0,
+                "losses": 3,
+                "goal_matches": 4,
+                "assist_matches": 4,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "AMF": 2
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 0.75,
+                "minutes_per_match": 59.5,
+                "win_rate": 0.25,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "AMF"
+            },
+            "competitions": {
+                "Third Tier": {
+                    "matches": 2,
+                    "minutes": 175,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Further Cup": {
+                    "matches": 1,
+                    "minutes": 33,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "League Cup": {
+                    "matches": 1,
+                    "minutes": 30,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "22": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -6395,6 +6524,7 @@
             }
         },
         "39337": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -6450,6 +6580,7 @@
             }
         },
         "2964": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -6498,6 +6629,7 @@
             }
         },
         "10002": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -6551,6 +6683,7 @@
             }
         },
         "76463": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -6594,14 +6727,14 @@
     },
     "career": {
         "club": {
-            "matches": 393,
-            "minutes": 12379,
+            "matches": 397,
+            "minutes": 12617,
             "goals": 5,
             "assists": 6,
             "goal_contributions": 11,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 9
+            "season_count": 10
         },
         "national": {
             "matches": 0,

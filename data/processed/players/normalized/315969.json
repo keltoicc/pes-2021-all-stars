@@ -18,6 +18,22 @@
     },
     "matches": [
         {
+            "game_id": "4893346",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "6195",
+            "opponent_id": "252",
+            "position": "CMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
             "game_id": "4776651",
             "season": 2025,
             "competition_type": "National Team",
@@ -640,22 +656,6 @@
             "goals_conceded": 1,
             "participation": "played",
             "club_points": 3
-        },
-        {
-            "game_id": "4904438",
-            "season": 2026,
-            "competition_type": "Domestic Cup",
-            "club_id": "6195",
-            "opponent_id": "0",
-            "position": null,
-            "minutes": 0,
-            "started": false,
-            "captain": false,
-            "goals": 0,
-            "assists": 0,
-            "goals_conceded": 0,
-            "participation": "not in squad",
-            "club_points": 0
         },
         {
             "game_id": "4620821",
@@ -10458,6 +10458,85 @@
         }
     ],
     "clubs": {
+        "6195": {
+            "type": "club",
+            "seasons": [
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 89,
+                "participations": 89,
+                "minutes": 6763,
+                "starts": 75,
+                "captain_matches": 0,
+                "goals": 27,
+                "assists": 10,
+                "goals_conceded": 65,
+                "points": 178,
+                "clean_sheets": 49,
+                "wins": 53,
+                "draws": 19,
+                "losses": 17,
+                "goal_matches": 66,
+                "assist_matches": 80,
+                "goal_contributions": 37
+            },
+            "positions": {
+                "CMF": 51,
+                "AMF": 12,
+                "DMF": 8,
+                "LW": 5,
+                "LM": 5
+            },
+            "derived": {
+                "season_count": 3,
+                "points_per_match": 2.0,
+                "minutes_per_match": 76.0,
+                "win_rate": 0.5955,
+                "goals_per_90": 0.359,
+                "assists_per_90": 0.133,
+                "contributions_per_90": 0.492,
+                "primary_position": "CMF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 75,
+                    "minutes": 5824,
+                    "goals": 22,
+                    "assists": 9
+                },
+                "Domestic Cup": {
+                    "matches": 4,
+                    "minutes": 60,
+                    "goals": 1,
+                    "assists": 0
+                },
+                "International Cup": {
+                    "matches": 8,
+                    "minutes": 699,
+                    "goals": 4,
+                    "assists": 1
+                },
+                "Domestic Super Cup": {
+                    "matches": 2,
+                    "minutes": 180,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Italian champion": 1,
+                    "Italian Super Cup winner": 1
+                },
+                "individual_titles": {
+                    "Footballer of the Year": 1,
+                    "League Player of the Year": 1
+                }
+            }
+        },
         "3380": {
             "type": "national",
             "seasons": [
@@ -10523,85 +10602,6 @@
             "awards": {
                 "team_titles": {},
                 "individual_titles": {
-                    "League Player of the Year": 1
-                }
-            }
-        },
-        "6195": {
-            "type": "club",
-            "seasons": [
-                2024,
-                2025,
-                2026
-            ],
-            "stats": {
-                "matches": 89,
-                "participations": 89,
-                "minutes": 6673,
-                "starts": 74,
-                "captain_matches": 0,
-                "goals": 27,
-                "assists": 10,
-                "goals_conceded": 65,
-                "points": 175,
-                "clean_sheets": 49,
-                "wins": 52,
-                "draws": 19,
-                "losses": 18,
-                "goal_matches": 66,
-                "assist_matches": 80,
-                "goal_contributions": 37
-            },
-            "positions": {
-                "CMF": 50,
-                "AMF": 12,
-                "DMF": 8,
-                "LW": 5,
-                "LM": 5
-            },
-            "derived": {
-                "season_count": 3,
-                "points_per_match": 1.966,
-                "minutes_per_match": 75.0,
-                "win_rate": 0.5843,
-                "goals_per_90": 0.364,
-                "assists_per_90": 0.135,
-                "contributions_per_90": 0.499,
-                "primary_position": "CMF"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 74,
-                    "minutes": 5734,
-                    "goals": 22,
-                    "assists": 9
-                },
-                "Domestic Cup": {
-                    "matches": 5,
-                    "minutes": 60,
-                    "goals": 1,
-                    "assists": 0
-                },
-                "International Cup": {
-                    "matches": 8,
-                    "minutes": 699,
-                    "goals": 4,
-                    "assists": 1
-                },
-                "Domestic Super Cup": {
-                    "matches": 2,
-                    "minutes": 180,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Italian champion": 1,
-                    "Italian Super Cup winner": 1
-                },
-                "individual_titles": {
-                    "Footballer of the Year": 1,
                     "League Player of the Year": 1
                 }
             }
@@ -10840,7 +10840,7 @@
     "career": {
         "club": {
             "matches": 551,
-            "minutes": 25465,
+            "minutes": 25555,
             "goals": 61,
             "assists": 18,
             "goal_contributions": 79,

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Lewis Travis",
         "short_name": "L. Travis",
+        "dateOfBirth": "1997-10-16",
+        "placeOfBirth": "Whiston",
         "nation_1": "England",
         "nation_2": "",
         "height": 1.83,
@@ -14,6 +17,54 @@
         "prime_date": "2023-06-01"
     },
     "matches": [
+        {
+            "game_id": "4911081",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "22",
+            "opponent_id": "603",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4911094",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "22",
+            "opponent_id": "358",
+            "position": "CMF",
+            "minutes": 84,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4925995",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "22",
+            "opponent_id": "1198",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4639402",
             "season": 2025,
@@ -9234,47 +9285,55 @@
     "achievements": [],
     "clubs": {
         "22": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 44,
-                "participations": 44,
-                "minutes": 2216,
-                "starts": 25,
-                "captain_matches": 24,
+                "matches": 47,
+                "participations": 47,
+                "minutes": 2480,
+                "starts": 28,
+                "captain_matches": 27,
                 "goals": 0,
                 "assists": 1,
-                "goals_conceded": 31,
-                "points": 68,
+                "goals_conceded": 37,
+                "points": 69,
                 "clean_sheets": 25,
                 "wins": 20,
-                "draws": 8,
-                "losses": 16,
-                "goal_matches": 44,
-                "assist_matches": 43,
+                "draws": 9,
+                "losses": 18,
+                "goal_matches": 47,
+                "assist_matches": 46,
                 "goal_contributions": 1
             },
             "positions": {
-                "DMF": 24,
-                "CMF": 1
+                "DMF": 26,
+                "CMF": 2
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.545,
-                "minutes_per_match": 50.4,
-                "win_rate": 0.4545,
+                "season_count": 2,
+                "points_per_match": 1.468,
+                "minutes_per_match": 52.8,
+                "win_rate": 0.4255,
                 "goals_per_90": 0.0,
-                "assists_per_90": 0.041,
-                "contributions_per_90": 0.041,
+                "assists_per_90": 0.036,
+                "contributions_per_90": 0.036,
                 "primary_position": "DMF"
             },
             "competitions": {
                 "Second Tier": {
-                    "matches": 43,
-                    "minutes": 2153,
+                    "matches": 45,
+                    "minutes": 2327,
                     "goals": 0,
                     "assists": 1
+                },
+                "League Cup": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
                 },
                 "Domestic Cup": {
                     "matches": 1,
@@ -9289,6 +9348,7 @@
             }
         },
         "164": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -9376,6 +9436,7 @@
             }
         },
         "677": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -9431,6 +9492,7 @@
             }
         },
         "9258": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -9496,6 +9558,7 @@
             }
         },
         "6949": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -9537,6 +9600,7 @@
             }
         },
         "6922": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -9578,14 +9642,14 @@
     },
     "career": {
         "club": {
-            "matches": 576,
-            "minutes": 27279,
+            "matches": 579,
+            "minutes": 27543,
             "goals": 8,
             "assists": 21,
             "goal_contributions": 29,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 12
+            "season_count": 13
         },
         "national": {
             "matches": 0,

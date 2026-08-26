@@ -1,19 +1,38 @@
 {
     "player": {
+        "name": "Dwight McNeil",
         "short_name": "D. McNeil",
+        "dateOfBirth": "1999-11-22",
+        "placeOfBirth": "Rochdale",
         "nation_1": "England",
         "nation_2": "Jamaica",
         "height": 1.83,
         "foot": "Left",
         "position_group": "FORWARD",
         "position_1": "LW",
-        "position_2": "LM",
+        "position_2": "AMF",
         "position_3": "RW",
         "former_clubs": "JJB Sports (2003-2004), Manchester United (2004-2014), Burnley FC (2014–2018)",
         "market_value": 25000000,
         "prime_date": "2025-05-30"
     },
     "matches": [
+        {
+            "game_id": "4899184",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "873",
+            "opponent_id": "29",
+            "position": "AMF",
+            "minutes": 63,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4626176",
             "season": 2025,
@@ -1163,7 +1182,7 @@
             "goals": 0,
             "assists": 0,
             "goals_conceded": 0,
-            "participation": "not in squad",
+            "participation": "injured",
             "club_points": 1
         },
         {
@@ -2276,7 +2295,7 @@
             "competition_type": "First Tier",
             "club_id": "29",
             "opponent_id": "703",
-            "position": "RM",
+            "position": "RW",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -6000,7 +6019,57 @@
         }
     ],
     "clubs": {
+        "873": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 1,
+                "participations": 1,
+                "minutes": 63,
+                "starts": 1,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 2,
+                "points": 0,
+                "clean_sheets": 0,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "goal_matches": 1,
+                "assist_matches": 1,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "AMF": 1
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 0.0,
+                "minutes_per_match": 63.0,
+                "win_rate": 0.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "AMF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 1,
+                    "minutes": 63,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "29": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -6026,10 +6095,10 @@
                 "goal_contributions": 34
             },
             "positions": {
-                "RW": 28,
+                "RW": 29,
                 "LW": 52,
                 "AMF": 12,
-                "RM": 6,
+                "RM": 5,
                 "LB": 3,
                 "LM": 11,
                 "CMF": 1
@@ -6070,6 +6139,7 @@
             }
         },
         "9261": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -6118,6 +6188,7 @@
             }
         },
         "1132": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -6193,6 +6264,7 @@
             }
         },
         "9565": {
+            "type": "national",
             "seasons": [
                 2019,
                 2020
@@ -6256,6 +6328,7 @@
             }
         },
         "22907": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -6310,6 +6383,7 @@
             }
         },
         "24214": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -6349,6 +6423,7 @@
             }
         },
         "14466": {
+            "type": "club",
             "seasons": [
                 2014,
                 2017
@@ -6394,24 +6469,24 @@
     },
     "career": {
         "club": {
-            "matches": 179,
-            "minutes": 9244,
-            "goals": 15,
-            "assists": 19,
-            "goal_contributions": 34,
+            "matches": 355,
+            "minutes": 21426,
+            "goals": 22,
+            "assists": 36,
+            "goal_contributions": 58,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 6
+            "season_count": 11
         },
         "national": {
-            "matches": 194,
-            "minutes": 12975,
-            "goals": 8,
-            "assists": 20,
-            "goal_contributions": 28,
+            "matches": 19,
+            "minutes": 856,
+            "goals": 1,
+            "assists": 3,
+            "goal_contributions": 4,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 5
+            "season_count": 3
         }
     }
 }

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Martin Ødegaard",
         "short_name": "M. Ødegaard",
+        "dateOfBirth": "1998-12-17",
+        "placeOfBirth": "Drammen",
         "nation_1": "Norway",
         "nation_2": "",
         "height": 1.78,
@@ -14,6 +17,38 @@
         "prime_date": "2024-12-16"
     },
     "matches": [
+        {
+            "game_id": "4899182",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "11",
+            "opponent_id": "990",
+            "position": "AMF",
+            "minutes": 76,
+            "started": true,
+            "captain": true,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4942122",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "11",
+            "opponent_id": "281",
+            "position": "AMF",
+            "minutes": 84,
+            "started": true,
+            "captain": true,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4776706",
             "season": 2025,
@@ -100,7 +135,7 @@
             "competition_type": "National Team",
             "club_id": "3440",
             "opponent_id": "3560",
-            "position": "CMF",
+            "position": "AMF",
             "minutes": 81,
             "started": true,
             "captain": true,
@@ -12496,6 +12531,13 @@
         },
         {
             "title": "English Super Cup winner",
+            "season": "26/27",
+            "season_id": 2026,
+            "club_name": "Arsenal FC",
+            "club_id": 11
+        },
+        {
+            "title": "English Super Cup winner",
             "season": "23/24",
             "season_id": 2023,
             "club_name": "Arsenal FC",
@@ -12566,7 +12608,91 @@
         }
     ],
     "clubs": {
+        "11": {
+            "type": "club",
+            "seasons": [
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 294,
+                "participations": 294,
+                "minutes": 17445,
+                "starts": 197,
+                "captain_matches": 154,
+                "goals": 44,
+                "assists": 46,
+                "goals_conceded": 186,
+                "points": 603,
+                "clean_sheets": 168,
+                "wins": 184,
+                "draws": 51,
+                "losses": 59,
+                "goal_matches": 254,
+                "assist_matches": 255,
+                "goal_contributions": 90
+            },
+            "positions": {
+                "AMF": 173,
+                "CMF": 59
+            },
+            "derived": {
+                "season_count": 7,
+                "points_per_match": 2.051,
+                "minutes_per_match": 59.3,
+                "win_rate": 0.6259,
+                "goals_per_90": 0.227,
+                "assists_per_90": 0.237,
+                "contributions_per_90": 0.464,
+                "primary_position": "AMF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 208,
+                    "minutes": 13692,
+                    "goals": 36,
+                    "assists": 39
+                },
+                "Domestic Super Cup": {
+                    "matches": 2,
+                    "minutes": 174,
+                    "goals": 1,
+                    "assists": 0
+                },
+                "International Cup": {
+                    "matches": 55,
+                    "minutes": 2652,
+                    "goals": 6,
+                    "assists": 4
+                },
+                "Domestic Cup": {
+                    "matches": 9,
+                    "minutes": 398,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "League Cup": {
+                    "matches": 20,
+                    "minutes": 529,
+                    "goals": 1,
+                    "assists": 3
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "English Champion": 1,
+                    "English Super Cup winner": 2
+                },
+                "individual_titles": {}
+            }
+        },
         "3440": {
+            "type": "national",
             "seasons": [
                 2014,
                 2015,
@@ -12600,8 +12726,8 @@
                 "goal_contributions": 27
             },
             "positions": {
-                "AMF": 41,
-                "CMF": 9,
+                "AMF": 42,
+                "CMF": 8,
                 "RW": 16,
                 "LW": 1,
                 "RM": 2
@@ -12635,88 +12761,8 @@
                 "individual_titles": {}
             }
         },
-        "11": {
-            "seasons": [
-                2020,
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 292,
-                "participations": 292,
-                "minutes": 17285,
-                "starts": 195,
-                "captain_matches": 152,
-                "goals": 42,
-                "assists": 46,
-                "goals_conceded": 186,
-                "points": 597,
-                "clean_sheets": 166,
-                "wins": 182,
-                "draws": 51,
-                "losses": 59,
-                "goal_matches": 254,
-                "assist_matches": 253,
-                "goal_contributions": 88
-            },
-            "positions": {
-                "AMF": 171,
-                "CMF": 59
-            },
-            "derived": {
-                "season_count": 6,
-                "points_per_match": 2.045,
-                "minutes_per_match": 59.2,
-                "win_rate": 0.6233,
-                "goals_per_90": 0.219,
-                "assists_per_90": 0.24,
-                "contributions_per_90": 0.458,
-                "primary_position": "AMF"
-            },
-            "competitions": {
-                "International Cup": {
-                    "matches": 55,
-                    "minutes": 2652,
-                    "goals": 6,
-                    "assists": 4
-                },
-                "First Tier": {
-                    "matches": 207,
-                    "minutes": 13616,
-                    "goals": 35,
-                    "assists": 39
-                },
-                "Domestic Cup": {
-                    "matches": 9,
-                    "minutes": 398,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "League Cup": {
-                    "matches": 20,
-                    "minutes": 529,
-                    "goals": 1,
-                    "assists": 3
-                },
-                "Domestic Super Cup": {
-                    "matches": 1,
-                    "minutes": 90,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "English Champion": 1,
-                    "English Super Cup winner": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "418": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -12797,6 +12843,7 @@
             }
         },
         "681": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -12854,6 +12901,7 @@
             }
         },
         "499": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -12918,6 +12966,7 @@
             }
         },
         "16854": {
+            "type": "national",
             "seasons": [
                 2013,
                 2014,
@@ -12983,6 +13032,7 @@
             }
         },
         "306": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017
@@ -13046,6 +13096,7 @@
             }
         },
         "6767": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -13106,6 +13157,7 @@
             }
         },
         "2817": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014
@@ -13172,6 +13224,7 @@
             }
         },
         "26471": {
+            "type": "national",
             "seasons": [
                 2013
             ],
@@ -13226,6 +13279,7 @@
             }
         },
         "36495": {
+            "type": "national",
             "seasons": [
                 2013
             ],
@@ -13274,23 +13328,23 @@
     },
     "career": {
         "club": {
-            "matches": 222,
-            "minutes": 13893,
-            "goals": 26,
-            "assists": 35,
-            "goal_contributions": 61,
-            "team_titles": 1,
-            "individual_titles": 0,
-            "season_count": 6
+            "matches": 613,
+            "minutes": 33330,
+            "goals": 75,
+            "assists": 88,
+            "goal_contributions": 163,
+            "team_titles": 4,
+            "individual_titles": 1,
+            "season_count": 14
         },
         "national": {
-            "matches": 557,
-            "minutes": 27169,
-            "goals": 57,
-            "assists": 78,
-            "goal_contributions": 135,
-            "team_titles": 2,
-            "individual_titles": 1,
+            "matches": 168,
+            "minutes": 7892,
+            "goals": 10,
+            "assists": 25,
+            "goal_contributions": 35,
+            "team_titles": 0,
+            "individual_titles": 0,
             "season_count": 13
         }
     }

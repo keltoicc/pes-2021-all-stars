@@ -1,6 +1,6 @@
 {
     "tactic": "4-3-3 Attacking",
-    "total_score": 15.66,
+    "total_score": 15.73,
     "players": [
         {
             "role": "ATTACKING_MID",
@@ -10,20 +10,20 @@
                 "score": 0.8691349156548074,
                 "roles": {
                     "CENTRAL_MID": {
-                        "weight": 0.6820197044334975,
-                        "score": 0.717770587819425
+                        "weight": 0.6620689655172414,
+                        "score": 0.7071943992336914
                     },
                     "ATTACKING_MID": {
-                        "weight": 0.6931034482758621,
-                        "score": 0.723579454502521
+                        "weight": 0.7330049261083744,
+                        "score": 0.744116001602202
                     },
                     "SECOND_STRIKER": {
-                        "weight": 0.3650246305418719,
-                        "score": 0.5251075736344771
+                        "weight": 0.4049261083743842,
+                        "score": 0.5530636136563046
                     },
                     "DEFENSIVE_MID": {
-                        "weight": 0.16403940886699506,
-                        "score": 0.35201510130240016
+                        "weight": 0.12413793103448276,
+                        "score": 0.3062241575752256
                     },
                     "STRIKER": {
                         "weight": 0.03694581280788178,
@@ -42,13 +42,13 @@
                         "score": 0.23665050095476686
                     },
                     "UTILITY": {
-                        "weight": 2.1635467980295564,
+                        "weight": 2.1834975369458127,
                         "score": 0.8691349156548074
                     }
                 }
             },
-            "score": 0.72,
-            "role_weight": 0.6931
+            "score": 0.74,
+            "role_weight": 0.733
         },
         {
             "role": "UTILITY",
@@ -167,59 +167,83 @@
             "role_weight": 0.8848
         },
         {
+            "role": "STRIKER",
+            "player": {
+                "ID_transfermarkt": "418560",
+                "name": "E. Haaland",
+                "score": 0.7636732178902504,
+                "roles": {
+                    "SECOND_STRIKER": {
+                        "weight": 0.4,
+                        "score": 0.48298935132064763
+                    },
+                    "STRIKER": {
+                        "weight": 1.0,
+                        "score": 0.7636732178902504
+                    },
+                    "UTILITY": {
+                        "weight": 1.4,
+                        "score": 0.7636732178902504
+                    }
+                }
+            },
+            "score": 0.76,
+            "role_weight": 1.0
+        },
+        {
             "role": "CENTRAL_MID",
             "player": {
                 "ID_transfermarkt": "53622",
                 "name": "İ. Gündoğan",
                 "score": 0.763531723693232,
                 "roles": {
-                    "DEFENSIVE_MID": {
-                        "weight": 0.6363112391930835,
-                        "score": 0.6090625314720719
-                    },
                     "CENTRAL_MID": {
-                        "weight": 0.8426512968299711,
-                        "score": 0.7008918868525429
+                        "weight": 0.840057636887608,
+                        "score": 0.6998123915628315
                     },
                     "ATTACKING_MID": {
-                        "weight": 0.3636887608069164,
-                        "score": 0.46046012405287534
+                        "weight": 0.3688760806916427,
+                        "score": 0.4637322861139233
                     },
                     "SECOND_STRIKER": {
-                        "weight": 0.06397694524495677,
-                        "score": 0.19312515082305381
+                        "weight": 0.06916426512968299,
+                        "score": 0.2008019701648456
+                    },
+                    "DEFENSIVE_MID": {
+                        "weight": 0.6311239193083573,
+                        "score": 0.6065748592725487
                     },
                     "UTILITY": {
-                        "weight": 1.9066282420749279,
+                        "weight": 1.9092219020172911,
                         "score": 0.763531723693232
                     }
                 }
             },
             "score": 0.7,
-            "role_weight": 0.8427
+            "role_weight": 0.8401
         },
         {
-            "role": "STRIKER",
+            "role": "DEFENSIVE_MID",
             "player": {
-                "ID_transfermarkt": "418560",
-                "name": "E. Haaland",
-                "score": 0.7481564547394556,
+                "ID_transfermarkt": "357565",
+                "name": "Rodri",
+                "score": 0.7243267210742659,
                 "roles": {
-                    "SECOND_STRIKER": {
-                        "weight": 0.4,
-                        "score": 0.47317568862667114
-                    },
-                    "STRIKER": {
+                    "DEFENSIVE_MID": {
                         "weight": 1.0,
-                        "score": 0.7481564547394556
+                        "score": 0.7243267210742659
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.5,
+                        "score": 0.5121763362662304
                     },
                     "UTILITY": {
-                        "weight": 1.4,
-                        "score": 0.7481564547394556
+                        "weight": 1.5,
+                        "score": 0.7243267210742659
                     }
                 }
             },
-            "score": 0.75,
+            "score": 0.72,
             "role_weight": 1.0
         },
         {
@@ -243,27 +267,31 @@
             "role_weight": 1.0
         },
         {
-            "role": "DEFENSIVE_MID",
+            "role": "CENTER_BACK",
             "player": {
-                "ID_transfermarkt": "357565",
-                "name": "Rodri",
-                "score": 0.7106198031479865,
+                "ID_transfermarkt": "258004",
+                "name": "Rúben Dias",
+                "score": 0.7034989552303028,
                 "roles": {
-                    "DEFENSIVE_MID": {
+                    "CENTER_BACK": {
                         "weight": 1.0,
-                        "score": 0.7106198031479865
+                        "score": 0.7034989552303028
                     },
-                    "CENTRAL_MID": {
+                    "SWEEPER": {
                         "weight": 0.5,
-                        "score": 0.5024840816513908
+                        "score": 0.49744888180099855
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.7034989552303028
                     },
                     "UTILITY": {
-                        "weight": 1.5,
-                        "score": 0.7106198031479865
+                        "weight": 2.5,
+                        "score": 0.7034989552303028
                     }
                 }
             },
-            "score": 0.71,
+            "score": 0.7,
             "role_weight": 1.0
         },
         {
@@ -444,34 +472,6 @@
                     "UTILITY": {
                         "weight": 1.6,
                         "score": 0.6889379622202897
-                    }
-                }
-            },
-            "score": 0.69,
-            "role_weight": 1.0
-        },
-        {
-            "role": "CENTER_BACK",
-            "player": {
-                "ID_transfermarkt": "258004",
-                "name": "Rúben Dias",
-                "score": 0.687141307516064,
-                "roles": {
-                    "CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.687141307516064
-                    },
-                    "SWEEPER": {
-                        "weight": 0.5,
-                        "score": 0.4858822781779996
-                    },
-                    "WIDE_CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.687141307516064
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.687141307516064
                     }
                 }
             },

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Oli McBurnie",
         "short_name": "O. McBurnie",
+        "dateOfBirth": "1996-06-04",
+        "placeOfBirth": "Leeds",
         "nation_1": "Scotland",
         "nation_2": "England",
         "height": 1.88,
@@ -14,6 +17,38 @@
         "prime_date": "2020-10-13"
     },
     "matches": [
+        {
+            "game_id": "5016470",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "3008",
+            "opponent_id": "512",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4899183",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "3008",
+            "opponent_id": "985",
+            "position": "CF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4887853",
             "season": 2025,
@@ -11741,41 +11776,55 @@
     ],
     "clubs": {
         "3008": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 52,
-                "participations": 52,
-                "minutes": 3373,
-                "starts": 37,
+                "matches": 54,
+                "participations": 54,
+                "minutes": 3463,
+                "starts": 38,
                 "captain_matches": 0,
                 "goals": 19,
                 "assists": 8,
                 "goals_conceded": 48,
-                "points": 83,
-                "clean_sheets": 25,
-                "wins": 24,
+                "points": 89,
+                "clean_sheets": 27,
+                "wins": 26,
                 "draws": 11,
                 "losses": 17,
-                "goal_matches": 35,
-                "assist_matches": 45,
+                "goal_matches": 37,
+                "assist_matches": 47,
                 "goal_contributions": 27
             },
             "positions": {
-                "CF": 37
+                "CF": 38
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.596,
-                "minutes_per_match": 64.9,
-                "win_rate": 0.4615,
-                "goals_per_90": 0.507,
-                "assists_per_90": 0.213,
-                "contributions_per_90": 0.72,
+                "season_count": 2,
+                "points_per_match": 1.648,
+                "minutes_per_match": 64.1,
+                "win_rate": 0.4815,
+                "goals_per_90": 0.494,
+                "assists_per_90": 0.208,
+                "contributions_per_90": 0.702,
                 "primary_position": "CF"
             },
             "competitions": {
+                "League Cup": {
+                    "matches": 2,
+                    "minutes": 76,
+                    "goals": 1,
+                    "assists": 0
+                },
+                "First Tier": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Play-Offs": {
                     "matches": 3,
                     "minutes": 264,
@@ -11793,12 +11842,6 @@
                     "minutes": 120,
                     "goals": 0,
                     "assists": 0
-                },
-                "League Cup": {
-                    "matches": 1,
-                    "minutes": 76,
-                    "goals": 1,
-                    "assists": 0
                 }
             },
             "awards": {
@@ -11807,6 +11850,7 @@
             }
         },
         "472": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -11861,6 +11905,7 @@
             }
         },
         "350": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -11938,6 +11983,7 @@
             }
         },
         "3380": {
+            "type": "national",
             "seasons": [
                 2017,
                 2018,
@@ -11995,6 +12041,7 @@
             }
         },
         "2288": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -12066,6 +12113,7 @@
             }
         },
         "349": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -12115,6 +12163,7 @@
             }
         },
         "33616": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -12166,6 +12215,7 @@
             }
         },
         "16868": {
+            "type": "national",
             "seasons": [
                 2015,
                 2016,
@@ -12222,6 +12272,7 @@
             }
         },
         "2455": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -12268,6 +12319,7 @@
             }
         },
         "3716": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -12322,6 +12374,7 @@
             }
         },
         "31367": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -12370,6 +12423,7 @@
             }
         },
         "17622": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -12425,6 +12479,7 @@
             }
         },
         "1027": {
+            "type": "club",
             "seasons": [
                 1914,
                 2013,
@@ -12495,14 +12550,14 @@
     },
     "career": {
         "club": {
-            "matches": 681,
-            "minutes": 24994,
+            "matches": 683,
+            "minutes": 25084,
             "goals": 132,
             "assists": 39,
             "goal_contributions": 171,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 14
+            "season_count": 15
         },
         "national": {
             "matches": 49,

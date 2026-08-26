@@ -73,6 +73,7 @@ IGNORED_TITLE = [
     "Relegated from 2nd league",
     "Relegated from 3rd league",
     "Relegated from 4th league",
+    "Relegated from 5th league",
     "Relegated from Regionalliga",
     "Second highest goal scorer",
     "South Korean Cup runner-up",
