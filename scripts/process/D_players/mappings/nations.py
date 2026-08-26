@@ -184,7 +184,7 @@ NATIONS_MAP = {
     182: "Venezuela",
     183: "United Arab Emirates",
     184: "United States",
-    185: "Thailand",
+    185: "Vietnam",
     186: "Yemen",
     187: "Zimbabwe",
     188: "Cyprus",

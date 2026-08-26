@@ -795,6 +795,7 @@ MINOR_TITLE = [
     "Winner of the Japanese Amateur championship",
     "Winner Piala Kemenpora",
     "Wurttemberg Cup winner",
+    "USL Championship Champion",
     "USL Regular Season Champion",
     "USL-1 Cup Champion",
 ]
