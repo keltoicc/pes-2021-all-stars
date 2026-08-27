@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Sergio Ruiz",
         "short_name": "Sergio Ruiz",
+        "dateOfBirth": "1994-12-16",
+        "placeOfBirth": "Astillero",
         "nation_1": "Spain",
         "nation_2": "",
         "height": 1.76,
@@ -14,6 +17,38 @@
         "prime_date": "2025-06-24"
     },
     "matches": [
+        {
+            "game_id": "4918759",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "472",
+            "opponent_id": "8568",
+            "position": "",
+            "minutes": 3,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4918751",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "472",
+            "opponent_id": "1532",
+            "position": "CMF",
+            "minutes": 60,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4647766",
             "season": 2025,
@@ -7113,7 +7148,67 @@
         }
     ],
     "clubs": {
+        "472": {
+            "type": "club",
+            "seasons": [
+                2020,
+                2021,
+                2026
+            ],
+            "stats": {
+                "matches": 69,
+                "participations": 69,
+                "minutes": 3581,
+                "starts": 41,
+                "captain_matches": 1,
+                "goals": 5,
+                "assists": 6,
+                "goals_conceded": 52,
+                "points": 99,
+                "clean_sheets": 40,
+                "wins": 26,
+                "draws": 21,
+                "losses": 22,
+                "goal_matches": 64,
+                "assist_matches": 64,
+                "goal_contributions": 11
+            },
+            "positions": {
+                "CMF": 34,
+                "AMF": 3,
+                "DMF": 5
+            },
+            "derived": {
+                "season_count": 3,
+                "points_per_match": 1.435,
+                "minutes_per_match": 51.9,
+                "win_rate": 0.3768,
+                "goals_per_90": 0.126,
+                "assists_per_90": 0.151,
+                "contributions_per_90": 0.276,
+                "primary_position": "CMF"
+            },
+            "competitions": {
+                "Second Tier": {
+                    "matches": 65,
+                    "minutes": 3581,
+                    "goals": 5,
+                    "assists": 6
+                },
+                "Domestic Cup": {
+                    "matches": 4,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "16795": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -7181,6 +7276,7 @@
             }
         },
         "78435": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -7235,64 +7331,8 @@
                 "individual_titles": {}
             }
         },
-        "472": {
-            "seasons": [
-                2020,
-                2021
-            ],
-            "stats": {
-                "matches": 67,
-                "participations": 67,
-                "minutes": 3518,
-                "starts": 40,
-                "captain_matches": 1,
-                "goals": 5,
-                "assists": 6,
-                "goals_conceded": 52,
-                "points": 93,
-                "clean_sheets": 38,
-                "wins": 24,
-                "draws": 21,
-                "losses": 22,
-                "goal_matches": 62,
-                "assist_matches": 62,
-                "goal_contributions": 11
-            },
-            "positions": {
-                "AMF": 3,
-                "CMF": 33,
-                "DMF": 5
-            },
-            "derived": {
-                "season_count": 2,
-                "points_per_match": 1.388,
-                "minutes_per_match": 52.5,
-                "win_rate": 0.3582,
-                "goals_per_90": 0.128,
-                "assists_per_90": 0.153,
-                "contributions_per_90": 0.281,
-                "primary_position": "CMF"
-            },
-            "competitions": {
-                "Second Tier": {
-                    "matches": 63,
-                    "minutes": 3518,
-                    "goals": 5,
-                    "assists": 6
-                },
-                "Domestic Cup": {
-                    "matches": 4,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "630": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -7368,14 +7408,14 @@
     },
     "career": {
         "club": {
-            "matches": 443,
-            "minutes": 22439,
+            "matches": 445,
+            "minutes": 22502,
             "goals": 15,
             "assists": 31,
             "goal_contributions": 46,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 10
+            "season_count": 11
         },
         "national": {
             "matches": 0,

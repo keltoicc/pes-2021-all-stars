@@ -1,19 +1,54 @@
 {
     "player": {
+        "name": "Yéremy Pino",
         "short_name": "Yéremy Pino",
+        "dateOfBirth": "2002-10-20",
+        "placeOfBirth": "Las Palmas de Gran Canaria",
         "nation_1": "Spain",
         "nation_2": "",
         "height": 1.74,
         "foot": "Right",
         "position_group": "FORWARD",
-        "position_1": "RW",
-        "position_2": "LW",
-        "position_3": "RM",
+        "position_1": "LW",
+        "position_2": "RW",
+        "position_3": "SS",
         "former_clubs": "Barrio Atlántico (2002-2011), AD Huracán (2011-2014), UD Las Palmas (2014-2016), CD Roda (2016-2019), Villarreal CF (2019-2020)",
         "market_value": 40000000,
         "prime_date": "2023-06-13"
     },
     "matches": [
+        {
+            "game_id": "4899184",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "873",
+            "opponent_id": "29",
+            "position": "LW",
+            "minutes": 35,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4776710",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3375",
+            "opponent_id": "3437",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
         {
             "game_id": "4776707",
             "season": 2025,
@@ -6817,6 +6852,13 @@
     ],
     "achievements": [
         {
+            "title": "World Cup winner",
+            "season": "2026",
+            "season_id": 2026,
+            "club_name": "Spain",
+            "club_id": 3375
+        },
+        {
             "title": "Europa League winner",
             "season": "20/21",
             "season_id": 2020,
@@ -6829,6 +6871,13 @@
             "season_id": 2025,
             "club_name": "Crystal Palace",
             "club_id": 873
+        },
+        {
+            "title": "World Cup participant",
+            "season": "2026",
+            "season_id": 2026,
+            "club_name": "Spain",
+            "club_id": 3375
         },
         {
             "title": "World Cup participant",
@@ -6895,117 +6944,57 @@
         }
     ],
     "clubs": {
-        "3375": {
-            "seasons": [
-                2020,
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 76,
-                "participations": 76,
-                "minutes": 1031,
-                "starts": 7,
-                "captain_matches": 0,
-                "goals": 4,
-                "assists": 2,
-                "goals_conceded": 12,
-                "points": 174,
-                "clean_sheets": 67,
-                "wins": 54,
-                "draws": 12,
-                "losses": 10,
-                "goal_matches": 72,
-                "assist_matches": 74,
-                "goal_contributions": 6
-            },
-            "positions": {
-                "RW": 12,
-                "LW": 8
-            },
-            "derived": {
-                "season_count": 6,
-                "points_per_match": 2.289,
-                "minutes_per_match": 13.6,
-                "win_rate": 0.7105,
-                "goals_per_90": 0.349,
-                "assists_per_90": 0.175,
-                "contributions_per_90": 0.524,
-                "primary_position": "RW"
-            },
-            "competitions": {
-                "National Team": {
-                    "matches": 57,
-                    "minutes": 710,
-                    "goals": 3,
-                    "assists": 2
-                },
-                "National team's qualifiers": {
-                    "matches": 19,
-                    "minutes": 321,
-                    "goals": 1,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Winner UEFA Nations League": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "873": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 55,
-                "participations": 55,
-                "minutes": 3179,
+                "matches": 56,
+                "participations": 56,
+                "minutes": 3214,
                 "starts": 39,
                 "captain_matches": 0,
                 "goals": 5,
                 "assists": 5,
                 "goals_conceded": 39,
                 "points": 79,
-                "clean_sheets": 29,
+                "clean_sheets": 30,
                 "wins": 22,
                 "draws": 13,
-                "losses": 20,
-                "goal_matches": 50,
-                "assist_matches": 51,
+                "losses": 21,
+                "goal_matches": 51,
+                "assist_matches": 52,
                 "goal_contributions": 10
             },
             "positions": {
-                "LW": 23,
+                "LW": 24,
                 "AMF": 17,
                 "CF": 1,
                 "RW": 5
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.436,
-                "minutes_per_match": 57.8,
-                "win_rate": 0.4,
-                "goals_per_90": 0.142,
-                "assists_per_90": 0.142,
-                "contributions_per_90": 0.283,
+                "season_count": 2,
+                "points_per_match": 1.411,
+                "minutes_per_match": 57.4,
+                "win_rate": 0.3929,
+                "goals_per_90": 0.14,
+                "assists_per_90": 0.14,
+                "contributions_per_90": 0.28,
                 "primary_position": "LW"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 37,
+                    "minutes": 2127,
+                    "goals": 2,
+                    "assists": 2
+                },
                 "International Cup": {
                     "matches": 15,
                     "minutes": 750,
                     "goals": 1,
-                    "assists": 2
-                },
-                "First Tier": {
-                    "matches": 36,
-                    "minutes": 2092,
-                    "goals": 2,
                     "assists": 2
                 },
                 "Domestic Cup": {
@@ -7028,7 +7017,72 @@
                 "individual_titles": {}
             }
         },
+        "3375": {
+            "type": "national",
+            "seasons": [
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
+            "stats": {
+                "matches": 77,
+                "participations": 77,
+                "minutes": 1031,
+                "starts": 7,
+                "captain_matches": 0,
+                "goals": 4,
+                "assists": 2,
+                "goals_conceded": 12,
+                "points": 177,
+                "clean_sheets": 68,
+                "wins": 55,
+                "draws": 12,
+                "losses": 10,
+                "goal_matches": 73,
+                "assist_matches": 75,
+                "goal_contributions": 6
+            },
+            "positions": {
+                "RW": 12,
+                "LW": 8
+            },
+            "derived": {
+                "season_count": 6,
+                "points_per_match": 2.299,
+                "minutes_per_match": 13.4,
+                "win_rate": 0.7143,
+                "goals_per_90": 0.349,
+                "assists_per_90": 0.175,
+                "contributions_per_90": 0.524,
+                "primary_position": "RW"
+            },
+            "competitions": {
+                "National Team": {
+                    "matches": 58,
+                    "minutes": 710,
+                    "goals": 3,
+                    "assists": 2
+                },
+                "National team's qualifiers": {
+                    "matches": 19,
+                    "minutes": 321,
+                    "goals": 1,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "World Cup winner": 1,
+                    "Winner UEFA Nations League": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "1050": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -7106,6 +7160,7 @@
             }
         },
         "9567": {
+            "type": "national",
             "seasons": [
                 2020,
                 2021
@@ -7162,6 +7217,7 @@
             }
         },
         "20947": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -7211,6 +7267,7 @@
             }
         },
         "11972": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -7250,6 +7307,7 @@
             }
         },
         "12395": {
+            "type": "national",
             "seasons": [
                 2017,
                 2018
@@ -7313,6 +7371,7 @@
             }
         },
         "33775": {
+            "type": "national",
             "seasons": [
                 2017
             ],
@@ -7364,22 +7423,22 @@
     },
     "career": {
         "club": {
-            "matches": 1,
-            "minutes": 45,
-            "goals": 0,
-            "assists": 0,
-            "goal_contributions": 0,
-            "team_titles": 0,
+            "matches": 312,
+            "minutes": 12654,
+            "goals": 27,
+            "assists": 28,
+            "goal_contributions": 55,
+            "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 1
+            "season_count": 8
         },
         "national": {
-            "matches": 424,
-            "minutes": 15584,
-            "goals": 39,
-            "assists": 33,
-            "goal_contributions": 72,
-            "team_titles": 3,
+            "matches": 115,
+            "minutes": 3010,
+            "goals": 12,
+            "assists": 5,
+            "goal_contributions": 17,
+            "team_titles": 2,
             "individual_titles": 0,
             "season_count": 9
         }

@@ -455,6 +455,7 @@ CLUB_NATIONAL_TITLE = [
     "Malaysian Champions",
     "Malaysian FA Cup Winner",
     "Malaysian Supercup Winner",
+    "Maldivian Champion",
     "Maltese champion",
     "Maltese cup winner",
     "Maltese Super Cup winner",

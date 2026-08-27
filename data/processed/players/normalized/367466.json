@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Thierry Correia",
         "short_name": "T. Correia",
+        "dateOfBirth": "1999-03-09",
+        "placeOfBirth": "Amadora",
         "nation_1": "Portugal",
         "nation_2": "Cape Verde",
         "height": 1.76,
@@ -8,12 +11,44 @@
         "position_group": "DEFENDER",
         "position_1": "RB",
         "position_2": "LB",
-        "position_3": "",
+        "position_3": "RM",
         "former_clubs": "SF Damaiense (2007-09)",
         "market_value": 14000000,
         "prime_date": "2022-11-07"
     },
     "matches": [
+        {
+            "game_id": "4893352",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "607",
+            "opponent_id": "1005",
+            "position": "LM",
+            "minutes": 64,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4904467",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "607",
+            "opponent_id": "1385",
+            "position": "",
+            "minutes": 32,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4645987",
             "season": 2025,
@@ -7610,7 +7645,63 @@
         }
     ],
     "clubs": {
+        "607": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 2,
+                "participations": 2,
+                "minutes": 96,
+                "starts": 1,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 1,
+                "points": 3,
+                "clean_sheets": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 1,
+                "goal_matches": 2,
+                "assist_matches": 2,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "LM": 1
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 1.5,
+                "minutes_per_match": 48.0,
+                "win_rate": 0.5,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "LM"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 1,
+                    "minutes": 64,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 32,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "1049": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -7688,6 +7779,7 @@
             }
         },
         "16374": {
+            "type": "national",
             "seasons": [
                 2019,
                 2020
@@ -7749,6 +7841,7 @@
             }
         },
         "336": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019
@@ -7823,6 +7916,7 @@
             }
         },
         "16373": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -7877,6 +7971,7 @@
             }
         },
         "67909": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -7925,6 +8020,7 @@
             }
         },
         "16372": {
+            "type": "national",
             "seasons": [
                 2016,
                 2017
@@ -7990,6 +8086,7 @@
             }
         },
         "45510": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017
@@ -8033,6 +8130,7 @@
             }
         },
         "16371": {
+            "type": "national",
             "seasons": [
                 2016
             ],
@@ -8082,6 +8180,7 @@
             }
         },
         "23137": {
+            "type": "national",
             "seasons": [
                 2015
             ],
@@ -8147,6 +8246,7 @@
             }
         },
         "31372": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -8199,24 +8299,24 @@
     },
     "career": {
         "club": {
-            "matches": 41,
-            "minutes": 1235,
-            "goals": 0,
-            "assists": 1,
-            "goal_contributions": 1,
+            "matches": 389,
+            "minutes": 13109,
+            "goals": 2,
+            "assists": 7,
+            "goal_contributions": 9,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 3
+            "season_count": 11
         },
         "national": {
-            "matches": 430,
-            "minutes": 15312,
-            "goals": 3,
-            "assists": 11,
-            "goal_contributions": 14,
+            "matches": 84,
+            "minutes": 3534,
+            "goals": 1,
+            "assists": 5,
+            "goal_contributions": 6,
             "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 12
+            "season_count": 7
         }
     }
 }

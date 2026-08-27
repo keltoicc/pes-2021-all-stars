@@ -17,7 +17,17 @@ const currentPath = Astro.url.pathname;
 
 <nav class="site-navigation" aria-label="Main navigation">
 
-    <ul>
+    <button
+        class="site-navigation__toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-navigation-menu"
+    >
+        <span>Menu</span>
+        <span class="site-navigation__icon" aria-hidden="true">☰</span>
+    </button>
+
+    <ul id="site-navigation-menu">
 
         {
             navigation.map(item => {
@@ -45,6 +55,39 @@ const currentPath = Astro.url.pathname;
     </ul>
 
 </nav>
+
+<script>
+    const navigation = document.querySelector(".site-navigation");
+
+    if (navigation) {
+
+        const toggle = navigation.querySelector(
+            ".site-navigation__toggle"
+        );
+
+        if (toggle) {
+
+            toggle.addEventListener("click", () => {
+
+                const isOpen =
+                    toggle.getAttribute("aria-expanded") === "true";
+
+                toggle.setAttribute(
+                    "aria-expanded",
+                    String(!isOpen)
+                );
+
+                navigation.classList.toggle(
+                    "is-open",
+                    !isOpen
+                );
+
+            });
+
+        }
+
+    }
+</script>
 
 <style>
 .site-navigation {
@@ -100,29 +143,68 @@ const currentPath = Astro.url.pathname;
     opacity: 1;
 }
 
+.site-navigation__toggle {
+    display: none;
+}
+
 @media (max-width: 768px) {
 
     .site-navigation {
-        width: 100%;
+        position: relative;
 
-        overflow-x: auto;
-        scrollbar-width: none;
+        width: 100%;
     }
 
-    .site-navigation::-webkit-scrollbar {
-        display: none;
+    .site-navigation__toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+
+        padding: var(--space-4);
+
+        color: var(--color-text-secondary);
+
+        background: none;
+        border: 0;
+
+        font: inherit;
+        font-size: var(--font-size-sm);
+        font-weight: var(--font-weight-medium);
+
+        cursor: pointer;
+    }
+
+    .site-navigation__icon {
+        font-size: var(--font-size-lg);
     }
 
     .site-navigation ul {
-        width: max-content;
+        display: none;
 
-        gap: var(--space-4);
+        flex-direction: column;
+
+        gap: 0;
+
+        padding: var(--space-2) 0;
+
+        border-top: 1px solid var(--color-border);
+    }
+
+    .site-navigation.is-open ul {
+        display: flex;
     }
 
     .site-navigation a {
         min-height: auto;
 
-        padding-block: var(--space-2);
+        padding: var(--space-3) 0;
     }
+
+    .site-navigation a::after {
+        display: none;
+    }
+
 }
 </style>

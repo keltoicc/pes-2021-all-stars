@@ -1,10 +1,13 @@
 {
     "player": {
+        "name": "David García",
         "short_name": "D. García",
+        "dateOfBirth": "1994-02-14",
+        "placeOfBirth": "Ibero",
         "nation_1": "Spain",
         "nation_2": "",
         "height": 1.86,
-        "foot": null,
+        "foot": "Both",
         "position_group": "DEFENDER",
         "position_1": "CB",
         "position_2": "",
@@ -14,6 +17,22 @@
         "prime_date": "2023-06-13"
     },
     "matches": [
+        {
+            "game_id": "5024722",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "3229",
+            "opponent_id": "77101",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4869052",
             "season": 2025,
@@ -8353,53 +8372,55 @@
     ],
     "clubs": {
         "3229": {
+            "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 79,
-                "participations": 79,
-                "minutes": 4826,
-                "starts": 54,
-                "captain_matches": 19,
+                "matches": 80,
+                "participations": 80,
+                "minutes": 4916,
+                "starts": 55,
+                "captain_matches": 20,
                 "goals": 2,
                 "assists": 4,
                 "goals_conceded": 80,
-                "points": 132,
-                "clean_sheets": 35,
-                "wins": 40,
+                "points": 135,
+                "clean_sheets": 36,
+                "wins": 41,
                 "draws": 12,
                 "losses": 27,
-                "goal_matches": 77,
-                "assist_matches": 75,
+                "goal_matches": 78,
+                "assist_matches": 76,
                 "goal_contributions": 6
             },
             "positions": {
-                "CB": 53
+                "CB": 54
             },
             "derived": {
-                "season_count": 2,
-                "points_per_match": 1.671,
-                "minutes_per_match": 61.1,
-                "win_rate": 0.5063,
+                "season_count": 3,
+                "points_per_match": 1.688,
+                "minutes_per_match": 61.5,
+                "win_rate": 0.5125,
                 "goals_per_90": 0.037,
-                "assists_per_90": 0.075,
-                "contributions_per_90": 0.112,
+                "assists_per_90": 0.073,
+                "contributions_per_90": 0.11,
                 "primary_position": "CB"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 45,
+                    "minutes": 2968,
+                    "goals": 2,
+                    "assists": 2
+                },
                 "Domestic Cup": {
                     "matches": 6,
                     "minutes": 283,
                     "goals": 0,
                     "assists": 0
-                },
-                "First Tier": {
-                    "matches": 44,
-                    "minutes": 2878,
-                    "goals": 2,
-                    "assists": 2
                 },
                 "League Cup": {
                     "matches": 19,
@@ -8422,6 +8443,7 @@
             }
         },
         "331": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -8512,6 +8534,7 @@
             }
         },
         "3375": {
+            "type": "national",
             "seasons": [
                 2022
             ],
@@ -8566,6 +8589,7 @@
             }
         },
         "4542": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -8614,6 +8638,7 @@
             }
         },
         "8516": {
+            "type": "club",
             "seasons": [
                 2010
             ],
@@ -8662,24 +8687,24 @@
     },
     "career": {
         "club": {
-            "matches": 21,
-            "minutes": 1681,
-            "goals": 2,
-            "assists": 0,
-            "goal_contributions": 2,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 2
-        },
-        "national": {
-            "matches": 499,
-            "minutes": 31554,
-            "goals": 17,
+            "matches": 512,
+            "minutes": 33145,
+            "goals": 19,
             "assists": 7,
-            "goal_contributions": 24,
+            "goal_contributions": 26,
             "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 12
+            "season_count": 14
+        },
+        "national": {
+            "matches": 9,
+            "minutes": 180,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 1
         }
     }
 }

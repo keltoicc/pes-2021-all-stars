@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Pau Torres",
         "short_name": "Pau Torres",
+        "dateOfBirth": "1997-01-16",
+        "placeOfBirth": "Villarreal",
         "nation_1": "Spain",
         "nation_2": "",
         "height": 1.92,
@@ -14,6 +17,38 @@
         "prime_date": "2022-11-07"
     },
     "matches": [
+        {
+            "game_id": "4899188",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "405",
+            "opponent_id": "1237",
+            "position": "CB",
+            "minutes": 74,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 4,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4895595",
+            "season": 2026,
+            "competition_type": "International Super Cup",
+            "club_id": "405",
+            "opponent_id": "583",
+            "position": "CB",
+            "minutes": 79,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4626173",
             "season": 2025,
@@ -10030,47 +10065,55 @@
     ],
     "clubs": {
         "405": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 169,
-                "participations": 169,
-                "minutes": 8967,
-                "starts": 100,
+                "matches": 171,
+                "participations": 171,
+                "minutes": 9120,
+                "starts": 102,
                 "captain_matches": 0,
                 "goals": 2,
                 "assists": 4,
-                "goals_conceded": 115,
+                "goals_conceded": 121,
                 "points": 312,
                 "clean_sheets": 100,
                 "wins": 94,
                 "draws": 30,
-                "losses": 45,
-                "goal_matches": 167,
-                "assist_matches": 165,
+                "losses": 47,
+                "goal_matches": 169,
+                "assist_matches": 167,
                 "goal_contributions": 6
             },
             "positions": {
-                "CB": 103
+                "CB": 105
             },
             "derived": {
-                "season_count": 3,
-                "points_per_match": 1.846,
-                "minutes_per_match": 53.1,
-                "win_rate": 0.5562,
+                "season_count": 4,
+                "points_per_match": 1.825,
+                "minutes_per_match": 53.3,
+                "win_rate": 0.5497,
                 "goals_per_90": 0.02,
-                "assists_per_90": 0.04,
-                "contributions_per_90": 0.06,
+                "assists_per_90": 0.039,
+                "contributions_per_90": 0.059,
                 "primary_position": "CB"
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 114,
-                    "minutes": 6159,
+                    "matches": 115,
+                    "minutes": 6233,
                     "goals": 2,
+                    "assists": 0
+                },
+                "International Super Cup": {
+                    "matches": 1,
+                    "minutes": 79,
+                    "goals": 0,
                     "assists": 0
                 },
                 "International Cup": {
@@ -10100,6 +10143,7 @@
             }
         },
         "3375": {
+            "type": "national",
             "seasons": [
                 2018,
                 2020,
@@ -10159,6 +10203,7 @@
             }
         },
         "1050": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -10232,6 +10277,7 @@
             }
         },
         "53824": {
+            "type": "national",
             "seasons": [
                 2020
             ],
@@ -10280,6 +10326,7 @@
             }
         },
         "35742": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -10328,6 +10375,7 @@
             }
         },
         "1084": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -10388,6 +10436,7 @@
             }
         },
         "9567": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -10436,6 +10485,7 @@
             }
         },
         "11972": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017
@@ -10491,6 +10541,7 @@
             }
         },
         "50915": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -10534,24 +10585,24 @@
     },
     "career": {
         "club": {
-            "matches": 121,
-            "minutes": 9795,
-            "goals": 3,
-            "assists": 0,
-            "goal_contributions": 3,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 4
-        },
-        "national": {
-            "matches": 499,
-            "minutes": 26663,
-            "goals": 15,
-            "assists": 11,
+            "matches": 546,
+            "minutes": 33898,
+            "goals": 17,
+            "assists": 9,
             "goal_contributions": 26,
             "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 10
+            "season_count": 12
+        },
+        "national": {
+            "matches": 76,
+            "minutes": 2713,
+            "goals": 1,
+            "assists": 2,
+            "goal_contributions": 3,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 6
         }
     }
 }
