@@ -1,6 +1,6 @@
 {
     "tactic": "UNKNOWN",
-    "total_score": 11.88,
+    "total_score": 11.91,
     "players": [
         {
             "role": "WIDE_MID",
@@ -311,7 +311,7 @@
             "role_weight": 1.0
         },
         {
-            "role": "CENTER_BACK",
+            "role": "FULLBACK",
             "player": {
                 "ID_transfermarkt": "919744",
                 "name": "J. Lavaud",
@@ -343,8 +343,8 @@
                     }
                 }
             },
-            "score": 0.56,
-            "role_weight": 1.0
+            "score": 0.5,
+            "role_weight": 0.8
         },
         {
             "role": "FULLBACK",
@@ -571,7 +571,7 @@
             "role_weight": 1.0
         },
         {
-            "role": "SECOND_STRIKER",
+            "role": "STRIKER",
             "player": {
                 "ID_transfermarkt": "291377",
                 "name": "M. Loncle",
@@ -595,8 +595,64 @@
                     }
                 }
             },
-            "score": 0.47,
+            "score": 0.49,
+            "role_weight": 1.0
+        },
+        {
+            "role": "SECOND_STRIKER",
+            "player": {
+                "ID_transfermarkt": "712693",
+                "name": "S. Lenoir",
+                "score": 0.48318125883758506,
+                "roles": {
+                    "STRIKER": {
+                        "weight": 1.0,
+                        "score": 0.48318125883758506
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.9,
+                        "score": 0.4583859901902391
+                    },
+                    "WINGER": {
+                        "weight": 0.8,
+                        "score": 0.4321704560859045
+                    },
+                    "UTILITY": {
+                        "weight": 2.7,
+                        "score": 0.48318125883758506
+                    }
+                }
+            },
+            "score": 0.46,
             "role_weight": 0.9
+        },
+        {
+            "role": "CENTER_BACK",
+            "player": {
+                "ID_transfermarkt": "6854",
+                "name": "P. Hansson",
+                "score": 0.4724614579739298,
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.4724614579739298
+                    },
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.33408070078264884
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.4724614579739298
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.4724614579739298
+                    }
+                }
+            },
+            "score": 0.47,
+            "role_weight": 1.0
         },
         {
             "role": "GOALKEEPER",
@@ -639,30 +695,6 @@
             "role_weight": 1.0
         },
         {
-            "role": "STRIKER",
-            "player": {
-                "ID_transfermarkt": "203507",
-                "name": "A. Hunou",
-                "score": 0.46095976569927544,
-                "roles": {
-                    "SECOND_STRIKER": {
-                        "weight": 0.4,
-                        "score": 0.29153655386145383
-                    },
-                    "STRIKER": {
-                        "weight": 1.0,
-                        "score": 0.46095976569927544
-                    },
-                    "UTILITY": {
-                        "weight": 1.4,
-                        "score": 0.46095976569927544
-                    }
-                }
-            },
-            "score": 0.46,
-            "role_weight": 1.0
-        },
-        {
             "role": "WIDE_MID",
             "player": {
                 "ID_transfermarkt": "5681",
@@ -689,34 +721,6 @@
             },
             "score": 0.4,
             "role_weight": 0.803
-        },
-        {
-            "role": "FULLBACK",
-            "player": {
-                "ID_transfermarkt": "173561",
-                "name": "S. Le Dizet",
-                "score": 0.4077527809692671,
-                "roles": {
-                    "WIDE_CENTER_BACK": {
-                        "weight": 0.8,
-                        "score": 0.3647051745047455
-                    },
-                    "FULLBACK": {
-                        "weight": 1.0,
-                        "score": 0.4077527809692671
-                    },
-                    "WING_BACK": {
-                        "weight": 0.7,
-                        "score": 0.34115045254509013
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.4077527809692671
-                    }
-                }
-            },
-            "score": 0.41,
-            "role_weight": 1.0
         }
     ]
 }

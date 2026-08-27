@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Donovan Léon",
         "short_name": "D. Léon",
+        "dateOfBirth": "1992-11-03",
+        "placeOfBirth": "Cayenne",
         "nation_1": null,
         "nation_2": "France",
         "height": 1.87,
@@ -9,11 +12,75 @@
         "position_1": "GK",
         "position_2": "",
         "position_3": "",
-        "former_clubs": "BCSC Cayenne (1999-2007), CSF Brétigny (2007-2009), AJ Auxerre (2009-2011)",
+        "former_clubs": "BCSC Cayenne (1999-2007), CS Brétigny (2007-2009), AJ Auxerre (2009-2011)",
         "market_value": 1200000,
         "prime_date": "2022-06-02"
     },
     "matches": [
+        {
+            "game_id": "4976878",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "40039",
+            "opponent_id": "6070",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4976875",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "40039",
+            "opponent_id": "18487",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 4,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4971022",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "40039",
+            "opponent_id": "39536",
+            "position": "GK",
+            "minutes": 120,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4976885",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "40039",
+            "opponent_id": "9131",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4635306",
             "season": 2025,
@@ -13120,7 +13187,63 @@
         }
     ],
     "clubs": {
+        "40039": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 4,
+                "participations": 4,
+                "minutes": 390,
+                "starts": 4,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 7,
+                "points": 1,
+                "clean_sheets": 1,
+                "wins": 0,
+                "draws": 1,
+                "losses": 3,
+                "goal_matches": 4,
+                "assist_matches": 4,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "GK": 4
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 0.25,
+                "minutes_per_match": 97.5,
+                "win_rate": 0.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "GK"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 3,
+                    "minutes": 270,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 120,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "290": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012,
@@ -13204,6 +13327,7 @@
             }
         },
         "19753": {
+            "type": "national",
             "seasons": [
                 2013,
                 2014,
@@ -13268,6 +13392,7 @@
             }
         },
         "3911": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -13344,6 +13469,7 @@
             }
         },
         "16674": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -13393,6 +13519,7 @@
             }
         },
         "10820": {
+            "type": "club",
             "seasons": [
                 2010,
                 2011,
@@ -13451,14 +13578,14 @@
     },
     "career": {
         "club": {
-            "matches": 751,
-            "minutes": 29736,
+            "matches": 755,
+            "minutes": 30126,
             "goals": 0,
             "assists": 2,
             "goal_contributions": 2,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 16
+            "season_count": 17
         },
         "national": {
             "matches": 67,

@@ -1,8 +1,11 @@
 {
     "player": {
+        "name": "Warren Zaïre-Emery",
         "short_name": "W. Zaïre-Emery",
+        "dateOfBirth": "2006-03-08",
+        "placeOfBirth": "Montreuil",
         "nation_1": "France",
-        "nation_2": null,
+        "nation_2": "Martinique",
         "height": 1.76,
         "foot": "Right",
         "position_group": "MIDFIELDER",
@@ -14,6 +17,86 @@
         "prime_date": "2026-06-01"
     },
     "matches": [
+        {
+            "game_id": "4894906",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "583",
+            "opponent_id": "273",
+            "position": "CMF",
+            "minutes": 60,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4916783",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "583",
+            "opponent_id": "826",
+            "position": "CMF",
+            "minutes": 82,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4895595",
+            "season": 2026,
+            "competition_type": "International Super Cup",
+            "club_id": "583",
+            "opponent_id": "405",
+            "position": "CMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4776709",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3377",
+            "opponent_id": "3299",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 6,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4776707",
+            "season": 2025,
+            "competition_type": "National Team",
+            "club_id": "3377",
+            "opponent_id": "3375",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
         {
             "game_id": "4776703",
             "season": 2025,
@@ -5956,6 +6039,13 @@
         },
         {
             "title": "Uefa Supercup winner",
+            "season": "26/27",
+            "season_id": 2026,
+            "club_name": "Paris Saint-Germain",
+            "club_id": 583
+        },
+        {
+            "title": "Uefa Supercup winner",
             "season": "25/26",
             "season_id": 2025,
             "club_name": "Paris Saint-Germain",
@@ -6012,7 +6102,99 @@
         }
     ],
     "clubs": {
+        "583": {
+            "type": "club",
+            "seasons": [
+                2022,
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 227,
+                "participations": 227,
+                "minutes": 12048,
+                "starts": 129,
+                "captain_matches": 5,
+                "goals": 11,
+                "assists": 14,
+                "goals_conceded": 143,
+                "points": 505,
+                "clean_sheets": 127,
+                "wins": 157,
+                "draws": 34,
+                "losses": 36,
+                "goal_matches": 216,
+                "assist_matches": 214,
+                "goal_contributions": 25
+            },
+            "positions": {
+                "CMF": 97,
+                "RB": 32,
+                "LB": 1,
+                "DMF": 16,
+                "CB": 1,
+                "RM": 10
+            },
+            "derived": {
+                "season_count": 5,
+                "points_per_match": 2.225,
+                "minutes_per_match": 53.1,
+                "win_rate": 0.6916,
+                "goals_per_90": 0.082,
+                "assists_per_90": 0.105,
+                "contributions_per_90": 0.187,
+                "primary_position": "CMF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 141,
+                    "minutes": 7445,
+                    "goals": 8,
+                    "assists": 9
+                },
+                "Domestic Super Cup": {
+                    "matches": 5,
+                    "minutes": 349,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "International Super Cup": {
+                    "matches": 2,
+                    "minutes": 157,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "International Cup": {
+                    "matches": 62,
+                    "minutes": 3249,
+                    "goals": 2,
+                    "assists": 4
+                },
+                "Domestic Cup": {
+                    "matches": 17,
+                    "minutes": 848,
+                    "goals": 1,
+                    "assists": 1
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "UEFA Champions League winner": 2,
+                    "FIFA Intercontinental Cup Winner": 1,
+                    "French champion": 4,
+                    "French cup winner": 2,
+                    "French Super Cup winner": 3,
+                    "Uefa Supercup winner": 2
+                },
+                "individual_titles": {
+                    "Best young player": 1
+                }
+            }
+        },
         "3377": {
+            "type": "national",
             "seasons": [
                 2022,
                 2023,
@@ -6020,41 +6202,41 @@
                 2025
             ],
             "stats": {
-                "matches": 38,
-                "participations": 38,
-                "minutes": 402,
-                "starts": 5,
+                "matches": 40,
+                "participations": 40,
+                "minutes": 492,
+                "starts": 6,
                 "captain_matches": 0,
                 "goals": 1,
                 "assists": 0,
-                "goals_conceded": 4,
+                "goals_conceded": 10,
                 "points": 84,
-                "clean_sheets": 35,
+                "clean_sheets": 36,
                 "wins": 26,
                 "draws": 6,
-                "losses": 6,
-                "goal_matches": 37,
-                "assist_matches": 38,
+                "losses": 8,
+                "goal_matches": 39,
+                "assist_matches": 40,
                 "goal_contributions": 1
             },
             "positions": {
-                "CMF": 7,
-                "DMF": 3
+                "DMF": 4,
+                "CMF": 7
             },
             "derived": {
                 "season_count": 4,
-                "points_per_match": 2.211,
-                "minutes_per_match": 10.6,
-                "win_rate": 0.6842,
-                "goals_per_90": 0.224,
+                "points_per_match": 2.1,
+                "minutes_per_match": 12.3,
+                "win_rate": 0.65,
+                "goals_per_90": 0.183,
                 "assists_per_90": 0.0,
-                "contributions_per_90": 0.224,
+                "contributions_per_90": 0.183,
                 "primary_position": "CMF"
             },
             "competitions": {
                 "National Team": {
-                    "matches": 30,
-                    "minutes": 282,
+                    "matches": 32,
+                    "minutes": 372,
                     "goals": 0,
                     "assists": 0
                 },
@@ -6072,96 +6254,8 @@
                 }
             }
         },
-        "583": {
-            "seasons": [
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 224,
-                "participations": 224,
-                "minutes": 11816,
-                "starts": 126,
-                "captain_matches": 5,
-                "goals": 11,
-                "assists": 14,
-                "goals_conceded": 139,
-                "points": 501,
-                "clean_sheets": 127,
-                "wins": 156,
-                "draws": 33,
-                "losses": 35,
-                "goal_matches": 213,
-                "assist_matches": 211,
-                "goal_contributions": 25
-            },
-            "positions": {
-                "RB": 32,
-                "CMF": 94,
-                "LB": 1,
-                "DMF": 16,
-                "CB": 1,
-                "RM": 10
-            },
-            "derived": {
-                "season_count": 4,
-                "points_per_match": 2.237,
-                "minutes_per_match": 52.8,
-                "win_rate": 0.6964,
-                "goals_per_90": 0.084,
-                "assists_per_90": 0.107,
-                "contributions_per_90": 0.19,
-                "primary_position": "CMF"
-            },
-            "competitions": {
-                "International Cup": {
-                    "matches": 62,
-                    "minutes": 3249,
-                    "goals": 2,
-                    "assists": 4
-                },
-                "First Tier": {
-                    "matches": 140,
-                    "minutes": 7385,
-                    "goals": 8,
-                    "assists": 9
-                },
-                "Domestic Cup": {
-                    "matches": 17,
-                    "minutes": 848,
-                    "goals": 1,
-                    "assists": 1
-                },
-                "Domestic Super Cup": {
-                    "matches": 4,
-                    "minutes": 267,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "International Super Cup": {
-                    "matches": 1,
-                    "minutes": 67,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "UEFA Champions League winner": 2,
-                    "FIFA Intercontinental Cup Winner": 1,
-                    "French champion": 4,
-                    "French cup winner": 2,
-                    "French Super Cup winner": 3,
-                    "Uefa Supercup winner": 1
-                },
-                "individual_titles": {
-                    "Best young player": 1
-                }
-            }
-        },
         "9323": {
+            "type": "national",
             "seasons": [
                 2023,
                 2024,
@@ -6227,6 +6321,7 @@
             }
         },
         "25250": {
+            "type": "national",
             "seasons": [
                 2021,
                 2022
@@ -6277,6 +6372,7 @@
             }
         },
         "6326": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022
@@ -6324,6 +6420,7 @@
             }
         },
         "23101": {
+            "type": "national",
             "seasons": [
                 2022
             ],
@@ -6378,6 +6475,7 @@
             }
         },
         "43570": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -6419,6 +6517,7 @@
             }
         },
         "41587": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022
@@ -6462,6 +6561,7 @@
             }
         },
         "10831": {
+            "type": "national",
             "seasons": [
                 2021
             ],
@@ -6525,6 +6625,7 @@
             }
         },
         "10844": {
+            "type": "national",
             "seasons": [
                 2021
             ],
@@ -6575,23 +6676,23 @@
     },
     "career": {
         "club": {
-            "matches": 45,
-            "minutes": 2840,
-            "goals": 5,
-            "assists": 3,
-            "goal_contributions": 8,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 2
+            "matches": 272,
+            "minutes": 14888,
+            "goals": 16,
+            "assists": 17,
+            "goal_contributions": 33,
+            "team_titles": 14,
+            "individual_titles": 1,
+            "season_count": 6
         },
         "national": {
-            "matches": 320,
-            "minutes": 14229,
-            "goals": 14,
-            "assists": 18,
-            "goal_contributions": 32,
-            "team_titles": 14,
-            "individual_titles": 3,
+            "matches": 98,
+            "minutes": 2503,
+            "goals": 3,
+            "assists": 4,
+            "goal_contributions": 7,
+            "team_titles": 1,
+            "individual_titles": 2,
             "season_count": 5
         }
     }

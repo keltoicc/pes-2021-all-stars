@@ -1,7 +1,31 @@
 {
     "tactic": "UNKNOWN",
-    "total_score": 12.25,
+    "total_score": 12.45,
     "players": [
+        {
+            "role": "STRIKER",
+            "player": {
+                "ID_transfermarkt": "316962",
+                "name": "R. Courtois",
+                "score": 0.6940564170178816,
+                "roles": {
+                    "SECOND_STRIKER": {
+                        "weight": 0.4,
+                        "score": 0.4389598204864311
+                    },
+                    "STRIKER": {
+                        "weight": 1.0,
+                        "score": 0.6940564170178816
+                    },
+                    "UTILITY": {
+                        "weight": 1.4,
+                        "score": 0.6940564170178816
+                    }
+                }
+            },
+            "score": 0.69,
+            "role_weight": 1.0
+        },
         {
             "role": "WINGER",
             "player": {
@@ -203,6 +227,42 @@
             "role_weight": 1.0
         },
         {
+            "role": "UTILITY",
+            "player": {
+                "ID_transfermarkt": "296948",
+                "name": "Ady Schmit",
+                "score": 0.572112657047876,
+                "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.3,
+                        "score": 0.3133590076993386
+                    },
+                    "WINGER": {
+                        "weight": 0.5,
+                        "score": 0.4045447394012068
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.35,
+                        "score": 0.3384664124016343
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.5,
+                        "score": 0.4045447394012068
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.3,
+                        "score": 0.3133590076993386
+                    },
+                    "UTILITY": {
+                        "weight": 1.95,
+                        "score": 0.572112657047876
+                    }
+                }
+            },
+            "score": 0.57,
+            "role_weight": 1.95
+        },
+        {
             "role": "STRIKER",
             "player": {
                 "ID_transfermarkt": "3901",
@@ -261,54 +321,6 @@
             },
             "score": 0.56,
             "role_weight": 1.0
-        },
-        {
-            "role": "STRIKER",
-            "player": {
-                "ID_transfermarkt": "179892",
-                "name": "S. Paille",
-                "score": 0.5434203792816548,
-                "roles": {
-                    "SECOND_STRIKER": {
-                        "weight": 0.4,
-                        "score": 0.3436892250965209
-                    },
-                    "STRIKER": {
-                        "weight": 1.0,
-                        "score": 0.5434203792816548
-                    },
-                    "UTILITY": {
-                        "weight": 1.4,
-                        "score": 0.5434203792816548
-                    }
-                }
-            },
-            "score": 0.54,
-            "role_weight": 1.0
-        },
-        {
-            "role": "UTILITY",
-            "player": {
-                "ID_transfermarkt": "5539",
-                "name": "R. Pitau",
-                "score": 0.521535220010839,
-                "roles": {
-                    "DEFENSIVE_MID": {
-                        "weight": 1.0,
-                        "score": 0.521535220010839
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 0.5,
-                        "score": 0.36878109069728227
-                    },
-                    "UTILITY": {
-                        "weight": 1.5,
-                        "score": 0.521535220010839
-                    }
-                }
-            },
-            "score": 0.52,
-            "role_weight": 1.5
         },
         {
             "role": "CENTER_BACK",

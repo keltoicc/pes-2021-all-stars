@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Enzo Tchato",
         "short_name": "Enzo Tchato",
+        "dateOfBirth": "2002-11-23",
+        "placeOfBirth": "Montpellier",
         "nation_1": "Cameroon",
         "nation_2": "France",
         "height": 1.82,
@@ -9,11 +12,59 @@
         "position_1": "RB",
         "position_2": "LB",
         "position_3": "CB",
-        "former_clubs": "",
+        "former_clubs": "Montpellier HSC (-2019)",
         "market_value": 3000000,
         "prime_date": "2023-03-27"
     },
     "matches": [
+        {
+            "game_id": "4895512",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "969",
+            "opponent_id": "9202",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4895506",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "969",
+            "opponent_id": "1159",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4895496",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "969",
+            "opponent_id": "2969",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 1
+        },
         {
             "game_id": "4635615",
             "season": 2025,
@@ -2212,7 +2263,7 @@
             "competition_type": "First Tier",
             "club_id": "969",
             "opponent_id": "826",
-            "position": "",
+            "position": "RW",
             "minutes": 1,
             "started": false,
             "captain": false,
@@ -3604,7 +3655,7 @@
             "competition_type": "",
             "club_id": "10852",
             "opponent_id": "10884",
-            "position": "",
+            "position": "RB",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -4170,50 +4221,53 @@
     ],
     "clubs": {
         "969": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 167,
-                "participations": 167,
-                "minutes": 6905,
-                "starts": 73,
+                "matches": 170,
+                "participations": 170,
+                "minutes": 7085,
+                "starts": 75,
                 "captain_matches": 0,
                 "goals": 2,
                 "assists": 5,
                 "goals_conceded": 124,
-                "points": 186,
-                "clean_sheets": 99,
-                "wins": 51,
-                "draws": 33,
+                "points": 193,
+                "clean_sheets": 102,
+                "wins": 53,
+                "draws": 34,
                 "losses": 83,
-                "goal_matches": 165,
-                "assist_matches": 162,
+                "goal_matches": 168,
+                "assist_matches": 165,
                 "goal_contributions": 7
             },
             "positions": {
-                "RB": 73,
+                "RB": 75,
                 "RM": 3,
+                "RW": 1,
                 "LB": 1
             },
             "derived": {
-                "season_count": 5,
-                "points_per_match": 1.114,
-                "minutes_per_match": 41.3,
-                "win_rate": 0.3054,
-                "goals_per_90": 0.026,
-                "assists_per_90": 0.065,
-                "contributions_per_90": 0.091,
+                "season_count": 6,
+                "points_per_match": 1.135,
+                "minutes_per_match": 41.7,
+                "win_rate": 0.3118,
+                "goals_per_90": 0.025,
+                "assists_per_90": 0.064,
+                "contributions_per_90": 0.089,
                 "primary_position": "RB"
             },
             "competitions": {
                 "Second Tier": {
-                    "matches": 34,
-                    "minutes": 2344,
+                    "matches": 37,
+                    "minutes": 2524,
                     "goals": 0,
                     "assists": 3
                 },
@@ -4236,6 +4290,7 @@
             }
         },
         "3434": {
+            "type": "national",
             "seasons": [
                 2021,
                 2022,
@@ -4294,6 +4349,7 @@
             }
         },
         "6572": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -4353,6 +4409,7 @@
             }
         },
         "22980": {
+            "type": "national",
             "seasons": [
                 2020
             ],
@@ -4401,6 +4458,7 @@
             }
         },
         "10852": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -4425,7 +4483,7 @@
                 "goal_contributions": 2
             },
             "positions": {
-                "RB": 1
+                "RB": 2
             },
             "derived": {
                 "season_count": 3,
@@ -4453,14 +4511,14 @@
     },
     "career": {
         "club": {
-            "matches": 236,
-            "minutes": 10254,
+            "matches": 239,
+            "minutes": 10434,
             "goals": 5,
             "assists": 7,
             "goal_contributions": 12,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 8
+            "season_count": 9
         },
         "national": {
             "matches": 23,

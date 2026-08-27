@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Carlens Arcus",
         "short_name": "C. Arcus",
+        "dateOfBirth": "1996-06-28",
+        "placeOfBirth": "Port-au-Prince",
         "nation_1": "Haiti",
         "nation_2": "",
         "height": 1.8,
@@ -14,6 +17,22 @@
         "prime_date": "2026-06-01"
     },
     "matches": [
+        {
+            "game_id": "4894900",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1420",
+            "opponent_id": "1082",
+            "position": "",
+            "minutes": 5,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4776652",
             "season": 2025,
@@ -9134,7 +9153,67 @@
         }
     ],
     "clubs": {
+        "1420": {
+            "type": "club",
+            "seasons": [
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 75,
+                "participations": 75,
+                "minutes": 4240,
+                "starts": 50,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 4,
+                "goals_conceded": 63,
+                "points": 84,
+                "clean_sheets": 39,
+                "wins": 23,
+                "draws": 15,
+                "losses": 37,
+                "goal_matches": 75,
+                "assist_matches": 71,
+                "goal_contributions": 4
+            },
+            "positions": {
+                "CB": 3,
+                "RB": 47,
+                "RM": 1
+            },
+            "derived": {
+                "season_count": 3,
+                "points_per_match": 1.12,
+                "minutes_per_match": 56.5,
+                "win_rate": 0.3067,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.085,
+                "contributions_per_90": 0.085,
+                "primary_position": "RB"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 69,
+                    "minutes": 4105,
+                    "goals": 0,
+                    "assists": 4
+                },
+                "Domestic Cup": {
+                    "matches": 6,
+                    "minutes": 135,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "14161": {
+            "type": "national",
             "seasons": [
                 2016,
                 2017,
@@ -9198,64 +9277,8 @@
                 "individual_titles": {}
             }
         },
-        "1420": {
-            "seasons": [
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 74,
-                "participations": 74,
-                "minutes": 4235,
-                "starts": 50,
-                "captain_matches": 0,
-                "goals": 0,
-                "assists": 4,
-                "goals_conceded": 63,
-                "points": 84,
-                "clean_sheets": 38,
-                "wins": 23,
-                "draws": 15,
-                "losses": 36,
-                "goal_matches": 74,
-                "assist_matches": 70,
-                "goal_contributions": 4
-            },
-            "positions": {
-                "CB": 3,
-                "RB": 47,
-                "RM": 1
-            },
-            "derived": {
-                "season_count": 2,
-                "points_per_match": 1.135,
-                "minutes_per_match": 57.2,
-                "win_rate": 0.3108,
-                "goals_per_90": 0.0,
-                "assists_per_90": 0.085,
-                "contributions_per_90": 0.085,
-                "primary_position": "RB"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 68,
-                    "minutes": 4100,
-                    "goals": 0,
-                    "assists": 4
-                },
-                "Domestic Cup": {
-                    "matches": 6,
-                    "minutes": 135,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "499": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023
@@ -9312,6 +9335,7 @@
             }
         },
         "290": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -9382,6 +9406,7 @@
             }
         },
         "10820": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -9428,6 +9453,7 @@
             }
         },
         "520": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -9480,6 +9506,7 @@
             }
         },
         "1082": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -9540,6 +9567,7 @@
             }
         },
         "12765": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -9586,6 +9614,7 @@
             }
         },
         "1095": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015
@@ -9651,6 +9680,7 @@
             }
         },
         "10846": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015
@@ -9698,6 +9728,7 @@
             }
         },
         "27258": {
+            "type": "national",
             "seasons": [
                 2012
             ],
@@ -9746,14 +9777,14 @@
     },
     "career": {
         "club": {
-            "matches": 484,
-            "minutes": 27397,
+            "matches": 485,
+            "minutes": 27402,
             "goals": 5,
             "assists": 25,
             "goal_contributions": 30,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 12
+            "season_count": 13
         },
         "national": {
             "matches": 84,

@@ -1,10 +1,13 @@
 {
     "player": {
+        "name": "Thilo Kehrer",
         "short_name": "T. Kehrer",
+        "dateOfBirth": "1996-09-21",
+        "placeOfBirth": "Tübingen",
         "nation_1": "Germany",
         "nation_2": "Burundi",
         "height": 1.86,
-        "foot": null,
+        "foot": "Both",
         "position_group": "DEFENDER",
         "position_1": "CB",
         "position_2": "RB",
@@ -14,6 +17,38 @@
         "prime_date": "2019-12-19"
     },
     "matches": [
+        {
+            "game_id": "4894901",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "162",
+            "opponent_id": "738",
+            "position": "",
+            "minutes": 1,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "5013810",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "162",
+            "opponent_id": "428",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
         {
             "game_id": "4635310",
             "season": 2025,
@@ -13045,7 +13080,7 @@
             "club_id": "17662",
             "opponent_id": "10933",
             "position": "RB",
-            "minutes": 90,
+            "minutes": 80,
             "started": true,
             "captain": false,
             "goals": 0,
@@ -14165,27 +14200,29 @@
     ],
     "clubs": {
         "162": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 114,
-                "participations": 114,
-                "minutes": 8384,
+                "matches": 116,
+                "participations": 116,
+                "minutes": 8385,
                 "starts": 95,
                 "captain_matches": 25,
                 "goals": 6,
                 "assists": 2,
                 "goals_conceded": 121,
-                "points": 189,
-                "clean_sheets": 48,
-                "wins": 55,
+                "points": 195,
+                "clean_sheets": 50,
+                "wins": 57,
                 "draws": 24,
                 "losses": 35,
-                "goal_matches": 108,
-                "assist_matches": 112,
+                "goal_matches": 110,
+                "assist_matches": 114,
                 "goal_contributions": 8
             },
             "positions": {
@@ -14193,10 +14230,10 @@
                 "RB": 2
             },
             "derived": {
-                "season_count": 3,
-                "points_per_match": 1.658,
-                "minutes_per_match": 73.5,
-                "win_rate": 0.4825,
+                "season_count": 4,
+                "points_per_match": 1.681,
+                "minutes_per_match": 72.3,
+                "win_rate": 0.4914,
                 "goals_per_90": 0.064,
                 "assists_per_90": 0.021,
                 "contributions_per_90": 0.086,
@@ -14204,13 +14241,13 @@
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 85,
-                    "minutes": 6066,
+                    "matches": 86,
+                    "minutes": 6067,
                     "goals": 5,
                     "assists": 1
                 },
                 "International Cup": {
-                    "matches": 20,
+                    "matches": 21,
                     "minutes": 1543,
                     "goals": 1,
                     "assists": 1
@@ -14234,6 +14271,7 @@
             }
         },
         "3262": {
+            "type": "national",
             "seasons": [
                 2018,
                 2019,
@@ -14297,6 +14335,7 @@
             }
         },
         "379": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023
@@ -14368,6 +14407,7 @@
             }
         },
         "583": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -14452,6 +14492,7 @@
             }
         },
         "33": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -14520,6 +14561,7 @@
             }
         },
         "3817": {
+            "type": "national",
             "seasons": [
                 2016,
                 2017
@@ -14584,6 +14626,7 @@
             }
         },
         "34": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -14633,6 +14676,7 @@
             }
         },
         "5709": {
+            "type": "national",
             "seasons": [
                 2015
             ],
@@ -14687,6 +14731,7 @@
             }
         },
         "41574": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -14731,6 +14776,7 @@
             }
         },
         "5710": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -14792,6 +14838,7 @@
             }
         },
         "1463": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -14849,6 +14896,7 @@
             }
         },
         "21061": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -14899,13 +14947,14 @@
             }
         },
         "17662": {
+            "type": "national",
             "seasons": [
                 2012
             ],
             "stats": {
                 "matches": 18,
                 "participations": 18,
-                "minutes": 813,
+                "minutes": 803,
                 "starts": 9,
                 "captain_matches": 0,
                 "goals": 0,
@@ -14927,7 +14976,7 @@
             "derived": {
                 "season_count": 1,
                 "points_per_match": 1.833,
-                "minutes_per_match": 45.2,
+                "minutes_per_match": 44.6,
                 "win_rate": 0.5556,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
@@ -14949,7 +14998,7 @@
                 },
                 "National youth team": {
                     "matches": 3,
-                    "minutes": 161,
+                    "minutes": 151,
                     "goals": 0,
                     "assists": 0
                 }
@@ -14962,6 +15011,7 @@
             }
         },
         "21084": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -15008,6 +15058,7 @@
             }
         },
         "17368": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -15058,24 +15109,24 @@
     },
     "career": {
         "club": {
-            "matches": 176,
-            "minutes": 9230,
-            "goals": 8,
-            "assists": 8,
-            "goal_contributions": 16,
-            "team_titles": 5,
+            "matches": 745,
+            "minutes": 33734,
+            "goals": 22,
+            "assists": 18,
+            "goal_contributions": 40,
+            "team_titles": 13,
             "individual_titles": 0,
-            "season_count": 5
+            "season_count": 16
         },
         "national": {
-            "matches": 695,
-            "minutes": 28780,
-            "goals": 17,
-            "assists": 12,
-            "goal_contributions": 29,
-            "team_titles": 10,
+            "matches": 128,
+            "minutes": 4267,
+            "goals": 3,
+            "assists": 2,
+            "goal_contributions": 5,
+            "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 14
+            "season_count": 13
         }
     }
 }
