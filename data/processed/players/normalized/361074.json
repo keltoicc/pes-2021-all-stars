@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Peer Koopmeiners",
         "short_name": "P. Koopmeiners",
+        "dateOfBirth": "2000-05-04",
+        "placeOfBirth": "Castricum",
         "nation_1": "Netherlands",
         "nation_2": "",
         "height": 1.86,
@@ -14,6 +17,70 @@
         "prime_date": "2026-05-28"
     },
     "matches": [
+        {
+            "game_id": "4894683",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1090",
+            "opponent_id": "385",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4894676",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1090",
+            "opponent_id": "200",
+            "position": "DMF",
+            "minutes": 85,
+            "started": true,
+            "captain": true,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4894511",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1090",
+            "opponent_id": "1268",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4938881",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "1090",
+            "opponent_id": "383",
+            "position": "CMF",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4642426",
             "season": 2025,
@@ -8225,6 +8292,13 @@
     ],
     "achievements": [
         {
+            "title": "Dutch Super Cup winner",
+            "season": "2027",
+            "season_id": 2026,
+            "club_name": "AZ Alkmaar",
+            "club_id": 1090
+        },
+        {
             "title": "Dutch Cup winner",
             "season": "25/26",
             "season_id": 2025,
@@ -8269,53 +8343,61 @@
     ],
     "clubs": {
         "1090": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
                 2022,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 214,
-                "participations": 214,
-                "minutes": 8632,
-                "starts": 96,
-                "captain_matches": 9,
-                "goals": 6,
-                "assists": 11,
-                "goals_conceded": 113,
-                "points": 403,
-                "clean_sheets": 146,
-                "wins": 121,
+                "matches": 218,
+                "participations": 218,
+                "minutes": 8987,
+                "starts": 100,
+                "captain_matches": 13,
+                "goals": 7,
+                "assists": 12,
+                "goals_conceded": 114,
+                "points": 415,
+                "clean_sheets": 149,
+                "wins": 125,
                 "draws": 40,
                 "losses": 53,
-                "goal_matches": 208,
-                "assist_matches": 204,
-                "goal_contributions": 17
+                "goal_matches": 211,
+                "assist_matches": 207,
+                "goal_contributions": 19
             },
             "positions": {
-                "DMF": 77,
-                "CMF": 30,
+                "DMF": 80,
+                "CMF": 31,
                 "CB": 3,
                 "LW": 1
             },
             "derived": {
-                "season_count": 5,
-                "points_per_match": 1.883,
-                "minutes_per_match": 40.3,
-                "win_rate": 0.5654,
-                "goals_per_90": 0.063,
-                "assists_per_90": 0.115,
-                "contributions_per_90": 0.177,
+                "season_count": 6,
+                "points_per_match": 1.904,
+                "minutes_per_match": 41.2,
+                "win_rate": 0.5734,
+                "goals_per_90": 0.07,
+                "assists_per_90": 0.12,
+                "contributions_per_90": 0.19,
                 "primary_position": "DMF"
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 141,
-                    "minutes": 5100,
-                    "goals": 3,
+                    "matches": 144,
+                    "minutes": 5365,
+                    "goals": 4,
                     "assists": 8
+                },
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 1
                 },
                 "Domestic Cup": {
                     "matches": 15,
@@ -8338,12 +8420,14 @@
             },
             "awards": {
                 "team_titles": {
+                    "Dutch Super Cup winner": 1,
                     "Dutch Cup winner": 1
                 },
                 "individual_titles": {}
             }
         },
         "723": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -8400,6 +8484,7 @@
             }
         },
         "798": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -8455,6 +8540,7 @@
             }
         },
         "11368": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -8510,6 +8596,7 @@
             }
         },
         "7460": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018
@@ -8553,6 +8640,7 @@
             }
         },
         "16341": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -8608,6 +8696,7 @@
             }
         },
         "51646": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016
@@ -8651,6 +8740,7 @@
             }
         },
         "39118": {
+            "type": "national",
             "seasons": [
                 2015
             ],
@@ -8700,6 +8790,7 @@
             }
         },
         "34684": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -8750,24 +8841,24 @@
     },
     "career": {
         "club": {
-            "matches": 277,
-            "minutes": 18364,
-            "goals": 12,
-            "assists": 22,
-            "goal_contributions": 34,
-            "team_titles": 0,
+            "matches": 495,
+            "minutes": 27351,
+            "goals": 19,
+            "assists": 34,
+            "goal_contributions": 53,
+            "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 9
+            "season_count": 12
         },
         "national": {
-            "matches": 236,
-            "minutes": 9117,
-            "goals": 6,
-            "assists": 11,
-            "goal_contributions": 17,
-            "team_titles": 1,
+            "matches": 22,
+            "minutes": 485,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 8
+            "season_count": 3
         }
     }
 }

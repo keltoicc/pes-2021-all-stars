@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Wouter Goes",
         "short_name": "Wouter Goes",
+        "dateOfBirth": "2004-06-10",
+        "placeOfBirth": "Amsterdam",
         "nation_1": "Netherlands",
         "nation_2": "",
         "height": 1.88,
@@ -14,6 +17,70 @@
         "prime_date": "2026-05-28"
     },
     "matches": [
+        {
+            "game_id": "4894683",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1090",
+            "opponent_id": "385",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4894676",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1090",
+            "opponent_id": "200",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4894511",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1090",
+            "opponent_id": "1268",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4938881",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "1090",
+            "opponent_id": "383",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4642426",
             "season": 2025,
@@ -6072,6 +6139,13 @@
             "club_id": 92852
         },
         {
+            "title": "Dutch Super Cup winner",
+            "season": "2027",
+            "season_id": 2026,
+            "club_name": "AZ Alkmaar",
+            "club_id": 1090
+        },
+        {
             "title": "Dutch U19 Youth Cup winner",
             "season": "2022",
             "season_id": 2021,
@@ -6130,50 +6204,58 @@
     ],
     "clubs": {
         "1090": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 181,
-                "participations": 181,
-                "minutes": 10199,
-                "starts": 116,
+                "matches": 185,
+                "participations": 185,
+                "minutes": 10559,
+                "starts": 120,
                 "captain_matches": 1,
                 "goals": 4,
                 "assists": 5,
-                "goals_conceded": 132,
-                "points": 322,
-                "clean_sheets": 105,
-                "wins": 95,
+                "goals_conceded": 133,
+                "points": 334,
+                "clean_sheets": 108,
+                "wins": 99,
                 "draws": 37,
                 "losses": 49,
-                "goal_matches": 177,
-                "assist_matches": 176,
+                "goal_matches": 181,
+                "assist_matches": 180,
                 "goal_contributions": 9
             },
             "positions": {
-                "CB": 119,
+                "CB": 123,
                 "RB": 1
             },
             "derived": {
-                "season_count": 4,
-                "points_per_match": 1.779,
-                "minutes_per_match": 56.3,
-                "win_rate": 0.5249,
-                "goals_per_90": 0.035,
-                "assists_per_90": 0.044,
-                "contributions_per_90": 0.079,
+                "season_count": 5,
+                "points_per_match": 1.805,
+                "minutes_per_match": 57.1,
+                "win_rate": 0.5351,
+                "goals_per_90": 0.034,
+                "assists_per_90": 0.043,
+                "contributions_per_90": 0.077,
                 "primary_position": "CB"
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 119,
-                    "minutes": 6605,
+                    "matches": 122,
+                    "minutes": 6875,
                     "goals": 3,
                     "assists": 3
+                },
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
                 },
                 "Domestic Cup": {
                     "matches": 14,
@@ -6196,12 +6278,14 @@
             },
             "awards": {
                 "team_titles": {
+                    "Dutch Super Cup winner": 1,
                     "Dutch Cup winner": 1
                 },
                 "individual_titles": {}
             }
         },
         "11944": {
+            "type": "national",
             "seasons": [
                 2023,
                 2024,
@@ -6265,6 +6349,7 @@
             }
         },
         "11368": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -6315,6 +6400,7 @@
             }
         },
         "92852": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022
@@ -6359,6 +6445,7 @@
             }
         },
         "81349": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -6411,6 +6498,7 @@
             }
         },
         "16341": {
+            "type": "national",
             "seasons": [
                 2022
             ],
@@ -6459,6 +6547,7 @@
             }
         },
         "16340": {
+            "type": "national",
             "seasons": [
                 2021
             ],
@@ -6507,6 +6596,7 @@
             }
         },
         "51646": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -6549,6 +6639,7 @@
             }
         },
         "39118": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -6597,6 +6688,7 @@
             }
         },
         "34684": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -6647,22 +6739,22 @@
     },
     "career": {
         "club": {
-            "matches": 152,
-            "minutes": 7861,
-            "goals": 2,
-            "assists": 7,
-            "goal_contributions": 9,
-            "team_titles": 2,
+            "matches": 337,
+            "minutes": 18420,
+            "goals": 6,
+            "assists": 12,
+            "goal_contributions": 18,
+            "team_titles": 4,
             "individual_titles": 0,
-            "season_count": 5
+            "season_count": 8
         },
         "national": {
-            "matches": 226,
-            "minutes": 12010,
-            "goals": 6,
-            "assists": 5,
-            "goal_contributions": 11,
-            "team_titles": 1,
+            "matches": 45,
+            "minutes": 1811,
+            "goals": 2,
+            "assists": 0,
+            "goal_contributions": 2,
+            "team_titles": 0,
             "individual_titles": 0,
             "season_count": 7
         }

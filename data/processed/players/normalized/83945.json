@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Stefano Marzo",
         "short_name": "S. Marzo",
+        "dateOfBirth": "1991-03-22",
+        "placeOfBirth": "Lommel",
         "nation_1": "Belgium",
         "nation_2": "Italy",
         "height": 1.81,
@@ -9,11 +12,43 @@
         "position_1": "RB",
         "position_2": "RM",
         "position_3": "CB",
-        "former_clubs": "Lutlommel, Lommel SK, PSV (2003-2010)",
+        "former_clubs": "Lutlommel VV (1997-2000), KFC Lommel SK (2000-2003), PSV (2003-2010)",
         "market_value": 1500000,
         "prime_date": "2017-06-07"
     },
     "matches": [
+        {
+            "game_id": "4912097",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "3159",
+            "opponent_id": "46736",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4912099",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "3159",
+            "opponent_id": "2974",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
         {
             "game_id": "4868158",
             "season": 2025,
@@ -1916,7 +1951,7 @@
             "assists": 0,
             "goals_conceded": 1,
             "participation": "played",
-            "club_points": 3
+            "club_points": 0
         },
         {
             "game_id": "3851409",
@@ -10168,53 +10203,55 @@
     ],
     "clubs": {
         "3159": {
+            "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 67,
-                "participations": 67,
+                "matches": 69,
+                "participations": 69,
                 "minutes": 1200,
                 "starts": 13,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 1,
                 "goals_conceded": 22,
-                "points": 94,
-                "clean_sheets": 54,
-                "wins": 27,
+                "points": 97,
+                "clean_sheets": 56,
+                "wins": 28,
                 "draws": 13,
-                "losses": 27,
-                "goal_matches": 67,
-                "assist_matches": 66,
+                "losses": 28,
+                "goal_matches": 69,
+                "assist_matches": 68,
                 "goal_contributions": 1
             },
             "positions": {
                 "RB": 11
             },
             "derived": {
-                "season_count": 2,
-                "points_per_match": 1.403,
-                "minutes_per_match": 17.9,
-                "win_rate": 0.403,
+                "season_count": 3,
+                "points_per_match": 1.406,
+                "minutes_per_match": 17.4,
+                "win_rate": 0.4058,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.075,
                 "contributions_per_90": 0.075,
                 "primary_position": "RB"
             },
             "competitions": {
+                "Second Tier": {
+                    "matches": 63,
+                    "minutes": 1041,
+                    "goals": 0,
+                    "assists": 1
+                },
                 "Play-Offs": {
                     "matches": 2,
                     "minutes": 0,
                     "goals": 0,
                     "assists": 0
-                },
-                "Second Tier": {
-                    "matches": 61,
-                    "minutes": 1041,
-                    "goals": 0,
-                    "assists": 1
                 },
                 "Domestic Cup": {
                     "matches": 4,
@@ -10229,6 +10266,7 @@
             }
         },
         "72033": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -10268,6 +10306,7 @@
             }
         },
         "9010": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023
@@ -10281,11 +10320,11 @@
                 "goals": 8,
                 "assists": 10,
                 "goals_conceded": 65,
-                "points": 99,
+                "points": 96,
                 "clean_sheets": 25,
-                "wins": 28,
+                "wins": 27,
                 "draws": 15,
-                "losses": 20,
+                "losses": 21,
                 "goal_matches": 56,
                 "assist_matches": 53,
                 "goal_contributions": 18
@@ -10297,9 +10336,9 @@
             },
             "derived": {
                 "season_count": 2,
-                "points_per_match": 1.571,
+                "points_per_match": 1.524,
                 "minutes_per_match": 76.7,
-                "win_rate": 0.4444,
+                "win_rate": 0.4286,
                 "goals_per_90": 0.149,
                 "assists_per_90": 0.186,
                 "contributions_per_90": 0.335,
@@ -10331,6 +10370,7 @@
             }
         },
         "192": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021
@@ -10393,6 +10433,7 @@
             }
         },
         "498": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -10461,6 +10502,7 @@
             }
         },
         "306": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -10528,6 +10570,7 @@
             }
         },
         "24368": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -10574,6 +10617,7 @@
             }
         },
         "566": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -10635,6 +10679,7 @@
             }
         },
         "9715": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -10677,6 +10722,7 @@
             }
         },
         "383": {
+            "type": "club",
             "seasons": [
                 2010,
                 2011
@@ -10738,6 +10784,7 @@
             }
         },
         "16338": {
+            "type": "national",
             "seasons": [
                 2009
             ],
@@ -10793,6 +10840,7 @@
             }
         },
         "4575": {
+            "type": "club",
             "seasons": [
                 2008,
                 2009
@@ -10833,6 +10881,7 @@
             }
         },
         "16337": {
+            "type": "national",
             "seasons": [
                 2008
             ],
@@ -10879,6 +10928,7 @@
             }
         },
         "23219": {
+            "type": "national",
             "seasons": [
                 2007
             ],
@@ -10933,24 +10983,24 @@
     },
     "career": {
         "club": {
-            "matches": 577,
-            "minutes": 29050,
+            "matches": 614,
+            "minutes": 29120,
             "goals": 18,
             "assists": 32,
             "goal_contributions": 50,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 17
+            "season_count": 19
         },
         "national": {
-            "matches": 56,
-            "minutes": 1387,
+            "matches": 21,
+            "minutes": 1317,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 5
+            "season_count": 3
         }
     }
 }

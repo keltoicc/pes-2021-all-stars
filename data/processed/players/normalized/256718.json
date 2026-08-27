@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Sven van Beek",
         "short_name": "S. van Beek",
+        "dateOfBirth": "1994-07-28",
+        "placeOfBirth": "Gouda",
         "nation_1": "Netherlands",
         "nation_2": "",
         "height": 1.89,
@@ -14,6 +17,22 @@
         "prime_date": "2018-06-12"
     },
     "matches": [
+        {
+            "game_id": "5024732",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "34694",
+            "opponent_id": "6297",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
         {
             "game_id": "4882298",
             "season": 2025,
@@ -9567,22 +9586,6 @@
             "club_points": 3
         },
         {
-            "game_id": "2318655",
-            "season": 2012,
-            "competition_type": "National Team",
-            "club_id": "16341",
-            "opponent_id": "28434",
-            "position": "CB",
-            "minutes": 90,
-            "started": true,
-            "captain": false,
-            "goals": 0,
-            "assists": 0,
-            "goals_conceded": 1,
-            "participation": "played",
-            "club_points": 0
-        },
-        {
             "game_id": "3952226",
             "season": 2012,
             "competition_type": "Youth National Team Qualifiers",
@@ -10912,13 +10915,15 @@
     ],
     "clubs": {
         "34694": {
+            "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 65,
-                "participations": 65,
+                "matches": 66,
+                "participations": 66,
                 "minutes": 4026,
                 "starts": 45,
                 "captain_matches": 16,
@@ -10926,39 +10931,39 @@
                 "assists": 2,
                 "goals_conceded": 72,
                 "points": 77,
-                "clean_sheets": 31,
+                "clean_sheets": 32,
                 "wins": 22,
                 "draws": 11,
-                "losses": 32,
-                "goal_matches": 61,
-                "assist_matches": 63,
+                "losses": 33,
+                "goal_matches": 62,
+                "assist_matches": 64,
                 "goal_contributions": 6
             },
             "positions": {
                 "CB": 45
             },
             "derived": {
-                "season_count": 2,
-                "points_per_match": 1.185,
-                "minutes_per_match": 61.9,
-                "win_rate": 0.3385,
+                "season_count": 3,
+                "points_per_match": 1.167,
+                "minutes_per_match": 61.0,
+                "win_rate": 0.3333,
                 "goals_per_90": 0.089,
                 "assists_per_90": 0.045,
                 "contributions_per_90": 0.134,
                 "primary_position": "CB"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 45,
+                    "minutes": 3366,
+                    "goals": 2,
+                    "assists": 2
+                },
                 "Play-Offs": {
                     "matches": 1,
                     "minutes": 90,
                     "goals": 1,
                     "assists": 0
-                },
-                "First Tier": {
-                    "matches": 44,
-                    "minutes": 3366,
-                    "goals": 2,
-                    "assists": 2
                 },
                 "League Cup": {
                     "matches": 17,
@@ -10979,6 +10984,7 @@
             }
         },
         "306": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -11041,6 +11047,7 @@
             }
         },
         "403": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -11089,6 +11096,7 @@
             }
         },
         "234": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -11174,6 +11182,7 @@
             }
         },
         "24366": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -11231,6 +11240,7 @@
             }
         },
         "11944": {
+            "type": "national",
             "seasons": [
                 2013,
                 2014,
@@ -11288,36 +11298,37 @@
             }
         },
         "16341": {
+            "type": "national",
             "seasons": [
                 2012
             ],
             "stats": {
-                "matches": 8,
-                "participations": 8,
-                "minutes": 567,
-                "starts": 6,
+                "matches": 7,
+                "participations": 7,
+                "minutes": 477,
+                "starts": 5,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 0,
-                "goals_conceded": 9,
+                "goals_conceded": 8,
                 "points": 13,
                 "clean_sheets": 3,
                 "wins": 4,
                 "draws": 1,
-                "losses": 3,
-                "goal_matches": 8,
-                "assist_matches": 8,
+                "losses": 2,
+                "goal_matches": 7,
+                "assist_matches": 7,
                 "goal_contributions": 0
             },
             "positions": {
-                "CB": 5,
+                "CB": 4,
                 "RB": 1
             },
             "derived": {
                 "season_count": 1,
-                "points_per_match": 1.625,
-                "minutes_per_match": 70.9,
-                "win_rate": 0.5,
+                "points_per_match": 1.857,
+                "minutes_per_match": 68.1,
+                "win_rate": 0.5714,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
@@ -11337,8 +11348,8 @@
                     "assists": 0
                 },
                 "National Team": {
-                    "matches": 3,
-                    "minutes": 117,
+                    "matches": 2,
+                    "minutes": 27,
                     "goals": 0,
                     "assists": 0
                 }
@@ -11349,6 +11360,7 @@
             }
         },
         "2862": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012
@@ -11393,6 +11405,7 @@
             }
         },
         "50220": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -11434,24 +11447,24 @@
     },
     "career": {
         "club": {
-            "matches": 297,
-            "minutes": 16205,
-            "goals": 9,
-            "assists": 4,
-            "goal_contributions": 13,
-            "team_titles": 2,
+            "matches": 645,
+            "minutes": 28890,
+            "goals": 15,
+            "assists": 7,
+            "goal_contributions": 22,
+            "team_titles": 6,
             "individual_titles": 0,
-            "season_count": 14
+            "season_count": 16
         },
         "national": {
-            "matches": 379,
-            "minutes": 14152,
-            "goals": 6,
-            "assists": 3,
-            "goal_contributions": 9,
-            "team_titles": 4,
+            "matches": 31,
+            "minutes": 1377,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 9
+            "season_count": 4
         }
     }
 }

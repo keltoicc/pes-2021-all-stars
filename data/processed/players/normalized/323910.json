@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Mauro Júnior",
         "short_name": "Mauro Júnior",
+        "dateOfBirth": "1999-05-06",
+        "placeOfBirth": "São Paulo",
         "nation_1": "Brazil",
         "nation_2": "",
         "height": 1.71,
@@ -14,6 +17,70 @@
         "prime_date": "2026-05-28"
     },
     "matches": [
+        {
+            "game_id": "4894688",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "383",
+            "opponent_id": "202",
+            "position": "LB",
+            "minutes": 75,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4894677",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "383",
+            "opponent_id": "798",
+            "position": "LB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4894510",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "383",
+            "opponent_id": "385",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4938881",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "383",
+            "opponent_id": "1090",
+            "position": "DMF",
+            "minutes": 63,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4642432",
             "season": 2025,
@@ -7681,6 +7748,7 @@
     ],
     "clubs": {
         "383": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -7689,29 +7757,31 @@
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 379,
-                "participations": 379,
-                "minutes": 12898,
-                "starts": 141,
-                "captain_matches": 4,
+                "matches": 383,
+                "participations": 383,
+                "minutes": 13216,
+                "starts": 145,
+                "captain_matches": 8,
                 "goals": 9,
-                "assists": 31,
-                "goals_conceded": 171,
-                "points": 834,
+                "assists": 32,
+                "goals_conceded": 178,
+                "points": 841,
                 "clean_sheets": 266,
-                "wins": 258,
-                "draws": 60,
-                "losses": 61,
-                "goal_matches": 370,
-                "assist_matches": 350,
-                "goal_contributions": 40
+                "wins": 260,
+                "draws": 61,
+                "losses": 62,
+                "goal_matches": 374,
+                "assist_matches": 353,
+                "goal_contributions": 41
             },
             "positions": {
-                "LB": 76,
-                "DMF": 19,
+                "LB": 78,
+                "CB": 1,
+                "DMF": 20,
                 "CMF": 14,
                 "RB": 25,
                 "AMF": 18,
@@ -7722,21 +7792,27 @@
                 "SS": 1
             },
             "derived": {
-                "season_count": 8,
-                "points_per_match": 2.201,
-                "minutes_per_match": 34.0,
-                "win_rate": 0.6807,
-                "goals_per_90": 0.063,
-                "assists_per_90": 0.216,
+                "season_count": 9,
+                "points_per_match": 2.196,
+                "minutes_per_match": 34.5,
+                "win_rate": 0.6789,
+                "goals_per_90": 0.061,
+                "assists_per_90": 0.218,
                 "contributions_per_90": 0.279,
                 "primary_position": "LB"
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 265,
-                    "minutes": 9003,
+                    "matches": 268,
+                    "minutes": 9258,
                     "goals": 7,
-                    "assists": 24
+                    "assists": 25
+                },
+                "Domestic Super Cup": {
+                    "matches": 7,
+                    "minutes": 160,
+                    "goals": 0,
+                    "assists": 0
                 },
                 "Domestic Cup": {
                     "matches": 28,
@@ -7749,12 +7825,6 @@
                     "minutes": 2756,
                     "goals": 1,
                     "assists": 4
-                },
-                "Domestic Super Cup": {
-                    "matches": 6,
-                    "minutes": 97,
-                    "goals": 0,
-                    "assists": 0
                 }
             },
             "awards": {
@@ -7767,6 +7837,7 @@
             }
         },
         "37018": {
+            "type": "national",
             "seasons": [
                 2019,
                 2020
@@ -7824,6 +7895,7 @@
             }
         },
         "1304": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -7880,6 +7952,7 @@
             }
         },
         "9715": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018
@@ -7930,6 +8003,7 @@
             }
         },
         "7658": {
+            "type": "national",
             "seasons": [
                 2017,
                 2018
@@ -7981,6 +8055,7 @@
             }
         },
         "23130": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -8027,6 +8102,7 @@
             }
         },
         "65623": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -8075,24 +8151,24 @@
     },
     "career": {
         "club": {
-            "matches": 71,
-            "minutes": 4994,
-            "goals": 13,
-            "assists": 15,
-            "goal_contributions": 28,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 3
-        },
-        "national": {
-            "matches": 400,
-            "minutes": 13266,
-            "goals": 9,
-            "assists": 31,
-            "goal_contributions": 40,
+            "matches": 454,
+            "minutes": 18210,
+            "goals": 22,
+            "assists": 47,
+            "goal_contributions": 69,
             "team_titles": 10,
             "individual_titles": 0,
-            "season_count": 11
+            "season_count": 10
+        },
+        "national": {
+            "matches": 21,
+            "minutes": 368,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 6
         }
     }
 }

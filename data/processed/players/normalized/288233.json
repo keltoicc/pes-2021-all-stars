@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Nick Doodeman",
         "short_name": "N. Doodeman",
+        "dateOfBirth": "1996-10-22",
+        "placeOfBirth": "Venhuizen",
         "nation_1": "Netherlands",
         "nation_2": "",
         "height": 1.73,
@@ -14,6 +17,54 @@
         "prime_date": "2026-05-21"
     },
     "matches": [
+        {
+            "game_id": "4913043",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "724",
+            "opponent_id": "384",
+            "position": "RW",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4913015",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "724",
+            "opponent_id": "1228",
+            "position": "RW",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4894524",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "724",
+            "opponent_id": "9715",
+            "position": "RW",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4887534",
             "season": 2025,
@@ -7808,7 +7859,68 @@
         }
     ],
     "clubs": {
+        "724": {
+            "type": "club",
+            "seasons": [
+                2017,
+                2018,
+                2019,
+                2020,
+                2026
+            ],
+            "stats": {
+                "matches": 134,
+                "participations": 134,
+                "minutes": 10302,
+                "starts": 120,
+                "captain_matches": 0,
+                "goals": 26,
+                "assists": 45,
+                "goals_conceded": 185,
+                "points": 182,
+                "clean_sheets": 33,
+                "wins": 49,
+                "draws": 35,
+                "losses": 50,
+                "goal_matches": 111,
+                "assist_matches": 104,
+                "goal_contributions": 71
+            },
+            "positions": {
+                "RW": 121,
+                "LW": 6
+            },
+            "derived": {
+                "season_count": 5,
+                "points_per_match": 1.358,
+                "minutes_per_match": 76.9,
+                "win_rate": 0.3657,
+                "goals_per_90": 0.227,
+                "assists_per_90": 0.393,
+                "contributions_per_90": 0.62,
+                "primary_position": "RW"
+            },
+            "competitions": {
+                "Second Tier": {
+                    "matches": 129,
+                    "minutes": 9982,
+                    "goals": 26,
+                    "assists": 43
+                },
+                "Domestic Cup": {
+                    "matches": 5,
+                    "minutes": 320,
+                    "goals": 0,
+                    "assists": 2
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "403": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -7882,6 +7994,7 @@
             }
         },
         "133": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021
@@ -7945,65 +8058,8 @@
                 "individual_titles": {}
             }
         },
-        "724": {
-            "seasons": [
-                2017,
-                2018,
-                2019,
-                2020
-            ],
-            "stats": {
-                "matches": 131,
-                "participations": 131,
-                "minutes": 10032,
-                "starts": 117,
-                "captain_matches": 0,
-                "goals": 26,
-                "assists": 43,
-                "goals_conceded": 181,
-                "points": 179,
-                "clean_sheets": 32,
-                "wins": 48,
-                "draws": 35,
-                "losses": 48,
-                "goal_matches": 108,
-                "assist_matches": 103,
-                "goal_contributions": 69
-            },
-            "positions": {
-                "RW": 118,
-                "LW": 6
-            },
-            "derived": {
-                "season_count": 4,
-                "points_per_match": 1.366,
-                "minutes_per_match": 76.6,
-                "win_rate": 0.3664,
-                "goals_per_90": 0.233,
-                "assists_per_90": 0.386,
-                "contributions_per_90": 0.619,
-                "primary_position": "RW"
-            },
-            "competitions": {
-                "Second Tier": {
-                    "matches": 126,
-                    "minutes": 9712,
-                    "goals": 26,
-                    "assists": 41
-                },
-                "Domestic Cup": {
-                    "matches": 5,
-                    "minutes": 320,
-                    "goals": 0,
-                    "assists": 2
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "20299": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -8052,6 +8108,7 @@
             }
         },
         "11368": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -8103,6 +8160,7 @@
             }
         },
         "7460": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014
@@ -8146,6 +8204,7 @@
             }
         },
         "16340": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -8194,6 +8253,7 @@
             }
         },
         "10933": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -8244,14 +8304,14 @@
     },
     "career": {
         "club": {
-            "matches": 484,
-            "minutes": 24479,
+            "matches": 487,
+            "minutes": 24749,
             "goals": 57,
-            "assists": 99,
-            "goal_contributions": 156,
+            "assists": 101,
+            "goal_contributions": 158,
             "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 13
+            "season_count": 14
         },
         "national": {
             "matches": 2,

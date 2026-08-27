@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Justin Bijlow",
         "short_name": "J. Bijlow",
+        "dateOfBirth": "1998-01-22",
+        "placeOfBirth": "Rotterdam",
         "nation_1": "Netherlands",
         "nation_2": "",
         "height": 1.88,
@@ -14,6 +17,38 @@
         "prime_date": "2023-12-15"
     },
     "matches": [
+        {
+            "game_id": "4893346",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "252",
+            "opponent_id": "6195",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4904430",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "252",
+            "opponent_id": "408",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4621092",
             "season": 2025,
@@ -11503,35 +11538,19 @@
             "club_points": 0
         },
         {
-            "game_id": "2535712",
+            "game_id": "3886239",
             "season": 2014,
-            "competition_type": "National Team",
+            "competition_type": "National youth team",
             "club_id": "10933",
             "opponent_id": "23260",
             "position": "GK",
-            "minutes": 55,
+            "minutes": 80,
             "started": true,
             "captain": false,
             "goals": 0,
             "assists": 0,
             "goals_conceded": 0,
             "participation": "played",
-            "club_points": 3
-        },
-        {
-            "game_id": "3886239",
-            "season": 2014,
-            "competition_type": "National youth team",
-            "club_id": "10933",
-            "opponent_id": "23260",
-            "position": null,
-            "minutes": 0,
-            "started": false,
-            "captain": false,
-            "goals": 0,
-            "assists": 0,
-            "goals_conceded": 0,
-            "participation": "not in squad",
             "club_points": 3
         },
         {
@@ -12260,35 +12279,37 @@
     ],
     "clubs": {
         "252": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 17,
-                "participations": 17,
-                "minutes": 1395,
-                "starts": 16,
+                "matches": 19,
+                "participations": 19,
+                "minutes": 1575,
+                "starts": 18,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 0,
-                "goals_conceded": 20,
-                "points": 21,
+                "goals_conceded": 23,
+                "points": 24,
                 "clean_sheets": 6,
-                "wins": 6,
+                "wins": 7,
                 "draws": 3,
-                "losses": 8,
-                "goal_matches": 17,
-                "assist_matches": 17,
+                "losses": 9,
+                "goal_matches": 19,
+                "assist_matches": 19,
                 "goal_contributions": 0
             },
             "positions": {
-                "GK": 16
+                "GK": 18
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.235,
-                "minutes_per_match": 82.1,
-                "win_rate": 0.3529,
+                "season_count": 2,
+                "points_per_match": 1.263,
+                "minutes_per_match": 82.9,
+                "win_rate": 0.3684,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
@@ -12296,8 +12317,14 @@
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 17,
-                    "minutes": 1395,
+                    "matches": 18,
+                    "minutes": 1485,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 90,
                     "goals": 0,
                     "assists": 0
                 }
@@ -12308,6 +12335,7 @@
             }
         },
         "3379": {
+            "type": "national",
             "seasons": [
                 2020,
                 2021,
@@ -12367,6 +12395,7 @@
             }
         },
         "234": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -12453,6 +12482,7 @@
             }
         },
         "11944": {
+            "type": "national",
             "seasons": [
                 2017,
                 2018,
@@ -12516,6 +12546,7 @@
             }
         },
         "24366": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -12567,6 +12598,7 @@
             }
         },
         "62101": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -12608,6 +12640,7 @@
             }
         },
         "16342": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -12656,6 +12689,7 @@
             }
         },
         "16341": {
+            "type": "national",
             "seasons": [
                 2015,
                 2016
@@ -12717,6 +12751,7 @@
             }
         },
         "2862": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016
@@ -12759,26 +12794,27 @@
             }
         },
         "10933": {
+            "type": "national",
             "seasons": [
                 2013,
                 2014
             ],
             "stats": {
-                "matches": 23,
-                "participations": 23,
-                "minutes": 876,
+                "matches": 22,
+                "participations": 22,
+                "minutes": 901,
                 "starts": 12,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 0,
                 "goals_conceded": 8,
-                "points": 49,
-                "clean_sheets": 17,
-                "wins": 14,
+                "points": 46,
+                "clean_sheets": 16,
+                "wins": 13,
                 "draws": 7,
                 "losses": 2,
-                "goal_matches": 23,
-                "assist_matches": 23,
+                "goal_matches": 22,
+                "assist_matches": 22,
                 "goal_contributions": 0
             },
             "positions": {
@@ -12786,9 +12822,9 @@
             },
             "derived": {
                 "season_count": 2,
-                "points_per_match": 2.13,
-                "minutes_per_match": 38.1,
-                "win_rate": 0.6087,
+                "points_per_match": 2.091,
+                "minutes_per_match": 41.0,
+                "win_rate": 0.5909,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
@@ -12797,13 +12833,13 @@
             "competitions": {
                 "National youth team": {
                     "matches": 11,
-                    "minutes": 320,
+                    "minutes": 400,
                     "goals": 0,
                     "assists": 0
                 },
                 "National Team": {
-                    "matches": 6,
-                    "minutes": 221,
+                    "matches": 5,
+                    "minutes": 166,
                     "goals": 0,
                     "assists": 0
                 },
@@ -12820,6 +12856,7 @@
             }
         },
         "51654": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -12861,6 +12898,7 @@
             }
         },
         "50220": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014
@@ -12901,6 +12939,7 @@
             }
         },
         "39118": {
+            "type": "national",
             "seasons": [
                 2013
             ],
@@ -12951,22 +12990,22 @@
     },
     "career": {
         "club": {
-            "matches": 142,
-            "minutes": 6508,
-            "goals": 0,
-            "assists": 0,
-            "goal_contributions": 0,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 7
-        },
-        "national": {
-            "matches": 613,
-            "minutes": 17907,
+            "matches": 610,
+            "minutes": 20299,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
             "team_titles": 7,
+            "individual_titles": 0,
+            "season_count": 14
+        },
+        "national": {
+            "matches": 146,
+            "minutes": 4321,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
             "individual_titles": 0,
             "season_count": 13
         }

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Leandro Bacuna",
         "short_name": "L. Bacuna",
+        "dateOfBirth": "1991-08-21",
+        "placeOfBirth": "Groningen",
         "nation_1": null,
         "nation_2": "Netherlands",
         "height": 1.8,
@@ -14,6 +17,54 @@
         "prime_date": "2021-06-30"
     },
     "matches": [
+        {
+            "game_id": "4935850",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "74664",
+            "opponent_id": "3205",
+            "position": "",
+            "minutes": 8,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4935842",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "74664",
+            "opponent_id": "20",
+            "position": "",
+            "minutes": 28,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4935830",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "74664",
+            "opponent_id": "6646",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
         {
             "game_id": "4776656",
             "season": 2025,
@@ -13630,7 +13681,68 @@
         }
     ],
     "clubs": {
+        "74664": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 25,
+                "participations": 25,
+                "minutes": 1370,
+                "starts": 16,
+                "captain_matches": 0,
+                "goals": 3,
+                "assists": 2,
+                "goals_conceded": 16,
+                "points": 27,
+                "clean_sheets": 15,
+                "wins": 7,
+                "draws": 6,
+                "losses": 12,
+                "goal_matches": 22,
+                "assist_matches": 23,
+                "goal_contributions": 5
+            },
+            "positions": {
+                "RW": 4,
+                "CMF": 10,
+                "LW": 2,
+                "RB": 1,
+                "AMF": 2
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 1.08,
+                "minutes_per_match": 54.8,
+                "win_rate": 0.28,
+                "goals_per_90": 0.197,
+                "assists_per_90": 0.131,
+                "contributions_per_90": 0.328,
+                "primary_position": "CMF"
+            },
+            "competitions": {
+                "Second Tier": {
+                    "matches": 22,
+                    "minutes": 1231,
+                    "goals": 3,
+                    "assists": 2
+                },
+                "Domestic Cup": {
+                    "matches": 3,
+                    "minutes": 139,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "32364": {
+            "type": "national",
             "seasons": [
                 2016,
                 2017,
@@ -13696,65 +13808,8 @@
                 "individual_titles": {}
             }
         },
-        "74664": {
-            "seasons": [
-                2025
-            ],
-            "stats": {
-                "matches": 22,
-                "participations": 22,
-                "minutes": 1334,
-                "starts": 16,
-                "captain_matches": 0,
-                "goals": 3,
-                "assists": 2,
-                "goals_conceded": 16,
-                "points": 24,
-                "clean_sheets": 12,
-                "wins": 6,
-                "draws": 6,
-                "losses": 10,
-                "goal_matches": 19,
-                "assist_matches": 20,
-                "goal_contributions": 5
-            },
-            "positions": {
-                "RW": 4,
-                "CMF": 10,
-                "LW": 2,
-                "RB": 1,
-                "AMF": 2
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 1.091,
-                "minutes_per_match": 60.6,
-                "win_rate": 0.2727,
-                "goals_per_90": 0.202,
-                "assists_per_90": 0.135,
-                "contributions_per_90": 0.337,
-                "primary_position": "CMF"
-            },
-            "competitions": {
-                "Second Tier": {
-                    "matches": 19,
-                    "minutes": 1195,
-                    "goals": 3,
-                    "assists": 2
-                },
-                "Domestic Cup": {
-                    "matches": 3,
-                    "minutes": 139,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "20760": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -13813,6 +13868,7 @@
             }
         },
         "202": {
+            "type": "club",
             "seasons": [
                 2009,
                 2010,
@@ -13891,6 +13947,7 @@
             }
         },
         "1010": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -13946,6 +14003,7 @@
             }
         },
         "603": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -14028,6 +14086,7 @@
             }
         },
         "1032": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018
@@ -14094,6 +14153,7 @@
             }
         },
         "405": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -14171,6 +14231,7 @@
             }
         },
         "12124": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -14212,6 +14273,7 @@
             }
         },
         "14725": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012
@@ -14262,6 +14324,7 @@
             }
         },
         "11944": {
+            "type": "national",
             "seasons": [
                 2011,
                 2012
@@ -14319,6 +14382,7 @@
             }
         },
         "16341": {
+            "type": "national",
             "seasons": [
                 2009
             ],
@@ -14373,6 +14437,7 @@
             }
         },
         "7461": {
+            "type": "club",
             "seasons": [
                 2008
             ],
@@ -14414,14 +14479,14 @@
     },
     "career": {
         "club": {
-            "matches": 744,
-            "minutes": 41712,
+            "matches": 747,
+            "minutes": 41748,
             "goals": 52,
             "assists": 46,
             "goal_contributions": 98,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 18
+            "season_count": 19
         },
         "national": {
             "matches": 105,

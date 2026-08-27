@@ -1,10 +1,13 @@
 {
     "player": {
+        "name": "Jari Litmanen",
         "short_name": "J. Litmanen",
+        "dateOfBirth": "1971-02-20",
+        "placeOfBirth": "Lahti",
         "nation_1": "Finland",
         "nation_2": "",
         "height": 1.82,
-        "foot": null,
+        "foot": "Both",
         "position_group": "MIDFIELDER",
         "position_1": "AMF",
         "position_2": "SS",
@@ -14,6 +17,22 @@
         "prime_date": "2004-10-04"
     },
     "matches": [
+        {
+            "game_id": "4906170",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "57781",
+            "opponent_id": "142309",
+            "position": "",
+            "minutes": 22,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "1160384",
             "season": 2010,
@@ -4116,14 +4135,14 @@
             "competition_type": "First Tier",
             "club_id": "496",
             "opponent_id": "4380",
-            "position": null,
-            "minutes": 0,
-            "started": false,
+            "position": "AMF",
+            "minutes": 90,
+            "started": true,
             "captain": false,
             "goals": 0,
             "assists": 0,
             "goals_conceded": 0,
-            "participation": "not in squad",
+            "participation": "played",
             "club_points": 1
         },
         {
@@ -14852,7 +14871,7 @@
             "competition_type": "International Cup",
             "club_id": "610",
             "opponent_id": "409",
-            "position": "",
+            "position": "AMF",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -19177,7 +19196,55 @@
         }
     ],
     "clubs": {
+        "57781": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 1,
+                "participations": 1,
+                "minutes": 22,
+                "starts": 0,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 0,
+                "points": 3,
+                "clean_sheets": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "goal_matches": 1,
+                "assist_matches": 1,
+                "goal_contributions": 0
+            },
+            "positions": {},
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 3.0,
+                "minutes_per_match": 22.0,
+                "win_rate": 1.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": ""
+            },
+            "competitions": {
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 22,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "1008": {
+            "type": "club",
             "seasons": [
                 1990,
                 1991,
@@ -19242,6 +19309,7 @@
             }
         },
         "3443": {
+            "type": "national",
             "seasons": [
                 1988,
                 1989,
@@ -19324,6 +19392,7 @@
             }
         },
         "2925": {
+            "type": "club",
             "seasons": [
                 2003,
                 2007,
@@ -19391,6 +19460,7 @@
             }
         },
         "931": {
+            "type": "club",
             "seasons": [
                 2007
             ],
@@ -19437,6 +19507,7 @@
             }
         },
         "496": {
+            "type": "club",
             "seasons": [
                 2004,
                 2005,
@@ -19445,8 +19516,8 @@
             "stats": {
                 "matches": 72,
                 "participations": 72,
-                "minutes": 920,
-                "starts": 10,
+                "minutes": 1010,
+                "starts": 11,
                 "captain_matches": 0,
                 "goals": 2,
                 "assists": 0,
@@ -19461,23 +19532,23 @@
                 "goal_contributions": 2
             },
             "positions": {
-                "AMF": 8,
+                "AMF": 9,
                 "CF": 1
             },
             "derived": {
                 "season_count": 3,
                 "points_per_match": 1.361,
-                "minutes_per_match": 12.8,
+                "minutes_per_match": 14.0,
                 "win_rate": 0.3611,
-                "goals_per_90": 0.196,
+                "goals_per_90": 0.178,
                 "assists_per_90": 0.0,
-                "contributions_per_90": 0.196,
+                "contributions_per_90": 0.178,
                 "primary_position": "AMF"
             },
             "competitions": {
                 "First Tier": {
                     "matches": 66,
-                    "minutes": 777,
+                    "minutes": 867,
                     "goals": 2,
                     "assists": 0
                 },
@@ -19494,6 +19565,7 @@
             }
         },
         "30": {
+            "type": "club",
             "seasons": [
                 2004
             ],
@@ -19548,6 +19620,7 @@
             }
         },
         "610": {
+            "type": "club",
             "seasons": [
                 1992,
                 1993,
@@ -19578,7 +19651,7 @@
                 "goal_contributions": 171
             },
             "positions": {
-                "AMF": 91,
+                "AMF": 92,
                 "CF": 2,
                 "CMF": 7,
                 "DMF": 1,
@@ -19642,6 +19715,7 @@
             }
         },
         "31": {
+            "type": "club",
             "seasons": [
                 2000,
                 2001,
@@ -19730,6 +19804,7 @@
             }
         },
         "131": {
+            "type": "club",
             "seasons": [
                 1999,
                 2000
@@ -19801,6 +19876,7 @@
             }
         },
         "8817": {
+            "type": "club",
             "seasons": [
                 1995
             ],
@@ -19849,6 +19925,7 @@
             }
         },
         "2688": {
+            "type": "club",
             "seasons": [
                 1991
             ],
@@ -19897,6 +19974,7 @@
             }
         },
         "4024": {
+            "type": "club",
             "seasons": [
                 1989
             ],
@@ -19952,6 +20030,7 @@
             }
         },
         "20796": {
+            "type": "national",
             "seasons": [
                 1988
             ],
@@ -20006,24 +20085,24 @@
     },
     "career": {
         "club": {
-            "matches": 79,
-            "minutes": 5089,
-            "goals": 22,
-            "assists": 1,
-            "goal_contributions": 23,
-            "team_titles": 1,
-            "individual_titles": 3,
-            "season_count": 5
-        },
-        "national": {
-            "matches": 1097,
-            "minutes": 40284,
-            "goals": 214,
-            "assists": 72,
-            "goal_contributions": 286,
-            "team_titles": 20,
+            "matches": 934,
+            "minutes": 35121,
+            "goals": 203,
+            "assists": 65,
+            "goal_contributions": 268,
+            "team_titles": 21,
             "individual_titles": 14,
             "season_count": 24
+        },
+        "national": {
+            "matches": 243,
+            "minutes": 10364,
+            "goals": 33,
+            "assists": 8,
+            "goal_contributions": 41,
+            "team_titles": 0,
+            "individual_titles": 3,
+            "season_count": 23
         }
     }
 }
