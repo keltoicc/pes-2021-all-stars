@@ -1,0 +1,203 @@
+---
+import type { Player } from "../../types/player";
+
+interface Props {
+    players: Player[];
+}
+
+const { players } = Astro.props;
+---
+
+<section class="featured-players">
+
+    <header class="featured-players__header">
+
+        <h2>Featured Players</h2>
+
+    </header>
+
+    {
+        players.length > 0 && (
+
+            <ul class="featured-players__grid">
+
+                {
+                    players.map(player => (
+
+                        <li class="featured-players__item">
+
+                            <a
+                                href={`${import.meta.env.BASE_URL}players/${player.slug}/`}
+                            >
+
+                                <div class="featured-players__crest-wrapper">
+
+                                    <img
+                                        src={`${import.meta.env.BASE_URL}images/branding/isotipo.png`}
+                                        alt={`${player.name} crest`}
+                                    />
+
+                                </div>
+
+                                <div class="featured-players__info">
+
+                                    <h3>{player.name}</h3>
+
+                                    <span
+                                        class="featured-players__arrow"
+                                        aria-hidden="true"
+                                    >
+                                        →
+                                    </span>
+
+                                </div>
+
+                            </a>
+
+                        </li>
+
+                    ))
+                }
+
+            </ul>
+
+        )
+    }
+
+</section>
+
+<style>
+.featured-players {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-4);
+
+    max-width: var(--content-width);
+}
+
+.featured-players__header {
+    padding: var(--space-3) var(--space-4);
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.featured-players__header h2 {
+    margin: 0;
+
+    font-size: var(--font-size-xl);
+}
+
+.featured-players__grid {
+    display: grid;
+
+    grid-template-columns: repeat(
+        3,
+        minmax(0, 1fr)
+    );
+
+    gap: var(--space-4);
+}
+
+.featured-players__item {
+    list-style: none;
+}
+
+.featured-players__item a {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    padding: var(--space-4);
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    color: inherit;
+    text-decoration: none;
+
+    transition:
+        background-color 150ms ease,
+        border-color 150ms ease,
+        color 150ms ease;
+}
+
+.featured-players__crest-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 140px;
+
+    padding: var(--space-4);
+}
+
+.featured-players__crest-wrapper img {
+    width: 112px;
+    height: 112px;
+
+    object-fit: contain;
+}
+
+.featured-players__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--space-3);
+
+    margin-top: auto;
+    padding-top: var(--space-4);
+
+    border-top: 1px solid var(--color-border);
+}
+
+.featured-players__info h3 {
+    margin: 0;
+
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+}
+
+.featured-players__arrow {
+    color: var(--color-text-muted);
+
+    transition:
+        color 150ms ease,
+        transform 150ms ease;
+}
+
+.featured-players__item a:hover {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.featured-players__item a:hover .featured-players__arrow {
+    color: var(--color-primary);
+    transform: translateX(3px);
+}
+
+.featured-players__item a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+@media (max-width: 800px) {
+
+    .featured-players__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .featured-players__grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+</style>

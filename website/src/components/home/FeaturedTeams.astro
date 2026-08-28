@@ -1,0 +1,201 @@
+---
+import type { Team } from "../../types/team";
+
+interface Props {
+    teams: Team[];
+}
+
+const { teams } = Astro.props;
+---
+
+<section class="featured-teams">
+
+    <header class="featured-teams__header">
+        <h2>Featured Teams</h2>
+    </header>
+
+    {
+        teams.length > 0 && (
+
+            <ul class="featured-teams__grid">
+
+                {
+                    teams.map(team => (
+
+                        <li class="featured-teams__item">
+
+                            <a
+                                href={`${import.meta.env.BASE_URL}teams/${team.slug}/`}
+                            >
+
+                                <div class="featured-teams__crest-wrapper">
+
+                                    <img
+                                        src={`${import.meta.env.BASE_URL}${team.crest}`}
+                                        alt={`${team.name} crest`}
+                                    />
+
+                                </div>
+
+                                <div class="featured-teams__info">
+
+                                    <h3>{team.name}</h3>
+
+                                    <span
+                                        class="featured-teams__arrow"
+                                        aria-hidden="true"
+                                    >
+                                        →
+                                    </span>
+
+                                </div>
+
+                            </a>
+
+                        </li>
+
+                    ))
+                }
+
+            </ul>
+
+        )
+    }
+
+</section>
+
+<style>
+.featured-teams {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-4);
+
+    max-width: var(--content-width);
+}
+
+.featured-teams__header {
+    padding: var(--space-3) var(--space-4);
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.featured-teams__header h2 {
+    margin: 0;
+
+    font-size: var(--font-size-xl);
+}
+
+.featured-teams__grid {
+    display: grid;
+
+    grid-template-columns: repeat(
+        3,
+        minmax(0, 1fr)
+    );
+
+    gap: var(--space-4);
+}
+
+.featured-teams__item {
+    list-style: none;
+}
+
+.featured-teams__item a {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    padding: var(--space-4);
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    color: inherit;
+    text-decoration: none;
+
+    transition:
+        background-color 150ms ease,
+        border-color 150ms ease,
+        color 150ms ease;
+}
+
+.featured-teams__crest-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 140px;
+
+    padding: var(--space-4);
+}
+
+.featured-teams__crest-wrapper img {
+    width: 112px;
+    height: 112px;
+
+    object-fit: contain;
+}
+
+.featured-teams__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--space-3);
+
+    margin-top: auto;
+    padding-top: var(--space-4);
+
+    border-top: 1px solid var(--color-border);
+}
+
+.featured-teams__info h3 {
+    margin: 0;
+
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+}
+
+.featured-teams__arrow {
+    color: var(--color-text-muted);
+
+    transition:
+        color 150ms ease,
+        transform 150ms ease;
+}
+
+.featured-teams__item a:hover {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.featured-teams__item a:hover .featured-teams__arrow {
+    color: var(--color-primary);
+    transform: translateX(3px);
+}
+
+.featured-teams__item a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+@media (max-width: 800px) {
+
+    .featured-teams__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .featured-teams__grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+</style>

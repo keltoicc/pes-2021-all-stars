@@ -1,5 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+import FeaturedRepository from "../lib/repositories/FeaturedRepository";
+import TeamRepository from "../lib/repositories/TeamRepository";
+import PlayerRepository from "../lib/repositories/PlayerRepository";
+
+import FeaturedTeams from "../components/home/FeaturedTeams.astro"
+import FeaturedPlayers from "../components/home/FeaturedPlayers.astro"
+
+const featured = FeaturedRepository.get();
+
+const featuredTeams = featured.teams
+    .map(id => TeamRepository.getById(id))
+    .filter(team => team !== undefined);
+
+const featuredPlayers = featured.players
+    .map(id => PlayerRepository.getById(id))
+    .filter(player => player !== undefined);
 ---
 
 <Layout>
@@ -107,6 +124,10 @@ import Layout from "../layouts/Layout.astro";
             </div>
 
         </section>
+
+        <FeaturedTeams teams={featuredTeams} />
+
+        <FeaturedPlayers players={featuredPlayers} />
 
     </div>
 
