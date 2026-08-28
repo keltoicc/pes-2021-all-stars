@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Mohamed Belloumi",
         "short_name": "M. Belloumi",
+        "dateOfBirth": "2002-06-01",
+        "placeOfBirth": "Mascara",
         "nation_1": "Algeria",
         "nation_2": "",
         "height": 1.77,
@@ -14,6 +17,38 @@
         "prime_date": "2026-05-28"
     },
     "matches": [
+        {
+            "game_id": "5016470",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "3008",
+            "opponent_id": "512",
+            "position": "",
+            "minutes": 13,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4899183",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "3008",
+            "opponent_id": "985",
+            "position": "RW",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4887853",
             "season": 2025,
@@ -3938,43 +3973,57 @@
     "achievements": [],
     "clubs": {
         "3008": {
+            "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 96,
-                "participations": 96,
-                "minutes": 1947,
-                "starts": 22,
+                "matches": 98,
+                "participations": 98,
+                "minutes": 2050,
+                "starts": 23,
                 "captain_matches": 0,
                 "goals": 5,
                 "assists": 6,
                 "goals_conceded": 24,
-                "points": 129,
-                "clean_sheets": 78,
-                "wins": 36,
+                "points": 135,
+                "clean_sheets": 80,
+                "wins": 38,
                 "draws": 21,
                 "losses": 39,
-                "goal_matches": 92,
-                "assist_matches": 91,
+                "goal_matches": 94,
+                "assist_matches": 93,
                 "goal_contributions": 11
             },
             "positions": {
-                "RW": 13,
+                "RW": 14,
                 "RM": 9
             },
             "derived": {
-                "season_count": 2,
-                "points_per_match": 1.344,
-                "minutes_per_match": 20.3,
-                "win_rate": 0.375,
-                "goals_per_90": 0.231,
-                "assists_per_90": 0.277,
-                "contributions_per_90": 0.508,
+                "season_count": 3,
+                "points_per_match": 1.378,
+                "minutes_per_match": 20.9,
+                "win_rate": 0.3878,
+                "goals_per_90": 0.22,
+                "assists_per_90": 0.263,
+                "contributions_per_90": 0.483,
                 "primary_position": "RW"
             },
             "competitions": {
+                "League Cup": {
+                    "matches": 2,
+                    "minutes": 13,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "First Tier": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Play-Offs": {
                     "matches": 3,
                     "minutes": 191,
@@ -3992,12 +4041,6 @@
                     "minutes": 0,
                     "goals": 0,
                     "assists": 0
-                },
-                "League Cup": {
-                    "matches": 1,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
                 }
             },
             "awards": {
@@ -4006,6 +4049,7 @@
             }
         },
         "19715": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -4047,6 +4091,7 @@
             }
         },
         "4294": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -4116,6 +4161,7 @@
             }
         },
         "3614": {
+            "type": "national",
             "seasons": [
                 2023
             ],
@@ -4162,6 +4208,7 @@
             }
         },
         "91911": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022
@@ -4212,6 +4259,7 @@
             }
         },
         "8851": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -4270,14 +4318,14 @@
     },
     "career": {
         "club": {
-            "matches": 243,
-            "minutes": 7762,
+            "matches": 245,
+            "minutes": 7865,
             "goals": 24,
             "assists": 17,
             "goal_contributions": 41,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 6
+            "season_count": 7
         },
         "national": {
             "matches": 2,

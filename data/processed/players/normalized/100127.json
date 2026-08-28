@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Cristiano Figueiredo",
         "short_name": "C. Figueiredo",
+        "dateOfBirth": "1990-11-29",
+        "placeOfBirth": "München",
         "nation_1": "Portugal",
         "nation_2": "Germany",
         "height": 1.95,
@@ -14,6 +17,54 @@
         "prime_date": "2015-07-01"
     },
     "matches": [
+        {
+            "game_id": "4944920",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "2995",
+            "opponent_id": "4297",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4944910",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "2995",
+            "opponent_id": "5222",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4944900",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "2995",
+            "opponent_id": "2829",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4653799",
             "season": 2025,
@@ -12373,7 +12424,57 @@
         }
     ],
     "clubs": {
+        "2995": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 3,
+                "participations": 3,
+                "minutes": 180,
+                "starts": 2,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 3,
+                "points": 0,
+                "clean_sheets": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 3,
+                "goal_matches": 3,
+                "assist_matches": 3,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "GK": 2
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 0.0,
+                "minutes_per_match": 60.0,
+                "win_rate": 0.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "GK"
+            },
+            "competitions": {
+                "Third Tier": {
+                    "matches": 3,
+                    "minutes": 180,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "1701": {
+            "type": "club",
             "seasons": [
                 2024,
                 2025
@@ -12429,6 +12530,7 @@
             }
         },
         "51316": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024
@@ -12490,6 +12592,7 @@
             }
         },
         "9599": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -12544,6 +12647,7 @@
             }
         },
         "312": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -12598,6 +12702,7 @@
             }
         },
         "7769": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -12666,6 +12771,7 @@
             }
         },
         "58049": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -12727,6 +12833,7 @@
             }
         },
         "1085": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018
@@ -12788,6 +12895,7 @@
             }
         },
         "68608": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -12836,6 +12944,7 @@
             }
         },
         "6418": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016
@@ -12891,6 +13000,7 @@
             }
         },
         "1075": {
+            "type": "club",
             "seasons": [
                 2009,
                 2010,
@@ -12961,6 +13071,7 @@
             }
         },
         "2990": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -13021,6 +13132,7 @@
             }
         },
         "10789": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013
@@ -13070,6 +13182,7 @@
             }
         },
         "16374": {
+            "type": "national",
             "seasons": [
                 2010,
                 2011,
@@ -13126,6 +13239,7 @@
             }
         },
         "6182": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -13172,6 +13286,7 @@
             }
         },
         "1049": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -13230,6 +13345,7 @@
             }
         },
         "6912": {
+            "type": "club",
             "seasons": [
                 2010
             ],
@@ -13276,6 +13392,7 @@
             }
         },
         "16373": {
+            "type": "national",
             "seasons": [
                 2009
             ],
@@ -13326,24 +13443,24 @@
     },
     "career": {
         "club": {
-            "matches": 491,
-            "minutes": 22635,
+            "matches": 753,
+            "minutes": 23508,
             "goals": 0,
             "assists": 1,
             "goal_contributions": 1,
-            "team_titles": 0,
+            "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 16
+            "season_count": 18
         },
         "national": {
-            "matches": 279,
-            "minutes": 1108,
+            "matches": 20,
+            "minutes": 415,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
-            "team_titles": 1,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 7
+            "season_count": 4
         }
     }
 }

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "João Resende",
         "short_name": "J. Resende",
+        "dateOfBirth": "2003-03-26",
+        "placeOfBirth": "Guimarães",
         "nation_1": "Portugal",
         "nation_2": "",
         "height": 1.78,
@@ -14,6 +17,54 @@
         "prime_date": "2022-12-28"
     },
     "matches": [
+        {
+            "game_id": "4938945",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "4294",
+            "opponent_id": "1701",
+            "position": "LW",
+            "minutes": 59,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4938957",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "4294",
+            "opponent_id": "10331",
+            "position": "LW",
+            "minutes": 66,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4938919",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "4294",
+            "opponent_id": "2432",
+            "position": "LW",
+            "minutes": 73,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4651093",
             "season": 2025,
@@ -4212,19 +4263,69 @@
             "title": "UEFA Youth League Winner",
             "season": "21/22",
             "season_id": 2021,
-            "club_name": "SL Benfica UEFA U19",
+            "club_name": "SL Benfica Youth League",
             "club_id": 41582
         },
         {
             "title": "U20 Intercontinental Cup Winner",
             "season": "21/22",
             "season_id": 2021,
-            "club_name": "SL Benfica UEFA U19",
+            "club_name": "SL Benfica Youth League",
             "club_id": 41582
         }
     ],
     "clubs": {
+        "4294": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 3,
+                "participations": 3,
+                "minutes": 198,
+                "starts": 3,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 3,
+                "points": 7,
+                "clean_sheets": 0,
+                "wins": 2,
+                "draws": 1,
+                "losses": 0,
+                "goal_matches": 3,
+                "assist_matches": 3,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "LW": 3
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 2.333,
+                "minutes_per_match": 66.0,
+                "win_rate": 0.6667,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "LW"
+            },
+            "competitions": {
+                "Second Tier": {
+                    "matches": 3,
+                    "minutes": 198,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "5650": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -4281,6 +4382,7 @@
             }
         },
         "2431": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -4330,6 +4432,7 @@
             }
         },
         "2639": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024
@@ -4395,6 +4498,7 @@
             }
         },
         "2990": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -4443,6 +4547,7 @@
             }
         },
         "10330": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -4493,6 +4598,7 @@
             }
         },
         "68780": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -4549,6 +4655,7 @@
             }
         },
         "16373": {
+            "type": "national",
             "seasons": [
                 2021,
                 2022
@@ -4604,6 +4711,7 @@
             }
         },
         "41582": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -4648,6 +4756,7 @@
             }
         },
         "16372": {
+            "type": "national",
             "seasons": [
                 2021
             ],
@@ -4696,6 +4805,7 @@
             }
         },
         "23137": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -4756,6 +4866,7 @@
             }
         },
         "31372": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -4804,6 +4915,7 @@
             }
         },
         "30503": {
+            "type": "national",
             "seasons": [
                 2017
             ],
@@ -4854,14 +4966,14 @@
     },
     "career": {
         "club": {
-            "matches": 234,
-            "minutes": 6202,
+            "matches": 237,
+            "minutes": 6400,
             "goals": 28,
             "assists": 11,
             "goal_contributions": 39,
             "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 6
+            "season_count": 7
         },
         "national": {
             "matches": 28,

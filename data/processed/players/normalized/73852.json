@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Fredy Montero",
         "short_name": "F. Montero",
+        "dateOfBirth": "1987-07-26",
+        "placeOfBirth": "Campo de la Cruz",
         "nation_1": "Colombia",
         "nation_2": "",
         "height": 1.76,
@@ -14,6 +17,54 @@
         "prime_date": "2015-07-01"
     },
     "matches": [
+        {
+            "game_id": "5031068",
+            "season": 2025,
+            "competition_type": "Second Tier",
+            "club_id": "13046",
+            "opponent_id": "20466",
+            "position": "",
+            "minutes": 28,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "5031059",
+            "season": 2025,
+            "competition_type": "Second Tier",
+            "club_id": "13046",
+            "opponent_id": "14583",
+            "position": "",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4975407",
+            "season": 2025,
+            "competition_type": "Second Tier",
+            "club_id": "13046",
+            "opponent_id": "18111",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 1
+        },
         {
             "game_id": "4949139",
             "season": 2025,
@@ -11972,7 +12023,7 @@
             "competition_type": "National Team",
             "club_id": "3816",
             "opponent_id": "3504",
-            "position": "",
+            "position": "CF",
             "minutes": 23,
             "started": false,
             "captain": false,
@@ -12710,26 +12761,27 @@
     ],
     "clubs": {
         "13046": {
+            "type": "club",
             "seasons": [
                 2024,
                 2025
             ],
             "stats": {
-                "matches": 72,
-                "participations": 72,
-                "minutes": 4696,
-                "starts": 58,
+                "matches": 75,
+                "participations": 75,
+                "minutes": 4814,
+                "starts": 59,
                 "captain_matches": 0,
                 "goals": 47,
                 "assists": 0,
-                "goals_conceded": 58,
-                "points": 114,
-                "clean_sheets": 39,
-                "wins": 30,
-                "draws": 24,
-                "losses": 18,
-                "goal_matches": 38,
-                "assist_matches": 72,
+                "goals_conceded": 60,
+                "points": 118,
+                "clean_sheets": 41,
+                "wins": 31,
+                "draws": 25,
+                "losses": 19,
+                "goal_matches": 41,
+                "assist_matches": 75,
                 "goal_contributions": 47
             },
             "positions": {
@@ -12737,25 +12789,25 @@
             },
             "derived": {
                 "season_count": 2,
-                "points_per_match": 1.583,
-                "minutes_per_match": 65.2,
-                "win_rate": 0.4167,
-                "goals_per_90": 0.901,
+                "points_per_match": 1.573,
+                "minutes_per_match": 64.2,
+                "win_rate": 0.4133,
+                "goals_per_90": 0.879,
                 "assists_per_90": 0.0,
-                "contributions_per_90": 0.901,
+                "contributions_per_90": 0.879,
                 "primary_position": "CF"
             },
             "competitions": {
+                "Second Tier": {
+                    "matches": 51,
+                    "minutes": 3095,
+                    "goals": 33,
+                    "assists": 0
+                },
                 "Domestic Cup": {
                     "matches": 4,
                     "minutes": 111,
                     "goals": 0,
-                    "assists": 0
-                },
-                "Second Tier": {
-                    "matches": 48,
-                    "minutes": 2977,
-                    "goals": 33,
                     "assists": 0
                 },
                 "Play-Offs": {
@@ -12771,6 +12823,7 @@
             }
         },
         "9961": {
+            "type": "club",
             "seasons": [
                 2007,
                 2023
@@ -12834,6 +12887,7 @@
             }
         },
         "9636": {
+            "type": "club",
             "seasons": [
                 2008,
                 2009,
@@ -12913,6 +12967,7 @@
             }
         },
         "6321": {
+            "type": "club",
             "seasons": [
                 2016,
                 2018,
@@ -12983,6 +13038,7 @@
             }
         },
         "336": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -13065,6 +13121,7 @@
             }
         },
         "3187": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -13121,6 +13178,7 @@
             }
         },
         "2350": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -13193,6 +13251,7 @@
             }
         },
         "3816": {
+            "type": "national",
             "seasons": [
                 2006,
                 2007,
@@ -13217,7 +13276,9 @@
                 "assist_matches": 12,
                 "goal_contributions": 0
             },
-            "positions": {},
+            "positions": {
+                "CF": 1
+            },
             "derived": {
                 "season_count": 4,
                 "points_per_match": 1.833,
@@ -13226,7 +13287,7 @@
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
-                "primary_position": ""
+                "primary_position": "CF"
             },
             "competitions": {
                 "National Team": {
@@ -13252,24 +13313,24 @@
     },
     "career": {
         "club": {
-            "matches": 104,
-            "minutes": 7261,
-            "goals": 56,
-            "assists": 3,
-            "goal_contributions": 59,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 3
+            "matches": 775,
+            "minutes": 41980,
+            "goals": 227,
+            "assists": 74,
+            "goal_contributions": 301,
+            "team_titles": 8,
+            "individual_titles": 1,
+            "season_count": 19
         },
         "national": {
-            "matches": 680,
-            "minutes": 34701,
-            "goals": 171,
-            "assists": 71,
-            "goal_contributions": 242,
-            "team_titles": 8,
-            "individual_titles": 3,
-            "season_count": 18
+            "matches": 12,
+            "minutes": 100,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
+            "individual_titles": 2,
+            "season_count": 4
         }
     }
 }

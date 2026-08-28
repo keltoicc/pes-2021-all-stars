@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Fábio Pacheco",
         "short_name": "F. Pacheco",
+        "dateOfBirth": "1988-05-26",
+        "placeOfBirth": "Paredes",
         "nation_1": "Portugal",
         "nation_2": "",
         "height": 1.8,
@@ -14,6 +17,54 @@
         "prime_date": "2017-02-22"
     },
     "matches": [
+        {
+            "game_id": "4944921",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "2829",
+            "opponent_id": "7211",
+            "position": "DMF",
+            "minutes": 45,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4944911",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "2829",
+            "opponent_id": "4297",
+            "position": "DMF",
+            "minutes": 68,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4944900",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "2829",
+            "opponent_id": "2995",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4813588",
             "season": 2025,
@@ -2708,7 +2759,7 @@
             "competition_type": "First Tier",
             "club_id": "979",
             "opponent_id": "6912",
-            "position": "CMF",
+            "position": "DMF",
             "minutes": 79,
             "started": true,
             "captain": false,
@@ -10504,51 +10555,53 @@
     ],
     "clubs": {
         "2829": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 31,
-                "participations": 31,
-                "minutes": 1380,
-                "starts": 17,
+                "matches": 34,
+                "participations": 34,
+                "minutes": 1583,
+                "starts": 20,
                 "captain_matches": 0,
                 "goals": 1,
                 "assists": 0,
-                "goals_conceded": 4,
-                "points": 39,
-                "clean_sheets": 27,
-                "wins": 9,
+                "goals_conceded": 7,
+                "points": 45,
+                "clean_sheets": 28,
+                "wins": 11,
                 "draws": 12,
-                "losses": 10,
-                "goal_matches": 30,
-                "assist_matches": 31,
+                "losses": 11,
+                "goal_matches": 33,
+                "assist_matches": 34,
                 "goal_contributions": 1
             },
             "positions": {
-                "DMF": 18
+                "DMF": 21
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.258,
-                "minutes_per_match": 44.5,
-                "win_rate": 0.2903,
-                "goals_per_90": 0.065,
+                "season_count": 2,
+                "points_per_match": 1.324,
+                "minutes_per_match": 46.6,
+                "win_rate": 0.3235,
+                "goals_per_90": 0.057,
                 "assists_per_90": 0.0,
-                "contributions_per_90": 0.065,
+                "contributions_per_90": 0.057,
                 "primary_position": "DMF"
             },
             "competitions": {
+                "Third Tier": {
+                    "matches": 21,
+                    "minutes": 822,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Play-Offs": {
                     "matches": 10,
                     "minutes": 550,
                     "goals": 1,
-                    "assists": 0
-                },
-                "Third Tier": {
-                    "matches": 18,
-                    "minutes": 619,
-                    "goals": 0,
                     "assists": 0
                 },
                 "Domestic Cup": {
@@ -10564,6 +10617,7 @@
             }
         },
         "4297": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -10624,6 +10678,7 @@
             }
         },
         "110302": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -10690,6 +10745,7 @@
             }
         },
         "979": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -10716,8 +10772,8 @@
                 "goal_contributions": 8
             },
             "positions": {
-                "DMF": 119,
-                "CMF": 6,
+                "DMF": 120,
+                "CMF": 5,
                 "CB": 4,
                 "AMF": 1,
                 "SW": 2
@@ -10772,6 +10828,7 @@
             }
         },
         "1301": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -10839,6 +10896,7 @@
             }
         },
         "1085": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016
@@ -10902,6 +10960,7 @@
             }
         },
         "7179": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012,
@@ -10970,6 +11029,7 @@
             }
         },
         "8827": {
+            "type": "club",
             "seasons": [
                 2010
             ],
@@ -11030,6 +11090,7 @@
             }
         },
         "2995": {
+            "type": "club",
             "seasons": [
                 2007,
                 2008,
@@ -11104,6 +11165,7 @@
             }
         },
         "8239": {
+            "type": "club",
             "seasons": [
                 2007
             ],
@@ -11155,24 +11217,24 @@
     },
     "career": {
         "club": {
-            "matches": 573,
-            "minutes": 28879,
-            "goals": 16,
+            "matches": 657,
+            "minutes": 31155,
+            "goals": 17,
             "assists": 6,
-            "goal_contributions": 22,
+            "goal_contributions": 23,
             "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 16
+            "season_count": 20
         },
         "national": {
-            "matches": 81,
-            "minutes": 2073,
-            "goals": 1,
+            "matches": 0,
+            "minutes": 0,
+            "goals": 0,
             "assists": 0,
-            "goal_contributions": 1,
+            "goal_contributions": 0,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 4
+            "season_count": 0
         }
     }
 }

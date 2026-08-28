@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Pepê",
         "short_name": "Pepê",
+        "dateOfBirth": "1997-02-24",
+        "placeOfBirth": "Foz do Iguaçu",
         "nation_1": "Brazil",
         "nation_2": "Italy",
         "height": 1.75,
@@ -14,6 +17,70 @@
         "prime_date": "2024-06-06"
     },
     "matches": [
+        {
+            "game_id": "4921475",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "720",
+            "opponent_id": "8024",
+            "position": "LW",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4921432",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "720",
+            "opponent_id": "2425",
+            "position": "RW",
+            "minutes": 89,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4921484",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "720",
+            "opponent_id": "2521",
+            "position": "LW",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4911537",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "720",
+            "opponent_id": "2432",
+            "position": "LW",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4648937",
             "season": 2025,
@@ -10028,6 +10095,13 @@
         },
         {
             "title": "Portuguese Super Cup winner",
+            "season": "2027",
+            "season_id": 2026,
+            "club_name": "FC Porto",
+            "club_id": 720
+        },
+        {
+            "title": "Portuguese Super Cup winner",
             "season": "2023",
             "season_id": 2022,
             "club_name": "FC Porto",
@@ -10106,34 +10180,36 @@
     ],
     "clubs": {
         "720": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 266,
-                "participations": 266,
-                "minutes": 16705,
-                "starts": 191,
+                "matches": 270,
+                "participations": 270,
+                "minutes": 17064,
+                "starts": 195,
                 "captain_matches": 0,
                 "goals": 29,
-                "assists": 36,
+                "assists": 38,
                 "goals_conceded": 126,
-                "points": 593,
-                "clean_sheets": 171,
-                "wins": 185,
+                "points": 605,
+                "clean_sheets": 175,
+                "wins": 189,
                 "draws": 38,
                 "losses": 43,
-                "goal_matches": 237,
-                "assist_matches": 232,
-                "goal_contributions": 65
+                "goal_matches": 241,
+                "assist_matches": 234,
+                "goal_contributions": 67
             },
             "positions": {
-                "RW": 87,
-                "LW": 51,
+                "LW": 54,
+                "RW": 88,
                 "AMF": 32,
                 "SS": 9,
                 "RM": 6,
@@ -10142,21 +10218,27 @@
                 "CF": 1
             },
             "derived": {
-                "season_count": 5,
-                "points_per_match": 2.229,
-                "minutes_per_match": 62.8,
-                "win_rate": 0.6955,
-                "goals_per_90": 0.156,
-                "assists_per_90": 0.194,
-                "contributions_per_90": 0.35,
+                "season_count": 6,
+                "points_per_match": 2.241,
+                "minutes_per_match": 63.2,
+                "win_rate": 0.7,
+                "goals_per_90": 0.153,
+                "assists_per_90": 0.2,
+                "contributions_per_90": 0.353,
                 "primary_position": "RW"
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 170,
-                    "minutes": 11096,
+                    "matches": 173,
+                    "minutes": 11365,
                     "goals": 18,
-                    "assists": 24
+                    "assists": 25
+                },
+                "Domestic Super Cup": {
+                    "matches": 4,
+                    "minutes": 267,
+                    "goals": 0,
+                    "assists": 2
                 },
                 "Domestic Cup": {
                     "matches": 29,
@@ -10175,12 +10257,6 @@
                     "minutes": 698,
                     "goals": 3,
                     "assists": 2
-                },
-                "Domestic Super Cup": {
-                    "matches": 3,
-                    "minutes": 177,
-                    "goals": 0,
-                    "assists": 1
                 }
             },
             "awards": {
@@ -10188,12 +10264,13 @@
                     "Portuguese champion": 2,
                     "Portuguese league cup winner": 1,
                     "Portuguese cup winner": 3,
-                    "Portuguese Super Cup winner": 1
+                    "Portuguese Super Cup winner": 2
                 },
                 "individual_titles": {}
             }
         },
         "3439": {
+            "type": "national",
             "seasons": [
                 2023
             ],
@@ -10249,6 +10326,7 @@
             }
         },
         "210": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -10330,6 +10408,7 @@
             }
         },
         "37018": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -10379,6 +10458,7 @@
             }
         },
         "33226": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015
@@ -10428,24 +10508,24 @@
     },
     "career": {
         "club": {
-            "matches": 30,
-            "minutes": 915,
-            "goals": 5,
+            "matches": 610,
+            "minutes": 26458,
+            "goals": 66,
+            "assists": 58,
+            "goal_contributions": 124,
+            "team_titles": 11,
+            "individual_titles": 0,
+            "season_count": 13
+        },
+        "national": {
+            "matches": 17,
+            "minutes": 247,
+            "goals": 3,
             "assists": 0,
-            "goal_contributions": 5,
+            "goal_contributions": 3,
             "team_titles": 0,
             "individual_titles": 0,
             "season_count": 2
-        },
-        "national": {
-            "matches": 593,
-            "minutes": 25431,
-            "goals": 64,
-            "assists": 56,
-            "goal_contributions": 120,
-            "team_titles": 10,
-            "individual_titles": 0,
-            "season_count": 10
         }
     }
 }

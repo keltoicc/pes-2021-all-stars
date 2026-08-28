@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Lawrence Ofori",
         "short_name": "L. Ofori",
+        "dateOfBirth": "1998-06-28",
+        "placeOfBirth": "Accra",
         "nation_1": "Ghana",
         "nation_2": "",
         "height": 1.69,
@@ -14,6 +17,54 @@
         "prime_date": "2025-12-18"
     },
     "matches": [
+        {
+            "game_id": "4921472",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "3268",
+            "opponent_id": "2424",
+            "position": "CMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4921429",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "3268",
+            "opponent_id": "294",
+            "position": "CMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 7,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4921482",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "3268",
+            "opponent_id": "1301",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4887292",
             "season": 2025,
@@ -2449,7 +2500,7 @@
         {
             "game_id": "3772063",
             "season": 2021,
-            "competition_type": "Play-Offs",
+            "competition_type": "First Tier",
             "club_id": "6105",
             "opponent_id": "43119",
             "position": "",
@@ -2465,7 +2516,7 @@
         {
             "game_id": "3772062",
             "season": 2021,
-            "competition_type": "Play-Offs",
+            "competition_type": "First Tier",
             "club_id": "6105",
             "opponent_id": "810",
             "position": "",
@@ -2481,7 +2532,7 @@
         {
             "game_id": "3772056",
             "season": 2021,
-            "competition_type": "Play-Offs",
+            "competition_type": "First Tier",
             "club_id": "6105",
             "opponent_id": "6028",
             "position": "",
@@ -2497,7 +2548,7 @@
         {
             "game_id": "3772053",
             "season": 2021,
-            "competition_type": "Play-Offs",
+            "competition_type": "First Tier",
             "club_id": "6105",
             "opponent_id": "51931",
             "position": "",
@@ -2513,7 +2564,7 @@
         {
             "game_id": "3772049",
             "season": 2021,
-            "competition_type": "Play-Offs",
+            "competition_type": "First Tier",
             "club_id": "6105",
             "opponent_id": "3785",
             "position": "",
@@ -2529,7 +2580,7 @@
         {
             "game_id": "3772044",
             "season": 2021,
-            "competition_type": "Play-Offs",
+            "competition_type": "First Tier",
             "club_id": "6105",
             "opponent_id": "3793",
             "position": null,
@@ -2545,7 +2596,7 @@
         {
             "game_id": "3772039",
             "season": 2021,
-            "competition_type": "Play-Offs",
+            "competition_type": "First Tier",
             "club_id": "6105",
             "opponent_id": "7000",
             "position": null,
@@ -5521,52 +5572,54 @@
     ],
     "clubs": {
         "3268": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 18,
-                "participations": 18,
-                "minutes": 792,
-                "starts": 9,
+                "matches": 21,
+                "participations": 21,
+                "minutes": 1062,
+                "starts": 12,
                 "captain_matches": 0,
                 "goals": 1,
                 "assists": 0,
-                "goals_conceded": 10,
+                "goals_conceded": 20,
                 "points": 20,
                 "clean_sheets": 10,
                 "wins": 4,
                 "draws": 8,
-                "losses": 6,
-                "goal_matches": 17,
-                "assist_matches": 18,
+                "losses": 9,
+                "goal_matches": 20,
+                "assist_matches": 21,
                 "goal_contributions": 1
             },
             "positions": {
-                "CMF": 9,
-                "DMF": 2
+                "CMF": 11,
+                "DMF": 3
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.111,
-                "minutes_per_match": 44.0,
-                "win_rate": 0.2222,
-                "goals_per_90": 0.114,
+                "season_count": 2,
+                "points_per_match": 0.952,
+                "minutes_per_match": 50.6,
+                "win_rate": 0.1905,
+                "goals_per_90": 0.085,
                 "assists_per_90": 0.0,
-                "contributions_per_90": 0.114,
+                "contributions_per_90": 0.085,
                 "primary_position": "CMF"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 19,
+                    "minutes": 882,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Play-Offs": {
                     "matches": 2,
                     "minutes": 180,
                     "goals": 1,
-                    "assists": 0
-                },
-                "First Tier": {
-                    "matches": 16,
-                    "minutes": 612,
-                    "goals": 0,
                     "assists": 0
                 }
             },
@@ -5576,6 +5629,7 @@
             }
         },
         "979": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -5652,6 +5706,7 @@
             }
         },
         "6105": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -5689,15 +5744,9 @@
                 "primary_position": "AMF"
             },
             "competitions": {
-                "Play-Offs": {
-                    "matches": 7,
-                    "minutes": 96,
-                    "goals": 0,
-                    "assists": 0
-                },
                 "First Tier": {
-                    "matches": 6,
-                    "minutes": 375,
+                    "matches": 13,
+                    "minutes": 471,
                     "goals": 0,
                     "assists": 1
                 }
@@ -5708,6 +5757,7 @@
             }
         },
         "3329": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -5770,6 +5820,7 @@
             }
         },
         "8024": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -5830,6 +5881,7 @@
             }
         },
         "3349": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -5881,6 +5933,7 @@
             }
         },
         "3345": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018
@@ -5947,14 +6000,14 @@
     },
     "career": {
         "club": {
-            "matches": 343,
-            "minutes": 12319,
+            "matches": 346,
+            "minutes": 12589,
             "goals": 9,
             "assists": 10,
             "goal_contributions": 19,
             "team_titles": 1,
             "individual_titles": 1,
-            "season_count": 9
+            "season_count": 10
         },
         "national": {
             "matches": 0,

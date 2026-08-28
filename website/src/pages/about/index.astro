@@ -1,0 +1,203 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Breadcrumbs from "../../components/ui/Breadcrumbs.astro";
+---
+
+<Layout title="About">
+
+    <div class="about-page">
+
+        <Breadcrumbs
+            items={[
+                {
+                    label: "About"
+                }
+            ]}
+        />
+
+        <header class="about-page__header">
+
+            <h1>About</h1>
+
+            <p>
+                A historical football encyclopedia built around players,
+                teams, squads and player versions.
+            </p>
+
+        </header>
+
+        <main class="about-page__content">
+
+            <section>
+
+                <h2>The Encyclopedia</h2>
+
+                <p>
+                    This website is an encyclopedia dedicated to exploring
+                    football history through players, teams, national teams,
+                    squads and different stages of players' careers.
+                </p>
+
+                <p>
+                    Its information is organized into interconnected entities,
+                    allowing different paths through the encyclopedia.
+                    Players can be explored through their nationality,
+                    positions or career, while teams can be explored through
+                    their country and historical squads.
+                </p>
+
+            </section>
+
+            <section>
+
+                <h2>Historical Football</h2>
+
+                <p>
+                    The encyclopedia focuses on football across different
+                    periods, with particular attention to historical players,
+                    teams and squads.
+                </p>
+
+                <p>
+                    A central concept of the encyclopedia is the
+                    <strong> PlayerVersion</strong>. A player can have multiple
+                    versions representing different stages of their career,
+                    each with its own characteristics, attributes and
+                    appearance.
+                </p>
+
+            </section>
+
+            <section>
+
+                <h2>The Project</h2>
+
+                <p>
+                    This website is part of a broader football project related
+                    to PES 2021. However, the encyclopedia is designed as an
+                    independent resource for exploring and documenting
+                    football history.
+                </p>
+
+                <p>
+                    The website and its underlying data can therefore be
+                    developed independently from the game itself.
+                </p>
+
+            </section>
+
+            <section>
+
+                <h2>Data & Methodology</h2>
+
+                <p>
+                    The information is maintained as structured data and
+                    organized into interconnected entities. This allows the
+                    encyclopedia to grow while keeping relationships between
+                    players, teams, squads and player versions consistent.
+                </p>
+
+                <p>
+                    As the project develops, this section will provide more
+                    information about the sources, data model and methodology
+                    used to build the encyclopedia.
+                </p>
+
+            </section>
+
+            <section>
+
+                <h2>An Evolving Encyclopedia</h2>
+
+                <p>
+                    The encyclopedia is continuously expanding as new players,
+                    teams, squads and player versions are added.
+                </p>
+
+                <p>
+                    Its structure is designed to support a large amount of
+                    historical football data while keeping the information
+                    accessible through different navigation paths.
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</Layout>
+
+<style>
+.about-page {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-8);
+
+    padding: var(--space-3) var(--space-4);
+}
+
+.about-page__header {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-3);
+}
+
+.about-page__header h1 {
+    margin: 0;
+
+    color: var(--color-text);
+
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+}
+
+.about-page__header p {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
+}
+
+.about-page__content {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-8);
+
+    max-width: 800px;
+}
+
+.about-page__content section {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-3);
+}
+
+.about-page__content h2 {
+    margin: 0;
+
+    color: var(--color-text);
+
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-tight);
+}
+
+.about-page__content p {
+    margin: 0;
+
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-relaxed);
+}
+</style>

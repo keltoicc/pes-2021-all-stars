@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Ricardo Ribeiro",
         "short_name": "R. Ribeiro",
+        "dateOfBirth": "1990-01-27",
+        "placeOfBirth": "Guimarães",
         "nation_1": "Portugal",
         "nation_2": "",
         "height": 1.84,
@@ -14,6 +17,54 @@
         "prime_date": "2013-07-02"
     },
     "matches": [
+        {
+            "game_id": "4944927",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "8827",
+            "opponent_id": "41539",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4944917",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "8827",
+            "opponent_id": "74155",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4944906",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "8827",
+            "opponent_id": "3352",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4653799",
             "season": 2025,
@@ -2445,6 +2496,22 @@
             "goals_conceded": 1,
             "participation": "played",
             "club_points": 3
+        },
+        {
+            "game_id": "4926625",
+            "season": 2021,
+            "competition_type": "Second Tier",
+            "club_id": "68028",
+            "opponent_id": "39536",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
         },
         {
             "game_id": "4855114",
@@ -10118,43 +10185,51 @@
     ],
     "clubs": {
         "8827": {
+            "type": "club",
             "seasons": [
                 2022,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 94,
-                "participations": 94,
-                "minutes": 6904,
-                "starts": 78,
-                "captain_matches": 16,
+                "matches": 97,
+                "participations": 97,
+                "minutes": 7174,
+                "starts": 81,
+                "captain_matches": 19,
                 "goals": 0,
                 "assists": 0,
-                "goals_conceded": 110,
-                "points": 105,
-                "clean_sheets": 36,
-                "wins": 26,
-                "draws": 27,
+                "goals_conceded": 113,
+                "points": 110,
+                "clean_sheets": 37,
+                "wins": 27,
+                "draws": 29,
                 "losses": 41,
-                "goal_matches": 94,
-                "assist_matches": 94,
+                "goal_matches": 97,
+                "assist_matches": 97,
                 "goal_contributions": 0
             },
             "positions": {
-                "GK": 78
+                "GK": 81
             },
             "derived": {
-                "season_count": 3,
-                "points_per_match": 1.117,
-                "minutes_per_match": 73.4,
-                "win_rate": 0.2766,
+                "season_count": 4,
+                "points_per_match": 1.134,
+                "minutes_per_match": 74.0,
+                "win_rate": 0.2784,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
                 "primary_position": "GK"
             },
             "competitions": {
+                "Third Tier": {
+                    "matches": 3,
+                    "minutes": 270,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Second Tier": {
                     "matches": 86,
                     "minutes": 6814,
@@ -10180,6 +10255,7 @@
             }
         },
         "3345": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024
@@ -10241,35 +10317,37 @@
             }
         },
         "68028": {
+            "type": "club",
             "seasons": [
-                2020
+                2020,
+                2021
             ],
             "stats": {
-                "matches": 38,
-                "participations": 38,
-                "minutes": 3420,
-                "starts": 38,
+                "matches": 39,
+                "participations": 39,
+                "minutes": 3510,
+                "starts": 39,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 0,
-                "goals_conceded": 27,
+                "goals_conceded": 28,
                 "points": 76,
                 "clean_sheets": 17,
                 "wins": 22,
                 "draws": 10,
-                "losses": 6,
-                "goal_matches": 38,
-                "assist_matches": 38,
+                "losses": 7,
+                "goal_matches": 39,
+                "assist_matches": 39,
                 "goal_contributions": 0
             },
             "positions": {
-                "GK": 38
+                "GK": 39
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 2.0,
+                "season_count": 2,
+                "points_per_match": 1.949,
                 "minutes_per_match": 90.0,
-                "win_rate": 0.5789,
+                "win_rate": 0.5641,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
@@ -10277,8 +10355,8 @@
             },
             "competitions": {
                 "Second Tier": {
-                    "matches": 38,
-                    "minutes": 3420,
+                    "matches": 39,
+                    "minutes": 3510,
                     "goals": 0,
                     "assists": 0
                 }
@@ -10289,6 +10367,7 @@
             }
         },
         "2995": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019
@@ -10360,6 +10439,7 @@
             }
         },
         "2990": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017
@@ -10423,6 +10503,7 @@
             }
         },
         "68608": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -10489,6 +10570,7 @@
             }
         },
         "4750": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -10537,6 +10619,7 @@
             }
         },
         "7788": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -10597,6 +10680,7 @@
             }
         },
         "979": {
+            "type": "club",
             "seasons": [
                 2007,
                 2009,
@@ -10668,6 +10752,7 @@
             }
         },
         "1465": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -10736,24 +10821,24 @@
     },
     "career": {
         "club": {
-            "matches": 532,
-            "minutes": 30916,
+            "matches": 633,
+            "minutes": 32919,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
             "team_titles": 1,
             "individual_titles": 2,
-            "season_count": 15
+            "season_count": 19
         },
         "national": {
-            "matches": 97,
-            "minutes": 1643,
+            "matches": 0,
+            "minutes": 0,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 2
+            "season_count": 0
         }
     }
 }

@@ -1,19 +1,70 @@
 {
     "player": {
+        "name": "Ole Pohlmann",
         "short_name": "O. Pohlmann",
+        "dateOfBirth": "2001-04-05",
+        "placeOfBirth": "Minden",
         "nation_1": "Germany",
         "nation_2": "",
         "height": 1.83,
         "foot": "Right",
         "position_group": "MIDFIELDER",
         "position_1": "AMF",
-        "position_2": "RW",
-        "position_3": "LW",
+        "position_2": "LM",
+        "position_3": "RM",
         "former_clubs": "TuS Lahde-Quetzen, Hannover 96 (-2015), VfL Wolfsburg (2015-2020)",
         "market_value": 2500000,
         "prime_date": "2025-05-30"
     },
     "matches": [
+        {
+            "game_id": "4893859",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "65",
+            "opponent_id": "80",
+            "position": "LM",
+            "minutes": 68,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4916436",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "65",
+            "opponent_id": "4",
+            "position": "LM",
+            "minutes": 77,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 4,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4916125",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "65",
+            "opponent_id": "35",
+            "position": "LM",
+            "minutes": 70,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4648940",
             "season": 2025,
@@ -6313,7 +6364,63 @@
         }
     ],
     "clubs": {
+        "65": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 3,
+                "participations": 3,
+                "minutes": 215,
+                "starts": 3,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 7,
+                "points": 1,
+                "clean_sheets": 0,
+                "wins": 0,
+                "draws": 1,
+                "losses": 2,
+                "goal_matches": 3,
+                "assist_matches": 3,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "LM": 3
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 0.333,
+                "minutes_per_match": 71.7,
+                "win_rate": 0.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "LM"
+            },
+            "competitions": {
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 68,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Second Tier": {
+                    "matches": 2,
+                    "minutes": 147,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "2425": {
+            "type": "club",
             "seasons": [
                 2024,
                 2025
@@ -6373,6 +6480,7 @@
             }
         },
         "16": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -6433,6 +6541,7 @@
             }
         },
         "17": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -6489,6 +6598,7 @@
             }
         },
         "143": {
+            "type": "club",
             "seasons": [
                 2017,
                 2019,
@@ -6541,6 +6651,7 @@
             }
         },
         "5343": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -6597,6 +6708,7 @@
             }
         },
         "9067": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -6646,6 +6758,7 @@
             }
         },
         "21087": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017
@@ -6691,6 +6804,7 @@
             }
         },
         "17662": {
+            "type": "national",
             "seasons": [
                 2016,
                 2017
@@ -6752,6 +6866,7 @@
             }
         },
         "17368": {
+            "type": "national",
             "seasons": [
                 2016
             ],
@@ -6802,6 +6917,7 @@
             }
         },
         "27300": {
+            "type": "national",
             "seasons": [
                 2015
             ],
@@ -6852,24 +6968,24 @@
     },
     "career": {
         "club": {
-            "matches": 304,
-            "minutes": 17383,
+            "matches": 357,
+            "minutes": 17650,
             "goals": 47,
             "assists": 47,
             "goal_contributions": 94,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 10
+            "season_count": 11
         },
         "national": {
-            "matches": 89,
-            "minutes": 1263,
+            "matches": 39,
+            "minutes": 1211,
             "goals": 5,
             "assists": 0,
             "goal_contributions": 5,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 5
+            "season_count": 4
         }
     }
 }

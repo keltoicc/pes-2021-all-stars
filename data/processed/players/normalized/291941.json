@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Carraça",
         "short_name": "Carraça",
+        "dateOfBirth": "1993-03-01",
+        "placeOfBirth": "Folgosa",
         "nation_1": "Portugal",
         "nation_2": "",
         "height": 1.77,
@@ -14,6 +17,54 @@
         "prime_date": "2021-12-27"
     },
     "matches": [
+        {
+            "game_id": "4938950",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "7179",
+            "opponent_id": "2990",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4938956",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "7179",
+            "opponent_id": "3345",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4938923",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "7179",
+            "opponent_id": "7789",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4653801",
             "season": 2025,
@@ -4932,7 +4983,7 @@
             "competition_type": "Domestic Cup",
             "club_id": "2503",
             "opponent_id": "3265",
-            "position": "",
+            "position": "RB",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -7920,7 +7971,75 @@
         }
     ],
     "clubs": {
+        "7179": {
+            "type": "club",
+            "seasons": [
+                2014,
+                2026
+            ],
+            "stats": {
+                "matches": 50,
+                "participations": 50,
+                "minutes": 1184,
+                "starts": 13,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 2,
+                "goals_conceded": 20,
+                "points": 83,
+                "clean_sheets": 38,
+                "wins": 22,
+                "draws": 17,
+                "losses": 11,
+                "goal_matches": 50,
+                "assist_matches": 48,
+                "goal_contributions": 2
+            },
+            "positions": {
+                "RB": 3,
+                "CMF": 7,
+                "AMF": 1,
+                "DMF": 5
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 1.66,
+                "minutes_per_match": 23.7,
+                "win_rate": 0.44,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.152,
+                "contributions_per_90": 0.152,
+                "primary_position": "CMF"
+            },
+            "competitions": {
+                "Second Tier": {
+                    "matches": 46,
+                    "minutes": 1041,
+                    "goals": 0,
+                    "assists": 1
+                },
+                "League Cup": {
+                    "matches": 2,
+                    "minutes": 98,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 2,
+                    "minutes": 45,
+                    "goals": 0,
+                    "assists": 1
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Champion 2nd League Portugal": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3325": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
@@ -7989,6 +8108,7 @@
             }
         },
         "720": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -8063,6 +8183,7 @@
             }
         },
         "2424": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -8129,6 +8250,7 @@
             }
         },
         "2457": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -8187,6 +8309,7 @@
             }
         },
         "10331": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -8236,6 +8359,7 @@
             }
         },
         "2503": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -8263,7 +8387,7 @@
                 "goal_contributions": 15
             },
             "positions": {
-                "RB": 54,
+                "RB": 55,
                 "RM": 17,
                 "LB": 2,
                 "CMF": 29,
@@ -8306,6 +8430,7 @@
             }
         },
         "2423": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -8366,92 +8491,28 @@
                 "team_titles": {},
                 "individual_titles": {}
             }
-        },
-        "7179": {
-            "seasons": [
-                2014
-            ],
-            "stats": {
-                "matches": 47,
-                "participations": 47,
-                "minutes": 914,
-                "starts": 10,
-                "captain_matches": 0,
-                "goals": 0,
-                "assists": 1,
-                "goals_conceded": 16,
-                "points": 80,
-                "clean_sheets": 38,
-                "wins": 21,
-                "draws": 17,
-                "losses": 9,
-                "goal_matches": 47,
-                "assist_matches": 46,
-                "goal_contributions": 1
-            },
-            "positions": {
-                "CMF": 7,
-                "AMF": 1,
-                "DMF": 5
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 1.702,
-                "minutes_per_match": 19.4,
-                "win_rate": 0.4468,
-                "goals_per_90": 0.0,
-                "assists_per_90": 0.098,
-                "contributions_per_90": 0.098,
-                "primary_position": "CMF"
-            },
-            "competitions": {
-                "Second Tier": {
-                    "matches": 43,
-                    "minutes": 771,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "League Cup": {
-                    "matches": 2,
-                    "minutes": 98,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Domestic Cup": {
-                    "matches": 2,
-                    "minutes": 45,
-                    "goals": 0,
-                    "assists": 1
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Champion 2nd League Portugal": 1
-                },
-                "individual_titles": {}
-            }
         }
     },
     "career": {
         "club": {
-            "matches": 389,
-            "minutes": 21517,
+            "matches": 496,
+            "minutes": 24267,
             "goals": 11,
-            "assists": 28,
-            "goal_contributions": 39,
+            "assists": 32,
+            "goal_contributions": 43,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 12
+            "season_count": 14
         },
         "national": {
-            "matches": 104,
-            "minutes": 2480,
+            "matches": 0,
+            "minutes": 0,
             "goals": 0,
-            "assists": 3,
-            "goal_contributions": 3,
+            "assists": 0,
+            "goal_contributions": 0,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 4
+            "season_count": 0
         }
     }
 }

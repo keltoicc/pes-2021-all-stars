@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Alan Varela",
         "short_name": "Alan Varela",
+        "dateOfBirth": "2001-07-04",
+        "placeOfBirth": "Isidro Casanova",
         "nation_1": "Argentina",
         "nation_2": "",
         "height": 1.77,
@@ -14,6 +17,70 @@
         "prime_date": "2024-12-19"
     },
     "matches": [
+        {
+            "game_id": "4921475",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "720",
+            "opponent_id": "8024",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4921432",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "720",
+            "opponent_id": "2425",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4921484",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "720",
+            "opponent_id": "2521",
+            "position": "DMF",
+            "minutes": 58,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4911537",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "720",
+            "opponent_id": "2432",
+            "position": "DMF",
+            "minutes": 45,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4648937",
             "season": 2025,
@@ -5447,6 +5514,13 @@
         },
         {
             "title": "Portuguese Super Cup winner",
+            "season": "2027",
+            "season_id": 2026,
+            "club_name": "FC Porto",
+            "club_id": 720
+        },
+        {
+            "title": "Portuguese Super Cup winner",
             "season": "2025",
             "season_id": 2024,
             "club_name": "FC Porto",
@@ -5518,49 +5592,57 @@
     ],
     "clubs": {
         "720": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 155,
-                "participations": 155,
-                "minutes": 9885,
-                "starts": 117,
+                "matches": 159,
+                "participations": 159,
+                "minutes": 9988,
+                "starts": 118,
                 "captain_matches": 0,
                 "goals": 4,
                 "assists": 6,
                 "goals_conceded": 90,
-                "points": 327,
-                "clean_sheets": 94,
-                "wins": 101,
+                "points": 339,
+                "clean_sheets": 98,
+                "wins": 105,
                 "draws": 24,
                 "losses": 30,
-                "goal_matches": 151,
-                "assist_matches": 150,
+                "goal_matches": 155,
+                "assist_matches": 154,
                 "goal_contributions": 10
             },
             "positions": {
-                "DMF": 129,
+                "DMF": 131,
                 "CMF": 6
             },
             "derived": {
-                "season_count": 3,
-                "points_per_match": 2.11,
-                "minutes_per_match": 63.8,
-                "win_rate": 0.6516,
+                "season_count": 4,
+                "points_per_match": 2.132,
+                "minutes_per_match": 62.8,
+                "win_rate": 0.6604,
                 "goals_per_90": 0.036,
-                "assists_per_90": 0.055,
-                "contributions_per_90": 0.091,
+                "assists_per_90": 0.054,
+                "contributions_per_90": 0.09,
                 "primary_position": "DMF"
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 101,
-                    "minutes": 6765,
+                    "matches": 104,
+                    "minutes": 6823,
                     "goals": 4,
                     "assists": 5
+                },
+                "Domestic Super Cup": {
+                    "matches": 2,
+                    "minutes": 165,
+                    "goals": 0,
+                    "assists": 0
                 },
                 "Domestic Cup": {
                     "matches": 15,
@@ -5579,24 +5661,19 @@
                     "minutes": 84,
                     "goals": 0,
                     "assists": 0
-                },
-                "Domestic Super Cup": {
-                    "matches": 1,
-                    "minutes": 120,
-                    "goals": 0,
-                    "assists": 0
                 }
             },
             "awards": {
                 "team_titles": {
                     "Portuguese champion": 2,
                     "Portuguese cup winner": 1,
-                    "Portuguese Super Cup winner": 1
+                    "Portuguese Super Cup winner": 2
                 },
                 "individual_titles": {}
             }
         },
         "3437": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -5643,6 +5720,7 @@
             }
         },
         "52540": {
+            "type": "national",
             "seasons": [
                 2023
             ],
@@ -5691,6 +5769,7 @@
             }
         },
         "189": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -5773,6 +5852,7 @@
             }
         },
         "14831": {
+            "type": "club",
             "seasons": [
                 2019,
                 2021
@@ -5813,6 +5893,7 @@
             }
         },
         "11940": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -5864,24 +5945,24 @@
     },
     "career": {
         "club": {
-            "matches": 3,
-            "minutes": 90,
+            "matches": 335,
+            "minutes": 17730,
+            "goals": 6,
+            "assists": 10,
+            "goal_contributions": 16,
+            "team_titles": 10,
+            "individual_titles": 0,
+            "season_count": 8
+        },
+        "national": {
+            "matches": 7,
+            "minutes": 400,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
             "team_titles": 0,
             "individual_titles": 0,
             "season_count": 2
-        },
-        "national": {
-            "matches": 335,
-            "minutes": 17937,
-            "goals": 6,
-            "assists": 10,
-            "goal_contributions": 16,
-            "team_titles": 9,
-            "individual_titles": 0,
-            "season_count": 7
         }
     }
 }

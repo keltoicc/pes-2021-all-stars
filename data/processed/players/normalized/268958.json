@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Juan Muñoz",
         "short_name": "Juan Muñoz",
+        "dateOfBirth": "1995-11-12",
+        "placeOfBirth": "Utrera",
         "nation_1": "Spain",
         "nation_2": "",
         "height": 1.79,
@@ -14,6 +17,54 @@
         "prime_date": "2019-12-20"
     },
     "matches": [
+        {
+            "game_id": "4938948",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "2639",
+            "opponent_id": "3345",
+            "position": "SS",
+            "minutes": 83,
+            "started": true,
+            "captain": true,
+            "goals": 1,
+            "assists": 1,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4938955",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "2639",
+            "opponent_id": "10330",
+            "position": "SS",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4938924",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "2639",
+            "opponent_id": "6912",
+            "position": "AMF",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4653798",
             "season": 2025,
@@ -9403,51 +9454,53 @@
     ],
     "clubs": {
         "2639": {
+            "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 76,
-                "participations": 76,
-                "minutes": 5271,
-                "starts": 62,
-                "captain_matches": 32,
-                "goals": 35,
-                "assists": 9,
-                "goals_conceded": 71,
-                "points": 120,
+                "matches": 79,
+                "participations": 79,
+                "minutes": 5534,
+                "starts": 65,
+                "captain_matches": 35,
+                "goals": 37,
+                "assists": 10,
+                "goals_conceded": 75,
+                "points": 123,
                 "clean_sheets": 31,
-                "wins": 34,
+                "wins": 35,
                 "draws": 18,
-                "losses": 24,
-                "goal_matches": 51,
-                "assist_matches": 67,
-                "goal_contributions": 44
+                "losses": 26,
+                "goal_matches": 52,
+                "assist_matches": 69,
+                "goal_contributions": 47
             },
             "positions": {
+                "SS": 35,
+                "AMF": 6,
                 "CF": 22,
-                "SS": 33,
                 "LW": 8,
-                "AMF": 5,
                 "LM": 2
             },
             "derived": {
-                "season_count": 2,
-                "points_per_match": 1.579,
-                "minutes_per_match": 69.4,
-                "win_rate": 0.4474,
-                "goals_per_90": 0.598,
-                "assists_per_90": 0.154,
-                "contributions_per_90": 0.751,
+                "season_count": 3,
+                "points_per_match": 1.557,
+                "minutes_per_match": 70.1,
+                "win_rate": 0.443,
+                "goals_per_90": 0.602,
+                "assists_per_90": 0.163,
+                "contributions_per_90": 0.764,
                 "primary_position": "SS"
             },
             "competitions": {
                 "Second Tier": {
-                    "matches": 68,
-                    "minutes": 4770,
-                    "goals": 31,
-                    "assists": 9
+                    "matches": 71,
+                    "minutes": 5033,
+                    "goals": 33,
+                    "assists": 10
                 },
                 "Domestic Cup": {
                     "matches": 8,
@@ -9465,6 +9518,7 @@
             }
         },
         "168": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024
@@ -9522,6 +9576,7 @@
             }
         },
         "8372": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -9568,6 +9623,7 @@
             }
         },
         "1244": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -9641,6 +9697,7 @@
             }
         },
         "3302": {
+            "type": "club",
             "seasons": [
                 2017,
                 2019
@@ -9704,6 +9761,7 @@
             }
         },
         "11596": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -9758,6 +9816,7 @@
             }
         },
         "368": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -9823,6 +9882,7 @@
             }
         },
         "3368": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -9873,6 +9933,7 @@
             }
         },
         "142": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -9927,6 +9988,7 @@
             }
         },
         "8519": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -9977,6 +10039,7 @@
             }
         },
         "12609": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -10025,24 +10088,24 @@
     },
     "career": {
         "club": {
-            "matches": 473,
-            "minutes": 21545,
-            "goals": 109,
-            "assists": 22,
-            "goal_contributions": 131,
-            "team_titles": 1,
+            "matches": 585,
+            "minutes": 22256,
+            "goals": 113,
+            "assists": 24,
+            "goal_contributions": 137,
+            "team_titles": 3,
             "individual_titles": 3,
-            "season_count": 13
+            "season_count": 14
         },
         "national": {
-            "matches": 110,
-            "minutes": 493,
-            "goals": 4,
-            "assists": 1,
-            "goal_contributions": 5,
-            "team_titles": 2,
+            "matches": 1,
+            "minutes": 45,
+            "goals": 2,
+            "assists": 0,
+            "goal_contributions": 2,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 4
+            "season_count": 1
         }
     }
 }

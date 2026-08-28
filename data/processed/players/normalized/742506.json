@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Fábio Ronaldo",
         "short_name": "F. Ronaldo",
+        "dateOfBirth": "2001-04-28",
+        "placeOfBirth": "Vila Nova de Gaia",
         "nation_1": "Portugal",
         "nation_2": "",
         "height": 1.78,
@@ -14,6 +17,86 @@
         "prime_date": "2026-06-04"
     },
     "matches": [
+        {
+            "game_id": "4895633",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "3527",
+            "opponent_id": "6110",
+            "position": "",
+            "minutes": 45,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4895623",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "3527",
+            "opponent_id": "6456",
+            "position": "LW",
+            "minutes": 66,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4895617",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "3527",
+            "opponent_id": "324",
+            "position": "LW",
+            "minutes": 77,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4895605",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "3527",
+            "opponent_id": "2300",
+            "position": "LW",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4895600",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "3527",
+            "opponent_id": "88",
+            "position": "LW",
+            "minutes": 78,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4624931",
             "season": 2025,
@@ -3562,45 +3645,47 @@
     ],
     "clubs": {
         "3527": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 29,
-                "participations": 29,
-                "minutes": 1638,
-                "starts": 20,
+                "matches": 34,
+                "participations": 34,
+                "minutes": 1994,
+                "starts": 24,
                 "captain_matches": 0,
                 "goals": 4,
                 "assists": 6,
-                "goals_conceded": 22,
-                "points": 35,
-                "clean_sheets": 13,
-                "wins": 8,
-                "draws": 11,
-                "losses": 10,
-                "goal_matches": 25,
-                "assist_matches": 23,
+                "goals_conceded": 28,
+                "points": 40,
+                "clean_sheets": 15,
+                "wins": 9,
+                "draws": 13,
+                "losses": 12,
+                "goal_matches": 30,
+                "assist_matches": 28,
                 "goal_contributions": 10
             },
             "positions": {
-                "LW": 18,
+                "LW": 22,
                 "RW": 2
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.207,
-                "minutes_per_match": 56.5,
-                "win_rate": 0.2759,
-                "goals_per_90": 0.22,
-                "assists_per_90": 0.33,
-                "contributions_per_90": 0.549,
+                "season_count": 2,
+                "points_per_match": 1.176,
+                "minutes_per_match": 58.6,
+                "win_rate": 0.2647,
+                "goals_per_90": 0.181,
+                "assists_per_90": 0.271,
+                "contributions_per_90": 0.451,
                 "primary_position": "LW"
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 28,
-                    "minutes": 1566,
+                    "matches": 33,
+                    "minutes": 1922,
                     "goals": 4,
                     "assists": 6
                 },
@@ -3617,6 +3702,7 @@
             }
         },
         "2431": {
+            "type": "club",
             "seasons": [
                 2024,
                 2025
@@ -3670,6 +3756,7 @@
             }
         },
         "2425": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -3746,6 +3833,7 @@
             }
         },
         "68110": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -3804,14 +3892,14 @@
     },
     "career": {
         "club": {
-            "matches": 221,
-            "minutes": 9354,
+            "matches": 226,
+            "minutes": 9710,
             "goals": 14,
             "assists": 18,
             "goal_contributions": 32,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 7
+            "season_count": 8
         },
         "national": {
             "matches": 0,
