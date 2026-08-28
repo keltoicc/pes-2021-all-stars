@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Alex Teixeira",
         "short_name": "Alex Teixeira",
+        "dateOfBirth": "1990-01-06",
+        "placeOfBirth": "Duque de Caxias",
         "nation_1": "Brazil",
         "nation_2": "",
         "height": 1.73,
@@ -14,6 +17,22 @@
         "prime_date": "2015-12-18"
     },
     "matches": [
+        {
+            "game_id": "4983176",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "3385",
+            "opponent_id": "7185",
+            "position": "LW",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4850134",
             "season": 2025,
@@ -10228,7 +10247,7 @@
             "competition_type": "International Cup",
             "club_id": "660",
             "opponent_id": "669",
-            "position": "",
+            "position": "AMF",
             "minutes": 32,
             "started": false,
             "captain": false,
@@ -13144,42 +13163,50 @@
     ],
     "clubs": {
         "3385": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 20,
-                "participations": 20,
-                "minutes": 1293,
-                "starts": 14,
-                "captain_matches": 0,
+                "matches": 21,
+                "participations": 21,
+                "minutes": 1383,
+                "starts": 15,
+                "captain_matches": 1,
                 "goals": 3,
                 "assists": 2,
-                "goals_conceded": 21,
-                "points": 24,
+                "goals_conceded": 22,
+                "points": 27,
                 "clean_sheets": 11,
-                "wins": 6,
+                "wins": 7,
                 "draws": 6,
                 "losses": 8,
-                "goal_matches": 18,
-                "assist_matches": 18,
+                "goal_matches": 19,
+                "assist_matches": 19,
                 "goal_contributions": 5
             },
             "positions": {
-                "CF": 11,
-                "LW": 3
+                "LW": 4,
+                "CF": 11
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.2,
-                "minutes_per_match": 64.7,
-                "win_rate": 0.3,
-                "goals_per_90": 0.209,
-                "assists_per_90": 0.139,
-                "contributions_per_90": 0.348,
+                "season_count": 2,
+                "points_per_match": 1.286,
+                "minutes_per_match": 65.9,
+                "win_rate": 0.3333,
+                "goals_per_90": 0.195,
+                "assists_per_90": 0.13,
+                "contributions_per_90": 0.325,
                 "primary_position": "CF"
             },
             "competitions": {
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Play-Offs": {
                     "matches": 10,
                     "minutes": 548,
@@ -13199,6 +13226,7 @@
             }
         },
         "978": {
+            "type": "club",
             "seasons": [
                 2007,
                 2008,
@@ -13278,6 +13306,7 @@
             }
         },
         "114": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -13348,6 +13377,7 @@
             }
         },
         "22219": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -13433,6 +13463,7 @@
             }
         },
         "660": {
+            "type": "club",
             "seasons": [
                 2009,
                 2010,
@@ -13461,7 +13492,7 @@
                 "goal_contributions": 114
             },
             "positions": {
-                "AMF": 95,
+                "AMF": 96,
                 "CMF": 16,
                 "RW": 32,
                 "LW": 10
@@ -13514,6 +13545,7 @@
             }
         },
         "7658": {
+            "type": "national",
             "seasons": [
                 2008
             ],
@@ -13563,6 +13595,7 @@
             }
         },
         "23130": {
+            "type": "national",
             "seasons": [
                 2006
             ],
@@ -13615,24 +13648,24 @@
     },
     "career": {
         "club": {
-            "matches": 20,
-            "minutes": 1293,
-            "goals": 3,
-            "assists": 2,
-            "goal_contributions": 5,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 1
+            "matches": 795,
+            "minutes": 41199,
+            "goals": 189,
+            "assists": 84,
+            "goal_contributions": 273,
+            "team_titles": 16,
+            "individual_titles": 3,
+            "season_count": 19
         },
         "national": {
-            "matches": 785,
-            "minutes": 40772,
-            "goals": 191,
-            "assists": 83,
-            "goal_contributions": 274,
-            "team_titles": 17,
-            "individual_titles": 3,
-            "season_count": 18
+            "matches": 11,
+            "minutes": 956,
+            "goals": 5,
+            "assists": 1,
+            "goal_contributions": 6,
+            "team_titles": 1,
+            "individual_titles": 0,
+            "season_count": 2
         }
     }
 }

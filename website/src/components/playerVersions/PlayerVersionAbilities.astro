@@ -1,6 +1,8 @@
 ---
 import type { Abilities } from "../../types/abilities";
 
+import { getAbilityRatingClass } from "../../lib/utils/getAbilityRatingClass";
+
 interface Props {
     abilities: Abilities;
 }
@@ -22,52 +24,52 @@ const { abilities } = Astro.props;
 
             <div class="ability">
                 <span>Offensive Awareness</span>
-                <strong>{abilities.offensiveAwareness}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.offensiveAwareness)}`}>{abilities.offensiveAwareness}</strong>
             </div>
 
             <div class="ability">
                 <span>Ball Control</span>
-                <strong>{abilities.ballControl}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.ballControl)}`}>{abilities.ballControl}</strong>
             </div>
 
             <div class="ability">
                 <span>Dribbling</span>
-                <strong>{abilities.dribbling}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.dribbling)}`}>{abilities.dribbling}</strong>
             </div>
 
             <div class="ability">
                 <span>Tight Possession</span>
-                <strong>{abilities.tightPossession}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.tightPossession)}`}>{abilities.tightPossession}</strong>
             </div>
 
             <div class="ability">
                 <span>Low Pass</span>
-                <strong>{abilities.lowPass}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.lowPass)}`}>{abilities.lowPass}</strong>
             </div>
 
             <div class="ability">
                 <span>Lofted Pass</span>
-                <strong>{abilities.loftedPass}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.loftedPass)}`}>{abilities.loftedPass}</strong>
             </div>
 
             <div class="ability">
                 <span>Finishing</span>
-                <strong>{abilities.finishing}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.finishing)}`}>{abilities.finishing}</strong>
             </div>
 
             <div class="ability">
                 <span>Heading</span>
-                <strong>{abilities.heading}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.heading)}`}>{abilities.heading}</strong>
             </div>
 
             <div class="ability">
                 <span>Place Kicking</span>
-                <strong>{abilities.placeKicking}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.placeKicking)}`}>{abilities.placeKicking}</strong>
             </div>
 
             <div class="ability">
                 <span>Curl</span>
-                <strong>{abilities.curl}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.curl)}`}>{abilities.curl}</strong>
             </div>
 
         </div>
@@ -82,37 +84,37 @@ const { abilities } = Astro.props;
 
             <div class="ability">
                 <span>Speed</span>
-                <strong>{abilities.speed}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.speed)}`}>{abilities.speed}</strong>
             </div>
 
             <div class="ability">
                 <span>Acceleration</span>
-                <strong>{abilities.acceleration}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.acceleration)}`}>{abilities.acceleration}</strong>
             </div>
 
             <div class="ability">
                 <span>Kicking Power</span>
-                <strong>{abilities.kickingPower}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.kickingPower)}`}>{abilities.kickingPower}</strong>
             </div>
 
             <div class="ability">
                 <span>Jump</span>
-                <strong>{abilities.jump}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.jump)}`}>{abilities.jump}</strong>
             </div>
 
             <div class="ability">
                 <span>Physical Contact</span>
-                <strong>{abilities.physicalContact}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.physicalContact)}`}>{abilities.physicalContact}</strong>
             </div>
 
             <div class="ability">
                 <span>Balance</span>
-                <strong>{abilities.balance}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.balance)}`}>{abilities.balance}</strong>
             </div>
 
             <div class="ability">
                 <span>Stamina</span>
-                <strong>{abilities.stamina}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.stamina)}`}>{abilities.stamina}</strong>
             </div>
 
         </div>
@@ -127,17 +129,17 @@ const { abilities } = Astro.props;
 
             <div class="ability">
                 <span>Defensive Awareness</span>
-                <strong>{abilities.defensiveAwareness}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.defensiveAwareness)}`}>{abilities.defensiveAwareness}</strong>
             </div>
 
             <div class="ability">
                 <span>Ball Winning</span>
-                <strong>{abilities.ballWinning}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.ballWinning)}`}>{abilities.ballWinning}</strong>
             </div>
 
             <div class="ability">
                 <span>Aggression</span>
-                <strong>{abilities.aggression}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.aggression)}`}>{abilities.aggression}</strong>
             </div>
 
         </div>
@@ -152,27 +154,27 @@ const { abilities } = Astro.props;
 
             <div class="ability">
                 <span>GK Awareness</span>
-                <strong>{abilities.gkAwareness}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.gkAwareness)}`}>{abilities.gkAwareness}</strong>
             </div>
 
             <div class="ability">
                 <span>GK Catching</span>
-                <strong>{abilities.gkCatching}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.gkCatching)}`}>{abilities.gkCatching}</strong>
             </div>
 
             <div class="ability">
                 <span>GK Clearing</span>
-                <strong>{abilities.gkClearing}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.gkClearing)}`}>{abilities.gkClearing}</strong>
             </div>
 
             <div class="ability">
                 <span>GK Reflexes</span>
-                <strong>{abilities.gkReflexes}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.gkReflexes)}`}>{abilities.gkReflexes}</strong>
             </div>
 
             <div class="ability">
                 <span>GK Reach</span>
-                <strong>{abilities.gkReach}</strong>
+                <strong class={`ability__value ability__value--${getAbilityRatingClass(abilities.gkReach)}`}>{abilities.gkReach}</strong>
             </div>
 
         </div>
@@ -245,13 +247,29 @@ const { abilities } = Astro.props;
     color: var(--color-text);
 }
 
-.ability strong {
+.ability__value {
     min-width: 2rem;
 
     text-align: right;
 
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
+}
+
+.ability__value--low {
+    color: var(--color-ability-low);
+}
+
+.ability__value--good {
+    color: var(--color-ability-good);
+}
+
+.ability__value--very-good {
+    color: var(--color-ability-very-good);
+}
+
+.ability__value--excellent {
+    color: var(--color-ability-excellent);
 }
 
 @media (max-width: 700px) {

@@ -1,9 +1,12 @@
 {
     "player": {
+        "name": "Igor Jesus",
         "short_name": "Igor Jesus",
+        "dateOfBirth": "2001-02-25",
+        "placeOfBirth": "Cuiabá",
         "nation_1": "Brazil",
         "nation_2": "United Arab Emirates",
-        "height": 1.79,
+        "height": 1.83,
         "foot": "Right",
         "position_group": "FORWARD",
         "position_1": "CF",
@@ -14,6 +17,38 @@
         "prime_date": "2026-06-03"
     },
     "matches": [
+        {
+            "game_id": "5016473",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "703",
+            "opponent_id": "399",
+            "position": "RW",
+            "minutes": 60,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4899186",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "703",
+            "opponent_id": "399",
+            "position": "CF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4626174",
             "season": 2025,
@@ -6057,46 +6092,55 @@
     ],
     "clubs": {
         "703": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 56,
-                "participations": 56,
-                "minutes": 3276,
-                "starts": 38,
+                "matches": 58,
+                "participations": 58,
+                "minutes": 3426,
+                "starts": 40,
                 "captain_matches": 0,
                 "goals": 16,
                 "assists": 5,
-                "goals_conceded": 48,
+                "goals_conceded": 50,
                 "points": 71,
                 "clean_sheets": 30,
                 "wins": 19,
                 "draws": 14,
-                "losses": 23,
-                "goal_matches": 43,
-                "assist_matches": 51,
+                "losses": 25,
+                "goal_matches": 45,
+                "assist_matches": 53,
                 "goal_contributions": 21
             },
             "positions": {
-                "CF": 42,
+                "RW": 1,
+                "CF": 43,
                 "AMF": 1,
                 "SS": 1
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.268,
-                "minutes_per_match": 58.5,
-                "win_rate": 0.3393,
-                "goals_per_90": 0.44,
-                "assists_per_90": 0.137,
-                "contributions_per_90": 0.577,
+                "season_count": 2,
+                "points_per_match": 1.224,
+                "minutes_per_match": 59.1,
+                "win_rate": 0.3276,
+                "goals_per_90": 0.42,
+                "assists_per_90": 0.131,
+                "contributions_per_90": 0.552,
                 "primary_position": "CF"
             },
             "competitions": {
+                "League Cup": {
+                    "matches": 2,
+                    "minutes": 105,
+                    "goals": 2,
+                    "assists": 0
+                },
                 "First Tier": {
-                    "matches": 38,
-                    "minutes": 2315,
+                    "matches": 39,
+                    "minutes": 2405,
                     "goals": 6,
                     "assists": 4
                 },
@@ -6111,12 +6155,6 @@
                     "minutes": 120,
                     "goals": 1,
                     "assists": 0
-                },
-                "League Cup": {
-                    "matches": 1,
-                    "minutes": 45,
-                    "goals": 2,
-                    "assists": 0
                 }
             },
             "awards": {
@@ -6127,6 +6165,7 @@
             }
         },
         "3439": {
+            "type": "national",
             "seasons": [
                 2023,
                 2025
@@ -6184,6 +6223,7 @@
             }
         },
         "537": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024
@@ -6263,6 +6303,7 @@
             }
         },
         "60529": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -6345,6 +6386,7 @@
             }
         },
         "776": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019
@@ -6408,6 +6450,7 @@
             }
         },
         "48143": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -6456,24 +6499,24 @@
     },
     "career": {
         "club": {
-            "matches": 84,
-            "minutes": 2700,
-            "goals": 7,
-            "assists": 2,
-            "goal_contributions": 9,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 2
+            "matches": 362,
+            "minutes": 17168,
+            "goals": 86,
+            "assists": 33,
+            "goal_contributions": 119,
+            "team_titles": 6,
+            "individual_titles": 1,
+            "season_count": 9
         },
         "national": {
-            "matches": 289,
-            "minutes": 14615,
-            "goals": 80,
-            "assists": 32,
-            "goal_contributions": 112,
-            "team_titles": 6,
-            "individual_titles": 2,
-            "season_count": 7
+            "matches": 13,
+            "minutes": 297,
+            "goals": 1,
+            "assists": 1,
+            "goal_contributions": 2,
+            "team_titles": 0,
+            "individual_titles": 1,
+            "season_count": 3
         }
     }
 }

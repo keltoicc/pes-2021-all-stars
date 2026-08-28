@@ -1,6 +1,8 @@
 ---
 import type { PlayerVersion } from "../../types/playerVersion";
 
+import { getPositionCategory } from "../../lib/utils/getPositionCategory";
+
 interface Props {
     positions: PlayerVersion["positions"];
 }
@@ -17,13 +19,18 @@ const { positions } = Astro.props;
     <ul>
 
         {
-            Object.entries(positions).map(([position]) => (
+            Object.entries(positions).map(([position]) => {
 
-                <li>
+                const category =
+                    getPositionCategory(position);
+
+                return (
+                    <li class={`position--${category}`}>
                         {position}
-                </li>
+                    </li>
+                );
 
-            ))
+            })
         }
 
     </ul>
@@ -72,5 +79,25 @@ const { positions } = Astro.props;
 
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-semibold);
+}
+
+.position--goalkeeper {
+    color: var(--color-position-goalkeeper);
+    border-color: var(--color-position-goalkeeper);
+}
+
+.position--defender {
+    color: var(--color-position-defender);
+    border-color: var(--color-position-defender);
+}
+
+.position--midfielder {
+    color: var(--color-position-midfielder);
+    border-color: var(--color-position-midfielder);
+}
+
+.position--forward {
+    color: var(--color-position-forward);
+    border-color: var(--color-position-forward);
 }
 </style>

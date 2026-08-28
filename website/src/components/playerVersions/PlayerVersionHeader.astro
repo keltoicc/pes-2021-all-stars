@@ -3,6 +3,8 @@ import type { Player } from "../../types/player";
 import type { PlayerVersion } from "../../types/playerVersion";
 import type { Country } from "../../types/country";
 
+import { getPositionCategory } from "../../lib/utils/getPositionCategory";
+
 interface Props {
     player: Player;
     playerVersion: PlayerVersion;
@@ -14,6 +16,9 @@ const {
     playerVersion,
     country
 } = Astro.props;
+
+const mainPositionCategory =
+    getPositionCategory(playerVersion.mainPosition);
 ---
 
 <header class="player-version-header">
@@ -62,7 +67,11 @@ const {
         <div>
 
             <dt>Main Position</dt>
-            <dd>{playerVersion.mainPosition}</dd>
+            <dd
+                class={`player-version-header__position player-version-header__position--${mainPositionCategory}`}
+            >
+                {playerVersion.mainPosition}
+            </dd>
 
         </div>
 
@@ -174,6 +183,22 @@ const {
 
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-bold);
+}
+
+.player-version-header dd.player-version-header__position--goalkeeper {
+    color: var(--color-position-goalkeeper);
+}
+
+.player-version-header dd.player-version-header__position--defender {
+    color: var(--color-position-defender);
+}
+
+.player-version-header dd.player-version-header__position--midfielder {
+    color: var(--color-position-midfielder);
+}
+
+.player-version-header dd.player-version-header__position--forward {
+    color: var(--color-position-forward);
 }
 
 @media (max-width: 800px) {

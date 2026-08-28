@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Biel",
         "short_name": "Biel",
+        "dateOfBirth": "2001-04-01",
+        "placeOfBirth": "Maracanaú",
         "nation_1": "Brazil",
         "nation_2": "",
         "height": 1.7,
@@ -15,12 +18,92 @@
     },
     "matches": [
         {
+            "game_id": "5013846",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "45457",
+            "opponent_id": "588",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "5013822",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "45457",
+            "opponent_id": "588",
+            "position": "LW",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "5008630",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "45457",
+            "opponent_id": "409",
+            "position": "LM",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "5008631",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "45457",
+            "opponent_id": "409",
+            "position": "LW",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4897956",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "45457",
+            "opponent_id": "447",
+            "position": "RW",
+            "minutes": 103,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
             "game_id": "4897947",
             "season": 2026,
             "competition_type": "International Cup",
             "club_id": "45457",
             "opponent_id": "447",
-            "position": "LW",
+            "position": "RW",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -6063,45 +6146,48 @@
     ],
     "clubs": {
         "45457": {
+            "type": "club",
             "seasons": [
                 2026
             ],
             "stats": {
-                "matches": 1,
-                "participations": 1,
-                "minutes": 90,
-                "starts": 1,
+                "matches": 6,
+                "participations": 6,
+                "minutes": 463,
+                "starts": 5,
                 "captain_matches": 0,
-                "goals": 0,
+                "goals": 2,
                 "assists": 0,
-                "goals_conceded": 2,
-                "points": 0,
-                "clean_sheets": 0,
-                "wins": 0,
-                "draws": 0,
-                "losses": 1,
-                "goal_matches": 1,
-                "assist_matches": 1,
-                "goal_contributions": 0
+                "goals_conceded": 7,
+                "points": 8,
+                "clean_sheets": 2,
+                "wins": 2,
+                "draws": 2,
+                "losses": 2,
+                "goal_matches": 4,
+                "assist_matches": 6,
+                "goal_contributions": 2
             },
             "positions": {
-                "LW": 1
+                "LW": 2,
+                "LM": 1,
+                "RW": 2
             },
             "derived": {
                 "season_count": 1,
-                "points_per_match": 0.0,
-                "minutes_per_match": 90.0,
-                "win_rate": 0.0,
-                "goals_per_90": 0.0,
+                "points_per_match": 1.333,
+                "minutes_per_match": 77.2,
+                "win_rate": 0.3333,
+                "goals_per_90": 0.389,
                 "assists_per_90": 0.0,
-                "contributions_per_90": 0.0,
+                "contributions_per_90": 0.389,
                 "primary_position": "LW"
             },
             "competitions": {
                 "International Cup": {
-                    "matches": 1,
-                    "minutes": 90,
-                    "goals": 0,
+                    "matches": 6,
+                    "minutes": 463,
+                    "goals": 2,
                     "assists": 0
                 }
             },
@@ -6111,6 +6197,7 @@
             }
         },
         "28844": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -6162,6 +6249,7 @@
             }
         },
         "336": {
+            "type": "club",
             "seasons": [
                 2024,
                 2025
@@ -6227,6 +6315,7 @@
             }
         },
         "330": {
+            "type": "club",
             "seasons": [
                 2024,
                 2025
@@ -6291,6 +6380,7 @@
             }
         },
         "10010": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -6360,6 +6450,7 @@
             }
         },
         "210": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -6411,6 +6502,7 @@
             }
         },
         "2462": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021
@@ -6477,6 +6569,7 @@
             }
         },
         "14702": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -6525,24 +6618,24 @@
     },
     "career": {
         "club": {
-            "matches": 224,
-            "minutes": 9592,
-            "goals": 26,
-            "assists": 24,
-            "goal_contributions": 50,
-            "team_titles": 1,
+            "matches": 381,
+            "minutes": 13567,
+            "goals": 34,
+            "assists": 28,
+            "goal_contributions": 62,
+            "team_titles": 3,
             "individual_titles": 0,
-            "season_count": 6
+            "season_count": 8
         },
         "national": {
-            "matches": 152,
-            "minutes": 3602,
-            "goals": 6,
-            "assists": 4,
-            "goal_contributions": 10,
-            "team_titles": 2,
+            "matches": 0,
+            "minutes": 0,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 5
+            "season_count": 0
         }
     }
 }

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "John Victor",
         "short_name": "John Victor",
+        "dateOfBirth": "1996-02-13",
+        "placeOfBirth": "Diadema",
         "nation_1": "Brazil",
         "nation_2": "Portugal",
         "height": 1.97,
@@ -14,6 +17,38 @@
         "prime_date": "2025-06-06"
     },
     "matches": [
+        {
+            "game_id": "5016473",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "703",
+            "opponent_id": "399",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4899186",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "703",
+            "opponent_id": "399",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
         {
             "game_id": "4626174",
             "season": 2025,
@@ -9181,12 +9216,14 @@
     ],
     "clubs": {
         "703": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 54,
-                "participations": 54,
+                "matches": 56,
+                "participations": 56,
                 "minutes": 798,
                 "starts": 9,
                 "captain_matches": 0,
@@ -9194,30 +9231,36 @@
                 "assists": 0,
                 "goals_conceded": 12,
                 "points": 67,
-                "clean_sheets": 48,
+                "clean_sheets": 50,
                 "wins": 18,
                 "draws": 13,
-                "losses": 23,
-                "goal_matches": 54,
-                "assist_matches": 54,
+                "losses": 25,
+                "goal_matches": 56,
+                "assist_matches": 56,
                 "goal_contributions": 0
             },
             "positions": {
                 "GK": 9
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.241,
-                "minutes_per_match": 14.8,
-                "win_rate": 0.3333,
+                "season_count": 2,
+                "points_per_match": 1.196,
+                "minutes_per_match": 14.2,
+                "win_rate": 0.3214,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
                 "primary_position": "GK"
             },
             "competitions": {
+                "League Cup": {
+                    "matches": 2,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "First Tier": {
-                    "matches": 36,
+                    "matches": 37,
                     "minutes": 438,
                     "goals": 0,
                     "assists": 0
@@ -9233,12 +9276,6 @@
                     "minutes": 0,
                     "goals": 0,
                     "assists": 0
-                },
-                "League Cup": {
-                    "matches": 1,
-                    "minutes": 90,
-                    "goals": 0,
-                    "assists": 0
                 }
             },
             "awards": {
@@ -9247,6 +9284,7 @@
             }
         },
         "3439": {
+            "type": "national",
             "seasons": [
                 2025
             ],
@@ -9293,6 +9331,7 @@
             }
         },
         "537": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024
@@ -9371,6 +9410,7 @@
             }
         },
         "366": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -9425,6 +9465,7 @@
             }
         },
         "6600": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -9485,6 +9526,7 @@
             }
         },
         "221": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -9552,6 +9594,7 @@
             }
         },
         "9540": {
+            "type": "",
             "seasons": [],
             "stats": {
                 "matches": 0,
@@ -9593,24 +9636,24 @@
     },
     "career": {
         "club": {
-            "matches": 21,
-            "minutes": 1080,
+            "matches": 568,
+            "minutes": 13637,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
-            "team_titles": 1,
-            "individual_titles": 0,
-            "season_count": 1
+            "team_titles": 3,
+            "individual_titles": 1,
+            "season_count": 12
         },
         "national": {
-            "matches": 549,
-            "minutes": 12557,
+            "matches": 4,
+            "minutes": 0,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
-            "team_titles": 2,
-            "individual_titles": 1,
-            "season_count": 11
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 1
         }
     }
 }

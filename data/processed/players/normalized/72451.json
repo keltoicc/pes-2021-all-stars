@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Nino Paraíba",
         "short_name": "Nino Paraíba",
+        "dateOfBirth": "1986-01-10",
+        "placeOfBirth": "Rio Tinto",
         "nation_1": "Brazil",
         "nation_2": "",
         "height": 1.68,
@@ -14,6 +17,86 @@
         "prime_date": "2015-09-11"
     },
     "matches": [
+        {
+            "game_id": "4841894",
+            "season": 2025,
+            "competition_type": "Second Tier",
+            "club_id": "1693",
+            "opponent_id": "2029",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4841933",
+            "season": 2025,
+            "competition_type": "Second Tier",
+            "club_id": "1693",
+            "opponent_id": "15172",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 1
+        },
+        {
+            "game_id": "4842007",
+            "season": 2025,
+            "competition_type": "Second Tier",
+            "club_id": "1693",
+            "opponent_id": "8718",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4841985",
+            "season": 2025,
+            "competition_type": "Second Tier",
+            "club_id": "1693",
+            "opponent_id": "3197",
+            "position": "RB",
+            "minutes": 83,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4842113",
+            "season": 2025,
+            "competition_type": "Second Tier",
+            "club_id": "1693",
+            "opponent_id": "37474",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 4,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4842027",
             "season": 2025,
@@ -16362,42 +16445,45 @@
     ],
     "clubs": {
         "1693": {
+            "type": "club",
             "seasons": [
                 2025
             ],
             "stats": {
-                "matches": 4,
-                "participations": 4,
-                "minutes": 74,
-                "starts": 0,
+                "matches": 9,
+                "participations": 9,
+                "minutes": 247,
+                "starts": 2,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 0,
-                "goals_conceded": 1,
-                "points": 5,
-                "clean_sheets": 3,
+                "goals_conceded": 6,
+                "points": 6,
+                "clean_sheets": 6,
                 "wins": 1,
-                "draws": 2,
-                "losses": 1,
-                "goal_matches": 4,
-                "assist_matches": 4,
+                "draws": 3,
+                "losses": 5,
+                "goal_matches": 9,
+                "assist_matches": 9,
                 "goal_contributions": 0
             },
-            "positions": {},
+            "positions": {
+                "RB": 2
+            },
             "derived": {
                 "season_count": 1,
-                "points_per_match": 1.25,
-                "minutes_per_match": 18.5,
-                "win_rate": 0.25,
+                "points_per_match": 0.667,
+                "minutes_per_match": 27.4,
+                "win_rate": 0.1111,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
-                "primary_position": ""
+                "primary_position": "RB"
             },
             "competitions": {
                 "Second Tier": {
-                    "matches": 4,
-                    "minutes": 74,
+                    "matches": 9,
+                    "minutes": 247,
                     "goals": 0,
                     "assists": 0
                 }
@@ -16408,6 +16494,7 @@
             }
         },
         "28022": {
+            "type": "club",
             "seasons": [
                 2024,
                 2025
@@ -16470,6 +16557,7 @@
             }
         },
         "6347": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -16516,6 +16604,7 @@
             }
         },
         "2863": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -16576,6 +16665,7 @@
             }
         },
         "2029": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -16644,6 +16734,7 @@
             }
         },
         "10010": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -16716,6 +16807,7 @@
             }
         },
         "1134": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016
@@ -16779,6 +16871,7 @@
             }
         },
         "2035": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -16834,6 +16927,7 @@
             }
         },
         "2125": {
+            "type": "club",
             "seasons": [
                 2008,
                 2009,
@@ -16912,6 +17006,7 @@
             }
         },
         "2646": {
+            "type": "club",
             "seasons": [
                 2007
             ],
@@ -16966,24 +17061,24 @@
     },
     "career": {
         "club": {
-            "matches": 105,
-            "minutes": 4572,
-            "goals": 0,
-            "assists": 4,
-            "goal_contributions": 4,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 5
-        },
-        "national": {
-            "matches": 916,
-            "minutes": 45235,
+            "matches": 1026,
+            "minutes": 49980,
             "goals": 16,
-            "assists": 37,
-            "goal_contributions": 53,
+            "assists": 41,
+            "goal_contributions": 57,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 15
+            "season_count": 18
+        },
+        "national": {
+            "matches": 0,
+            "minutes": 0,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 0
         }
     }
 }

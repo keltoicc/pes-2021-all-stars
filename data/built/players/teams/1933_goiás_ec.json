@@ -1,6 +1,6 @@
 {
-    "tactic": "4-2-3-1",
-    "total_score": 9.52,
+    "tactic": "3-5-2",
+    "total_score": 9.43,
     "players": [
         {
             "role": "GOALKEEPER",
@@ -23,7 +23,7 @@
             "role_weight": 1.0
         },
         {
-            "role": "CENTER_BACK",
+            "role": "WIDE_CENTER_BACK",
             "player": {
                 "ID_transfermarkt": "53755",
                 "name": "Ernando",
@@ -51,7 +51,7 @@
             "role_weight": 1.0
         },
         {
-            "role": "FULLBACK",
+            "role": "WIDE_CENTER_BACK",
             "player": {
                 "ID_transfermarkt": "53789",
                 "name": "Vítor",
@@ -75,23 +75,23 @@
                     }
                 }
             },
-            "score": 0.56,
-            "role_weight": 1.0
+            "score": 0.5,
+            "role_weight": 0.8
         },
         {
             "role": "GOALKEEPER",
             "player": {
                 "ID_transfermarkt": "258367",
                 "name": "Tadeu",
-                "score": 0.5522849887133182,
+                "score": 0.550369153674833,
                 "roles": {
                     "GOALKEEPER": {
                         "weight": 1.0,
-                        "score": 0.5522849887133182
+                        "score": 0.550369153674833
                     },
                     "UTILITY": {
                         "weight": 1.0,
-                        "score": 0.5522849887133182
+                        "score": 0.550369153674833
                     }
                 }
             },
@@ -123,7 +123,7 @@
             "role_weight": 1.0
         },
         {
-            "role": "DEFENSIVE_MID",
+            "role": "CENTRAL_MID",
             "player": {
                 "ID_transfermarkt": "52910",
                 "name": "Josué",
@@ -147,8 +147,8 @@
                     }
                 }
             },
-            "score": 0.43,
-            "role_weight": 0.8
+            "score": 0.41,
+            "role_weight": 0.75
         },
         {
             "role": "WINGER",
@@ -175,7 +175,7 @@
             "role_weight": 1.0
         },
         {
-            "role": "WINGER",
+            "role": "WIDE_MID",
             "player": {
                 "ID_transfermarkt": "16937",
                 "name": "Iarley",
@@ -203,8 +203,8 @@
                     }
                 }
             },
-            "score": 0.38,
-            "role_weight": 0.6667
+            "score": 0.29,
+            "role_weight": 0.4
         },
         {
             "role": "UTILITY",
@@ -255,7 +255,7 @@
             "role_weight": 2.3
         },
         {
-            "role": "CENTER_BACK",
+            "role": "WIDE_CENTER_BACK",
             "player": {
                 "ID_transfermarkt": "72441",
                 "name": "R. Tolói",
@@ -287,23 +287,23 @@
             "player": {
                 "ID_transfermarkt": "54182",
                 "name": "Araújo",
-                "score": 0.4321461537037037,
+                "score": 0.4386197925925926,
                 "roles": {
                     "SECOND_STRIKER": {
                         "weight": 0.4,
-                        "score": 0.27331322555698256
+                        "score": 0.2774075142846487
                     },
                     "STRIKER": {
                         "weight": 1.0,
-                        "score": 0.4321461537037037
+                        "score": 0.4386197925925926
                     },
                     "UTILITY": {
                         "weight": 1.4,
-                        "score": 0.4321461537037037
+                        "score": 0.4386197925925926
                     }
                 }
             },
-            "score": 0.43,
+            "score": 0.44,
             "role_weight": 1.0
         },
         {
@@ -353,6 +353,38 @@
             },
             "score": 0.42,
             "role_weight": 1.0
+        },
+        {
+            "role": "CENTRAL_MID",
+            "player": {
+                "ID_transfermarkt": "19206",
+                "name": "David",
+                "score": 0.4157131263933721,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 0.5376344086021505,
+                        "score": 0.30481565331047605
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.886021505376344,
+                        "score": 0.39130542542251595
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.4623655913978495,
+                        "score": 0.28267440802566374
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.10967741935483871,
+                        "score": 0.1376741327578672
+                    },
+                    "UTILITY": {
+                        "weight": 1.9956989247311827,
+                        "score": 0.4157131263933721
+                    }
+                }
+            },
+            "score": 0.39,
+            "role_weight": 0.886
         },
         {
             "role": "CENTER_BACK",
@@ -411,36 +443,28 @@
             "role_weight": 0.7
         },
         {
-            "role": "ATTACKING_MID",
+            "role": "STRIKER",
             "player": {
-                "ID_transfermarkt": "106076",
-                "name": "R. Goulart",
-                "score": 0.3880289452272214,
+                "ID_transfermarkt": "53256",
+                "name": "R. Moura",
+                "score": 0.37947338300446576,
                 "roles": {
-                    "ATTACKING_MID": {
-                        "weight": 0.5333333333333333,
-                        "score": 0.28337627502118096
-                    },
                     "SECOND_STRIKER": {
-                        "weight": 0.6666666666666666,
-                        "score": 0.31682430707901815
+                        "weight": 0.4,
+                        "score": 0.24000004034070824
                     },
                     "STRIKER": {
-                        "weight": 0.5,
-                        "score": 0.2743778984668317
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 0.2333333333333333,
-                        "score": 0.1874357877904724
+                        "weight": 1.0,
+                        "score": 0.37947338300446576
                     },
                     "UTILITY": {
-                        "weight": 1.9333333333333333,
-                        "score": 0.3880289452272214
+                        "weight": 1.4,
+                        "score": 0.37947338300446576
                     }
                 }
             },
-            "score": 0.28,
-            "role_weight": 0.5333
+            "score": 0.38,
+            "role_weight": 1.0
         },
         {
             "role": "CENTER_BACK",
@@ -471,28 +495,32 @@
             "role_weight": 1.0
         },
         {
-            "role": "DEFENSIVE_MID",
+            "role": "CENTRAL_MID",
             "player": {
-                "ID_transfermarkt": "54059",
-                "name": "Cléber Goiano",
-                "score": 0.33626237745803356,
+                "ID_transfermarkt": "1509277",
+                "name": "Fagundes",
+                "score": 0.3462984345679012,
                 "roles": {
                     "DEFENSIVE_MID": {
-                        "weight": 1.0,
-                        "score": 0.33626237745803356
+                        "weight": 0.7306122448979591,
+                        "score": 0.2960015611884369
                     },
                     "CENTRAL_MID": {
-                        "weight": 0.5,
-                        "score": 0.237773407358486
+                        "weight": 0.836734693877551,
+                        "score": 0.31677027139525454
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.2693877551020408,
+                        "score": 0.1797378133787851
                     },
                     "UTILITY": {
-                        "weight": 1.5,
-                        "score": 0.33626237745803356
+                        "weight": 1.8367346938775508,
+                        "score": 0.3462984345679012
                     }
                 }
             },
-            "score": 0.34,
-            "role_weight": 1.0
+            "score": 0.32,
+            "role_weight": 0.8367
         },
         {
             "role": "ATTACKING_MID",
@@ -523,112 +551,92 @@
             "role_weight": 1.0
         },
         {
-            "role": "FULLBACK",
+            "role": "WIDE_CENTER_BACK",
             "player": {
-                "ID_transfermarkt": "54901",
-                "name": "Júlio César",
-                "score": 0.3080205692307692,
+                "ID_transfermarkt": "1509522",
+                "name": "Jorge Batata",
+                "score": 0.33238152499999996,
                 "roles": {
+                    "CENTER_BACK": {
+                        "weight": 0.32142857142857145,
+                        "score": 0.18844261190194242
+                    },
+                    "SWEEPER": {
+                        "weight": 0.16071428571428573,
+                        "score": 0.13324904874036828
+                    },
                     "WIDE_CENTER_BACK": {
-                        "weight": 0.8,
-                        "score": 0.275501972507272
+                        "weight": 0.8642857142857143,
+                        "score": 0.3090050260515931
                     },
                     "FULLBACK": {
-                        "weight": 1.0,
-                        "score": 0.3080205692307692
+                        "weight": 0.6785714285714286,
+                        "score": 0.273800767312474
                     },
                     "WING_BACK": {
-                        "weight": 0.7,
-                        "score": 0.2577084976256564
+                        "weight": 0.475,
+                        "score": 0.2290781572447047
                     },
                     "UTILITY": {
                         "weight": 2.5,
-                        "score": 0.3080205692307692
+                        "score": 0.33238152499999996
                     }
                 }
             },
             "score": 0.31,
-            "role_weight": 1.0
+            "role_weight": 0.8643
         },
         {
-            "role": "FULLBACK",
+            "role": "WIDE_MID",
             "player": {
-                "ID_transfermarkt": "47716",
-                "name": "Jadílson",
-                "score": 0.3067068359937402,
-                "roles": {
-                    "WIDE_CENTER_BACK": {
-                        "weight": 0.8,
-                        "score": 0.27432693377835293
-                    },
-                    "FULLBACK": {
-                        "weight": 1.0,
-                        "score": 0.3067068359937402
-                    },
-                    "WING_BACK": {
-                        "weight": 0.7,
-                        "score": 0.256609349540705
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.3067068359937402
-                    }
-                }
-            },
-            "score": 0.31,
-            "role_weight": 1.0
-        },
-        {
-            "role": "WINGER",
-            "player": {
-                "ID_transfermarkt": "520392",
-                "name": "Michael",
-                "score": 0.2930537899224806,
+                "ID_transfermarkt": "1479971",
+                "name": "Niltinho",
+                "score": 0.32990700619834706,
                 "roles": {
                     "WIDE_MID": {
                         "weight": 0.6,
-                        "score": 0.22699848958254687
+                        "score": 0.25554486816066907
                     },
                     "WINGER": {
                         "weight": 1.0,
-                        "score": 0.2930537899224806
+                        "score": 0.32990700619834706
                     },
                     "UTILITY": {
                         "weight": 1.6,
-                        "score": 0.2930537899224806
+                        "score": 0.32990700619834706
                     }
                 }
             },
-            "score": 0.29,
-            "role_weight": 1.0
+            "score": 0.26,
+            "role_weight": 0.6
         },
         {
-            "role": "FULLBACK",
+            "role": "WIDE_MID",
             "player": {
-                "ID_transfermarkt": "435211",
-                "name": "Jefferson",
-                "score": 0.2916606272904483,
+                "ID_transfermarkt": "146020",
+                "name": "Vinícius",
+                "score": 0.27901804583333334,
                 "roles": {
-                    "WIDE_CENTER_BACK": {
-                        "weight": 0.8,
-                        "score": 0.2608691955926691
-                    },
-                    "FULLBACK": {
-                        "weight": 1.0,
-                        "score": 0.2916606272904483
-                    },
                     "WING_BACK": {
-                        "weight": 0.7,
-                        "score": 0.2440207881677716
+                        "weight": 0.09811320754716982,
+                        "score": 0.08739690028217194
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.6981132075471698,
+                        "score": 0.23312841980188334
+                    },
+                    "WINGER": {
+                        "weight": 0.9264150943396225,
+                        "score": 0.2685561510493721
                     },
                     "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.2916606272904483
+                        "weight": 1.7226415094339622,
+                        "score": 0.27901804583333334
                     }
                 }
             },
-            "score": 0.29,
-            "role_weight": 1.0
+            "score": 0.23,
+            "role_weight": 0.6981
         }
     ]
 }
