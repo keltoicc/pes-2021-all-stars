@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Santiago Pierotti",
         "short_name": "S. Pierotti",
+        "dateOfBirth": "2001-04-03",
+        "placeOfBirth": "Pilar",
         "nation_1": "Argentina",
         "nation_2": "Italy",
         "height": 1.89,
@@ -14,6 +17,38 @@
         "prime_date": "2026-05-29"
     },
     "matches": [
+        {
+            "game_id": "4893352",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1005",
+            "opponent_id": "607",
+            "position": "RW",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4904457",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "1005",
+            "opponent_id": "458",
+            "position": "LW",
+            "minutes": 74,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4621092",
             "season": 2025,
@@ -4634,57 +4669,59 @@
     ],
     "clubs": {
         "1005": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 98,
-                "participations": 98,
-                "minutes": 4930,
-                "starts": 55,
+                "matches": 100,
+                "participations": 100,
+                "minutes": 5094,
+                "starts": 57,
                 "captain_matches": 0,
                 "goals": 5,
                 "assists": 6,
-                "goals_conceded": 72,
-                "points": 95,
-                "clean_sheets": 48,
-                "wins": 24,
+                "goals_conceded": 74,
+                "points": 98,
+                "clean_sheets": 49,
+                "wins": 25,
                 "draws": 23,
-                "losses": 51,
-                "goal_matches": 94,
-                "assist_matches": 92,
+                "losses": 52,
+                "goal_matches": 96,
+                "assist_matches": 94,
                 "goal_contributions": 11
             },
             "positions": {
-                "RW": 59,
-                "LW": 3,
+                "RW": 60,
+                "LW": 4,
                 "CF": 8,
                 "AMF": 7,
                 "RM": 1,
                 "SS": 2
             },
             "derived": {
-                "season_count": 3,
-                "points_per_match": 0.969,
-                "minutes_per_match": 50.3,
-                "win_rate": 0.2449,
-                "goals_per_90": 0.091,
-                "assists_per_90": 0.11,
-                "contributions_per_90": 0.201,
+                "season_count": 4,
+                "points_per_match": 0.98,
+                "minutes_per_match": 50.9,
+                "win_rate": 0.25,
+                "goals_per_90": 0.088,
+                "assists_per_90": 0.106,
+                "contributions_per_90": 0.194,
                 "primary_position": "RW"
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 94,
-                    "minutes": 4746,
+                    "matches": 95,
+                    "minutes": 4836,
                     "goals": 5,
                     "assists": 6
                 },
                 "Domestic Cup": {
-                    "matches": 4,
-                    "minutes": 184,
+                    "matches": 5,
+                    "minutes": 258,
                     "goals": 0,
                     "assists": 0
                 }
@@ -4695,6 +4732,7 @@
             }
         },
         "1070": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -4786,6 +4824,7 @@
             }
         },
         "11940": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -4834,24 +4873,24 @@
     },
     "career": {
         "club": {
-            "matches": 98,
-            "minutes": 4930,
-            "goals": 5,
-            "assists": 6,
-            "goal_contributions": 11,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 3
-        },
-        "national": {
-            "matches": 190,
-            "minutes": 5422,
-            "goals": 10,
-            "assists": 3,
-            "goal_contributions": 13,
+            "matches": 288,
+            "minutes": 10452,
+            "goals": 15,
+            "assists": 9,
+            "goal_contributions": 24,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 5
+            "season_count": 9
+        },
+        "national": {
+            "matches": 2,
+            "minutes": 64,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 1
         }
     }
 }

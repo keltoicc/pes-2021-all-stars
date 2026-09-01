@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Cristian Chávez",
         "short_name": "C. Chávez",
+        "dateOfBirth": "1986-06-16",
+        "placeOfBirth": "Pilar",
         "nation_1": "Argentina",
         "nation_2": "",
         "height": 1.69,
@@ -3284,14 +3287,14 @@
             "competition_type": "Play-Offs",
             "club_id": "4862",
             "opponent_id": "5570",
-            "position": null,
-            "minutes": 0,
-            "started": false,
+            "position": "",
+            "minutes": 120,
+            "started": true,
             "captain": false,
             "goals": 0,
             "assists": 0,
-            "goals_conceded": 0,
-            "participation": "not in squad",
+            "goals_conceded": 2,
+            "participation": "played",
             "club_points": 3
         },
         {
@@ -3308,6 +3311,22 @@
             "assists": 0,
             "goals_conceded": 0,
             "participation": "not in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4934722",
+            "season": 2017,
+            "competition_type": "Play-Offs",
+            "club_id": "4862",
+            "opponent_id": "5570",
+            "position": "",
+            "minutes": 67,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
             "club_points": 3
         },
         {
@@ -13378,10 +13397,18 @@
             "season_id": 2011,
             "club_name": "CA Boca Juniors",
             "club_id": 189
+        },
+        {
+            "title": "Bolivian champion",
+            "season": "2018",
+            "season_id": 2017,
+            "club_name": "Club Jorge Wilstermann ",
+            "club_id": 4862
         }
     ],
     "clubs": {
         "4862": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -13392,21 +13419,21 @@
                 2024
             ],
             "stats": {
-                "matches": 239,
-                "participations": 239,
-                "minutes": 8589,
-                "starts": 101,
+                "matches": 240,
+                "participations": 240,
+                "minutes": 8776,
+                "starts": 103,
                 "captain_matches": 21,
                 "goals": 16,
                 "assists": 7,
-                "goals_conceded": 120,
-                "points": 361,
-                "clean_sheets": 171,
-                "wins": 103,
+                "goals_conceded": 123,
+                "points": 364,
+                "clean_sheets": 170,
+                "wins": 104,
                 "draws": 52,
                 "losses": 84,
-                "goal_matches": 226,
-                "assist_matches": 232,
+                "goal_matches": 227,
+                "assist_matches": 233,
                 "goal_contributions": 23
             },
             "positions": {
@@ -13420,12 +13447,12 @@
             },
             "derived": {
                 "season_count": 7,
-                "points_per_match": 1.51,
-                "minutes_per_match": 35.9,
-                "win_rate": 0.431,
-                "goals_per_90": 0.168,
-                "assists_per_90": 0.073,
-                "contributions_per_90": 0.241,
+                "points_per_match": 1.517,
+                "minutes_per_match": 36.6,
+                "win_rate": 0.4333,
+                "goals_per_90": 0.164,
+                "assists_per_90": 0.072,
+                "contributions_per_90": 0.236,
                 "primary_position": "AMF"
             },
             "competitions": {
@@ -13448,18 +13475,21 @@
                     "assists": 5
                 },
                 "Play-Offs": {
-                    "matches": 7,
-                    "minutes": 353,
+                    "matches": 8,
+                    "minutes": 540,
                     "goals": 2,
                     "assists": 0
                 }
             },
             "awards": {
-                "team_titles": {},
+                "team_titles": {
+                    "Bolivian champion": 1
+                },
                 "individual_titles": {}
             }
         },
         "6676": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016
@@ -13515,6 +13545,7 @@
             }
         },
         "4673": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -13578,6 +13609,7 @@
             }
         },
         "4321": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014
@@ -13650,6 +13682,7 @@
             }
         },
         "333": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013
@@ -13715,6 +13748,7 @@
             }
         },
         "189": {
+            "type": "club",
             "seasons": [
                 2004,
                 2005,
@@ -13809,6 +13843,7 @@
             }
         },
         "3437": {
+            "type": "national",
             "seasons": [
                 2010,
                 2011,
@@ -13868,24 +13903,24 @@
     },
     "career": {
         "club": {
-            "matches": 29,
-            "minutes": 260,
-            "goals": 0,
-            "assists": 1,
+            "matches": 806,
+            "minutes": 21865,
+            "goals": 30,
+            "assists": 35,
+            "goal_contributions": 65,
+            "team_titles": 6,
+            "individual_titles": 0,
+            "season_count": 19
+        },
+        "national": {
+            "matches": 28,
+            "minutes": 273,
+            "goals": 1,
+            "assists": 0,
             "goal_contributions": 1,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 2
-        },
-        "national": {
-            "matches": 804,
-            "minutes": 21691,
-            "goals": 31,
-            "assists": 34,
-            "goal_contributions": 65,
-            "team_titles": 5,
-            "individual_titles": 0,
-            "season_count": 18
+            "season_count": 3
         }
     }
 }

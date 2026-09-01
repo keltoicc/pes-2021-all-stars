@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Thiago Nuss",
         "short_name": "Thiago Nuss",
+        "dateOfBirth": "2001-02-02",
+        "placeOfBirth": "Cañuelas",
         "nation_1": "Argentina",
         "nation_2": "",
         "height": 1.72,
@@ -14,6 +17,86 @@
         "prime_date": "2026-06-04"
     },
     "matches": [
+        {
+            "game_id": "4973510",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "653",
+            "opponent_id": "605",
+            "position": "CF",
+            "minutes": 65,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "5013803",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "653",
+            "opponent_id": "208",
+            "position": "CF",
+            "minutes": 77,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4973519",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "653",
+            "opponent_id": "60949",
+            "position": "AMF",
+            "minutes": 63,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "5013761",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "653",
+            "opponent_id": "208",
+            "position": "CF",
+            "minutes": 76,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4884159",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "653",
+            "opponent_id": "2441",
+            "position": "LW",
+            "minutes": 86,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4850105",
             "season": 2025,
@@ -3327,6 +3410,13 @@
             "club_id": 653
         },
         {
+            "title": "Greek Super Cup winner",
+            "season": "2027",
+            "season_id": 2026,
+            "club_name": "OFI Crete",
+            "club_id": 653
+        },
+        {
             "title": "Greek cup runner-up",
             "season": "24/25",
             "season_id": 2024,
@@ -3343,44 +3433,65 @@
     ],
     "clubs": {
         "653": {
+            "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 82,
-                "participations": 82,
-                "minutes": 5084,
-                "starts": 61,
+                "matches": 87,
+                "participations": 87,
+                "minutes": 5451,
+                "starts": 66,
                 "captain_matches": 0,
-                "goals": 22,
+                "goals": 24,
                 "assists": 10,
-                "goals_conceded": 68,
-                "points": 115,
-                "clean_sheets": 41,
-                "wins": 34,
+                "goals_conceded": 70,
+                "points": 127,
+                "clean_sheets": 44,
+                "wins": 38,
                 "draws": 13,
-                "losses": 35,
-                "goal_matches": 65,
-                "assist_matches": 73,
-                "goal_contributions": 32
+                "losses": 36,
+                "goal_matches": 68,
+                "assist_matches": 78,
+                "goal_contributions": 34
             },
             "positions": {
-                "LW": 57,
-                "CF": 2,
+                "CF": 5,
+                "AMF": 1,
+                "LW": 58,
                 "RW": 2
             },
             "derived": {
-                "season_count": 2,
-                "points_per_match": 1.402,
-                "minutes_per_match": 62.0,
-                "win_rate": 0.4146,
-                "goals_per_90": 0.389,
-                "assists_per_90": 0.177,
-                "contributions_per_90": 0.566,
+                "season_count": 3,
+                "points_per_match": 1.46,
+                "minutes_per_match": 62.7,
+                "win_rate": 0.4368,
+                "goals_per_90": 0.396,
+                "assists_per_90": 0.165,
+                "contributions_per_90": 0.561,
                 "primary_position": "LW"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 54,
+                    "minutes": 3362,
+                    "goals": 14,
+                    "assists": 8
+                },
+                "International Cup": {
+                    "matches": 2,
+                    "minutes": 153,
+                    "goals": 1,
+                    "assists": 0
+                },
+                "Domestic Super Cup": {
+                    "matches": 2,
+                    "minutes": 169,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Play-Offs": {
                     "matches": 12,
                     "minutes": 626,
@@ -3392,28 +3503,18 @@
                     "minutes": 1141,
                     "goals": 7,
                     "assists": 1
-                },
-                "First Tier": {
-                    "matches": 52,
-                    "minutes": 3234,
-                    "goals": 13,
-                    "assists": 8
-                },
-                "Domestic Super Cup": {
-                    "matches": 1,
-                    "minutes": 83,
-                    "goals": 0,
-                    "assists": 0
                 }
             },
             "awards": {
                 "team_titles": {
-                    "Greek cup winner": 1
+                    "Greek cup winner": 1,
+                    "Greek Super Cup winner": 1
                 },
                 "individual_titles": {}
             }
         },
         "1030": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -3486,6 +3587,7 @@
             }
         },
         "31284": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -3544,6 +3646,7 @@
             }
         },
         "10233": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -3592,24 +3695,24 @@
     },
     "career": {
         "club": {
-            "matches": 107,
-            "minutes": 5713,
-            "goals": 23,
-            "assists": 11,
-            "goal_contributions": 34,
-            "team_titles": 2,
+            "matches": 211,
+            "minutes": 8452,
+            "goals": 29,
+            "assists": 12,
+            "goal_contributions": 41,
+            "team_titles": 3,
             "individual_titles": 0,
-            "season_count": 4
+            "season_count": 7
         },
         "national": {
-            "matches": 99,
-            "minutes": 2372,
-            "goals": 4,
-            "assists": 1,
-            "goal_contributions": 5,
+            "matches": 0,
+            "minutes": 0,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 3
+            "season_count": 0
         }
     }
 }

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Marcos Senesi",
         "short_name": "M. Senesi",
+        "dateOfBirth": "1997-05-10",
+        "placeOfBirth": "Concordia",
         "nation_1": "Argentina",
         "nation_2": "Italy",
         "height": 1.84,
@@ -14,6 +17,54 @@
         "prime_date": "2026-06-03"
     },
     "matches": [
+        {
+            "game_id": "4899201",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "148",
+            "opponent_id": "762",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "5016469",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "148",
+            "opponent_id": "358",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4899187",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "148",
+            "opponent_id": "1148",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4776710",
             "season": 2025,
@@ -8769,6 +8820,20 @@
     ],
     "achievements": [
         {
+            "title": "World Cup participant",
+            "season": "2026",
+            "season_id": 2026,
+            "club_name": "Argentina",
+            "club_id": 3437
+        },
+        {
+            "title": "World Cup runner-up",
+            "season": "2026",
+            "season_id": 2026,
+            "club_name": "Argentina",
+            "club_id": 3437
+        },
+        {
             "title": "Under-20 World Cup participant",
             "season": "2017",
             "season_id": 2017,
@@ -8812,7 +8877,63 @@
         }
     ],
     "clubs": {
+        "148": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 3,
+                "participations": 3,
+                "minutes": 90,
+                "starts": 1,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 3,
+                "points": 3,
+                "clean_sheets": 2,
+                "wins": 1,
+                "draws": 0,
+                "losses": 2,
+                "goal_matches": 3,
+                "assist_matches": 3,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "CB": 1
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 1.0,
+                "minutes_per_match": 30.0,
+                "win_rate": 0.3333,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "CB"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 2,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "League Cup": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3437": {
+            "type": "national",
             "seasons": [
                 2021,
                 2022,
@@ -8870,6 +8991,7 @@
             }
         },
         "989": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -8933,6 +9055,7 @@
             }
         },
         "234": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -9002,6 +9125,7 @@
             }
         },
         "52540": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -9050,6 +9174,7 @@
             }
         },
         "1775": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -9121,6 +9246,7 @@
             }
         },
         "15879": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017
@@ -9161,6 +9287,7 @@
             }
         },
         "11940": {
+            "type": "national",
             "seasons": [
                 2016
             ],
@@ -9218,24 +9345,24 @@
     },
     "career": {
         "club": {
-            "matches": 196,
-            "minutes": 10566,
-            "goals": 6,
-            "assists": 10,
-            "goal_contributions": 16,
+            "matches": 465,
+            "minutes": 26402,
+            "goals": 16,
+            "assists": 21,
+            "goal_contributions": 37,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 12
+        },
+        "national": {
+            "matches": 85,
+            "minutes": 1217,
+            "goals": 2,
+            "assists": 2,
+            "goal_contributions": 4,
             "team_titles": 0,
             "individual_titles": 0,
             "season_count": 6
-        },
-        "national": {
-            "matches": 351,
-            "minutes": 16963,
-            "goals": 12,
-            "assists": 13,
-            "goal_contributions": 25,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 10
         }
     }
 }

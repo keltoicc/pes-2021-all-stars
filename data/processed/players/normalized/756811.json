@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Manuel Llano",
         "short_name": "M. Llano",
+        "dateOfBirth": "1999-08-26",
+        "placeOfBirth": "Rosario",
         "nation_1": "Argentina",
         "nation_2": "Spain",
         "height": 1.84,
@@ -14,6 +17,54 @@
         "prime_date": "2021-06-11"
     },
     "matches": [
+        {
+            "game_id": "4979183",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "380",
+            "opponent_id": "704",
+            "position": "LM",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4979173",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "380",
+            "opponent_id": "10118",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4979648",
+            "season": 2026,
+            "competition_type": "Further Cup",
+            "club_id": "380",
+            "opponent_id": "22048",
+            "position": "RM",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4882249",
             "season": 2025,
@@ -4089,7 +4140,64 @@
         }
     ],
     "clubs": {
+        "380": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 3,
+                "participations": 3,
+                "minutes": 180,
+                "starts": 2,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 3,
+                "points": 1,
+                "clean_sheets": 1,
+                "wins": 0,
+                "draws": 1,
+                "losses": 2,
+                "goal_matches": 3,
+                "assist_matches": 3,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "LM": 1,
+                "RM": 1
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 0.333,
+                "minutes_per_match": 60.0,
+                "win_rate": 0.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "LM"
+            },
+            "competitions": {
+                "Third Tier": {
+                    "matches": 2,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Further Cup": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "4106": {
+            "type": "club",
             "seasons": [
                 2024,
                 2025
@@ -4155,6 +4263,7 @@
             }
         },
         "2331": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024
@@ -4219,11 +4328,14 @@
                 }
             },
             "awards": {
-                "team_titles": {},
+                "team_titles": {
+                    "Italienischer Drittligameister (C)": 1
+                },
                 "individual_titles": {}
             }
         },
         "10511": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -4286,6 +4398,7 @@
             }
         },
         "38176": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -4334,6 +4447,7 @@
             }
         },
         "12574": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -4392,6 +4506,7 @@
             }
         },
         "19445": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -4431,6 +4546,7 @@
             }
         },
         "1286": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -4500,6 +4616,7 @@
             }
         },
         "14836": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -4541,24 +4658,24 @@
     },
     "career": {
         "club": {
-            "matches": 221,
-            "minutes": 7076,
+            "matches": 257,
+            "minutes": 8149,
             "goals": 5,
-            "assists": 9,
-            "goal_contributions": 14,
-            "team_titles": 0,
+            "assists": 11,
+            "goal_contributions": 16,
+            "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 7
+            "season_count": 8
         },
         "national": {
-            "matches": 33,
-            "minutes": 893,
+            "matches": 0,
+            "minutes": 0,
             "goals": 0,
-            "assists": 2,
-            "goal_contributions": 2,
+            "assists": 0,
+            "goal_contributions": 0,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 2
+            "season_count": 0
         }
     }
 }

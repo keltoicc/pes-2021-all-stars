@@ -1,25 +1,25 @@
 {
     "tactic": "4-4-2 double 6",
-    "total_score": 10.03,
+    "total_score": 10.04,
     "players": [
         {
             "role": "STRIKER",
             "player": {
                 "ID_transfermarkt": "30825",
                 "name": "Marco Ruben",
-                "score": 0.7120307441715246,
+                "score": 0.7092461415588345,
                 "roles": {
                     "SECOND_STRIKER": {
                         "weight": 0.4,
-                        "score": 0.45032778312933575
+                        "score": 0.44856664580242445
                     },
                     "STRIKER": {
                         "weight": 1.0,
-                        "score": 0.7120307441715246
+                        "score": 0.7092461415588345
                     },
                     "UTILITY": {
                         "weight": 1.4,
-                        "score": 0.7120307441715246
+                        "score": 0.7092461415588345
                     }
                 }
             },
@@ -83,7 +83,35 @@
             "role_weight": 0.9079
         },
         {
-            "role": "WIDE_MID",
+            "role": "SECOND_STRIKER",
+            "player": {
+                "ID_transfermarkt": "45320",
+                "name": "Á. Di María",
+                "score": 0.49613021599648527,
+                "roles": {
+                    "CENTRAL_MID": {
+                        "weight": 0.7,
+                        "score": 0.415092319679976
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 1.0,
+                        "score": 0.49613021599648527
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.6,
+                        "score": 0.3843008128209352
+                    },
+                    "UTILITY": {
+                        "weight": 2.3,
+                        "score": 0.49613021599648527
+                    }
+                }
+            },
+            "score": 0.38,
+            "role_weight": 0.6
+        },
+        {
+            "role": "WINGER",
             "player": {
                 "ID_transfermarkt": "148710",
                 "name": "F. Carrizo",
@@ -120,35 +148,7 @@
                 }
             },
             "score": 0.41,
-            "role_weight": 0.7217
-        },
-        {
-            "role": "SECOND_STRIKER",
-            "player": {
-                "ID_transfermarkt": "45320",
-                "name": "Á. Di María",
-                "score": 0.4828664533053538,
-                "roles": {
-                    "CENTRAL_MID": {
-                        "weight": 0.7,
-                        "score": 0.4039950596348723
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 1.0,
-                        "score": 0.4828664533053538
-                    },
-                    "SECOND_STRIKER": {
-                        "weight": 0.6,
-                        "score": 0.37402674641877537
-                    },
-                    "UTILITY": {
-                        "weight": 2.3,
-                        "score": 0.4828664533053538
-                    }
-                }
-            },
-            "score": 0.37,
-            "role_weight": 0.6
+            "role_weight": 0.7196
         },
         {
             "role": "UTILITY",
@@ -227,44 +227,64 @@
             "role_weight": 0.8378
         },
         {
-            "role": "WINGER",
+            "role": "WIDE_MID",
             "player": {
                 "ID_transfermarkt": "491553",
                 "name": "J. Campaz",
-                "score": 0.45623284126443553,
+                "score": 0.461327000826922,
                 "roles": {
                     "WING_BACK": {
-                        "weight": 0.1981651376146789,
-                        "score": 0.20309543916573417
+                        "weight": 0.20869565217391306,
+                        "score": 0.21074902528233228
                     },
                     "WIDE_MID": {
-                        "weight": 0.7321100917431194,
-                        "score": 0.39036847747849734
+                        "weight": 0.7460869565217392,
+                        "score": 0.39847731074101944
                     },
                     "WINGER": {
-                        "weight": 0.7412844036697248,
-                        "score": 0.3928067802463287
+                        "weight": 0.7391304347826086,
+                        "score": 0.39661525704408607
                     },
                     "CENTRAL_MID": {
-                        "weight": 0.07706422018348624,
-                        "score": 0.12665225836242783
+                        "weight": 0.07304347826086956,
+                        "score": 0.12468080477807557
                     },
                     "ATTACKING_MID": {
-                        "weight": 0.11009174311926606,
-                        "score": 0.15137840263158492
+                        "weight": 0.10434782608695652,
+                        "score": 0.1490220649055923
                     },
                     "SECOND_STRIKER": {
-                        "weight": 0.06605504587155964,
-                        "score": 0.11725720647352188
+                        "weight": 0.0626086956521739,
+                        "score": 0.11543199511935993
                     },
                     "UTILITY": {
-                        "weight": 1.924770642201835,
-                        "score": 0.45623284126443553
+                        "weight": 1.9339130434782608,
+                        "score": 0.461327000826922
                     }
                 }
             },
-            "score": 0.39,
-            "role_weight": 0.7413
+            "score": 0.4,
+            "role_weight": 0.7461
+        },
+        {
+            "role": "GOALKEEPER",
+            "player": {
+                "ID_transfermarkt": "284342",
+                "name": "C. Ledesma",
+                "score": 0.4496484737145426,
+                "roles": {
+                    "GOALKEEPER": {
+                        "weight": 1.0,
+                        "score": 0.4496484737145426
+                    },
+                    "UTILITY": {
+                        "weight": 1.0,
+                        "score": 0.4496484737145426
+                    }
+                }
+            },
+            "score": 0.45,
+            "role_weight": 1.0
         },
         {
             "role": "FULLBACK",
@@ -288,50 +308,6 @@
                     "UTILITY": {
                         "weight": 2.5,
                         "score": 0.44255667465793885
-                    }
-                }
-            },
-            "score": 0.44,
-            "role_weight": 1.0
-        },
-        {
-            "role": "GOALKEEPER",
-            "player": {
-                "ID_transfermarkt": "284342",
-                "name": "C. Ledesma",
-                "score": 0.4413069366775056,
-                "roles": {
-                    "GOALKEEPER": {
-                        "weight": 1.0,
-                        "score": 0.4413069366775056
-                    },
-                    "UTILITY": {
-                        "weight": 1.0,
-                        "score": 0.4413069366775056
-                    }
-                }
-            },
-            "score": 0.44,
-            "role_weight": 1.0
-        },
-        {
-            "role": "STRIKER",
-            "player": {
-                "ID_transfermarkt": "104006",
-                "name": "F. Zampedri",
-                "score": 0.4353962644164649,
-                "roles": {
-                    "SECOND_STRIKER": {
-                        "weight": 0.4,
-                        "score": 0.27536877605699034
-                    },
-                    "STRIKER": {
-                        "weight": 1.0,
-                        "score": 0.4353962644164649
-                    },
-                    "UTILITY": {
-                        "weight": 1.4,
-                        "score": 0.4353962644164649
                     }
                 }
             },
@@ -411,23 +387,23 @@
             "player": {
                 "ID_transfermarkt": "847023",
                 "name": "A. Sández",
-                "score": 0.41656167698705704,
+                "score": 0.41987609328319864,
                 "roles": {
                     "WIDE_CENTER_BACK": {
                         "weight": 0.8,
-                        "score": 0.3725840906257477
+                        "score": 0.37554859468331
                     },
                     "FULLBACK": {
                         "weight": 1.0,
-                        "score": 0.41656167698705704
+                        "score": 0.41987609328319864
                     },
                     "WING_BACK": {
                         "weight": 0.7,
-                        "score": 0.34852050372107013
+                        "score": 0.35129354334734497
                     },
                     "UTILITY": {
                         "weight": 2.5,
-                        "score": 0.41656167698705704
+                        "score": 0.41987609328319864
                     }
                 }
             },
@@ -459,27 +435,51 @@
             "role_weight": 1.0
         },
         {
+            "role": "STRIKER",
+            "player": {
+                "ID_transfermarkt": "888493",
+                "name": "Alejo Veliz",
+                "score": 0.41380085454242926,
+                "roles": {
+                    "SECOND_STRIKER": {
+                        "weight": 0.4,
+                        "score": 0.2617106396156218
+                    },
+                    "STRIKER": {
+                        "weight": 1.0,
+                        "score": 0.41380085454242926
+                    },
+                    "UTILITY": {
+                        "weight": 1.4,
+                        "score": 0.41380085454242926
+                    }
+                }
+            },
+            "score": 0.41,
+            "role_weight": 1.0
+        },
+        {
             "role": "CENTER_BACK",
             "player": {
                 "ID_transfermarkt": "347193",
                 "name": "F. Mallo",
-                "score": 0.40715023343044976,
+                "score": 0.40777898789494527,
                 "roles": {
                     "CENTER_BACK": {
                         "weight": 1.0,
-                        "score": 0.40715023343044976
+                        "score": 0.40777898789494527
                     },
                     "SWEEPER": {
                         "weight": 0.5,
-                        "score": 0.2878986910203568
+                        "score": 0.2883432875659029
                     },
                     "WIDE_CENTER_BACK": {
                         "weight": 1.0,
-                        "score": 0.40715023343044976
+                        "score": 0.40777898789494527
                     },
                     "UTILITY": {
                         "weight": 2.5,
-                        "score": 0.40715023343044976
+                        "score": 0.40777898789494527
                     }
                 }
             },
@@ -631,23 +631,23 @@
             "player": {
                 "ID_transfermarkt": "741685",
                 "name": "F. Ibarra",
-                "score": 0.36426775462622346,
+                "score": 0.37327376815898705,
                 "roles": {
                     "DEFENSIVE_MID": {
                         "weight": 1.0,
-                        "score": 0.36426775462622346
+                        "score": 0.37327376815898705
                     },
                     "CENTRAL_MID": {
                         "weight": 0.5,
-                        "score": 0.2575761994638
+                        "score": 0.26394441270427493
                     },
                     "UTILITY": {
                         "weight": 1.5,
-                        "score": 0.36426775462622346
+                        "score": 0.37327376815898705
                     }
                 }
             },
-            "score": 0.36,
+            "score": 0.37,
             "role_weight": 1.0
         },
         {

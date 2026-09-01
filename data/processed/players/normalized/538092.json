@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Mariano Miño",
         "short_name": "M. Miño",
+        "dateOfBirth": "1994-03-28",
+        "placeOfBirth": "Mercedes",
         "nation_1": "Argentina",
         "nation_2": "",
         "height": 1.6,
@@ -15,12 +18,108 @@
     },
     "matches": [
         {
+            "game_id": "4976681",
+            "season": 2025,
+            "competition_type": "Third Tier",
+            "club_id": "13549",
+            "opponent_id": "128105",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 1
+        },
+        {
+            "game_id": "4976697",
+            "season": 2025,
+            "competition_type": "Third Tier",
+            "club_id": "13549",
+            "opponent_id": "14597",
+            "position": "",
+            "minutes": 4,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4976709",
+            "season": 2025,
+            "competition_type": "Third Tier",
+            "club_id": "13549",
+            "opponent_id": "30838",
+            "position": "",
+            "minutes": 17,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4976718",
+            "season": 2025,
+            "competition_type": "Third Tier",
+            "club_id": "13549",
+            "opponent_id": "29680",
+            "position": "",
+            "minutes": 5,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4976688",
+            "season": 2025,
+            "competition_type": "Third Tier",
+            "club_id": "13549",
+            "opponent_id": "135792",
+            "position": "AMF",
+            "minutes": 3,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4968656",
+            "season": 2025,
+            "competition_type": "Third Tier",
+            "club_id": "13549",
+            "opponent_id": "10129",
+            "position": "AMF",
+            "minutes": 54,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
             "game_id": "4932987",
             "season": 2025,
             "competition_type": "Third Tier",
             "club_id": "13549",
             "opponent_id": "23173",
-            "position": "",
+            "position": "CMF",
             "minutes": 59,
             "started": true,
             "captain": false,
@@ -36,7 +135,7 @@
             "competition_type": "Third Tier",
             "club_id": "13549",
             "opponent_id": "30838",
-            "position": "",
+            "position": "AMF",
             "minutes": 77,
             "started": true,
             "captain": false,
@@ -5770,47 +5869,49 @@
     ],
     "clubs": {
         "13549": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
                 2025
             ],
             "stats": {
-                "matches": 67,
-                "participations": 67,
-                "minutes": 520,
-                "starts": 6,
+                "matches": 73,
+                "participations": 73,
+                "minutes": 603,
+                "starts": 7,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 0,
-                "goals_conceded": 7,
-                "points": 88,
-                "clean_sheets": 63,
-                "wins": 23,
-                "draws": 19,
-                "losses": 25,
-                "goal_matches": 67,
-                "assist_matches": 67,
+                "goals_conceded": 10,
+                "points": 99,
+                "clean_sheets": 67,
+                "wins": 26,
+                "draws": 21,
+                "losses": 26,
+                "goal_matches": 73,
+                "assist_matches": 73,
                 "goal_contributions": 0
             },
             "positions": {
-                "CMF": 1,
+                "AMF": 3,
+                "CMF": 2,
                 "CF": 1
             },
             "derived": {
                 "season_count": 3,
-                "points_per_match": 1.313,
-                "minutes_per_match": 7.8,
-                "win_rate": 0.3433,
+                "points_per_match": 1.356,
+                "minutes_per_match": 8.3,
+                "win_rate": 0.3562,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
-                "primary_position": "CMF"
+                "primary_position": "AMF"
             },
             "competitions": {
                 "Third Tier": {
-                    "matches": 2,
-                    "minutes": 136,
+                    "matches": 8,
+                    "minutes": 219,
                     "goals": 0,
                     "assists": 0
                 },
@@ -5827,6 +5928,7 @@
             }
         },
         "1826": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -5885,6 +5987,7 @@
             }
         },
         "2417": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -5961,6 +6064,7 @@
             }
         },
         "19304": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -6026,6 +6130,7 @@
             }
         },
         "38545": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -6090,6 +6195,7 @@
             }
         },
         "8356": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -6147,6 +6253,7 @@
             }
         },
         "11141": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -6201,6 +6308,7 @@
             }
         },
         "46823": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -6251,6 +6359,7 @@
             }
         },
         "1806": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017
@@ -6316,24 +6425,24 @@
     },
     "career": {
         "club": {
-            "matches": 308,
-            "minutes": 10165,
-            "goals": 14,
-            "assists": 10,
-            "goal_contributions": 24,
+            "matches": 365,
+            "minutes": 11873,
+            "goals": 18,
+            "assists": 15,
+            "goal_contributions": 33,
             "team_titles": 1,
             "individual_titles": 0,
             "season_count": 11
         },
         "national": {
-            "matches": 51,
-            "minutes": 1625,
-            "goals": 4,
-            "assists": 5,
-            "goal_contributions": 9,
+            "matches": 0,
+            "minutes": 0,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 2
+            "season_count": 0
         }
     }
 }
