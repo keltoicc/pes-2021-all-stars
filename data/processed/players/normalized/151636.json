@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Marlon Ritter",
         "short_name": "M. Ritter",
+        "dateOfBirth": "1994-10-15",
+        "placeOfBirth": "Essen",
         "nation_1": "Germany",
         "nation_2": "",
         "height": 1.73,
@@ -14,6 +17,70 @@
         "prime_date": "2025-06-19"
     },
     "matches": [
+        {
+            "game_id": "4916438",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "2",
+            "opponent_id": "35",
+            "position": "AMF",
+            "minutes": 68,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4893872",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "2",
+            "opponent_id": "85",
+            "position": "AMF",
+            "minutes": 120,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4916430",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "2",
+            "opponent_id": "48",
+            "position": "AMF",
+            "minutes": 84,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4916124",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "2",
+            "opponent_id": "82",
+            "position": "AMF",
+            "minutes": 66,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4634747",
             "season": 2025,
@@ -11332,34 +11399,36 @@
     ],
     "clubs": {
         "2": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 231,
-                "participations": 231,
-                "minutes": 14851,
-                "starts": 178,
-                "captain_matches": 59,
+                "matches": 235,
+                "participations": 235,
+                "minutes": 15189,
+                "starts": 182,
+                "captain_matches": 63,
                 "goals": 42,
                 "assists": 29,
-                "goals_conceded": 203,
-                "points": 329,
-                "clean_sheets": 109,
-                "wins": 90,
-                "draws": 59,
+                "goals_conceded": 204,
+                "points": 337,
+                "clean_sheets": 112,
+                "wins": 92,
+                "draws": 61,
                 "losses": 82,
-                "goal_matches": 192,
-                "assist_matches": 205,
+                "goal_matches": 196,
+                "assist_matches": 209,
                 "goal_contributions": 71
             },
             "positions": {
-                "AMF": 106,
+                "AMF": 110,
                 "LW": 5,
                 "CMF": 61,
                 "RM": 1,
@@ -11368,25 +11437,25 @@
                 "SS": 2
             },
             "derived": {
-                "season_count": 6,
-                "points_per_match": 1.424,
-                "minutes_per_match": 64.3,
-                "win_rate": 0.3896,
-                "goals_per_90": 0.255,
-                "assists_per_90": 0.176,
-                "contributions_per_90": 0.43,
+                "season_count": 7,
+                "points_per_match": 1.434,
+                "minutes_per_match": 64.6,
+                "win_rate": 0.3915,
+                "goals_per_90": 0.249,
+                "assists_per_90": 0.172,
+                "contributions_per_90": 0.421,
                 "primary_position": "AMF"
             },
             "competitions": {
                 "Second Tier": {
-                    "matches": 136,
-                    "minutes": 8792,
+                    "matches": 139,
+                    "minutes": 9010,
                     "goals": 27,
                     "assists": 15
                 },
                 "Domestic Cup": {
-                    "matches": 14,
-                    "minutes": 1027,
+                    "matches": 15,
+                    "minutes": 1147,
                     "goals": 5,
                     "assists": 6
                 },
@@ -11415,6 +11484,7 @@
             }
         },
         "127": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -11496,6 +11566,7 @@
             }
         },
         "6604": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019
@@ -11543,6 +11614,7 @@
             }
         },
         "4690": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017
@@ -11595,6 +11667,7 @@
             }
         },
         "38": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017
@@ -11652,6 +11725,7 @@
             }
         },
         "18": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015
@@ -11713,6 +11787,7 @@
             }
         },
         "1006": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -11768,13 +11843,16 @@
                 }
             },
             "awards": {
-                "team_titles": {},
+                "team_titles": {
+                    "German Regionalliga West Champion": 1
+                },
                 "individual_titles": {
                     "Top goal scorer": 1
                 }
             }
         },
         "4121": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012
@@ -11822,6 +11900,7 @@
             }
         },
         "21073": {
+            "type": "club",
             "seasons": [
                 2009,
                 2010
@@ -11864,24 +11943,24 @@
     },
     "career": {
         "club": {
-            "matches": 613,
-            "minutes": 31326,
+            "matches": 708,
+            "minutes": 31664,
             "goals": 133,
             "assists": 75,
             "goal_contributions": 208,
-            "team_titles": 1,
-            "individual_titles": 1,
-            "season_count": 17
+            "team_titles": 2,
+            "individual_titles": 2,
+            "season_count": 18
         },
         "national": {
-            "matches": 91,
+            "matches": 0,
             "minutes": 0,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
             "team_titles": 0,
-            "individual_titles": 1,
-            "season_count": 2
+            "individual_titles": 0,
+            "season_count": 0
         }
     }
 }

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Bernd Leno",
         "short_name": "Bernd Leno",
+        "dateOfBirth": "1992-03-04",
+        "placeOfBirth": "Bietigheim-Bissingen",
         "nation_1": "Germany",
         "nation_2": "",
         "height": 1.9,
@@ -14,6 +17,54 @@
         "prime_date": "2019-12-10"
     },
     "matches": [
+        {
+            "game_id": "4899200",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "931",
+            "opponent_id": "289",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "5016489",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "931",
+            "opponent_id": "3884",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4899191",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "931",
+            "opponent_id": "631",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4626171",
             "season": 2025,
@@ -16891,38 +16942,40 @@
     ],
     "clubs": {
         "931": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 179,
-                "participations": 179,
-                "minutes": 14070,
-                "starts": 156,
+                "matches": 182,
+                "participations": 182,
+                "minutes": 14250,
+                "starts": 158,
                 "captain_matches": 29,
                 "goals": 0,
                 "assists": 1,
-                "goals_conceded": 228,
-                "points": 258,
-                "clean_sheets": 55,
-                "wins": 75,
+                "goals_conceded": 232,
+                "points": 261,
+                "clean_sheets": 56,
+                "wins": 76,
                 "draws": 33,
-                "losses": 71,
-                "goal_matches": 179,
-                "assist_matches": 178,
+                "losses": 73,
+                "goal_matches": 182,
+                "assist_matches": 181,
                 "goal_contributions": 1
             },
             "positions": {
-                "GK": 156
+                "GK": 158
             },
             "derived": {
-                "season_count": 4,
-                "points_per_match": 1.441,
-                "minutes_per_match": 78.6,
-                "win_rate": 0.419,
+                "season_count": 5,
+                "points_per_match": 1.434,
+                "minutes_per_match": 78.3,
+                "win_rate": 0.4176,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.006,
                 "contributions_per_90": 0.006,
@@ -16930,20 +16983,20 @@
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 152,
-                    "minutes": 13500,
+                    "matches": 154,
+                    "minutes": 13680,
                     "goals": 0,
                     "assists": 1
+                },
+                "League Cup": {
+                    "matches": 14,
+                    "minutes": 270,
+                    "goals": 0,
+                    "assists": 0
                 },
                 "Domestic Cup": {
                     "matches": 14,
                     "minutes": 300,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "League Cup": {
-                    "matches": 13,
-                    "minutes": 270,
                     "goals": 0,
                     "assists": 0
                 }
@@ -16954,6 +17007,7 @@
             }
         },
         "3262": {
+            "type": "national",
             "seasons": [
                 2014,
                 2015,
@@ -17019,6 +17073,7 @@
             }
         },
         "11": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -17097,6 +17152,7 @@
             }
         },
         "15": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012,
@@ -17163,6 +17219,7 @@
             }
         },
         "3817": {
+            "type": "national",
             "seasons": [
                 2011,
                 2012,
@@ -17226,6 +17283,7 @@
             }
         },
         "79": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -17278,6 +17336,7 @@
             }
         },
         "102": {
+            "type": "club",
             "seasons": [
                 2009,
                 2010,
@@ -17328,6 +17387,7 @@
             }
         },
         "5710": {
+            "type": "national",
             "seasons": [
                 2010
             ],
@@ -17382,6 +17442,7 @@
             }
         },
         "2517": {
+            "type": "club",
             "seasons": [
                 2009
             ],
@@ -17430,6 +17491,7 @@
             }
         },
         "9067": {
+            "type": "national",
             "seasons": [
                 2009
             ],
@@ -17476,6 +17538,7 @@
             }
         },
         "17662": {
+            "type": "national",
             "seasons": [
                 2008,
                 2009
@@ -17539,6 +17602,7 @@
             }
         },
         "21084": {
+            "type": "club",
             "seasons": [
                 2007,
                 2008
@@ -17590,22 +17654,22 @@
     },
     "career": {
         "club": {
-            "matches": 322,
-            "minutes": 22350,
+            "matches": 853,
+            "minutes": 61292,
             "goals": 0,
-            "assists": 1,
-            "goal_contributions": 1,
-            "team_titles": 2,
+            "assists": 2,
+            "goal_contributions": 2,
+            "team_titles": 4,
             "individual_titles": 0,
-            "season_count": 9
+            "season_count": 20
         },
         "national": {
-            "matches": 722,
-            "minutes": 41718,
+            "matches": 194,
+            "minutes": 2956,
             "goals": 0,
-            "assists": 1,
-            "goal_contributions": 1,
-            "team_titles": 4,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 2,
             "individual_titles": 0,
             "season_count": 16
         }

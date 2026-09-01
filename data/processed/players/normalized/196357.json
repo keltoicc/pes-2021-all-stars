@@ -18,6 +18,38 @@
     },
     "matches": [
         {
+            "game_id": "4916114",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "27",
+            "opponent_id": "79",
+            "position": "CB",
+            "minutes": 6,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4889954",
+            "season": 2026,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "27",
+            "opponent_id": "16",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
             "game_id": "4776680",
             "season": 2025,
             "competition_type": "National Team",
@@ -14687,6 +14719,13 @@
         },
         {
             "title": "German Super Cup winner",
+            "season": "26/27",
+            "season_id": 2026,
+            "club_name": "Bayern Munich",
+            "club_id": 27
+        },
+        {
+            "title": "German Super Cup winner",
             "season": "25/26",
             "season_id": 2025,
             "club_name": "Bayern Munich",
@@ -14834,6 +14873,79 @@
         }
     ],
     "clubs": {
+        "27": {
+            "type": "club",
+            "seasons": [
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 62,
+                "participations": 62,
+                "minutes": 4258,
+                "starts": 48,
+                "captain_matches": 1,
+                "goals": 3,
+                "assists": 3,
+                "goals_conceded": 54,
+                "points": 159,
+                "clean_sheets": 27,
+                "wins": 51,
+                "draws": 6,
+                "losses": 5,
+                "goal_matches": 59,
+                "assist_matches": 59,
+                "goal_contributions": 6
+            },
+            "positions": {
+                "CB": 56
+            },
+            "derived": {
+                "season_count": 3,
+                "points_per_match": 2.565,
+                "minutes_per_match": 68.7,
+                "win_rate": 0.8226,
+                "goals_per_90": 0.063,
+                "assists_per_90": 0.063,
+                "contributions_per_90": 0.127,
+                "primary_position": "CB"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 35,
+                    "minutes": 2025,
+                    "goals": 2,
+                    "assists": 1
+                },
+                "Domestic Super Cup": {
+                    "matches": 2,
+                    "minutes": 180,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 6,
+                    "minutes": 540,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "International Cup": {
+                    "matches": 19,
+                    "minutes": 1513,
+                    "goals": 1,
+                    "assists": 2
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "German Champion": 1,
+                    "German cup winner": 1,
+                    "German Super Cup winner": 2
+                },
+                "individual_titles": {}
+            }
+        },
         "3262": {
             "type": "national",
             "seasons": [
@@ -14897,78 +15009,6 @@
             },
             "awards": {
                 "team_titles": {},
-                "individual_titles": {}
-            }
-        },
-        "27": {
-            "type": "club",
-            "seasons": [
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 60,
-                "participations": 60,
-                "minutes": 4162,
-                "starts": 47,
-                "captain_matches": 1,
-                "goals": 3,
-                "assists": 3,
-                "goals_conceded": 53,
-                "points": 153,
-                "clean_sheets": 26,
-                "wins": 49,
-                "draws": 6,
-                "losses": 5,
-                "goal_matches": 57,
-                "assist_matches": 57,
-                "goal_contributions": 6
-            },
-            "positions": {
-                "CB": 54
-            },
-            "derived": {
-                "season_count": 2,
-                "points_per_match": 2.55,
-                "minutes_per_match": 69.4,
-                "win_rate": 0.8167,
-                "goals_per_90": 0.065,
-                "assists_per_90": 0.065,
-                "contributions_per_90": 0.13,
-                "primary_position": "CB"
-            },
-            "competitions": {
-                "Domestic Cup": {
-                    "matches": 6,
-                    "minutes": 540,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "First Tier": {
-                    "matches": 34,
-                    "minutes": 2019,
-                    "goals": 2,
-                    "assists": 1
-                },
-                "International Cup": {
-                    "matches": 19,
-                    "minutes": 1513,
-                    "goals": 1,
-                    "assists": 2
-                },
-                "Domestic Super Cup": {
-                    "matches": 1,
-                    "minutes": 90,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "German Champion": 1,
-                    "German cup winner": 1,
-                    "German Super Cup winner": 1
-                },
                 "individual_titles": {}
             }
         },
@@ -15543,14 +15583,14 @@
     },
     "career": {
         "club": {
-            "matches": 699,
-            "minutes": 47567,
+            "matches": 701,
+            "minutes": 47663,
             "goals": 25,
             "assists": 19,
             "goal_contributions": 44,
-            "team_titles": 6,
+            "team_titles": 7,
             "individual_titles": 1,
-            "season_count": 15
+            "season_count": 16
         },
         "national": {
             "matches": 215,

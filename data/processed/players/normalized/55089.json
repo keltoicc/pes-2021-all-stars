@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Oliver Baumann",
         "short_name": "O. Baumann",
+        "dateOfBirth": "1990-06-02",
+        "placeOfBirth": "Breisach am Rhein",
         "nation_1": "Germany",
         "nation_2": "",
         "height": 1.87,
@@ -14,6 +17,38 @@
         "prime_date": "2018-12-18"
     },
     "matches": [
+        {
+            "game_id": "4916121",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "533",
+            "opponent_id": "3",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4893846",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "533",
+            "opponent_id": "94",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
         {
             "game_id": "4776680",
             "season": 2025,
@@ -13663,7 +13698,81 @@
         }
     ],
     "clubs": {
+        "533": {
+            "type": "club",
+            "seasons": [
+                2014,
+                2015,
+                2016,
+                2017,
+                2018,
+                2019,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 469,
+                "participations": 469,
+                "minutes": 39769,
+                "starts": 439,
+                "captain_matches": 218,
+                "goals": 0,
+                "assists": 3,
+                "goals_conceded": 707,
+                "points": 653,
+                "clean_sheets": 119,
+                "wins": 178,
+                "draws": 119,
+                "losses": 172,
+                "goal_matches": 469,
+                "assist_matches": 466,
+                "goal_contributions": 3
+            },
+            "positions": {
+                "GK": 440
+            },
+            "derived": {
+                "season_count": 13,
+                "points_per_match": 1.392,
+                "minutes_per_match": 84.8,
+                "win_rate": 0.3795,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.007,
+                "contributions_per_90": 0.007,
+                "primary_position": "GK"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 409,
+                    "minutes": 35370,
+                    "goals": 0,
+                    "assists": 3
+                },
+                "Domestic Cup": {
+                    "matches": 30,
+                    "minutes": 1969,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "International Cup": {
+                    "matches": 30,
+                    "minutes": 2430,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "3262": {
+            "type": "national",
             "seasons": [
                 2020,
                 2022,
@@ -13721,78 +13830,8 @@
                 "individual_titles": {}
             }
         },
-        "533": {
-            "seasons": [
-                2014,
-                2015,
-                2016,
-                2017,
-                2018,
-                2019,
-                2020,
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 467,
-                "participations": 467,
-                "minutes": 39679,
-                "starts": 438,
-                "captain_matches": 217,
-                "goals": 0,
-                "assists": 3,
-                "goals_conceded": 704,
-                "points": 650,
-                "clean_sheets": 118,
-                "wins": 177,
-                "draws": 119,
-                "losses": 171,
-                "goal_matches": 467,
-                "assist_matches": 464,
-                "goal_contributions": 3
-            },
-            "positions": {
-                "GK": 439
-            },
-            "derived": {
-                "season_count": 12,
-                "points_per_match": 1.392,
-                "minutes_per_match": 85.0,
-                "win_rate": 0.379,
-                "goals_per_90": 0.0,
-                "assists_per_90": 0.007,
-                "contributions_per_90": 0.007,
-                "primary_position": "GK"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 408,
-                    "minutes": 35280,
-                    "goals": 0,
-                    "assists": 3
-                },
-                "Domestic Cup": {
-                    "matches": 29,
-                    "minutes": 1969,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "International Cup": {
-                    "matches": 30,
-                    "minutes": 2430,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "60": {
+            "type": "club",
             "seasons": [
                 2009,
                 2010,
@@ -13857,6 +13896,7 @@
             }
         },
         "3817": {
+            "type": "national",
             "seasons": [
                 2009,
                 2010,
@@ -13920,6 +13960,7 @@
             }
         },
         "245": {
+            "type": "club",
             "seasons": [
                 2008,
                 2009,
@@ -13970,6 +14011,7 @@
             }
         },
         "5709": {
+            "type": "national",
             "seasons": [
                 2009
             ],
@@ -14016,6 +14058,7 @@
             }
         },
         "4042": {
+            "type": "club",
             "seasons": [
                 2007,
                 2008
@@ -14069,6 +14112,7 @@
             }
         },
         "5710": {
+            "type": "national",
             "seasons": [
                 2008
             ],
@@ -14123,6 +14167,7 @@
             }
         },
         "9067": {
+            "type": "club",
             "seasons": [
                 2007
             ],
@@ -14171,6 +14216,7 @@
             }
         },
         "21075": {
+            "type": "club",
             "seasons": [
                 2005
             ],
@@ -14219,24 +14265,24 @@
     },
     "career": {
         "club": {
-            "matches": 98,
-            "minutes": 6540,
-            "goals": 0,
-            "assists": 0,
-            "goal_contributions": 0,
-            "team_titles": 3,
-            "individual_titles": 0,
-            "season_count": 5
-        },
-        "national": {
-            "matches": 750,
-            "minutes": 55639,
+            "matches": 756,
+            "minutes": 59569,
             "goals": 0,
             "assists": 4,
             "goal_contributions": 4,
+            "team_titles": 3,
+            "individual_titles": 0,
+            "season_count": 21
+        },
+        "national": {
+            "matches": 94,
+            "minutes": 2700,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 19
+            "season_count": 11
         }
     }
 }

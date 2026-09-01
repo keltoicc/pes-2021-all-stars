@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Nicolas Höfler",
         "short_name": "N. Höfler",
+        "dateOfBirth": "1990-03-09",
+        "placeOfBirth": "Überlingen",
         "nation_1": "Germany",
         "nation_2": "",
         "height": 1.81,
@@ -14,6 +17,70 @@
         "prime_date": "2019-12-17"
     },
     "matches": [
+        {
+            "game_id": "4937475",
+            "season": 2026,
+            "competition_type": "Fourth Tier",
+            "club_id": "245",
+            "opponent_id": "106",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 1
+        },
+        {
+            "game_id": "4937464",
+            "season": 2026,
+            "competition_type": "Fourth Tier",
+            "club_id": "245",
+            "opponent_id": "71",
+            "position": "DMF",
+            "minutes": 74,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4937457",
+            "season": 2026,
+            "competition_type": "Fourth Tier",
+            "club_id": "245",
+            "opponent_id": "373",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4937450",
+            "season": 2026,
+            "competition_type": "Fourth Tier",
+            "club_id": "245",
+            "opponent_id": "83",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4805932",
             "season": 2025,
@@ -12984,7 +13051,65 @@
         }
     ],
     "clubs": {
+        "245": {
+            "type": "club",
+            "seasons": [
+                2008,
+                2009,
+                2010,
+                2013,
+                2018,
+                2024,
+                2026
+            ],
+            "stats": {
+                "matches": 86,
+                "participations": 86,
+                "minutes": 7050,
+                "starts": 82,
+                "captain_matches": 4,
+                "goals": 8,
+                "assists": 3,
+                "goals_conceded": 112,
+                "points": 136,
+                "clean_sheets": 26,
+                "wins": 38,
+                "draws": 22,
+                "losses": 26,
+                "goal_matches": 79,
+                "assist_matches": 83,
+                "goal_contributions": 11
+            },
+            "positions": {
+                "DMF": 27,
+                "CMF": 1,
+                "LM": 1
+            },
+            "derived": {
+                "season_count": 7,
+                "points_per_match": 1.581,
+                "minutes_per_match": 82.0,
+                "win_rate": 0.4419,
+                "goals_per_90": 0.102,
+                "assists_per_90": 0.038,
+                "contributions_per_90": 0.14,
+                "primary_position": "DMF"
+            },
+            "competitions": {
+                "Fourth Tier": {
+                    "matches": 86,
+                    "minutes": 7050,
+                    "goals": 8,
+                    "assists": 3
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "60": {
+            "type": "club",
             "seasons": [
                 2010,
                 2013,
@@ -13070,62 +13195,8 @@
                 "individual_titles": {}
             }
         },
-        "245": {
-            "seasons": [
-                2008,
-                2009,
-                2010,
-                2013,
-                2018,
-                2024
-            ],
-            "stats": {
-                "matches": 82,
-                "participations": 82,
-                "minutes": 6886,
-                "starts": 80,
-                "captain_matches": 2,
-                "goals": 8,
-                "assists": 3,
-                "goals_conceded": 109,
-                "points": 130,
-                "clean_sheets": 24,
-                "wins": 37,
-                "draws": 19,
-                "losses": 26,
-                "goal_matches": 75,
-                "assist_matches": 79,
-                "goal_contributions": 11
-            },
-            "positions": {
-                "DMF": 25,
-                "CMF": 1,
-                "LM": 1
-            },
-            "derived": {
-                "season_count": 6,
-                "points_per_match": 1.585,
-                "minutes_per_match": 84.0,
-                "win_rate": 0.4512,
-                "goals_per_90": 0.105,
-                "assists_per_90": 0.039,
-                "contributions_per_90": 0.144,
-                "primary_position": "DMF"
-            },
-            "competitions": {
-                "Fourth Tier": {
-                    "matches": 82,
-                    "minutes": 6886,
-                    "goals": 8,
-                    "assists": 3
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "94": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012
@@ -13183,6 +13254,7 @@
             }
         },
         "5363": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -13232,6 +13304,7 @@
             }
         },
         "4042": {
+            "type": "club",
             "seasons": [
                 2006,
                 2007,
@@ -13286,6 +13359,7 @@
             }
         },
         "9067": {
+            "type": "national",
             "seasons": [
                 2007
             ],
@@ -13334,6 +13408,7 @@
             }
         },
         "21075": {
+            "type": "club",
             "seasons": [
                 2005
             ],
@@ -13382,24 +13457,24 @@
     },
     "career": {
         "club": {
-            "matches": 244,
-            "minutes": 15299,
-            "goals": 23,
-            "assists": 6,
-            "goal_contributions": 29,
-            "team_titles": 3,
+            "matches": 808,
+            "minutes": 45561,
+            "goals": 37,
+            "assists": 32,
+            "goal_contributions": 69,
+            "team_titles": 4,
             "individual_titles": 0,
-            "season_count": 11
+            "season_count": 22
         },
         "national": {
-            "matches": 562,
-            "minutes": 30178,
-            "goals": 14,
-            "assists": 26,
-            "goal_contributions": 40,
-            "team_titles": 1,
+            "matches": 2,
+            "minutes": 80,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 15
+            "season_count": 1
         }
     }
 }

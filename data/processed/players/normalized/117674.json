@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Maximilian Arnold",
         "short_name": "M. Arnold",
+        "dateOfBirth": "1994-05-27",
+        "placeOfBirth": "Riesa",
         "nation_1": "Germany",
         "nation_2": "",
         "height": 1.84,
@@ -14,6 +17,70 @@
         "prime_date": "2021-06-09"
     },
     "matches": [
+        {
+            "game_id": "4916443",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "82",
+            "opponent_id": "48",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4893875",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "82",
+            "opponent_id": "17847",
+            "position": "DMF",
+            "minutes": 74,
+            "started": false,
+            "captain": false,
+            "goals": 2,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4916429",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "82",
+            "opponent_id": "42",
+            "position": "CMF",
+            "minutes": 16,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4916124",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "82",
+            "opponent_id": "2",
+            "position": "",
+            "minutes": 9,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4886528",
             "season": 2025,
@@ -14355,6 +14422,7 @@
     ],
     "clubs": {
         "82": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012,
@@ -14370,44 +14438,57 @@
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 592,
-                "participations": 592,
-                "minutes": 37652,
+                "matches": 596,
+                "participations": 596,
+                "minutes": 37751,
                 "starts": 421,
                 "captain_matches": 126,
-                "goals": 49,
+                "goals": 51,
                 "assists": 60,
-                "goals_conceded": 602,
-                "points": 868,
-                "clean_sheets": 267,
-                "wins": 243,
-                "draws": 139,
+                "goals_conceded": 604,
+                "points": 878,
+                "clean_sheets": 270,
+                "wins": 246,
+                "draws": 140,
                 "losses": 210,
-                "goal_matches": 544,
-                "assist_matches": 535,
-                "goal_contributions": 109
+                "goal_matches": 547,
+                "assist_matches": 539,
+                "goal_contributions": 111
             },
             "positions": {
-                "CMF": 242,
-                "DMF": 141,
+                "DMF": 142,
+                "CMF": 243,
                 "AMF": 63,
                 "LM": 10,
                 "RM": 11
             },
             "derived": {
-                "season_count": 15,
-                "points_per_match": 1.466,
-                "minutes_per_match": 63.6,
-                "win_rate": 0.4105,
-                "goals_per_90": 0.117,
+                "season_count": 16,
+                "points_per_match": 1.473,
+                "minutes_per_match": 63.3,
+                "win_rate": 0.4128,
+                "goals_per_90": 0.122,
                 "assists_per_90": 0.143,
-                "contributions_per_90": 0.261,
+                "contributions_per_90": 0.265,
                 "primary_position": "CMF"
             },
             "competitions": {
+                "Second Tier": {
+                    "matches": 3,
+                    "minutes": 25,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 48,
+                    "minutes": 2835,
+                    "goals": 4,
+                    "assists": 2
+                },
                 "Play-Offs": {
                     "matches": 6,
                     "minutes": 210,
@@ -14419,12 +14500,6 @@
                     "minutes": 32060,
                     "goals": 45,
                     "assists": 49
-                },
-                "Domestic Cup": {
-                    "matches": 47,
-                    "minutes": 2761,
-                    "goals": 2,
-                    "assists": 2
                 },
                 "International Cup": {
                     "matches": 41,
@@ -14448,6 +14523,7 @@
             }
         },
         "3262": {
+            "type": "national",
             "seasons": [
                 2013,
                 2014,
@@ -14513,6 +14589,7 @@
             }
         },
         "49503": {
+            "type": "national",
             "seasons": [
                 2020
             ],
@@ -14562,6 +14639,7 @@
             }
         },
         "3817": {
+            "type": "national",
             "seasons": [
                 2013,
                 2014,
@@ -14629,6 +14707,7 @@
             }
         },
         "5709": {
+            "type": "national",
             "seasons": [
                 2013
             ],
@@ -14678,6 +14757,7 @@
             }
         },
         "143": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -14728,6 +14808,7 @@
             }
         },
         "5343": {
+            "type": "club",
             "seasons": [
                 2010,
                 2011,
@@ -14783,6 +14864,7 @@
             }
         },
         "5710": {
+            "type": "national",
             "seasons": [
                 2012
             ],
@@ -14837,6 +14919,7 @@
             }
         },
         "9067": {
+            "type": "national",
             "seasons": [
                 2011
             ],
@@ -14888,6 +14971,7 @@
             }
         },
         "21087": {
+            "type": "club",
             "seasons": [
                 2009,
                 2010
@@ -14928,6 +15012,7 @@
             }
         },
         "17662": {
+            "type": "national",
             "seasons": [
                 2010
             ],
@@ -14991,24 +15076,24 @@
     },
     "career": {
         "club": {
-            "matches": 113,
-            "minutes": 8378,
-            "goals": 36,
-            "assists": 21,
-            "goal_contributions": 57,
-            "team_titles": 6,
+            "matches": 709,
+            "minutes": 46129,
+            "goals": 87,
+            "assists": 81,
+            "goal_contributions": 168,
+            "team_titles": 8,
             "individual_titles": 0,
-            "season_count": 5
+            "season_count": 18
         },
         "national": {
-            "matches": 776,
-            "minutes": 40788,
-            "goals": 58,
-            "assists": 66,
-            "goal_contributions": 124,
-            "team_titles": 3,
+            "matches": 184,
+            "minutes": 3136,
+            "goals": 9,
+            "assists": 6,
+            "goal_contributions": 15,
+            "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 16
+            "season_count": 13
         }
     }
 }
