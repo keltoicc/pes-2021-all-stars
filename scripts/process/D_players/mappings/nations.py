@@ -87,7 +87,7 @@ NATIONS_MAP = {
     85: "Congo",
     86: "Korea, North",
     87: "Korea, South",
-    88: "88",
+    88: "Cuba",
     89: "Kuwait",
     90: "90",
     91: "91",

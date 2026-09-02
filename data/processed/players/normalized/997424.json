@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Franco García",
         "short_name": "F. García",
+        "dateOfBirth": "1997-06-04",
+        "placeOfBirth": "Córdoba",
         "nation_1": "Argentina",
         "nation_2": "",
         "height": 1.75,
@@ -14,6 +17,102 @@
         "prime_date": "2025-05-22"
     },
     "matches": [
+        {
+            "game_id": "4798077",
+            "season": 2025,
+            "competition_type": "Second Tier",
+            "club_id": "1070",
+            "opponent_id": "10403",
+            "position": "",
+            "minutes": 45,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4798066",
+            "season": 2025,
+            "competition_type": "Second Tier",
+            "club_id": "1070",
+            "opponent_id": "19634",
+            "position": "",
+            "minutes": 4,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4798044",
+            "season": 2025,
+            "competition_type": "Second Tier",
+            "club_id": "1070",
+            "opponent_id": "19806",
+            "position": "",
+            "minutes": 18,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4798015",
+            "season": 2025,
+            "competition_type": "Second Tier",
+            "club_id": "1070",
+            "opponent_id": "13651",
+            "position": "",
+            "minutes": 29,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4798003",
+            "season": 2025,
+            "competition_type": "Second Tier",
+            "club_id": "1070",
+            "opponent_id": "12677",
+            "position": "",
+            "minutes": 17,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4797980",
+            "season": 2025,
+            "competition_type": "Second Tier",
+            "club_id": "1070",
+            "opponent_id": "12681",
+            "position": "LM",
+            "minutes": 45,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4797966",
             "season": 2025,
@@ -3642,42 +3741,45 @@
     ],
     "clubs": {
         "1070": {
+            "type": "club",
             "seasons": [
                 2025
             ],
             "stats": {
-                "matches": 3,
-                "participations": 3,
-                "minutes": 109,
-                "starts": 0,
+                "matches": 9,
+                "participations": 9,
+                "minutes": 267,
+                "starts": 1,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 0,
-                "goals_conceded": 1,
-                "points": 6,
-                "clean_sheets": 2,
-                "wins": 2,
-                "draws": 0,
-                "losses": 1,
-                "goal_matches": 3,
-                "assist_matches": 3,
+                "goals_conceded": 2,
+                "points": 16,
+                "clean_sheets": 7,
+                "wins": 5,
+                "draws": 1,
+                "losses": 3,
+                "goal_matches": 9,
+                "assist_matches": 9,
                 "goal_contributions": 0
             },
-            "positions": {},
+            "positions": {
+                "LM": 1
+            },
             "derived": {
                 "season_count": 1,
-                "points_per_match": 2.0,
-                "minutes_per_match": 36.3,
-                "win_rate": 0.6667,
+                "points_per_match": 1.778,
+                "minutes_per_match": 29.7,
+                "win_rate": 0.5556,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
-                "primary_position": ""
+                "primary_position": "LM"
             },
             "competitions": {
                 "Second Tier": {
-                    "matches": 3,
-                    "minutes": 109,
+                    "matches": 9,
+                    "minutes": 267,
                     "goals": 0,
                     "assists": 0
                 }
@@ -3688,6 +3790,7 @@
             }
         },
         "1286": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -3743,6 +3846,7 @@
             }
         },
         "12709": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -3806,6 +3910,7 @@
             }
         },
         "17482": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023
@@ -3873,6 +3978,7 @@
             }
         },
         "10403": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -3935,31 +4041,33 @@
                 }
             },
             "awards": {
-                "team_titles": {},
+                "team_titles": {
+                    "Champion Torneo Federal A": 1
+                },
                 "individual_titles": {}
             }
         }
     },
     "career": {
         "club": {
-            "matches": 149,
-            "minutes": 6796,
-            "goals": 13,
-            "assists": 2,
-            "goal_contributions": 15,
-            "team_titles": 0,
+            "matches": 232,
+            "minutes": 12098,
+            "goals": 23,
+            "assists": 10,
+            "goal_contributions": 33,
+            "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 6
+            "season_count": 8
         },
         "national": {
-            "matches": 77,
-            "minutes": 5144,
-            "goals": 10,
-            "assists": 8,
-            "goal_contributions": 18,
+            "matches": 0,
+            "minutes": 0,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 2
+            "season_count": 0
         }
     }
 }
