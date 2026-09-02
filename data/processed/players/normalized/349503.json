@@ -1,12 +1,15 @@
 {
     "player": {
+        "name": "Conor Chaplin",
         "short_name": "C. Chaplin",
+        "dateOfBirth": "1997-02-16",
+        "placeOfBirth": "Worthing",
         "nation_1": "England",
         "nation_2": "",
         "height": 1.68,
         "foot": "Left",
-        "position_group": "FORWARD",
-        "position_1": "SS",
+        "position_group": "MIDFIELDER",
+        "position_1": "AMF",
         "position_2": "CF",
         "position_3": "LW",
         "former_clubs": "Portsmouth (2003–2014)",
@@ -14,6 +17,102 @@
         "prime_date": "2024-12-16"
     },
     "matches": [
+        {
+            "game_id": "4911229",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "1003",
+            "opponent_id": "2262",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4911168",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "1003",
+            "opponent_id": "991",
+            "position": "AMF",
+            "minutes": 36,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "5016482",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "1003",
+            "opponent_id": "677",
+            "position": "DMF",
+            "minutes": 61,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4911178",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "1003",
+            "opponent_id": "2963",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4911243",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "1003",
+            "opponent_id": "1045",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 1
+        },
+        {
+            "game_id": "4926013",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "1003",
+            "opponent_id": "1302",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
         {
             "game_id": "4639459",
             "season": 2025,
@@ -9495,7 +9594,64 @@
         }
     ],
     "clubs": {
+        "1003": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 6,
+                "participations": 6,
+                "minutes": 97,
+                "starts": 2,
+                "captain_matches": 2,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 0,
+                "points": 8,
+                "clean_sheets": 6,
+                "wins": 2,
+                "draws": 2,
+                "losses": 2,
+                "goal_matches": 6,
+                "assist_matches": 6,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "AMF": 1,
+                "DMF": 1
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 1.333,
+                "minutes_per_match": 16.2,
+                "win_rate": 0.3333,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "AMF"
+            },
+            "competitions": {
+                "Third Tier": {
+                    "matches": 4,
+                    "minutes": 36,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "League Cup": {
+                    "matches": 2,
+                    "minutes": 61,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "1020": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -9592,6 +9748,7 @@
             }
         },
         "677": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -9680,6 +9837,7 @@
             }
         },
         "349": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -9751,6 +9909,7 @@
             }
         },
         "990": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -9815,14 +9974,14 @@
     },
     "career": {
         "club": {
-            "matches": 591,
-            "minutes": 25629,
+            "matches": 597,
+            "minutes": 25726,
             "goals": 107,
             "assists": 39,
             "goal_contributions": 146,
             "team_titles": 1,
             "individual_titles": 1,
-            "season_count": 12
+            "season_count": 13
         },
         "national": {
             "matches": 0,

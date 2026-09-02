@@ -1,19 +1,86 @@
 {
     "player": {
+        "name": "Jimmy Dunne",
         "short_name": "Jimmy Dunne",
+        "dateOfBirth": "1997-10-19",
+        "placeOfBirth": "Dundalk",
         "nation_1": "Ireland",
         "nation_2": "Northern Ireland",
         "height": 1.91,
         "foot": "Right",
         "position_group": "DEFENDER",
-        "position_1": "RB",
-        "position_2": "CB",
+        "position_1": "CB",
+        "position_2": "RB",
         "position_3": "",
         "former_clubs": "St. Kevin´s BC (-2007), Manchester United (2007-2016)",
         "market_value": 5000000,
         "prime_date": "2026-05-28"
     },
     "matches": [
+        {
+            "game_id": "4911103",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "1039",
+            "opponent_id": "164",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4911085",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "1039",
+            "opponent_id": "355",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4911097",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "1039",
+            "opponent_id": "1020",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4926000",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "1039",
+            "opponent_id": "1028",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4639427",
             "season": 2025,
@@ -7466,63 +7533,65 @@
     ],
     "clubs": {
         "1039": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 246,
-                "participations": 246,
-                "minutes": 17512,
-                "starts": 194,
-                "captain_matches": 46,
-                "goals": 14,
-                "assists": 8,
-                "goals_conceded": 270,
-                "points": 304,
-                "clean_sheets": 95,
-                "wins": 83,
-                "draws": 55,
-                "losses": 108,
-                "goal_matches": 232,
-                "assist_matches": 238,
-                "goal_contributions": 22
+                "matches": 250,
+                "participations": 250,
+                "minutes": 17872,
+                "starts": 198,
+                "captain_matches": 50,
+                "goals": 15,
+                "assists": 9,
+                "goals_conceded": 273,
+                "points": 311,
+                "clean_sheets": 96,
+                "wins": 85,
+                "draws": 56,
+                "losses": 109,
+                "goal_matches": 235,
+                "assist_matches": 241,
+                "goal_contributions": 24
             },
             "positions": {
-                "CB": 136,
+                "CB": 140,
                 "RB": 62
             },
             "derived": {
-                "season_count": 5,
-                "points_per_match": 1.236,
-                "minutes_per_match": 71.2,
-                "win_rate": 0.3374,
-                "goals_per_90": 0.072,
-                "assists_per_90": 0.041,
-                "contributions_per_90": 0.113,
+                "season_count": 6,
+                "points_per_match": 1.244,
+                "minutes_per_match": 71.5,
+                "win_rate": 0.34,
+                "goals_per_90": 0.076,
+                "assists_per_90": 0.045,
+                "contributions_per_90": 0.121,
                 "primary_position": "CB"
             },
             "competitions": {
                 "Second Tier": {
-                    "matches": 230,
-                    "minutes": 16454,
-                    "goals": 14,
+                    "matches": 233,
+                    "minutes": 16724,
+                    "goals": 15,
                     "assists": 7
+                },
+                "League Cup": {
+                    "matches": 11,
+                    "minutes": 638,
+                    "goals": 0,
+                    "assists": 2
                 },
                 "Domestic Cup": {
                     "matches": 6,
                     "minutes": 510,
                     "goals": 0,
                     "assists": 0
-                },
-                "League Cup": {
-                    "matches": 10,
-                    "minutes": 548,
-                    "goals": 0,
-                    "assists": 1
                 }
             },
             "awards": {
@@ -7531,6 +7600,7 @@
             }
         },
         "3509": {
+            "type": "national",
             "seasons": [
                 2018,
                 2024,
@@ -7585,6 +7655,7 @@
             }
         },
         "1132": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -7646,6 +7717,7 @@
             }
         },
         "24214": {
+            "type": "club",
             "seasons": [
                 2016,
                 2019,
@@ -7689,6 +7761,7 @@
             }
         },
         "11177": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -7749,6 +7822,7 @@
             }
         },
         "289": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -7809,6 +7883,7 @@
             }
         },
         "43": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -7863,6 +7938,7 @@
             }
         },
         "21103": {
+            "type": "national",
             "seasons": [
                 2017
             ],
@@ -7917,6 +7993,7 @@
             }
         },
         "3688": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -7969,6 +8046,7 @@
             }
         },
         "6168": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -8017,6 +8095,7 @@
             }
         },
         "41575": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -8058,6 +8137,7 @@
             }
         },
         "5242": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -8099,14 +8179,14 @@
     },
     "career": {
         "club": {
-            "matches": 446,
-            "minutes": 25221,
-            "goals": 21,
-            "assists": 12,
-            "goal_contributions": 33,
+            "matches": 450,
+            "minutes": 25581,
+            "goals": 22,
+            "assists": 13,
+            "goal_contributions": 35,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 12
+            "season_count": 13
         },
         "national": {
             "matches": 19,

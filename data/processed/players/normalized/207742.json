@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Tom Lockyer",
         "short_name": "Tom Lockyer",
+        "dateOfBirth": "1994-12-03",
+        "placeOfBirth": "Cardiff",
         "nation_1": "Wales",
         "nation_2": "",
         "height": 1.85,
@@ -14,6 +17,38 @@
         "prime_date": "2023-12-19"
     },
     "matches": [
+        {
+            "game_id": "5018099",
+            "season": 2025,
+            "competition_type": "Domestic Cup",
+            "club_id": "7006",
+            "opponent_id": "11419",
+            "position": "CB",
+            "minutes": 4,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4983293",
+            "season": 2025,
+            "competition_type": "Domestic Cup",
+            "club_id": "7006",
+            "opponent_id": "36100",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "injured",
+            "club_points": 3
+        },
         {
             "game_id": "4904427",
             "season": 2025,
@@ -12552,42 +12587,45 @@
     ],
     "clubs": {
         "7006": {
+            "type": "club",
             "seasons": [
                 2025
             ],
             "stats": {
-                "matches": 1,
-                "participations": 1,
-                "minutes": 0,
+                "matches": 3,
+                "participations": 3,
+                "minutes": 4,
                 "starts": 0,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 0,
                 "goals_conceded": 0,
-                "points": 3,
-                "clean_sheets": 1,
-                "wins": 1,
+                "points": 9,
+                "clean_sheets": 3,
+                "wins": 3,
                 "draws": 0,
                 "losses": 0,
-                "goal_matches": 1,
-                "assist_matches": 1,
+                "goal_matches": 3,
+                "assist_matches": 3,
                 "goal_contributions": 0
             },
-            "positions": {},
+            "positions": {
+                "CB": 1
+            },
             "derived": {
                 "season_count": 1,
                 "points_per_match": 3.0,
-                "minutes_per_match": 0.0,
+                "minutes_per_match": 1.3,
                 "win_rate": 1.0,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
-                "primary_position": ""
+                "primary_position": "CB"
             },
             "competitions": {
                 "Domestic Cup": {
-                    "matches": 1,
-                    "minutes": 0,
+                    "matches": 3,
+                    "minutes": 4,
                     "goals": 0,
                     "assists": 0
                 }
@@ -12598,6 +12636,7 @@
             }
         },
         "2455": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -12693,6 +12732,7 @@
             }
         },
         "1031": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -12769,6 +12809,7 @@
             }
         },
         "3864": {
+            "type": "national",
             "seasons": [
                 2016,
                 2017,
@@ -12830,6 +12871,7 @@
             }
         },
         "358": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -12890,6 +12932,7 @@
             }
         },
         "24966": {
+            "type": "national",
             "seasons": [
                 2015
             ],
@@ -12938,6 +12981,7 @@
             }
         },
         "3055": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -12986,8 +13030,8 @@
     },
     "career": {
         "club": {
-            "matches": 703,
-            "minutes": 39393,
+            "matches": 705,
+            "minutes": 39397,
             "goals": 14,
             "assists": 7,
             "goal_contributions": 21,

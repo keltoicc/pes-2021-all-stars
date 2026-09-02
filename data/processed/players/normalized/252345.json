@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Ken Sema",
         "short_name": "Ken Sema",
+        "dateOfBirth": "1993-09-30",
+        "placeOfBirth": "Norrköping",
         "nation_1": "Sweden",
         "nation_2": "DR Congo",
         "height": 1.8,
@@ -14,6 +17,118 @@
         "prime_date": "2020-03-03"
     },
     "matches": [
+        {
+            "game_id": "4970259",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "45457",
+            "opponent_id": "42109",
+            "position": "LB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "5013846",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "45457",
+            "opponent_id": "588",
+            "position": "LW",
+            "minutes": 84,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "5013822",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "45457",
+            "opponent_id": "588",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 1
+        },
+        {
+            "game_id": "5008630",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "45457",
+            "opponent_id": "409",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "absent",
+            "club_points": 1
+        },
+        {
+            "game_id": "5008631",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "45457",
+            "opponent_id": "409",
+            "position": "",
+            "minutes": 45,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4897956",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "45457",
+            "opponent_id": "447",
+            "position": "",
+            "minutes": 38,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4897947",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "45457",
+            "opponent_id": "447",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
         {
             "game_id": "4776683",
             "season": 2025,
@@ -11290,7 +11405,89 @@
         }
     ],
     "clubs": {
+        "45457": {
+            "type": "club",
+            "seasons": [
+                2024,
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 86,
+                "participations": 86,
+                "minutes": 2763,
+                "starts": 28,
+                "captain_matches": 0,
+                "goals": 1,
+                "assists": 6,
+                "goals_conceded": 28,
+                "points": 157,
+                "clean_sheets": 64,
+                "wins": 46,
+                "draws": 19,
+                "losses": 21,
+                "goal_matches": 85,
+                "assist_matches": 80,
+                "goal_contributions": 7
+            },
+            "positions": {
+                "LB": 13,
+                "LW": 8,
+                "LM": 6,
+                "RW": 3,
+                "CB": 1
+            },
+            "derived": {
+                "season_count": 3,
+                "points_per_match": 1.826,
+                "minutes_per_match": 32.1,
+                "win_rate": 0.5349,
+                "goals_per_90": 0.033,
+                "assists_per_90": 0.195,
+                "contributions_per_90": 0.228,
+                "primary_position": "LB"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 43,
+                    "minutes": 1474,
+                    "goals": 0,
+                    "assists": 3
+                },
+                "International Cup": {
+                    "matches": 24,
+                    "minutes": 627,
+                    "goals": 1,
+                    "assists": 2
+                },
+                "Domestic Cup": {
+                    "matches": 8,
+                    "minutes": 258,
+                    "goals": 0,
+                    "assists": 1
+                },
+                "Domestic Super Cup": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Play-Offs": {
+                    "matches": 10,
+                    "minutes": 404,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Cypriot champions": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3557": {
+            "type": "national",
             "seasons": [
                 2016,
                 2017,
@@ -11357,86 +11554,8 @@
                 "individual_titles": {}
             }
         },
-        "45457": {
-            "seasons": [
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 79,
-                "participations": 79,
-                "minutes": 2506,
-                "starts": 26,
-                "captain_matches": 0,
-                "goals": 0,
-                "assists": 5,
-                "goals_conceded": 26,
-                "points": 146,
-                "clean_sheets": 59,
-                "wins": 43,
-                "draws": 17,
-                "losses": 19,
-                "goal_matches": 79,
-                "assist_matches": 74,
-                "goal_contributions": 5
-            },
-            "positions": {
-                "LM": 6,
-                "LB": 12,
-                "LW": 7,
-                "RW": 3,
-                "CB": 1
-            },
-            "derived": {
-                "season_count": 2,
-                "points_per_match": 1.848,
-                "minutes_per_match": 31.7,
-                "win_rate": 0.5443,
-                "goals_per_90": 0.0,
-                "assists_per_90": 0.18,
-                "contributions_per_90": 0.18,
-                "primary_position": "LB"
-            },
-            "competitions": {
-                "Domestic Cup": {
-                    "matches": 8,
-                    "minutes": 258,
-                    "goals": 0,
-                    "assists": 1
-                },
-                "First Tier": {
-                    "matches": 42,
-                    "minutes": 1384,
-                    "goals": 0,
-                    "assists": 2
-                },
-                "International Cup": {
-                    "matches": 18,
-                    "minutes": 460,
-                    "goals": 0,
-                    "assists": 2
-                },
-                "Domestic Super Cup": {
-                    "matches": 1,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Play-Offs": {
-                    "matches": 10,
-                    "minutes": 404,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Cypriot champions": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "1010": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -11517,6 +11636,7 @@
             }
         },
         "410": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -11574,6 +11694,7 @@
             }
         },
         "9614": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -11645,6 +11766,7 @@
             }
         },
         "53805": {
+            "type": "national",
             "seasons": [
                 2015
             ],
@@ -11691,6 +11813,7 @@
             }
         },
         "8882": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -11757,6 +11880,7 @@
             }
         },
         "8985": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -11806,6 +11930,7 @@
             }
         },
         "23271": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -11847,6 +11972,7 @@
             }
         },
         "2844": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -11893,6 +12019,7 @@
             }
         },
         "15621": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -11934,23 +12061,23 @@
     },
     "career": {
         "club": {
-            "matches": 400,
-            "minutes": 23459,
-            "goals": 42,
-            "assists": 39,
-            "goal_contributions": 81,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 12
-        },
-        "national": {
-            "matches": 301,
-            "minutes": 11254,
-            "goals": 15,
-            "assists": 34,
-            "goal_contributions": 49,
+            "matches": 587,
+            "minutes": 32942,
+            "goals": 53,
+            "assists": 72,
+            "goal_contributions": 125,
             "team_titles": 2,
             "individual_titles": 1,
+            "season_count": 16
+        },
+        "national": {
+            "matches": 121,
+            "minutes": 2028,
+            "goals": 5,
+            "assists": 2,
+            "goal_contributions": 7,
+            "team_titles": 0,
+            "individual_titles": 0,
             "season_count": 11
         }
     }

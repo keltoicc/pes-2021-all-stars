@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Jamal Lowe",
         "short_name": "Jamal Lowe",
+        "dateOfBirth": "1994-07-21",
+        "placeOfBirth": "London",
         "nation_1": "Jamaica",
         "nation_2": "England",
         "height": 1.83,
@@ -14,6 +17,102 @@
         "prime_date": "2021-11-24"
     },
     "matches": [
+        {
+            "game_id": "4911234",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "1035",
+            "opponent_id": "2805",
+            "position": "LM",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4911172",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "1035",
+            "opponent_id": "8981",
+            "position": "RW",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 2,
+            "assists": 1,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "5016478",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "1035",
+            "opponent_id": "543",
+            "position": "",
+            "minutes": 4,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4911182",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "1035",
+            "opponent_id": "1027",
+            "position": "CF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4911241",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "1035",
+            "opponent_id": "1150",
+            "position": "CF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4925989",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "1035",
+            "opponent_id": "355",
+            "position": "",
+            "minutes": 27,
+            "started": false,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4639487",
             "season": 2025,
@@ -10017,46 +10116,61 @@
     ],
     "clubs": {
         "1035": {
+            "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 101,
-                "participations": 101,
-                "minutes": 4550,
-                "starts": 52,
+                "matches": 107,
+                "participations": 107,
+                "minutes": 4941,
+                "starts": 56,
                 "captain_matches": 2,
-                "goals": 8,
-                "assists": 6,
-                "goals_conceded": 82,
-                "points": 91,
-                "clean_sheets": 57,
-                "wins": 22,
+                "goals": 13,
+                "assists": 7,
+                "goals_conceded": 87,
+                "points": 103,
+                "clean_sheets": 59,
+                "wins": 26,
                 "draws": 25,
-                "losses": 54,
-                "goal_matches": 93,
-                "assist_matches": 95,
-                "goal_contributions": 14
+                "losses": 56,
+                "goal_matches": 95,
+                "assist_matches": 100,
+                "goal_contributions": 20
             },
             "positions": {
+                "LM": 1,
+                "RW": 2,
+                "CF": 38,
                 "AMF": 12,
                 "LW": 6,
-                "RW": 1,
-                "CF": 36,
                 "SS": 2
             },
             "derived": {
-                "season_count": 2,
-                "points_per_match": 0.901,
-                "minutes_per_match": 45.0,
-                "win_rate": 0.2178,
-                "goals_per_90": 0.158,
-                "assists_per_90": 0.119,
-                "contributions_per_90": 0.277,
+                "season_count": 3,
+                "points_per_match": 0.963,
+                "minutes_per_match": 46.2,
+                "win_rate": 0.243,
+                "goals_per_90": 0.237,
+                "assists_per_90": 0.128,
+                "contributions_per_90": 0.364,
                 "primary_position": "CF"
             },
             "competitions": {
+                "Third Tier": {
+                    "matches": 4,
+                    "minutes": 360,
+                    "goals": 4,
+                    "assists": 1
+                },
+                "League Cup": {
+                    "matches": 9,
+                    "minutes": 331,
+                    "goals": 2,
+                    "assists": 1
+                },
                 "Second Tier": {
                     "matches": 92,
                     "minutes": 4188,
@@ -10068,12 +10182,6 @@
                     "minutes": 62,
                     "goals": 0,
                     "assists": 0
-                },
-                "League Cup": {
-                    "matches": 7,
-                    "minutes": 300,
-                    "goals": 1,
-                    "assists": 1
                 }
             },
             "awards": {
@@ -10082,6 +10190,7 @@
             }
         },
         "3671": {
+            "type": "national",
             "seasons": [
                 2020,
                 2021,
@@ -10144,6 +10253,7 @@
             }
         },
         "2288": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -10216,6 +10326,7 @@
             }
         },
         "989": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -10287,6 +10398,7 @@
             }
         },
         "1039": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -10339,6 +10451,7 @@
             }
         },
         "1071": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -10402,6 +10515,7 @@
             }
         },
         "1020": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -10490,6 +10604,7 @@
             }
         },
         "40453": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -10536,6 +10651,7 @@
             }
         },
         "2804": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -10612,6 +10728,7 @@
             }
         },
         "17980": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -10660,14 +10777,14 @@
     },
     "career": {
         "club": {
-            "matches": 543,
-            "minutes": 27417,
-            "goals": 77,
-            "assists": 39,
-            "goal_contributions": 116,
+            "matches": 549,
+            "minutes": 27808,
+            "goals": 82,
+            "assists": 40,
+            "goal_contributions": 122,
             "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 13
+            "season_count": 14
         },
         "national": {
             "matches": 81,

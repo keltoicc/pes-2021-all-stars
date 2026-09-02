@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Osman Kakay",
         "short_name": "Osman Kakay",
+        "dateOfBirth": "1997-08-25",
+        "placeOfBirth": "London",
         "nation_1": "Sierra Leone",
         "nation_2": "England",
         "height": 1.8,
@@ -14,6 +17,102 @@
         "prime_date": "2021-06-30"
     },
     "matches": [
+        {
+            "game_id": "4974859",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "51316",
+            "opponent_id": "20063",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4974791",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "51316",
+            "opponent_id": "540",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4974854",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "51316",
+            "opponent_id": "35488",
+            "position": "RM",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4974759",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "51316",
+            "opponent_id": "4529",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4974776",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "51316",
+            "opponent_id": "7918",
+            "position": "RM",
+            "minutes": 85,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4971551",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "51316",
+            "opponent_id": "1443",
+            "position": "RM",
+            "minutes": 84,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 4,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4854123",
             "season": 2025,
@@ -6810,45 +6909,53 @@
     ],
     "clubs": {
         "51316": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 42,
-                "participations": 42,
-                "minutes": 2167,
-                "starts": 21,
+                "matches": 48,
+                "participations": 48,
+                "minutes": 2606,
+                "starts": 26,
                 "captain_matches": 0,
-                "goals": 0,
+                "goals": 2,
                 "assists": 3,
-                "goals_conceded": 48,
-                "points": 63,
-                "clean_sheets": 15,
-                "wins": 19,
-                "draws": 6,
-                "losses": 17,
-                "goal_matches": 42,
-                "assist_matches": 39,
-                "goal_contributions": 3
+                "goals_conceded": 61,
+                "points": 69,
+                "clean_sheets": 16,
+                "wins": 20,
+                "draws": 9,
+                "losses": 19,
+                "goal_matches": 46,
+                "assist_matches": 45,
+                "goal_contributions": 5
             },
             "positions": {
-                "RM": 11,
+                "RB": 6,
+                "RM": 14,
                 "CB": 10,
-                "RB": 4,
                 "LM": 2,
                 "RW": 1
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.5,
-                "minutes_per_match": 51.6,
-                "win_rate": 0.4524,
-                "goals_per_90": 0.0,
-                "assists_per_90": 0.125,
-                "contributions_per_90": 0.125,
+                "season_count": 2,
+                "points_per_match": 1.438,
+                "minutes_per_match": 54.3,
+                "win_rate": 0.4167,
+                "goals_per_90": 0.069,
+                "assists_per_90": 0.104,
+                "contributions_per_90": 0.173,
                 "primary_position": "RM"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 28,
+                    "minutes": 1486,
+                    "goals": 2,
+                    "assists": 1
+                },
                 "Play-Offs": {
                     "matches": 10,
                     "minutes": 608,
@@ -6860,12 +6967,6 @@
                     "minutes": 454,
                     "goals": 0,
                     "assists": 0
-                },
-                "First Tier": {
-                    "matches": 22,
-                    "minutes": 1047,
-                    "goals": 0,
-                    "assists": 1
                 },
                 "International Cup": {
                     "matches": 2,
@@ -6880,6 +6981,7 @@
             }
         },
         "6187": {
+            "type": "national",
             "seasons": [
                 2017,
                 2019,
@@ -6942,6 +7044,7 @@
             }
         },
         "2503": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -6994,6 +7097,7 @@
             }
         },
         "1039": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -7065,6 +7169,7 @@
             }
         },
         "2760": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -7134,6 +7239,7 @@
             }
         },
         "1219": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -7183,6 +7289,7 @@
             }
         },
         "1241": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -7240,6 +7347,7 @@
             }
         },
         "33727": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -7281,24 +7389,24 @@
     },
     "career": {
         "club": {
-            "matches": 336,
-            "minutes": 10928,
-            "goals": 2,
-            "assists": 5,
-            "goal_contributions": 7,
+            "matches": 384,
+            "minutes": 13534,
+            "goals": 4,
+            "assists": 8,
+            "goal_contributions": 12,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 10
+            "season_count": 12
         },
         "national": {
-            "matches": 88,
-            "minutes": 4374,
+            "matches": 46,
+            "minutes": 2207,
             "goals": 0,
-            "assists": 5,
-            "goal_contributions": 5,
+            "assists": 2,
+            "goal_contributions": 2,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 8
+            "season_count": 7
         }
     }
 }

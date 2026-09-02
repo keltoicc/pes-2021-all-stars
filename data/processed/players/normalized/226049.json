@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Freddie Woodman",
         "short_name": "F. Woodman",
+        "dateOfBirth": "1997-03-04",
+        "placeOfBirth": "London",
         "nation_1": "England",
         "nation_2": "",
         "height": 1.88,
@@ -14,6 +17,38 @@
         "prime_date": "2021-12-23"
     },
     "matches": [
+        {
+            "game_id": "4899198",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "31",
+            "opponent_id": "703",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 1
+        },
+        {
+            "game_id": "4899190",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "31",
+            "opponent_id": "762",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 1
+        },
         {
             "game_id": "4626172",
             "season": 2025,
@@ -12703,22 +12738,6 @@
             "club_points": 0
         },
         {
-            "game_id": "2286967",
-            "season": 2012,
-            "competition_type": "National Team",
-            "club_id": "23260",
-            "opponent_id": "10933",
-            "position": null,
-            "minutes": 0,
-            "started": false,
-            "captain": false,
-            "goals": 0,
-            "assists": 0,
-            "goals_conceded": 0,
-            "participation": "not in squad",
-            "club_points": 0
-        },
-        {
             "game_id": "3816967",
             "season": 2012,
             "competition_type": "National youth team",
@@ -13211,35 +13230,37 @@
     ],
     "clubs": {
         "31": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 57,
-                "participations": 57,
+                "matches": 59,
+                "participations": 59,
                 "minutes": 302,
                 "starts": 3,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 0,
                 "goals_conceded": 7,
-                "points": 93,
-                "clean_sheets": 54,
+                "points": 95,
+                "clean_sheets": 56,
                 "wins": 28,
-                "draws": 9,
+                "draws": 11,
                 "losses": 20,
-                "goal_matches": 57,
-                "assist_matches": 57,
+                "goal_matches": 59,
+                "assist_matches": 59,
                 "goal_contributions": 0
             },
             "positions": {
                 "GK": 4
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.632,
-                "minutes_per_match": 5.3,
-                "win_rate": 0.4912,
+                "season_count": 2,
+                "points_per_match": 1.61,
+                "minutes_per_match": 5.1,
+                "win_rate": 0.4746,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
@@ -13247,7 +13268,7 @@
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 38,
+                    "matches": 40,
                     "minutes": 212,
                     "goals": 0,
                     "assists": 0
@@ -13283,6 +13304,7 @@
             }
         },
         "466": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -13345,6 +13367,7 @@
             }
         },
         "989": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -13399,6 +13422,7 @@
             }
         },
         "762": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -13470,6 +13494,7 @@
             }
         },
         "2288": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -13537,6 +13562,7 @@
             }
         },
         "9565": {
+            "type": "national",
             "seasons": [
                 2015,
                 2016,
@@ -13600,6 +13626,7 @@
             }
         },
         "9253": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012,
@@ -13661,6 +13688,7 @@
             }
         },
         "370": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -13721,6 +13749,7 @@
             }
         },
         "22907": {
+            "type": "national",
             "seasons": [
                 2016
             ],
@@ -13779,6 +13808,7 @@
             }
         },
         "2553": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -13833,6 +13863,7 @@
             }
         },
         "21340": {
+            "type": "national",
             "seasons": [
                 2014,
                 2015,
@@ -13895,6 +13926,7 @@
             }
         },
         "3537": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -13955,6 +13987,7 @@
             }
         },
         "31269": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -14003,6 +14036,7 @@
             }
         },
         "6943": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -14044,6 +14078,7 @@
             }
         },
         "2577": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -14096,13 +14131,14 @@
             }
         },
         "23260": {
+            "type": "national",
             "seasons": [
                 2012,
                 2013
             ],
             "stats": {
-                "matches": 42,
-                "participations": 42,
+                "matches": 41,
+                "participations": 41,
                 "minutes": 1345,
                 "starts": 17,
                 "captain_matches": 0,
@@ -14110,12 +14146,12 @@
                 "assists": 0,
                 "goals_conceded": 10,
                 "points": 80,
-                "clean_sheets": 34,
+                "clean_sheets": 33,
                 "wins": 26,
                 "draws": 2,
-                "losses": 14,
-                "goal_matches": 42,
-                "assist_matches": 42,
+                "losses": 13,
+                "goal_matches": 41,
+                "assist_matches": 41,
                 "goal_contributions": 0
             },
             "positions": {
@@ -14123,9 +14159,9 @@
             },
             "derived": {
                 "season_count": 2,
-                "points_per_match": 1.905,
-                "minutes_per_match": 32.0,
-                "win_rate": 0.619,
+                "points_per_match": 1.951,
+                "minutes_per_match": 32.8,
+                "win_rate": 0.6341,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
@@ -14145,7 +14181,7 @@
                     "assists": 0
                 },
                 "National Team": {
-                    "matches": 19,
+                    "matches": 18,
                     "minutes": 455,
                     "goals": 0,
                     "assists": 0
@@ -14159,6 +14195,7 @@
             }
         },
         "30322": {
+            "type": "national",
             "seasons": [
                 2012
             ],
@@ -14209,24 +14246,24 @@
     },
     "career": {
         "club": {
-            "matches": 627,
-            "minutes": 29670,
+            "matches": 686,
+            "minutes": 29972,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 14
+            "season_count": 16
         },
         "national": {
-            "matches": 194,
-            "minutes": 5057,
+            "matches": 136,
+            "minutes": 4755,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
             "team_titles": 2,
             "individual_titles": 1,
-            "season_count": 8
+            "season_count": 7
         }
     }
 }

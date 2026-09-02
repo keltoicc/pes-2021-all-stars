@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "John Ruddy",
         "short_name": "John Ruddy",
+        "dateOfBirth": "1986-10-24",
+        "placeOfBirth": "St Ives",
         "nation_1": "England",
         "nation_2": "",
         "height": 1.92,
@@ -14,6 +17,38 @@
         "prime_date": "2013-01-28"
     },
     "matches": [
+        {
+            "game_id": "4911158",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "543",
+            "opponent_id": "379",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4911113",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "543",
+            "opponent_id": "512",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
         {
             "game_id": "4626171",
             "season": 2025,
@@ -18099,7 +18134,88 @@
         }
     ],
     "clubs": {
+        "543": {
+            "type": "club",
+            "seasons": [
+                2017,
+                2018,
+                2019,
+                2020,
+                2021,
+                2026
+            ],
+            "stats": {
+                "matches": 243,
+                "participations": 243,
+                "minutes": 6376,
+                "starts": 70,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 1,
+                "goals_conceded": 59,
+                "points": 394,
+                "clean_sheets": 207,
+                "wins": 114,
+                "draws": 52,
+                "losses": 77,
+                "goal_matches": 243,
+                "assist_matches": 242,
+                "goal_contributions": 1
+            },
+            "positions": {
+                "GK": 72
+            },
+            "derived": {
+                "season_count": 6,
+                "points_per_match": 1.621,
+                "minutes_per_match": 26.2,
+                "win_rate": 0.4691,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.014,
+                "contributions_per_90": 0.014,
+                "primary_position": "GK"
+            },
+            "competitions": {
+                "Second Tier": {
+                    "matches": 48,
+                    "minutes": 4050,
+                    "goals": 0,
+                    "assists": 1
+                },
+                "First Tier": {
+                    "matches": 152,
+                    "minutes": 316,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 15,
+                    "minutes": 1200,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "League Cup": {
+                    "matches": 11,
+                    "minutes": 630,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "International Cup": {
+                    "matches": 17,
+                    "minutes": 180,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "English 2nd tier champion": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "762": {
+            "type": "club",
             "seasons": [
                 2024,
                 2025
@@ -18167,6 +18283,7 @@
             }
         },
         "337": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023
@@ -18227,85 +18344,8 @@
                 "individual_titles": {}
             }
         },
-        "543": {
-            "seasons": [
-                2017,
-                2018,
-                2019,
-                2020,
-                2021
-            ],
-            "stats": {
-                "matches": 241,
-                "participations": 241,
-                "minutes": 6376,
-                "starts": 70,
-                "captain_matches": 0,
-                "goals": 0,
-                "assists": 1,
-                "goals_conceded": 59,
-                "points": 391,
-                "clean_sheets": 205,
-                "wins": 113,
-                "draws": 52,
-                "losses": 76,
-                "goal_matches": 241,
-                "assist_matches": 240,
-                "goal_contributions": 1
-            },
-            "positions": {
-                "GK": 72
-            },
-            "derived": {
-                "season_count": 5,
-                "points_per_match": 1.622,
-                "minutes_per_match": 26.5,
-                "win_rate": 0.4689,
-                "goals_per_90": 0.0,
-                "assists_per_90": 0.014,
-                "contributions_per_90": 0.014,
-                "primary_position": "GK"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 152,
-                    "minutes": 316,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Domestic Cup": {
-                    "matches": 15,
-                    "minutes": 1200,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "League Cup": {
-                    "matches": 11,
-                    "minutes": 630,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "International Cup": {
-                    "matches": 17,
-                    "minutes": 180,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Second Tier": {
-                    "matches": 46,
-                    "minutes": 4050,
-                    "goals": 0,
-                    "assists": 1
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "English 2nd tier champion": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "24226": {
+            "type": "club",
             "seasons": [
                 2017,
                 2020,
@@ -18356,6 +18396,7 @@
             }
         },
         "1123": {
+            "type": "club",
             "seasons": [
                 1914,
                 2010,
@@ -18435,6 +18476,7 @@
             }
         },
         "3299": {
+            "type": "national",
             "seasons": [
                 2012,
                 2013
@@ -18490,6 +18532,7 @@
             }
         },
         "33614": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -18538,6 +18581,7 @@
             }
         },
         "29": {
+            "type": "club",
             "seasons": [
                 2005,
                 2006,
@@ -18606,6 +18650,7 @@
             }
         },
         "987": {
+            "type": "club",
             "seasons": [
                 2009
             ],
@@ -18672,6 +18717,7 @@
             }
         },
         "1042": {
+            "type": "club",
             "seasons": [
                 2008
             ],
@@ -18724,6 +18770,7 @@
             }
         },
         "1098": {
+            "type": "club",
             "seasons": [
                 2006,
                 2007
@@ -18783,6 +18830,7 @@
             }
         },
         "698": {
+            "type": "club",
             "seasons": [
                 2006
             ],
@@ -18829,6 +18877,7 @@
             }
         },
         "1112": {
+            "type": "club",
             "seasons": [
                 2006
             ],
@@ -18881,6 +18930,7 @@
             }
         },
         "3613": {
+            "type": "club",
             "seasons": [
                 2005
             ],
@@ -18933,6 +18983,7 @@
             }
         },
         "3536": {
+            "type": "club",
             "seasons": [
                 2005
             ],
@@ -18991,6 +19042,7 @@
             }
         },
         "899": {
+            "type": "club",
             "seasons": [
                 2005
             ],
@@ -19037,6 +19089,7 @@
             }
         },
         "21340": {
+            "type": "national",
             "seasons": [
                 2004
             ],
@@ -19083,6 +19136,7 @@
             }
         },
         "986": {
+            "type": "club",
             "seasons": [
                 2003,
                 2004
@@ -19150,24 +19204,24 @@
     },
     "career": {
         "club": {
-            "matches": 591,
-            "minutes": 39605,
+            "matches": 1105,
+            "minutes": 49556,
             "goals": 0,
-            "assists": 2,
-            "goal_contributions": 2,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 19
-        },
-        "national": {
-            "matches": 536,
-            "minutes": 9996,
-            "goals": 0,
-            "assists": 1,
-            "goal_contributions": 1,
+            "assists": 3,
+            "goal_contributions": 3,
             "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 15
+            "season_count": 25
+        },
+        "national": {
+            "matches": 24,
+            "minutes": 45,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 3
         }
     }
 }
