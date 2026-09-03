@@ -1,6 +1,6 @@
 {
     "tactic": "4-2-3-1",
-    "total_score": 7.0,
+    "total_score": 7.06,
     "players": [
         {
             "role": "FULLBACK",
@@ -107,6 +107,46 @@
             "role_weight": 1.0
         },
         {
+            "role": "ATTACKING_MID",
+            "player": {
+                "ID_transfermarkt": "208116",
+                "name": "C. Sánchez",
+                "score": 0.3902770510242085,
+                "roles": {
+                    "CENTRAL_MID": {
+                        "weight": 0.4431654676258992,
+                        "score": 0.2598100644903819
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.6330935251798561,
+                        "score": 0.31053242207191833
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.4258992805755395,
+                        "score": 0.2546985473364194
+                    },
+                    "STRIKER": {
+                        "weight": 0.11510791366906475,
+                        "score": 0.13241146967475154
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.15107913669064746,
+                        "score": 0.15169639566622464
+                    },
+                    "WINGER": {
+                        "weight": 0.2517985611510791,
+                        "score": 0.19583920469832636
+                    },
+                    "UTILITY": {
+                        "weight": 2.0201438848920863,
+                        "score": 0.3902770510242085
+                    }
+                }
+            },
+            "score": 0.31,
+            "role_weight": 0.6331
+        },
+        {
             "role": "UTILITY",
             "player": {
                 "ID_transfermarkt": "255495",
@@ -141,46 +181,6 @@
             },
             "score": 0.38,
             "role_weight": 2.1043
-        },
-        {
-            "role": "ATTACKING_MID",
-            "player": {
-                "ID_transfermarkt": "208116",
-                "name": "C. Sánchez",
-                "score": 0.3694184666666666,
-                "roles": {
-                    "CENTRAL_MID": {
-                        "weight": 0.4375,
-                        "score": 0.244347348128701
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.625,
-                        "score": 0.29205094109841423
-                    },
-                    "SECOND_STRIKER": {
-                        "weight": 0.42205882352941176,
-                        "score": 0.23999660233078654
-                    },
-                    "STRIKER": {
-                        "weight": 0.11764705882352941,
-                        "score": 0.12670948871769677
-                    },
-                    "WIDE_MID": {
-                        "weight": 0.15441176470588233,
-                        "score": 0.14516395582949962
-                    },
-                    "WINGER": {
-                        "weight": 0.25735294117647056,
-                        "score": 0.1874058611324137
-                    },
-                    "UTILITY": {
-                        "weight": 2.013970588235294,
-                        "score": 0.3694184666666666
-                    }
-                }
-            },
-            "score": 0.29,
-            "role_weight": 0.625
         },
         {
             "role": "WINGER",
@@ -241,6 +241,34 @@
             },
             "score": 0.29,
             "role_weight": 0.6556
+        },
+        {
+            "role": "CENTER_BACK",
+            "player": {
+                "ID_transfermarkt": "253905",
+                "name": "G. Sierra",
+                "score": 0.3340168311965811,
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.3340168311965811
+                    },
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.23618556636954488
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.3340168311965811
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.3340168311965811
+                    }
+                }
+            },
+            "score": 0.33,
+            "role_weight": 1.0
         },
         {
             "role": "STRIKER",
@@ -373,34 +401,6 @@
         {
             "role": "CENTER_BACK",
             "player": {
-                "ID_transfermarkt": "253905",
-                "name": "G. Sierra",
-                "score": 0.3170360277777778,
-                "roles": {
-                    "CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.3170360277777778
-                    },
-                    "SWEEPER": {
-                        "weight": 0.5,
-                        "score": 0.22417832512211333
-                    },
-                    "WIDE_CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.3170360277777778
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.3170360277777778
-                    }
-                }
-            },
-            "score": 0.32,
-            "role_weight": 1.0
-        },
-        {
-            "role": "CENTER_BACK",
-            "player": {
                 "ID_transfermarkt": "72503",
                 "name": "E. Maureta",
                 "score": 0.298547543019943,
@@ -451,6 +451,26 @@
             "role_weight": 1.0
         },
         {
+            "role": "GOALKEEPER",
+            "player": {
+                "ID_transfermarkt": "199325",
+                "name": "A. Cantero",
+                "score": 0.2930103655913978,
+                "roles": {
+                    "GOALKEEPER": {
+                        "weight": 1.0,
+                        "score": 0.2930103655913978
+                    },
+                    "UTILITY": {
+                        "weight": 1.0,
+                        "score": 0.2930103655913978
+                    }
+                }
+            },
+            "score": 0.29,
+            "role_weight": 1.0
+        },
+        {
             "role": "SECOND_STRIKER",
             "player": {
                 "ID_transfermarkt": "463934",
@@ -477,54 +497,6 @@
             },
             "score": 0.27,
             "role_weight": 0.9
-        },
-        {
-            "role": "WINGER",
-            "player": {
-                "ID_transfermarkt": "246739",
-                "name": "J. López",
-                "score": 0.27880294509803916,
-                "roles": {
-                    "WIDE_MID": {
-                        "weight": 0.8,
-                        "score": 0.24936893502654292
-                    },
-                    "WINGER": {
-                        "weight": 0.85,
-                        "score": 0.25704361471555603
-                    },
-                    "WING_BACK": {
-                        "weight": 0.2,
-                        "score": 0.12468446751327146
-                    },
-                    "UTILITY": {
-                        "weight": 1.85,
-                        "score": 0.27880294509803916
-                    }
-                }
-            },
-            "score": 0.26,
-            "role_weight": 0.85
-        },
-        {
-            "role": "GOALKEEPER",
-            "player": {
-                "ID_transfermarkt": "199325",
-                "name": "A. Cantero",
-                "score": 0.2764471111111111,
-                "roles": {
-                    "GOALKEEPER": {
-                        "weight": 1.0,
-                        "score": 0.2764471111111111
-                    },
-                    "UTILITY": {
-                        "weight": 1.0,
-                        "score": 0.2764471111111111
-                    }
-                }
-            },
-            "score": 0.28,
-            "role_weight": 1.0
         },
         {
             "role": "WINGER",
@@ -649,6 +621,30 @@
             },
             "score": 0.24,
             "role_weight": 0.8
+        },
+        {
+            "role": "WINGER",
+            "player": {
+                "ID_transfermarkt": "634267",
+                "name": "D. González",
+                "score": 0.26388866953405016,
+                "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.6,
+                        "score": 0.20440728447164178
+                    },
+                    "WINGER": {
+                        "weight": 1.0,
+                        "score": 0.26388866953405016
+                    },
+                    "UTILITY": {
+                        "weight": 1.6,
+                        "score": 0.26388866953405016
+                    }
+                }
+            },
+            "score": 0.26,
+            "role_weight": 1.0
         },
         {
             "role": "FULLBACK",

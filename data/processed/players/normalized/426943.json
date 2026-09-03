@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Mohamed Djetei",
         "short_name": "M. Djetei",
+        "dateOfBirth": "1994-08-18",
+        "placeOfBirth": "Yaoundé",
         "nation_1": "Cameroon",
         "nation_2": "",
         "height": 1.85,
@@ -14,6 +17,22 @@
         "prime_date": "2024-06-24"
     },
     "matches": [
+        {
+            "game_id": "4910286",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "5358",
+            "opponent_id": "12697",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4647106",
             "season": 2025,
@@ -385,7 +404,7 @@
         {
             "game_id": "4577679",
             "season": 2024,
-            "competition_type": "Play-Offs",
+            "competition_type": "First Tier",
             "club_id": "5223",
             "opponent_id": "1064",
             "position": "CB",
@@ -401,7 +420,7 @@
         {
             "game_id": "4577688",
             "season": 2024,
-            "competition_type": "Play-Offs",
+            "competition_type": "First Tier",
             "club_id": "5223",
             "opponent_id": "810",
             "position": null,
@@ -417,7 +436,7 @@
         {
             "game_id": "4577697",
             "season": 2024,
-            "competition_type": "Play-Offs",
+            "competition_type": "First Tier",
             "club_id": "5223",
             "opponent_id": "119",
             "position": "CB",
@@ -433,7 +452,7 @@
         {
             "game_id": "4577682",
             "season": 2024,
-            "competition_type": "Play-Offs",
+            "competition_type": "First Tier",
             "club_id": "5223",
             "opponent_id": "3793",
             "position": "CB",
@@ -449,7 +468,7 @@
         {
             "game_id": "4577676",
             "season": 2024,
-            "competition_type": "Play-Offs",
+            "competition_type": "First Tier",
             "club_id": "5223",
             "opponent_id": "2976",
             "position": "CB",
@@ -465,7 +484,7 @@
         {
             "game_id": "4577673",
             "season": 2024,
-            "competition_type": "Play-Offs",
+            "competition_type": "First Tier",
             "club_id": "5223",
             "opponent_id": "1064",
             "position": "CB",
@@ -481,7 +500,7 @@
         {
             "game_id": "4577694",
             "season": 2024,
-            "competition_type": "Play-Offs",
+            "competition_type": "First Tier",
             "club_id": "5223",
             "opponent_id": "810",
             "position": "CB",
@@ -497,7 +516,7 @@
         {
             "game_id": "4577702",
             "season": 2024,
-            "competition_type": "Play-Offs",
+            "competition_type": "First Tier",
             "club_id": "5223",
             "opponent_id": "119",
             "position": "CB",
@@ -513,7 +532,7 @@
         {
             "game_id": "4577685",
             "season": 2024,
-            "competition_type": "Play-Offs",
+            "competition_type": "First Tier",
             "club_id": "5223",
             "opponent_id": "3793",
             "position": "CB",
@@ -529,7 +548,7 @@
         {
             "game_id": "4577691",
             "season": 2024,
-            "competition_type": "Play-Offs",
+            "competition_type": "First Tier",
             "club_id": "5223",
             "opponent_id": "2976",
             "position": "CB",
@@ -6512,7 +6531,57 @@
         }
     ],
     "clubs": {
+        "5358": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 1,
+                "participations": 1,
+                "minutes": 90,
+                "starts": 1,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 0,
+                "points": 3,
+                "clean_sheets": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "goal_matches": 1,
+                "assist_matches": 1,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "CB": 1
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 3.0,
+                "minutes_per_match": 90.0,
+                "win_rate": 1.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "CB"
+            },
+            "competitions": {
+                "Third Tier": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "5223": {
+            "type": "club",
             "seasons": [
                 2024,
                 2025
@@ -6550,20 +6619,14 @@
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 47,
-                    "minutes": 2084,
+                    "matches": 57,
+                    "minutes": 2863,
                     "goals": 1,
                     "assists": 1
                 },
                 "Domestic Cup": {
                     "matches": 4,
                     "minutes": 90,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Play-Offs": {
-                    "matches": 10,
-                    "minutes": 779,
                     "goals": 0,
                     "assists": 0
                 }
@@ -6574,6 +6637,7 @@
             }
         },
         "1532": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -6642,6 +6706,7 @@
             }
         },
         "993": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -6703,6 +6768,7 @@
             }
         },
         "5648": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -6766,6 +6832,7 @@
             }
         },
         "3434": {
+            "type": "national",
             "seasons": [
                 2015,
                 2016
@@ -6823,6 +6890,7 @@
             }
         },
         "5070": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -6873,18 +6941,18 @@
     },
     "career": {
         "club": {
-            "matches": 380,
-            "minutes": 16957,
+            "matches": 383,
+            "minutes": 17227,
             "goals": 9,
             "assists": 2,
             "goal_contributions": 11,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 10
+            "season_count": 12
         },
         "national": {
-            "matches": 25,
-            "minutes": 788,
+            "matches": 23,
+            "minutes": 608,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,

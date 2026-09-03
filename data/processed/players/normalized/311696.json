@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Kuki Zalazar",
         "short_name": "K. Zalazar",
+        "dateOfBirth": "1998-05-05",
+        "placeOfBirth": "Montevideo",
         "nation_1": "Spain",
         "nation_2": "Uruguay",
         "height": 1.77,
@@ -14,6 +17,54 @@
         "prime_date": "2026-06-22"
     },
     "matches": [
+        {
+            "game_id": "4918819",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "8568",
+            "opponent_id": "237",
+            "position": "AMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4918759",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "8568",
+            "opponent_id": "472",
+            "position": "AMF",
+            "minutes": 73,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4918746",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "8568",
+            "opponent_id": "10718",
+            "position": "CMF",
+            "minutes": 67,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4647769",
             "season": 2025,
@@ -7722,49 +7773,52 @@
     ],
     "clubs": {
         "8568": {
+            "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 62,
-                "participations": 62,
-                "minutes": 3985,
-                "starts": 48,
+                "matches": 65,
+                "participations": 65,
+                "minutes": 4215,
+                "starts": 51,
                 "captain_matches": 0,
                 "goals": 10,
                 "assists": 8,
-                "goals_conceded": 56,
+                "goals_conceded": 63,
                 "points": 101,
                 "clean_sheets": 32,
                 "wins": 28,
                 "draws": 17,
-                "losses": 17,
-                "goal_matches": 52,
-                "assist_matches": 54,
+                "losses": 20,
+                "goal_matches": 55,
+                "assist_matches": 57,
                 "goal_contributions": 18
             },
             "positions": {
+                "AMF": 37,
+                "CMF": 1,
                 "CF": 2,
-                "AMF": 35,
                 "RW": 10,
                 "LW": 2,
                 "SS": 1
             },
             "derived": {
-                "season_count": 2,
-                "points_per_match": 1.629,
-                "minutes_per_match": 64.3,
-                "win_rate": 0.4516,
-                "goals_per_90": 0.226,
-                "assists_per_90": 0.181,
-                "contributions_per_90": 0.407,
+                "season_count": 3,
+                "points_per_match": 1.554,
+                "minutes_per_match": 64.8,
+                "win_rate": 0.4308,
+                "goals_per_90": 0.214,
+                "assists_per_90": 0.171,
+                "contributions_per_90": 0.384,
                 "primary_position": "AMF"
             },
             "competitions": {
                 "Second Tier": {
-                    "matches": 42,
-                    "minutes": 2446,
+                    "matches": 45,
+                    "minutes": 2676,
                     "goals": 6,
                     "assists": 4
                 },
@@ -7793,6 +7847,7 @@
             }
         },
         "993": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024
@@ -7861,6 +7916,7 @@
             }
         },
         "897": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023
@@ -7925,6 +7981,7 @@
             }
         },
         "4032": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022
@@ -7984,6 +8041,7 @@
             }
         },
         "366": {
+            "type": "club",
             "seasons": [
                 2018,
                 2020,
@@ -8048,6 +8106,7 @@
             }
         },
         "7078": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -8108,6 +8167,7 @@
             }
         },
         "5649": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -8154,6 +8214,7 @@
             }
         },
         "7077": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -8218,6 +8279,7 @@
             }
         },
         "1084": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -8270,6 +8332,7 @@
             }
         },
         "55951": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -8311,6 +8374,7 @@
             }
         },
         "12395": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -8373,6 +8437,7 @@
             }
         },
         "33775": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -8421,14 +8486,14 @@
     },
     "career": {
         "club": {
-            "matches": 464,
-            "minutes": 16470,
+            "matches": 467,
+            "minutes": 16700,
             "goals": 43,
             "assists": 22,
             "goal_contributions": 65,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 10
+            "season_count": 11
         },
         "national": {
             "matches": 17,

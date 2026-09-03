@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "David Castro",
         "short_name": "D. Castro",
+        "dateOfBirth": "1995-10-09",
+        "placeOfBirth": "Cuntis",
         "nation_1": "Spain",
         "nation_2": "",
         "height": 1.92,
@@ -14,6 +17,54 @@
         "prime_date": "2024-06-24"
     },
     "matches": [
+        {
+            "game_id": "4909738",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "1176",
+            "opponent_id": "16122",
+            "position": "",
+            "minutes": 14,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4973493",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "710",
+            "opponent_id": "53453",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4899705",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "710",
+            "opponent_id": "790",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 1
+        },
         {
             "game_id": "4897907",
             "season": 2026,
@@ -29,22 +80,6 @@
             "goals_conceded": 0,
             "participation": "not in squad",
             "club_points": 3
-        },
-        {
-            "game_id": "4899681",
-            "season": 2026,
-            "competition_type": "First Tier",
-            "club_id": "710",
-            "opponent_id": "11033",
-            "position": null,
-            "minutes": 0,
-            "started": false,
-            "captain": false,
-            "goals": 0,
-            "assists": 0,
-            "goals_conceded": 0,
-            "participation": "not in squad",
-            "club_points": 0
         },
         {
             "game_id": "4897895",
@@ -5669,27 +5704,100 @@
         }
     ],
     "clubs": {
+        "1176": {
+            "type": "club",
+            "seasons": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2026
+            ],
+            "stats": {
+                "matches": 154,
+                "participations": 154,
+                "minutes": 10920,
+                "starts": 124,
+                "captain_matches": 22,
+                "goals": 4,
+                "assists": 1,
+                "goals_conceded": 113,
+                "points": 233,
+                "clean_sheets": 80,
+                "wins": 65,
+                "draws": 38,
+                "losses": 51,
+                "goal_matches": 150,
+                "assist_matches": 153,
+                "goal_contributions": 5
+            },
+            "positions": {
+                "CB": 118,
+                "LB": 8
+            },
+            "derived": {
+                "season_count": 5,
+                "points_per_match": 1.513,
+                "minutes_per_match": 70.9,
+                "win_rate": 0.4221,
+                "goals_per_90": 0.033,
+                "assists_per_90": 0.008,
+                "contributions_per_90": 0.041,
+                "primary_position": "CB"
+            },
+            "competitions": {
+                "Third Tier": {
+                    "matches": 74,
+                    "minutes": 5423,
+                    "goals": 4,
+                    "assists": 0
+                },
+                "Second Tier": {
+                    "matches": 69,
+                    "minutes": 4447,
+                    "goals": 0,
+                    "assists": 1
+                },
+                "Domestic Cup": {
+                    "matches": 8,
+                    "minutes": 780,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Play-Offs": {
+                    "matches": 3,
+                    "minutes": 270,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "710": {
+            "type": "club",
             "seasons": [
                 2025,
                 2026
             ],
             "stats": {
-                "matches": 58,
-                "participations": 58,
+                "matches": 59,
+                "participations": 59,
                 "minutes": 244,
                 "starts": 2,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 0,
                 "goals_conceded": 2,
-                "points": 115,
-                "clean_sheets": 56,
+                "points": 116,
+                "clean_sheets": 57,
                 "wins": 35,
-                "draws": 10,
+                "draws": 11,
                 "losses": 13,
-                "goal_matches": 58,
-                "assist_matches": 58,
+                "goal_matches": 59,
+                "assist_matches": 59,
                 "goal_contributions": 0
             },
             "positions": {
@@ -5698,9 +5806,9 @@
             },
             "derived": {
                 "season_count": 2,
-                "points_per_match": 1.983,
-                "minutes_per_match": 4.2,
-                "win_rate": 0.6034,
+                "points_per_match": 1.966,
+                "minutes_per_match": 4.1,
+                "win_rate": 0.5932,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
@@ -5708,7 +5816,7 @@
             },
             "competitions": {
                 "International Cup": {
-                    "matches": 20,
+                    "matches": 21,
                     "minutes": 48,
                     "goals": 0,
                     "assists": 0
@@ -5733,77 +5841,8 @@
                 "individual_titles": {}
             }
         },
-        "1176": {
-            "seasons": [
-                2021,
-                2022,
-                2023,
-                2024
-            ],
-            "stats": {
-                "matches": 153,
-                "participations": 153,
-                "minutes": 10906,
-                "starts": 124,
-                "captain_matches": 22,
-                "goals": 4,
-                "assists": 1,
-                "goals_conceded": 112,
-                "points": 232,
-                "clean_sheets": 80,
-                "wins": 65,
-                "draws": 37,
-                "losses": 51,
-                "goal_matches": 149,
-                "assist_matches": 152,
-                "goal_contributions": 5
-            },
-            "positions": {
-                "CB": 118,
-                "LB": 8
-            },
-            "derived": {
-                "season_count": 4,
-                "points_per_match": 1.516,
-                "minutes_per_match": 71.3,
-                "win_rate": 0.4248,
-                "goals_per_90": 0.033,
-                "assists_per_90": 0.008,
-                "contributions_per_90": 0.041,
-                "primary_position": "CB"
-            },
-            "competitions": {
-                "Second Tier": {
-                    "matches": 69,
-                    "minutes": 4447,
-                    "goals": 0,
-                    "assists": 1
-                },
-                "Domestic Cup": {
-                    "matches": 8,
-                    "minutes": 780,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Play-Offs": {
-                    "matches": 3,
-                    "minutes": 270,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Third Tier": {
-                    "matches": 73,
-                    "minutes": 5409,
-                    "goals": 4,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "2296": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -5865,6 +5904,7 @@
             }
         },
         "6182": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -5915,6 +5955,7 @@
             }
         },
         "5650": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018
@@ -5981,24 +6022,24 @@
     },
     "career": {
         "club": {
-            "matches": 293,
-            "minutes": 18773,
+            "matches": 353,
+            "minutes": 19031,
             "goals": 7,
             "assists": 2,
             "goal_contributions": 9,
-            "team_titles": 1,
+            "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 8
+            "season_count": 10
         },
         "national": {
-            "matches": 58,
-            "minutes": 244,
+            "matches": 0,
+            "minutes": 0,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
-            "team_titles": 1,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 2
+            "season_count": 0
         }
     }
 }

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Arnau Martínez",
         "short_name": "A. Martínez",
+        "dateOfBirth": "2003-04-25",
+        "placeOfBirth": "Premià de Dalt",
         "nation_1": "Spain",
         "nation_2": "",
         "height": 1.82,
@@ -14,6 +17,54 @@
         "prime_date": "2023-12-22"
     },
     "matches": [
+        {
+            "game_id": "4909480",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1049",
+            "opponent_id": "897",
+            "position": "RB",
+            "minutes": 82,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4918760",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "12321",
+            "opponent_id": "993",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4918750",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "12321",
+            "opponent_id": "1244",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4645988",
             "season": 2025,
@@ -4702,35 +4753,86 @@
         }
     ],
     "clubs": {
+        "1049": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 1,
+                "participations": 1,
+                "minutes": 82,
+                "starts": 1,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 3,
+                "points": 0,
+                "clean_sheets": 0,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "goal_matches": 1,
+                "assist_matches": 1,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "RB": 1
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 0.0,
+                "minutes_per_match": 82.0,
+                "win_rate": 0.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "RB"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 1,
+                    "minutes": 82,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "12321": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 266,
-                "participations": 266,
-                "minutes": 15684,
-                "starts": 181,
-                "captain_matches": 52,
+                "matches": 268,
+                "participations": 268,
+                "minutes": 15864,
+                "starts": 183,
+                "captain_matches": 54,
                 "goals": 11,
-                "assists": 21,
-                "goals_conceded": 213,
-                "points": 403,
+                "assists": 22,
+                "goals_conceded": 216,
+                "points": 404,
                 "clean_sheets": 129,
                 "wins": 115,
-                "draws": 58,
-                "losses": 93,
-                "goal_matches": 255,
-                "assist_matches": 245,
-                "goal_contributions": 32
+                "draws": 59,
+                "losses": 94,
+                "goal_matches": 257,
+                "assist_matches": 246,
+                "goal_contributions": 33
             },
             "positions": {
-                "RB": 127,
+                "RB": 129,
                 "LB": 9,
                 "DMF": 4,
                 "CB": 30,
@@ -4739,16 +4841,22 @@
                 "CMF": 1
             },
             "derived": {
-                "season_count": 6,
-                "points_per_match": 1.515,
-                "minutes_per_match": 59.0,
-                "win_rate": 0.4323,
-                "goals_per_90": 0.063,
-                "assists_per_90": 0.121,
-                "contributions_per_90": 0.184,
+                "season_count": 7,
+                "points_per_match": 1.507,
+                "minutes_per_match": 59.2,
+                "win_rate": 0.4291,
+                "goals_per_90": 0.062,
+                "assists_per_90": 0.125,
+                "contributions_per_90": 0.187,
                 "primary_position": "RB"
             },
             "competitions": {
+                "Second Tier": {
+                    "matches": 83,
+                    "minutes": 4394,
+                    "goals": 2,
+                    "assists": 9
+                },
                 "First Tier": {
                     "matches": 151,
                     "minutes": 9283,
@@ -4772,12 +4880,6 @@
                     "minutes": 720,
                     "goals": 1,
                     "assists": 0
-                },
-                "Second Tier": {
-                    "matches": 81,
-                    "minutes": 4214,
-                    "goals": 2,
-                    "assists": 8
                 }
             },
             "awards": {
@@ -4786,6 +4888,7 @@
             }
         },
         "9567": {
+            "type": "national",
             "seasons": [
                 2022,
                 2023
@@ -4848,6 +4951,7 @@
             }
         },
         "12609": {
+            "type": "national",
             "seasons": [
                 2021
             ],
@@ -4905,24 +5009,24 @@
     },
     "career": {
         "club": {
-            "matches": 0,
-            "minutes": 0,
-            "goals": 0,
-            "assists": 0,
-            "goal_contributions": 0,
+            "matches": 269,
+            "minutes": 15946,
+            "goals": 11,
+            "assists": 22,
+            "goal_contributions": 33,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 0
+            "season_count": 7
         },
         "national": {
-            "matches": 291,
-            "minutes": 16749,
-            "goals": 12,
-            "assists": 23,
-            "goal_contributions": 35,
+            "matches": 25,
+            "minutes": 1065,
+            "goals": 1,
+            "assists": 2,
+            "goal_contributions": 3,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 6
+            "season_count": 3
         }
     }
 }

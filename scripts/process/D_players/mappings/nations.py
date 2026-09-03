@@ -44,7 +44,7 @@ NATIONS_MAP = {
     42: "42",
     43: "Dominican Republic",
     44: "Ecuador",
-    45: "45",
+    45: "El Salvador",
     46: "Eritrea",
     47: "Estonia",
     48: "48",

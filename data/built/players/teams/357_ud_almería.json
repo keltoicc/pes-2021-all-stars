@@ -1,6 +1,6 @@
 {
     "tactic": "4-2-3-1",
-    "total_score": 8.6,
+    "total_score": 8.64,
     "players": [
         {
             "role": "ATTACKING_MID",
@@ -107,6 +107,26 @@
             "role_weight": 0.7026
         },
         {
+            "role": "GOALKEEPER",
+            "player": {
+                "ID_transfermarkt": "81997",
+                "name": "F. Martínez",
+                "score": 0.44539267680261024,
+                "roles": {
+                    "GOALKEEPER": {
+                        "weight": 1.0,
+                        "score": 0.44539267680261024
+                    },
+                    "UTILITY": {
+                        "weight": 1.0,
+                        "score": 0.44539267680261024
+                    }
+                }
+            },
+            "score": 0.45,
+            "role_weight": 1.0
+        },
+        {
             "role": "UTILITY",
             "player": {
                 "ID_transfermarkt": "457221",
@@ -137,26 +157,6 @@
             },
             "score": 0.44,
             "role_weight": 2.0603
-        },
-        {
-            "role": "GOALKEEPER",
-            "player": {
-                "ID_transfermarkt": "81997",
-                "name": "F. Martínez",
-                "score": 0.43201830142826264,
-                "roles": {
-                    "GOALKEEPER": {
-                        "weight": 1.0,
-                        "score": 0.43201830142826264
-                    },
-                    "UTILITY": {
-                        "weight": 1.0,
-                        "score": 0.43201830142826264
-                    }
-                }
-            },
-            "score": 0.43,
-            "role_weight": 1.0
         },
         {
             "role": "STRIKER",
@@ -237,6 +237,42 @@
         {
             "role": "CENTER_BACK",
             "player": {
+                "ID_transfermarkt": "333361",
+                "name": "Chumi",
+                "score": 0.40341058949154135,
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 0.9159663865546218,
+                        "score": 0.38608867471910796
+                    },
+                    "SWEEPER": {
+                        "weight": 0.4579831932773109,
+                        "score": 0.2730059200332084
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.9831932773109243,
+                        "score": 0.40000621985214396
+                    },
+                    "FULLBACK": {
+                        "weight": 0.08403361344537816,
+                        "score": 0.11694288763133784
+                    },
+                    "WING_BACK": {
+                        "weight": 0.058823529411764705,
+                        "score": 0.09784143946860652
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.40341058949154135
+                    }
+                }
+            },
+            "score": 0.39,
+            "role_weight": 0.916
+        },
+        {
+            "role": "CENTER_BACK",
+            "player": {
                 "ID_transfermarkt": "30563",
                 "name": "S. Acasiete",
                 "score": 0.3988847946735395,
@@ -289,42 +325,6 @@
             },
             "score": 0.4,
             "role_weight": 1.0
-        },
-        {
-            "role": "CENTER_BACK",
-            "player": {
-                "ID_transfermarkt": "333361",
-                "name": "Chumi",
-                "score": 0.3899581088628749,
-                "roles": {
-                    "CENTER_BACK": {
-                        "weight": 0.9159663865546218,
-                        "score": 0.37321382573670364
-                    },
-                    "SWEEPER": {
-                        "weight": 0.4579831932773109,
-                        "score": 0.2639020270109976
-                    },
-                    "WIDE_CENTER_BACK": {
-                        "weight": 0.9831932773109243,
-                        "score": 0.38666726429649195
-                    },
-                    "FULLBACK": {
-                        "weight": 0.08403361344537816,
-                        "score": 0.11304320831824961
-                    },
-                    "WING_BACK": {
-                        "weight": 0.058823529411764705,
-                        "score": 0.09457873367104375
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.3899581088628749
-                    }
-                }
-            },
-            "score": 0.37,
-            "role_weight": 0.916
         },
         {
             "role": "STRIKER",
@@ -511,36 +511,72 @@
             "player": {
                 "ID_transfermarkt": "537762",
                 "name": "S. Arribas",
-                "score": 0.34872840882352935,
+                "score": 0.36143737805755394,
                 "roles": {
                     "CENTRAL_MID": {
-                        "weight": 0.5305263157894736,
-                        "score": 0.25400413915561887
+                        "weight": 0.5322916666666666,
+                        "score": 0.2636986440708011
                     },
                     "ATTACKING_MID": {
-                        "weight": 0.7578947368421053,
-                        "score": 0.3035930140081502
+                        "weight": 0.7604166666666666,
+                        "score": 0.3151801636361089
                     },
                     "SECOND_STRIKER": {
-                        "weight": 0.45473684210526316,
-                        "score": 0.23516213745569614
+                        "weight": 0.45624999999999993,
+                        "score": 0.24413750496351563
                     },
                     "WIDE_MID": {
-                        "weight": 0.14526315789473684,
-                        "score": 0.1329122679801328
+                        "weight": 0.14375,
+                        "score": 0.13703673093175012
                     },
                     "WINGER": {
-                        "weight": 0.24210526315789474,
-                        "score": 0.17158900013123723
+                        "weight": 0.23958333333333334,
+                        "score": 0.17691365890579167
                     },
                     "UTILITY": {
-                        "weight": 2.130526315789474,
-                        "score": 0.34872840882352935
+                        "weight": 2.1322916666666667,
+                        "score": 0.36143737805755394
                     }
                 }
             },
-            "score": 0.3,
-            "role_weight": 0.7579
+            "score": 0.32,
+            "role_weight": 0.7604
+        },
+        {
+            "role": "FULLBACK",
+            "player": {
+                "ID_transfermarkt": "341272",
+                "name": "Álex Pozo",
+                "score": 0.34821944201244714,
+                "roles": {
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.6620689655172414,
+                        "score": 0.2833378738558122
+                    },
+                    "FULLBACK": {
+                        "weight": 0.8275862068965517,
+                        "score": 0.31678137327092826
+                    },
+                    "WING_BACK": {
+                        "weight": 0.5793103448275861,
+                        "score": 0.26503831216635576
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.10344827586206896,
+                        "score": 0.11199912859673017
+                    },
+                    "WINGER": {
+                        "weight": 0.1724137931034483,
+                        "score": 0.14459025328162625
+                    },
+                    "UTILITY": {
+                        "weight": 2.3448275862068964,
+                        "score": 0.34821944201244714
+                    }
+                }
+            },
+            "score": 0.32,
+            "role_weight": 0.8276
         },
         {
             "role": "DEFENSIVE_MID",
@@ -616,34 +652,6 @@
                 }
             },
             "score": 0.33,
-            "role_weight": 1.0
-        },
-        {
-            "role": "FULLBACK",
-            "player": {
-                "ID_transfermarkt": "51547",
-                "name": "Mané",
-                "score": 0.3159038484848484,
-                "roles": {
-                    "WIDE_CENTER_BACK": {
-                        "weight": 0.8,
-                        "score": 0.282552991826366
-                    },
-                    "FULLBACK": {
-                        "weight": 1.0,
-                        "score": 0.3159038484848484
-                    },
-                    "WING_BACK": {
-                        "weight": 0.7,
-                        "score": 0.2643041222555499
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.3159038484848484
-                    }
-                }
-            },
-            "score": 0.32,
             "role_weight": 1.0
         }
     ]

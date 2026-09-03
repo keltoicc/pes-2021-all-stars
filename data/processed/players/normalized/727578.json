@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "David Astals",
         "short_name": "D. Astals",
+        "dateOfBirth": "2001-12-13",
+        "placeOfBirth": "Bienvenida ",
         "nation_1": "Spain",
         "nation_2": "",
         "height": 1.75,
@@ -14,6 +17,22 @@
         "prime_date": "2026-06-23"
     },
     "matches": [
+        {
+            "game_id": "4910283",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "13241",
+            "opponent_id": "16022",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4894152",
             "season": 2025,
@@ -3937,7 +3956,71 @@
     ],
     "achievements": [],
     "clubs": {
+        "13241": {
+            "type": "club",
+            "seasons": [
+                2024,
+                2026
+            ],
+            "stats": {
+                "matches": 42,
+                "participations": 42,
+                "minutes": 2026,
+                "starts": 23,
+                "captain_matches": 0,
+                "goals": 2,
+                "assists": 1,
+                "goals_conceded": 19,
+                "points": 63,
+                "clean_sheets": 27,
+                "wins": 18,
+                "draws": 9,
+                "losses": 15,
+                "goal_matches": 40,
+                "assist_matches": 41,
+                "goal_contributions": 3
+            },
+            "positions": {
+                "RB": 21,
+                "RW": 2
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 1.5,
+                "minutes_per_match": 48.2,
+                "win_rate": 0.4286,
+                "goals_per_90": 0.089,
+                "assists_per_90": 0.044,
+                "contributions_per_90": 0.133,
+                "primary_position": "RB"
+            },
+            "competitions": {
+                "Third Tier": {
+                    "matches": 39,
+                    "minutes": 1849,
+                    "goals": 2,
+                    "assists": 1
+                },
+                "Play-Offs": {
+                    "matches": 2,
+                    "minutes": 87,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "11422": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -4017,68 +4100,8 @@
                 "individual_titles": {}
             }
         },
-        "13241": {
-            "seasons": [
-                2024
-            ],
-            "stats": {
-                "matches": 41,
-                "participations": 41,
-                "minutes": 1936,
-                "starts": 22,
-                "captain_matches": 0,
-                "goals": 2,
-                "assists": 1,
-                "goals_conceded": 16,
-                "points": 63,
-                "clean_sheets": 27,
-                "wins": 18,
-                "draws": 9,
-                "losses": 14,
-                "goal_matches": 39,
-                "assist_matches": 40,
-                "goal_contributions": 3
-            },
-            "positions": {
-                "RB": 20,
-                "RW": 2
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 1.537,
-                "minutes_per_match": 47.2,
-                "win_rate": 0.439,
-                "goals_per_90": 0.093,
-                "assists_per_90": 0.046,
-                "contributions_per_90": 0.139,
-                "primary_position": "RB"
-            },
-            "competitions": {
-                "Play-Offs": {
-                    "matches": 2,
-                    "minutes": 87,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Third Tier": {
-                    "matches": 38,
-                    "minutes": 1759,
-                    "goals": 2,
-                    "assists": 1
-                },
-                "Domestic Cup": {
-                    "matches": 1,
-                    "minutes": 90,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "34549": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -4135,14 +4158,14 @@
     },
     "career": {
         "club": {
-            "matches": 245,
-            "minutes": 11380,
+            "matches": 246,
+            "minutes": 11470,
             "goals": 6,
             "assists": 12,
             "goal_contributions": 18,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 7
+            "season_count": 8
         },
         "national": {
             "matches": 0,
