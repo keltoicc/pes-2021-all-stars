@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import SearchResults from "../../components/search/SearchResults.astro";
 ---
 
 <Layout title="Search">
@@ -14,18 +15,19 @@ import Layout from "../../layouts/Layout.astro";
             </p>
         </header>
 
-        <div id="search-results"></div>
+        <SearchResults />
 
     </main>
 
     <script>
         import SearchService from "../../lib/search/SearchService";
+        import SearchRenderer from "../../lib/search/SearchRenderer";
 
         const params = new URLSearchParams(window.location.search);
         const query = params.get("q")?.trim() ?? "";
 
         const queryElement = document.querySelector("#search-query");
-        const resultsElement = document.querySelector("#search-results");
+        const resultsElement = document.querySelector("#search-result-list");
 
         if (query) {
 
@@ -40,39 +42,11 @@ import Layout from "../../layouts/Layout.astro";
 
             } else {
 
-                const list = document.createElement("ul");
+                SearchRenderer.render(
+                    results,
+                    resultsElement as HTMLElement
+                );
 
-                for (const result of results) {
-
-                    const item = document.createElement("li");
-                    const link = document.createElement("a");
-
-                    link.textContent = result.name;
-
-                    switch (result.type) {
-
-                        case "player":
-                            link.href =
-                                `${import.meta.env.BASE_URL}players/${result.slug}`;
-                            break;
-
-                        case "team":
-                            link.href =
-                                `${import.meta.env.BASE_URL}teams/${result.slug}`;
-                            break;
-
-                        case "country":
-                            link.href =
-                                `${import.meta.env.BASE_URL}countries/${result.slug}`;
-                            break;
-
-                    }
-
-                    item.appendChild(link);
-                    list.appendChild(item);
-                }
-
-                resultsElement!.appendChild(list);
             }
         }
     </script>
