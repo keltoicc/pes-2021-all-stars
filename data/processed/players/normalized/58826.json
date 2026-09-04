@@ -1,7 +1,10 @@
 {
     "player": {
+        "name": "Jean-Pascal Fontaine",
         "short_name": "J. Fontaine",
-        "nation_1": null,
+        "dateOfBirth": "1989-03-11",
+        "placeOfBirth": "Saint-Louis",
+        "nation_1": "249",
         "nation_2": "France",
         "height": 1.78,
         "foot": "Right",
@@ -14,6 +17,22 @@
         "prime_date": "2018-05-16"
     },
     "matches": [
+        {
+            "game_id": "4489616",
+            "season": 2024,
+            "competition_type": "Domestic Cup",
+            "club_id": "20375",
+            "opponent_id": "17462",
+            "position": "CMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 4,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "3966110",
             "season": 2022,
@@ -10490,42 +10509,46 @@
     ],
     "clubs": {
         "20375": {
+            "type": "club",
             "seasons": [
-                2022
+                2022,
+                2024
             ],
             "stats": {
-                "matches": 1,
-                "participations": 1,
-                "minutes": 90,
-                "starts": 1,
+                "matches": 2,
+                "participations": 2,
+                "minutes": 180,
+                "starts": 2,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 0,
-                "goals_conceded": 0,
+                "goals_conceded": 4,
                 "points": 0,
                 "clean_sheets": 1,
                 "wins": 0,
                 "draws": 0,
-                "losses": 1,
-                "goal_matches": 1,
-                "assist_matches": 1,
+                "losses": 2,
+                "goal_matches": 2,
+                "assist_matches": 2,
                 "goal_contributions": 0
             },
-            "positions": {},
+            "positions": {
+                "CMF": 1
+            },
             "derived": {
-                "season_count": 1,
+                "season_count": 2,
                 "points_per_match": 0.0,
                 "minutes_per_match": 90.0,
                 "win_rate": 0.0,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
-                "primary_position": ""
+                "primary_position": "CMF"
             },
             "competitions": {
                 "Domestic Cup": {
-                    "matches": 1,
-                    "minutes": 90,
+                    "matches": 2,
+                    "minutes": 180,
                     "goals": 0,
                     "assists": 0
                 }
@@ -10536,6 +10559,7 @@
             }
         },
         "738": {
+            "type": "club",
             "seasons": [
                 2007,
                 2008,
@@ -10631,6 +10655,7 @@
             }
         },
         "15439": {
+            "type": "club",
             "seasons": [
                 2010,
                 2011,
@@ -10687,6 +10712,7 @@
             }
         },
         "3135": {
+            "type": "club",
             "seasons": [
                 2009
             ],
@@ -10739,6 +10765,7 @@
             }
         },
         "23101": {
+            "type": "national",
             "seasons": [
                 2007
             ],
@@ -10793,14 +10820,14 @@
     },
     "career": {
         "club": {
-            "matches": 650,
-            "minutes": 32804,
+            "matches": 651,
+            "minutes": 32894,
             "goals": 32,
             "assists": 38,
             "goal_contributions": 70,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 16
+            "season_count": 17
         },
         "national": {
             "matches": 4,

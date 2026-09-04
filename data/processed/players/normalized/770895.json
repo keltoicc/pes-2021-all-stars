@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Ismaël Boura",
         "short_name": "I. Boura",
+        "dateOfBirth": "2000-08-14",
+        "placeOfBirth": "Bandrele",
         "nation_1": "Comoros",
         "nation_2": "France",
         "height": 1.73,
@@ -14,6 +17,38 @@
         "prime_date": "2026-05-26"
     },
     "matches": [
+        {
+            "game_id": "4894912",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1095",
+            "opponent_id": "1158",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "injured",
+            "club_points": 3
+        },
+        {
+            "game_id": "4894908",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1095",
+            "opponent_id": "10004",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "injured",
+            "club_points": 1
+        },
         {
             "game_id": "4635612",
             "season": 2025,
@@ -5658,27 +5693,29 @@
     ],
     "clubs": {
         "1095": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 117,
-                "participations": 117,
+                "matches": 119,
+                "participations": 119,
                 "minutes": 7368,
                 "starts": 84,
                 "captain_matches": 0,
                 "goals": 1,
                 "assists": 8,
                 "goals_conceded": 77,
-                "points": 176,
-                "clean_sheets": 66,
-                "wins": 50,
-                "draws": 26,
+                "points": 180,
+                "clean_sheets": 68,
+                "wins": 51,
+                "draws": 27,
                 "losses": 41,
-                "goal_matches": 116,
-                "assist_matches": 109,
+                "goal_matches": 118,
+                "assist_matches": 111,
                 "goal_contributions": 9
             },
             "positions": {
@@ -5688,16 +5725,22 @@
                 "LM": 1
             },
             "derived": {
-                "season_count": 3,
-                "points_per_match": 1.504,
-                "minutes_per_match": 63.0,
-                "win_rate": 0.4274,
+                "season_count": 4,
+                "points_per_match": 1.513,
+                "minutes_per_match": 61.9,
+                "win_rate": 0.4286,
                 "goals_per_90": 0.012,
                 "assists_per_90": 0.098,
                 "contributions_per_90": 0.11,
                 "primary_position": "LB"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 2,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Second Tier": {
                     "matches": 106,
                     "minutes": 7016,
@@ -5717,6 +5760,7 @@
             }
         },
         "16430": {
+            "type": "national",
             "seasons": [
                 2023,
                 2024,
@@ -5775,6 +5819,7 @@
             }
         },
         "826": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -5833,6 +5878,7 @@
             }
         },
         "8152": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -5896,6 +5942,7 @@
             }
         },
         "738": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -5951,6 +5998,7 @@
             }
         },
         "10824": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -5992,14 +6040,14 @@
     },
     "career": {
         "club": {
-            "matches": 326,
+            "matches": 328,
             "minutes": 14263,
             "goals": 6,
             "assists": 15,
             "goal_contributions": 21,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 9
+            "season_count": 10
         },
         "national": {
             "matches": 26,

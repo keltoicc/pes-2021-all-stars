@@ -1,0 +1,80 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Search">
+
+    <main class="container">
+
+        <header>
+            <h1>Search</h1>
+
+            <p id="search-query">
+                Enter a search term to find players, teams and countries.
+            </p>
+        </header>
+
+        <div id="search-results"></div>
+
+    </main>
+
+    <script>
+        import SearchService from "../../lib/search/SearchService";
+
+        const params = new URLSearchParams(window.location.search);
+        const query = params.get("q")?.trim() ?? "";
+
+        const queryElement = document.querySelector("#search-query");
+        const resultsElement = document.querySelector("#search-results");
+
+        if (query) {
+
+            queryElement!.innerHTML =
+                `Results for <strong>“${query}”</strong>`;
+
+            const results = await SearchService.search(query);
+
+            if (results.length === 0) {
+
+                resultsElement!.textContent = "No results found.";
+
+            } else {
+
+                const list = document.createElement("ul");
+
+                for (const result of results) {
+
+                    const item = document.createElement("li");
+                    const link = document.createElement("a");
+
+                    link.textContent = result.name;
+
+                    switch (result.type) {
+
+                        case "player":
+                            link.href =
+                                `${import.meta.env.BASE_URL}players/${result.slug}`;
+                            break;
+
+                        case "team":
+                            link.href =
+                                `${import.meta.env.BASE_URL}teams/${result.slug}`;
+                            break;
+
+                        case "country":
+                            link.href =
+                                `${import.meta.env.BASE_URL}countries/${result.slug}`;
+                            break;
+
+                    }
+
+                    item.appendChild(link);
+                    list.appendChild(item);
+                }
+
+                resultsElement!.appendChild(list);
+            }
+        }
+    </script>
+
+</Layout>

@@ -1,8 +1,11 @@
 {
     "player": {
+        "name": "Josué Casimir",
         "short_name": "J. Casimir",
+        "dateOfBirth": "2001-09-24",
+        "placeOfBirth": "Baie-Mahault",
         "nation_1": "Haiti",
-        "nation_2": null,
+        "nation_2": "251",
         "height": 1.78,
         "foot": "Right",
         "position_group": "FORWARD",
@@ -14,6 +17,38 @@
         "prime_date": "2025-06-03"
     },
     "matches": [
+        {
+            "game_id": "4894909",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "290",
+            "opponent_id": "1420",
+            "position": "",
+            "minutes": 19,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4894903",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "290",
+            "opponent_id": "826",
+            "position": "",
+            "minutes": 3,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4776652",
             "season": 2025,
@@ -5401,7 +5436,65 @@
         }
     ],
     "clubs": {
+        "290": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 37,
+                "participations": 37,
+                "minutes": 1543,
+                "starts": 16,
+                "captain_matches": 0,
+                "goals": 1,
+                "assists": 0,
+                "goals_conceded": 27,
+                "points": 34,
+                "clean_sheets": 20,
+                "wins": 8,
+                "draws": 10,
+                "losses": 19,
+                "goal_matches": 36,
+                "assist_matches": 37,
+                "goal_contributions": 1
+            },
+            "positions": {
+                "RW": 11,
+                "RB": 5
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 0.919,
+                "minutes_per_match": 41.7,
+                "win_rate": 0.2162,
+                "goals_per_90": 0.058,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.058,
+                "primary_position": "RW"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 36,
+                    "minutes": 1543,
+                    "goals": 1,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "14161": {
+            "type": "national",
             "seasons": [
                 2023,
                 2025
@@ -5458,62 +5551,8 @@
                 "individual_titles": {}
             }
         },
-        "290": {
-            "seasons": [
-                2025
-            ],
-            "stats": {
-                "matches": 35,
-                "participations": 35,
-                "minutes": 1521,
-                "starts": 16,
-                "captain_matches": 0,
-                "goals": 1,
-                "assists": 0,
-                "goals_conceded": 25,
-                "points": 34,
-                "clean_sheets": 20,
-                "wins": 8,
-                "draws": 10,
-                "losses": 17,
-                "goal_matches": 34,
-                "assist_matches": 35,
-                "goal_contributions": 1
-            },
-            "positions": {
-                "RW": 11,
-                "RB": 5
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 0.971,
-                "minutes_per_match": 43.5,
-                "win_rate": 0.2286,
-                "goals_per_90": 0.059,
-                "assists_per_90": 0.0,
-                "contributions_per_90": 0.059,
-                "primary_position": "RW"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 34,
-                    "minutes": 1521,
-                    "goals": 1,
-                    "assists": 0
-                },
-                "Domestic Cup": {
-                    "matches": 1,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "738": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -5586,6 +5625,7 @@
             }
         },
         "15439": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -5642,6 +5682,7 @@
             }
         },
         "12278": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019
@@ -5682,6 +5723,7 @@
             }
         },
         "32030": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -5730,14 +5772,14 @@
     },
     "career": {
         "club": {
-            "matches": 322,
-            "minutes": 12455,
+            "matches": 324,
+            "minutes": 12477,
             "goals": 17,
             "assists": 26,
             "goal_contributions": 43,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 9
+            "season_count": 10
         },
         "national": {
             "matches": 14,

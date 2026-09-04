@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Joffrey Cuffaut",
         "short_name": "J. Cuffaut",
+        "dateOfBirth": "1988-03-15",
+        "placeOfBirth": "Méru",
         "nation_1": "France",
         "nation_2": "",
         "height": 1.8,
@@ -14,6 +17,22 @@
         "prime_date": "2017-06-01"
     },
     "matches": [
+        {
+            "game_id": "4966994",
+            "season": 2026,
+            "competition_type": "Fifth Tier",
+            "club_id": "42733",
+            "opponent_id": "12276",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
         {
             "game_id": "4761053",
             "season": 2025,
@@ -12170,39 +12189,47 @@
     ],
     "clubs": {
         "42733": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 3,
-                "participations": 3,
+                "matches": 4,
+                "participations": 4,
                 "minutes": 270,
                 "starts": 3,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 0,
                 "goals_conceded": 4,
-                "points": 6,
-                "clean_sheets": 1,
-                "wins": 2,
+                "points": 9,
+                "clean_sheets": 2,
+                "wins": 3,
                 "draws": 0,
                 "losses": 1,
-                "goal_matches": 3,
-                "assist_matches": 3,
+                "goal_matches": 4,
+                "assist_matches": 4,
                 "goal_contributions": 0
             },
             "positions": {},
             "derived": {
-                "season_count": 1,
-                "points_per_match": 2.0,
-                "minutes_per_match": 90.0,
-                "win_rate": 0.6667,
+                "season_count": 2,
+                "points_per_match": 2.25,
+                "minutes_per_match": 67.5,
+                "win_rate": 0.75,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
                 "primary_position": ""
             },
             "competitions": {
+                "Fifth Tier": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Domestic Cup": {
                     "matches": 3,
                     "minutes": 270,
@@ -12216,6 +12243,7 @@
             }
         },
         "1423": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -12284,6 +12312,7 @@
             }
         },
         "1159": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -12357,6 +12386,7 @@
             }
         },
         "10840": {
+            "type": "club",
             "seasons": [
                 2014,
                 2016
@@ -12404,6 +12434,7 @@
             }
         },
         "1164": {
+            "type": "club",
             "seasons": [
                 2010,
                 2011,
@@ -12466,6 +12497,7 @@
             }
         },
         "9802": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -12512,6 +12544,7 @@
             }
         },
         "3135": {
+            "type": "club",
             "seasons": [
                 2006,
                 2007,
@@ -12569,14 +12602,14 @@
     },
     "career": {
         "club": {
-            "matches": 759,
+            "matches": 760,
             "minutes": 40968,
             "goals": 29,
             "assists": 9,
             "goal_contributions": 38,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 19
+            "season_count": 20
         },
         "national": {
             "matches": 0,

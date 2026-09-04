@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Himad Abdelli",
         "short_name": "H. Abdelli",
+        "dateOfBirth": "1999-11-17",
+        "placeOfBirth": "Montivilliers",
         "nation_1": "Algeria",
         "nation_2": "France",
         "height": 1.85,
@@ -8,12 +11,44 @@
         "position_group": "MIDFIELDER",
         "position_1": "AMF",
         "position_2": "CMF",
-        "position_3": "RW",
+        "position_3": "CF",
         "former_clubs": "",
         "market_value": 7000000,
         "prime_date": "2025-12-15"
     },
     "matches": [
+        {
+            "game_id": "4894914",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "244",
+            "opponent_id": "162",
+            "position": "CMF",
+            "minutes": 45,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4894904",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "244",
+            "opponent_id": "667",
+            "position": "CMF",
+            "minutes": 83,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4635309",
             "season": 2025,
@@ -6794,36 +6829,38 @@
     ],
     "clubs": {
         "244": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 16,
-                "participations": 16,
-                "minutes": 178,
-                "starts": 2,
+                "matches": 18,
+                "participations": 18,
+                "minutes": 306,
+                "starts": 4,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 0,
-                "goals_conceded": 9,
-                "points": 23,
-                "clean_sheets": 11,
-                "wins": 7,
+                "goals_conceded": 10,
+                "points": 26,
+                "clean_sheets": 12,
+                "wins": 8,
                 "draws": 2,
-                "losses": 7,
-                "goal_matches": 16,
-                "assist_matches": 16,
+                "losses": 8,
+                "goal_matches": 18,
+                "assist_matches": 18,
                 "goal_contributions": 0
             },
             "positions": {
-                "CMF": 2,
+                "CMF": 4,
                 "AMF": 1
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.438,
-                "minutes_per_match": 11.1,
-                "win_rate": 0.4375,
+                "season_count": 2,
+                "points_per_match": 1.444,
+                "minutes_per_match": 17.0,
+                "win_rate": 0.4444,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
@@ -6831,8 +6868,8 @@
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 14,
-                    "minutes": 133,
+                    "matches": 16,
+                    "minutes": 261,
                     "goals": 0,
                     "assists": 0
                 },
@@ -6849,6 +6886,7 @@
             }
         },
         "1420": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -6919,6 +6957,7 @@
             }
         },
         "3614": {
+            "type": "national",
             "seasons": [
                 2021,
                 2022,
@@ -6978,6 +7017,7 @@
             }
         },
         "738": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -7047,6 +7087,7 @@
             }
         },
         "15439": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -7103,6 +7144,7 @@
             }
         },
         "12278": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017
@@ -7152,14 +7194,14 @@
     },
     "career": {
         "club": {
-            "matches": 376,
-            "minutes": 16726,
+            "matches": 378,
+            "minutes": 16854,
             "goals": 32,
             "assists": 15,
             "goal_contributions": 47,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 10
+            "season_count": 11
         },
         "national": {
             "matches": 47,

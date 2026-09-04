@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Antony Robic",
         "short_name": "A. Robic",
+        "dateOfBirth": "1986-03-05",
+        "placeOfBirth": "Marseille",
         "nation_1": "France",
         "nation_2": "Portugal",
         "height": 1.81,
@@ -14,6 +17,22 @@
         "prime_date": "2017-06-01"
     },
     "matches": [
+        {
+            "game_id": "4967603",
+            "season": 2026,
+            "competition_type": "Fifth Tier",
+            "club_id": "51549",
+            "opponent_id": "8515",
+            "position": "",
+            "minutes": 77,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4677907",
             "season": 2025,
@@ -5828,7 +5847,7 @@
             "competition_type": "First Tier",
             "club_id": "1159",
             "opponent_id": "162",
-            "position": "RM",
+            "position": "RW",
             "minutes": 77,
             "started": true,
             "captain": false,
@@ -6932,7 +6951,7 @@
             "competition_type": "Second Tier",
             "club_id": "1080",
             "opponent_id": "11300",
-            "position": "RM",
+            "position": "RW",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -11889,43 +11908,45 @@
     ],
     "clubs": {
         "51549": {
+            "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 57,
-                "participations": 57,
-                "minutes": 4080,
-                "starts": 47,
+                "matches": 58,
+                "participations": 58,
+                "minutes": 4157,
+                "starts": 48,
                 "captain_matches": 2,
                 "goals": 20,
                 "assists": 1,
                 "goals_conceded": 58,
-                "points": 76,
-                "clean_sheets": 25,
+                "points": 77,
+                "clean_sheets": 26,
                 "wins": 20,
-                "draws": 16,
+                "draws": 17,
                 "losses": 21,
-                "goal_matches": 40,
-                "assist_matches": 56,
+                "goal_matches": 41,
+                "assist_matches": 57,
                 "goal_contributions": 21
             },
             "positions": {},
             "derived": {
-                "season_count": 2,
-                "points_per_match": 1.333,
-                "minutes_per_match": 71.6,
-                "win_rate": 0.3509,
-                "goals_per_90": 0.441,
+                "season_count": 3,
+                "points_per_match": 1.328,
+                "minutes_per_match": 71.7,
+                "win_rate": 0.3448,
+                "goals_per_90": 0.433,
                 "assists_per_90": 0.022,
-                "contributions_per_90": 0.463,
+                "contributions_per_90": 0.455,
                 "primary_position": ""
             },
             "competitions": {
                 "Fifth Tier": {
-                    "matches": 52,
-                    "minutes": 3790,
+                    "matches": 53,
+                    "minutes": 3867,
                     "goals": 17,
                     "assists": 1
                 },
@@ -11942,6 +11963,7 @@
             }
         },
         "61431": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -11997,6 +12019,7 @@
             }
         },
         "595": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -12063,6 +12086,7 @@
             }
         },
         "1080": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -12088,10 +12112,10 @@
                 "goal_contributions": 38
             },
             "positions": {
-                "RW": 64,
+                "RW": 65,
                 "LW": 6,
                 "CF": 1,
-                "RM": 9,
+                "RM": 8,
                 "LM": 1
             },
             "derived": {
@@ -12136,6 +12160,7 @@
             }
         },
         "1159": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -12161,10 +12186,10 @@
                 "goal_contributions": 24
             },
             "positions": {
-                "RW": 53,
+                "RW": 54,
                 "LW": 2,
                 "CMF": 1,
-                "RM": 13,
+                "RM": 12,
                 "LM": 2,
                 "CF": 1
             },
@@ -12212,6 +12237,7 @@
             }
         },
         "10840": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -12258,6 +12284,7 @@
             }
         },
         "1377": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -12316,6 +12343,7 @@
             }
         },
         "5086": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -12362,6 +12390,7 @@
             }
         },
         "1165": {
+            "type": "club",
             "seasons": [
                 2009
             ],
@@ -12408,6 +12437,7 @@
             }
         },
         "3161": {
+            "type": "club",
             "seasons": [
                 2007,
                 2008
@@ -12473,6 +12503,7 @@
             }
         },
         "415": {
+            "type": "club",
             "seasons": [
                 2006
             ],
@@ -12531,6 +12562,7 @@
             }
         },
         "9372": {
+            "type": "club",
             "seasons": [
                 2004
             ],
@@ -12572,14 +12604,14 @@
     },
     "career": {
         "club": {
-            "matches": 741,
-            "minutes": 31338,
+            "matches": 742,
+            "minutes": 31415,
             "goals": 98,
             "assists": 33,
             "goal_contributions": 131,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 20
+            "season_count": 21
         },
         "national": {
             "matches": 0,

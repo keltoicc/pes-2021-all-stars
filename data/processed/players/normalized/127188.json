@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Maxime Dupé",
         "short_name": "Maxime Dupé",
+        "dateOfBirth": "1993-03-04",
+        "placeOfBirth": "Malestroit",
         "nation_1": "France",
         "nation_2": "",
         "height": 1.88,
@@ -14,6 +17,70 @@
         "prime_date": "2023-06-27"
     },
     "matches": [
+        {
+            "game_id": "4895523",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "995",
+            "opponent_id": "855",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4895514",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "995",
+            "opponent_id": "11273",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 5,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4895505",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "995",
+            "opponent_id": "1080",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4895497",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "995",
+            "opponent_id": "1154",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4886673",
             "season": 2025,
@@ -12152,6 +12219,13 @@
             "club_id": 415
         },
         {
+            "title": "French cup runner-up",
+            "season": "25/26",
+            "season_id": 2025,
+            "club_name": "OGC Nice",
+            "club_id": 417
+        },
+        {
             "title": "French 2nd tier champion",
             "season": "21/22",
             "season_id": 2021,
@@ -12195,7 +12269,84 @@
         }
     ],
     "clubs": {
+        "995": {
+            "type": "club",
+            "seasons": [
+                2010,
+                2011,
+                2012,
+                2013,
+                2014,
+                2015,
+                2016,
+                2017,
+                2018,
+                2026
+            ],
+            "stats": {
+                "matches": 354,
+                "participations": 354,
+                "minutes": 6189,
+                "starts": 67,
+                "captain_matches": 2,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 97,
+                "points": 493,
+                "clean_sheets": 305,
+                "wins": 136,
+                "draws": 85,
+                "losses": 133,
+                "goal_matches": 354,
+                "assist_matches": 354,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "GK": 73
+            },
+            "derived": {
+                "season_count": 10,
+                "points_per_match": 1.393,
+                "minutes_per_match": 17.5,
+                "win_rate": 0.3842,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "GK"
+            },
+            "competitions": {
+                "Second Tier": {
+                    "matches": 85,
+                    "minutes": 360,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "First Tier": {
+                    "matches": 228,
+                    "minutes": 3999,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 23,
+                    "minutes": 1350,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "League Cup": {
+                    "matches": 18,
+                    "minutes": 480,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "417": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
@@ -12264,6 +12415,7 @@
             }
         },
         "58": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -12318,6 +12470,7 @@
             }
         },
         "415": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -12389,6 +12542,7 @@
             }
         },
         "3524": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -12448,81 +12602,8 @@
                 "individual_titles": {}
             }
         },
-        "995": {
-            "seasons": [
-                2010,
-                2011,
-                2012,
-                2013,
-                2014,
-                2015,
-                2016,
-                2017,
-                2018
-            ],
-            "stats": {
-                "matches": 350,
-                "participations": 350,
-                "minutes": 5829,
-                "starts": 63,
-                "captain_matches": 2,
-                "goals": 0,
-                "assists": 0,
-                "goals_conceded": 86,
-                "points": 492,
-                "clean_sheets": 305,
-                "wins": 136,
-                "draws": 84,
-                "losses": 130,
-                "goal_matches": 350,
-                "assist_matches": 350,
-                "goal_contributions": 0
-            },
-            "positions": {
-                "GK": 69
-            },
-            "derived": {
-                "season_count": 9,
-                "points_per_match": 1.406,
-                "minutes_per_match": 16.7,
-                "win_rate": 0.3886,
-                "goals_per_90": 0.0,
-                "assists_per_90": 0.0,
-                "contributions_per_90": 0.0,
-                "primary_position": "GK"
-            },
-            "competitions": {
-                "First Tier": {
-                    "matches": 228,
-                    "minutes": 3999,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Domestic Cup": {
-                    "matches": 23,
-                    "minutes": 1350,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "League Cup": {
-                    "matches": 18,
-                    "minutes": 480,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Second Tier": {
-                    "matches": 81,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "10850": {
+            "type": "club",
             "seasons": [
                 2010,
                 2012,
@@ -12580,6 +12661,7 @@
             }
         },
         "23658": {
+            "type": "national",
             "seasons": [
                 2012
             ],
@@ -12636,6 +12718,7 @@
             }
         },
         "23101": {
+            "type": "national",
             "seasons": [
                 2011
             ],
@@ -12682,6 +12765,7 @@
             }
         },
         "25250": {
+            "type": "national",
             "seasons": [
                 2010
             ],
@@ -12730,6 +12814,7 @@
             }
         },
         "10831": {
+            "type": "national",
             "seasons": [
                 2009
             ],
@@ -12790,6 +12875,7 @@
             }
         },
         "10844": {
+            "type": "national",
             "seasons": [
                 2008
             ],
@@ -12840,24 +12926,24 @@
     },
     "career": {
         "club": {
-            "matches": 604,
-            "minutes": 22839,
+            "matches": 722,
+            "minutes": 24909,
             "goals": 0,
             "assists": 1,
             "goal_contributions": 1,
             "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 14
+            "season_count": 17
         },
         "national": {
-            "matches": 154,
-            "minutes": 2530,
+            "matches": 40,
+            "minutes": 820,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 8
+            "season_count": 5
         }
     }
 }

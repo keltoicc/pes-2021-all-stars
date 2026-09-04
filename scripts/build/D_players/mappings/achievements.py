@@ -745,6 +745,7 @@ MINOR_TITLE = [
     "Serbian Second League Champion",
     "Shikoku Soccer League Champion",
     "Sieger Campeonato de Portugal",
+    "Slovak second tier champion",
     "South Korean 3rd tier champion",
     "Soviet Second Division Champion",
     "Spanish 2nd tier champion",
