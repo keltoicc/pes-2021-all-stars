@@ -7,7 +7,8 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build:search-index": "tsx scripts/build-search-index.ts",
+    "build": "npm run build:search-index && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -15,6 +16,10 @@
     "astro": "^7.2.9"
   },
   "devDependencies": {
-    "@types/node": "^26.4.1"
+    "@types/node": "^26.4.1",
+    "tsx": "^4.23.13"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true
   }
 }
