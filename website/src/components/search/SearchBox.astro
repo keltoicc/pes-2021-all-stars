@@ -6,7 +6,6 @@
     action={`${import.meta.env.BASE_URL}search/`}
     method="get"
 >
-
     <label for="search-input" class="sr-only">
         Search
     </label>
@@ -24,15 +23,19 @@
         class="search-suggestions"
         aria-live="polite"
     ></div>
-
 </form>
 
 <script>
     import SearchService from "../../lib/search/SearchService";
     import SearchSuggestionRenderer from "../../lib/search/SearchSuggestionRenderer";
 
+    const form = document.querySelector(".search-box");
     const input = document.querySelector("#search-input");
     const suggestions = document.querySelector("#search-suggestions");
+
+    if (!(form instanceof HTMLFormElement)) {
+        throw new Error("Search form not found.");
+    }
 
     if (!(input instanceof HTMLInputElement)) {
         throw new Error("Search input not found.");
@@ -42,22 +45,134 @@
         throw new Error("Search suggestions container not found.");
     }
 
+    let searchId = 0;
+    let selectedIndex = -1;
+
     input.addEventListener("input", async () => {
 
         const query = input.value.trim();
 
-        if (!query) {
+        searchId++;
+        const currentSearchId = searchId;
+
+        selectedIndex = -1;
+
+        if (query.length < 2) {
             suggestions.innerHTML = "";
             return;
         }
 
         const results = await SearchService.search(query);
 
+        /*
+         * Ignore this response if a newer search
+         * has already been started.
+         */
+        if (currentSearchId !== searchId) {
+            return;
+        }
+
         const limitedResults = results.slice(0, 5);
+
+        if (limitedResults.length === 0) {
+            suggestions.textContent = "No results found.";
+            return;
+        }
 
         SearchSuggestionRenderer.render(
             limitedResults,
             suggestions
         );
     });
+
+    input.addEventListener("keydown", (event) => {
+
+        const items =
+            suggestions.querySelectorAll<HTMLLIElement>("li");
+
+        if (items.length === 0) {
+            return;
+        }
+
+        switch (event.key) {
+
+            case "ArrowDown":
+
+                event.preventDefault();
+
+                selectedIndex =
+                    (selectedIndex + 1) % items.length;
+
+                updateSelectedSuggestion(items);
+
+                break;
+
+            case "ArrowUp":
+
+                event.preventDefault();
+
+                selectedIndex =
+                    (selectedIndex - 1 + items.length) % items.length;
+
+                updateSelectedSuggestion(items);
+
+                break;
+
+            case "Escape":
+
+                selectedIndex = -1;
+                suggestions.innerHTML = "";
+
+                break;
+
+            case "Enter":
+
+                /*
+                 * If a suggestion is selected, navigate
+                 * to that suggestion instead of submitting
+                 * the search form.
+                 */
+                if (selectedIndex >= 0) {
+
+                    event.preventDefault();
+
+                    const selectedItem = items[selectedIndex];
+                    const link = selectedItem.querySelector("a");
+
+                    if (link instanceof HTMLAnchorElement) {
+                        link.click();
+                    }
+                }
+
+                /*
+                 * If nothing is selected, we do nothing.
+                 * The normal form submission will occur.
+                 */
+
+                break;
+        }
+    });
+
+    form.addEventListener("submit", (event) => {
+
+        const query = input.value.trim();
+
+        if (!query) {
+            event.preventDefault();
+        }
+    });
+
+    function updateSelectedSuggestion(
+        items: NodeListOf<HTMLLIElement>
+    ): void {
+
+        items.forEach((item, index) => {
+
+            if (index === selectedIndex) {
+                item.setAttribute("aria-selected", "true");
+            } else {
+                item.removeAttribute("aria-selected");
+            }
+        });
+    }
 </script>
