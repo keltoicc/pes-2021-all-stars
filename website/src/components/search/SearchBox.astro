@@ -1,7 +1,11 @@
 ---
 ---
 
-<form class="search-box">
+<form
+    class="search-box"
+    action={`${import.meta.env.BASE_URL}search/`}
+    method="get"
+>
 
     <label for="search-input" class="sr-only">
         Search
