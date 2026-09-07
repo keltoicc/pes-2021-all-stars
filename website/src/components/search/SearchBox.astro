@@ -1,0 +1,59 @@
+---
+---
+
+<form class="search-box">
+
+    <label for="search-input" class="sr-only">
+        Search
+    </label>
+
+    <input
+        id="search-input"
+        name="q"
+        type="search"
+        placeholder="Search players, teams and countries..."
+        autocomplete="off"
+    />
+
+    <div
+        id="search-suggestions"
+        class="search-suggestions"
+        aria-live="polite"
+    ></div>
+
+</form>
+
+<script>
+    import SearchService from "../../lib/search/SearchService";
+    import SearchSuggestionRenderer from "../../lib/search/SearchSuggestionRenderer";
+
+    const input = document.querySelector("#search-input");
+    const suggestions = document.querySelector("#search-suggestions");
+
+    if (!(input instanceof HTMLInputElement)) {
+        throw new Error("Search input not found.");
+    }
+
+    if (!(suggestions instanceof HTMLElement)) {
+        throw new Error("Search suggestions container not found.");
+    }
+
+    input.addEventListener("input", async () => {
+
+        const query = input.value.trim();
+
+        if (!query) {
+            suggestions.innerHTML = "";
+            return;
+        }
+
+        const results = await SearchService.search(query);
+
+        const limitedResults = results.slice(0, 5);
+
+        SearchSuggestionRenderer.render(
+            limitedResults,
+            suggestions
+        );
+    });
+</script>
