@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Gianluca Carpani",
         "short_name": "G. Carpani",
+        "dateOfBirth": "1993-08-29",
+        "placeOfBirth": "Ascoli Piceno",
         "nation_1": "Italy",
         "nation_2": "",
         "height": 1.82,
@@ -14,6 +17,38 @@
         "prime_date": "2023-12-21"
     },
     "matches": [
+        {
+            "game_id": "5012302",
+            "season": 2026,
+            "competition_type": "Fourth Tier",
+            "club_id": "1415",
+            "opponent_id": "21474",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "5014435",
+            "season": 2026,
+            "competition_type": "Further Cup",
+            "club_id": "1415",
+            "opponent_id": "56447",
+            "position": "CMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4885025",
             "season": 2025,
@@ -259,7 +294,7 @@
             "season": 2025,
             "competition_type": "Fourth Tier",
             "club_id": "1415",
-            "opponent_id": "56172",
+            "opponent_id": "5543",
             "position": "CMF",
             "minutes": 45,
             "started": true,
@@ -9338,53 +9373,61 @@
     ],
     "clubs": {
         "1415": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 29,
-                "participations": 29,
-                "minutes": 2100,
-                "starts": 24,
+                "matches": 31,
+                "participations": 31,
+                "minutes": 2190,
+                "starts": 25,
                 "captain_matches": 0,
                 "goals": 10,
                 "assists": 2,
-                "goals_conceded": 22,
-                "points": 63,
-                "clean_sheets": 12,
-                "wins": 18,
+                "goals_conceded": 24,
+                "points": 69,
+                "clean_sheets": 13,
+                "wins": 20,
                 "draws": 9,
                 "losses": 2,
-                "goal_matches": 21,
-                "assist_matches": 27,
+                "goal_matches": 23,
+                "assist_matches": 29,
                 "goal_contributions": 12
             },
             "positions": {
-                "CMF": 19,
+                "CMF": 20,
                 "AMF": 5
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 2.172,
-                "minutes_per_match": 72.4,
-                "win_rate": 0.6207,
-                "goals_per_90": 0.429,
-                "assists_per_90": 0.086,
-                "contributions_per_90": 0.514,
+                "season_count": 2,
+                "points_per_match": 2.226,
+                "minutes_per_match": 70.6,
+                "win_rate": 0.6452,
+                "goals_per_90": 0.411,
+                "assists_per_90": 0.082,
+                "contributions_per_90": 0.493,
                 "primary_position": "CMF"
             },
             "competitions": {
+                "Fourth Tier": {
+                    "matches": 28,
+                    "minutes": 1920,
+                    "goals": 9,
+                    "assists": 2
+                },
+                "Further Cup": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Play-Offs": {
                     "matches": 2,
                     "minutes": 180,
                     "goals": 1,
                     "assists": 0
-                },
-                "Fourth Tier": {
-                    "matches": 27,
-                    "minutes": 1920,
-                    "goals": 9,
-                    "assists": 2
                 }
             },
             "awards": {
@@ -9393,6 +9436,7 @@
             }
         },
         "408": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -9478,6 +9522,7 @@
             }
         },
         "1627": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -9541,6 +9586,7 @@
             }
         },
         "27624": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023
@@ -9608,6 +9654,7 @@
             }
         },
         "4339": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -9659,6 +9706,7 @@
             }
         },
         "5615": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -9716,6 +9764,7 @@
             }
         },
         "9352": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -9765,6 +9814,7 @@
             }
         },
         "14909": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -9806,6 +9856,7 @@
             }
         },
         "4330": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012
@@ -9861,6 +9912,7 @@
             }
         },
         "48243": {
+            "type": "club",
             "seasons": [
                 2010,
                 2011
@@ -9905,14 +9957,14 @@
     },
     "career": {
         "club": {
-            "matches": 582,
-            "minutes": 29457,
+            "matches": 584,
+            "minutes": 29547,
             "goals": 62,
             "assists": 12,
             "goal_contributions": 74,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 16
+            "season_count": 17
         },
         "national": {
             "matches": 0,

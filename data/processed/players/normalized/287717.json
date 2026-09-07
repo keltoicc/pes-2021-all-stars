@@ -1,19 +1,70 @@
 {
     "player": {
+        "name": "Emanuele Ndoj",
         "short_name": "E. Ndoj",
+        "dateOfBirth": "1996-11-20",
+        "placeOfBirth": "Catania",
         "nation_1": "Albania",
         "nation_2": "Italy",
         "height": 1.89,
         "foot": "Right",
         "position_group": "MIDFIELDER",
         "position_1": "CMF",
-        "position_2": "",
-        "position_3": "",
+        "position_2": "DMF",
+        "position_3": "AMF",
         "former_clubs": "",
         "market_value": 3000000,
         "prime_date": "2019-12-12"
     },
     "matches": [
+        {
+            "game_id": "4978378",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "26251",
+            "opponent_id": "6692",
+            "position": "CMF",
+            "minutes": 66,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4978364",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "26251",
+            "opponent_id": "91510",
+            "position": "CMF",
+            "minutes": 55,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4979652",
+            "season": 2026,
+            "competition_type": "Further Cup",
+            "club_id": "26251",
+            "opponent_id": "44223",
+            "position": "",
+            "minutes": 30,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4890778",
             "season": 2025,
@@ -5220,7 +5271,7 @@
             "competition_type": "Second Tier",
             "club_id": "19",
             "opponent_id": "408",
-            "position": "LW",
+            "position": "AMF",
             "minutes": 73,
             "started": true,
             "captain": false,
@@ -5956,7 +6007,7 @@
             "competition_type": "Second Tier",
             "club_id": "19",
             "opponent_id": "380",
-            "position": "RW",
+            "position": "DMF",
             "minutes": 79,
             "started": true,
             "captain": false,
@@ -6132,7 +6183,7 @@
             "competition_type": "Second Tier",
             "club_id": "19",
             "opponent_id": "22045",
-            "position": "RW",
+            "position": "AMF",
             "minutes": 87,
             "started": true,
             "captain": false,
@@ -6500,7 +6551,7 @@
             "competition_type": "",
             "club_id": "11997",
             "opponent_id": "17664",
-            "position": "RW",
+            "position": "RM",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -8350,7 +8401,63 @@
         }
     ],
     "clubs": {
+        "26251": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 3,
+                "participations": 3,
+                "minutes": 151,
+                "starts": 2,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 2,
+                "points": 1,
+                "clean_sheets": 1,
+                "wins": 0,
+                "draws": 1,
+                "losses": 2,
+                "goal_matches": 3,
+                "assist_matches": 3,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "CMF": 2
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 0.333,
+                "minutes_per_match": 50.3,
+                "win_rate": 0.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "CMF"
+            },
+            "competitions": {
+                "Third Tier": {
+                    "matches": 2,
+                    "minutes": 121,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Further Cup": {
+                    "matches": 1,
+                    "minutes": 30,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "408": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -8412,6 +8519,7 @@
             }
         },
         "22045": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -8468,6 +8576,7 @@
             }
         },
         "1627": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -8531,6 +8640,7 @@
             }
         },
         "19": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -8561,11 +8671,9 @@
             },
             "positions": {
                 "CMF": 90,
-                "AMF": 17,
+                "AMF": 19,
                 "RM": 6,
-                "DMF": 10,
-                "LW": 1,
-                "RW": 2
+                "DMF": 11
             },
             "derived": {
                 "season_count": 8,
@@ -8611,6 +8719,7 @@
             }
         },
         "4031": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -8665,6 +8774,7 @@
             }
         },
         "14829": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -8706,6 +8816,7 @@
             }
         },
         "3561": {
+            "type": "national",
             "seasons": [
                 2016,
                 2017,
@@ -8764,6 +8875,7 @@
             }
         },
         "11952": {
+            "type": "national",
             "seasons": [
                 2016,
                 2017
@@ -8822,6 +8934,7 @@
             }
         },
         "11997": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015
@@ -8845,8 +8958,7 @@
                 "goal_contributions": 9
             },
             "positions": {
-                "RM": 4,
-                "RW": 1,
+                "RM": 5,
                 "CMF": 27,
                 "DMF": 7
             },
@@ -8876,6 +8988,7 @@
             }
         },
         "45505": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -8917,6 +9030,7 @@
             }
         },
         "26099": {
+            "type": "national",
             "seasons": [
                 2014
             ],
@@ -8971,6 +9085,7 @@
             }
         },
         "15099": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -9014,6 +9129,7 @@
             }
         },
         "30118": {
+            "type": "national",
             "seasons": [
                 2012
             ],
@@ -9068,14 +9184,14 @@
     },
     "career": {
         "club": {
-            "matches": 476,
-            "minutes": 16204,
+            "matches": 479,
+            "minutes": 16355,
             "goals": 23,
             "assists": 17,
             "goal_contributions": 40,
             "team_titles": 3,
             "individual_titles": 0,
-            "season_count": 13
+            "season_count": 14
         },
         "national": {
             "matches": 43,

@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Gianmarco Vannucchi",
         "short_name": "G. Vannucchi",
+        "dateOfBirth": "1995-07-30",
+        "placeOfBirth": "Prato",
         "nation_1": "Italy",
         "nation_2": "",
         "height": 1.82,
@@ -14,6 +17,86 @@
         "prime_date": "2026-06-19"
     },
     "matches": [
+        {
+            "game_id": "4968138",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "4171",
+            "opponent_id": "408",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4968039",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "4171",
+            "opponent_id": "4554",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4968007",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "4171",
+            "opponent_id": "1385",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4904469",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "4171",
+            "opponent_id": "430",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 4,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4894292",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "4171",
+            "opponent_id": "1105",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
         {
             "game_id": "4874850",
             "season": 2025,
@@ -10749,41 +10832,55 @@
     ],
     "clubs": {
         "4171": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 42,
-                "participations": 42,
-                "minutes": 3510,
-                "starts": 39,
+                "matches": 47,
+                "participations": 47,
+                "minutes": 3870,
+                "starts": 43,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 1,
-                "goals_conceded": 26,
-                "points": 91,
-                "clean_sheets": 22,
-                "wins": 28,
-                "draws": 7,
-                "losses": 7,
-                "goal_matches": 42,
-                "assist_matches": 41,
+                "goals_conceded": 34,
+                "points": 95,
+                "clean_sheets": 23,
+                "wins": 29,
+                "draws": 8,
+                "losses": 10,
+                "goal_matches": 47,
+                "assist_matches": 46,
                 "goal_contributions": 1
             },
             "positions": {
-                "GK": 39
+                "GK": 43
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 2.167,
-                "minutes_per_match": 83.6,
-                "win_rate": 0.6667,
+                "season_count": 2,
+                "points_per_match": 2.021,
+                "minutes_per_match": 82.3,
+                "win_rate": 0.617,
                 "goals_per_90": 0.0,
-                "assists_per_90": 0.026,
-                "contributions_per_90": 0.026,
+                "assists_per_90": 0.023,
+                "contributions_per_90": 0.023,
                 "primary_position": "GK"
             },
             "competitions": {
+                "Second Tier": {
+                    "matches": 3,
+                    "minutes": 270,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 2,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Third Tier": {
                     "matches": 38,
                     "minutes": 3240,
@@ -10799,12 +10896,14 @@
             },
             "awards": {
                 "team_titles": {
-                    "Supercoppa Serie C winner": 1
+                    "Supercoppa Serie C winner": 1,
+                    "Italienischer Drittligameister (C)": 1
                 },
                 "individual_titles": {}
             }
         },
         "1103": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -10859,6 +10958,7 @@
             }
         },
         "4093": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023
@@ -10920,6 +11020,7 @@
             }
         },
         "3037": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021
@@ -10989,6 +11090,7 @@
             }
         },
         "380": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019
@@ -11050,6 +11152,7 @@
             }
         },
         "2721": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -11121,6 +11224,7 @@
             }
         },
         "24898": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -11181,6 +11285,7 @@
             }
         },
         "11008": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -11231,6 +11336,7 @@
             }
         },
         "506": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -11291,6 +11397,7 @@
             }
         },
         "41592": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -11330,6 +11437,7 @@
             }
         },
         "26789": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -11376,6 +11484,7 @@
             }
         },
         "26370": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -11419,24 +11528,24 @@
     },
     "career": {
         "club": {
-            "matches": 619,
-            "minutes": 30194,
+            "matches": 673,
+            "minutes": 30554,
             "goals": 0,
             "assists": 3,
             "goal_contributions": 3,
-            "team_titles": 4,
+            "team_titles": 6,
             "individual_titles": 0,
-            "season_count": 14
+            "season_count": 15
         },
         "national": {
-            "matches": 49,
+            "matches": 0,
             "minutes": 0,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
-            "team_titles": 1,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 1
+            "season_count": 0
         }
     }
 }

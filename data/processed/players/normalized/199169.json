@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Umberto Germano",
         "short_name": "U. Germano",
+        "dateOfBirth": "1992-04-22",
+        "placeOfBirth": "Torino",
         "nation_1": "Italy",
         "nation_2": "",
         "height": 1.75,
@@ -14,6 +17,38 @@
         "prime_date": "2017-06-09"
     },
     "matches": [
+        {
+            "game_id": "5010771",
+            "season": 2026,
+            "competition_type": "Fourth Tier",
+            "club_id": "4082",
+            "opponent_id": "22226",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 1
+        },
+        {
+            "game_id": "5028798",
+            "season": 2026,
+            "competition_type": "Further Cup",
+            "club_id": "4082",
+            "opponent_id": "22227",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4602307",
             "season": 2024,
@@ -10352,7 +10387,63 @@
         }
     ],
     "clubs": {
+        "4082": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 2,
+                "participations": 2,
+                "minutes": 90,
+                "starts": 1,
+                "captain_matches": 0,
+                "goals": 1,
+                "assists": 0,
+                "goals_conceded": 0,
+                "points": 4,
+                "clean_sheets": 2,
+                "wins": 1,
+                "draws": 1,
+                "losses": 0,
+                "goal_matches": 1,
+                "assist_matches": 2,
+                "goal_contributions": 1
+            },
+            "positions": {
+                "RB": 1
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 2.0,
+                "minutes_per_match": 45.0,
+                "win_rate": 0.5,
+                "goals_per_90": 1.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 1.0,
+                "primary_position": "RB"
+            },
+            "competitions": {
+                "Fourth Tier": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Further Cup": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 1,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "4271": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -10417,6 +10508,7 @@
             }
         },
         "3037": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -10490,6 +10582,7 @@
             }
         },
         "26789": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012,
@@ -10572,6 +10665,7 @@
             }
         },
         "4718": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -10621,6 +10715,7 @@
             }
         },
         "22197": {
+            "type": "club",
             "seasons": [
                 2010
             ],
@@ -10680,6 +10775,7 @@
             }
         },
         "11008": {
+            "type": "club",
             "seasons": [
                 2009
             ],
@@ -10723,14 +10819,14 @@
     },
     "career": {
         "club": {
-            "matches": 645,
-            "minutes": 33454,
-            "goals": 16,
+            "matches": 647,
+            "minutes": 33544,
+            "goals": 17,
             "assists": 17,
-            "goal_contributions": 33,
+            "goal_contributions": 34,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 16
+            "season_count": 17
         },
         "national": {
             "matches": 0,

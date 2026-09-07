@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Alessio De Cerchio",
         "short_name": "A. De Cerchio",
+        "dateOfBirth": "1997-07-24",
+        "placeOfBirth": "Ortona",
         "nation_1": "Italy",
         "nation_2": "",
         "height": 1.83,
@@ -14,6 +17,38 @@
         "prime_date": "2025-11-12"
     },
     "matches": [
+        {
+            "game_id": "5011071",
+            "season": 2026,
+            "competition_type": "Fourth Tier",
+            "club_id": "862",
+            "opponent_id": "93789",
+            "position": "CMF",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "5014414",
+            "season": 2026,
+            "competition_type": "Further Cup",
+            "club_id": "862",
+            "opponent_id": "58028",
+            "position": "CMF",
+            "minutes": 78,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4885022",
             "season": 2025,
@@ -1347,7 +1382,7 @@
             "season": 2023,
             "competition_type": "Fourth Tier",
             "club_id": "18642",
-            "opponent_id": "56172",
+            "opponent_id": "5543",
             "position": null,
             "minutes": 0,
             "started": false,
@@ -1619,7 +1654,7 @@
             "season": 2023,
             "competition_type": "Fourth Tier",
             "club_id": "18642",
-            "opponent_id": "56172",
+            "opponent_id": "5543",
             "position": "",
             "minutes": 6,
             "started": false,
@@ -1987,7 +2022,7 @@
             "season": 2022,
             "competition_type": "Fourth Tier",
             "club_id": "7409",
-            "opponent_id": "56172",
+            "opponent_id": "5543",
             "position": "AMF",
             "minutes": 90,
             "started": true,
@@ -6090,31 +6125,33 @@
     ],
     "clubs": {
         "862": {
+            "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 77,
-                "participations": 77,
-                "minutes": 5191,
-                "starts": 62,
-                "captain_matches": 0,
+                "matches": 79,
+                "participations": 79,
+                "minutes": 5359,
+                "starts": 64,
+                "captain_matches": 1,
                 "goals": 20,
                 "assists": 11,
-                "goals_conceded": 55,
-                "points": 126,
-                "clean_sheets": 43,
-                "wins": 37,
+                "goals_conceded": 56,
+                "points": 132,
+                "clean_sheets": 44,
+                "wins": 39,
                 "draws": 15,
                 "losses": 25,
-                "goal_matches": 59,
-                "assist_matches": 67,
+                "goal_matches": 61,
+                "assist_matches": 69,
                 "goal_contributions": 31
             },
             "positions": {
+                "CMF": 18,
                 "LM": 4,
-                "CMF": 16,
                 "AMF": 33,
                 "RM": 1,
                 "CF": 3,
@@ -6122,33 +6159,33 @@
                 "LW": 2
             },
             "derived": {
-                "season_count": 2,
-                "points_per_match": 1.636,
-                "minutes_per_match": 67.4,
-                "win_rate": 0.4805,
-                "goals_per_90": 0.347,
-                "assists_per_90": 0.191,
-                "contributions_per_90": 0.537,
+                "season_count": 3,
+                "points_per_match": 1.671,
+                "minutes_per_match": 67.8,
+                "win_rate": 0.4937,
+                "goals_per_90": 0.336,
+                "assists_per_90": 0.185,
+                "contributions_per_90": 0.521,
                 "primary_position": "AMF"
             },
             "competitions": {
+                "Fourth Tier": {
+                    "matches": 73,
+                    "minutes": 5043,
+                    "goals": 20,
+                    "assists": 9
+                },
+                "Further Cup": {
+                    "matches": 4,
+                    "minutes": 178,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Play-Offs": {
                     "matches": 2,
                     "minutes": 138,
                     "goals": 0,
                     "assists": 2
-                },
-                "Fourth Tier": {
-                    "matches": 72,
-                    "minutes": 4953,
-                    "goals": 20,
-                    "assists": 9
-                },
-                "Further Cup": {
-                    "matches": 3,
-                    "minutes": 100,
-                    "goals": 0,
-                    "assists": 0
                 }
             },
             "awards": {
@@ -6157,6 +6194,7 @@
             }
         },
         "18642": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -6215,6 +6253,7 @@
             }
         },
         "31267": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -6270,6 +6309,7 @@
             }
         },
         "7409": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -6328,6 +6368,7 @@
             }
         },
         "78454": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -6374,6 +6415,7 @@
             }
         },
         "55361": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -6430,6 +6472,7 @@
             }
         },
         "4254": {
+            "type": "club",
             "seasons": [
                 2015,
                 2020
@@ -6480,6 +6523,7 @@
             }
         },
         "25922": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -6528,6 +6572,7 @@
             }
         },
         "36745": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -6578,6 +6623,7 @@
             }
         },
         "27525": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -6633,6 +6679,7 @@
             }
         },
         "32125": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -6687,6 +6734,7 @@
             }
         },
         "45894": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -6751,6 +6799,7 @@
             }
         },
         "40352": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -6806,6 +6855,7 @@
             }
         },
         "25342": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -6854,6 +6904,7 @@
             }
         },
         "26347": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -6896,6 +6947,7 @@
             }
         },
         "8525": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -6939,14 +6991,14 @@
     },
     "career": {
         "club": {
-            "matches": 379,
-            "minutes": 20060,
+            "matches": 381,
+            "minutes": 20228,
             "goals": 43,
             "assists": 28,
             "goal_contributions": 71,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 12
+            "season_count": 13
         },
         "national": {
             "matches": 0,

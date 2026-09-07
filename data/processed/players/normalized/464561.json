@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Niko Kirwan",
         "short_name": "Niko Kirwan",
+        "dateOfBirth": "1995-09-04",
+        "placeOfBirth": "Auckland",
         "nation_1": "New Zealand",
         "nation_2": "Italy",
         "height": 1.86,
@@ -14,6 +17,86 @@
         "prime_date": "2022-06-20"
     },
     "matches": [
+        {
+            "game_id": "4979186",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "7197",
+            "opponent_id": "33734",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "5018339",
+            "season": 2026,
+            "competition_type": "Further Cup",
+            "club_id": "7197",
+            "opponent_id": "33734",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4979180",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "7197",
+            "opponent_id": "4031",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4979172",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "7197",
+            "opponent_id": "6089",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4894291",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "7197",
+            "opponent_id": "408",
+            "position": "RB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4885303",
             "season": 2025,
@@ -340,7 +423,7 @@
             "competition_type": "Third Tier",
             "club_id": "4331",
             "opponent_id": "22408",
-            "position": "RB",
+            "position": "RM",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -6927,57 +7010,65 @@
     ],
     "clubs": {
         "7197": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 20,
-                "participations": 20,
-                "minutes": 1140,
-                "starts": 13,
+                "matches": 25,
+                "participations": 25,
+                "minutes": 1500,
+                "starts": 17,
                 "captain_matches": 0,
-                "goals": 1,
+                "goals": 2,
                 "assists": 0,
-                "goals_conceded": 13,
-                "points": 30,
-                "clean_sheets": 10,
-                "wins": 8,
+                "goals_conceded": 18,
+                "points": 42,
+                "clean_sheets": 12,
+                "wins": 12,
                 "draws": 6,
-                "losses": 6,
-                "goal_matches": 19,
-                "assist_matches": 20,
-                "goal_contributions": 1
+                "losses": 7,
+                "goal_matches": 23,
+                "assist_matches": 25,
+                "goal_contributions": 2
             },
             "positions": {
-                "RB": 13,
+                "RB": 17,
                 "CB": 1
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.5,
-                "minutes_per_match": 57.0,
-                "win_rate": 0.4,
-                "goals_per_90": 0.079,
+                "season_count": 2,
+                "points_per_match": 1.68,
+                "minutes_per_match": 60.0,
+                "win_rate": 0.48,
+                "goals_per_90": 0.12,
                 "assists_per_90": 0.0,
-                "contributions_per_90": 0.079,
+                "contributions_per_90": 0.12,
                 "primary_position": "RB"
             },
             "competitions": {
-                "Play-Offs": {
-                    "matches": 4,
-                    "minutes": 270,
-                    "goals": 0,
-                    "assists": 0
-                },
                 "Third Tier": {
-                    "matches": 14,
-                    "minutes": 690,
-                    "goals": 1,
+                    "matches": 17,
+                    "minutes": 960,
+                    "goals": 2,
                     "assists": 0
                 },
                 "Further Cup": {
-                    "matches": 2,
+                    "matches": 3,
                     "minutes": 180,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Play-Offs": {
+                    "matches": 4,
+                    "minutes": 270,
                     "goals": 0,
                     "assists": 0
                 }
@@ -6990,6 +7081,7 @@
             }
         },
         "4331": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -7012,8 +7104,8 @@
                 "goal_contributions": 2
             },
             "positions": {
-                "RB": 11,
-                "RM": 11
+                "RM": 12,
+                "RB": 10
             },
             "derived": {
                 "season_count": 1,
@@ -7023,7 +7115,7 @@
                 "goals_per_90": 0.048,
                 "assists_per_90": 0.048,
                 "contributions_per_90": 0.097,
-                "primary_position": "RB"
+                "primary_position": "RM"
             },
             "competitions": {
                 "Third Tier": {
@@ -7045,6 +7137,7 @@
             }
         },
         "3037": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -7121,6 +7214,7 @@
             }
         },
         "9171": {
+            "type": "national",
             "seasons": [
                 2017,
                 2021,
@@ -7179,6 +7273,7 @@
             }
         },
         "5621": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -7255,6 +7350,7 @@
             }
         },
         "1386": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019
@@ -7324,6 +7420,7 @@
             }
         },
         "46196": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -7384,6 +7481,7 @@
             }
         },
         "18385": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -7448,24 +7546,24 @@
     },
     "career": {
         "club": {
-            "matches": 382,
-            "minutes": 17641,
-            "goals": 11,
-            "assists": 10,
-            "goal_contributions": 21,
-            "team_titles": 3,
+            "matches": 414,
+            "minutes": 19016,
+            "goals": 13,
+            "assists": 12,
+            "goal_contributions": 25,
+            "team_titles": 4,
             "individual_titles": 0,
-            "season_count": 9
+            "season_count": 11
         },
         "national": {
-            "matches": 48,
-            "minutes": 1613,
-            "goals": 2,
-            "assists": 3,
-            "goal_contributions": 5,
-            "team_titles": 1,
+            "matches": 21,
+            "minutes": 598,
+            "goals": 1,
+            "assists": 1,
+            "goal_contributions": 2,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 5
+            "season_count": 4
         }
     }
 }

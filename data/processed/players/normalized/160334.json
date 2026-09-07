@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Simone Ganz",
         "short_name": "Simone Ganz",
+        "dateOfBirth": "1993-09-21",
+        "placeOfBirth": "Genova",
         "nation_1": "Italy",
         "nation_2": "",
         "height": 1.75,
@@ -14,6 +17,38 @@
         "prime_date": "2016-06-13"
     },
     "matches": [
+        {
+            "game_id": "5010770",
+            "season": 2026,
+            "competition_type": "Fourth Tier",
+            "club_id": "10390",
+            "opponent_id": "50100",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 1
+        },
+        {
+            "game_id": "5014415",
+            "season": 2026,
+            "competition_type": "Further Cup",
+            "club_id": "10390",
+            "opponent_id": "22200",
+            "position": "CF",
+            "minutes": 60,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4885023",
             "season": 2025,
@@ -11253,7 +11288,63 @@
         }
     ],
     "clubs": {
+        "10390": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 2,
+                "participations": 2,
+                "minutes": 60,
+                "starts": 1,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 1,
+                "points": 4,
+                "clean_sheets": 1,
+                "wins": 1,
+                "draws": 1,
+                "losses": 0,
+                "goal_matches": 2,
+                "assist_matches": 2,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "CF": 1
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 2.0,
+                "minutes_per_match": 30.0,
+                "win_rate": 0.5,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "CF"
+            },
+            "competitions": {
+                "Fourth Tier": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Further Cup": {
+                    "matches": 1,
+                    "minutes": 60,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "1408": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -11309,6 +11400,7 @@
             }
         },
         "4146": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -11357,6 +11449,7 @@
             }
         },
         "6692": {
+            "type": "club",
             "seasons": [
                 2024,
                 2025
@@ -11413,6 +11506,7 @@
             }
         },
         "14888": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -11467,6 +11561,7 @@
             }
         },
         "5163": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -11521,6 +11616,7 @@
             }
         },
         "4271": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023
@@ -11576,6 +11672,7 @@
             }
         },
         "22045": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -11630,6 +11727,7 @@
             }
         },
         "5514": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -11684,6 +11782,7 @@
             }
         },
         "2581": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -11738,6 +11837,7 @@
             }
         },
         "408": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -11801,6 +11901,7 @@
             }
         },
         "1047": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -11876,6 +11977,7 @@
             }
         },
         "2921": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -11930,6 +12032,7 @@
             }
         },
         "276": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -11984,6 +12087,7 @@
             }
         },
         "5585": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -12033,6 +12137,7 @@
             }
         },
         "4103": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -12094,6 +12199,7 @@
             }
         },
         "10958": {
+            "type": "club",
             "seasons": [
                 2010,
                 2011,
@@ -12147,6 +12253,7 @@
             }
         },
         "5": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -12205,6 +12312,7 @@
             }
         },
         "21426": {
+            "type": "national",
             "seasons": [
                 2011
             ],
@@ -12261,18 +12369,18 @@
     },
     "career": {
         "club": {
-            "matches": 646,
-            "minutes": 24927,
+            "matches": 696,
+            "minutes": 24995,
             "goals": 143,
             "assists": 17,
             "goal_contributions": 160,
             "team_titles": 0,
             "individual_titles": 2,
-            "season_count": 16
+            "season_count": 17
         },
         "national": {
-            "matches": 54,
-            "minutes": 198,
+            "matches": 6,
+            "minutes": 190,
             "goals": 1,
             "assists": 1,
             "goal_contributions": 2,

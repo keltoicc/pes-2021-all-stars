@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Marco Moscati",
         "short_name": "M. Moscati",
+        "dateOfBirth": "1992-11-01",
+        "placeOfBirth": "Livorno",
         "nation_1": "Italy",
         "nation_2": "",
         "height": 1.8,
@@ -15,12 +18,44 @@
     },
     "matches": [
         {
+            "game_id": "4978391",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "56265",
+            "opponent_id": "132806",
+            "position": "CMF",
+            "minutes": 72,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "5018505",
+            "season": 2026,
+            "competition_type": "Further Cup",
+            "club_id": "56265",
+            "opponent_id": "4095",
+            "position": "DMF",
+            "minutes": 65,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
             "game_id": "4876355",
             "season": 2025,
             "competition_type": "Play-Offs",
             "club_id": "4103",
             "opponent_id": "4084",
-            "position": "CMF",
+            "position": "LB",
             "minutes": 90,
             "started": true,
             "captain": true,
@@ -228,7 +263,7 @@
             "competition_type": "Third Tier",
             "club_id": "4103",
             "opponent_id": "44223",
-            "position": "CMF",
+            "position": "CB",
             "minutes": 90,
             "started": true,
             "captain": true,
@@ -11132,7 +11167,64 @@
         }
     ],
     "clubs": {
+        "56265": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 2,
+                "participations": 2,
+                "minutes": 137,
+                "starts": 2,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 1,
+                "points": 3,
+                "clean_sheets": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 1,
+                "goal_matches": 2,
+                "assist_matches": 2,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "CMF": 1,
+                "DMF": 1
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 1.5,
+                "minutes_per_match": 68.5,
+                "win_rate": 0.5,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "CMF"
+            },
+            "competitions": {
+                "Third Tier": {
+                    "matches": 1,
+                    "minutes": 72,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Further Cup": {
+                    "matches": 1,
+                    "minutes": 65,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "4103": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
@@ -11157,9 +11249,11 @@
                 "goal_contributions": 14
             },
             "positions": {
-                "CMF": 56,
+                "LB": 1,
+                "CMF": 54,
                 "LW": 1,
                 "RM": 13,
+                "CB": 1,
                 "RB": 31,
                 "RW": 1
             },
@@ -11199,6 +11293,7 @@
             }
         },
         "4554": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022
@@ -11275,6 +11370,7 @@
             }
         },
         "839": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012,
@@ -11368,6 +11464,7 @@
             }
         },
         "4331": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -11419,6 +11516,7 @@
             }
         },
         "6692": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -11471,6 +11569,7 @@
             }
         },
         "1210": {
+            "type": "club",
             "seasons": [
                 2010,
                 2014,
@@ -11532,6 +11631,7 @@
             }
         },
         "20519": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -11582,6 +11682,7 @@
             }
         },
         "12813": {
+            "type": "club",
             "seasons": [
                 2009,
                 2010
@@ -11628,14 +11729,14 @@
     },
     "career": {
         "club": {
-            "matches": 692,
-            "minutes": 38366,
+            "matches": 694,
+            "minutes": 38503,
             "goals": 37,
             "assists": 49,
             "goal_contributions": 86,
             "team_titles": 6,
             "individual_titles": 0,
-            "season_count": 17
+            "season_count": 18
         },
         "national": {
             "matches": 0,

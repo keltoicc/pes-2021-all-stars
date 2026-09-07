@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Alessandro Garattoni",
         "short_name": "A. Garattoni",
+        "dateOfBirth": "1998-01-23",
+        "placeOfBirth": "Cesena",
         "nation_1": "Italy",
         "nation_2": "",
         "height": 1.8,
@@ -14,6 +17,70 @@
         "prime_date": "2023-06-21"
     },
     "matches": [
+        {
+            "game_id": "4978382",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "4541",
+            "opponent_id": "4102",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4978372",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "4541",
+            "opponent_id": "5542",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 1
+        },
+        {
+            "game_id": "4978365",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "4541",
+            "opponent_id": "44223",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4979640",
+            "season": 2026,
+            "competition_type": "Further Cup",
+            "club_id": "4541",
+            "opponent_id": "46619",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
         {
             "game_id": "4690012",
             "season": 2025,
@@ -6436,7 +6503,7 @@
             "competition_type": "",
             "club_id": "8517",
             "opponent_id": "11676",
-            "position": "",
+            "position": "RM",
             "minutes": 34,
             "started": false,
             "captain": false,
@@ -7297,35 +7364,37 @@
     ],
     "clubs": {
         "4541": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 39,
-                "participations": 39,
+                "matches": 43,
+                "participations": 43,
                 "minutes": 1947,
                 "starts": 23,
                 "captain_matches": 0,
                 "goals": 1,
                 "assists": 3,
                 "goals_conceded": 29,
-                "points": 50,
-                "clean_sheets": 21,
-                "wins": 13,
-                "draws": 11,
-                "losses": 15,
-                "goal_matches": 38,
-                "assist_matches": 36,
+                "points": 54,
+                "clean_sheets": 25,
+                "wins": 14,
+                "draws": 12,
+                "losses": 17,
+                "goal_matches": 42,
+                "assist_matches": 40,
                 "goal_contributions": 4
             },
             "positions": {
                 "RM": 23
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.282,
-                "minutes_per_match": 49.9,
-                "win_rate": 0.3333,
+                "season_count": 2,
+                "points_per_match": 1.256,
+                "minutes_per_match": 45.3,
+                "win_rate": 0.3256,
                 "goals_per_90": 0.046,
                 "assists_per_90": 0.139,
                 "contributions_per_90": 0.185,
@@ -7333,13 +7402,13 @@
             },
             "competitions": {
                 "Third Tier": {
-                    "matches": 38,
+                    "matches": 41,
                     "minutes": 1947,
                     "goals": 1,
                     "assists": 3
                 },
                 "Further Cup": {
-                    "matches": 1,
+                    "matches": 2,
                     "minutes": 0,
                     "goals": 0,
                     "assists": 0
@@ -7351,6 +7420,7 @@
             }
         },
         "20519": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024
@@ -7409,6 +7479,7 @@
             }
         },
         "27354": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -7450,6 +7521,7 @@
             }
         },
         "704": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -7520,6 +7592,7 @@
             }
         },
         "5587": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -7575,6 +7648,7 @@
             }
         },
         "4083": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -7635,6 +7709,7 @@
             }
         },
         "4324": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -7711,6 +7786,7 @@
             }
         },
         "1429": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -7757,6 +7833,7 @@
             }
         },
         "20106": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016
@@ -7801,6 +7878,7 @@
             }
         },
         "8517": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -7823,7 +7901,7 @@
                 "goal_contributions": 0
             },
             "positions": {
-                "RM": 1
+                "RM": 2
             },
             "derived": {
                 "season_count": 1,
@@ -7844,14 +7922,14 @@
     },
     "career": {
         "club": {
-            "matches": 454,
+            "matches": 458,
             "minutes": 19706,
             "goals": 16,
             "assists": 16,
             "goal_contributions": 32,
             "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 11
+            "season_count": 12
         },
         "national": {
             "matches": 0,

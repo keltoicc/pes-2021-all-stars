@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Daniele Liotti",
         "short_name": "D. Liotti",
+        "dateOfBirth": "1994-06-08",
+        "placeOfBirth": "Vibo Valentia",
         "nation_1": "Italy",
         "nation_2": "",
         "height": 1.8,
@@ -14,6 +17,54 @@
         "prime_date": "2021-02-22"
     },
     "matches": [
+        {
+            "game_id": "4978381",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "2251",
+            "opponent_id": "5514",
+            "position": "LM",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4978370",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "2251",
+            "opponent_id": "4095",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4979650",
+            "season": 2026,
+            "competition_type": "Further Cup",
+            "club_id": "2251",
+            "opponent_id": "91510",
+            "position": "LM",
+            "minutes": 63,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4882249",
             "season": 2025,
@@ -1828,7 +1879,7 @@
             "competition_type": "Second Tier",
             "club_id": "1386",
             "opponent_id": "4171",
-            "position": "",
+            "position": "LM",
             "minutes": 80,
             "started": false,
             "captain": false,
@@ -3060,7 +3111,7 @@
             "competition_type": "Second Tier",
             "club_id": "1386",
             "opponent_id": "408",
-            "position": "LW",
+            "position": "LM",
             "minutes": 57,
             "started": true,
             "captain": false,
@@ -3428,7 +3479,7 @@
             "competition_type": "Second Tier",
             "club_id": "1386",
             "opponent_id": "4084",
-            "position": "RM",
+            "position": "LM",
             "minutes": 58,
             "started": true,
             "captain": false,
@@ -3972,7 +4023,7 @@
             "competition_type": "Second Tier",
             "club_id": "4172",
             "opponent_id": "2921",
-            "position": "RB",
+            "position": "LB",
             "minutes": 46,
             "started": false,
             "captain": false,
@@ -9232,7 +9283,63 @@
         }
     ],
     "clubs": {
+        "2251": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 3,
+                "participations": 3,
+                "minutes": 153,
+                "starts": 2,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 1,
+                "points": 3,
+                "clean_sheets": 2,
+                "wins": 1,
+                "draws": 0,
+                "losses": 2,
+                "goal_matches": 3,
+                "assist_matches": 3,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "LM": 2
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 1.0,
+                "minutes_per_match": 51.0,
+                "win_rate": 0.3333,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "LM"
+            },
+            "competitions": {
+                "Third Tier": {
+                    "matches": 2,
+                    "minutes": 90,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Further Cup": {
+                    "matches": 1,
+                    "minutes": 63,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "4106": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -9295,6 +9402,7 @@
             }
         },
         "4331": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -9350,6 +9458,7 @@
             }
         },
         "2331": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024
@@ -9413,11 +9522,14 @@
                 }
             },
             "awards": {
-                "team_titles": {},
+                "team_titles": {
+                    "Italienischer Drittligameister (C)": 1
+                },
                 "individual_titles": {}
             }
         },
         "1386": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -9443,11 +9555,9 @@
                 "goal_contributions": 10
             },
             "positions": {
-                "LM": 29,
+                "LM": 32,
                 "CMF": 5,
                 "LB": 12,
-                "LW": 1,
-                "RM": 1,
                 "CB": 2
             },
             "derived": {
@@ -9487,11 +9597,14 @@
                 }
             },
             "awards": {
-                "team_titles": {},
+                "team_titles": {
+                    "Italienischer Drittligameister (C)": 1
+                },
                 "individual_titles": {}
             }
         },
         "4031": {
+            "type": "club",
             "seasons": [
                 2012,
                 2021
@@ -9560,6 +9673,7 @@
             }
         },
         "4172": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019
@@ -9584,8 +9698,7 @@
             },
             "positions": {
                 "LM": 15,
-                "LB": 1,
-                "RB": 1,
+                "LB": 2,
                 "CB": 8
             },
             "derived": {
@@ -9636,6 +9749,7 @@
             }
         },
         "8373": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -9697,6 +9811,7 @@
             }
         },
         "9439": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -9752,6 +9867,7 @@
             }
         },
         "5587": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -9822,6 +9938,7 @@
             }
         },
         "5163": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -9871,6 +9988,7 @@
             }
         },
         "14843": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -9921,6 +10039,7 @@
             }
         },
         "4097": {
+            "type": "club",
             "seasons": [
                 2010
             ],
@@ -9971,14 +10090,14 @@
     },
     "career": {
         "club": {
-            "matches": 575,
-            "minutes": 23214,
+            "matches": 578,
+            "minutes": 23367,
             "goals": 22,
             "assists": 27,
             "goal_contributions": 49,
-            "team_titles": 0,
+            "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 16
+            "season_count": 17
         },
         "national": {
             "matches": 0,
