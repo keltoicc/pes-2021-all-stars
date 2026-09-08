@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Yuki Nakashima",
         "short_name": "Y. Nakashima",
+        "dateOfBirth": "1984-06-16",
+        "placeOfBirth": "Takaoka, Toyama",
         "nation_1": "Japan",
         "nation_2": "",
         "height": 1.75,
@@ -14,6 +17,118 @@
         "prime_date": "2011-07-02"
     },
     "matches": [
+        {
+            "game_id": "4903196",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "22173",
+            "opponent_id": "937",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4904251",
+            "season": 2026,
+            "competition_type": "League Cup",
+            "club_id": "22173",
+            "opponent_id": "50673",
+            "position": "CF",
+            "minutes": 56,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4903408",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "22173",
+            "opponent_id": "25716",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4985771",
+            "season": 2025,
+            "competition_type": "Domestic Cup",
+            "club_id": "22173",
+            "opponent_id": "22177",
+            "position": "",
+            "minutes": 63,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4903286",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "22173",
+            "opponent_id": "37689",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4903093",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "22173",
+            "opponent_id": "23580",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4903122",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "22173",
+            "opponent_id": "35000",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
         {
             "game_id": "4891749",
             "season": 2025,
@@ -16936,42 +17051,58 @@
     ],
     "clubs": {
         "22173": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 20,
-                "participations": 20,
-                "minutes": 75,
-                "starts": 0,
+                "matches": 27,
+                "participations": 27,
+                "minutes": 194,
+                "starts": 2,
                 "captain_matches": 0,
-                "goals": 0,
+                "goals": 1,
                 "assists": 0,
-                "goals_conceded": 2,
-                "points": 42,
-                "clean_sheets": 19,
-                "wins": 14,
+                "goals_conceded": 5,
+                "points": 54,
+                "clean_sheets": 24,
+                "wins": 18,
                 "draws": 0,
-                "losses": 6,
-                "goal_matches": 20,
-                "assist_matches": 20,
-                "goal_contributions": 0
+                "losses": 9,
+                "goal_matches": 26,
+                "assist_matches": 27,
+                "goal_contributions": 1
             },
-            "positions": {},
+            "positions": {
+                "CF": 1
+            },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 2.1,
-                "minutes_per_match": 3.8,
-                "win_rate": 0.7,
-                "goals_per_90": 0.0,
+                "season_count": 2,
+                "points_per_match": 2.0,
+                "minutes_per_match": 7.2,
+                "win_rate": 0.6667,
+                "goals_per_90": 0.464,
                 "assists_per_90": 0.0,
-                "contributions_per_90": 0.0,
-                "primary_position": ""
+                "contributions_per_90": 0.464,
+                "primary_position": "CF"
             },
             "competitions": {
+                "Second Tier": {
+                    "matches": 5,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "League Cup": {
-                    "matches": 20,
-                    "minutes": 75,
+                    "matches": 21,
+                    "minutes": 131,
+                    "goals": 1,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 63,
                     "goals": 0,
                     "assists": 0
                 }
@@ -16982,6 +17113,7 @@
             }
         },
         "23568": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -17070,6 +17202,7 @@
             }
         },
         "16190": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012,
@@ -17150,6 +17283,7 @@
             }
         },
         "6395": {
+            "type": "club",
             "seasons": [
                 2005,
                 2006,
@@ -17231,6 +17365,7 @@
             }
         },
         "2241": {
+            "type": "club",
             "seasons": [
                 2002,
                 2003,
@@ -17304,24 +17439,24 @@
     },
     "career": {
         "club": {
-            "matches": 488,
-            "minutes": 23267,
-            "goals": 70,
-            "assists": 20,
-            "goal_contributions": 90,
-            "team_titles": 1,
+            "matches": 1063,
+            "minutes": 42230,
+            "goals": 125,
+            "assists": 47,
+            "goal_contributions": 172,
+            "team_titles": 3,
             "individual_titles": 0,
-            "season_count": 11
+            "season_count": 25
         },
         "national": {
-            "matches": 568,
-            "minutes": 18844,
-            "goals": 54,
-            "assists": 27,
-            "goal_contributions": 81,
-            "team_titles": 2,
+            "matches": 0,
+            "minutes": 0,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 14
+            "season_count": 0
         }
     }
 }

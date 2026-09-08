@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Ryuji Izumi",
         "short_name": "Ryuji Izumi",
+        "dateOfBirth": "1993-11-06",
+        "placeOfBirth": "Yokkaichi, Mie",
         "nation_1": "Japan",
         "nation_2": "",
         "height": 1.73,
@@ -14,6 +17,102 @@
         "prime_date": "2019-12-28"
     },
     "matches": [
+        {
+            "game_id": "4901563",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1066",
+            "opponent_id": "23568",
+            "position": "RM",
+            "minutes": 70,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4901535",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1066",
+            "opponent_id": "2697",
+            "position": "AMF",
+            "minutes": 74,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4901503",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1066",
+            "opponent_id": "22171",
+            "position": "AMF",
+            "minutes": 82,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4901523",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1066",
+            "opponent_id": "596",
+            "position": "RW",
+            "minutes": 67,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4901509",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1066",
+            "opponent_id": "2241",
+            "position": "RM",
+            "minutes": 74,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4901492",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1066",
+            "opponent_id": "1062",
+            "position": "AMF",
+            "minutes": 61,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4889581",
             "season": 2025,
@@ -7530,6 +7629,7 @@
     ],
     "clubs": {
         "1066": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -7538,61 +7638,62 @@
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 330,
-                "participations": 330,
-                "minutes": 18818,
-                "starts": 213,
+                "matches": 336,
+                "participations": 336,
+                "minutes": 19246,
+                "starts": 219,
                 "captain_matches": 46,
                 "goals": 23,
-                "assists": 22,
-                "goals_conceded": 291,
-                "points": 445,
+                "assists": 23,
+                "goals_conceded": 297,
+                "points": 451,
                 "clean_sheets": 160,
-                "wins": 127,
+                "wins": 129,
                 "draws": 64,
-                "losses": 139,
-                "goal_matches": 308,
-                "assist_matches": 310,
-                "goal_contributions": 45
+                "losses": 143,
+                "goal_matches": 314,
+                "assist_matches": 315,
+                "goal_contributions": 46
             },
             "positions": {
-                "AMF": 74,
+                "RM": 31,
+                "AMF": 77,
+                "RW": 5,
                 "LM": 67,
-                "RM": 29,
                 "CF": 3,
                 "LB": 12,
                 "CB": 6,
                 "RB": 2,
                 "CMF": 14,
                 "DMF": 1,
-                "LW": 6,
-                "RW": 4
+                "LW": 6
             },
             "derived": {
-                "season_count": 8,
-                "points_per_match": 1.348,
-                "minutes_per_match": 57.0,
-                "win_rate": 0.3848,
-                "goals_per_90": 0.11,
-                "assists_per_90": 0.105,
+                "season_count": 9,
+                "points_per_match": 1.342,
+                "minutes_per_match": 57.3,
+                "win_rate": 0.3839,
+                "goals_per_90": 0.108,
+                "assists_per_90": 0.108,
                 "contributions_per_90": 0.215,
                 "primary_position": "AMF"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 218,
+                    "minutes": 12537,
+                    "goals": 19,
+                    "assists": 13
+                },
                 "League Cup": {
                     "matches": 58,
                     "minutes": 2617,
                     "goals": 2,
                     "assists": 3
-                },
-                "First Tier": {
-                    "matches": 212,
-                    "minutes": 12109,
-                    "goals": 19,
-                    "assists": 12
                 },
                 "Domestic Cup": {
                     "matches": 16,
@@ -7621,6 +7722,7 @@
             }
         },
         "2241": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -7698,6 +7800,7 @@
             }
         },
         "24041": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -7746,24 +7849,24 @@
     },
     "career": {
         "club": {
-            "matches": 332,
-            "minutes": 18908,
-            "goals": 23,
-            "assists": 22,
-            "goal_contributions": 45,
+            "matches": 475,
+            "minutes": 25104,
+            "goals": 30,
+            "assists": 32,
+            "goal_contributions": 62,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 9
+            "season_count": 13
         },
         "national": {
-            "matches": 137,
-            "minutes": 5768,
-            "goals": 7,
-            "assists": 9,
-            "goal_contributions": 16,
+            "matches": 0,
+            "minutes": 0,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 3
+            "season_count": 0
         }
     }
 }

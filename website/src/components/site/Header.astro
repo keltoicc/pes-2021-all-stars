@@ -46,11 +46,15 @@ import SearchBox from "../search/SearchBox.astro";
 }
 
 .site-header__inner {
+    width: min(
+        calc(100% - (var(--space-4) * 2)),
+        var(--max-width)
+    );
+
     min-height: 144px;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     gap: var(--space-6);
 }

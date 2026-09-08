@@ -10,13 +10,30 @@
         Search
     </label>
 
-    <input
-        id="search-input"
-        name="q"
-        type="search"
-        placeholder="Search players, teams and countries..."
-        autocomplete="off"
-    />
+    <div class="search-box__input-wrapper">
+        <span class="search-box__icon" aria-hidden="true">
+            <!-- Search icon -->
+            <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="m20 20-4-4"></path>
+            </svg>
+        </span>
+
+        <input
+            id="search-input"
+            name="q"
+            type="search"
+            placeholder="Search players, teams and countries..."
+            autocomplete="off"
+        />
+    </div>
 
     <div
         id="search-suggestions"
@@ -64,10 +81,6 @@
 
         const results = await SearchService.search(query);
 
-        /*
-         * Ignore this response if a newer search
-         * has already been started.
-         */
         if (currentSearchId !== searchId) {
             return;
         }
@@ -127,11 +140,6 @@
 
             case "Enter":
 
-                /*
-                 * If a suggestion is selected, navigate
-                 * to that suggestion instead of submitting
-                 * the search form.
-                 */
                 if (selectedIndex >= 0) {
 
                     event.preventDefault();
@@ -143,11 +151,6 @@
                         link.click();
                     }
                 }
-
-                /*
-                 * If nothing is selected, we do nothing.
-                 * The normal form submission will occur.
-                 */
 
                 break;
         }
@@ -176,3 +179,238 @@
         });
     }
 </script>
+
+<style>
+.search-box {
+    position: relative;
+
+    flex: 1;
+    min-width: 240px;
+    max-width: 560px;
+}
+
+.search-box__input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-box__icon {
+    position: absolute;
+    left: var(--space-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+    color: var(--color-text-muted);
+    pointer-events: none;
+}
+
+.search-box__icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.search-box input {
+    width: 100%;
+    min-height: 40px;
+    padding: var(--space-2) var(--space-4);
+    padding-left: calc(var(--space-3) + 1.25rem);
+
+    color: var(--color-text);
+    font: inherit;
+    font-size: var(--font-size-sm);
+
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    outline: none;
+
+    transition:
+        border-color 150ms ease,
+        box-shadow 150ms ease;
+}
+
+.search-box input::placeholder {
+    color: var(--color-text-muted);
+}
+
+.search-box input:hover {
+    border-color: var(--color-border-strong);
+}
+
+.search-box input:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-primary-alpha);
+}
+
+/*
+ * Remove the browser's default search decorations
+ * so the control keeps the same visual language.
+ */
+.search-box input::-webkit-search-decoration,
+.search-box input::-webkit-search-cancel-button,
+.search-box input::-webkit-search-results-button,
+.search-box input::-webkit-search-results-decoration {
+    appearance: none;
+}
+
+/* Suggestions */
+
+.search-suggestions {
+    position: absolute;
+    z-index: 100;
+    top: calc(100% + var(--space-2));
+    right: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+}
+
+.search-suggestions:empty {
+    display: none;
+}
+
+.search-suggestions li {
+    margin: 0;
+    padding: 0;
+}
+
+.search-suggestions li + li {
+    border-top: 1px solid var(--color-border);
+}
+
+.search-suggestions a {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+
+    min-height: 52px;
+    padding: var(--space-3) var(--space-4);
+
+    color: var(--color-text);
+    text-decoration: none;
+
+    transition:
+        background-color 150ms ease,
+        color 150ms ease;
+}
+
+.search-suggestions a:hover {
+    background: var(--color-surface-subtle);
+}
+
+.search-suggestions li[aria-selected="true"] a {
+    color: var(--color-primary);
+    background: var(--color-surface-subtle);
+}
+
+.search-suggestions a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: -2px;
+}
+
+.search-suggestions :global(li) {
+    margin: 0;
+    padding: 0;
+}
+
+.search-suggestions :global(li + li) {
+    border-top: 1px solid var(--color-border);
+}
+
+.search-suggestions :global(a) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--space-4);
+
+    min-height: 52px;
+    padding: var(--space-3) var(--space-4);
+
+    color: var(--color-text);
+    text-decoration: none;
+
+    transition:
+        color 150ms ease,
+        background-color 150ms ease;
+}
+
+.search-suggestions :global(.search-suggestion__name) {
+    min-width: 0;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    font-weight: var(--font-weight-medium);
+}
+
+.search-suggestions :global(.search-suggestion__type) {
+    flex-shrink: 0;
+
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.search-suggestions :global(li:hover a) {
+    background: var(--color-background);
+}
+
+.search-suggestions :global(li[aria-selected="true"] a) {
+    color: var(--color-primary);
+    background: rgb(0 102 255 / 0.08);
+}
+
+.search-suggestions :global(li[aria-selected="true"] .search-suggestion__type) {
+    color: var(--color-primary);
+}
+
+/* No results */
+
+.search-suggestions:not(:has(li)) {
+    padding: var(--space-4);
+
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+}
+
+.search-suggestion__name {
+    min-width: 0;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    font-weight: var(--font-weight-medium);
+}
+
+.search-suggestion__type {
+    flex-shrink: 0;
+
+    color: var(--color-text-muted);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+@media (max-width: 768px) {
+    .search-box {
+        width: 100%;
+    }
+}
+</style>
