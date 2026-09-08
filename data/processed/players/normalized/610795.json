@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Tomoya Ando",
         "short_name": "Tomoya Ando",
+        "dateOfBirth": "1999-01-10",
+        "placeOfBirth": "Toyota, Aichi",
         "nation_1": "Japan",
         "nation_2": "",
         "height": 1.9,
@@ -14,6 +17,86 @@
         "prime_date": "2026-05-27"
     },
     "matches": [
+        {
+            "game_id": "4916453",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "35",
+            "opponent_id": "10",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4916438",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "35",
+            "opponent_id": "2",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4893852",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "35",
+            "opponent_id": "56",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4916433",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "35",
+            "opponent_id": "269",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4916125",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "35",
+            "opponent_id": "65",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4634556",
             "season": 2025,
@@ -3658,52 +3741,60 @@
     ],
     "clubs": {
         "35": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 20,
-                "participations": 20,
-                "minutes": 1351,
-                "starts": 15,
+                "matches": 25,
+                "participations": 25,
+                "minutes": 1801,
+                "starts": 20,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 1,
-                "goals_conceded": 32,
-                "points": 14,
+                "goals_conceded": 41,
+                "points": 17,
                 "clean_sheets": 5,
                 "wins": 3,
-                "draws": 5,
-                "losses": 12,
-                "goal_matches": 20,
-                "assist_matches": 19,
+                "draws": 8,
+                "losses": 14,
+                "goal_matches": 25,
+                "assist_matches": 24,
                 "goal_contributions": 1
             },
             "positions": {
-                "CB": 16
+                "CB": 21
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 0.7,
-                "minutes_per_match": 67.5,
-                "win_rate": 0.15,
+                "season_count": 2,
+                "points_per_match": 0.68,
+                "minutes_per_match": 72.0,
+                "win_rate": 0.12,
                 "goals_per_90": 0.0,
-                "assists_per_90": 0.067,
-                "contributions_per_90": 0.067,
+                "assists_per_90": 0.05,
+                "contributions_per_90": 0.05,
                 "primary_position": "CB"
             },
             "competitions": {
+                "Second Tier": {
+                    "matches": 4,
+                    "minutes": 360,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 2,
+                    "minutes": 180,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "First Tier": {
                     "matches": 19,
                     "minutes": 1261,
                     "goals": 0,
                     "assists": 1
-                },
-                "Domestic Cup": {
-                    "matches": 1,
-                    "minutes": 90,
-                    "goals": 0,
-                    "assists": 0
                 }
             },
             "awards": {
@@ -3712,6 +3803,7 @@
             }
         },
         "9597": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -3772,6 +3864,7 @@
             }
         },
         "3435": {
+            "type": "national",
             "seasons": [
                 2024,
                 2025
@@ -3823,6 +3916,7 @@
             }
         },
         "3935": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023
@@ -3884,6 +3978,7 @@
             }
         },
         "37689": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021
@@ -3940,6 +4035,7 @@
             }
         },
         "28425": {
+            "type": "national",
             "seasons": [
                 2017
             ],
@@ -3988,14 +4084,14 @@
     },
     "career": {
         "club": {
-            "matches": 216,
-            "minutes": 14188,
+            "matches": 221,
+            "minutes": 14638,
             "goals": 13,
             "assists": 4,
             "goal_contributions": 17,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 6
+            "season_count": 7
         },
         "national": {
             "matches": 11,

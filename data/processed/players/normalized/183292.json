@@ -1,10 +1,13 @@
 {
     "player": {
+        "name": "Svend Brodersen",
         "short_name": "S. Brodersen",
+        "dateOfBirth": "1997-03-22",
+        "placeOfBirth": "Hamburg",
         "nation_1": "Germany",
         "nation_2": "Poland",
         "height": 1.88,
-        "foot": null,
+        "foot": "Both",
         "position_group": "GOALKEEPER",
         "position_1": "GK",
         "position_2": "",
@@ -14,6 +17,118 @@
         "prime_date": "2026-06-03"
     },
     "matches": [
+        {
+            "game_id": "4901558",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "9598",
+            "opponent_id": "1062",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4901531",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "9598",
+            "opponent_id": "23568",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4901501",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "9598",
+            "opponent_id": "672",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4985762",
+            "season": 2025,
+            "competition_type": "Domestic Cup",
+            "club_id": "9598",
+            "opponent_id": "22179",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4901527",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "9598",
+            "opponent_id": "2697",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4901513",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "9598",
+            "opponent_id": "593",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4901491",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "9598",
+            "opponent_id": "3734",
+            "position": "GK",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4889582",
             "season": 2025,
@@ -10577,41 +10692,55 @@
     ],
     "clubs": {
         "9598": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 20,
-                "participations": 20,
-                "minutes": 1350,
-                "starts": 15,
+                "matches": 27,
+                "participations": 27,
+                "minutes": 1890,
+                "starts": 21,
                 "captain_matches": 0,
                 "goals": 0,
                 "assists": 0,
-                "goals_conceded": 23,
-                "points": 30,
-                "clean_sheets": 8,
-                "wins": 10,
-                "draws": 0,
-                "losses": 10,
-                "goal_matches": 20,
-                "assist_matches": 20,
+                "goals_conceded": 32,
+                "points": 42,
+                "clean_sheets": 9,
+                "wins": 13,
+                "draws": 3,
+                "losses": 11,
+                "goal_matches": 27,
+                "assist_matches": 27,
                 "goal_contributions": 0
             },
             "positions": {
-                "GK": 15
+                "GK": 21
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.5,
-                "minutes_per_match": 67.5,
-                "win_rate": 0.5,
+                "season_count": 2,
+                "points_per_match": 1.556,
+                "minutes_per_match": 70.0,
+                "win_rate": 0.4815,
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
                 "primary_position": "GK"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 6,
+                    "minutes": 540,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "League Cup": {
                     "matches": 20,
                     "minutes": 1350,
@@ -10625,6 +10754,7 @@
             }
         },
         "22171": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024
@@ -10698,6 +10828,7 @@
             }
         },
         "943": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -10766,6 +10897,7 @@
             }
         },
         "49503": {
+            "type": "national",
             "seasons": [
                 2020
             ],
@@ -10812,6 +10944,7 @@
             }
         },
         "35": {
+            "type": "club",
             "seasons": [
                 2013,
                 2015,
@@ -10872,6 +11005,7 @@
             }
         },
         "225": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -10926,6 +11060,7 @@
             }
         },
         "3817": {
+            "type": "national",
             "seasons": [
                 2017,
                 2018
@@ -10981,6 +11116,7 @@
             }
         },
         "5709": {
+            "type": "national",
             "seasons": [
                 2016
             ],
@@ -11035,6 +11171,7 @@
             }
         },
         "2486": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014
@@ -11077,6 +11214,7 @@
             }
         },
         "21062": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013
@@ -11121,14 +11259,14 @@
     },
     "career": {
         "club": {
-            "matches": 632,
-            "minutes": 24453,
+            "matches": 639,
+            "minutes": 24993,
             "goals": 0,
             "assists": 2,
             "goal_contributions": 2,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 14
+            "season_count": 15
         },
         "national": {
             "matches": 27,

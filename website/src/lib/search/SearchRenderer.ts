@@ -24,12 +24,39 @@ export default class SearchRenderer {
         const item = document.createElement("li");
         const link = document.createElement("a");
 
-        link.textContent = result.name;
+        const name = document.createElement("span");
+        name.className = "search-result__name";
+        name.textContent = result.name;
+
+        const type = document.createElement("span");
+        type.className = "search-result__type";
+        type.textContent = this.getResultTypeLabel(result.type);
+
         link.href = this.getResultUrl(result);
+
+        link.appendChild(name);
+        link.appendChild(type);
 
         item.appendChild(link);
 
         return item;
+    }
+
+    private static getResultTypeLabel(
+        type: SearchResult["type"]
+    ): string {
+
+        switch (type) {
+
+            case "player":
+                return "Player";
+
+            case "team":
+                return "Team";
+
+            case "country":
+                return "Country";
+        }
     }
 
     private static getResultUrl(
@@ -46,7 +73,6 @@ export default class SearchRenderer {
 
             case "country":
                 return `${import.meta.env.BASE_URL}countries/${result.slug}`;
-
         }
     }
 }

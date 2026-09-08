@@ -7,15 +7,19 @@ import SearchResults from "../../components/search/SearchResults.astro";
 
     <main class="container">
 
-        <header>
-            <h1>Search</h1>
+        <div class="search-page">
 
-            <p id="search-query">
-                Enter a search term to find players, teams and countries.
-            </p>
-        </header>
+            <header class="search-page__header">
+                <h1>Search</h1>
 
-        <SearchResults />
+                <p id="search-query">
+                    Enter a search term to find players, teams and countries.
+                </p>
+            </header>
+
+            <SearchResults />
+
+        </div>
 
     </main>
 
@@ -52,3 +56,33 @@ import SearchResults from "../../components/search/SearchResults.astro";
     </script>
 
 </Layout>
+
+<style>
+.search-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+
+    max-width: var(--content-width);
+    margin-inline: auto;
+}
+
+.search-page__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.search-page__header h1 {
+    margin: 0;
+}
+
+.search-page__header p {
+    margin: 0;
+}
+
+.search-page__header strong {
+    color: var(--color-text);
+    font-weight: var(--font-weight-semibold);
+}
+</style>

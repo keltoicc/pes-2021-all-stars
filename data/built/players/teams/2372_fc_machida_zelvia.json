@@ -1,6 +1,6 @@
 {
     "tactic": "4-4-2 double 6",
-    "total_score": 9.31,
+    "total_score": 9.46,
     "players": [
         {
             "role": "CENTER_BACK",
@@ -67,7 +67,7 @@
             "role_weight": 0.9576
         },
         {
-            "role": "STRIKER",
+            "role": "UTILITY",
             "player": {
                 "ID_transfermarkt": "27783",
                 "name": "Y. Nakashima",
@@ -88,7 +88,7 @@
                 }
             },
             "score": 0.57,
-            "role_weight": 1.0
+            "role_weight": 1.4
         },
         {
             "role": "WIDE_MID",
@@ -167,51 +167,27 @@
             "player": {
                 "ID_transfermarkt": "164277",
                 "name": "Gen Shoji",
-                "score": 0.45731171223913275,
+                "score": 0.47536018908921956,
                 "roles": {
                     "CENTER_BACK": {
                         "weight": 1.0,
-                        "score": 0.45731171223913275
+                        "score": 0.47536018908921956
                     },
                     "SWEEPER": {
                         "weight": 0.5,
-                        "score": 0.32336821284032186
+                        "score": 0.33613041321110665
                     },
                     "WIDE_CENTER_BACK": {
                         "weight": 1.0,
-                        "score": 0.45731171223913275
+                        "score": 0.47536018908921956
                     },
                     "UTILITY": {
                         "weight": 2.5,
-                        "score": 0.45731171223913275
+                        "score": 0.47536018908921956
                     }
                 }
             },
-            "score": 0.46,
-            "role_weight": 1.0
-        },
-        {
-            "role": "STRIKER",
-            "player": {
-                "ID_transfermarkt": "501741",
-                "name": "Shota Fujio",
-                "score": 0.4500419692747786,
-                "roles": {
-                    "SECOND_STRIKER": {
-                        "weight": 0.4,
-                        "score": 0.2846315331151633
-                    },
-                    "STRIKER": {
-                        "weight": 1.0,
-                        "score": 0.4500419692747786
-                    },
-                    "UTILITY": {
-                        "weight": 1.4,
-                        "score": 0.4500419692747786
-                    }
-                }
-            },
-            "score": 0.45,
+            "score": 0.48,
             "role_weight": 1.0
         },
         {
@@ -219,32 +195,104 @@
             "player": {
                 "ID_transfermarkt": "594069",
                 "name": "Yuki Soma",
-                "score": 0.4442757022963714,
+                "score": 0.4687983446596326,
                 "roles": {
                     "CENTRAL_MID": {
-                        "weight": 0.3181818181818182,
-                        "score": 0.25060529428824363
+                        "weight": 0.35573770491803275,
+                        "score": 0.27960891800304283
                     },
                     "ATTACKING_MID": {
-                        "weight": 0.7818181818181817,
-                        "score": 0.3928307219283266
+                        "weight": 0.8032786885245902,
+                        "score": 0.4201643415754803
                     },
                     "SECOND_STRIKER": {
-                        "weight": 0.8181818181818181,
-                        "score": 0.4018624930878275
+                        "weight": 0.7967213114754098,
+                        "score": 0.4184458708093817
                     },
                     "STRIKER": {
-                        "weight": 0.2727272727272727,
-                        "score": 0.23201541856147134
+                        "weight": 0.2459016393442623,
+                        "score": 0.23246992822743429
                     },
                     "UTILITY": {
-                        "weight": 2.190909090909091,
-                        "score": 0.4442757022963714
+                        "weight": 2.2016393442622952,
+                        "score": 0.4687983446596326
                     }
                 }
             },
-            "score": 0.4,
-            "role_weight": 0.8182
+            "score": 0.42,
+            "role_weight": 0.7967
+        },
+        {
+            "role": "STRIKER",
+            "player": {
+                "ID_transfermarkt": "501741",
+                "name": "Shota Fujio",
+                "score": 0.4635536646567419,
+                "roles": {
+                    "SECOND_STRIKER": {
+                        "weight": 0.4,
+                        "score": 0.29317707960663986
+                    },
+                    "STRIKER": {
+                        "weight": 1.0,
+                        "score": 0.4635536646567419
+                    },
+                    "UTILITY": {
+                        "weight": 1.4,
+                        "score": 0.4635536646567419
+                    }
+                }
+            },
+            "score": 0.46,
+            "role_weight": 1.0
+        },
+        {
+            "role": "GOALKEEPER",
+            "player": {
+                "ID_transfermarkt": "405382",
+                "name": "Kosei Tani",
+                "score": 0.42974382943973344,
+                "roles": {
+                    "GOALKEEPER": {
+                        "weight": 1.0,
+                        "score": 0.42974382943973344
+                    },
+                    "UTILITY": {
+                        "weight": 1.0,
+                        "score": 0.42974382943973344
+                    }
+                }
+            },
+            "score": 0.43,
+            "role_weight": 1.0
+        },
+        {
+            "role": "DEFENSIVE_MID",
+            "player": {
+                "ID_transfermarkt": "308262",
+                "name": "H. Shimoda",
+                "score": 0.42599436796679563,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 0.9463414634146341,
+                        "score": 0.4144076766089594
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.5670731707317074,
+                        "score": 0.32079191020575487
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.05365853658536586,
+                        "score": 0.0986786659161634
+                    },
+                    "UTILITY": {
+                        "weight": 1.5670731707317074,
+                        "score": 0.42599436796679563
+                    }
+                }
+            },
+            "score": 0.41,
+            "role_weight": 0.9463
         },
         {
             "role": "DEFENSIVE_MID",
@@ -335,80 +383,28 @@
             "role_weight": 1.0
         },
         {
-            "role": "GOALKEEPER",
+            "role": "STRIKER",
             "player": {
-                "ID_transfermarkt": "405382",
-                "name": "Kosei Tani",
-                "score": 0.41167858446723077,
+                "ID_transfermarkt": "177775",
+                "name": "M. Duke",
+                "score": 0.40285633097947277,
                 "roles": {
-                    "GOALKEEPER": {
+                    "SECOND_STRIKER": {
+                        "weight": 0.4,
+                        "score": 0.2547887151427571
+                    },
+                    "STRIKER": {
                         "weight": 1.0,
-                        "score": 0.41167858446723077
+                        "score": 0.40285633097947277
                     },
                     "UTILITY": {
-                        "weight": 1.0,
-                        "score": 0.41167858446723077
-                    }
-                }
-            },
-            "score": 0.41,
-            "role_weight": 1.0
-        },
-        {
-            "role": "DEFENSIVE_MID",
-            "player": {
-                "ID_transfermarkt": "308262",
-                "name": "H. Shimoda",
-                "score": 0.4099355377735589,
-                "roles": {
-                    "DEFENSIVE_MID": {
-                        "weight": 0.945679012345679,
-                        "score": 0.39864603125299364
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 0.5679012345679012,
-                        "score": 0.30892423211002107
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.05432098765432099,
-                        "score": 0.0955431153769551
-                    },
-                    "UTILITY": {
-                        "weight": 1.567901234567901,
-                        "score": 0.4099355377735589
+                        "weight": 1.4,
+                        "score": 0.40285633097947277
                     }
                 }
             },
             "score": 0.4,
-            "role_weight": 0.9457
-        },
-        {
-            "role": "UTILITY",
-            "player": {
-                "ID_transfermarkt": "262016",
-                "name": "Erik",
-                "score": 0.38655008928004925,
-                "roles": {
-                    "ATTACKING_MID": {
-                        "weight": 0.1346938775510204,
-                        "score": 0.1418664514316001
-                    },
-                    "SECOND_STRIKER": {
-                        "weight": 0.5346938775510204,
-                        "score": 0.28265611376858657
-                    },
-                    "STRIKER": {
-                        "weight": 0.8877551020408163,
-                        "score": 0.36421041970393786
-                    },
-                    "UTILITY": {
-                        "weight": 1.5571428571428572,
-                        "score": 0.38655008928004925
-                    }
-                }
-            },
-            "score": 0.39,
-            "role_weight": 1.5571
+            "role_weight": 1.0
         },
         {
             "role": "WIDE_MID",
@@ -447,6 +443,34 @@
             "role_weight": 0.7045
         },
         {
+            "role": "CENTER_BACK",
+            "player": {
+                "ID_transfermarkt": "321135",
+                "name": "I. Dresevic",
+                "score": 0.37300280463057306,
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.37300280463057306
+                    },
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.2637528125558792
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.37300280463057306
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.37300280463057306
+                    }
+                }
+            },
+            "score": 0.37,
+            "role_weight": 1.0
+        },
+        {
             "role": "CENTRAL_MID",
             "player": {
                 "ID_transfermarkt": "149062",
@@ -477,53 +501,49 @@
         {
             "role": "CENTER_BACK",
             "player": {
-                "ID_transfermarkt": "321135",
-                "name": "I. Dresevic",
-                "score": 0.36065800435970385,
+                "ID_transfermarkt": "639722",
+                "name": "D. Okamura",
+                "score": 0.36658552681531775,
                 "roles": {
                     "CENTER_BACK": {
                         "weight": 1.0,
-                        "score": 0.36065800435970385
+                        "score": 0.36658552681531775
                     },
                     "SWEEPER": {
                         "weight": 0.5,
-                        "score": 0.25502372057195405
+                        "score": 0.25921511189595414
                     },
                     "WIDE_CENTER_BACK": {
                         "weight": 1.0,
-                        "score": 0.36065800435970385
+                        "score": 0.36658552681531775
                     },
                     "UTILITY": {
                         "weight": 2.5,
-                        "score": 0.36065800435970385
+                        "score": 0.36658552681531775
                     }
                 }
             },
-            "score": 0.36,
+            "score": 0.37,
             "role_weight": 1.0
         },
         {
-            "role": "CENTER_BACK",
+            "role": "DEFENSIVE_MID",
             "player": {
-                "ID_transfermarkt": "639722",
-                "name": "D. Okamura",
-                "score": 0.3461201100014624,
+                "ID_transfermarkt": "308781",
+                "name": "H. Mae",
+                "score": 0.3464440271281972,
                 "roles": {
-                    "CENTER_BACK": {
+                    "DEFENSIVE_MID": {
                         "weight": 1.0,
-                        "score": 0.3461201100014624
+                        "score": 0.3464440271281972
                     },
-                    "SWEEPER": {
+                    "CENTRAL_MID": {
                         "weight": 0.5,
-                        "score": 0.24474387688706786
-                    },
-                    "WIDE_CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.3461201100014624
+                        "score": 0.2449729208839245
                     },
                     "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.3461201100014624
+                        "weight": 1.5,
+                        "score": 0.3464440271281972
                     }
                 }
             },
@@ -636,30 +656,6 @@
                     "UTILITY": {
                         "weight": 2.1,
                         "score": 0.3298195352920663
-                    }
-                }
-            },
-            "score": 0.33,
-            "role_weight": 1.0
-        },
-        {
-            "role": "DEFENSIVE_MID",
-            "player": {
-                "ID_transfermarkt": "308781",
-                "name": "H. Mae",
-                "score": 0.3261799193285777,
-                "roles": {
-                    "DEFENSIVE_MID": {
-                        "weight": 1.0,
-                        "score": 0.3261799193285777
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 0.5,
-                        "score": 0.23064403284411833
-                    },
-                    "UTILITY": {
-                        "weight": 1.5,
-                        "score": 0.3261799193285777
                     }
                 }
             },
