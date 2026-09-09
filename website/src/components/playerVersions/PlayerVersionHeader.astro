@@ -9,12 +9,14 @@ interface Props {
     player: Player;
     playerVersion: PlayerVersion;
     country: Country;
+    calculatedOverall: number;
 }
 
 const {
     player,
     playerVersion,
-    country
+    country,
+    calculatedOverall
 } = Astro.props;
 
 const mainPositionCategory =
@@ -81,7 +83,11 @@ const mainPositionCategory =
                 <div class="player-version-header__overall">
 
                     <dt>Overall</dt>
-                    <dd>{playerVersion.overall}</dd>
+                    <dd>
+                        Stored: {playerVersion.overall}
+                        <br />
+                        Calculated: {calculatedOverall}
+                    </dd>
 
                 </div>
 

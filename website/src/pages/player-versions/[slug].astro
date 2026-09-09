@@ -2,7 +2,6 @@
 import Layout from "../../layouts/Layout.astro";
 
 import PlayerVersionHeader from "../../components/playerVersions/PlayerVersionHeader.astro";
-import Section from "../../components/ui/Section.astro";
 import Breadcrumbs from "../../components/ui/Breadcrumbs.astro";
 
 import PlayerVersionRepository from "../../lib/repositories/PlayerVersionRepository";
@@ -21,6 +20,8 @@ import PlayerVersionPopularity from "../../components/playerVersions/PlayerVersi
 import PlayerVersionEquipment from "../../components/playerVersions/PlayerVersionEquipment.astro";
 import PlayerVersionAppearance from "../../components/playerVersions/PlayerVersionAppearance.astro";
 import PlayerVersionPositions from "../../components/playerVersions/PlayerVersionPositions.astro";
+
+import { calculateOverall } from "../../lib/utils/calculateOverall";
 
 export function getStaticPaths() {
     const playerVersions = PlayerVersionRepository.getAll();
@@ -44,6 +45,8 @@ if (!player) {
         `Player with id ${playerVersion.player} not found.`
     );
 }
+
+const calculatedOverall = calculateOverall(playerVersion, player);
 
 const country = CountryRepository.getById(player.country);
 
@@ -114,6 +117,7 @@ if (
             player={player}
             playerVersion={playerVersion}
             country={country}
+            calculatedOverall={calculatedOverall}
         />
 
         <PlayerVersionPositions
