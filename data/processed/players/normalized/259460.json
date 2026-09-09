@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Léo Artur",
         "short_name": "Léo Artur",
+        "dateOfBirth": "1995-03-23",
+        "placeOfBirth": "Osasco",
         "nation_1": "Brazil",
         "nation_2": "",
         "height": 1.77,
@@ -14,6 +17,54 @@
         "prime_date": "2019-05-28"
     },
     "matches": [
+        {
+            "game_id": "5035843",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "81455",
+            "opponent_id": "77974",
+            "position": "AMF",
+            "minutes": 70,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "5036942",
+            "season": 2025,
+            "competition_type": "Domestic Super Cup",
+            "club_id": "81455",
+            "opponent_id": "20830",
+            "position": "LW",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 3,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4894727",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "81455",
+            "opponent_id": "875",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
         {
             "game_id": "4819001",
             "season": 2025,
@@ -9423,14 +9474,21 @@
             "club_id": 199
         },
         {
-            "title": "Vietnamese Cup winner",
+            "title": "Vietnamese Super cup winner",
+            "season": "25/26",
+            "season_id": 2025,
+            "club_name": "Cong An Ha Noi FC",
+            "club_id": 81455
+        },
+        {
+            "title": "Vietnamese Super cup winner",
             "season": "24/25",
             "season_id": 2024,
             "club_name": "Cong An Ha Noi FC",
             "club_id": 81455
         },
         {
-            "title": "Vietnamese Super cup winner",
+            "title": "Vietnamese Cup winner",
             "season": "24/25",
             "season_id": 2024,
             "club_name": "Cong An Ha Noi FC",
@@ -9446,56 +9504,64 @@
     ],
     "clubs": {
         "81455": {
+            "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 80,
-                "participations": 80,
-                "minutes": 5016,
-                "starts": 56,
+                "matches": 83,
+                "participations": 83,
+                "minutes": 5176,
+                "starts": 58,
                 "captain_matches": 0,
-                "goals": 29,
-                "assists": 33,
+                "goals": 30,
+                "assists": 36,
                 "goals_conceded": 54,
-                "points": 158,
-                "clean_sheets": 40,
-                "wins": 47,
+                "points": 167,
+                "clean_sheets": 43,
+                "wins": 50,
                 "draws": 17,
                 "losses": 16,
-                "goal_matches": 55,
-                "assist_matches": 58,
-                "goal_contributions": 62
+                "goal_matches": 57,
+                "assist_matches": 60,
+                "goal_contributions": 66
             },
             "positions": {
-                "AMF": 10,
+                "AMF": 11,
+                "LW": 19,
                 "CF": 19,
                 "SS": 5,
-                "LW": 18,
                 "LM": 5,
                 "CMF": 1,
                 "RW": 1
             },
             "derived": {
-                "season_count": 2,
-                "points_per_match": 1.975,
-                "minutes_per_match": 62.7,
-                "win_rate": 0.5875,
-                "goals_per_90": 0.52,
-                "assists_per_90": 0.592,
-                "contributions_per_90": 1.112,
-                "primary_position": "CF"
+                "season_count": 3,
+                "points_per_match": 2.012,
+                "minutes_per_match": 62.4,
+                "win_rate": 0.6024,
+                "goals_per_90": 0.522,
+                "assists_per_90": 0.626,
+                "contributions_per_90": 1.148,
+                "primary_position": "LW"
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 52,
-                    "minutes": 3288,
-                    "goals": 20,
+                    "matches": 53,
+                    "minutes": 3358,
+                    "goals": 21,
                     "assists": 17
                 },
+                "Domestic Super Cup": {
+                    "matches": 2,
+                    "minutes": 180,
+                    "goals": 1,
+                    "assists": 3
+                },
                 "International Cup": {
-                    "matches": 22,
+                    "matches": 23,
                     "minutes": 1279,
                     "goals": 7,
                     "assists": 11
@@ -9505,22 +9571,21 @@
                     "minutes": 359,
                     "goals": 1,
                     "assists": 5
-                },
-                "Domestic Super Cup": {
-                    "matches": 1,
-                    "minutes": 90,
-                    "goals": 1,
-                    "assists": 0
                 }
             },
             "awards": {
-                "team_titles": {},
+                "team_titles": {
+                    "Vietnamese Super cup winner": 2,
+                    "Vietnamese Cup winner": 1,
+                    "Vietnamese Champion": 1
+                },
                 "individual_titles": {
                     "Best assist provider": 1
                 }
             }
         },
         "14256": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -9577,6 +9642,7 @@
             }
         },
         "4064": {
+            "type": "club",
             "seasons": [
                 2019,
                 2021,
@@ -9637,6 +9703,7 @@
             }
         },
         "1693": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -9686,6 +9753,7 @@
             }
         },
         "3319": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -9738,6 +9806,7 @@
             }
         },
         "21829": {
+            "type": "club",
             "seasons": [
                 2015,
                 2017,
@@ -9799,6 +9868,7 @@
             }
         },
         "3876": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -9848,6 +9918,7 @@
             }
         },
         "15882": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019
@@ -9906,6 +9977,7 @@
             }
         },
         "8718": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -9952,6 +10024,7 @@
             }
         },
         "2462": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -10013,6 +10086,7 @@
             }
         },
         "1134": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017
@@ -10082,6 +10156,7 @@
             }
         },
         "16083": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -10128,6 +10203,7 @@
             }
         },
         "199": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -10194,6 +10270,7 @@
             }
         },
         "1784": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -10233,6 +10310,7 @@
             }
         },
         "6347": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -10288,6 +10366,7 @@
             }
         },
         "27475": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014
@@ -10335,6 +10414,7 @@
             }
         },
         "1755": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -10389,24 +10469,24 @@
     },
     "career": {
         "club": {
-            "matches": 370,
-            "minutes": 15961,
-            "goals": 37,
-            "assists": 20,
-            "goal_contributions": 57,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 11
+            "matches": 590,
+            "minutes": 23843,
+            "goals": 69,
+            "assists": 58,
+            "goal_contributions": 127,
+            "team_titles": 5,
+            "individual_titles": 1,
+            "season_count": 15
         },
         "national": {
-            "matches": 217,
-            "minutes": 7722,
-            "goals": 31,
-            "assists": 35,
-            "goal_contributions": 66,
-            "team_titles": 1,
-            "individual_titles": 1,
-            "season_count": 9
+            "matches": 0,
+            "minutes": 0,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 0
         }
     }
 }

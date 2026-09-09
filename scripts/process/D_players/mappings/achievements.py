@@ -511,6 +511,7 @@ CLUB_NATIONAL_TITLE = [
     "Palestinian Cup Winner",
     "Palestinian West Bank Cup Winner",
     "Palestinian West Bank Premier League Champion",
+    "Panamanian Champion",
     "Panamanian Champion Apertura",
     "Panamanian Champion Clausura",
     "Paraguayan Champion",
@@ -637,6 +638,7 @@ CLUB_NATIONAL_TITLE = [
 ]
 
 MINOR_TITLE = [
+    "Albanian second tier champion",
     "Australian Regular Season Champion",
     "Austrian Central Regionalliga champion",
     "Austrian Eastern Regionalliga champion",
@@ -724,6 +726,7 @@ MINOR_TITLE = [
     "Hessen Cup winner",
     "Hokkaido Soccer League Champion",
     "Hokushin'etsu Football League Champion",
+    "Hong Kong Lower Division Cup Winner",
     "Hong Kong Second League Champion",
     "Indian Second Division Champion",
     "Indonesian Second Division Champion",
