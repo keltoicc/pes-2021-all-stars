@@ -165,11 +165,11 @@ def main():
 
     # obtain_teams_by_competition()
 
-    #obtain_coaches_by_team()
+    obtain_coaches_by_team()
 
-    #obtain_tactics_by_coach()
+    obtain_tactics_by_coach()
 
-    #obtain_players_by_team()
+    obtain_players_by_team()
 
     export_to_web()
 
