@@ -1,19 +1,134 @@
 {
     "player": {
+        "name": "Mario Trejo",
         "short_name": "Mario Trejo",
+        "dateOfBirth": "1999-03-09",
+        "placeOfBirth": "Los Mochis",
         "nation_1": "Mexico",
         "nation_2": "",
-        "height": 1.82,
+        "height": 1.76,
         "foot": "Right",
         "position_group": "DEFENDER",
         "position_1": "CB",
         "position_2": "RB",
-        "position_3": "",
+        "position_3": "DMF",
         "former_clubs": "",
         "market_value": 750000,
         "prime_date": "2025-05-19"
     },
     "matches": [
+        {
+            "game_id": "4922239",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "42781",
+            "opponent_id": "12714",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4922236",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "42781",
+            "opponent_id": "18662",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4922222",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "42781",
+            "opponent_id": "64345",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4922219",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "42781",
+            "opponent_id": "10091",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4922205",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "42781",
+            "opponent_id": "30111",
+            "position": "CB",
+            "minutes": 18,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4921364",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "42781",
+            "opponent_id": "44772",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4921349",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "42781",
+            "opponent_id": "23505",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
         {
             "game_id": "4793813",
             "season": 2025,
@@ -6937,7 +7052,57 @@
         }
     ],
     "clubs": {
+        "42781": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 7,
+                "participations": 7,
+                "minutes": 378,
+                "starts": 4,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 8,
+                "points": 5,
+                "clean_sheets": 2,
+                "wins": 1,
+                "draws": 2,
+                "losses": 4,
+                "goal_matches": 7,
+                "assist_matches": 7,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "CB": 5
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 0.714,
+                "minutes_per_match": 54.0,
+                "win_rate": 0.1429,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "CB"
+            },
+            "competitions": {
+                "Second Tier": {
+                    "matches": 7,
+                    "minutes": 378,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "18662": {
+            "type": "club",
             "seasons": [
                 2020,
                 2023,
@@ -6992,6 +7157,7 @@
             }
         },
         "5623": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -7065,6 +7231,7 @@
             }
         },
         "26080": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016,
@@ -7108,6 +7275,7 @@
             }
         },
         "26092": {
+            "type": "national",
             "seasons": [
                 2017,
                 2018
@@ -7164,6 +7332,7 @@
             }
         },
         "51023": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -7212,14 +7381,14 @@
     },
     "career": {
         "club": {
-            "matches": 414,
-            "minutes": 19891,
+            "matches": 421,
+            "minutes": 20269,
             "goals": 9,
             "assists": 0,
             "goal_contributions": 9,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 11
+            "season_count": 12
         },
         "national": {
             "matches": 18,

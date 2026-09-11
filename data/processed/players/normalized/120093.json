@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Andrés Andrade",
         "short_name": "A. Andrade",
+        "dateOfBirth": "1989-02-23",
+        "placeOfBirth": "Santiago de Cali",
         "nation_1": "Colombia",
         "nation_2": "Mexico",
         "height": 1.83,
@@ -14,6 +17,86 @@
         "prime_date": "2019-02-08"
     },
     "matches": [
+        {
+            "game_id": "5042436",
+            "season": 2025,
+            "competition_type": "Play-Offs",
+            "club_id": "22782",
+            "opponent_id": "18545",
+            "position": "",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "5042434",
+            "season": 2025,
+            "competition_type": "Play-Offs",
+            "club_id": "22782",
+            "opponent_id": "18545",
+            "position": "",
+            "minutes": 78,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4972787",
+            "season": 2025,
+            "competition_type": "Fourth Tier",
+            "club_id": "22782",
+            "opponent_id": "7209",
+            "position": "",
+            "minutes": 28,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4972778",
+            "season": 2025,
+            "competition_type": "Fourth Tier",
+            "club_id": "22782",
+            "opponent_id": "7209",
+            "position": "",
+            "minutes": 45,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4939960",
+            "season": 2025,
+            "competition_type": "Fourth Tier",
+            "club_id": "22782",
+            "opponent_id": "39555",
+            "position": "CF",
+            "minutes": 64,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4939952",
             "season": 2025,
@@ -12925,42 +13008,51 @@
     ],
     "clubs": {
         "22782": {
+            "type": "club",
             "seasons": [
                 2025
             ],
             "stats": {
-                "matches": 4,
-                "participations": 4,
-                "minutes": 174,
-                "starts": 1,
+                "matches": 9,
+                "participations": 9,
+                "minutes": 479,
+                "starts": 5,
                 "captain_matches": 0,
                 "goals": 0,
-                "assists": 1,
-                "goals_conceded": 0,
-                "points": 6,
-                "clean_sheets": 4,
-                "wins": 1,
-                "draws": 3,
-                "losses": 0,
-                "goal_matches": 4,
-                "assist_matches": 3,
-                "goal_contributions": 1
+                "assists": 2,
+                "goals_conceded": 4,
+                "points": 13,
+                "clean_sheets": 6,
+                "wins": 3,
+                "draws": 4,
+                "losses": 2,
+                "goal_matches": 9,
+                "assist_matches": 7,
+                "goal_contributions": 2
             },
-            "positions": {},
+            "positions": {
+                "CF": 1
+            },
             "derived": {
                 "season_count": 1,
-                "points_per_match": 1.5,
-                "minutes_per_match": 43.5,
-                "win_rate": 0.25,
+                "points_per_match": 1.444,
+                "minutes_per_match": 53.2,
+                "win_rate": 0.3333,
                 "goals_per_90": 0.0,
-                "assists_per_90": 0.517,
-                "contributions_per_90": 0.517,
-                "primary_position": ""
+                "assists_per_90": 0.376,
+                "contributions_per_90": 0.376,
+                "primary_position": "CF"
             },
             "competitions": {
+                "Play-Offs": {
+                    "matches": 2,
+                    "minutes": 168,
+                    "goals": 0,
+                    "assists": 1
+                },
                 "Fourth Tier": {
-                    "matches": 4,
-                    "minutes": 174,
+                    "matches": 7,
+                    "minutes": 311,
                     "goals": 0,
                     "assists": 1
                 }
@@ -12971,6 +13063,7 @@
             }
         },
         "18265": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -13027,6 +13120,7 @@
             }
         },
         "6495": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -13094,6 +13188,7 @@
             }
         },
         "9961": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -13151,6 +13246,7 @@
             }
         },
         "184": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -13212,6 +13308,7 @@
             }
         },
         "8172": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020,
@@ -13289,6 +13386,7 @@
             }
         },
         "3816": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -13337,6 +13435,7 @@
             }
         },
         "8590": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019
@@ -13396,6 +13495,7 @@
             }
         },
         "4941": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017
@@ -13457,6 +13557,7 @@
             }
         },
         "23001": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -13496,6 +13597,7 @@
             }
         },
         "3631": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -13564,6 +13666,7 @@
             }
         },
         "4774": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -13620,6 +13723,7 @@
             }
         },
         "25014": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -13659,6 +13763,7 @@
             }
         },
         "10503": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012
@@ -13731,6 +13836,7 @@
             }
         },
         "14583": {
+            "type": "club",
             "seasons": [
                 2010
             ],
@@ -13777,6 +13883,7 @@
             }
         },
         "2352": {
+            "type": "club",
             "seasons": [
                 2008,
                 2009
@@ -13832,24 +13939,24 @@
     },
     "career": {
         "club": {
-            "matches": 313,
-            "minutes": 13635,
-            "goals": 21,
-            "assists": 31,
-            "goal_contributions": 52,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 10
-        },
-        "national": {
-            "matches": 491,
-            "minutes": 20403,
-            "goals": 47,
-            "assists": 56,
-            "goal_contributions": 103,
+            "matches": 808,
+            "minutes": 34298,
+            "goals": 68,
+            "assists": 88,
+            "goal_contributions": 156,
             "team_titles": 3,
             "individual_titles": 0,
-            "season_count": 12
+            "season_count": 18
+        },
+        "national": {
+            "matches": 1,
+            "minutes": 45,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 1
         }
     }
 }

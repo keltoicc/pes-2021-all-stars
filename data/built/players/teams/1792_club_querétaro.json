@@ -1,6 +1,6 @@
 {
     "tactic": "4-4-2 double 6",
-    "total_score": 9.44,
+    "total_score": 9.46,
     "players": [
         {
             "role": "STRIKER",
@@ -567,6 +567,30 @@
             "role_weight": 0.8148
         },
         {
+            "role": "SECOND_STRIKER",
+            "player": {
+                "ID_transfermarkt": "426654",
+                "name": "P. Yrízar",
+                "score": 0.35688898192845164,
+                "roles": {
+                    "SECOND_STRIKER": {
+                        "weight": 0.4,
+                        "score": 0.22571641094251582
+                    },
+                    "STRIKER": {
+                        "weight": 1.0,
+                        "score": 0.35688898192845164
+                    },
+                    "UTILITY": {
+                        "weight": 1.4,
+                        "score": 0.35688898192845164
+                    }
+                }
+            },
+            "score": 0.23,
+            "role_weight": 0.4
+        },
+        {
             "role": "FULLBACK",
             "player": {
                 "ID_transfermarkt": "135851",
@@ -621,34 +645,6 @@
             },
             "score": 0.29,
             "role_weight": 1.0
-        },
-        {
-            "role": "SECOND_STRIKER",
-            "player": {
-                "ID_transfermarkt": "121171",
-                "name": "Erbín Trejo",
-                "score": 0.2614902638579118,
-                "roles": {
-                    "CENTRAL_MID": {
-                        "weight": 0.7,
-                        "score": 0.2187784510977629
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 1.0,
-                        "score": 0.2614902638579118
-                    },
-                    "SECOND_STRIKER": {
-                        "weight": 0.6,
-                        "score": 0.20254948742341514
-                    },
-                    "UTILITY": {
-                        "weight": 2.3,
-                        "score": 0.2614902638579118
-                    }
-                }
-            },
-            "score": 0.2,
-            "role_weight": 0.6
         }
     ]
 }
