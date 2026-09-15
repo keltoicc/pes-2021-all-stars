@@ -544,6 +544,7 @@ CLUB_NATIONAL_TITLE = [
     "Russian league cup winner",
     "Salvadoran Champion",
     "Salvadoran Champion Apertura",
+    "Salvadoran Champion Clausura",
     "San Marinese champion",
     "San Marinese cup winner",
     "San Marinese Supercup Winner",
