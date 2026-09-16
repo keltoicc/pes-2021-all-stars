@@ -9,6 +9,9 @@ from .publisher import publish_directory
 
 sys.path.append(str(Path(__file__).parent))
 
+from mappings.duplicated_slugs import YEAR
+from mappings.duplicated_slugs import BIRTH_PLACE
+
 def slugify(name: str) -> str:
     name = name.lower()
     name = re.sub(r"[^\w]+", "_", name)
@@ -163,11 +166,23 @@ def get_player_data(id_transfermarkt) -> dict:
 
     name = player_data.get("name")
 
+    slug = slugify_web(name)
+
+    if slug in YEAR:
+        birth_year = player_data.get("dateOfBirth", "").split("-")[0]
+        if birth_year:
+            slug = f"{slug}-{birth_year}"
+
+    if slug in BIRTH_PLACE:
+        birth_place = player_data.get("placeOfBirth")
+        if birth_place:
+            slug = f"{slug}-{slugify_web(birth_place)}"
+
     data = {
         "id": int(id_transfermarkt),
 
         "name": name,
-        "slug": f"{slugify_web(name)}",
+        "slug": slug,
 
         "birthDate": player_data.get("dateOfBirth"),
         "birthPlace": player_data.get("placeOfBirth"),
