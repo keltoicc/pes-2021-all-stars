@@ -89,7 +89,8 @@ YEAR = [
     "eusébio",
     "fritz-walter",
     "álex-fernández",
-    "billy-smith"
+    "billy-smith",
+    "aleksey-stepanov"
 ]
 
 BIRTH_PLACE = [

@@ -1,7 +1,10 @@
 {
     "player": {
+        "name": "Bernard Berisha",
         "short_name": "B. Berisha",
-        "nation_1": null,
+        "dateOfBirth": "1991-10-24",
+        "placeOfBirth": "Pejë",
+        "nation_1": "Kosovo",
         "nation_2": "Albania",
         "height": 1.65,
         "foot": "Right",
@@ -14,6 +17,70 @@
         "prime_date": "2021-04-13"
     },
     "matches": [
+        {
+            "game_id": "4943803",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "2049",
+            "opponent_id": "12469",
+            "position": "LW",
+            "minutes": 45,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4943800",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "2049",
+            "opponent_id": "45456",
+            "position": "LW",
+            "minutes": 62,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 2,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4943795",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "2049",
+            "opponent_id": "3739",
+            "position": "LW",
+            "minutes": 84,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4938705",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "2049",
+            "opponent_id": "27114",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
         {
             "game_id": "4883698",
             "season": 2025,
@@ -9508,14 +9575,14 @@
             "competition_type": "Domestic Cup",
             "club_id": "739",
             "opponent_id": "12460",
-            "position": null,
-            "minutes": 0,
-            "started": false,
+            "position": "",
+            "minutes": 90,
+            "started": true,
             "captain": false,
             "goals": 0,
             "assists": 0,
-            "goals_conceded": 0,
-            "participation": "not in squad",
+            "goals_conceded": 1,
+            "participation": "played",
             "club_points": 1
         },
         {
@@ -9556,14 +9623,14 @@
             "competition_type": "Domestic Cup",
             "club_id": "739",
             "opponent_id": "12460",
-            "position": null,
-            "minutes": 0,
-            "started": false,
+            "position": "",
+            "minutes": 90,
+            "started": true,
             "captain": false,
             "goals": 0,
             "assists": 0,
-            "goals_conceded": 0,
-            "participation": "not in squad",
+            "goals_conceded": 1,
+            "participation": "played",
             "club_points": 0
         },
         {
@@ -10252,7 +10319,57 @@
         }
     ],
     "clubs": {
+        "2049": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 4,
+                "participations": 4,
+                "minutes": 191,
+                "starts": 3,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 3,
+                "goals_conceded": 2,
+                "points": 4,
+                "clean_sheets": 3,
+                "wins": 1,
+                "draws": 1,
+                "losses": 2,
+                "goal_matches": 4,
+                "assist_matches": 2,
+                "goal_contributions": 3
+            },
+            "positions": {
+                "LW": 3
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 1.0,
+                "minutes_per_match": 47.8,
+                "win_rate": 0.25,
+                "goals_per_90": 0.0,
+                "assists_per_90": 1.414,
+                "contributions_per_90": 1.414,
+                "primary_position": "LW"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 4,
+                    "minutes": 191,
+                    "goals": 0,
+                    "assists": 3
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "588": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -10324,12 +10441,14 @@
             },
             "awards": {
                 "team_titles": {
-                    "Albanian Cup winner": 1
+                    "Albanian Cup winner": 1,
+                    "Albanian Super Cup winner": 1
                 },
                 "individual_titles": {}
             }
         },
         "3725": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017,
@@ -10406,6 +10525,7 @@
             }
         },
         "53982": {
+            "type": "national",
             "seasons": [
                 2015,
                 2016,
@@ -10470,6 +10590,7 @@
             }
         },
         "2700": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016
@@ -10532,6 +10653,7 @@
             }
         },
         "12469": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015
@@ -10596,12 +10718,14 @@
             },
             "awards": {
                 "team_titles": {
-                    "Albanian champion": 2
+                    "Albanian champion": 2,
+                    "Albanian Super Cup winner": 1
                 },
                 "individual_titles": {}
             }
         },
         "739": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013
@@ -10609,14 +10733,14 @@
             "stats": {
                 "matches": 67,
                 "participations": 67,
-                "minutes": 4225,
-                "starts": 50,
+                "minutes": 4405,
+                "starts": 52,
                 "captain_matches": 1,
                 "goals": 7,
                 "assists": 2,
-                "goals_conceded": 37,
+                "goals_conceded": 39,
                 "points": 85,
-                "clean_sheets": 39,
+                "clean_sheets": 37,
                 "wins": 22,
                 "draws": 19,
                 "losses": 26,
@@ -10628,11 +10752,11 @@
             "derived": {
                 "season_count": 2,
                 "points_per_match": 1.269,
-                "minutes_per_match": 63.1,
+                "minutes_per_match": 65.7,
                 "win_rate": 0.3284,
-                "goals_per_90": 0.149,
-                "assists_per_90": 0.043,
-                "contributions_per_90": 0.192,
+                "goals_per_90": 0.143,
+                "assists_per_90": 0.041,
+                "contributions_per_90": 0.184,
                 "primary_position": ""
             },
             "competitions": {
@@ -10644,7 +10768,7 @@
                 },
                 "Domestic Cup": {
                     "matches": 8,
-                    "minutes": 90,
+                    "minutes": 270,
                     "goals": 1,
                     "assists": 0
                 }
@@ -10655,6 +10779,7 @@
             }
         },
         "14617": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -10703,24 +10828,24 @@
     },
     "career": {
         "club": {
-            "matches": 429,
-            "minutes": 18091,
-            "goals": 40,
-            "assists": 28,
-            "goal_contributions": 68,
-            "team_titles": 0,
+            "matches": 564,
+            "minutes": 25638,
+            "goals": 54,
+            "assists": 46,
+            "goal_contributions": 100,
+            "team_titles": 5,
             "individual_titles": 0,
-            "season_count": 14
+            "season_count": 16
         },
         "national": {
-            "matches": 208,
-            "minutes": 8411,
-            "goals": 15,
-            "assists": 19,
-            "goal_contributions": 34,
-            "team_titles": 3,
+            "matches": 77,
+            "minutes": 1235,
+            "goals": 1,
+            "assists": 4,
+            "goal_contributions": 5,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 11
+            "season_count": 9
         }
     }
 }

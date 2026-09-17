@@ -1,6 +1,6 @@
 {
     "tactic": "4-2-3-1",
-    "total_score": 10.01,
+    "total_score": 10.18,
     "players": [
         {
             "role": "ATTACKING_MID",
@@ -35,64 +35,24 @@
             "player": {
                 "ID_transfermarkt": "185245",
                 "name": "J. Córdoba",
-                "score": 0.6090216275994083,
+                "score": 0.6256228350068157,
                 "roles": {
                     "SECOND_STRIKER": {
                         "weight": 0.4,
-                        "score": 0.38517909750339896
+                        "score": 0.39567862296665224
                     },
                     "STRIKER": {
                         "weight": 1.0,
-                        "score": 0.6090216275994083
+                        "score": 0.6256228350068157
                     },
                     "UTILITY": {
                         "weight": 1.4,
-                        "score": 0.6090216275994083
+                        "score": 0.6256228350068157
                     }
                 }
             },
-            "score": 0.61,
+            "score": 0.63,
             "role_weight": 1.0
-        },
-        {
-            "role": "FULLBACK",
-            "player": {
-                "ID_transfermarkt": "102581",
-                "name": "S. Petrov",
-                "score": 0.5794665632207154,
-                "roles": {
-                    "WIDE_CENTER_BACK": {
-                        "weight": 0.7000000000000001,
-                        "score": 0.48481651015985333
-                    },
-                    "FULLBACK": {
-                        "weight": 0.875,
-                        "score": 0.5420413366658248
-                    },
-                    "WING_BACK": {
-                        "weight": 0.6124999999999999,
-                        "score": 0.4535043191173947
-                    },
-                    "DEFENSIVE_MID": {
-                        "weight": 0.10652173913043478,
-                        "score": 0.18912437474623242
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 0.08559782608695651,
-                        "score": 0.16953514756438204
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.01847826086956522,
-                        "score": 0.07876965223485548
-                    },
-                    "UTILITY": {
-                        "weight": 2.3980978260869565,
-                        "score": 0.5794665632207154
-                    }
-                }
-            },
-            "score": 0.54,
-            "role_weight": 0.875
         },
         {
             "role": "DEFENSIVE_MID",
@@ -121,6 +81,46 @@
             },
             "score": 0.54,
             "role_weight": 0.8593
+        },
+        {
+            "role": "FULLBACK",
+            "player": {
+                "ID_transfermarkt": "102581",
+                "name": "S. Petrov",
+                "score": 0.5773539974592492,
+                "roles": {
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.7002710027100272,
+                        "score": 0.48314250720763324
+                    },
+                    "FULLBACK": {
+                        "weight": 0.8753387533875339,
+                        "score": 0.5401697444679749
+                    },
+                    "WING_BACK": {
+                        "weight": 0.6127371273712736,
+                        "score": 0.45193843273948076
+                    },
+                    "DEFENSIVE_MID": {
+                        "weight": 0.1062330623306233,
+                        "score": 0.1881793774976321
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.08536585365853658,
+                        "score": 0.16868803175393005
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.01842818428184282,
+                        "score": 0.07837606412790195
+                    },
+                    "UTILITY": {
+                        "weight": 2.3983739837398375,
+                        "score": 0.5773539974592492
+                    }
+                }
+            },
+            "score": 0.54,
+            "role_weight": 0.8753
         },
         {
             "role": "UTILITY",
@@ -203,6 +203,74 @@
             "role_weight": 1.0
         },
         {
+            "role": "DEFENSIVE_MID",
+            "player": {
+                "ID_transfermarkt": "432112",
+                "name": "A. Chernikov",
+                "score": 0.46135964763027987,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 1.0,
+                        "score": 0.46135964763027987
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.5,
+                        "score": 0.326230535405207
+                    },
+                    "UTILITY": {
+                        "weight": 1.5,
+                        "score": 0.46135964763027987
+                    }
+                }
+            },
+            "score": 0.46,
+            "role_weight": 1.0
+        },
+        {
+            "role": "GOALKEEPER",
+            "player": {
+                "ID_transfermarkt": "617520",
+                "name": "S. Agkatsev",
+                "score": 0.46064900794939295,
+                "roles": {
+                    "GOALKEEPER": {
+                        "weight": 1.0,
+                        "score": 0.46064900794939295
+                    },
+                    "UTILITY": {
+                        "weight": 1.0,
+                        "score": 0.46064900794939295
+                    }
+                }
+            },
+            "score": 0.46,
+            "role_weight": 1.0
+        },
+        {
+            "role": "WINGER",
+            "player": {
+                "ID_transfermarkt": "514256",
+                "name": "João Batxi",
+                "score": 0.4589047789354261,
+                "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.6000000000000001,
+                        "score": 0.3554661132623803
+                    },
+                    "WINGER": {
+                        "weight": 1.0,
+                        "score": 0.4589047789354261
+                    },
+                    "UTILITY": {
+                        "weight": 1.6,
+                        "score": 0.4589047789354261
+                    }
+                }
+            },
+            "score": 0.46,
+            "role_weight": 1.0
+        },
+        {
             "role": "WINGER",
             "player": {
                 "ID_transfermarkt": "73783",
@@ -225,6 +293,38 @@
             },
             "score": 0.46,
             "role_weight": 1.0
+        },
+        {
+            "role": "ATTACKING_MID",
+            "player": {
+                "ID_transfermarkt": "746180",
+                "name": "N. Krivtsov",
+                "score": 0.4471263142374184,
+                "roles": {
+                    "CENTRAL_MID": {
+                        "weight": 0.7926174496644295,
+                        "score": 0.39807237899039566
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.8147651006711409,
+                        "score": 0.40359561480564454
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.4147651006711409,
+                        "score": 0.28795944842448007
+                    },
+                    "DEFENSIVE_MID": {
+                        "weight": 0.18523489932885906,
+                        "score": 0.19243835530681608
+                    },
+                    "UTILITY": {
+                        "weight": 2.2073825503355704,
+                        "score": 0.4471263142374184
+                    }
+                }
+            },
+            "score": 0.4,
+            "role_weight": 0.8148
         },
         {
             "role": "CENTER_BACK",
@@ -253,106 +353,6 @@
             },
             "score": 0.44,
             "role_weight": 1.0
-        },
-        {
-            "role": "DEFENSIVE_MID",
-            "player": {
-                "ID_transfermarkt": "432112",
-                "name": "A. Chernikov",
-                "score": 0.44025836893418085,
-                "roles": {
-                    "DEFENSIVE_MID": {
-                        "weight": 1.0,
-                        "score": 0.44025836893418085
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 0.5,
-                        "score": 0.31130967814748817
-                    },
-                    "UTILITY": {
-                        "weight": 1.5,
-                        "score": 0.44025836893418085
-                    }
-                }
-            },
-            "score": 0.44,
-            "role_weight": 1.0
-        },
-        {
-            "role": "WINGER",
-            "player": {
-                "ID_transfermarkt": "514256",
-                "name": "João Batxi",
-                "score": 0.4370705048973383,
-                "roles": {
-                    "WIDE_MID": {
-                        "weight": 0.6000000000000001,
-                        "score": 0.3385533573171717
-                    },
-                    "WINGER": {
-                        "weight": 1.0,
-                        "score": 0.4370705048973383
-                    },
-                    "UTILITY": {
-                        "weight": 1.6,
-                        "score": 0.4370705048973383
-                    }
-                }
-            },
-            "score": 0.44,
-            "role_weight": 1.0
-        },
-        {
-            "role": "GOALKEEPER",
-            "player": {
-                "ID_transfermarkt": "617520",
-                "name": "S. Agkatsev",
-                "score": 0.4331656971151942,
-                "roles": {
-                    "GOALKEEPER": {
-                        "weight": 1.0,
-                        "score": 0.4331656971151942
-                    },
-                    "UTILITY": {
-                        "weight": 1.0,
-                        "score": 0.4331656971151942
-                    }
-                }
-            },
-            "score": 0.43,
-            "role_weight": 1.0
-        },
-        {
-            "role": "ATTACKING_MID",
-            "player": {
-                "ID_transfermarkt": "746180",
-                "name": "N. Krivtsov",
-                "score": 0.4271501883950261,
-                "roles": {
-                    "CENTRAL_MID": {
-                        "weight": 0.7951724137931034,
-                        "score": 0.3809002474294467
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.8096551724137931,
-                        "score": 0.3843533313066866
-                    },
-                    "SECOND_STRIKER": {
-                        "weight": 0.4096551724137931,
-                        "score": 0.27339453159890575
-                    },
-                    "DEFENSIVE_MID": {
-                        "weight": 0.1903448275862069,
-                        "score": 0.18635933075475108
-                    },
-                    "UTILITY": {
-                        "weight": 2.2048275862068967,
-                        "score": 0.4271501883950261
-                    }
-                }
-            },
-            "score": 0.38,
-            "role_weight": 0.8097
         },
         {
             "role": "STRIKER",
@@ -385,6 +385,34 @@
             },
             "score": 0.41,
             "role_weight": 0.9337
+        },
+        {
+            "role": "FULLBACK",
+            "player": {
+                "ID_transfermarkt": "216240",
+                "name": "Lucas Olaza",
+                "score": 0.4010097279140177,
+                "roles": {
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.8,
+                        "score": 0.3586740045017754
+                    },
+                    "FULLBACK": {
+                        "weight": 1.0,
+                        "score": 0.4010097279140177
+                    },
+                    "WING_BACK": {
+                        "weight": 0.7,
+                        "score": 0.33550880959696444
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.4010097279140177
+                    }
+                }
+            },
+            "score": 0.4,
+            "role_weight": 1.0
         },
         {
             "role": "WINGER",
@@ -447,6 +475,34 @@
             "role_weight": 1.0
         },
         {
+            "role": "CENTER_BACK",
+            "player": {
+                "ID_transfermarkt": "517300",
+                "name": "V. Tormena",
+                "score": 0.3977894403812093,
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.3977894403812093
+                    },
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.28127961077795494
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.3977894403812093
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.3977894403812093
+                    }
+                }
+            },
+            "score": 0.4,
+            "role_weight": 1.0
+        },
+        {
             "role": "FULLBACK",
             "player": {
                 "ID_transfermarkt": "189485",
@@ -475,55 +531,23 @@
             "role_weight": 1.0
         },
         {
-            "role": "FULLBACK",
+            "role": "DEFENSIVE_MID",
             "player": {
-                "ID_transfermarkt": "216240",
-                "name": "Lucas Olaza",
-                "score": 0.37820353693293335,
+                "ID_transfermarkt": "544586",
+                "name": "Kevin Pina",
+                "score": 0.37227549319245423,
                 "roles": {
-                    "WIDE_CENTER_BACK": {
-                        "weight": 0.8,
-                        "score": 0.3382755271651565
-                    },
-                    "FULLBACK": {
+                    "DEFENSIVE_MID": {
                         "weight": 1.0,
-                        "score": 0.37820353693293335
+                        "score": 0.37227549319245423
                     },
-                    "WING_BACK": {
-                        "weight": 0.7,
-                        "score": 0.31642778124558923
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.37820353693293335
-                    }
-                }
-            },
-            "score": 0.38,
-            "role_weight": 1.0
-        },
-        {
-            "role": "CENTER_BACK",
-            "player": {
-                "ID_transfermarkt": "517300",
-                "name": "V. Tormena",
-                "score": 0.3711665532467063,
-                "roles": {
-                    "CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.3711665532467063
-                    },
-                    "SWEEPER": {
+                    "CENTRAL_MID": {
                         "weight": 0.5,
-                        "score": 0.2624543867503838
-                    },
-                    "WIDE_CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.3711665532467063
+                        "score": 0.2632385257059508
                     },
                     "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.3711665532467063
+                        "weight": 1.5,
+                        "score": 0.37227549319245423
                     }
                 }
             },
@@ -565,30 +589,6 @@
             },
             "score": 0.24,
             "role_weight": 0.4308
-        },
-        {
-            "role": "DEFENSIVE_MID",
-            "player": {
-                "ID_transfermarkt": "544586",
-                "name": "Kevin Pina",
-                "score": 0.35151123608013396,
-                "roles": {
-                    "DEFENSIVE_MID": {
-                        "weight": 1.0,
-                        "score": 0.35151123608013396
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 0.5,
-                        "score": 0.24855597869552815
-                    },
-                    "UTILITY": {
-                        "weight": 1.5,
-                        "score": 0.35151123608013396
-                    }
-                }
-            },
-            "score": 0.35,
-            "role_weight": 1.0
         },
         {
             "role": "DEFENSIVE_MID",

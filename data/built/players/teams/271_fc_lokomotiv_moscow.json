@@ -1,6 +1,6 @@
 {
     "tactic": "4-2-3-1",
-    "total_score": 13.84,
+    "total_score": 13.8,
     "players": [
         {
             "role": "ATTACKING_MID",
@@ -279,7 +279,7 @@
             "role_weight": 1.0
         },
         {
-            "role": "UTILITY",
+            "role": "ATTACKING_MID",
             "player": {
                 "ID_transfermarkt": "255451",
                 "name": "A. Miranchuk",
@@ -315,8 +315,8 @@
                     }
                 }
             },
-            "score": 0.65,
-            "role_weight": 1.9838
+            "score": 0.48,
+            "role_weight": 0.5371
         },
         {
             "role": "DEFENSIVE_MID",
@@ -343,7 +343,7 @@
             "role_weight": 1.0
         },
         {
-            "role": "ATTACKING_MID",
+            "role": "SECOND_STRIKER",
             "player": {
                 "ID_transfermarkt": "255450",
                 "name": "A. Miranchuk",
@@ -379,8 +379,40 @@
                     }
                 }
             },
-            "score": 0.53,
-            "role_weight": 0.678
+            "score": 0.43,
+            "role_weight": 0.4525
+        },
+        {
+            "role": "UTILITY",
+            "player": {
+                "ID_transfermarkt": "215769",
+                "name": "V. Bubukin",
+                "score": 0.6350848797751487,
+                "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.3,
+                        "score": 0.3478503145833054
+                    },
+                    "WINGER": {
+                        "weight": 0.5,
+                        "score": 0.44907282511805097
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.2,
+                        "score": 0.28401859253190276
+                    },
+                    "STRIKER": {
+                        "weight": 0.5,
+                        "score": 0.44907282511805097
+                    },
+                    "UTILITY": {
+                        "weight": 1.5,
+                        "score": 0.6350848797751487
+                    }
+                }
+            },
+            "score": 0.64,
+            "role_weight": 1.5
         },
         {
             "role": "DEFENSIVE_MID",
@@ -463,6 +495,38 @@
             "role_weight": 1.0
         },
         {
+            "role": "WINGER",
+            "player": {
+                "ID_transfermarkt": "732689",
+                "name": "V. Voroshilov",
+                "score": 0.6096163382978759,
+                "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.39999999999999997,
+                        "score": 0.3855552255746044
+                    },
+                    "WINGER": {
+                        "weight": 0.6666666666666666,
+                        "score": 0.4977496558978956
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.13333333333333333,
+                        "score": 0.22260041327296473
+                    },
+                    "STRIKER": {
+                        "weight": 0.3333333333333333,
+                        "score": 0.35196215701867256
+                    },
+                    "UTILITY": {
+                        "weight": 1.5333333333333332,
+                        "score": 0.6096163382978759
+                    }
+                }
+            },
+            "score": 0.5,
+            "role_weight": 0.6667
+        },
+        {
             "role": "CENTER_BACK",
             "player": {
                 "ID_transfermarkt": "9661",
@@ -527,34 +591,6 @@
             "role_weight": 1.0
         },
         {
-            "role": "WINGER",
-            "player": {
-                "ID_transfermarkt": "600037",
-                "name": "Y. Kovalev",
-                "score": 0.5827877897276145,
-                "roles": {
-                    "WING_BACK": {
-                        "weight": 0.4,
-                        "score": 0.36858736161490846
-                    },
-                    "WIDE_MID": {
-                        "weight": 1.0,
-                        "score": 0.5827877897276145
-                    },
-                    "WINGER": {
-                        "weight": 0.7,
-                        "score": 0.48759524761724116
-                    },
-                    "UTILITY": {
-                        "weight": 2.1,
-                        "score": 0.5827877897276145
-                    }
-                }
-            },
-            "score": 0.49,
-            "role_weight": 0.7
-        },
-        {
             "role": "FULLBACK",
             "player": {
                 "ID_transfermarkt": "28937",
@@ -589,6 +625,34 @@
             },
             "score": 0.54,
             "role_weight": 0.915
+        },
+        {
+            "role": "CENTER_BACK",
+            "player": {
+                "ID_transfermarkt": "9656",
+                "name": "O. Pashinin",
+                "score": 0.5401123131094754,
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.5401123131094754
+                    },
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.38191707920206186
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.5401123131094754
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.5401123131094754
+                    }
+                }
+            },
+            "score": 0.54,
+            "role_weight": 1.0
         },
         {
             "role": "FULLBACK",
@@ -645,62 +709,6 @@
             },
             "score": 0.52,
             "role_weight": 1.0
-        },
-        {
-            "role": "CENTER_BACK",
-            "player": {
-                "ID_transfermarkt": "9653",
-                "name": "G. Nizhegorodov",
-                "score": 0.5094900782663889,
-                "roles": {
-                    "CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.5094900782663889
-                    },
-                    "SWEEPER": {
-                        "weight": 0.5,
-                        "score": 0.3602638892894285
-                    },
-                    "WIDE_CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.5094900782663889
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.5094900782663889
-                    }
-                }
-            },
-            "score": 0.51,
-            "role_weight": 1.0
-        },
-        {
-            "role": "SECOND_STRIKER",
-            "player": {
-                "ID_transfermarkt": "771076",
-                "name": "P. Terenkov",
-                "score": 0.46227957141569204,
-                "roles": {
-                    "STRIKER": {
-                        "weight": 1.0,
-                        "score": 0.46227957141569204
-                    },
-                    "SECOND_STRIKER": {
-                        "weight": 0.9,
-                        "score": 0.4385569084320167
-                    },
-                    "WINGER": {
-                        "weight": 0.8,
-                        "score": 0.4134754185179824
-                    },
-                    "UTILITY": {
-                        "weight": 2.7,
-                        "score": 0.46227957141569204
-                    }
-                }
-            },
-            "score": 0.44,
-            "role_weight": 0.9
         }
     ]
 }
