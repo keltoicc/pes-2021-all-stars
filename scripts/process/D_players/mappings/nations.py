@@ -96,7 +96,7 @@ NATIONS_MAP = {
     94: "Lebanon",
     95: "Liberia",
     96: "Libya",
-    97: "97",
+    97: "Liechtenstein",
     98: "Lithuania",
     99: "Luxembourg",
     100: "North Macedonia",
