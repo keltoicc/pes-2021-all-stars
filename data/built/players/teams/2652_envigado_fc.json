@@ -1,6 +1,6 @@
 {
-    "tactic": "4-4-2",
-    "total_score": 7.06,
+    "tactic": "4-2-3-1",
+    "total_score": 7.12,
     "players": [
         {
             "role": "CENTER_BACK",
@@ -31,7 +31,7 @@
             "role_weight": 1.0
         },
         {
-            "role": "WIDE_MID",
+            "role": "UTILITY",
             "player": {
                 "ID_transfermarkt": "17901",
                 "name": "N. Morantes",
@@ -67,11 +67,11 @@
                     }
                 }
             },
-            "score": 0.34,
-            "role_weight": 0.6667
+            "score": 0.42,
+            "role_weight": 2.1667
         },
         {
-            "role": "UTILITY",
+            "role": "DEFENSIVE_MID",
             "player": {
                 "ID_transfermarkt": "474677",
                 "name": "Iván Rojas",
@@ -95,39 +95,39 @@
                     }
                 }
             },
-            "score": 0.37,
-            "role_weight": 1.5669
+            "score": 0.36,
+            "role_weight": 0.9465
         },
         {
             "role": "CENTER_BACK",
             "player": {
                 "ID_transfermarkt": "582031",
                 "name": "S. Noreña",
-                "score": 0.35432609908675794,
+                "score": 0.3572898374213836,
                 "roles": {
                     "CENTER_BACK": {
                         "weight": 1.0,
-                        "score": 0.35432609908675794
+                        "score": 0.3572898374213836
                     },
                     "SWEEPER": {
                         "weight": 0.5,
-                        "score": 0.25054638741562313
+                        "score": 0.2526420668896994
                     },
                     "WIDE_CENTER_BACK": {
                         "weight": 1.0,
-                        "score": 0.35432609908675794
+                        "score": 0.3572898374213836
                     },
                     "UTILITY": {
                         "weight": 2.5,
-                        "score": 0.35432609908675794
+                        "score": 0.3572898374213836
                     }
                 }
             },
-            "score": 0.35,
+            "score": 0.36,
             "role_weight": 1.0
         },
         {
-            "role": "SECOND_STRIKER",
+            "role": "ATTACKING_MID",
             "player": {
                 "ID_transfermarkt": "498687",
                 "name": "Y. Guzmán",
@@ -151,11 +151,11 @@
                     }
                 }
             },
-            "score": 0.27,
-            "role_weight": 0.6
+            "score": 0.35,
+            "role_weight": 1.0
         },
         {
-            "role": "CENTRAL_MID",
+            "role": "DEFENSIVE_MID",
             "player": {
                 "ID_transfermarkt": "652349",
                 "name": "E. López",
@@ -179,8 +179,8 @@
                     }
                 }
             },
-            "score": 0.31,
-            "role_weight": 0.8033
+            "score": 0.3,
+            "role_weight": 0.7574
         },
         {
             "role": "FULLBACK",
@@ -237,38 +237,6 @@
             },
             "score": 0.34,
             "role_weight": 1.0
-        },
-        {
-            "role": "CENTRAL_MID",
-            "player": {
-                "ID_transfermarkt": "312731",
-                "name": "D. Moreno",
-                "score": 0.3270270442080378,
-                "roles": {
-                    "CENTRAL_MID": {
-                        "weight": 0.6630434782608696,
-                        "score": 0.2662898867091823
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.2217391304347826,
-                        "score": 0.15399436847150613
-                    },
-                    "SECOND_STRIKER": {
-                        "weight": 0.06521739130434782,
-                        "score": 0.08351517213504665
-                    },
-                    "DEFENSIVE_MID": {
-                        "weight": 0.7782608695652175,
-                        "score": 0.288500298305752
-                    },
-                    "UTILITY": {
-                        "weight": 1.7282608695652175,
-                        "score": 0.3270270442080378
-                    }
-                }
-            },
-            "score": 0.27,
-            "role_weight": 0.663
         },
         {
             "role": "FULLBACK",
@@ -339,27 +307,51 @@
             "role_weight": 1.0
         },
         {
-            "role": "CENTER_BACK",
+            "role": "FULLBACK",
             "player": {
-                "ID_transfermarkt": "366655",
-                "name": "J. Gómez",
-                "score": 0.31484307972508585,
+                "ID_transfermarkt": "848561",
+                "name": "Y. Rodallega",
+                "score": 0.31607247726269316,
                 "roles": {
-                    "CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.31484307972508585
-                    },
-                    "SWEEPER": {
-                        "weight": 0.5,
-                        "score": 0.22262767668326502
-                    },
                     "WIDE_CENTER_BACK": {
+                        "weight": 0.8,
+                        "score": 0.2827038179904554
+                    },
+                    "FULLBACK": {
                         "weight": 1.0,
-                        "score": 0.31484307972508585
+                        "score": 0.31607247726269316
+                    },
+                    "WING_BACK": {
+                        "weight": 0.7,
+                        "score": 0.26444520721329584
                     },
                     "UTILITY": {
                         "weight": 2.5,
-                        "score": 0.31484307972508585
+                        "score": 0.31607247726269316
+                    }
+                }
+            },
+            "score": 0.32,
+            "role_weight": 1.0
+        },
+        {
+            "role": "DEFENSIVE_MID",
+            "player": {
+                "ID_transfermarkt": "312923",
+                "name": "G. Saunders",
+                "score": 0.31362378307045213,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 1.0,
+                        "score": 0.31362378307045213
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.5,
+                        "score": 0.22176550375049545
+                    },
+                    "UTILITY": {
+                        "weight": 1.5,
+                        "score": 0.31362378307045213
                     }
                 }
             },
@@ -367,92 +359,124 @@
             "role_weight": 1.0
         },
         {
-            "role": "FULLBACK",
+            "role": "WINGER",
             "player": {
-                "ID_transfermarkt": "848561",
-                "name": "Y. Rodallega",
-                "score": 0.30419453425925924,
+                "ID_transfermarkt": "926365",
+                "name": "Luis Díaz",
+                "score": 0.3100653543209876,
                 "roles": {
-                    "WIDE_CENTER_BACK": {
-                        "weight": 0.8,
-                        "score": 0.27207986279503693
+                    "SECOND_STRIKER": {
+                        "weight": 0.10256410256410256,
+                        "score": 0.09930038549267987
                     },
-                    "FULLBACK": {
-                        "weight": 1.0,
-                        "score": 0.30419453425925924
+                    "STRIKER": {
+                        "weight": 0.2564102564102564,
+                        "score": 0.1570076953448049
                     },
                     "WING_BACK": {
-                        "weight": 0.7,
-                        "score": 0.2545074071048726
+                        "weight": 0.1794871794871795,
+                        "score": 0.1313620625532385
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.6256410256410256,
+                        "score": 0.24525386033632263
+                    },
+                    "WINGER": {
+                        "weight": 0.608974358974359,
+                        "score": 0.24196510893935058
+                    },
+                    "UTILITY": {
+                        "weight": 1.773076923076923,
+                        "score": 0.3100653543209876
+                    }
+                }
+            },
+            "score": 0.24,
+            "role_weight": 0.609
+        },
+        {
+            "role": "CENTER_BACK",
+            "player": {
+                "ID_transfermarkt": "366655",
+                "name": "J. Gómez",
+                "score": 0.3086623415857605,
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.3086623415857605
+                    },
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.21825723483220977
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.3086623415857605
                     },
                     "UTILITY": {
                         "weight": 2.5,
-                        "score": 0.30419453425925924
+                        "score": 0.3086623415857605
+                    }
+                }
+            },
+            "score": 0.31,
+            "role_weight": 1.0
+        },
+        {
+            "role": "WINGER",
+            "player": {
+                "ID_transfermarkt": "74667",
+                "name": "D. Pabón",
+                "score": 0.301412143495935,
+                "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.39999999999999997,
+                        "score": 0.19062977757613223
+                    },
+                    "WINGER": {
+                        "weight": 0.6666666666666666,
+                        "score": 0.24610198461452804
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.13333333333333333,
+                        "score": 0.11006015339913841
+                    },
+                    "STRIKER": {
+                        "weight": 0.3333333333333333,
+                        "score": 0.17402038218440016
+                    },
+                    "UTILITY": {
+                        "weight": 1.5333333333333332,
+                        "score": 0.301412143495935
+                    }
+                }
+            },
+            "score": 0.25,
+            "role_weight": 0.6667
+        },
+        {
+            "role": "DEFENSIVE_MID",
+            "player": {
+                "ID_transfermarkt": "132002",
+                "name": "J. Mosquera",
+                "score": 0.29523107079646016,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 1.0,
+                        "score": 0.29523107079646016
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.5,
+                        "score": 0.2087598921771427
+                    },
+                    "UTILITY": {
+                        "weight": 1.5,
+                        "score": 0.29523107079646016
                     }
                 }
             },
             "score": 0.3,
             "role_weight": 1.0
-        },
-        {
-            "role": "CENTRAL_MID",
-            "player": {
-                "ID_transfermarkt": "179482",
-                "name": "Y. Angulo",
-                "score": 0.3006520428104575,
-                "roles": {
-                    "DEFENSIVE_MID": {
-                        "weight": 0.8307692307692307,
-                        "score": 0.27403394359344674
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 0.7115384615384615,
-                        "score": 0.25360823365765667
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.16923076923076924,
-                        "score": 0.12368123788483365
-                    },
-                    "UTILITY": {
-                        "weight": 1.7115384615384615,
-                        "score": 0.3006520428104575
-                    }
-                }
-            },
-            "score": 0.25,
-            "role_weight": 0.7115
-        },
-        {
-            "role": "CENTRAL_MID",
-            "player": {
-                "ID_transfermarkt": "659693",
-                "name": "Juan Zapata",
-                "score": 0.2945038603406326,
-                "roles": {
-                    "DEFENSIVE_MID": {
-                        "weight": 0.6047058823529412,
-                        "score": 0.22901455697463452
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 0.8458823529411765,
-                        "score": 0.2708606860931617
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.3952941176470588,
-                        "score": 0.18516170351680908
-                    },
-                    "SECOND_STRIKER": {
-                        "weight": 0.08470588235294117,
-                        "score": 0.0857132134119939
-                    },
-                    "UTILITY": {
-                        "weight": 1.9305882352941177,
-                        "score": 0.2945038603406326
-                    }
-                }
-            },
-            "score": 0.27,
-            "role_weight": 0.8459
         },
         {
             "role": "WINGER",
@@ -503,34 +527,6 @@
             "role_weight": 1.0
         },
         {
-            "role": "WIDE_MID",
-            "player": {
-                "ID_transfermarkt": "571908",
-                "name": "N. Moreno",
-                "score": 0.27520758787878785,
-                "roles": {
-                    "WING_BACK": {
-                        "weight": 0.4,
-                        "score": 0.17405656141158338
-                    },
-                    "WIDE_MID": {
-                        "weight": 1.0,
-                        "score": 0.27520758787878785
-                    },
-                    "WINGER": {
-                        "weight": 0.7,
-                        "score": 0.23025518777704557
-                    },
-                    "UTILITY": {
-                        "weight": 2.1,
-                        "score": 0.27520758787878785
-                    }
-                }
-            },
-            "score": 0.28,
-            "role_weight": 1.0
-        },
-        {
             "role": "STRIKER",
             "player": {
                 "ID_transfermarkt": "413659",
@@ -553,6 +549,38 @@
             },
             "score": 0.27,
             "role_weight": 1.0
+        },
+        {
+            "role": "ATTACKING_MID",
+            "player": {
+                "ID_transfermarkt": "178114",
+                "name": "Y. Mejía",
+                "score": 0.2732799611111111,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 0.3,
+                        "score": 0.1496815992146901
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.85,
+                        "score": 0.251951675075116
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.7,
+                        "score": 0.22864241951445333
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.3,
+                        "score": 0.1496815992146901
+                    },
+                    "UTILITY": {
+                        "weight": 2.15,
+                        "score": 0.2732799611111111
+                    }
+                }
+            },
+            "score": 0.23,
+            "role_weight": 0.7
         },
         {
             "role": "CENTER_BACK",
@@ -583,56 +611,36 @@
             "role_weight": 1.0
         },
         {
-            "role": "STRIKER",
+            "role": "SECOND_STRIKER",
             "player": {
-                "ID_transfermarkt": "123487",
-                "name": "J. Hernández",
-                "score": 0.2634711333333333,
+                "ID_transfermarkt": "1006054",
+                "name": "D. Arcila",
+                "score": 0.2393052371485944,
                 "roles": {
+                    "CENTRAL_MID": {
+                        "weight": 0.5444444444444444,
+                        "score": 0.17657490792580244
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.7777777777777778,
+                        "score": 0.21104738164350545
+                    },
                     "SECOND_STRIKER": {
-                        "weight": 0.4,
-                        "score": 0.16663377580784886
+                        "weight": 0.5555555555555556,
+                        "score": 0.17836759254532167
                     },
                     "STRIKER": {
-                        "weight": 1.0,
-                        "score": 0.2634711333333333
-                    },
-                    "UTILITY": {
-                        "weight": 1.4,
-                        "score": 0.2634711333333333
-                    }
-                }
-            },
-            "score": 0.26,
-            "role_weight": 1.0
-        },
-        {
-            "role": "WIDE_MID",
-            "player": {
-                "ID_transfermarkt": "413658",
-                "name": "D. Vergara",
-                "score": 0.2617212351230425,
-                "roles": {
-                    "WING_BACK": {
-                        "weight": 0.4,
-                        "score": 0.16552704300425464
-                    },
-                    "WIDE_MID": {
-                        "weight": 1.0,
-                        "score": 0.2617212351230425
-                    },
-                    "WINGER": {
-                        "weight": 0.7,
-                        "score": 0.21897169552257578
+                        "weight": 0.2222222222222222,
+                        "score": 0.11280957064081733
                     },
                     "UTILITY": {
                         "weight": 2.1,
-                        "score": 0.2617212351230425
+                        "score": 0.2393052371485944
                     }
                 }
             },
-            "score": 0.26,
-            "role_weight": 1.0
+            "score": 0.18,
+            "role_weight": 0.5556
         }
     ]
 }
