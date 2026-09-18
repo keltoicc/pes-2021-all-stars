@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Malcom Bokele",
         "short_name": "M. Bokele",
+        "dateOfBirth": "2000-02-12",
+        "placeOfBirth": "Lyon",
         "nation_1": "Cameroon",
         "nation_2": "France",
         "height": 1.89,
@@ -14,6 +17,86 @@
         "prime_date": "2026-05-21"
     },
     "matches": [
+        {
+            "game_id": "4933673",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1467",
+            "opponent_id": "11282",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4933666",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1467",
+            "opponent_id": "2832",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 4,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4933659",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1467",
+            "opponent_id": "141",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4933648",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1467",
+            "opponent_id": "820",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4932846",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "1467",
+            "opponent_id": "152",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "injured",
+            "club_points": 1
+        },
         {
             "game_id": "4648070",
             "season": 2025,
@@ -3857,47 +3940,49 @@
     ],
     "clubs": {
         "1467": {
+            "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 76,
-                "participations": 76,
-                "minutes": 5538,
-                "starts": 61,
-                "captain_matches": 0,
+                "matches": 81,
+                "participations": 81,
+                "minutes": 5898,
+                "starts": 65,
+                "captain_matches": 3,
                 "goals": 4,
                 "assists": 0,
-                "goals_conceded": 68,
-                "points": 119,
-                "clean_sheets": 38,
+                "goals_conceded": 78,
+                "points": 121,
+                "clean_sheets": 39,
                 "wins": 32,
-                "draws": 23,
-                "losses": 21,
-                "goal_matches": 72,
-                "assist_matches": 76,
+                "draws": 25,
+                "losses": 24,
+                "goal_matches": 77,
+                "assist_matches": 81,
                 "goal_contributions": 4
             },
             "positions": {
-                "CB": 65,
+                "CB": 69,
                 "LB": 1,
                 "DMF": 1
             },
             "derived": {
-                "season_count": 2,
-                "points_per_match": 1.566,
-                "minutes_per_match": 72.9,
-                "win_rate": 0.4211,
-                "goals_per_90": 0.065,
+                "season_count": 3,
+                "points_per_match": 1.494,
+                "minutes_per_match": 72.8,
+                "win_rate": 0.3951,
+                "goals_per_90": 0.061,
                 "assists_per_90": 0.0,
-                "contributions_per_90": 0.065,
+                "contributions_per_90": 0.061,
                 "primary_position": "CB"
             },
             "competitions": {
                 "First Tier": {
-                    "matches": 69,
-                    "minutes": 5143,
+                    "matches": 74,
+                    "minutes": 5503,
                     "goals": 4,
                     "assists": 0
                 },
@@ -3914,6 +3999,7 @@
             }
         },
         "3434": {
+            "type": "national",
             "seasons": [
                 2021,
                 2022,
@@ -3971,6 +4057,7 @@
             }
         },
         "40": {
+            "type": "club",
             "seasons": [
                 2020,
                 2022,
@@ -4035,6 +4122,7 @@
             }
         },
         "18633": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -4089,6 +4177,7 @@
             }
         },
         "10872": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021
@@ -4136,6 +4225,7 @@
             }
         },
         "8179": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -4182,6 +4272,7 @@
             }
         },
         "2972": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -4230,14 +4321,14 @@
     },
     "career": {
         "club": {
-            "matches": 210,
-            "minutes": 12689,
+            "matches": 215,
+            "minutes": 13049,
             "goals": 6,
             "assists": 2,
             "goal_contributions": 8,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 8
+            "season_count": 9
         },
         "national": {
             "matches": 29,

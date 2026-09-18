@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Ercan Yazıcı",
         "short_name": "E. Yazıcı",
+        "dateOfBirth": "1994-11-28",
+        "placeOfBirth": "Samsun",
         "nation_1": "Türkiye",
         "nation_2": "",
         "height": 1.78,
@@ -14,6 +17,38 @@
         "prime_date": "2015-06-08"
     },
     "matches": [
+        {
+            "game_id": "4941823",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "54636",
+            "opponent_id": "41553",
+            "position": "",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4941745",
+            "season": 2026,
+            "competition_type": "Third Tier",
+            "club_id": "54636",
+            "opponent_id": "45418",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 1
+        },
         {
             "game_id": "4661484",
             "season": 2025,
@@ -8313,7 +8348,72 @@
         }
     ],
     "clubs": {
+        "54636": {
+            "type": "club",
+            "seasons": [
+                2023,
+                2024,
+                2026
+            ],
+            "stats": {
+                "matches": 77,
+                "participations": 77,
+                "minutes": 4058,
+                "starts": 48,
+                "captain_matches": 2,
+                "goals": 1,
+                "assists": 1,
+                "goals_conceded": 40,
+                "points": 120,
+                "clean_sheets": 52,
+                "wins": 33,
+                "draws": 21,
+                "losses": 23,
+                "goal_matches": 76,
+                "assist_matches": 76,
+                "goal_contributions": 2
+            },
+            "positions": {
+                "CB": 7,
+                "RB": 1
+            },
+            "derived": {
+                "season_count": 3,
+                "points_per_match": 1.558,
+                "minutes_per_match": 52.7,
+                "win_rate": 0.4286,
+                "goals_per_90": 0.022,
+                "assists_per_90": 0.022,
+                "contributions_per_90": 0.044,
+                "primary_position": "CB"
+            },
+            "competitions": {
+                "Third Tier": {
+                    "matches": 72,
+                    "minutes": 3980,
+                    "goals": 1,
+                    "assists": 1
+                },
+                "Play-Offs": {
+                    "matches": 3,
+                    "minutes": 47,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 2,
+                    "minutes": 31,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "37956": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -8369,69 +8469,8 @@
                 "individual_titles": {}
             }
         },
-        "54636": {
-            "seasons": [
-                2023,
-                2024
-            ],
-            "stats": {
-                "matches": 75,
-                "participations": 75,
-                "minutes": 3878,
-                "starts": 46,
-                "captain_matches": 0,
-                "goals": 1,
-                "assists": 1,
-                "goals_conceded": 37,
-                "points": 116,
-                "clean_sheets": 51,
-                "wins": 32,
-                "draws": 20,
-                "losses": 23,
-                "goal_matches": 74,
-                "assist_matches": 74,
-                "goal_contributions": 2
-            },
-            "positions": {
-                "CB": 6,
-                "RB": 1
-            },
-            "derived": {
-                "season_count": 2,
-                "points_per_match": 1.547,
-                "minutes_per_match": 51.7,
-                "win_rate": 0.4267,
-                "goals_per_90": 0.023,
-                "assists_per_90": 0.023,
-                "contributions_per_90": 0.046,
-                "primary_position": "CB"
-            },
-            "competitions": {
-                "Play-Offs": {
-                    "matches": 3,
-                    "minutes": 47,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Third Tier": {
-                    "matches": 70,
-                    "minutes": 3800,
-                    "goals": 1,
-                    "assists": 1
-                },
-                "Domestic Cup": {
-                    "matches": 2,
-                    "minutes": 31,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {},
-                "individual_titles": {}
-            }
-        },
         "41553": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -8478,6 +8517,7 @@
             }
         },
         "39807": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -8524,6 +8564,7 @@
             }
         },
         "3207": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -8578,6 +8619,7 @@
             }
         },
         "12388": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -8633,6 +8675,7 @@
             }
         },
         "152": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -8713,6 +8756,7 @@
             }
         },
         "2944": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -8761,6 +8805,7 @@
             }
         },
         "9568": {
+            "type": "national",
             "seasons": [
                 2015
             ],
@@ -8810,6 +8855,7 @@
             }
         },
         "6630": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -8862,14 +8908,14 @@
     },
     "career": {
         "club": {
-            "matches": 516,
-            "minutes": 17168,
+            "matches": 518,
+            "minutes": 17348,
             "goals": 6,
             "assists": 2,
             "goal_contributions": 8,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 14
+            "season_count": 15
         },
         "national": {
             "matches": 2,
