@@ -94,9 +94,23 @@ YEAR = [
     "jairo",
     "zé-maria",
     "guilherme",
-    "bobô"
+    "bobô",
+    "andrés-correa",
+    "javier-sanguinetti",
+    "javier-lópez",
+    "gabriel-gómez",
+    "luis-mena",
+    "gonzalo-martínez",
+    "jhon-córdoba",
+    "david-gonzález",
+    "david-silva",
+    "diego-álvarez",
+    "andrés-mosquera",
+    "kevin-londoño",
+    "luis-gonzález",
+    "marcus-vinicius"
 ]
 
 BIRTH_PLACE = [
-
+    "david-silva-1986"
 ]

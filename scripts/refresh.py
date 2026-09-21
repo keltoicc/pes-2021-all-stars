@@ -99,7 +99,7 @@ def obtain_players_by_team():
         print("-------------------------------------------------------------------")
         print("Actualizando los datos de los jugadores...")
         print("-------------------------------------------------------------------")
-        #fetch_players_api.main(YML)
+        fetch_players_api.main(YML)
 
         # Aunque el flujo lógico es obtener primero los jugadores con más partidos,
         # hacemos así para actualizar los datos de los jugadores que ya tenemos
@@ -108,12 +108,12 @@ def obtain_players_by_team():
         print("-------------------------------------------------------------------")
         print("Obteniendo los jugadores con más partidos de cada equipo...")
         print("-------------------------------------------------------------------")
-        #fetch_teams_players.main(YML)
+        fetch_teams_players.main(YML)
 
         print("-------------------------------------------------------------------")
         print("Procesando los jugadores con más partidos de cada equipo...")
         print("-------------------------------------------------------------------")
-        #parse_teams_players.main(YML)
+        parse_teams_players.main(YML)
 
         # Aunque muchos jugadores serían redundantes, nos aseguramos que todos estén
         # actualizados con los datos más recientes.
@@ -169,9 +169,9 @@ def main():
 
     #obtain_tactics_by_coach()
 
-    obtain_players_by_team()
+    #obtain_players_by_team()
 
-    #export_to_web()
+    export_to_web()
 
 
 if __name__ == "__main__":
