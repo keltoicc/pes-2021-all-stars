@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Dorielton",
         "short_name": "Dorielton",
+        "dateOfBirth": "1990-03-07",
+        "placeOfBirth": "Duque de Caxias",
         "nation_1": "Brazil",
         "nation_2": "",
         "height": 1.85,
@@ -14,6 +17,22 @@
         "prime_date": "2017-12-01"
     },
     "matches": [
+        {
+            "game_id": "5052051",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "15400",
+            "opponent_id": "138144",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
         {
             "game_id": "4838107",
             "season": 2025,
@@ -7708,7 +7727,7 @@
             "assists": 0,
             "goals_conceded": 0,
             "participation": "not in squad",
-            "club_points": 0
+            "club_points": 1
         },
         {
             "game_id": "4631732",
@@ -7891,7 +7910,55 @@
         }
     ],
     "clubs": {
+        "15400": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 1,
+                "participations": 1,
+                "minutes": 0,
+                "starts": 0,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 0,
+                "points": 3,
+                "clean_sheets": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "goal_matches": 1,
+                "assist_matches": 1,
+                "goal_contributions": 0
+            },
+            "positions": {},
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 3.0,
+                "minutes_per_match": 0.0,
+                "win_rate": 1.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": ""
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "65793": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -7959,13 +8026,17 @@
                 }
             },
             "awards": {
-                "team_titles": {},
+                "team_titles": {
+                    "Bengali Champion": 3,
+                    "Bengali Federation Cup Winner": 1
+                },
                 "individual_titles": {
                     "Top goal scorer": 2
                 }
             }
         },
         "45080": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -8020,6 +8091,7 @@
             }
         },
         "122127": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -8068,6 +8140,7 @@
             }
         },
         "998": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -8129,6 +8202,7 @@
             }
         },
         "51120": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -8178,6 +8252,7 @@
             }
         },
         "38929": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019
@@ -8234,6 +8309,7 @@
             }
         },
         "36640": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -8297,6 +8373,7 @@
             }
         },
         "29171": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -8353,6 +8430,7 @@
             }
         },
         "2462": {
+            "type": "club",
             "seasons": [
                 2007,
                 2009,
@@ -8369,11 +8447,11 @@
                 "goals": 0,
                 "assists": 0,
                 "goals_conceded": 1,
-                "points": 101,
+                "points": 102,
                 "clean_sheets": 54,
                 "wins": 28,
-                "draws": 17,
-                "losses": 10,
+                "draws": 18,
+                "losses": 9,
                 "goal_matches": 55,
                 "assist_matches": 55,
                 "goal_contributions": 0
@@ -8381,7 +8459,7 @@
             "positions": {},
             "derived": {
                 "season_count": 5,
-                "points_per_match": 1.836,
+                "points_per_match": 1.855,
                 "minutes_per_match": 0.5,
                 "win_rate": 0.5091,
                 "goals_per_90": 0.0,
@@ -8415,6 +8493,7 @@
             }
         },
         "24566": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012
@@ -8468,6 +8547,7 @@
             }
         },
         "2646": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -8514,6 +8594,7 @@
             }
         },
         "4768": {
+            "type": "club",
             "seasons": [
                 2010
             ],
@@ -8566,6 +8647,7 @@
             }
         },
         "3973": {
+            "type": "club",
             "seasons": [
                 2009
             ],
@@ -8620,24 +8702,24 @@
     },
     "career": {
         "club": {
-            "matches": 321,
-            "minutes": 20071,
-            "goals": 82,
-            "assists": 27,
-            "goal_contributions": 109,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 12
+            "matches": 490,
+            "minutes": 27740,
+            "goals": 173,
+            "assists": 47,
+            "goal_contributions": 220,
+            "team_titles": 4,
+            "individual_titles": 2,
+            "season_count": 18
         },
         "national": {
-            "matches": 168,
-            "minutes": 7669,
-            "goals": 91,
-            "assists": 20,
-            "goal_contributions": 111,
+            "matches": 0,
+            "minutes": 0,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
             "team_titles": 0,
-            "individual_titles": 2,
-            "season_count": 9
+            "individual_titles": 0,
+            "season_count": 0
         }
     }
 }

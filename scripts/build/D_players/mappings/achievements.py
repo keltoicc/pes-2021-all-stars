@@ -532,6 +532,7 @@ CLUB_NATIONAL_TITLE = [
     "South African cup winner",
     "South Korean Cup Winner",
     "South Korean League Cup Winner",
+    "South Korean League Cup Winner (KNL)",
     "South Korean Super Cup Winner",
     "South Korean champion",
     "Soviet champion",

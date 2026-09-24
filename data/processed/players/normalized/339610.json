@@ -1,7 +1,10 @@
 {
     "player": {
+        "name": "Andy Russell",
         "short_name": "A. Russell",
-        "nation_1": null,
+        "dateOfBirth": "1987-11-21",
+        "placeOfBirth": "Southampton",
+        "nation_1": "218",
         "nation_2": "England",
         "height": 1.92,
         "foot": "",
@@ -14,6 +17,54 @@
         "prime_date": "2018-06-04"
     },
     "matches": [
+        {
+            "game_id": "5024658",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "34332",
+            "opponent_id": "34286",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "5024650",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "34332",
+            "opponent_id": "36294",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "5024642",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "34332",
+            "opponent_id": "52414",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4813521",
             "season": 2025,
@@ -8229,7 +8280,57 @@
         }
     ],
     "clubs": {
+        "34332": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 3,
+                "participations": 3,
+                "minutes": 270,
+                "starts": 3,
+                "captain_matches": 0,
+                "goals": 1,
+                "assists": 0,
+                "goals_conceded": 4,
+                "points": 3,
+                "clean_sheets": 0,
+                "wins": 1,
+                "draws": 0,
+                "losses": 2,
+                "goal_matches": 2,
+                "assist_matches": 3,
+                "goal_contributions": 1
+            },
+            "positions": {
+                "CB": 3
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 1.0,
+                "minutes_per_match": 90.0,
+                "win_rate": 0.3333,
+                "goals_per_90": 0.333,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.333,
+                "primary_position": "CB"
+            },
+            "competitions": {
+                "Second Tier": {
+                    "matches": 3,
+                    "minutes": 270,
+                    "goals": 1,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "52414": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -8285,6 +8386,7 @@
             }
         },
         "14413": {
+            "type": "club",
             "seasons": [
                 2005,
                 2024
@@ -8347,11 +8449,14 @@
                 }
             },
             "awards": {
-                "team_titles": {},
+                "team_titles": {
+                    "Hong Kong Second League Champion": 1
+                },
                 "individual_titles": {}
             }
         },
         "122577": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -8391,6 +8496,7 @@
             }
         },
         "15979": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023
@@ -8462,6 +8568,7 @@
             }
         },
         "15977": {
+            "type": "national",
             "seasons": [
                 2014,
                 2015,
@@ -8525,6 +8632,7 @@
             }
         },
         "51120": {
+            "type": "club",
             "seasons": [
                 2021
             ],
@@ -8579,6 +8687,7 @@
             }
         },
         "36881": {
+            "type": "club",
             "seasons": [
                 2019,
                 2020
@@ -8641,6 +8750,7 @@
             }
         },
         "36630": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -8695,6 +8805,7 @@
             }
         },
         "1079": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -8749,6 +8860,7 @@
             }
         },
         "34329": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -8809,6 +8921,7 @@
             }
         },
         "27577": {
+            "type": "club",
             "seasons": [
                 2016
             ],
@@ -8863,6 +8976,7 @@
             }
         },
         "11720": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -8934,6 +9048,7 @@
             }
         },
         "12017": {
+            "type": "club",
             "seasons": [
                 2008
             ],
@@ -8994,6 +9109,7 @@
             }
         },
         "22499": {
+            "type": "club",
             "seasons": [
                 2005,
                 2006
@@ -9059,22 +9175,22 @@
     },
     "career": {
         "club": {
-            "matches": 320,
-            "minutes": 15545,
-            "goals": 20,
-            "assists": 4,
-            "goal_contributions": 24,
-            "team_titles": 0,
+            "matches": 460,
+            "minutes": 22501,
+            "goals": 32,
+            "assists": 10,
+            "goal_contributions": 42,
+            "team_titles": 4,
             "individual_titles": 0,
-            "season_count": 11
+            "season_count": 16
         },
         "national": {
-            "matches": 191,
-            "minutes": 8491,
-            "goals": 11,
-            "assists": 6,
-            "goal_contributions": 17,
-            "team_titles": 3,
+            "matches": 54,
+            "minutes": 1805,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
             "individual_titles": 0,
             "season_count": 9
         }

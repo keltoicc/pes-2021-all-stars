@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Gilberto Macena",
         "short_name": "Gilberto Macena",
+        "dateOfBirth": "1984-04-01",
+        "placeOfBirth": "Rio de Janeiro",
         "nation_1": "Brazil",
         "nation_2": "",
         "height": 1.73,
@@ -14,6 +17,54 @@
         "prime_date": "2012-01-01"
     },
     "matches": [
+        {
+            "game_id": "4946078",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "96139",
+            "opponent_id": "55227",
+            "position": "CF",
+            "minutes": 81,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4946074",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "96139",
+            "opponent_id": "25444",
+            "position": "CF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 2,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4946056",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "96139",
+            "opponent_id": "27092",
+            "position": "",
+            "minutes": 45,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4788763",
             "season": 2025,
@@ -9001,43 +9052,51 @@
     ],
     "clubs": {
         "96139": {
+            "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 44,
-                "participations": 44,
-                "minutes": 3597,
-                "starts": 40,
+                "matches": 47,
+                "participations": 47,
+                "minutes": 3813,
+                "starts": 42,
                 "captain_matches": 5,
-                "goals": 17,
+                "goals": 20,
                 "assists": 8,
-                "goals_conceded": 44,
-                "points": 92,
+                "goals_conceded": 49,
+                "points": 93,
                 "clean_sheets": 14,
                 "wins": 26,
-                "draws": 14,
-                "losses": 4,
-                "goal_matches": 31,
-                "assist_matches": 37,
-                "goal_contributions": 25
+                "draws": 15,
+                "losses": 6,
+                "goal_matches": 32,
+                "assist_matches": 40,
+                "goal_contributions": 28
             },
             "positions": {
-                "LW": 6,
-                "CF": 31
+                "CF": 33,
+                "LW": 6
             },
             "derived": {
-                "season_count": 2,
-                "points_per_match": 2.091,
-                "minutes_per_match": 81.8,
-                "win_rate": 0.5909,
-                "goals_per_90": 0.425,
-                "assists_per_90": 0.2,
-                "contributions_per_90": 0.626,
+                "season_count": 3,
+                "points_per_match": 1.979,
+                "minutes_per_match": 81.1,
+                "win_rate": 0.5532,
+                "goals_per_90": 0.472,
+                "assists_per_90": 0.189,
+                "contributions_per_90": 0.661,
                 "primary_position": "CF"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 3,
+                    "minutes": 216,
+                    "goals": 3,
+                    "assists": 0
+                },
                 "Second Tier": {
                     "matches": 34,
                     "minutes": 2760,
@@ -9053,12 +9112,14 @@
             },
             "awards": {
                 "team_titles": {
+                    "Thai Third League Champion": 1,
                     "Thai Second League Champion": 1
                 },
                 "individual_titles": {}
             }
         },
         "27242": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -9105,6 +9166,7 @@
             }
         },
         "55230": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022
@@ -9172,6 +9234,7 @@
             }
         },
         "1798": {
+            "type": "club",
             "seasons": [
                 2005,
                 2019
@@ -9230,6 +9293,7 @@
             }
         },
         "62695": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -9278,6 +9342,7 @@
             }
         },
         "6759": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -9353,6 +9418,7 @@
             }
         },
         "25445": {
+            "type": "club",
             "seasons": [
                 2015,
                 2016
@@ -9423,6 +9489,7 @@
             }
         },
         "26069": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -9480,6 +9547,7 @@
             }
         },
         "25449": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -9558,6 +9626,7 @@
             }
         },
         "17276": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -9615,6 +9684,7 @@
             }
         },
         "3182": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012
@@ -9673,6 +9743,7 @@
             }
         },
         "2414": {
+            "type": "club",
             "seasons": [
                 2006,
                 2007,
@@ -9747,24 +9818,24 @@
     },
     "career": {
         "club": {
-            "matches": 397,
-            "minutes": 28489,
-            "goals": 128,
-            "assists": 63,
-            "goal_contributions": 191,
-            "team_titles": 2,
+            "matches": 560,
+            "minutes": 34632,
+            "goals": 162,
+            "assists": 90,
+            "goal_contributions": 252,
+            "team_titles": 8,
             "individual_titles": 1,
-            "season_count": 16
+            "season_count": 20
         },
         "national": {
-            "matches": 160,
-            "minutes": 5927,
-            "goals": 31,
-            "assists": 27,
-            "goal_contributions": 58,
-            "team_titles": 5,
+            "matches": 0,
+            "minutes": 0,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 4
+            "season_count": 0
         }
     }
 }

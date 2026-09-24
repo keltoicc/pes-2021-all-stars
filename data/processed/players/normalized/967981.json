@@ -10,13 +10,77 @@
         "foot": "Right",
         "position_group": "MIDFIELDER",
         "position_1": "DMF",
-        "position_2": "CMF",
-        "position_3": "AMF",
+        "position_2": "CB",
+        "position_3": "CMF",
         "former_clubs": "",
         "market_value": 400000,
         "prime_date": "2024-06-06"
     },
     "matches": [
+        {
+            "game_id": "5021647",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "27190",
+            "opponent_id": "35387",
+            "position": "",
+            "minutes": 20,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 4,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4827914",
+            "season": 2025,
+            "competition_type": "First Tier",
+            "club_id": "27190",
+            "opponent_id": "3176",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "5039642",
+            "season": 2025,
+            "competition_type": "Domestic Cup",
+            "club_id": "27190",
+            "opponent_id": "3182",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4827906",
+            "season": 2025,
+            "competition_type": "First Tier",
+            "club_id": "27190",
+            "opponent_id": "51120",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4827903",
             "season": 2025,
@@ -39,7 +103,7 @@
             "competition_type": "First Tier",
             "club_id": "27190",
             "opponent_id": "98080",
-            "position": "",
+            "position": "DMF",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -2823,7 +2887,7 @@
             "competition_type": "First Tier",
             "club_id": "5432",
             "opponent_id": "44289",
-            "position": "CMF",
+            "position": null,
             "minutes": 0,
             "started": false,
             "captain": false,
@@ -3391,62 +3455,63 @@
         "27190": {
             "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 29,
-                "participations": 29,
-                "minutes": 1059,
-                "starts": 13,
+                "matches": 33,
+                "participations": 33,
+                "minutes": 1349,
+                "starts": 16,
                 "captain_matches": 0,
                 "goals": 3,
                 "assists": 0,
-                "goals_conceded": 13,
-                "points": 42,
-                "clean_sheets": 18,
-                "wins": 11,
-                "draws": 9,
+                "goals_conceded": 17,
+                "points": 52,
+                "clean_sheets": 21,
+                "wins": 14,
+                "draws": 10,
                 "losses": 9,
-                "goal_matches": 26,
-                "assist_matches": 29,
+                "goal_matches": 30,
+                "assist_matches": 33,
                 "goal_contributions": 3
             },
             "positions": {
-                "DMF": 10,
-                "CB": 2
+                "CB": 4,
+                "DMF": 12
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.448,
-                "minutes_per_match": 36.5,
-                "win_rate": 0.3793,
-                "goals_per_90": 0.255,
+                "season_count": 2,
+                "points_per_match": 1.576,
+                "minutes_per_match": 40.9,
+                "win_rate": 0.4242,
+                "goals_per_90": 0.2,
                 "assists_per_90": 0.0,
-                "contributions_per_90": 0.255,
+                "contributions_per_90": 0.2,
                 "primary_position": "DMF"
             },
             "competitions": {
+                "International Cup": {
+                    "matches": 3,
+                    "minutes": 192,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "First Tier": {
-                    "matches": 24,
-                    "minutes": 732,
+                    "matches": 26,
+                    "minutes": 912,
                     "goals": 2,
                     "assists": 0
                 },
                 "Domestic Cup": {
-                    "matches": 2,
-                    "minutes": 65,
+                    "matches": 3,
+                    "minutes": 155,
                     "goals": 1,
                     "assists": 0
                 },
                 "Domestic Super Cup": {
                     "matches": 1,
                     "minutes": 90,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "International Cup": {
-                    "matches": 2,
-                    "minutes": 172,
                     "goals": 0,
                     "assists": 0
                 }
@@ -3677,7 +3742,7 @@
                 "goal_contributions": 0
             },
             "positions": {
-                "CMF": 15,
+                "CMF": 14,
                 "RB": 1,
                 "AMF": 3,
                 "DMF": 1,
@@ -3722,14 +3787,14 @@
     },
     "career": {
         "club": {
-            "matches": 185,
-            "minutes": 4762,
+            "matches": 189,
+            "minutes": 5052,
             "goals": 3,
             "assists": 3,
             "goal_contributions": 6,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 5
+            "season_count": 6
         },
         "national": {
             "matches": 25,

@@ -217,7 +217,7 @@ NATIONS_MAP = {
     215: "Serbia",
     216: "Montenegro",
     217: "217",
-    218: "218",
+    218: "Hong Kong",
     219: "219",
     220: "Czechoslovakia",
     221: "Soviet Union",
