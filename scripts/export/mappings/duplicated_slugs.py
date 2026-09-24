@@ -108,9 +108,20 @@ YEAR = [
     "andrés-mosquera",
     "kevin-londoño",
     "luis-gonzález",
-    "marcus-vinicius"
+    "marcus-vinicius",
+    "fernandinho",
+    "yang-liu",
+    "shuai-li",
+    "zheng-lü",
+    "renato-augusto",
+    "gustavo",
+    "serginho",
+    "éder",
+    "davi"
 ]
 
 BIRTH_PLACE = [
-    "david-silva-1986"
+    "david-silva-1986",
+    "fernandinho-1985",
+    "davi-1984"
 ]
