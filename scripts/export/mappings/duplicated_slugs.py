@@ -117,7 +117,8 @@ YEAR = [
     "gustavo",
     "serginho",
     "éder",
-    "davi"
+    "davi",
+    "bjarne-jensen"
 ]
 
 BIRTH_PLACE = [

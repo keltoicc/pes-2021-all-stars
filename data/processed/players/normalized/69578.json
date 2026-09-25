@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Ricki Olsen",
         "short_name": "Ricki Olsen",
+        "dateOfBirth": "1988-10-21",
+        "placeOfBirth": "Hundige",
         "nation_1": "Denmark",
         "nation_2": "",
         "height": 1.81,
@@ -9,11 +12,27 @@
         "position_1": "RB",
         "position_2": "RM",
         "position_3": "CMF",
-        "former_clubs": "Bröndby IF",
+        "former_clubs": "",
         "market_value": 300000,
         "prime_date": "2017-12-18"
     },
     "matches": [
+        {
+            "game_id": "4424484",
+            "season": 2024,
+            "competition_type": "Domestic Cup",
+            "club_id": "33878",
+            "opponent_id": "5925",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
         {
             "game_id": "4864337",
             "season": 2022,
@@ -5892,7 +5911,7 @@
             "competition_type": "International Cup",
             "club_id": "5724",
             "opponent_id": "5862",
-            "position": "CF",
+            "position": "RM",
             "minutes": 72,
             "started": true,
             "captain": false,
@@ -7289,7 +7308,55 @@
         }
     ],
     "clubs": {
+        "33878": {
+            "type": "club",
+            "seasons": [
+                2024
+            ],
+            "stats": {
+                "matches": 1,
+                "participations": 1,
+                "minutes": 0,
+                "starts": 0,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 0,
+                "points": 0,
+                "clean_sheets": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "goal_matches": 1,
+                "assist_matches": 1,
+                "goal_contributions": 0
+            },
+            "positions": {},
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 0.0,
+                "minutes_per_match": 0.0,
+                "win_rate": 0.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": ""
+            },
+            "competitions": {
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "75807": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -7346,6 +7413,7 @@
             }
         },
         "22110": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -7423,11 +7491,14 @@
                 }
             },
             "awards": {
-                "team_titles": {},
+                "team_titles": {
+                    "Danish third tier champion": 1
+                },
                 "individual_titles": {}
             }
         },
         "23297": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -7483,6 +7554,7 @@
             }
         },
         "62696": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -7525,6 +7597,7 @@
             }
         },
         "20119": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013
@@ -7580,6 +7653,7 @@
             }
         },
         "5091": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -7629,6 +7703,7 @@
             }
         },
         "5724": {
+            "type": "club",
             "seasons": [
                 2008,
                 2009,
@@ -7656,10 +7731,9 @@
             "positions": {
                 "LB": 2,
                 "RB": 2,
-                "RM": 9,
+                "RM": 10,
                 "CMF": 10,
                 "AMF": 2,
-                "CF": 1,
                 "LM": 1
             },
             "derived": {
@@ -7670,7 +7744,7 @@
                 "goals_per_90": 0.257,
                 "assists_per_90": 0.193,
                 "contributions_per_90": 0.45,
-                "primary_position": "CMF"
+                "primary_position": "RM"
             },
             "competitions": {
                 "Second Tier": {
@@ -7704,6 +7778,7 @@
             }
         },
         "1063": {
+            "type": "club",
             "seasons": [
                 2010
             ],
@@ -7753,6 +7828,7 @@
             }
         },
         "16783": {
+            "type": "national",
             "seasons": [
                 2008
             ],
@@ -7801,6 +7877,7 @@
             }
         },
         "8815": {
+            "type": "club",
             "seasons": [
                 2005
             ],
@@ -7842,24 +7919,24 @@
     },
     "career": {
         "club": {
-            "matches": 327,
-            "minutes": 11549,
-            "goals": 11,
-            "assists": 9,
-            "goal_contributions": 20,
-            "team_titles": 0,
+            "matches": 452,
+            "minutes": 14351,
+            "goals": 19,
+            "assists": 15,
+            "goal_contributions": 34,
+            "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 14
+            "season_count": 17
         },
         "national": {
-            "matches": 127,
-            "minutes": 2963,
-            "goals": 9,
-            "assists": 6,
-            "goal_contributions": 15,
+            "matches": 3,
+            "minutes": 161,
+            "goals": 1,
+            "assists": 0,
+            "goal_contributions": 1,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 4
+            "season_count": 1
         }
     }
 }

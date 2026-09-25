@@ -37,8 +37,8 @@ def main(yml = "teams"):
         
         try:
             fetch(url, raw_dir / filename)
-        except:
-            print("TIMEOUT")
+        except requests.RequestException as e:
+            print(f"ERROR request: {e}")
 
 if __name__ == "__main__":
     main()

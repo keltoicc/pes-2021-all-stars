@@ -1,19 +1,134 @@
 {
     "player": {
+        "name": "Jean Manuel Mbom",
         "short_name": "J. Mbom",
+        "dateOfBirth": "2000-02-24",
+        "placeOfBirth": "Göttingen",
         "nation_1": "Germany",
         "nation_2": "Cameroon",
         "height": 1.85,
         "foot": "Right",
-        "position_group": "MIDFIELDER",
-        "position_1": "CMF",
-        "position_2": "RB",
+        "position_group": "DEFENDER",
+        "position_1": "RB",
+        "position_2": "CMF",
         "position_3": "DMF",
         "former_clubs": "Bovender SV (2006-2012), JFV Göttingen (2012-2013), SV Werder Bremen (2013-2018)",
         "market_value": 3000000,
         "prime_date": "2021-06-09"
     },
     "matches": [
+        {
+            "game_id": "4916466",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "80",
+            "opponent_id": "42",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "injured",
+            "club_points": 0
+        },
+        {
+            "game_id": "4916460",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "80",
+            "opponent_id": "65",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "injured",
+            "club_points": 1
+        },
+        {
+            "game_id": "4916451",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "80",
+            "opponent_id": "129",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "injured",
+            "club_points": 3
+        },
+        {
+            "game_id": "4916442",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "80",
+            "opponent_id": "81",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "injured",
+            "club_points": 0
+        },
+        {
+            "game_id": "4893859",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "80",
+            "opponent_id": "65",
+            "position": "RB",
+            "minutes": 51,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4916435",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "80",
+            "opponent_id": "23",
+            "position": "CMF",
+            "minutes": 33,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4916123",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "80",
+            "opponent_id": "44",
+            "position": "CMF",
+            "minutes": 45,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4844217",
             "season": 2025,
@@ -7943,7 +8058,64 @@
         }
     ],
     "clubs": {
+        "80": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 7,
+                "participations": 7,
+                "minutes": 129,
+                "starts": 1,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 2,
+                "points": 10,
+                "clean_sheets": 5,
+                "wins": 3,
+                "draws": 1,
+                "losses": 3,
+                "goal_matches": 7,
+                "assist_matches": 7,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "RB": 1,
+                "CMF": 2
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 1.429,
+                "minutes_per_match": 18.4,
+                "win_rate": 0.4286,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "CMF"
+            },
+            "competitions": {
+                "Second Tier": {
+                    "matches": 6,
+                    "minutes": 78,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 51,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "1063": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
@@ -8008,6 +8180,7 @@
             }
         },
         "62697": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024,
@@ -8048,11 +8221,14 @@
             },
             "competitions": {},
             "awards": {
-                "team_titles": {},
+                "team_titles": {
+                    "Danish reserve league winner": 1
+                },
                 "individual_titles": {}
             }
         },
         "86": {
+            "type": "club",
             "seasons": [
                 2018,
                 2019,
@@ -8129,6 +8305,7 @@
             }
         },
         "87": {
+            "type": "club",
             "seasons": [
                 2018,
                 2022
@@ -8179,6 +8356,7 @@
             }
         },
         "3817": {
+            "type": "national",
             "seasons": [
                 2019,
                 2020,
@@ -8242,6 +8420,7 @@
             }
         },
         "95": {
+            "type": "club",
             "seasons": [
                 2019
             ],
@@ -8306,6 +8485,7 @@
             }
         },
         "5709": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -8355,6 +8535,7 @@
             }
         },
         "5710": {
+            "type": "national",
             "seasons": [
                 2018
             ],
@@ -8410,6 +8591,7 @@
             }
         },
         "2491": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -8453,6 +8635,7 @@
             }
         },
         "9067": {
+            "type": "national",
             "seasons": [
                 2017
             ],
@@ -8501,6 +8684,7 @@
             }
         },
         "21079": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -8558,6 +8742,7 @@
             }
         },
         "17662": {
+            "type": "national",
             "seasons": [
                 2015,
                 2016
@@ -8614,6 +8799,7 @@
             }
         },
         "17368": {
+            "type": "national",
             "seasons": [
                 2015
             ],
@@ -8665,14 +8851,14 @@
     },
     "career": {
         "club": {
-            "matches": 441,
-            "minutes": 18764,
+            "matches": 448,
+            "minutes": 18893,
             "goals": 28,
             "assists": 19,
             "goal_contributions": 47,
-            "team_titles": 1,
+            "team_titles": 2,
             "individual_titles": 1,
-            "season_count": 12
+            "season_count": 13
         },
         "national": {
             "matches": 53,

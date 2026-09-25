@@ -1,6 +1,6 @@
 {
     "tactic": "4-4-2 double 6",
-    "total_score": 11.3,
+    "total_score": 11.88,
     "players": [
         {
             "role": "DEFENSIVE_MID",
@@ -67,6 +67,42 @@
             "role_weight": 0.5238
         },
         {
+            "role": "DEFENSIVE_MID",
+            "player": {
+                "ID_transfermarkt": "15118",
+                "name": "T. Augustinussen",
+                "score": 0.6568835729330005,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 0.7382899628252788,
+                        "score": 0.5644193359185492
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.5539033457249071,
+                        "score": 0.4888835176110982
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.10557620817843867,
+                        "score": 0.21343784697515633
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.06245353159851302,
+                        "score": 0.16415983322250088
+                    },
+                    "STRIKER": {
+                        "weight": 0.15613382899628253,
+                        "score": 0.25955948664824074
+                    },
+                    "UTILITY": {
+                        "weight": 1.61635687732342,
+                        "score": 0.6568835729330005
+                    }
+                }
+            },
+            "score": 0.56,
+            "role_weight": 0.7383
+        },
+        {
             "role": "WINGER",
             "player": {
                 "ID_transfermarkt": "102134",
@@ -103,7 +139,7 @@
             "role_weight": 0.8877
         },
         {
-            "role": "DEFENSIVE_MID",
+            "role": "CENTRAL_MID",
             "player": {
                 "ID_transfermarkt": "15128",
                 "name": "K. Risgård",
@@ -159,8 +195,8 @@
                     }
                 }
             },
-            "score": 0.43,
-            "role_weight": 0.4721
+            "score": 0.56,
+            "role_weight": 0.7869
         },
         {
             "role": "CENTER_BACK",
@@ -293,6 +329,34 @@
             },
             "score": 0.53,
             "role_weight": 0.8201
+        },
+        {
+            "role": "CENTER_BACK",
+            "player": {
+                "ID_transfermarkt": "22917",
+                "name": "K. Petersen",
+                "score": 0.5518435987559497,
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.5518435987559497
+                    },
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.3902123508347203
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.5518435987559497
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.5518435987559497
+                    }
+                }
+            },
+            "score": 0.55,
+            "role_weight": 1.0
         },
         {
             "role": "UTILITY",
@@ -439,6 +503,34 @@
             "role_weight": 0.7872
         },
         {
+            "role": "CENTER_BACK",
+            "player": {
+                "ID_transfermarkt": "261055",
+                "name": "K. Pedersen",
+                "score": 0.5115552900168447,
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.5115552900168447
+                    },
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.36172421452276193
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.5115552900168447
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.5115552900168447
+                    }
+                }
+            },
+            "score": 0.51,
+            "role_weight": 1.0
+        },
+        {
             "role": "GOALKEEPER",
             "player": {
                 "ID_transfermarkt": "3431",
@@ -547,23 +639,27 @@
             "role_weight": 0.8828
         },
         {
-            "role": "STRIKER",
+            "role": "FULLBACK",
             "player": {
-                "ID_transfermarkt": "102132",
-                "name": "N. Helenius",
-                "score": 0.489292246969697,
+                "ID_transfermarkt": "8076",
+                "name": "A. Olesen",
+                "score": 0.48754916661470443,
                 "roles": {
-                    "SECOND_STRIKER": {
-                        "weight": 0.4,
-                        "score": 0.30945558837717246
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.8,
+                        "score": 0.43607723156954004
                     },
-                    "STRIKER": {
+                    "FULLBACK": {
                         "weight": 1.0,
-                        "score": 0.489292246969697
+                        "score": 0.48754916661470443
+                    },
+                    "WING_BACK": {
+                        "weight": 0.7,
+                        "score": 0.407912898676525
                     },
                     "UTILITY": {
-                        "weight": 1.4,
-                        "score": 0.489292246969697
+                        "weight": 2.5,
+                        "score": 0.48754916661470443
                     }
                 }
             },
@@ -571,99 +667,27 @@
             "role_weight": 1.0
         },
         {
-            "role": "CENTRAL_MID",
+            "role": "STRIKER",
             "player": {
-                "ID_transfermarkt": "173539",
-                "name": "H. Rasmussen",
-                "score": 0.45711953636363634,
+                "ID_transfermarkt": "102132",
+                "name": "N. Helenius",
+                "score": 0.4858308855799373,
                 "roles": {
-                    "DEFENSIVE_MID": {
-                        "weight": 0.42857142857142855,
-                        "score": 0.29925498243278315
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 0.9142857142857143,
-                        "score": 0.43708987819799344
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.5714285714285714,
-                        "score": 0.34554988932780817
-                    },
                     "SECOND_STRIKER": {
-                        "weight": 0.1714285714285714,
-                        "score": 0.1892654691282542
+                        "weight": 0.4,
+                        "score": 0.3072664312178512
                     },
-                    "UTILITY": {
-                        "weight": 2.0857142857142854,
-                        "score": 0.45711953636363634
-                    }
-                }
-            },
-            "score": 0.44,
-            "role_weight": 0.9143
-        },
-        {
-            "role": "CENTER_BACK",
-            "player": {
-                "ID_transfermarkt": "204141",
-                "name": "J. Blåbjerg",
-                "score": 0.4515646975951396,
-                "roles": {
-                    "CENTER_BACK": {
-                        "weight": 0.6785714285714286,
-                        "score": 0.37197843861139546
-                    },
-                    "SWEEPER": {
-                        "weight": 0.3392857142857143,
-                        "score": 0.26302847639730165
-                    },
-                    "WIDE_CENTER_BACK": {
-                        "weight": 0.9357142857142857,
-                        "score": 0.4368090345330626
-                    },
-                    "FULLBACK": {
-                        "weight": 0.32142857142857145,
-                        "score": 0.256013119434177
-                    },
-                    "WING_BACK": {
-                        "weight": 0.225,
-                        "score": 0.21419594329886998
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.4515646975951396
-                    }
-                }
-            },
-            "score": 0.37,
-            "role_weight": 0.6786
-        },
-        {
-            "role": "CENTER_BACK",
-            "player": {
-                "ID_transfermarkt": "37219",
-                "name": "D. Califf",
-                "score": 0.4455469619755291,
-                "roles": {
-                    "CENTER_BACK": {
+                    "STRIKER": {
                         "weight": 1.0,
-                        "score": 0.4455469619755291
-                    },
-                    "SWEEPER": {
-                        "weight": 0.5,
-                        "score": 0.3150492781499615
-                    },
-                    "WIDE_CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.4455469619755291
+                        "score": 0.4858308855799373
                     },
                     "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.4455469619755291
+                        "weight": 1.4,
+                        "score": 0.4858308855799373
                     }
                 }
             },
-            "score": 0.45,
+            "score": 0.49,
             "role_weight": 1.0
         },
         {
@@ -692,34 +716,6 @@
                 }
             },
             "score": 0.42,
-            "role_weight": 1.0
-        },
-        {
-            "role": "FULLBACK",
-            "player": {
-                "ID_transfermarkt": "15127",
-                "name": "M. Pedersen",
-                "score": 0.3990973088671255,
-                "roles": {
-                    "WIDE_CENTER_BACK": {
-                        "weight": 0.8,
-                        "score": 0.3569634849056489
-                    },
-                    "FULLBACK": {
-                        "weight": 1.0,
-                        "score": 0.3990973088671255
-                    },
-                    "WING_BACK": {
-                        "weight": 0.7,
-                        "score": 0.3339087650264474
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.3990973088671255
-                    }
-                }
-            },
-            "score": 0.4,
             "role_weight": 1.0
         },
         {
