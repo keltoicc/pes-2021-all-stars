@@ -118,7 +118,11 @@ YEAR = [
     "serginho",
     "éder",
     "davi",
-    "bjarne-jensen"
+    "bjarne-jensen",
+    "john-robertson",
+    "liam-kelly",
+    "willie-miller",
+    "gareth-evans"
 ]
 
 BIRTH_PLACE = [

@@ -401,6 +401,7 @@ CLUB_NATIONAL_TITLE = [
     "Hong Kong Senior Challenge Shield Winner",
     "Hong Kong champion",
     "Hong Kong cup winner",
+    "Hong Kong Viceroy Cup winner",
     "Hongkong Sapling Cup Winner",
     "Hungarian champion",
     "Hungarian cup winner",
