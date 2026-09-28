@@ -171,7 +171,7 @@ def main():
 
     obtain_players_by_team()
 
-    export_to_web()
+    #export_to_web()
 
 
 if __name__ == "__main__":
