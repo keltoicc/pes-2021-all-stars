@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Songchai Thongcham",
         "short_name": "S. Thongcham",
+        "dateOfBirth": "2001-06-09",
+        "placeOfBirth": "Chonburi",
         "nation_1": "Thailand",
         "nation_2": "",
         "height": 1.84,
@@ -8,12 +11,92 @@
         "position_group": "DEFENDER",
         "position_1": "CB",
         "position_2": "RB",
-        "position_3": "",
+        "position_3": "DMF",
         "former_clubs": "Chonburi FC (2013-2020)",
         "market_value": 150000,
         "prime_date": "2023-09-25"
     },
     "matches": [
+        {
+            "game_id": "5061820",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "55226",
+            "opponent_id": "55242",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 3
+        },
+        {
+            "game_id": "4968079",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "55226",
+            "opponent_id": "52379",
+            "position": "",
+            "minutes": 32,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 3,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4968069",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "55226",
+            "opponent_id": "55234",
+            "position": "CMF",
+            "minutes": 77,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4968061",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "55226",
+            "opponent_id": "21283",
+            "position": "CMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4968055",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "55226",
+            "opponent_id": "26646",
+            "position": "CMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4872302",
             "season": 2025,
@@ -3952,7 +4035,63 @@
         }
     ],
     "clubs": {
+        "55226": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 5,
+                "participations": 5,
+                "minutes": 289,
+                "starts": 3,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 7,
+                "points": 10,
+                "clean_sheets": 2,
+                "wins": 3,
+                "draws": 1,
+                "losses": 1,
+                "goal_matches": 5,
+                "assist_matches": 5,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "CMF": 3
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 2.0,
+                "minutes_per_match": 57.8,
+                "win_rate": 0.6,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "CMF"
+            },
+            "competitions": {
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Second Tier": {
+                    "matches": 4,
+                    "minutes": 289,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "6726": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -4008,6 +4147,7 @@
             }
         },
         "12533": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -4083,6 +4223,7 @@
             }
         },
         "53931": {
+            "type": "national",
             "seasons": [
                 2022
             ],
@@ -4131,6 +4272,7 @@
             }
         },
         "40464": {
+            "type": "national",
             "seasons": [
                 2021,
                 2022,
@@ -4193,6 +4335,7 @@
             }
         },
         "87597": {
+            "type": "national",
             "seasons": [
                 2022
             ],
@@ -4241,6 +4384,7 @@
             }
         },
         "39289": {
+            "type": "national",
             "seasons": [
                 2019
             ],
@@ -4289,14 +4433,14 @@
     },
     "career": {
         "club": {
-            "matches": 207,
-            "minutes": 8848,
+            "matches": 212,
+            "minutes": 9137,
             "goals": 0,
             "assists": 6,
             "goal_contributions": 6,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 6
+            "season_count": 7
         },
         "national": {
             "matches": 38,

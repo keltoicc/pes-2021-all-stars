@@ -1,19 +1,102 @@
 {
     "player": {
+        "name": "Aphichat Denman",
         "short_name": "A. Denman",
+        "dateOfBirth": "1993-07-20",
+        "placeOfBirth": "Satun",
         "nation_1": "Thailand",
         "nation_2": "",
         "height": 1.72,
         "foot": "Right",
         "position_group": "FORWARD",
         "position_1": "RW",
-        "position_2": "LW",
-        "position_3": "CF",
+        "position_2": "RM",
+        "position_3": "LW",
         "former_clubs": "Satun United (-2014)",
         "market_value": 150000,
         "prime_date": "2026-05-15"
     },
     "matches": [
+        {
+            "game_id": "5061825",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "94138",
+            "opponent_id": "135863",
+            "position": "",
+            "minutes": 22,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4968075",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "94138",
+            "opponent_id": "55240",
+            "position": "",
+            "minutes": 14,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4968071",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "94138",
+            "opponent_id": "20179",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 1
+        },
+        {
+            "game_id": "4968062",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "94138",
+            "opponent_id": "35381",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 1
+        },
+        {
+            "game_id": "4968056",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "94138",
+            "opponent_id": "52379",
+            "position": "RM",
+            "minutes": 64,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4788833",
             "season": 2025,
@@ -4377,7 +4460,63 @@
         }
     ],
     "clubs": {
+        "94138": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 5,
+                "participations": 5,
+                "minutes": 100,
+                "starts": 1,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 3,
+                "points": 6,
+                "clean_sheets": 3,
+                "wins": 1,
+                "draws": 3,
+                "losses": 1,
+                "goal_matches": 5,
+                "assist_matches": 5,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "RM": 1
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 1.2,
+                "minutes_per_match": 20.0,
+                "win_rate": 0.2,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "RM"
+            },
+            "competitions": {
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 22,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Second Tier": {
+                    "matches": 4,
+                    "minutes": 78,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "50658": {
+            "type": "club",
             "seasons": [
                 2024,
                 2025
@@ -4440,6 +4579,7 @@
             }
         },
         "50659": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018,
@@ -4513,6 +4653,7 @@
             }
         },
         "35384": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -4561,14 +4702,14 @@
     },
     "career": {
         "club": {
-            "matches": 272,
-            "minutes": 7512,
+            "matches": 277,
+            "minutes": 7612,
             "goals": 13,
             "assists": 10,
             "goal_contributions": 23,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 8
+            "season_count": 9
         },
         "national": {
             "matches": 0,

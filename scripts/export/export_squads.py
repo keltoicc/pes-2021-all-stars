@@ -28,8 +28,15 @@ def get_squad_data(team, squad_name = "All-Time"):
     players_dir = Path("data/built/players/teams")
     players_file = players_dir / f"{team['ID_pes']}_{slugify(team['name'])}.json"
 
+    coach_dir = Path("data/built/coaches")
+    coach_file = coach_dir / f"{team['ID_pes']}_{team['name']}.yml"
+
     with players_file.open(encoding="utf-8") as f:
         squad = json.load(f)
+
+    coach_info = yaml.safe_load(
+        coach_file.read_text(encoding="utf-8")
+    )["team"]
 
     members = []
 
@@ -50,6 +57,7 @@ def get_squad_data(team, squad_name = "All-Time"):
         "name": squad_name,
         "slug": f"{team_slug}-{slugify_web(squad_name)}",
 
+        "_manager": coach_info["coach"],
         "formation": squad["tactic"],
 
         "members": members,

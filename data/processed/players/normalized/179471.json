@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Curtis Good",
         "short_name": "Curtis Good",
+        "dateOfBirth": "1993-03-23",
+        "placeOfBirth": "Melbourne",
         "nation_1": "Australia",
         "nation_2": "England",
         "height": 1.95,
@@ -14,6 +17,70 @@
         "prime_date": "2024-01-08"
     },
     "matches": [
+        {
+            "game_id": "4946081",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "25449",
+            "opponent_id": "12533",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "absent",
+            "club_points": 3
+        },
+        {
+            "game_id": "5021648",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "25449",
+            "opponent_id": "15817",
+            "position": "CB",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 1
+        },
+        {
+            "game_id": "4946069",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "25449",
+            "opponent_id": "6759",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "absent",
+            "club_points": 1
+        },
+        {
+            "game_id": "4946063",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "25449",
+            "opponent_id": "50658",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "absent",
+            "club_points": 3
+        },
         {
             "game_id": "4887129",
             "season": 2025,
@@ -13051,13 +13118,6 @@
             "club_id": 25580
         },
         {
-            "title": "Australian Regular Season Champion",
-            "season": "20/21",
-            "season_id": 2020,
-            "club_name": "Melbourne City FC",
-            "club_id": 25580
-        },
-        {
             "title": "Thai Cup Winner",
             "season": "25/26",
             "season_id": 2025,
@@ -13081,59 +13141,61 @@
     ],
     "clubs": {
         "25449": {
+            "type": "club",
             "seasons": [
                 2024,
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 121,
-                "participations": 121,
-                "minutes": 4021,
-                "starts": 45,
+                "matches": 125,
+                "participations": 125,
+                "minutes": 4111,
+                "starts": 46,
                 "captain_matches": 0,
                 "goals": 5,
                 "assists": 1,
-                "goals_conceded": 42,
-                "points": 270,
-                "clean_sheets": 97,
-                "wins": 83,
-                "draws": 21,
+                "goals_conceded": 43,
+                "points": 278,
+                "clean_sheets": 100,
+                "wins": 85,
+                "draws": 23,
                 "losses": 17,
-                "goal_matches": 116,
-                "assist_matches": 120,
+                "goal_matches": 120,
+                "assist_matches": 124,
                 "goal_contributions": 6
             },
             "positions": {
-                "CB": 45
+                "CB": 46
             },
             "derived": {
-                "season_count": 2,
-                "points_per_match": 2.231,
-                "minutes_per_match": 33.2,
-                "win_rate": 0.686,
-                "goals_per_90": 0.112,
+                "season_count": 3,
+                "points_per_match": 2.224,
+                "minutes_per_match": 32.9,
+                "win_rate": 0.68,
+                "goals_per_90": 0.109,
                 "assists_per_90": 0.022,
-                "contributions_per_90": 0.134,
+                "contributions_per_90": 0.131,
                 "primary_position": "CB"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 63,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "International Cup": {
+                    "matches": 41,
+                    "minutes": 3144,
+                    "goals": 4,
+                    "assists": 0
+                },
                 "Domestic Cup": {
                     "matches": 12,
                     "minutes": 501,
                     "goals": 0,
                     "assists": 1
-                },
-                "International Cup": {
-                    "matches": 40,
-                    "minutes": 3054,
-                    "goals": 4,
-                    "assists": 0
-                },
-                "First Tier": {
-                    "matches": 60,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
                 },
                 "League Cup": {
                     "matches": 9,
@@ -13152,6 +13214,7 @@
             }
         },
         "25580": {
+            "type": "club",
             "seasons": [
                 2011,
                 2017,
@@ -13227,6 +13290,7 @@
             }
         },
         "3433": {
+            "type": "national",
             "seasons": [
                 2013,
                 2014,
@@ -13288,6 +13352,7 @@
             }
         },
         "762": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -13365,6 +13430,7 @@
             }
         },
         "9253": {
+            "type": "club",
             "seasons": [
                 2012,
                 2013,
@@ -13425,6 +13491,7 @@
             }
         },
         "1519": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -13479,6 +13546,7 @@
             }
         },
         "77740": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -13527,6 +13595,7 @@
             }
         },
         "22976": {
+            "type": "national",
             "seasons": [
                 2012
             ],
@@ -13581,6 +13650,7 @@
             }
         },
         "1027": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -13648,6 +13718,7 @@
             }
         },
         "39276": {
+            "type": "national",
             "seasons": [
                 2012
             ],
@@ -13696,24 +13767,24 @@
     },
     "career": {
         "club": {
-            "matches": 142,
-            "minutes": 5303,
-            "goals": 5,
-            "assists": 0,
-            "goal_contributions": 5,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 6
-        },
-        "national": {
-            "matches": 670,
-            "minutes": 20060,
-            "goals": 14,
+            "matches": 730,
+            "minutes": 24514,
+            "goals": 19,
             "assists": 6,
-            "goal_contributions": 20,
+            "goal_contributions": 25,
             "team_titles": 5,
             "individual_titles": 0,
-            "season_count": 15
+            "season_count": 16
+        },
+        "national": {
+            "matches": 86,
+            "minutes": 939,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 8
         }
     }
 }

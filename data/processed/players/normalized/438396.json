@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Janepob Phokhi",
         "short_name": "J. Phokhi",
+        "dateOfBirth": "1996-04-04",
+        "placeOfBirth": "Suphanburi",
         "nation_1": "Thailand",
         "nation_2": "",
         "height": 1.72,
@@ -14,6 +17,54 @@
         "prime_date": "2022-08-15"
     },
     "matches": [
+        {
+            "game_id": "4946079",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "55283",
+            "opponent_id": "50659",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4946073",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "55283",
+            "opponent_id": "55265",
+            "position": "",
+            "minutes": 1,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4946053",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "55283",
+            "opponent_id": "25444",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 1
+        },
         {
             "game_id": "4882913",
             "season": 2025,
@@ -2672,7 +2723,7 @@
         },
         {
             "game_id": "3721538",
-            "season": 2021,
+            "season": 2020,
             "competition_type": "National Team",
             "club_id": "5676",
             "opponent_id": "13958",
@@ -2688,7 +2739,7 @@
         },
         {
             "game_id": "3720106",
-            "season": 2021,
+            "season": 2020,
             "competition_type": "National Team",
             "club_id": "5676",
             "opponent_id": "13958",
@@ -2704,7 +2755,7 @@
         },
         {
             "game_id": "3718980",
-            "season": 2021,
+            "season": 2020,
             "competition_type": "National Team",
             "club_id": "5676",
             "opponent_id": "8778",
@@ -2720,7 +2771,7 @@
         },
         {
             "game_id": "3718978",
-            "season": 2021,
+            "season": 2020,
             "competition_type": "National Team",
             "club_id": "5676",
             "opponent_id": "8778",
@@ -2736,7 +2787,7 @@
         },
         {
             "game_id": "3708132",
-            "season": 2021,
+            "season": 2020,
             "competition_type": "National Team",
             "club_id": "5676",
             "opponent_id": "15357",
@@ -6313,33 +6364,35 @@
         },
         {
             "title": "AFF Championship winner",
-            "season": "21/22",
-            "season_id": 2022,
+            "season": "20/21",
+            "season_id": 2021,
             "club_name": "Thailand",
             "club_id": 5676
         }
     ],
     "clubs": {
         "55283": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 45,
-                "participations": 45,
-                "minutes": 1580,
+                "matches": 48,
+                "participations": 48,
+                "minutes": 1581,
                 "starts": 17,
                 "captain_matches": 0,
                 "goals": 6,
                 "assists": 4,
                 "goals_conceded": 23,
-                "points": 82,
-                "clean_sheets": 30,
-                "wins": 24,
-                "draws": 10,
-                "losses": 11,
-                "goal_matches": 40,
-                "assist_matches": 41,
+                "points": 86,
+                "clean_sheets": 33,
+                "wins": 25,
+                "draws": 11,
+                "losses": 12,
+                "goal_matches": 43,
+                "assist_matches": 44,
                 "goal_contributions": 10
             },
             "positions": {
@@ -6349,16 +6402,22 @@
                 "RW": 3
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.822,
-                "minutes_per_match": 35.1,
-                "win_rate": 0.5333,
+                "season_count": 2,
+                "points_per_match": 1.792,
+                "minutes_per_match": 32.9,
+                "win_rate": 0.5208,
                 "goals_per_90": 0.342,
                 "assists_per_90": 0.228,
-                "contributions_per_90": 0.57,
+                "contributions_per_90": 0.569,
                 "primary_position": "LW"
             },
             "competitions": {
+                "First Tier": {
+                    "matches": 3,
+                    "minutes": 1,
+                    "goals": 0,
+                    "assists": 0
+                },
                 "Play-Offs": {
                     "matches": 4,
                     "minutes": 132,
@@ -6390,6 +6449,7 @@
             }
         },
         "45289": {
+            "type": "club",
             "seasons": [
                 2020,
                 2024
@@ -6446,6 +6506,7 @@
             }
         },
         "6726": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -6520,6 +6581,7 @@
             }
         },
         "27092": {
+            "type": "club",
             "seasons": [
                 2021,
                 2023
@@ -6589,8 +6651,9 @@
             }
         },
         "5676": {
+            "type": "national",
             "seasons": [
-                2021
+                2020
             ],
             "stats": {
                 "matches": 5,
@@ -6637,6 +6700,7 @@
             }
         },
         "55227": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -6678,11 +6742,14 @@
                 }
             },
             "awards": {
-                "team_titles": {},
+                "team_titles": {
+                    "Thai Third League Champion": 1
+                },
                 "individual_titles": {}
             }
         },
         "55241": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -6729,6 +6796,7 @@
             }
         },
         "34853": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -6794,6 +6862,7 @@
             }
         },
         "51032": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -6849,6 +6918,7 @@
             }
         },
         "52967": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -6901,6 +6971,7 @@
             }
         },
         "39289": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -6949,24 +7020,24 @@
     },
     "career": {
         "club": {
-            "matches": 351,
-            "minutes": 6411,
+            "matches": 390,
+            "minutes": 6686,
             "goals": 14,
             "assists": 8,
             "goal_contributions": 22,
-            "team_titles": 0,
+            "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 11
+            "season_count": 12
         },
         "national": {
-            "matches": 42,
-            "minutes": 279,
+            "matches": 6,
+            "minutes": 5,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 3
+            "season_count": 2
         }
     }
 }

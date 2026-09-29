@@ -122,7 +122,14 @@ YEAR = [
     "john-robertson",
     "liam-kelly",
     "willie-miller",
-    "gareth-evans"
+    "gareth-evans",
+    "valdo",
+    "everton",
+    "carmelo",
+    "kanu",
+    "marcos-vinícius",
+    "derley",
+    "josimar"
 ]
 
 BIRTH_PLACE = [

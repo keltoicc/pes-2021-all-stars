@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Queven",
         "short_name": "Queven",
+        "dateOfBirth": "1998-11-21",
+        "placeOfBirth": "Palmeira d'Oeste",
         "nation_1": "Brazil",
         "nation_2": "",
         "height": 1.76,
@@ -14,6 +17,54 @@
         "prime_date": "2025-06-05"
     },
     "matches": [
+        {
+            "game_id": "5017625",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "49425",
+            "opponent_id": "50276",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "5018984",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "49425",
+            "opponent_id": "100752",
+            "position": "DMF",
+            "minutes": 62,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "5009537",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "49425",
+            "opponent_id": "38560",
+            "position": "CMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4788831",
             "season": 2025,
@@ -4695,7 +4746,58 @@
         }
     ],
     "clubs": {
+        "49425": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 3,
+                "participations": 3,
+                "minutes": 152,
+                "starts": 2,
+                "captain_matches": 0,
+                "goals": 1,
+                "assists": 0,
+                "goals_conceded": 1,
+                "points": 6,
+                "clean_sheets": 2,
+                "wins": 2,
+                "draws": 0,
+                "losses": 1,
+                "goal_matches": 2,
+                "assist_matches": 3,
+                "goal_contributions": 1
+            },
+            "positions": {
+                "DMF": 1,
+                "CMF": 1
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 2.0,
+                "minutes_per_match": 50.7,
+                "win_rate": 0.6667,
+                "goals_per_90": 0.592,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.592,
+                "primary_position": "DMF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 3,
+                    "minutes": 152,
+                    "goals": 1,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "12533": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -4759,6 +4861,7 @@
             }
         },
         "28082": {
+            "type": "club",
             "seasons": [
                 2023,
                 2024
@@ -4825,6 +4928,7 @@
             }
         },
         "4644": {
+            "type": "club",
             "seasons": [
                 2021,
                 2022,
@@ -4879,11 +4983,14 @@
                 }
             },
             "awards": {
-                "team_titles": {},
+                "team_titles": {
+                    "Macedonian champion": 1
+                },
                 "individual_titles": {}
             }
         },
         "10247": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -4930,6 +5037,7 @@
             }
         },
         "4759": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -4976,6 +5084,7 @@
             }
         },
         "33003": {
+            "type": "club",
             "seasons": [
                 2020
             ],
@@ -5017,6 +5126,7 @@
             }
         },
         "5219": {
+            "type": "club",
             "seasons": [
                 2017,
                 2018
@@ -5079,6 +5189,7 @@
             }
         },
         "17549": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -5120,24 +5231,24 @@
     },
     "career": {
         "club": {
-            "matches": 150,
-            "minutes": 3710,
-            "goals": 12,
-            "assists": 5,
-            "goal_contributions": 17,
-            "team_titles": 0,
+            "matches": 294,
+            "minutes": 11751,
+            "goals": 32,
+            "assists": 16,
+            "goal_contributions": 48,
+            "team_titles": 2,
             "individual_titles": 0,
-            "season_count": 4
+            "season_count": 9
         },
         "national": {
-            "matches": 141,
-            "minutes": 7889,
-            "goals": 19,
-            "assists": 11,
-            "goal_contributions": 30,
-            "team_titles": 1,
+            "matches": 0,
+            "minutes": 0,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 4
+            "season_count": 0
         }
     }
 }

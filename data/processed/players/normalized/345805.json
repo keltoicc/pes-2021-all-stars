@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Chaowat Veerachart",
         "short_name": "C. Veerachart",
+        "dateOfBirth": "1996-06-23",
+        "placeOfBirth": "Chiang Mai",
         "nation_1": "Thailand",
         "nation_2": "",
         "height": 1.73,
@@ -14,6 +17,54 @@
         "prime_date": "2022-08-15"
     },
     "matches": [
+        {
+            "game_id": "4946081",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "12533",
+            "opponent_id": "25449",
+            "position": "",
+            "minutes": 30,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4946076",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "12533",
+            "opponent_id": "48190",
+            "position": "AMF",
+            "minutes": 51,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "4946054",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "12533",
+            "opponent_id": "6759",
+            "position": "CMF",
+            "minutes": 83,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4887129",
             "season": 2025,
@@ -9097,7 +9148,80 @@
         }
     ],
     "clubs": {
+        "12533": {
+            "type": "club",
+            "seasons": [
+                2024,
+                2026
+            ],
+            "stats": {
+                "matches": 20,
+                "participations": 20,
+                "minutes": 1453,
+                "starts": 17,
+                "captain_matches": 0,
+                "goals": 2,
+                "assists": 2,
+                "goals_conceded": 14,
+                "points": 33,
+                "clean_sheets": 9,
+                "wins": 10,
+                "draws": 3,
+                "losses": 7,
+                "goal_matches": 18,
+                "assist_matches": 18,
+                "goal_contributions": 4
+            },
+            "positions": {
+                "AMF": 10,
+                "CMF": 6,
+                "DMF": 1
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 1.65,
+                "minutes_per_match": 72.7,
+                "win_rate": 0.5,
+                "goals_per_90": 0.124,
+                "assists_per_90": 0.124,
+                "contributions_per_90": 0.248,
+                "primary_position": "AMF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 3,
+                    "minutes": 164,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Second Tier": {
+                    "matches": 15,
+                    "minutes": 1289,
+                    "goals": 2,
+                    "assists": 2
+                },
+                "League Cup": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Thai Second League Champion": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "50659": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -9159,71 +9283,8 @@
                 "individual_titles": {}
             }
         },
-        "12533": {
-            "seasons": [
-                2024
-            ],
-            "stats": {
-                "matches": 17,
-                "participations": 17,
-                "minutes": 1289,
-                "starts": 15,
-                "captain_matches": 0,
-                "goals": 2,
-                "assists": 2,
-                "goals_conceded": 11,
-                "points": 33,
-                "clean_sheets": 8,
-                "wins": 10,
-                "draws": 3,
-                "losses": 4,
-                "goal_matches": 15,
-                "assist_matches": 15,
-                "goal_contributions": 4
-            },
-            "positions": {
-                "AMF": 9,
-                "CMF": 5,
-                "DMF": 1
-            },
-            "derived": {
-                "season_count": 1,
-                "points_per_match": 1.941,
-                "minutes_per_match": 75.8,
-                "win_rate": 0.5882,
-                "goals_per_90": 0.14,
-                "assists_per_90": 0.14,
-                "contributions_per_90": 0.279,
-                "primary_position": "AMF"
-            },
-            "competitions": {
-                "Second Tier": {
-                    "matches": 15,
-                    "minutes": 1289,
-                    "goals": 2,
-                    "assists": 2
-                },
-                "League Cup": {
-                    "matches": 1,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                },
-                "Domestic Cup": {
-                    "matches": 1,
-                    "minutes": 0,
-                    "goals": 0,
-                    "assists": 0
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Thai Second League Champion": 1
-                },
-                "individual_titles": {}
-            }
-        },
         "25444": {
+            "type": "club",
             "seasons": [
                 2016,
                 2018,
@@ -9317,6 +9378,7 @@
             }
         },
         "1022": {
+            "type": "club",
             "seasons": [
                 2017,
                 2021
@@ -9388,6 +9450,7 @@
             }
         },
         "5676": {
+            "type": "national",
             "seasons": [
                 2021
             ],
@@ -9444,6 +9507,7 @@
             }
         },
         "52283": {
+            "type": "club",
             "seasons": [
                 2017
             ],
@@ -9493,6 +9557,7 @@
             }
         },
         "40464": {
+            "type": "national",
             "seasons": [
                 2016,
                 2017
@@ -9546,6 +9611,7 @@
             }
         },
         "25449": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014,
@@ -9628,6 +9694,7 @@
             }
         },
         "39289": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -9676,24 +9743,24 @@
     },
     "career": {
         "club": {
-            "matches": 86,
-            "minutes": 3457,
-            "goals": 4,
-            "assists": 6,
-            "goal_contributions": 10,
-            "team_titles": 1,
+            "matches": 551,
+            "minutes": 17291,
+            "goals": 22,
+            "assists": 31,
+            "goal_contributions": 53,
+            "team_titles": 12,
             "individual_titles": 0,
-            "season_count": 3
+            "season_count": 13
         },
         "national": {
-            "matches": 474,
-            "minutes": 14240,
-            "goals": 19,
-            "assists": 25,
-            "goal_contributions": 44,
-            "team_titles": 11,
+            "matches": 12,
+            "minutes": 570,
+            "goals": 1,
+            "assists": 0,
+            "goal_contributions": 1,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 11
+            "season_count": 4
         }
     }
 }

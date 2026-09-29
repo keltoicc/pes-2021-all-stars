@@ -1,19 +1,102 @@
 {
     "player": {
+        "name": "Yotsak Chaowana",
         "short_name": "Y. Chaowana",
+        "dateOfBirth": "1996-04-20",
+        "placeOfBirth": "Bangkok",
         "nation_1": "Thailand",
         "nation_2": "",
         "height": 1.79,
         "foot": "Right",
         "position_group": "FORWARD",
-        "position_1": "RW",
+        "position_1": "LW",
         "position_2": "CF",
-        "position_3": "LW",
+        "position_3": "RW",
         "former_clubs": "ThaiBev Football Academy (2008-2010), Assumption Thonburi (2011-2014)",
         "market_value": 100000,
         "prime_date": "2023-09-25"
     },
     "matches": [
+        {
+            "game_id": "5061835",
+            "season": 2026,
+            "competition_type": "Domestic Cup",
+            "club_id": "60393",
+            "opponent_id": "141264",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4968077",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "60393",
+            "opponent_id": "21283",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "in squad",
+            "club_points": 0
+        },
+        {
+            "game_id": "4968066",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "60393",
+            "opponent_id": "53667",
+            "position": "LW",
+            "minutes": 67,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4968058",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "60393",
+            "opponent_id": "27070",
+            "position": "RW",
+            "minutes": 61,
+            "started": true,
+            "captain": false,
+            "goals": 1,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4968050",
+            "season": 2026,
+            "competition_type": "Second Tier",
+            "club_id": "60393",
+            "opponent_id": "94125",
+            "position": "RW",
+            "minutes": 64,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4867868",
             "season": 2025,
@@ -5169,7 +5252,64 @@
     ],
     "achievements": [],
     "clubs": {
+        "60393": {
+            "type": "club",
+            "seasons": [
+                2026
+            ],
+            "stats": {
+                "matches": 5,
+                "participations": 5,
+                "minutes": 192,
+                "starts": 3,
+                "captain_matches": 0,
+                "goals": 1,
+                "assists": 0,
+                "goals_conceded": 2,
+                "points": 6,
+                "clean_sheets": 3,
+                "wins": 2,
+                "draws": 0,
+                "losses": 3,
+                "goal_matches": 4,
+                "assist_matches": 5,
+                "goal_contributions": 1
+            },
+            "positions": {
+                "LW": 1,
+                "RW": 2
+            },
+            "derived": {
+                "season_count": 1,
+                "points_per_match": 1.2,
+                "minutes_per_match": 38.4,
+                "win_rate": 0.4,
+                "goals_per_90": 0.469,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.469,
+                "primary_position": "RW"
+            },
+            "competitions": {
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Second Tier": {
+                    "matches": 4,
+                    "minutes": 192,
+                    "goals": 1,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "55257": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -5228,6 +5368,7 @@
             }
         },
         "55243": {
+            "type": "club",
             "seasons": [
                 2025
             ],
@@ -5288,6 +5429,7 @@
             }
         },
         "26646": {
+            "type": "club",
             "seasons": [
                 2024
             ],
@@ -5345,6 +5487,7 @@
             }
         },
         "6726": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -5411,6 +5554,7 @@
             }
         },
         "35387": {
+            "type": "club",
             "seasons": [
                 2018
             ],
@@ -5473,6 +5617,7 @@
             }
         },
         "35379": {
+            "type": "club",
             "seasons": [
                 2016,
                 2017
@@ -5545,6 +5690,7 @@
             }
         },
         "55203": {
+            "type": "club",
             "seasons": [
                 2015
             ],
@@ -5593,14 +5739,14 @@
     },
     "career": {
         "club": {
-            "matches": 322,
-            "minutes": 7187,
-            "goals": 7,
+            "matches": 327,
+            "minutes": 7379,
+            "goals": 8,
             "assists": 6,
-            "goal_contributions": 13,
+            "goal_contributions": 14,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 10
+            "season_count": 11
         },
         "national": {
             "matches": 0,
