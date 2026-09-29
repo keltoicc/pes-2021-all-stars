@@ -27,31 +27,35 @@ const HEIGHT = [
 ];
 
 const OFFENSIVE_AWARENESS = [
-    0, 0, 0, 0, 0, 10, 0, 0, 14, 17, 17, 14, 28,
+    0, 0, 0, 0, 0, 0, 0, 0, 13, 17, 17, 12, 24,
 ];
 
 const BALL_CONTROL = [
-    0, 0, 14, 14, 20, 22, 15, 15, 22, 19, 19, 16, 20,
+    0, 0, 10, 10, 17, 20, 15, 15, 18, 19, 19, 14, 18,
 ];
 
 const DRIBBLING = [
-    0, 0, 12, 12, 12, 14, 17, 17, 16, 15, 15, 14, 10,
+    0, 0, 10, 10, 11, 13, 17, 17, 15, 15, 15, 12, 0,
 ];
 
 const TIGHT_POSSESSION = [
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7, 0, 10,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7, 0, 0,
 ];
 
 const LOW_PASS = [
-    0, 0, 0, 0, 16, 22, 0, 0, 20, 0, 0, 16, 0,
+    0, 0, 0, 0, 14, 18, 0, 0, 16, 0, 0, 14, 0,
 ];
 
 const LOFTED_PASS = [
-    0, 0, 14, 14, 18, 20, 12, 12, 16, 9, 9, 0, 0,
+    0, 0, 13, 13, 15, 18, 12, 12, 14, 9, 9, 0, 0,
 ];
 
 const FINISHING = [
-    0, 0, 0, 0, 0, 0, 0, 0, 16, 11, 11, 14, 28,
+    0, 0, 0, 0, 0, 0, 0, 0, 15, 11, 11, 12, 25,
+];
+
+const HEADING = [
+    0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 ];
 
 const SET_PIECE_TAKING = [
@@ -59,15 +63,39 @@ const SET_PIECE_TAKING = [
 ];
 
 const CURL = [
-    0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0,
 ];
 
-const HEADING = [
-    0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8,
+const SPEED = [
+    0, 0, 14, 14, 0, 0, 24, 24, 0, 15, 15, 11, 0,
+];
+
+const ACCELERATION = [
+    0, 0, 13, 13, 0, 0, 21, 21, 0, 15, 15, 15, 0,
+];
+
+const KICKING_POWER = [
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+];
+
+const JUMP = [
+    10, 20, 12, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+];
+
+const PHYSICAL_CONTACT = [
+    10, 20, 11, 11, 11, 0, 0, 0, 0, 0, 0, 0, 0,
+];
+
+const BALANCE = [
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+];
+
+const STAMINA = [
+    0, 14, 14, 14, 14, 16, 13, 13, 0, 6, 6, 10, 0,
 ];
 
 const DEFENSIVE_AWARENESS = [
-    0, 24, 16, 16, 10, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 24, 15, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 ];
 
 const TACKLING = [
@@ -78,60 +106,32 @@ const AGGRESSION = [
     0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 ];
 
-const KICKING_POWER = [
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-];
-
-const SPEED = [
-    0, 0, 16, 16, 0, 0, 24, 24, 0, 15, 15, 14, 0,
-];
-
-const ACCELERATION = [
-    0, 0, 14, 14, 0, 0, 21, 21, 0, 15, 15, 9, 0,
-];
-
-const PHYSICAL_CONTACT = [
-    18, 20, 12, 12, 12, 0, 0, 0, 0, 0, 0, 0, 12,
-];
-
-const BALANCE = [
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-];
-
-const JUMP = [
-    18, 20, 14, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-];
-
-const STAMINA = [
-    0, 14, 16, 16, 16, 18, 13, 13, 0, 6, 6, 0, 0,
-];
-
 const GK_AWARENESS = [
-    27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 ];
 
 const GK_CATCHING = [
-    22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 ];
 
-const GK_REACH = [
-    22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+const GK_CLEARING = [
+    16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 ];
 
 const GK_REFLEXES = [
     17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 ];
 
-const GK_CLEARING = [
-    17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+const GK_REACH = [
+    25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 ];
 
 const WEAK_FOOT_ACCURACY = [
-    50, 50, 50, 50, 50, 50, 56, 56, 50, 47, 47, 50, 50,
+    0, 50, 50, 50, 50, 50, 56, 56, 50, 47, 47, 50, 50,
 ];
 
 const POSITION_BONUS = [
-    0, 16, 18, 18, 21, 24, 8, 8, 24, 10, 10, 24, 21,
+    8, -8, -8, -8, -8, -8, 8, 8, -8, 10, 10, -8, -8,
 ];
 
 function add(
@@ -308,15 +308,15 @@ export function calculateOverall(
         GK_CLEARING[position],
     );
 
-    const weakFootAccuracy = Math.floor(
-        (WEAK_FOOT_ACCURACY[position] * playerVersion.weakFootAccuracy) / 3 + 40,
-    );
+    //const weakFootAccuracy = Math.floor(
+    //    (WEAK_FOOT_ACCURACY[position] * playerVersion.weakFootAccuracy) / 3 + 40,
+    //);
 
-    total = add(
-        total,
-        weakFootAccuracy,
-        4,
-    );
+    //total = add(
+    //    total,
+    //    weakFootAccuracy,
+    //    4,
+    //);
 
     total = Math.floor(total / 100);
 
