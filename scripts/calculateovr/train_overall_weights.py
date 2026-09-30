@@ -405,6 +405,9 @@ def train_position_model(
 
     final_model.fit(x, y_adjusted)
 
+    # Simplify weights to two decimal places.
+    final_model.coef_ = final_model.coef_.round(2)
+
     final_weights = pd.Series(
         final_model.coef_,
         index=x.columns,

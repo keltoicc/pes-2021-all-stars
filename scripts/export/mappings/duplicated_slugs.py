@@ -129,11 +129,19 @@ YEAR = [
     "kanu",
     "marcos-vinícius",
     "derley",
-    "josimar"
+    "josimar",
+    "josé-martínez",
+    "claudio-bravo",
+    "joão-moutinho",
+    "luis-robles",
+    "rafael-navarro",
+    "juninho"
 ]
 
 BIRTH_PLACE = [
     "david-silva-1986",
     "fernandinho-1985",
-    "davi-1984"
+    "davi-1984",
+    "gonzalo-martínez-1993",
+    "alan-franco-1996"
 ]
