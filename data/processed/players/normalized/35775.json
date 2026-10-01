@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Petr Sima",
         "short_name": "Petr Sima",
+        "dateOfBirth": "1983-02-25",
+        "placeOfBirth": "",
         "nation_1": "Czech Republic",
         "nation_2": "",
         "height": 1.81,
@@ -1012,7 +1015,7 @@
             "competition_type": "International Cup",
             "club_id": "6163",
             "opponent_id": "409",
-            "position": "",
+            "position": "LB",
             "minutes": 90,
             "started": true,
             "captain": false,
@@ -3615,6 +3618,22 @@
             "club_points": 0
         },
         {
+            "game_id": "4969667",
+            "season": 2006,
+            "competition_type": "Domestic Cup",
+            "club_id": "941",
+            "opponent_id": "6475",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
+            "club_points": 3
+        },
+        {
             "game_id": "59816",
             "season": 2006,
             "competition_type": "First Tier",
@@ -3644,6 +3663,22 @@
             "assists": 0,
             "goals_conceded": 0,
             "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "4969729",
+            "season": 2006,
+            "competition_type": "Domestic Cup",
+            "club_id": "941",
+            "opponent_id": "19039",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "not in squad",
             "club_points": 3
         },
         {
@@ -4794,6 +4829,7 @@
     ],
     "clubs": {
         "11117": {
+            "type": "club",
             "seasons": [
                 2012
             ],
@@ -4846,6 +4882,7 @@
             }
         },
         "5225": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -4892,6 +4929,7 @@
             }
         },
         "1321": {
+            "type": "club",
             "seasons": [
                 2007,
                 2008,
@@ -4950,6 +4988,7 @@
             }
         },
         "6163": {
+            "type": "club",
             "seasons": [
                 2011
             ],
@@ -4971,7 +5010,9 @@
                 "assist_matches": 21,
                 "goal_contributions": 0
             },
-            "positions": {},
+            "positions": {
+                "LB": 1
+            },
             "derived": {
                 "season_count": 1,
                 "points_per_match": 1.619,
@@ -4980,7 +5021,7 @@
                 "goals_per_90": 0.0,
                 "assists_per_90": 0.0,
                 "contributions_per_90": 0.0,
-                "primary_position": ""
+                "primary_position": "LB"
             },
             "competitions": {
                 "First Tier": {
@@ -5008,6 +5049,7 @@
             }
         },
         "941": {
+            "type": "club",
             "seasons": [
                 2003,
                 2004,
@@ -5016,21 +5058,21 @@
                 2007
             ],
             "stats": {
-                "matches": 112,
-                "participations": 112,
+                "matches": 114,
+                "participations": 114,
                 "minutes": 3165,
                 "starts": 37,
                 "captain_matches": 0,
                 "goals": 1,
                 "assists": 4,
                 "goals_conceded": 39,
-                "points": 135,
-                "clean_sheets": 82,
-                "wins": 35,
+                "points": 141,
+                "clean_sheets": 84,
+                "wins": 37,
                 "draws": 30,
                 "losses": 47,
-                "goal_matches": 111,
-                "assist_matches": 108,
+                "goal_matches": 113,
+                "assist_matches": 110,
                 "goal_contributions": 5
             },
             "positions": {
@@ -5041,9 +5083,9 @@
             },
             "derived": {
                 "season_count": 5,
-                "points_per_match": 1.205,
-                "minutes_per_match": 28.3,
-                "win_rate": 0.3125,
+                "points_per_match": 1.237,
+                "minutes_per_match": 27.8,
+                "win_rate": 0.3246,
                 "goals_per_90": 0.028,
                 "assists_per_90": 0.114,
                 "contributions_per_90": 0.142,
@@ -5057,7 +5099,7 @@
                     "assists": 4
                 },
                 "Domestic Cup": {
-                    "matches": 9,
+                    "matches": 11,
                     "minutes": 344,
                     "goals": 0,
                     "assists": 0
@@ -5069,6 +5111,7 @@
             }
         },
         "22987": {
+            "type": "national",
             "seasons": [
                 2002,
                 2003
@@ -5124,8 +5167,8 @@
     },
     "career": {
         "club": {
-            "matches": 272,
-            "minutes": 9038,
+            "matches": 295,
+            "minutes": 9412,
             "goals": 2,
             "assists": 16,
             "goal_contributions": 18,
@@ -5134,14 +5177,14 @@
             "season_count": 10
         },
         "national": {
-            "matches": 26,
-            "minutes": 824,
+            "matches": 5,
+            "minutes": 450,
             "goals": 0,
             "assists": 0,
             "goal_contributions": 0,
             "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 3
+            "season_count": 2
         }
     }
 }

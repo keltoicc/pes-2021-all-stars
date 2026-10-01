@@ -1,6 +1,6 @@
 {
-    "tactic": "5-4-1 Diamond",
-    "total_score": 14.07,
+    "tactic": "5-4-1",
+    "total_score": 13.98,
     "players": [
         {
             "role": "STRIKER",
@@ -55,7 +55,7 @@
             "role_weight": 0.7
         },
         {
-            "role": "UTILITY",
+            "role": "WINGER",
             "player": {
                 "ID_transfermarkt": "1525",
                 "name": "H. Pfeifenberger",
@@ -76,7 +76,7 @@
                 }
             },
             "score": 0.72,
-            "role_weight": 1.6
+            "role_weight": 1.0
         },
         {
             "role": "WIDE_CENTER_BACK",
@@ -143,7 +143,7 @@
             "role_weight": 0.7
         },
         {
-            "role": "CENTRAL_MID",
+            "role": "DEFENSIVE_MID",
             "player": {
                 "ID_transfermarkt": "378395",
                 "name": "G. Filzmoser",
@@ -175,11 +175,11 @@
                     }
                 }
             },
-            "score": 0.67,
-            "role_weight": 1.0
+            "score": 0.6,
+            "role_weight": 0.8
         },
         {
-            "role": "ATTACKING_MID",
+            "role": "UTILITY",
             "player": {
                 "ID_transfermarkt": "94075",
                 "name": "H. Libuda",
@@ -204,7 +204,7 @@
                 }
             },
             "score": 0.67,
-            "role_weight": 1.0
+            "role_weight": 2.3
         },
         {
             "role": "GOALKEEPER",
@@ -293,6 +293,30 @@
             },
             "score": 0.65,
             "role_weight": 0.9559
+        },
+        {
+            "role": "WIDE_MID",
+            "player": {
+                "ID_transfermarkt": "94909",
+                "name": "H. Stadler",
+                "score": 0.6608758071354708,
+                "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.6,
+                        "score": 0.5119121989894126
+                    },
+                    "WINGER": {
+                        "weight": 1.0,
+                        "score": 0.6608758071354708
+                    },
+                    "UTILITY": {
+                        "weight": 1.6,
+                        "score": 0.6608758071354708
+                    }
+                }
+            },
+            "score": 0.51,
+            "role_weight": 0.6
         },
         {
             "role": "CENTER_BACK",
@@ -419,46 +443,6 @@
             "role_weight": 0.8979
         },
         {
-            "role": "DEFENSIVE_MID",
-            "player": {
-                "ID_transfermarkt": "4997",
-                "name": "R. Aufhauser",
-                "score": 0.641685341899441,
-                "roles": {
-                    "DEFENSIVE_MID": {
-                        "weight": 0.5333333333333333,
-                        "score": 0.46862071543831835
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 0.5,
-                        "score": 0.45374005664510303
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.13333333333333333,
-                        "score": 0.23431035771915917
-                    },
-                    "CENTER_BACK": {
-                        "weight": 0.3333333333333333,
-                        "score": 0.3704772048806793
-                    },
-                    "SWEEPER": {
-                        "weight": 0.16666666666666666,
-                        "score": 0.26196694384616626
-                    },
-                    "WIDE_CENTER_BACK": {
-                        "weight": 0.3333333333333333,
-                        "score": 0.3704772048806793
-                    },
-                    "UTILITY": {
-                        "weight": 2.0,
-                        "score": 0.641685341899441
-                    }
-                }
-            },
-            "score": 0.47,
-            "role_weight": 0.5333
-        },
-        {
             "role": "WIDE_CENTER_BACK",
             "player": {
                 "ID_transfermarkt": "94891",
@@ -543,7 +527,7 @@
             "role_weight": 0.7
         },
         {
-            "role": "CENTRAL_MID",
+            "role": "DEFENSIVE_MID",
             "player": {
                 "ID_transfermarkt": "793214",
                 "name": "F. Feldinger",
@@ -575,43 +559,7 @@
                     }
                 }
             },
-            "score": 0.6,
-            "role_weight": 1.0
-        },
-        {
-            "role": "ATTACKING_MID",
-            "player": {
-                "ID_transfermarkt": "262326",
-                "name": "F. Bacher",
-                "score": 0.591641056745837,
-                "roles": {
-                    "DEFENSIVE_MID": {
-                        "weight": 0.8,
-                        "score": 0.5291798484654008
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 1.0,
-                        "score": 0.591641056745837
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.8,
-                        "score": 0.5291798484654008
-                    },
-                    "WINGER": {
-                        "weight": 0.6,
-                        "score": 0.4582831919418368
-                    },
-                    "WING_BACK": {
-                        "weight": 0.4,
-                        "score": 0.37418665931715456
-                    },
-                    "UTILITY": {
-                        "weight": 3.6,
-                        "score": 0.591641056745837
-                    }
-                }
-            },
-            "score": 0.53,
+            "score": 0.54,
             "role_weight": 0.8
         },
         {
@@ -663,32 +611,60 @@
             "role_weight": 1.0
         },
         {
-            "role": "DEFENSIVE_MID",
+            "role": "WIDE_MID",
             "player": {
-                "ID_transfermarkt": "315604",
-                "name": "D. Samassékou",
-                "score": 0.46929881855403177,
+                "ID_transfermarkt": "2813",
+                "name": "P. Jezek",
+                "score": 0.4944745968752847,
                 "roles": {
-                    "DEFENSIVE_MID": {
-                        "weight": 0.9046153846153846,
-                        "score": 0.4463560704959344
+                    "WING_BACK": {
+                        "weight": 0.4,
+                        "score": 0.3127331942438956
                     },
-                    "CENTRAL_MID": {
-                        "weight": 0.6192307692307693,
-                        "score": 0.36929695345704266
+                    "WIDE_MID": {
+                        "weight": 1.0,
+                        "score": 0.4944745968752847
                     },
-                    "ATTACKING_MID": {
-                        "weight": 0.0953846153846154,
-                        "score": 0.14494012359467098
+                    "WINGER": {
+                        "weight": 0.7,
+                        "score": 0.413707129342102
                     },
                     "UTILITY": {
-                        "weight": 1.6192307692307693,
-                        "score": 0.46929881855403177
+                        "weight": 2.1,
+                        "score": 0.4944745968752847
                     }
                 }
             },
-            "score": 0.45,
-            "role_weight": 0.9046
+            "score": 0.49,
+            "role_weight": 1.0
+        },
+        {
+            "role": "WIDE_MID",
+            "player": {
+                "ID_transfermarkt": "4996",
+                "name": "M. Amerhauser",
+                "score": 0.48788732021552506,
+                "roles": {
+                    "WING_BACK": {
+                        "weight": 0.4,
+                        "score": 0.3085670346793943
+                    },
+                    "WIDE_MID": {
+                        "weight": 1.0,
+                        "score": 0.48788732021552506
+                    },
+                    "WINGER": {
+                        "weight": 0.7,
+                        "score": 0.4081958182771602
+                    },
+                    "UTILITY": {
+                        "weight": 2.1,
+                        "score": 0.48788732021552506
+                    }
+                }
+            },
+            "score": 0.49,
+            "role_weight": 1.0
         }
     ]
 }

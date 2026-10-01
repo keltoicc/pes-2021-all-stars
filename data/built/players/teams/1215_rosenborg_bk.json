@@ -1,6 +1,6 @@
 {
     "tactic": "4-3-3 Attacking",
-    "total_score": 15.73,
+    "total_score": 15.76,
     "players": [
         {
             "role": "UTILITY",
@@ -143,7 +143,7 @@
             "role_weight": 1.0
         },
         {
-            "role": "WINGER",
+            "role": "FULLBACK",
             "player": {
                 "ID_transfermarkt": "102508",
                 "name": "Kalle Løken",
@@ -391,42 +391,6 @@
             "role_weight": 1.0
         },
         {
-            "role": "FULLBACK",
-            "player": {
-                "ID_transfermarkt": "12365",
-                "name": "C. Basma",
-                "score": 0.6938095103559407,
-                "roles": {
-                    "WIDE_CENTER_BACK": {
-                        "weight": 0.8851063829787235,
-                        "score": 0.6527366300377135
-                    },
-                    "FULLBACK": {
-                        "weight": 0.574468085106383,
-                        "score": 0.5258637108004287
-                    },
-                    "WING_BACK": {
-                        "weight": 0.4021276595744681,
-                        "score": 0.43996914623159417
-                    },
-                    "CENTER_BACK": {
-                        "weight": 0.425531914893617,
-                        "score": 0.45259142095664306
-                    },
-                    "SWEEPER": {
-                        "weight": 0.2127659574468085,
-                        "score": 0.3200304628652976
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.6938095103559407
-                    }
-                }
-            },
-            "score": 0.53,
-            "role_weight": 0.5745
-        },
-        {
             "role": "GOALKEEPER",
             "player": {
                 "ID_transfermarkt": "102504",
@@ -475,6 +439,34 @@
             "role_weight": 1.0
         },
         {
+            "role": "DEFENSIVE_MID",
+            "player": {
+                "ID_transfermarkt": "175961",
+                "name": "Ole Selnæs",
+                "score": 0.6576874485952897,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 0.925,
+                        "score": 0.6325435333135564
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.59375,
+                        "score": 0.5067822147122178
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.07500000000000001,
+                        "score": 0.1801151256918298
+                    },
+                    "UTILITY": {
+                        "weight": 1.59375,
+                        "score": 0.6576874485952897
+                    }
+                }
+            },
+            "score": 0.63,
+            "role_weight": 0.925
+        },
+        {
             "role": "FULLBACK",
             "player": {
                 "ID_transfermarkt": "12381",
@@ -501,34 +493,6 @@
             },
             "score": 0.65,
             "role_weight": 1.0
-        },
-        {
-            "role": "DEFENSIVE_MID",
-            "player": {
-                "ID_transfermarkt": "175961",
-                "name": "Ole Selnæs",
-                "score": 0.6444333217537872,
-                "roles": {
-                    "DEFENSIVE_MID": {
-                        "weight": 0.9228915662650603,
-                        "score": 0.6190893414504336
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 0.5963855421686748,
-                        "score": 0.497670091480964
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.07710843373493977,
-                        "score": 0.17894885718855205
-                    },
-                    "UTILITY": {
-                        "weight": 1.5963855421686748,
-                        "score": 0.6444333217537872
-                    }
-                }
-            },
-            "score": 0.62,
-            "role_weight": 0.9229
         },
         {
             "role": "WINGER",
@@ -641,6 +605,30 @@
             },
             "score": 0.47,
             "role_weight": 0.7
+        },
+        {
+            "role": "WINGER",
+            "player": {
+                "ID_transfermarkt": "508371",
+                "name": "E. Ceide",
+                "score": 0.544509418528974,
+                "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.6,
+                        "score": 0.42177518196316016
+                    },
+                    "WINGER": {
+                        "weight": 1.0,
+                        "score": 0.544509418528974
+                    },
+                    "UTILITY": {
+                        "weight": 1.6,
+                        "score": 0.544509418528974
+                    }
+                }
+            },
+            "score": 0.54,
+            "role_weight": 1.0
         }
     ]
 }
