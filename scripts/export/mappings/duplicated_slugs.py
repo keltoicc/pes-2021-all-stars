@@ -135,7 +135,9 @@ YEAR = [
     "joão-moutinho",
     "luis-robles",
     "rafael-navarro",
-    "juninho"
+    "juninho",
+    "tiago-silva",
+    "eduardo"
 ]
 
 BIRTH_PLACE = [
