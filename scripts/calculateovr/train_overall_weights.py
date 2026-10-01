@@ -50,21 +50,13 @@ ABILITY_COLUMNS = [
 ]
 
 
-# Positions considered outfield players.
-OUTFIELD_POSITIONS = [
-    "AMF",
-    "CB",
-    "CF",
-    "CMF",
-    "DMF",
-    "LB",
-    "LMF",
-    "LWF",
-    "RB",
-    "RMF",
-    "RWF",
-    "SS",
-]
+# Decimal precisions to compare during cross-validation.
+ROUNDING_DECIMALS_TO_TEST = [2, 3, 4, 5]
+
+# Number of decimal places used in the final model.
+WEIGHT_DECIMALS = 2
+
+INTEGER_WEIGHT_SCALE = 100
 
 
 def load_data():
@@ -122,44 +114,44 @@ def prepare_data(df):
     return data
 
 
-def calculate_common_intercepts(data):
-    print("\nPosition-specific intercepts:")
+def calculate_metrics(y_true, predictions):
+    """Calculate metrics after rounding predicted OVR."""
 
-    intercepts = {}
+    rounded_predictions = pd.Series(
+        predictions,
+        index=y_true.index,
+    ).round()
 
-    for position in data[POSITION_COLUMN].unique():
-        position_data = data[
-            data[POSITION_COLUMN] == position
-        ]
+    mae = mean_absolute_error(
+        y_true,
+        rounded_predictions,
+    )
 
-        x = position_data[ABILITY_COLUMNS].copy() - 25
-        y = position_data[TARGET_COLUMN]
+    exact_matches = (
+        rounded_predictions == y_true
+    ).mean() * 100
 
-        model = LinearRegression(
-            fit_intercept=True,
-            positive=True,
-        )
+    within_one = (
+        abs(rounded_predictions - y_true) <= 1
+    ).mean() * 100
 
-        model.fit(x, y)
-
-        intercepts[position] = model.intercept_
-
-        print(f"  {position}: {model.intercept_:+.6f}")
-
-    print("\nSimplified intercepts:")
-    print("  Outfield: -8")
-    print("  GK:       +8")
-
-    return -8, 8
+    return mae, exact_matches, within_one
 
 
-def train_position_model(
-    data,
-    position,
-    common_outfield_intercept,
-    common_gk_intercept,
-):
-    """Train a model for one registered position."""
+def print_metrics(name, metrics):
+    """Print the averaged cross-validation metrics."""
+
+    mae, exact_matches, within_one = metrics
+
+    print()
+    print(name)
+
+    print(f"  MAE:            {mae:.3f}")
+    print(f"  Exact matches:  {exact_matches:.1f}%")
+    print(f"  Within ±1:      {within_one:.1f}%")
+
+def train_position_model(data, position):
+    """Train and compare models for one registered position."""
 
     position_data = data[
         data[POSITION_COLUMN] == position
@@ -172,300 +164,182 @@ def train_position_model(
         )
         return
 
+    # --------------------------------------------------
+    # Model inputs
+    # --------------------------------------------------
+
     x = position_data[ABILITY_COLUMNS].copy()
+
+    # PES-style transformation for abilities.
+    x = x - 25
+
+    # Model B adds Weak Foot Accuracy as an additional
+    # predictor on its original 1-4 scale.
+    x_with_weak_foot = x.copy()
+    x_with_weak_foot[WEAK_FOOT_COLUMN] = (
+        position_data[WEAK_FOOT_COLUMN]
+    )
+
     y = position_data[TARGET_COLUMN]
 
-    # PES-style transformation for abilities only.
-    # Weak Foot remains on its original 1–4 scale.
-    x[ABILITY_COLUMNS] = x[ABILITY_COLUMNS] - 25
-
-    # Fixed intercept for the final PES-style model.
-    if position == "GK":
-        common_intercept = common_gk_intercept
-    else:
-        common_intercept = common_outfield_intercept
-
-    # Cross-validation.
     kfold = KFold(
         n_splits=5,
         shuffle=True,
         random_state=42,
     )
 
-    # Metrics for Model A: original linear model.
-    fold_mae = []
-    fold_exact_matches = []
-    fold_within_one = []
+    # --------------------------------------------------
+    # Model A: abilities only
+    # --------------------------------------------------
 
-    # Metrics for Model B: quadratic correction.
-    fold_quadratic_mae = []
-    fold_quadratic_exact_matches = []
-    fold_quadratic_within_one = []
+    fold_a_mae = []
+    fold_a_exact = []
+    fold_a_within_one = []
 
-    # Metrics for Model C: fixed intercept + rounded weights.
-    fold_rounded_mae = []
-    fold_rounded_exact_matches = []
-    fold_rounded_within_one = []
+    # --------------------------------------------------
+    # Model B: abilities + Weak Foot Accuracy
+    # --------------------------------------------------
 
-    # Metrics for Model D: fixed intercept + unrounded weights.
-    fold_unrounded_mae = []
-    fold_unrounded_exact_matches = []
-    fold_unrounded_within_one = []
+    fold_b_mae = []
+    fold_b_exact = []
+    fold_b_within_one = []
+
+    weak_foot_coefficients = []
+
+    # --------------------------------------------------
+    # Rounded-weight models for Model A
+    # --------------------------------------------------
+
+    rounded_metrics = {
+        decimals: {
+            "mae": [],
+            "exact": [],
+            "within_one": [],
+        }
+        for decimals in ROUNDING_DECIMALS_TO_TEST
+    }
+
+    integer_mae = []
+    integer_exact = []
+    integer_within_one = []
 
     for train_index, test_index in kfold.split(x):
 
         x_train = x.iloc[train_index]
         x_test = x.iloc[test_index]
 
+        x_wf_train = x_with_weak_foot.iloc[train_index]
+        x_wf_test = x_with_weak_foot.iloc[test_index]
+
         y_train = y.iloc[train_index]
         y_test = y.iloc[test_index]
 
         # --------------------------------------------------
-        # Model A: original linear model
+        # Model A: abilities only
         # --------------------------------------------------
 
-        model = LinearRegression(
+        model_a = LinearRegression(
             fit_intercept=True,
             positive=True,
         )
 
-        model.fit(x_train, y_train)
+        model_a.fit(x_train, y_train)
 
-        predictions = model.predict(x_test)
+        predictions_a = model_a.predict(x_test)
 
-        rounded_predictions = predictions.round()
-
-        mae = mean_absolute_error(
+        metrics_a = calculate_metrics(
             y_test,
-            rounded_predictions,
+            predictions_a,
         )
 
-        exact_matches = (
-            rounded_predictions == y_test
-        ).mean() * 100
-
-        within_one = (
-            abs(rounded_predictions - y_test) <= 1
-        ).mean() * 100
-
-        fold_mae.append(mae)
-        fold_exact_matches.append(exact_matches)
-        fold_within_one.append(within_one)
+        fold_a_mae.append(metrics_a[0])
+        fold_a_exact.append(metrics_a[1])
+        fold_a_within_one.append(metrics_a[2])
 
         # --------------------------------------------------
-        # Model B: linear model + quadratic correction
+        # Model B: abilities + Weak Foot Accuracy
         # --------------------------------------------------
 
-        # Calculate the Ability Score using only the
-        # ability coefficients learned in this fold.
-        ability_weights = pd.Series(
-            model.coef_,
-            index=x.columns,
-        )[ABILITY_COLUMNS]
-
-        ability_score_train = (
-            x_train[ABILITY_COLUMNS]
-            .mul(ability_weights, axis=1)
-            .sum(axis=1)
-        )
-
-        ability_score_test = (
-            x_test[ABILITY_COLUMNS]
-            .mul(ability_weights, axis=1)
-            .sum(axis=1)
-        )
-
-        # Center the score around the training mean.
-        score_mean = ability_score_train.mean()
-
-        centered_train = (
-            ability_score_train - score_mean
-        ) / 100
-
-        centered_test = (
-            ability_score_test - score_mean
-        ) / 100
-
-        # The quadratic feature represents curvature
-        # in the original model's prediction errors.
-        quadratic_train = centered_train ** 2
-        quadratic_test = centered_test ** 2
-
-        # Learn the correction from training residuals.
-        train_predictions = model.predict(x_train)
-
-        train_residuals = (
-            y_train - train_predictions
-        )
-
-        quadratic_model = LinearRegression(
-            fit_intercept=False,
-        )
-
-        quadratic_model.fit(
-            quadratic_train.to_frame(
-                name="quadratic_ability_score"
-            ),
-            train_residuals,
-        )
-
-        # Apply the learned correction to test players.
-        quadratic_correction = quadratic_model.predict(
-            quadratic_test.to_frame(
-                name="quadratic_ability_score"
-            )
-        )
-
-        corrected_predictions = (
-            predictions + quadratic_correction
-        )
-
-        rounded_corrected_predictions = (
-            corrected_predictions.round()
-        )
-
-        quadratic_mae = mean_absolute_error(
-            y_test,
-            rounded_corrected_predictions,
-        )
-
-        quadratic_exact_matches = (
-            rounded_corrected_predictions == y_test
-        ).mean() * 100
-
-        quadratic_within_one = (
-            abs(
-                rounded_corrected_predictions - y_test
-            ) <= 1
-        ).mean() * 100
-
-        fold_quadratic_mae.append(
-            quadratic_mae
-        )
-
-        fold_quadratic_exact_matches.append(
-            quadratic_exact_matches
-        )
-
-        fold_quadratic_within_one.append(
-            quadratic_within_one
-        )
-
-        # --------------------------------------------------
-        # Models C and D: fixed intercept
-        # --------------------------------------------------
-
-        # Train using the fixed intercept.
-        fixed_model = LinearRegression(
-            fit_intercept=False,
+        model_b = LinearRegression(
+            fit_intercept=True,
             positive=True,
         )
 
-        y_train_adjusted = (
-            y_train - common_intercept
-        )
+        model_b.fit(x_wf_train, y_train)
 
-        fixed_model.fit(
-            x_train[ABILITY_COLUMNS],
-            y_train_adjusted,
-        )
+        predictions_b = model_b.predict(x_wf_test)
 
-        # --------------------------------------------------
-        # Model D: Fixed intercept + unrounded weights
-        # --------------------------------------------------
-
-        # Keep the original, unrounded coefficients.
-        unrounded_weights = fixed_model.coef_
-
-        # Predict using the unrounded weights
-        # and the fixed intercept.
-        predictions_unrounded = (
-            x_test[ABILITY_COLUMNS].to_numpy()
-            @ unrounded_weights
-            + common_intercept
-        )
-
-        # Round predicted OVR to the nearest integer.
-        unrounded_predictions = pd.Series(
-            predictions_unrounded,
-            index=y_test.index,
-        ).round()
-
-        unrounded_mae = mean_absolute_error(
+        metrics_b = calculate_metrics(
             y_test,
-            unrounded_predictions,
+            predictions_b,
         )
 
-        unrounded_exact_matches = (
-            unrounded_predictions == y_test
-        ).mean() * 100
+        fold_b_mae.append(metrics_b[0])
+        fold_b_exact.append(metrics_b[1])
+        fold_b_within_one.append(metrics_b[2])
 
-        unrounded_within_one = (
-            abs(
-                unrounded_predictions - y_test
-            ) <= 1
-        ).mean() * 100
-
-        fold_unrounded_mae.append(
-            unrounded_mae
-        )
-
-        fold_unrounded_exact_matches.append(
-            unrounded_exact_matches
-        )
-
-        fold_unrounded_within_one.append(
-            unrounded_within_one
+        weak_foot_coefficients.append(
+            model_b.coef_[
+                x_wf_train.columns.get_loc(
+                    WEAK_FOOT_COLUMN
+                )
+            ]
         )
 
         # --------------------------------------------------
-        # Model C: Fixed intercept + rounded weights
+        # Integer weights: Model A
         # --------------------------------------------------
 
-        # Round weights to two decimal places.
-        rounded_weights = (
-            fixed_model.coef_.round(2)
+        integer_weights = (
+            model_a.coef_ * INTEGER_WEIGHT_SCALE
+        ).round().astype(int)
+
+        predictions_integer = (
+            x_test.to_numpy() @ integer_weights
+            / INTEGER_WEIGHT_SCALE
+            + model_a.intercept_
         )
 
-        # Predict using the rounded weights
-        # and the fixed intercept.
-        predictions_rounded = (
-            x_test[ABILITY_COLUMNS].to_numpy()
-            @ rounded_weights
-            + common_intercept
-        )
-
-        rounded_predictions = pd.Series(
-            predictions_rounded,
-            index=y_test.index,
-        ).round()
-
-        rounded_mae = mean_absolute_error(
+        metrics_integer = calculate_metrics(
             y_test,
-            rounded_predictions,
+            predictions_integer,
         )
 
-        rounded_exact_matches = (
-            rounded_predictions == y_test
-        ).mean() * 100
+        integer_mae.append(metrics_integer[0])
+        integer_exact.append(metrics_integer[1])
+        integer_within_one.append(metrics_integer[2])
 
-        rounded_within_one = (
-            abs(
-                rounded_predictions - y_test
-            ) <= 1
-        ).mean() * 100
+        # --------------------------------------------------
+        # Rounded weights: Model A
+        # --------------------------------------------------
 
-        fold_rounded_mae.append(
-            rounded_mae
-        )
+        for decimals in ROUNDING_DECIMALS_TO_TEST:
 
-        fold_rounded_exact_matches.append(
-            rounded_exact_matches
-        )
+            rounded_weights = model_a.coef_.round(
+                decimals
+            )
 
-        fold_rounded_within_one.append(
-            rounded_within_one
-        )
+            predictions = (
+                x_test.to_numpy() @ rounded_weights
+                + model_a.intercept_
+            )
+
+            metrics = calculate_metrics(
+                y_test,
+                predictions,
+            )
+
+            rounded_metrics[decimals]["mae"].append(
+                metrics[0]
+            )
+
+            rounded_metrics[decimals]["exact"].append(
+                metrics[1]
+            )
+
+            rounded_metrics[decimals]["within_one"].append(
+                metrics[2]
+            )
 
     # --------------------------------------------------
     # Display cross-validation results
@@ -481,105 +355,84 @@ def train_position_model(
     print()
     print("5-Fold Cross-Validation:")
 
-    print()
-    print("Model A: Original linear model")
-
-    print(
-        f"  MAE:            "
-        f"{sum(fold_mae) / len(fold_mae):.3f}"
+    print_metrics(
+        "Model A: Abilities only",
+        (
+            sum(fold_a_mae) / len(fold_a_mae),
+            sum(fold_a_exact) / len(fold_a_exact),
+            sum(fold_a_within_one) / len(fold_a_within_one),
+        ),
     )
 
-    print(
-        f"  Exact matches:  "
-        f"{sum(fold_exact_matches) / len(fold_exact_matches):.1f}%"
-    )
-
-    print(
-        f"  Within ±1:      "
-        f"{sum(fold_within_one) / len(fold_within_one):.1f}%"
-    )
-
-    print()
-    print("Model B: Linear + quadratic correction")
-
-    print(
-        f"  MAE:            "
-        f"{sum(fold_quadratic_mae) / len(fold_quadratic_mae):.3f}"
-    )
-
-    print(
-        f"  Exact matches:  "
-        f"{sum(fold_quadratic_exact_matches) / len(fold_quadratic_exact_matches):.1f}%"
-    )
-
-    print(
-        f"  Within ±1:      "
-        f"{sum(fold_quadratic_within_one) / len(fold_quadratic_within_one):.1f}%"
+    print_metrics(
+        "Model B: Abilities + Weak Foot",
+        (
+            sum(fold_b_mae) / len(fold_b_mae),
+            sum(fold_b_exact) / len(fold_b_exact),
+            sum(fold_b_within_one) / len(fold_b_within_one),
+        ),
     )
 
     print()
-    print("Model C: Fixed intercept + rounded weights")
-
     print(
-        f"  MAE:            "
-        f"{sum(fold_rounded_mae) / len(fold_rounded_mae):.3f}"
+        "Weak Foot coefficient in Model B:"
+    )
+    print(
+        f"  Mean: {sum(weak_foot_coefficients) / len(weak_foot_coefficients):+.6f}"
     )
 
-    print(
-        f"  Exact matches:  "
-        f"{sum(fold_rounded_exact_matches) / len(fold_rounded_exact_matches):.1f}%"
+    print_metrics(
+        "Integer weights (Model A)",
+        (
+            sum(integer_mae) / len(integer_mae),
+            sum(integer_exact) / len(integer_exact),
+            sum(integer_within_one) / len(integer_within_one),
+        ),
     )
 
-    print(
-        f"  Within ±1:      "
-        f"{sum(fold_rounded_within_one) / len(fold_rounded_within_one):.1f}%"
-    )
+    for decimals in ROUNDING_DECIMALS_TO_TEST:
 
-    print()
-    print("Model D: Fixed intercept + unrounded weights")
+        metrics = rounded_metrics[decimals]
 
-    print(
-        f"  MAE:            "
-        f"{sum(fold_unrounded_mae) / len(fold_unrounded_mae):.3f}"
-    )
-
-    print(
-        f"  Exact matches:  "
-        f"{sum(fold_unrounded_exact_matches) / len(fold_unrounded_exact_matches):.1f}%"
-    )
-
-    print(
-        f"  Within ±1:      "
-        f"{sum(fold_unrounded_within_one) / len(fold_unrounded_within_one):.1f}%"
-    )
+        print_metrics(
+            (
+                f"Weights rounded to {decimals} decimals "
+                f"(Model A)"
+            ),
+            (
+                sum(metrics["mae"]) / len(metrics["mae"]),
+                sum(metrics["exact"]) / len(metrics["exact"]),
+                sum(metrics["within_one"]) / len(
+                    metrics["within_one"]
+                ),
+            ),
+        )
 
     # --------------------------------------------------
-    # Final model: fixed intercept + rounded weights
+    # Final model: Model B
     # --------------------------------------------------
 
-    # We fix the intercept and train only the ability weights.
     final_model = LinearRegression(
-        fit_intercept=False,
+        fit_intercept=True,
         positive=True,
     )
 
-    y_adjusted = y - common_intercept
-
-    final_model.fit(x, y_adjusted)
-
-    # Simplify weights to two decimal places.
-    final_model.coef_ = final_model.coef_.round(2)
+    final_model.fit(
+        x_with_weak_foot,
+        y,
+    )
 
     final_weights = pd.Series(
-        final_model.coef_,
-        index=x.columns,
+        final_model.coef_.round(WEIGHT_DECIMALS),
+        index=x_with_weak_foot.columns,
     )
 
+    final_intercept = final_model.intercept_
+
     print()
-    print("Model intercept:")
-    print(
-        f"  {common_intercept:+.6f}"
-    )
+    print("Final Model B:")
+
+    print(f"  Intercept: {final_intercept:+.6f}")
 
     print()
     print("Final Ability Weights:")
@@ -589,14 +442,39 @@ def train_position_model(
 
         if weight > 0:
             print(
-                f"  {ability}: {weight:.6f}"
+                f"  {ability}: "
+                f"{weight:.{WEIGHT_DECIMALS}f}"
             )
 
-    # Calculate the weighted Ability Score,
-    # excluding Weak Foot.
+    print()
+    print("Weak Foot Weight:")
+
+    print(
+        f"  {WEAK_FOOT_COLUMN}: "
+        f"{final_weights[WEAK_FOOT_COLUMN]:.{WEIGHT_DECIMALS}f}"
+    )
+
+    # --------------------------------------------------
+    # Final model diagnostics
+    # --------------------------------------------------
+
+    predictions = (
+        x_with_weak_foot.to_numpy()
+        @ final_weights.to_numpy()
+        + final_intercept
+    )
+
+    residual = y - predictions
+
+    # Ability Score using the ability weights only.
+    # Weak Foot is kept separate for now because we are
+    # still investigating its transformation.
     ability_score = (
         x[ABILITY_COLUMNS]
-        .mul(final_weights[ABILITY_COLUMNS], axis=1)
+        .mul(
+            final_weights[ABILITY_COLUMNS],
+            axis=1,
+        )
         .sum(axis=1)
         / 100
     )
@@ -604,32 +482,13 @@ def train_position_model(
     print()
     print("Ability Score:")
 
-    print(
-        f"  Minimum: {ability_score.min():.3f}"
-    )
-
-    print(
-        f"  Maximum: {ability_score.max():.3f}"
-    )
-
-    print(
-        f"  Mean:    {ability_score.mean():.3f}"
-    )
-
-    # Residual relative to the common-intercept model.
-    residual = (
-        y
-        - (
-            ability_score * 100
-            + common_intercept
-        )
-    )
+    print(f"  Minimum: {ability_score.min():.3f}")
+    print(f"  Maximum: {ability_score.max():.3f}")
+    print(f"  Mean:    {ability_score.mean():.3f}")
 
     print()
-    print("Residual mean:")
-    print(
-        f"  {residual.mean():+.6f}"
-    )
+    print("Residual mean (real OVR - predicted OVR):")
+    print(f"  {residual.mean():+.6f}")
 
     # Divide players into ten groups by weighted
     # Ability Score and inspect the mean residual.
@@ -657,7 +516,6 @@ def train_position_model(
             f"mean residual = {group_residuals.mean():+.3f}"
         )
 
-
 def main():
     print(
         f"Loading data from:\n{CSV_PATH}"
@@ -669,9 +527,7 @@ def main():
 
     data = prepare_data(df)
 
-    print(
-        f"Rows after cleaning: {len(data)}"
-    )
+    print(f"Rows after cleaning: {len(data)}")
 
     positions = sorted(
         data[POSITION_COLUMN].unique()
@@ -681,19 +537,10 @@ def main():
     print("Positions found:")
     print(", ".join(positions))
 
-    # Calculate the common intercepts once,
-    # before training the individual position models.
-    (
-        common_outfield_intercept,
-        common_gk_intercept,
-    ) = calculate_common_intercepts(data)
-
     for position in positions:
         train_position_model(
             data,
             position,
-            common_outfield_intercept,
-            common_gk_intercept,
         )
 
 
