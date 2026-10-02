@@ -1,5 +1,6 @@
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import KFold
@@ -149,6 +150,7 @@ def print_metrics(name, metrics):
     print(f"  MAE:            {mae:.3f}")
     print(f"  Exact matches:  {exact_matches:.1f}%")
     print(f"  Within ±1:      {within_one:.1f}%")
+
 
 def train_position_model(data, position):
     """Train and compare models for one registered position."""
@@ -516,6 +518,664 @@ def train_position_model(data, position):
             f"mean residual = {group_residuals.mean():+.3f}"
         )
 
+
+def analyze_theoretical_ability_score(data):
+    """Analyze theoretical PES Ability Scores for wide players."""
+
+    # Theoretical weights supplied for the two position groups.
+    theoretical_weights = {
+        "LWF": {
+            "offensive_awareness": 17,
+            "ball_control": 19,
+            "dribbling": 15,
+            "speed": 15,
+            "acceleration": 15,
+            "finishing": 11,
+            "lofted_pass": 9,
+            "tight_possession": 7,
+            "stamina": 6,
+            WEAK_FOOT_COLUMN: 47,
+        },
+        "RWF": {
+            "offensive_awareness": 17,
+            "ball_control": 19,
+            "dribbling": 15,
+            "speed": 15,
+            "acceleration": 15,
+            "finishing": 11,
+            "lofted_pass": 9,
+            "tight_possession": 7,
+            "stamina": 6,
+            WEAK_FOOT_COLUMN: 47,
+        },
+        "LMF": {
+            "speed": 24,
+            "acceleration": 21,
+            "dribbling": 17,
+            "ball_control": 15,
+            "stamina": 13,
+            "lofted_pass": 12,
+            WEAK_FOOT_COLUMN: 56,
+        },
+        "RMF": {
+            "speed": 24,
+            "acceleration": 21,
+            "dribbling": 17,
+            "ball_control": 15,
+            "stamina": 13,
+            "lofted_pass": 12,
+            WEAK_FOOT_COLUMN: 56,
+        },
+    }
+
+    position_bonuses = {
+        "LWF": 10,
+        "RWF": 10,
+        "LMF": 8,
+        "RMF": 8,
+    }
+
+    print()
+    print("=" * 70)
+    print("THEORETICAL ABILITY SCORE")
+    print("=" * 70)
+
+    for position, weights in theoretical_weights.items():
+
+        position_data = data[
+            data[POSITION_COLUMN] == position
+        ].copy()
+
+        if position_data.empty:
+            print(f"\nSkipping {position}: no players found.")
+            continue
+
+        # Sum the weighted standard attributes.
+        # Each attribute is transformed using (value - 25).
+        ability_sum = pd.Series(
+            0.0,
+            index=position_data.index,
+        )
+
+        for attribute, weight in weights.items():
+
+            if attribute == WEAK_FOOT_COLUMN:
+                continue
+
+            ability_sum += (
+                position_data[attribute] - 25
+            ) * weight
+
+        # Weak Foot uses its original 1-4 scale.
+        weak_foot_weight = weights[WEAK_FOOT_COLUMN]
+
+        score = (
+            ability_sum
+            + position_data[WEAK_FOOT_COLUMN]
+            * weak_foot_weight
+        ) / 100
+
+        # Position bonus is added directly to the Ability Score.
+        bonus = position_bonuses[position]
+
+        score_with_bonus = score + bonus
+        ovr = position_data[TARGET_COLUMN]
+
+        # Diagnostics for the theoretical score itself.
+        correlation = score.corr(ovr)
+
+        slope, intercept = np.polyfit(
+            score,
+            ovr,
+            1,
+        )
+
+        predicted_ovr = slope * score + intercept
+
+        linear_fit_mae = mean_absolute_error(
+            ovr,
+            predicted_ovr,
+        )
+
+        # Direct comparison between the theoretical Ability Score
+        # and the actual OVR.
+        direct_error = score_with_bonus - ovr
+        direct_absolute_error = direct_error.abs()
+
+        direct_mae = direct_absolute_error.mean()
+        mean_error = direct_error.mean()
+
+        exact_match = (
+            direct_absolute_error.round(10) < 0.5
+        ).mean() * 100
+
+        within_one = (
+            direct_absolute_error <= 1
+        ).mean() * 100
+
+        print()
+        print("-" * 70)
+        print(f"Position: {position}")
+        print(f"Players: {len(position_data)}")
+        print(f"Position bonus: +{bonus}")
+
+        print()
+        print("  Weak Foot = original value")
+
+        print(
+            f"    Score range: "
+            f"{score.min():.3f} - "
+            f"{score.max():.3f}"
+        )
+        print(f"    Mean score:  {score.mean():.3f}")
+        print(
+            f"    Mean + bonus: "
+            f"{score_with_bonus.mean():.3f}"
+        )
+
+        print()
+        print("    Direct comparison with OVR:")
+        print(f"      Mean error:      {mean_error:+.3f}")
+        print(f"      Direct MAE:      {direct_mae:.3f}")
+        print(f"      Exact match:     {exact_match:.1f}%")
+        print(f"      Within ±1 OVR:   {within_one:.1f}%")
+
+        print()
+        print("    Linear diagnostic:")
+        print(f"      Correlation:      {correlation:.4f}")
+        print(f"      Slope:            {slope:.4f}")
+        print(f"      Intercept:        {intercept:.4f}")
+        print(f"      Linear fit MAE:   {linear_fit_mae:.3f}")
+
+
+def analyze_implied_curved_score(data):
+    """Analyze the Curved Score implied by the 60/40 OVR formula."""
+
+    theoretical_weights = {
+        "LWF": {
+            "offensive_awareness": 17,
+            "ball_control": 19,
+            "dribbling": 15,
+            "speed": 15,
+            "acceleration": 15,
+            "finishing": 11,
+            "lofted_pass": 9,
+            "tight_possession": 7,
+            "stamina": 6,
+            WEAK_FOOT_COLUMN: 47,
+        },
+        "RWF": {
+            "offensive_awareness": 17,
+            "ball_control": 19,
+            "dribbling": 15,
+            "speed": 15,
+            "acceleration": 15,
+            "finishing": 11,
+            "lofted_pass": 9,
+            "tight_possession": 7,
+            "stamina": 6,
+            WEAK_FOOT_COLUMN: 47,
+        },
+        "LMF": {
+            "speed": 24,
+            "acceleration": 21,
+            "dribbling": 17,
+            "ball_control": 15,
+            "stamina": 13,
+            "lofted_pass": 12,
+            WEAK_FOOT_COLUMN: 56,
+        },
+        "RMF": {
+            "speed": 24,
+            "acceleration": 21,
+            "dribbling": 17,
+            "ball_control": 15,
+            "stamina": 13,
+            "lofted_pass": 12,
+            WEAK_FOOT_COLUMN: 56,
+        },
+    }
+
+    position_bonuses = {
+        "LWF": 10,
+        "RWF": 10,
+        "LMF": 8,
+        "RMF": 8,
+    }
+
+    # --------------------------------------------------
+    # Shared regression groups
+    #
+    # LWF + RWF must use exactly the same Curved Score
+    # weights.
+    #
+    # LMF + RMF must use exactly the same Curved Score
+    # weights.
+    # --------------------------------------------------
+
+    shared_position_groups = {
+        "LWF + RWF": ["LWF", "RWF"],
+        "LMF + RMF": ["LMF", "RMF"],
+    }
+
+    print()
+    print("=" * 70)
+    print("IMPLIED CURVED SCORE")
+    print("=" * 70)
+
+    for position, weights in theoretical_weights.items():
+
+        position_data = data[
+            data[POSITION_COLUMN] == position
+        ].copy()
+
+        if position_data.empty:
+            continue
+
+        # Calculate Ability Score without position bonus.
+        ability_sum = pd.Series(
+            0.0,
+            index=position_data.index,
+        )
+
+        for attribute, weight in weights.items():
+
+            if attribute == WEAK_FOOT_COLUMN:
+                continue
+
+            ability_sum += (
+                position_data[attribute] - 25
+            ) * weight
+
+        # Weak Foot uses its original 1-4 scale.
+        weak_foot_weight = weights[WEAK_FOOT_COLUMN]
+
+        ability_score = (
+            ability_sum
+            + position_data[WEAK_FOOT_COLUMN]
+            * weak_foot_weight
+        ) / 100
+
+        bonus = position_bonuses[position]
+        ovr = position_data[TARGET_COLUMN]
+
+        # --------------------------------------------------
+        # Hypothesis 1:
+        #
+        # OVR = 0.6 * (A + B) + 0.4 * C
+        # --------------------------------------------------
+
+        curved_score_h1 = (
+            ovr
+            - 0.6 * (ability_score + bonus)
+        ) / 0.4
+
+        # --------------------------------------------------
+        # Hypothesis 2:
+        #
+        # OVR = 0.6 * A + 0.4 * C + B
+        # --------------------------------------------------
+
+        curved_score_h2 = (
+            ovr
+            - 0.6 * ability_score
+            - bonus
+        ) / 0.4
+
+        print()
+        print("-" * 70)
+        print(f"Position: {position}")
+        print(f"Players: {len(position_data)}")
+        print(f"Position bonus: +{bonus}")
+        print()
+        print("  Weak Foot = original value")
+
+        # --------------------------------------------------
+        # Analyze both hypotheses
+        # --------------------------------------------------
+
+        for hypothesis_name, curved_score in [
+            ("Hypothesis 1", curved_score_h1),
+            ("Hypothesis 2", curved_score_h2),
+        ]:
+
+            correlation = ability_score.corr(
+                curved_score
+            )
+
+            slope, intercept = np.polyfit(
+                ability_score,
+                curved_score,
+                1,
+            )
+
+            predicted_curved_score = (
+                slope * ability_score
+                + intercept
+            )
+
+            linear_fit_mae = mean_absolute_error(
+                curved_score,
+                predicted_curved_score,
+            )
+
+            print()
+            print(f"    {hypothesis_name}:")
+
+            print(
+                f"      C range: "
+                f"{curved_score.min():.3f} - "
+                f"{curved_score.max():.3f}"
+            )
+
+            print(
+                f"      C mean:   "
+                f"{curved_score.mean():.3f}"
+            )
+
+            print(
+                f"      C correlation: "
+                f"{correlation:.4f}"
+            )
+
+            print(
+                f"      C slope:       "
+                f"{slope:.4f}"
+            )
+
+            print(
+                f"      C intercept:   "
+                f"{intercept:.4f}"
+            )
+
+            print(
+                f"      C linear MAE:  "
+                f"{linear_fit_mae:.3f}"
+            )
+
+        # --------------------------------------------------
+        # Quadratic fit for Hypothesis 2
+        # --------------------------------------------------
+
+        quadratic_coefficients = np.polyfit(
+            ability_score,
+            curved_score_h2,
+            2,
+        )
+
+        predicted_curved_score = np.polyval(
+            quadratic_coefficients,
+            ability_score,
+        )
+
+        quadratic_fit_mae = mean_absolute_error(
+            curved_score_h2,
+            predicted_curved_score,
+        )
+
+        print()
+        print("    Hypothesis 2 quadratic fit:")
+
+        print(
+            f"      C = "
+            f"{quadratic_coefficients[0]:.4f} × A² "
+            f"+ {quadratic_coefficients[1]:.4f} × A "
+            f"+ {quadratic_coefficients[2]:.4f}"
+        )
+
+        print(
+            f"      C quadratic MAE: "
+            f"{quadratic_fit_mae:.3f}"
+        )
+
+    # ======================================================
+    # SHARED CURVED SCORE REGRESSION
+    #
+    # This is the new experiment.
+    #
+    # LWF + RWF:
+    #     one single model
+    #     one single set of weights
+    #
+    # LMF + RMF:
+    #     one single model
+    #     one single set of weights
+    # ======================================================
+
+    print()
+    print("=" * 70)
+    print("SHARED CURVED SCORE REGRESSION")
+    print("=" * 70)
+
+    for group_name, positions in shared_position_groups.items():
+
+        group_data = data[
+            data[POSITION_COLUMN].isin(positions)
+        ].copy()
+
+        if group_data.empty:
+            print(
+                f"\nSkipping {group_name}: "
+                f"no players found."
+            )
+            continue
+
+        # --------------------------------------------------
+        # Build the theoretical Ability Score for every
+        # player in the shared group.
+        #
+        # LWF/RWF use the same theoretical weights.
+        # LMF/RMF use the same theoretical weights.
+        # --------------------------------------------------
+
+        group_ability_score = pd.Series(
+            0.0,
+            index=group_data.index,
+        )
+
+        for position in positions:
+
+            position_mask = (
+                group_data[POSITION_COLUMN] == position
+            )
+
+            position_weights = theoretical_weights[
+                position
+            ]
+
+            position_ability_sum = pd.Series(
+                0.0,
+                index=group_data.index,
+            )
+
+            for attribute, weight in (
+                position_weights.items()
+            ):
+
+                if attribute == WEAK_FOOT_COLUMN:
+                    continue
+
+                position_ability_sum += (
+                    group_data[attribute] - 25
+                ) * weight
+
+            weak_foot_weight = position_weights[
+                WEAK_FOOT_COLUMN
+            ]
+
+            position_score = (
+                position_ability_sum
+                + group_data[WEAK_FOOT_COLUMN]
+                * weak_foot_weight
+            ) / 100
+
+            group_ability_score.loc[
+                position_mask
+            ] = position_score.loc[position_mask]
+
+        # --------------------------------------------------
+        # Calculate implied Curved Score using Hypothesis 2.
+        #
+        # OVR = 0.6 * A + 0.4 * C + B
+        #
+        # Important:
+        # the position bonus is still position-specific.
+        # --------------------------------------------------
+
+        group_bonuses = group_data[
+            POSITION_COLUMN
+        ].map(position_bonuses)
+
+        group_ovr = group_data[
+            TARGET_COLUMN
+        ]
+
+        group_curved_score = (
+            group_ovr
+            - 0.6 * group_ability_score
+            - group_bonuses
+        ) / 0.4
+
+        # --------------------------------------------------
+        # Build regression features.
+        #
+        # The feature list comes from the first position
+        # in the group because left/right positions share
+        # the same attribute structure.
+        # --------------------------------------------------
+
+        reference_weights = theoretical_weights[
+            positions[0]
+        ]
+
+        curved_score_features = group_data[
+            [
+                attribute
+                for attribute in reference_weights
+                if attribute != WEAK_FOOT_COLUMN
+            ]
+        ].copy()
+
+        curved_score_features = (
+            curved_score_features - 25
+        )
+
+        curved_score_features[
+            WEAK_FOOT_COLUMN
+        ] = group_data[
+            WEAK_FOOT_COLUMN
+        ]
+
+        # --------------------------------------------------
+        # Train ONE model for the entire group.
+        # --------------------------------------------------
+
+        curved_score_model = LinearRegression(
+            fit_intercept=True,
+            positive=False,
+        )
+
+        curved_score_model.fit(
+            curved_score_features,
+            group_curved_score,
+        )
+
+        predicted_curved_score = (
+            curved_score_model.predict(
+                curved_score_features
+            )
+        )
+
+        # --------------------------------------------------
+        # Combined metrics
+        # --------------------------------------------------
+
+        combined_mae = mean_absolute_error(
+            group_curved_score,
+            predicted_curved_score,
+        )
+
+        combined_correlation = np.corrcoef(
+            group_curved_score,
+            predicted_curved_score,
+        )[0, 1]
+
+        print()
+        print("-" * 70)
+        print(f"Shared group: {group_name}")
+        print(f"Positions: {', '.join(positions)}")
+        print(f"Players: {len(group_data)}")
+
+        print()
+        print("Combined shared model:")
+
+        print(
+            f"  C regression MAE: "
+            f"{combined_mae:.3f}"
+        )
+
+        print(
+            f"  C correlation:    "
+            f"{combined_correlation:.4f}"
+        )
+
+        print()
+        print("Shared learned weights:")
+
+        for attribute, coefficient in zip(
+            curved_score_features.columns,
+            curved_score_model.coef_,
+        ):
+            print(
+                f"  {attribute}: "
+                f"{coefficient:.4f}"
+            )
+
+        print(
+            f"  Intercept: "
+            f"{curved_score_model.intercept_:+.4f}"
+        )
+
+        # --------------------------------------------------
+        # Per-position diagnostics using the SAME model.
+        # --------------------------------------------------
+
+        print()
+        print("MAE by position using shared weights:")
+
+        for position in positions:
+
+            position_mask = (
+                group_data[POSITION_COLUMN] == position
+            )
+
+            position_true = group_curved_score[
+                position_mask
+            ]
+
+            position_predictions = pd.Series(
+                predicted_curved_score,
+                index=group_data.index,
+            )[position_mask]
+
+            position_mae = mean_absolute_error(
+                position_true,
+                position_predictions,
+            )
+
+            position_correlation = np.corrcoef(
+                position_true,
+                position_predictions,
+            )[0, 1]
+
+            print(
+                f"  {position}: "
+                f"MAE = {position_mae:.3f}, "
+                f"correlation = {position_correlation:.4f}, "
+                f"players = {position_mask.sum()}"
+            )
+
+
 def main():
     print(
         f"Loading data from:\n{CSV_PATH}"
@@ -528,6 +1188,10 @@ def main():
     data = prepare_data(df)
 
     print(f"Rows after cleaning: {len(data)}")
+
+    analyze_theoretical_ability_score(data)
+
+    analyze_implied_curved_score(data)
 
     positions = sorted(
         data[POSITION_COLUMN].unique()
