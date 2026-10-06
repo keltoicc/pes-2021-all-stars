@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Agustín Soria",
         "short_name": "A. Soria",
+        "dateOfBirth": "2004-11-30",
+        "placeOfBirth": "Montevideo",
         "nation_1": "Uruguay",
         "nation_2": "",
         "height": 1.74,
@@ -14,6 +17,86 @@
         "prime_date": "2026-05-14"
     },
     "matches": [
+        {
+            "game_id": "5021641",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "656",
+            "opponent_id": "1076",
+            "position": "DMF",
+            "minutes": 12,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 0
+        },
+        {
+            "game_id": "5024711",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "656",
+            "opponent_id": "4630",
+            "position": "DMF",
+            "minutes": 69,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "5024774",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "656",
+            "opponent_id": "6297",
+            "position": "",
+            "minutes": 14,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "5024740",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "656",
+            "opponent_id": "965",
+            "position": "DMF",
+            "minutes": 90,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
+            "game_id": "5024764",
+            "season": 2026,
+            "competition_type": "First Tier",
+            "club_id": "656",
+            "opponent_id": "3612",
+            "position": "",
+            "minutes": 33,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 1,
+            "participation": "played",
+            "club_points": 3
+        },
         {
             "game_id": "4883135",
             "season": 2025,
@@ -1992,28 +2075,31 @@
     ],
     "clubs": {
         "656": {
+            "type": "club",
             "seasons": [
-                2025
+                2025,
+                2026
             ],
             "stats": {
-                "matches": 46,
-                "participations": 46,
-                "minutes": 2217,
-                "starts": 23,
+                "matches": 51,
+                "participations": 51,
+                "minutes": 2435,
+                "starts": 25,
                 "captain_matches": 0,
                 "goals": 2,
                 "assists": 3,
-                "goals_conceded": 39,
-                "points": 70,
+                "goals_conceded": 46,
+                "points": 82,
                 "clean_sheets": 24,
-                "wins": 21,
+                "wins": 25,
                 "draws": 7,
-                "losses": 18,
-                "goal_matches": 44,
-                "assist_matches": 43,
+                "losses": 19,
+                "goal_matches": 49,
+                "assist_matches": 48,
                 "goal_contributions": 5
             },
             "positions": {
+                "DMF": 3,
                 "CMF": 22,
                 "RW": 3,
                 "AMF": 2,
@@ -2021,33 +2107,33 @@
                 "RM": 1
             },
             "derived": {
-                "season_count": 1,
-                "points_per_match": 1.522,
-                "minutes_per_match": 48.2,
-                "win_rate": 0.4565,
-                "goals_per_90": 0.081,
-                "assists_per_90": 0.122,
-                "contributions_per_90": 0.203,
+                "season_count": 2,
+                "points_per_match": 1.608,
+                "minutes_per_match": 47.7,
+                "win_rate": 0.4902,
+                "goals_per_90": 0.074,
+                "assists_per_90": 0.111,
+                "contributions_per_90": 0.185,
                 "primary_position": "CMF"
             },
             "competitions": {
+                "International Cup": {
+                    "matches": 11,
+                    "minutes": 658,
+                    "goals": 0,
+                    "assists": 1
+                },
+                "First Tier": {
+                    "matches": 26,
+                    "minutes": 1477,
+                    "goals": 1,
+                    "assists": 2
+                },
                 "Domestic Cup": {
                     "matches": 4,
                     "minutes": 181,
                     "goals": 0,
                     "assists": 0
-                },
-                "First Tier": {
-                    "matches": 22,
-                    "minutes": 1271,
-                    "goals": 1,
-                    "assists": 2
-                },
-                "International Cup": {
-                    "matches": 10,
-                    "minutes": 646,
-                    "goals": 0,
-                    "assists": 1
                 },
                 "League Cup": {
                     "matches": 10,
@@ -2064,6 +2150,7 @@
             }
         },
         "2619": {
+            "type": "club",
             "seasons": [
                 2022,
                 2023,
@@ -2129,11 +2216,14 @@
                 }
             },
             "awards": {
-                "team_titles": {},
+                "team_titles": {
+                    "Uruguayan Cup Winner": 2
+                },
                 "individual_titles": {}
             }
         },
         "16541": {
+            "type": "club",
             "seasons": [
                 2022
             ],
@@ -2178,24 +2268,24 @@
     },
     "career": {
         "club": {
-            "matches": 3,
-            "minutes": 261,
-            "goals": 0,
-            "assists": 1,
-            "goal_contributions": 1,
-            "team_titles": 0,
+            "matches": 127,
+            "minutes": 6659,
+            "goals": 5,
+            "assists": 9,
+            "goal_contributions": 14,
+            "team_titles": 3,
             "individual_titles": 0,
-            "season_count": 1
+            "season_count": 5
         },
         "national": {
-            "matches": 119,
-            "minutes": 6180,
-            "goals": 5,
-            "assists": 8,
-            "goal_contributions": 13,
-            "team_titles": 1,
+            "matches": 0,
+            "minutes": 0,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
             "individual_titles": 0,
-            "season_count": 4
+            "season_count": 0
         }
     }
 }

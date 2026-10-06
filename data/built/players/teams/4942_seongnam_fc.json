@@ -1,6 +1,6 @@
 {
-    "tactic": "4-3-3 Defending",
-    "total_score": 12.27,
+    "tactic": "4-1-3-2",
+    "total_score": 12.44,
     "players": [
         {
             "role": "CENTRAL_MID",
@@ -247,7 +247,7 @@
             "role_weight": 1.0
         },
         {
-            "role": "CENTRAL_MID",
+            "role": "ATTACKING_MID",
             "player": {
                 "ID_transfermarkt": "27397",
                 "name": "Do-heon Kim",
@@ -275,8 +275,8 @@
                     }
                 }
             },
-            "score": 0.5,
-            "role_weight": 0.7548
+            "score": 0.54,
+            "role_weight": 0.8904
         },
         {
             "role": "STRIKER",
@@ -391,38 +391,6 @@
             "role_weight": 1.0
         },
         {
-            "role": "WINGER",
-            "player": {
-                "ID_transfermarkt": "101578",
-                "name": "J. Ko",
-                "score": 0.5388263217115893,
-                "roles": {
-                    "WIDE_MID": {
-                        "weight": 0.39999999999999997,
-                        "score": 0.3407836879718518
-                    },
-                    "WINGER": {
-                        "weight": 0.6666666666666666,
-                        "score": 0.4399498493913756
-                    },
-                    "SECOND_STRIKER": {
-                        "weight": 0.13333333333333333,
-                        "score": 0.19675155398598204
-                    },
-                    "STRIKER": {
-                        "weight": 0.3333333333333333,
-                        "score": 0.31109152188664196
-                    },
-                    "UTILITY": {
-                        "weight": 1.5333333333333332,
-                        "score": 0.5388263217115893
-                    }
-                }
-            },
-            "score": 0.44,
-            "role_weight": 0.6667
-        },
-        {
             "role": "CENTER_BACK",
             "player": {
                 "ID_transfermarkt": "27395",
@@ -448,6 +416,30 @@
                 }
             },
             "score": 0.54,
+            "role_weight": 1.0
+        },
+        {
+            "role": "STRIKER",
+            "player": {
+                "ID_transfermarkt": "36104",
+                "name": "S. Drakulic",
+                "score": 0.5243275884731073,
+                "roles": {
+                    "SECOND_STRIKER": {
+                        "weight": 0.4,
+                        "score": 0.33161388392769336
+                    },
+                    "STRIKER": {
+                        "weight": 1.0,
+                        "score": 0.5243275884731073
+                    },
+                    "UTILITY": {
+                        "weight": 1.4,
+                        "score": 0.5243275884731073
+                    }
+                }
+            },
+            "score": 0.52,
             "role_weight": 1.0
         },
         {
@@ -555,7 +547,7 @@
             "role_weight": 1.0
         },
         {
-            "role": "DEFENSIVE_MID",
+            "role": "CENTRAL_MID",
             "player": {
                 "ID_transfermarkt": "1336781",
                 "name": "S. Ha",
@@ -587,8 +579,8 @@
                     }
                 }
             },
-            "score": 0.41,
-            "role_weight": 0.8
+            "score": 0.46,
+            "role_weight": 1.0
         },
         {
             "role": "CENTRAL_MID",
@@ -619,51 +611,67 @@
             "role_weight": 1.0
         },
         {
-            "role": "WINGER",
+            "role": "DEFENSIVE_MID",
             "player": {
-                "ID_transfermarkt": "29008",
-                "name": "Mota",
-                "score": 0.41339010875747784,
+                "ID_transfermarkt": "640614",
+                "name": "Gi-bum Lee",
+                "score": 0.4199434006892868,
                 "roles": {
-                    "WIDE_MID": {
-                        "weight": 0.6000000000000001,
-                        "score": 0.3202106013409169
+                    "DEFENSIVE_MID": {
+                        "weight": 0.8,
+                        "score": 0.37560879625747096
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 1.0,
+                        "score": 0.4199434006892868
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.8,
+                        "score": 0.37560879625747096
                     },
                     "WINGER": {
-                        "weight": 1.0,
-                        "score": 0.41339010875747784
-                    },
-                    "UTILITY": {
-                        "weight": 1.6,
-                        "score": 0.41339010875747784
-                    }
-                }
-            },
-            "score": 0.41,
-            "role_weight": 1.0
-        },
-        {
-            "role": "WINGER",
-            "player": {
-                "ID_transfermarkt": "156009",
-                "name": "T. Kim",
-                "score": 0.38260922773060685,
-                "roles": {
-                    "WIDE_MID": {
                         "weight": 0.6,
-                        "score": 0.2963678334211843
+                        "score": 0.32528675944386326
                     },
-                    "WINGER": {
-                        "weight": 1.0,
-                        "score": 0.38260922773060685
+                    "WING_BACK": {
+                        "weight": 0.4,
+                        "score": 0.265595526906974
                     },
                     "UTILITY": {
-                        "weight": 1.6,
-                        "score": 0.38260922773060685
+                        "weight": 3.6,
+                        "score": 0.4199434006892868
                     }
                 }
             },
             "score": 0.38,
+            "role_weight": 0.8
+        },
+        {
+            "role": "ATTACKING_MID",
+            "player": {
+                "ID_transfermarkt": "27402",
+                "name": "J. Kim",
+                "score": 0.4175446171928034,
+                "roles": {
+                    "CENTRAL_MID": {
+                        "weight": 0.7,
+                        "score": 0.3493428904996913
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 1.0,
+                        "score": 0.4175446171928034
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.6,
+                        "score": 0.32342866973725576
+                    },
+                    "UTILITY": {
+                        "weight": 2.3,
+                        "score": 0.4175446171928034
+                    }
+                }
+            },
+            "score": 0.42,
             "role_weight": 1.0
         }
     ]

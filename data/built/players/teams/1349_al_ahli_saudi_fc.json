@@ -1,25 +1,25 @@
 {
     "tactic": "4-2-3-1",
-    "total_score": 12.53,
+    "total_score": 12.6,
     "players": [
         {
             "role": "STRIKER",
             "player": {
                 "ID_transfermarkt": "220688",
                 "name": "O. Al-Somah",
-                "score": 0.7829505016889466,
+                "score": 0.7841875018979332,
                 "roles": {
                     "SECOND_STRIKER": {
                         "weight": 0.4,
-                        "score": 0.4951813761017162
+                        "score": 0.4959637237270165
                     },
                     "STRIKER": {
                         "weight": 1.0,
-                        "score": 0.7829505016889466
+                        "score": 0.7841875018979332
                     },
                     "UTILITY": {
                         "weight": 1.4,
-                        "score": 0.7829505016889466
+                        "score": 0.7841875018979332
                     }
                 }
             },
@@ -75,15 +75,15 @@
             "player": {
                 "ID_transfermarkt": "147865",
                 "name": "Y. Al-Mosailem",
-                "score": 0.6601540599968048,
+                "score": 0.6604510296937744,
                 "roles": {
                     "GOALKEEPER": {
                         "weight": 1.0,
-                        "score": 0.6601540599968048
+                        "score": 0.6604510296937744
                     },
                     "UTILITY": {
                         "weight": 1.0,
-                        "score": 0.6601540599968048
+                        "score": 0.6604510296937744
                     }
                 }
             },
@@ -119,6 +119,30 @@
             "role_weight": 1.0
         },
         {
+            "role": "STRIKER",
+            "player": {
+                "ID_transfermarkt": "251664",
+                "name": "Ivan Toney",
+                "score": 0.6170838981051915,
+                "roles": {
+                    "SECOND_STRIKER": {
+                        "weight": 0.4,
+                        "score": 0.3902781250855335
+                    },
+                    "STRIKER": {
+                        "weight": 1.0,
+                        "score": 0.6170838981051915
+                    },
+                    "UTILITY": {
+                        "weight": 1.4,
+                        "score": 0.6170838981051915
+                    }
+                }
+            },
+            "score": 0.62,
+            "role_weight": 1.0
+        },
+        {
             "role": "DEFENSIVE_MID",
             "player": {
                 "ID_transfermarkt": "294808",
@@ -145,30 +169,6 @@
             },
             "score": 0.53,
             "role_weight": 0.7369
-        },
-        {
-            "role": "STRIKER",
-            "player": {
-                "ID_transfermarkt": "251664",
-                "name": "Ivan Toney",
-                "score": 0.5955121041657975,
-                "roles": {
-                    "SECOND_STRIKER": {
-                        "weight": 0.4,
-                        "score": 0.37663492467267323
-                    },
-                    "STRIKER": {
-                        "weight": 1.0,
-                        "score": 0.5955121041657975
-                    },
-                    "UTILITY": {
-                        "weight": 1.4,
-                        "score": 0.5955121041657975
-                    }
-                }
-            },
-            "score": 0.6,
-            "role_weight": 1.0
         },
         {
             "role": "CENTER_BACK",
@@ -203,28 +203,48 @@
             "player": {
                 "ID_transfermarkt": "178033",
                 "name": "S. Al-Muwashar",
-                "score": 0.5900448793705942,
+                "score": 0.5900527928738992,
                 "roles": {
                     "WIDE_MID": {
                         "weight": 0.6804469273743017,
-                        "score": 0.48672334201753004
+                        "score": 0.48672986980365335
                     },
                     "WINGER": {
                         "weight": 0.9396648044692737,
-                        "score": 0.5719677287881552
+                        "score": 0.5719753998461887
                     },
                     "WING_BACK": {
                         "weight": 0.08044692737430169,
-                        "score": 0.16735541778454038
+                        "score": 0.16735766230474225
                     },
                     "UTILITY": {
                         "weight": 1.700558659217877,
-                        "score": 0.5900448793705942
+                        "score": 0.5900527928738992
                     }
                 }
             },
             "score": 0.57,
             "role_weight": 0.9397
+        },
+        {
+            "role": "GOALKEEPER",
+            "player": {
+                "ID_transfermarkt": "442531",
+                "name": "E. Mendy",
+                "score": 0.589549057429983,
+                "roles": {
+                    "GOALKEEPER": {
+                        "weight": 1.0,
+                        "score": 0.589549057429983
+                    },
+                    "UTILITY": {
+                        "weight": 1.0,
+                        "score": 0.589549057429983
+                    }
+                }
+            },
+            "score": 0.59,
+            "role_weight": 1.0
         },
         {
             "role": "WINGER",
@@ -248,26 +268,6 @@
                 }
             },
             "score": 0.58,
-            "role_weight": 1.0
-        },
-        {
-            "role": "GOALKEEPER",
-            "player": {
-                "ID_transfermarkt": "442531",
-                "name": "E. Mendy",
-                "score": 0.5688086761684327,
-                "roles": {
-                    "GOALKEEPER": {
-                        "weight": 1.0,
-                        "score": 0.5688086761684327
-                    },
-                    "UTILITY": {
-                        "weight": 1.0,
-                        "score": 0.5688086761684327
-                    }
-                }
-            },
-            "score": 0.57,
             "role_weight": 1.0
         },
         {
@@ -327,50 +327,70 @@
             "role_weight": 1.0
         },
         {
-            "role": "DEFENSIVE_MID",
+            "role": "ATTACKING_MID",
             "player": {
-                "ID_transfermarkt": "148214",
-                "name": "M. Al-Mousa",
-                "score": 0.5460222988173564,
+                "ID_transfermarkt": "159675",
+                "name": "H. Al-Moqahwi",
+                "score": 0.5493909970217048,
                 "roles": {
                     "DEFENSIVE_MID": {
-                        "weight": 0.701123595505618,
-                        "score": 0.457201525284269
+                        "weight": 0.4686131386861314,
+                        "score": 0.37608738715506435
                     },
                     "CENTRAL_MID": {
-                        "weight": 0.5393258426966292,
-                        "score": 0.40099226418997364
-                    },
-                    "WING_BACK": {
-                        "weight": 0.07640449438202247,
-                        "score": 0.15092800521505353
-                    },
-                    "WIDE_MID": {
-                        "weight": 0.19101123595505617,
-                        "score": 0.23863812959267022
-                    },
-                    "WINGER": {
-                        "weight": 0.1337078651685393,
-                        "score": 0.1996589838370456
+                        "weight": 0.8576642335766423,
+                        "score": 0.5087918991803291
                     },
                     "ATTACKING_MID": {
-                        "weight": 0.10786516853932585,
-                        "score": 0.17932919223606714
+                        "weight": 0.5313868613138686,
+                        "score": 0.40048563623603234
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.1751824817518248,
+                        "score": 0.2299465380995576
                     },
                     "UTILITY": {
-                        "weight": 1.749438202247191,
-                        "score": 0.5460222988173564
+                        "weight": 2.0328467153284673,
+                        "score": 0.5493909970217048
                     }
                 }
             },
-            "score": 0.46,
-            "role_weight": 0.7011
+            "score": 0.4,
+            "role_weight": 0.5314
+        },
+        {
+            "role": "CENTER_BACK",
+            "player": {
+                "ID_transfermarkt": "524481",
+                "name": "R. Ibañez",
+                "score": 0.5306198946176954,
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.5306198946176954
+                    },
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.3752049257166637
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.5306198946176954
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.5306198946176954
+                    }
+                }
+            },
+            "score": 0.53,
+            "role_weight": 1.0
         },
         {
             "role": "ATTACKING_MID",
             "player": {
                 "ID_transfermarkt": "131789",
-                "name": "Roberto Firmino",
+                "name": "R. Firmino",
                 "score": 0.5235553825710263,
                 "roles": {
                     "CENTRAL_MID": {
@@ -406,53 +426,25 @@
                 "score": 0.5196421989206363,
                 "roles": {
                     "DEFENSIVE_MID": {
-                        "weight": 0.9373134328358209,
-                        "score": 0.5030913292901136
+                        "weight": 0.9343283582089552,
+                        "score": 0.5022895896104907
                     },
                     "CENTRAL_MID": {
-                        "weight": 0.5783582089552239,
-                        "score": 0.39518719496557964
+                        "weight": 0.582089552238806,
+                        "score": 0.39645994284988706
                     },
                     "ATTACKING_MID": {
-                        "weight": 0.06268656716417911,
-                        "score": 0.13010430158984282
+                        "weight": 0.06567164179104477,
+                        "score": 0.13316599816769634
                     },
                     "UTILITY": {
-                        "weight": 1.578358208955224,
+                        "weight": 1.5820895522388059,
                         "score": 0.5196421989206363
                     }
                 }
             },
             "score": 0.5,
-            "role_weight": 0.9373
-        },
-        {
-            "role": "CENTER_BACK",
-            "player": {
-                "ID_transfermarkt": "524481",
-                "name": "R. Ibañez",
-                "score": 0.5083532502008098,
-                "roles": {
-                    "CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.5083532502008098
-                    },
-                    "SWEEPER": {
-                        "weight": 0.5,
-                        "score": 0.3594600304552143
-                    },
-                    "WIDE_CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.5083532502008098
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.5083532502008098
-                    }
-                }
-            },
-            "score": 0.51,
-            "role_weight": 1.0
+            "role_weight": 0.9343
         },
         {
             "role": "CENTER_BACK",
@@ -515,27 +507,79 @@
             "player": {
                 "ID_transfermarkt": "672391",
                 "name": "A. Majrashi",
-                "score": 0.4956190977655026,
+                "score": 0.5044654491168541,
                 "roles": {
                     "WIDE_CENTER_BACK": {
                         "weight": 0.8,
-                        "score": 0.44329519742031115
+                        "score": 0.4512076146100988
                     },
                     "FULLBACK": {
                         "weight": 1.0,
-                        "score": 0.4956190977655026
+                        "score": 0.5044654491168541
                     },
                     "WING_BACK": {
                         "weight": 0.7,
-                        "score": 0.41466468748728
+                        "score": 0.4220660760436315
                     },
                     "UTILITY": {
                         "weight": 2.5,
-                        "score": 0.4956190977655026
+                        "score": 0.5044654491168541
                     }
                 }
             },
             "score": 0.5,
+            "role_weight": 1.0
+        },
+        {
+            "role": "DEFENSIVE_MID",
+            "player": {
+                "ID_transfermarkt": "107303",
+                "name": "S. Al-Abdullah",
+                "score": 0.48982373724238415,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 0.8137931034482758,
+                        "score": 0.4418723535514515
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.7327586206896551,
+                        "score": 0.41929559108020037
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.18620689655172415,
+                        "score": 0.21136725558372854
+                    },
+                    "UTILITY": {
+                        "weight": 1.732758620689655,
+                        "score": 0.48982373724238415
+                    }
+                }
+            },
+            "score": 0.44,
+            "role_weight": 0.8138
+        },
+        {
+            "role": "DEFENSIVE_MID",
+            "player": {
+                "ID_transfermarkt": "901079",
+                "name": "Z. Al-Johani",
+                "score": 0.4743382605203629,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 1.0,
+                        "score": 0.4743382605203629
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.5,
+                        "score": 0.3354078005901798
+                    },
+                    "UTILITY": {
+                        "weight": 1.5,
+                        "score": 0.4743382605203629
+                    }
+                }
+            },
+            "score": 0.47,
             "role_weight": 1.0
         },
         {
@@ -567,79 +611,27 @@
             "role_weight": 1.0
         },
         {
-            "role": "DEFENSIVE_MID",
-            "player": {
-                "ID_transfermarkt": "901079",
-                "name": "Z. Al-Johani",
-                "score": 0.45469983408417425,
-                "roles": {
-                    "DEFENSIVE_MID": {
-                        "weight": 1.0,
-                        "score": 0.45469983408417425
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 0.5,
-                        "score": 0.3215213360853177
-                    },
-                    "UTILITY": {
-                        "weight": 1.5,
-                        "score": 0.45469983408417425
-                    }
-                }
-            },
-            "score": 0.45,
-            "role_weight": 1.0
-        },
-        {
             "role": "WINGER",
             "player": {
                 "ID_transfermarkt": "454121",
                 "name": "Galeno",
-                "score": 0.4418720271268205,
+                "score": 0.4557508178003434,
                 "roles": {
                     "WIDE_MID": {
                         "weight": 0.6,
-                        "score": 0.34227260044341756
+                        "score": 0.35302306547222817
                     },
                     "WINGER": {
                         "weight": 1.0,
-                        "score": 0.4418720271268205
+                        "score": 0.4557508178003434
                     },
                     "UTILITY": {
                         "weight": 1.6,
-                        "score": 0.4418720271268205
+                        "score": 0.4557508178003434
                     }
                 }
             },
-            "score": 0.44,
-            "role_weight": 1.0
-        },
-        {
-            "role": "ATTACKING_MID",
-            "player": {
-                "ID_transfermarkt": "137181",
-                "name": "Camacho",
-                "score": 0.41703569282023356,
-                "roles": {
-                    "CENTRAL_MID": {
-                        "weight": 0.7,
-                        "score": 0.3489170938206332
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 1.0,
-                        "score": 0.41703569282023356
-                    },
-                    "SECOND_STRIKER": {
-                        "weight": 0.6,
-                        "score": 0.3230344586133673
-                    },
-                    "UTILITY": {
-                        "weight": 2.3,
-                        "score": 0.41703569282023356
-                    }
-                }
-            },
-            "score": 0.42,
+            "score": 0.46,
             "role_weight": 1.0
         }
     ]

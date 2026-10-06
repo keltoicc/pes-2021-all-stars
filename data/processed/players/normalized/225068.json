@@ -1,6 +1,9 @@
 {
     "player": {
+        "name": "Alex Grant",
         "short_name": "Alex Grant",
+        "dateOfBirth": "1994-01-23",
+        "placeOfBirth": "Manchester",
         "nation_1": "Australia",
         "nation_2": "England",
         "height": 1.91,
@@ -14,6 +17,38 @@
         "prime_date": "2023-12-19"
     },
     "matches": [
+        {
+            "game_id": "5021644",
+            "season": 2026,
+            "competition_type": "International Cup",
+            "club_id": "5551",
+            "opponent_id": "2241",
+            "position": null,
+            "minutes": 0,
+            "started": false,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 0,
+            "participation": "injured",
+            "club_points": 0
+        },
+        {
+            "game_id": "4904419",
+            "season": 2025,
+            "competition_type": "Domestic Cup",
+            "club_id": "5551",
+            "opponent_id": "12991",
+            "position": "CB",
+            "minutes": 62,
+            "started": true,
+            "captain": false,
+            "goals": 0,
+            "assists": 0,
+            "goals_conceded": 2,
+            "participation": "played",
+            "club_points": 0
+        },
         {
             "game_id": "4886244",
             "season": 2025,
@@ -8494,7 +8529,64 @@
         }
     ],
     "clubs": {
+        "5551": {
+            "type": "club",
+            "seasons": [
+                2025,
+                2026
+            ],
+            "stats": {
+                "matches": 2,
+                "participations": 2,
+                "minutes": 62,
+                "starts": 1,
+                "captain_matches": 0,
+                "goals": 0,
+                "assists": 0,
+                "goals_conceded": 2,
+                "points": 0,
+                "clean_sheets": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 2,
+                "goal_matches": 2,
+                "assist_matches": 2,
+                "goal_contributions": 0
+            },
+            "positions": {
+                "CB": 1
+            },
+            "derived": {
+                "season_count": 2,
+                "points_per_match": 0.0,
+                "minutes_per_match": 31.0,
+                "win_rate": 0.0,
+                "goals_per_90": 0.0,
+                "assists_per_90": 0.0,
+                "contributions_per_90": 0.0,
+                "primary_position": "CB"
+            },
+            "competitions": {
+                "International Cup": {
+                    "matches": 1,
+                    "minutes": 0,
+                    "goals": 0,
+                    "assists": 0
+                },
+                "Domestic Cup": {
+                    "matches": 1,
+                    "minutes": 62,
+                    "goals": 0,
+                    "assists": 0
+                }
+            },
+            "awards": {
+                "team_titles": {},
+                "individual_titles": {}
+            }
+        },
         "8054": {
+            "type": "club",
             "seasons": [
                 2024,
                 2025
@@ -8562,6 +8654,7 @@
             }
         },
         "3433": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -8608,6 +8701,7 @@
             }
         },
         "3187": {
+            "type": "club",
             "seasons": [
                 2023
             ],
@@ -8662,6 +8756,7 @@
             }
         },
         "311": {
+            "type": "club",
             "seasons": [
                 2020,
                 2021,
@@ -8734,6 +8829,7 @@
             }
         },
         "970": {
+            "type": "club",
             "seasons": [
                 2014,
                 2015,
@@ -8807,6 +8903,7 @@
             }
         },
         "2436": {
+            "type": "club",
             "seasons": [
                 2014
             ],
@@ -8858,6 +8955,7 @@
             }
         },
         "512": {
+            "type": "club",
             "seasons": [
                 2013,
                 2014
@@ -8917,6 +9015,7 @@
             }
         },
         "24219": {
+            "type": "club",
             "seasons": [
                 2013
             ],
@@ -8958,6 +9057,7 @@
             }
         },
         "1020": {
+            "type": "club",
             "seasons": [
                 2011,
                 2012
@@ -9033,24 +9133,24 @@
     },
     "career": {
         "club": {
-            "matches": 182,
-            "minutes": 4660,
-            "goals": 6,
-            "assists": 0,
-            "goal_contributions": 6,
-            "team_titles": 0,
-            "individual_titles": 0,
-            "season_count": 5
-        },
-        "national": {
-            "matches": 346,
-            "minutes": 17497,
-            "goals": 14,
+            "matches": 529,
+            "minutes": 22219,
+            "goals": 20,
             "assists": 1,
-            "goal_contributions": 15,
+            "goal_contributions": 21,
             "team_titles": 1,
             "individual_titles": 0,
-            "season_count": 12
+            "season_count": 16
+        },
+        "national": {
+            "matches": 1,
+            "minutes": 0,
+            "goals": 0,
+            "assists": 0,
+            "goal_contributions": 0,
+            "team_titles": 0,
+            "individual_titles": 0,
+            "season_count": 1
         }
     }
 }

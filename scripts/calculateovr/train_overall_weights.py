@@ -756,6 +756,7 @@ def analyze_implied_curved_score(data):
     shared_position_groups = {
         "LWF + RWF": ["LWF", "RWF"],
         "LMF + RMF": ["LMF", "RMF"],
+        "LWF + RWF + LMF + RMF": ["LWF", "RWF", "LMF", "RMF"],
     }
 
     print()
@@ -1044,16 +1045,20 @@ def analyze_implied_curved_score(data):
         # the same attribute structure.
         # --------------------------------------------------
 
-        reference_weights = theoretical_weights[
-            positions[0]
-        ]
+        # Use the union of all attributes present in the
+        # theoretical models of the positions in the group.
+        feature_attributes = []
+
+        for position in positions:
+            for attribute in theoretical_weights[position]:
+                if (
+                    attribute != WEAK_FOOT_COLUMN
+                    and attribute not in feature_attributes
+                ):
+                    feature_attributes.append(attribute)
 
         curved_score_features = group_data[
-            [
-                attribute
-                for attribute in reference_weights
-                if attribute != WEAK_FOOT_COLUMN
-            ]
+            feature_attributes
         ].copy()
 
         curved_score_features = (

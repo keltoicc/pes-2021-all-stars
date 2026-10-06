@@ -1,42 +1,78 @@
 {
     "tactic": "4-2-3-1",
-    "total_score": 9.49,
+    "total_score": 9.55,
     "players": [
         {
             "role": "WINGER",
             "player": {
                 "ID_transfermarkt": "60517",
                 "name": "Y. Brahimi",
-                "score": 0.5765113069195623,
+                "score": 0.5928872191236892,
                 "roles": {
-                    "WIDE_MID": {
-                        "weight": 0.5411764705882353,
-                        "score": 0.4241087985034124
-                    },
-                    "WINGER": {
-                        "weight": 0.9019607843137255,
-                        "score": 0.5475221045279177
-                    },
                     "CENTRAL_MID": {
-                        "weight": 0.06862745098039215,
-                        "score": 0.1510277538785346
+                        "weight": 0.07264150943396226,
+                        "score": 0.15979549018424657
                     },
                     "ATTACKING_MID": {
-                        "weight": 0.09803921568627451,
-                        "score": 0.18051269223913796
+                        "weight": 0.10377358490566038,
+                        "score": 0.19099214151082475
                     },
                     "SECOND_STRIKER": {
-                        "weight": 0.058823529411764705,
-                        "score": 0.13982453016424923
+                        "weight": 0.062264150943396226,
+                        "score": 0.14794187666558292
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.5377358490566038,
+                        "score": 0.4347670110401643
+                    },
+                    "WINGER": {
+                        "weight": 0.8962264150943396,
+                        "score": 0.5612817977463108
                     },
                     "UTILITY": {
-                        "weight": 1.6686274509803922,
-                        "score": 0.5765113069195623
+                        "weight": 1.6726415094339622,
+                        "score": 0.5928872191236892
                     }
                 }
             },
-            "score": 0.55,
-            "role_weight": 0.902
+            "score": 0.56,
+            "role_weight": 0.8962
+        },
+        {
+            "role": "UTILITY",
+            "player": {
+                "ID_transfermarkt": "560128",
+                "name": "Amro Surag",
+                "score": 0.5326746974580459,
+                "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.5231999999999999,
+                        "score": 0.3852972732694188
+                    },
+                    "WINGER": {
+                        "weight": 0.5935999999999999,
+                        "score": 0.41040157048190673
+                    },
+                    "WING_BACK": {
+                        "weight": 0.33919999999999995,
+                        "score": 0.31023442661870615
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.256,
+                        "score": 0.26951444734536456
+                    },
+                    "FULLBACK": {
+                        "weight": 0.32,
+                        "score": 0.30132631259126147
+                    },
+                    "UTILITY": {
+                        "weight": 2.0319999999999996,
+                        "score": 0.5326746974580459
+                    }
+                }
+            },
+            "score": 0.53,
+            "role_weight": 2.032
         },
         {
             "role": "GOALKEEPER",
@@ -59,40 +95,36 @@
             "role_weight": 1.0
         },
         {
-            "role": "UTILITY",
+            "role": "DEFENSIVE_MID",
             "player": {
-                "ID_transfermarkt": "560128",
-                "name": "Amro Surag",
-                "score": 0.5297832955013985,
+                "ID_transfermarkt": "191903",
+                "name": "F. Sassi",
+                "score": 0.5126716044331598,
                 "roles": {
-                    "WIDE_CENTER_BACK": {
-                        "weight": 0.26229508196721313,
-                        "score": 0.271327200786266
+                    "DEFENSIVE_MID": {
+                        "weight": 0.6208333333333333,
+                        "score": 0.4039492229064733
                     },
-                    "FULLBACK": {
-                        "weight": 0.32786885245901637,
-                        "score": 0.3033530325514126
+                    "CENTRAL_MID": {
+                        "weight": 0.7989583333333333,
+                        "score": 0.45824879233783167
                     },
-                    "WING_BACK": {
-                        "weight": 0.34098360655737703,
-                        "score": 0.30936060649743996
+                    "ATTACKING_MID": {
+                        "weight": 0.37916666666666665,
+                        "score": 0.3156852852214158
                     },
-                    "WIDE_MID": {
-                        "weight": 0.5147540983606557,
-                        "score": 0.3801002603291364
-                    },
-                    "WINGER": {
-                        "weight": 0.5885245901639344,
-                        "score": 0.406425143086471
+                    "SECOND_STRIKER": {
+                        "weight": 0.09999999999999999,
+                        "score": 0.16212099617016618
                     },
                     "UTILITY": {
-                        "weight": 2.0344262295081967,
-                        "score": 0.5297832955013985
+                        "weight": 1.8989583333333333,
+                        "score": 0.5126716044331598
                     }
                 }
             },
-            "score": 0.53,
-            "role_weight": 2.0344
+            "score": 0.4,
+            "role_weight": 0.6208
         },
         {
             "role": "WINGER",
@@ -217,38 +249,6 @@
             },
             "score": 0.49,
             "role_weight": 0.9563
-        },
-        {
-            "role": "DEFENSIVE_MID",
-            "player": {
-                "ID_transfermarkt": "191903",
-                "name": "F. Sassi",
-                "score": 0.49709450647994347,
-                "roles": {
-                    "DEFENSIVE_MID": {
-                        "weight": 0.6329670329670329,
-                        "score": 0.39548453834350045
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 0.7857142857142857,
-                        "score": 0.4406271854736418
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.36703296703296706,
-                        "score": 0.3011559866643313
-                    },
-                    "SECOND_STRIKER": {
-                        "weight": 0.0989010989010989,
-                        "score": 0.15632899006820702
-                    },
-                    "UTILITY": {
-                        "weight": 1.8846153846153846,
-                        "score": 0.49709450647994347
-                    }
-                }
-            },
-            "score": 0.4,
-            "role_weight": 0.633
         },
         {
             "role": "GOALKEEPER",
@@ -403,6 +403,98 @@
             "role_weight": 1.0
         },
         {
+            "role": "DEFENSIVE_MID",
+            "player": {
+                "ID_transfermarkt": "741567",
+                "name": "F. Díaz",
+                "score": 0.4041133891074893,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 0.9395348837209302,
+                        "score": 0.39170552248186535
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.5755813953488371,
+                        "score": 0.3065890315543071
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.06046511627906977,
+                        "score": 0.09937009063671988
+                    },
+                    "UTILITY": {
+                        "weight": 1.5755813953488371,
+                        "score": 0.4041133891074893
+                    }
+                }
+            },
+            "score": 0.39,
+            "role_weight": 0.9395
+        },
+        {
+            "role": "CENTER_BACK",
+            "player": {
+                "ID_transfermarkt": "1106982",
+                "name": "Seydou Sano",
+                "score": 0.39925805593975117,
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.39925805593975117
+                    },
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.282318078798356
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.39925805593975117
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.39925805593975117
+                    }
+                }
+            },
+            "score": 0.4,
+            "role_weight": 1.0
+        },
+        {
+            "role": "FULLBACK",
+            "player": {
+                "ID_transfermarkt": "933828",
+                "name": "S. Fadlalla",
+                "score": 0.39271566642146394,
+                "roles": {
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.8657534246575342,
+                        "score": 0.3654057152543642
+                    },
+                    "FULLBACK": {
+                        "weight": 0.6712328767123288,
+                        "score": 0.3217472448390275
+                    },
+                    "WING_BACK": {
+                        "weight": 0.4698630136986301,
+                        "score": 0.2691930584042864
+                    },
+                    "CENTER_BACK": {
+                        "weight": 0.3287671232876712,
+                        "score": 0.22517616457198447
+                    },
+                    "SWEEPER": {
+                        "weight": 0.1643835616438356,
+                        "score": 0.15922359293042826
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.39271566642146394
+                    }
+                }
+            },
+            "score": 0.32,
+            "role_weight": 0.6712
+        },
+        {
             "role": "ATTACKING_MID",
             "player": {
                 "ID_transfermarkt": "4673",
@@ -433,34 +525,6 @@
         {
             "role": "DEFENSIVE_MID",
             "player": {
-                "ID_transfermarkt": "741567",
-                "name": "F. Díaz",
-                "score": 0.3824503534230588,
-                "roles": {
-                    "DEFENSIVE_MID": {
-                        "weight": 0.945679012345679,
-                        "score": 0.3719177809551721
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 0.5679012345679012,
-                        "score": 0.28821161100867415
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.05432098765432099,
-                        "score": 0.0891371810346457
-                    },
-                    "UTILITY": {
-                        "weight": 1.567901234567901,
-                        "score": 0.3824503534230588
-                    }
-                }
-            },
-            "score": 0.37,
-            "role_weight": 0.9457
-        },
-        {
-            "role": "DEFENSIVE_MID",
-            "player": {
                 "ID_transfermarkt": "147844",
                 "name": "O. El Assas",
                 "score": 0.3813026633280691,
@@ -485,70 +549,6 @@
             },
             "score": 0.3,
             "role_weight": 0.6
-        },
-        {
-            "role": "CENTER_BACK",
-            "player": {
-                "ID_transfermarkt": "1106982",
-                "name": "Seydou Sano",
-                "score": 0.3799646786711146,
-                "roles": {
-                    "CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.3799646786711146
-                    },
-                    "SWEEPER": {
-                        "weight": 0.5,
-                        "score": 0.2686756008997127
-                    },
-                    "WIDE_CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.3799646786711146
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.3799646786711146
-                    }
-                }
-            },
-            "score": 0.38,
-            "role_weight": 1.0
-        },
-        {
-            "role": "FULLBACK",
-            "player": {
-                "ID_transfermarkt": "933828",
-                "name": "S. Fadlalla",
-                "score": 0.37582115467470567,
-                "roles": {
-                    "WIDE_CENTER_BACK": {
-                        "weight": 0.8666666666666667,
-                        "score": 0.3498704544936004
-                    },
-                    "FULLBACK": {
-                        "weight": 0.6666666666666666,
-                        "score": 0.30685668783220726
-                    },
-                    "WING_BACK": {
-                        "weight": 0.4666666666666666,
-                        "score": 0.25673472458385305
-                    },
-                    "CENTER_BACK": {
-                        "weight": 0.3333333333333333,
-                        "score": 0.2169804448185973
-                    },
-                    "SWEEPER": {
-                        "weight": 0.16666666666666666,
-                        "score": 0.15342834391610363
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.37582115467470567
-                    }
-                }
-            },
-            "score": 0.31,
-            "role_weight": 0.6667
         },
         {
             "role": "ATTACKING_MID",
@@ -607,59 +607,59 @@
             "role_weight": 0.6
         },
         {
-            "role": "FULLBACK",
-            "player": {
-                "ID_transfermarkt": "1054631",
-                "name": "A. Al-Oui",
-                "score": 0.3379414639544477,
-                "roles": {
-                    "WIDE_CENTER_BACK": {
-                        "weight": 0.8,
-                        "score": 0.30226403432717597
-                    },
-                    "FULLBACK": {
-                        "weight": 1.0,
-                        "score": 0.3379414639544477
-                    },
-                    "WING_BACK": {
-                        "weight": 0.7,
-                        "score": 0.28274211419909256
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.3379414639544477
-                    }
-                }
-            },
-            "score": 0.34,
-            "role_weight": 1.0
-        },
-        {
             "role": "CENTER_BACK",
             "player": {
                 "ID_transfermarkt": "51227",
                 "name": "Dame Traoré",
-                "score": 0.31944801320508964,
+                "score": 0.3323854126030944,
                 "roles": {
                     "CENTER_BACK": {
                         "weight": 1.0,
-                        "score": 0.31944801320508964
+                        "score": 0.3323854126030944
                     },
                     "SWEEPER": {
                         "weight": 0.5,
-                        "score": 0.2258838563738887
+                        "score": 0.2350319792191366
                     },
                     "WIDE_CENTER_BACK": {
                         "weight": 1.0,
-                        "score": 0.31944801320508964
+                        "score": 0.3323854126030944
                     },
                     "UTILITY": {
                         "weight": 2.5,
-                        "score": 0.31944801320508964
+                        "score": 0.3323854126030944
                     }
                 }
             },
-            "score": 0.32,
+            "score": 0.33,
+            "role_weight": 1.0
+        },
+        {
+            "role": "FULLBACK",
+            "player": {
+                "ID_transfermarkt": "940747",
+                "name": "Jamal Hamed",
+                "score": 0.31090386369241907,
+                "roles": {
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.8,
+                        "score": 0.27808086947343114
+                    },
+                    "FULLBACK": {
+                        "weight": 1.0,
+                        "score": 0.31090386369241907
+                    },
+                    "WING_BACK": {
+                        "weight": 0.7,
+                        "score": 0.26012083484644594
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.31090386369241907
+                    }
+                }
+            },
+            "score": 0.31,
             "role_weight": 1.0
         }
     ]

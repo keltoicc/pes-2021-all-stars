@@ -1,6 +1,6 @@
 {
     "tactic": "3-4-1-2",
-    "total_score": 12.17,
+    "total_score": 12.18,
     "players": [
         {
             "role": "SECOND_STRIKER",
@@ -39,15 +39,15 @@
             "player": {
                 "ID_transfermarkt": "260171",
                 "name": "H. Jo",
-                "score": 0.6965822044567178,
+                "score": 0.696423671604681,
                 "roles": {
                     "GOALKEEPER": {
                         "weight": 1.0,
-                        "score": 0.6965822044567178
+                        "score": 0.696423671604681
                     },
                     "UTILITY": {
                         "weight": 1.0,
-                        "score": 0.6965822044567178
+                        "score": 0.696423671604681
                     }
                 }
             },
@@ -171,6 +171,50 @@
             "role_weight": 1.0
         },
         {
+            "role": "ATTACKING_MID",
+            "player": {
+                "ID_transfermarkt": "558086",
+                "name": "D. Lee",
+                "score": 0.6007333349639643,
+                "roles": {
+                    "CENTRAL_MID": {
+                        "weight": 0.4835051546391752,
+                        "score": 0.4177171305701643
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.5422680412371134,
+                        "score": 0.4423731269005108
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.34020618556701027,
+                        "score": 0.3503909129376269
+                    },
+                    "STRIKER": {
+                        "weight": 0.12371134020618557,
+                        "score": 0.211293670575308
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.14845360824742268,
+                        "score": 0.23146061926432357
+                    },
+                    "WINGER": {
+                        "weight": 0.24742268041237114,
+                        "score": 0.2988143745711936
+                    },
+                    "DEFENSIVE_MID": {
+                        "weight": 0.08659793814432988,
+                        "score": 0.17678096803001941
+                    },
+                    "UTILITY": {
+                        "weight": 1.9721649484536081,
+                        "score": 0.6007333349639643
+                    }
+                }
+            },
+            "score": 0.44,
+            "role_weight": 0.5423
+        },
+        {
             "role": "WIDE_CENTER_BACK",
             "player": {
                 "ID_transfermarkt": "314773",
@@ -227,44 +271,60 @@
             "role_weight": 1.0
         },
         {
-            "role": "ATTACKING_MID",
+            "role": "WIDE_CENTER_BACK",
             "player": {
-                "ID_transfermarkt": "558086",
-                "name": "D. Lee",
-                "score": 0.5846803199012027,
+                "ID_transfermarkt": "379438",
+                "name": "S. Jung",
+                "score": 0.5777732508594671,
                 "roles": {
-                    "WIDE_MID": {
-                        "weight": 0.17349397590361446,
-                        "score": 0.24353460211108885
+                    "CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.5777732508594671
                     },
-                    "WINGER": {
-                        "weight": 0.2891566265060241,
-                        "score": 0.3144018194004989
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.4085473836709254
                     },
-                    "CENTRAL_MID": {
-                        "weight": 0.5481927710843373,
-                        "score": 0.43289755013583797
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.6096385542168674,
-                        "score": 0.4565146175344317
-                    },
-                    "SECOND_STRIKER": {
-                        "weight": 0.3253012048192771,
-                        "score": 0.3334734877732215
-                    },
-                    "DEFENSIVE_MID": {
-                        "weight": 0.10120481927710842,
-                        "score": 0.18600262475250282
+                    "WIDE_CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.5777732508594671
                     },
                     "UTILITY": {
-                        "weight": 2.0469879518072287,
-                        "score": 0.5846803199012027
+                        "weight": 2.5,
+                        "score": 0.5777732508594671
                     }
                 }
             },
-            "score": 0.46,
-            "role_weight": 0.6096
+            "score": 0.58,
+            "role_weight": 1.0
+        },
+        {
+            "role": "WIDE_CENTER_BACK",
+            "player": {
+                "ID_transfermarkt": "126640",
+                "name": "Y. Kim",
+                "score": 0.5772890675609488,
+                "roles": {
+                    "CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.5772890675609488
+                    },
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.4082050143772059
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.5772890675609488
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.5772890675609488
+                    }
+                }
+            },
+            "score": 0.58,
+            "role_weight": 1.0
         },
         {
             "role": "WIDE_MID",
@@ -303,34 +363,6 @@
             "role_weight": 0.8033
         },
         {
-            "role": "WIDE_CENTER_BACK",
-            "player": {
-                "ID_transfermarkt": "126640",
-                "name": "Y. Kim",
-                "score": 0.5694288479235001,
-                "roles": {
-                    "CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.5694288479235001
-                    },
-                    "SWEEPER": {
-                        "weight": 0.5,
-                        "score": 0.4026469997699503
-                    },
-                    "WIDE_CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.5694288479235001
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.5694288479235001
-                    }
-                }
-            },
-            "score": 0.57,
-            "role_weight": 1.0
-        },
-        {
             "role": "STRIKER",
             "player": {
                 "ID_transfermarkt": "52790",
@@ -352,34 +384,6 @@
                 }
             },
             "score": 0.57,
-            "role_weight": 1.0
-        },
-        {
-            "role": "WIDE_CENTER_BACK",
-            "player": {
-                "ID_transfermarkt": "379438",
-                "name": "S. Jung",
-                "score": 0.56455890381242,
-                "roles": {
-                    "CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.56455890381242
-                    },
-                    "SWEEPER": {
-                        "weight": 0.5,
-                        "score": 0.399203429265006
-                    },
-                    "WIDE_CENTER_BACK": {
-                        "weight": 1.0,
-                        "score": 0.56455890381242
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.56455890381242
-                    }
-                }
-            },
-            "score": 0.56,
             "role_weight": 1.0
         },
         {
