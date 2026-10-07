@@ -137,7 +137,14 @@ YEAR = [
     "rafael-navarro",
     "juninho",
     "tiago-silva",
-    "eduardo"
+    "eduardo",
+    "wanderson",
+    "romarinho",
+    "leonardo",
+    "fabinho",
+    "sandro",
+    "júnior-santos",
+    "denílson"
 ]
 
 BIRTH_PLACE = [

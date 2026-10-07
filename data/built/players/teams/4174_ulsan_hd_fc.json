@@ -1,7 +1,27 @@
 {
     "tactic": "3-4-1-2",
-    "total_score": 12.18,
+    "total_score": 12.21,
     "players": [
+        {
+            "role": "GOALKEEPER",
+            "player": {
+                "ID_transfermarkt": "260171",
+                "name": "H. Jo",
+                "score": 0.7104236716046809,
+                "roles": {
+                    "GOALKEEPER": {
+                        "weight": 1.0,
+                        "score": 0.7104236716046809
+                    },
+                    "UTILITY": {
+                        "weight": 1.0,
+                        "score": 0.7104236716046809
+                    }
+                }
+            },
+            "score": 0.71,
+            "role_weight": 1.0
+        },
         {
             "role": "SECOND_STRIKER",
             "player": {
@@ -33,26 +53,6 @@
             },
             "score": 0.5,
             "role_weight": 0.5
-        },
-        {
-            "role": "GOALKEEPER",
-            "player": {
-                "ID_transfermarkt": "260171",
-                "name": "H. Jo",
-                "score": 0.696423671604681,
-                "roles": {
-                    "GOALKEEPER": {
-                        "weight": 1.0,
-                        "score": 0.696423671604681
-                    },
-                    "UTILITY": {
-                        "weight": 1.0,
-                        "score": 0.696423671604681
-                    }
-                }
-            },
-            "score": 0.7,
-            "role_weight": 1.0
         },
         {
             "role": "STRIKER",
@@ -143,6 +143,50 @@
             "role_weight": 1.0
         },
         {
+            "role": "ATTACKING_MID",
+            "player": {
+                "ID_transfermarkt": "558086",
+                "name": "D. Lee",
+                "score": 0.6147333349639643,
+                "roles": {
+                    "CENTRAL_MID": {
+                        "weight": 0.4835051546391752,
+                        "score": 0.42745196545881436
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.5422680412371134,
+                        "score": 0.45268256607451407
+                    },
+                    "SECOND_STRIKER": {
+                        "weight": 0.34020618556701027,
+                        "score": 0.35855672045257203
+                    },
+                    "STRIKER": {
+                        "weight": 0.12371134020618557,
+                        "score": 0.21621783778209663
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.14845360824742268,
+                        "score": 0.23685477417649423
+                    },
+                    "WINGER": {
+                        "weight": 0.24742268041237114,
+                        "score": 0.30577819861842687
+                    },
+                    "DEFENSIVE_MID": {
+                        "weight": 0.08659793814432988,
+                        "score": 0.1809008218959094
+                    },
+                    "UTILITY": {
+                        "weight": 1.9721649484536081,
+                        "score": 0.6147333349639643
+                    }
+                }
+            },
+            "score": 0.45,
+            "role_weight": 0.5423
+        },
+        {
             "role": "WIDE_CENTER_BACK",
             "player": {
                 "ID_transfermarkt": "81791",
@@ -169,50 +213,6 @@
             },
             "score": 0.61,
             "role_weight": 1.0
-        },
-        {
-            "role": "ATTACKING_MID",
-            "player": {
-                "ID_transfermarkt": "558086",
-                "name": "D. Lee",
-                "score": 0.6007333349639643,
-                "roles": {
-                    "CENTRAL_MID": {
-                        "weight": 0.4835051546391752,
-                        "score": 0.4177171305701643
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.5422680412371134,
-                        "score": 0.4423731269005108
-                    },
-                    "SECOND_STRIKER": {
-                        "weight": 0.34020618556701027,
-                        "score": 0.3503909129376269
-                    },
-                    "STRIKER": {
-                        "weight": 0.12371134020618557,
-                        "score": 0.211293670575308
-                    },
-                    "WIDE_MID": {
-                        "weight": 0.14845360824742268,
-                        "score": 0.23146061926432357
-                    },
-                    "WINGER": {
-                        "weight": 0.24742268041237114,
-                        "score": 0.2988143745711936
-                    },
-                    "DEFENSIVE_MID": {
-                        "weight": 0.08659793814432988,
-                        "score": 0.17678096803001941
-                    },
-                    "UTILITY": {
-                        "weight": 1.9721649484536081,
-                        "score": 0.6007333349639643
-                    }
-                }
-            },
-            "score": 0.44,
-            "role_weight": 0.5423
         },
         {
             "role": "WIDE_CENTER_BACK",

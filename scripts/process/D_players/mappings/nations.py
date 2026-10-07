@@ -174,7 +174,7 @@ NATIONS_MAP = {
     172: "Czech Republic",
     173: "Tunisia",
     174: "Türkiye",
-    175: "175",
+    175: "Turkmenistan",
     176: "Uganda",
     177: "Ukraine",
     178: "Hungary",
