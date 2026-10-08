@@ -1,7 +1,31 @@
 {
     "tactic": "4-4-2 double 6",
-    "total_score": 7.78,
+    "total_score": 8.8,
     "players": [
+        {
+            "role": "STRIKER",
+            "player": {
+                "ID_transfermarkt": "68747",
+                "name": "D. Churín",
+                "score": 0.6338623357093642,
+                "roles": {
+                    "SECOND_STRIKER": {
+                        "weight": 0.4,
+                        "score": 0.40088974076717443
+                    },
+                    "STRIKER": {
+                        "weight": 1.0,
+                        "score": 0.6338623357093642
+                    },
+                    "UTILITY": {
+                        "weight": 1.4,
+                        "score": 0.6338623357093642
+                    }
+                }
+            },
+            "score": 0.63,
+            "role_weight": 1.0
+        },
         {
             "role": "UTILITY",
             "player": {
@@ -43,24 +67,48 @@
             "player": {
                 "ID_transfermarkt": "273012",
                 "name": "C. Domínguez",
-                "score": 0.5143526376998606,
+                "score": 0.5170757278151576,
                 "roles": {
                     "WIDE_MID": {
                         "weight": 0.6,
-                        "score": 0.3984158399778835
+                        "score": 0.40052513651123695
                     },
                     "WINGER": {
                         "weight": 1.0,
-                        "score": 0.5143526376998606
+                        "score": 0.5170757278151576
                     },
                     "UTILITY": {
                         "weight": 1.6,
-                        "score": 0.5143526376998606
+                        "score": 0.5170757278151576
                     }
                 }
             },
-            "score": 0.51,
+            "score": 0.52,
             "role_weight": 1.0
+        },
+        {
+            "role": "WIDE_MID",
+            "player": {
+                "ID_transfermarkt": "81455",
+                "name": "Juan Iturbe",
+                "score": 0.4897347395920879,
+                "roles": {
+                    "WIDE_MID": {
+                        "weight": 0.6,
+                        "score": 0.37934689809987654
+                    },
+                    "WINGER": {
+                        "weight": 1.0,
+                        "score": 0.4897347395920879
+                    },
+                    "UTILITY": {
+                        "weight": 1.6,
+                        "score": 0.4897347395920879
+                    }
+                }
+            },
+            "score": 0.38,
+            "role_weight": 0.6
         },
         {
             "role": "WIDE_MID",
@@ -117,6 +165,114 @@
             },
             "score": 0.43,
             "role_weight": 1.0
+        },
+        {
+            "role": "DEFENSIVE_MID",
+            "player": {
+                "ID_transfermarkt": "273033",
+                "name": "Piris da Motta",
+                "score": 0.4335267242333493,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 0.8760233918128655,
+                        "score": 0.40576419858234025
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.5116959064327485,
+                        "score": 0.3101143375697695
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.042105263157894736,
+                        "score": 0.08895780682276136
+                    },
+                    "CENTER_BACK": {
+                        "weight": 0.08187134502923976,
+                        "score": 0.12404573502790779
+                    },
+                    "SWEEPER": {
+                        "weight": 0.04093567251461988,
+                        "score": 0.08771358041550324
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.08187134502923976,
+                        "score": 0.12404573502790779
+                    },
+                    "UTILITY": {
+                        "weight": 1.6345029239766082,
+                        "score": 0.4335267242333493
+                    }
+                }
+            },
+            "score": 0.41,
+            "role_weight": 0.876
+        },
+        {
+            "role": "DEFENSIVE_MID",
+            "player": {
+                "ID_transfermarkt": "661223",
+                "name": "W. Viera",
+                "score": 0.3958793440535256,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 0.6754098360655738,
+                        "score": 0.32534679474717504
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.9057377049180328,
+                        "score": 0.3767593731668947
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.32459016393442625,
+                        "score": 0.22554360597451936
+                    },
+                    "UTILITY": {
+                        "weight": 1.9057377049180328,
+                        "score": 0.3958793440535256
+                    }
+                }
+            },
+            "score": 0.33,
+            "role_weight": 0.6754
+        },
+        {
+            "role": "DEFENSIVE_MID",
+            "player": {
+                "ID_transfermarkt": "401729",
+                "name": "Jorge Morel",
+                "score": 0.39563312207677764,
+                "roles": {
+                    "DEFENSIVE_MID": {
+                        "weight": 0.7072463768115942,
+                        "score": 0.3327193116429266
+                    },
+                    "CENTRAL_MID": {
+                        "weight": 0.43478260869565216,
+                        "score": 0.2608727553260388
+                    },
+                    "ATTACKING_MID": {
+                        "weight": 0.0463768115942029,
+                        "score": 0.08520068511236238
+                    },
+                    "CENTER_BACK": {
+                        "weight": 0.2463768115942029,
+                        "score": 0.1963778760463093
+                    },
+                    "SWEEPER": {
+                        "weight": 0.12318840579710146,
+                        "score": 0.1388601278273566
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.2463768115942029,
+                        "score": 0.1963778760463093
+                    },
+                    "UTILITY": {
+                        "weight": 1.8043478260869565,
+                        "score": 0.39563312207677764
+                    }
+                }
+            },
+            "score": 0.33,
+            "role_weight": 0.7072
         },
         {
             "role": "CENTRAL_MID",
@@ -271,42 +427,6 @@
             "role_weight": 1.0
         },
         {
-            "role": "CENTER_BACK",
-            "player": {
-                "ID_transfermarkt": "389399",
-                "name": "G. Velázquez",
-                "score": 0.36918534038120926,
-                "roles": {
-                    "CENTER_BACK": {
-                        "weight": 0.7761194029850746,
-                        "score": 0.3252435690904437
-                    },
-                    "SWEEPER": {
-                        "weight": 0.3880597014925373,
-                        "score": 0.22998193324116814
-                    },
-                    "WIDE_CENTER_BACK": {
-                        "weight": 0.955223880597015,
-                        "score": 0.36082534319092596
-                    },
-                    "FULLBACK": {
-                        "weight": 0.22388059701492538,
-                        "score": 0.17468381813350403
-                    },
-                    "WING_BACK": {
-                        "weight": 0.15671641791044777,
-                        "score": 0.1461509679146511
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.36918534038120926
-                    }
-                }
-            },
-            "score": 0.33,
-            "role_weight": 0.7761
-        },
-        {
             "role": "STRIKER",
             "player": {
                 "ID_transfermarkt": "9801",
@@ -359,23 +479,75 @@
             "role_weight": 1.0
         },
         {
-            "role": "STRIKER",
+            "role": "CENTER_BACK",
             "player": {
-                "ID_transfermarkt": "386610",
-                "name": "J. Torres",
-                "score": 0.35046096260343146,
+                "ID_transfermarkt": "744416",
+                "name": "M. Pérez",
+                "score": 0.35391550487396284,
                 "roles": {
-                    "SECOND_STRIKER": {
-                        "weight": 0.4,
-                        "score": 0.22165097456038743
-                    },
-                    "STRIKER": {
+                    "CENTER_BACK": {
                         "weight": 1.0,
-                        "score": 0.35046096260343146
+                        "score": 0.35391550487396284
+                    },
+                    "SWEEPER": {
+                        "weight": 0.5,
+                        "score": 0.25025605346343976
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 1.0,
+                        "score": 0.35391550487396284
                     },
                     "UTILITY": {
-                        "weight": 1.4,
-                        "score": 0.35046096260343146
+                        "weight": 2.5,
+                        "score": 0.35391550487396284
+                    }
+                }
+            },
+            "score": 0.35,
+            "role_weight": 1.0
+        },
+        {
+            "role": "FULLBACK",
+            "player": {
+                "ID_transfermarkt": "336348",
+                "name": "A. Espínola",
+                "score": 0.35370468518518516,
+                "roles": {
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.8,
+                        "score": 0.3163630880136947
+                    },
+                    "FULLBACK": {
+                        "weight": 1.0,
+                        "score": 0.35370468518518516
+                    },
+                    "WING_BACK": {
+                        "weight": 0.7,
+                        "score": 0.29593057129226386
+                    },
+                    "UTILITY": {
+                        "weight": 2.5,
+                        "score": 0.35370468518518516
+                    }
+                }
+            },
+            "score": 0.35,
+            "role_weight": 1.0
+        },
+        {
+            "role": "GOALKEEPER",
+            "player": {
+                "ID_transfermarkt": "371231",
+                "name": "Jean",
+                "score": 0.34917537878787874,
+                "roles": {
+                    "GOALKEEPER": {
+                        "weight": 1.0,
+                        "score": 0.34917537878787874
+                    },
+                    "UTILITY": {
+                        "weight": 1.0,
+                        "score": 0.34917537878787874
                     }
                 }
             },
@@ -407,276 +579,104 @@
             "role_weight": 1.0
         },
         {
+            "role": "WIDE_MID",
+            "player": {
+                "ID_transfermarkt": "569088",
+                "name": "E. Giménez",
+                "score": 0.3274288180497925,
+                "roles": {
+                    "WING_BACK": {
+                        "weight": 0.4604166666666667,
+                        "score": 0.22217358278764826
+                    },
+                    "WIDE_MID": {
+                        "weight": 0.7986111111111112,
+                        "score": 0.29260690772171294
+                    },
+                    "WINGER": {
+                        "weight": 0.5590277777777778,
+                        "score": 0.24481250317850212
+                    },
+                    "WIDE_CENTER_BACK": {
+                        "weight": 0.16111111111111112,
+                        "score": 0.13142550267895836
+                    },
+                    "FULLBACK": {
+                        "weight": 0.2013888888888889,
+                        "score": 0.1469381789836158
+                    },
+                    "UTILITY": {
+                        "weight": 2.180555555555556,
+                        "score": 0.3274288180497925
+                    }
+                }
+            },
+            "score": 0.29,
+            "role_weight": 0.7986
+        },
+        {
             "role": "FULLBACK",
             "player": {
                 "ID_transfermarkt": "621793",
                 "name": "F. Domínguez",
-                "score": 0.3273584737145426,
+                "score": 0.3103064916632606,
                 "roles": {
                     "WIDE_CENTER_BACK": {
                         "weight": 0.8,
-                        "score": 0.2927983200945181
+                        "score": 0.277546563687409
                     },
                     "FULLBACK": {
                         "weight": 1.0,
-                        "score": 0.3273584737145426
+                        "score": 0.3103064916632606
                     },
                     "WING_BACK": {
                         "weight": 0.7,
-                        "score": 0.27388774930416365
+                        "score": 0.2596210375486795
                     },
                     "UTILITY": {
                         "weight": 2.5,
-                        "score": 0.3273584737145426
+                        "score": 0.3103064916632606
                     }
                 }
             },
-            "score": 0.33,
-            "role_weight": 1.0
-        },
-        {
-            "role": "DEFENSIVE_MID",
-            "player": {
-                "ID_transfermarkt": "436385",
-                "name": "M. Villasanti",
-                "score": 0.31759166393442617,
-                "roles": {
-                    "DEFENSIVE_MID": {
-                        "weight": 0.6597701149425287,
-                        "score": 0.25796774927708943
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 0.925287356321839,
-                        "score": 0.3054973226842692
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.34022988505747126,
-                        "score": 0.18524876607834725
-                    },
-                    "UTILITY": {
-                        "weight": 1.925287356321839,
-                        "score": 0.31759166393442617
-                    }
-                }
-            },
-            "score": 0.26,
-            "role_weight": 0.6598
-        },
-        {
-            "role": "GOALKEEPER",
-            "player": {
-                "ID_transfermarkt": "360521",
-                "name": "A. Martín Arias",
-                "score": 0.3171822237145426,
-                "roles": {
-                    "GOALKEEPER": {
-                        "weight": 1.0,
-                        "score": 0.3171822237145426
-                    },
-                    "UTILITY": {
-                        "weight": 1.0,
-                        "score": 0.3171822237145426
-                    }
-                }
-            },
-            "score": 0.32,
+            "score": 0.31,
             "role_weight": 1.0
         },
         {
             "role": "FULLBACK",
             "player": {
-                "ID_transfermarkt": "491592",
-                "name": "A. Rodríguez",
-                "score": 0.2885386977869986,
+                "ID_transfermarkt": "344676",
+                "name": "A. Benítez",
+                "score": 0.2896262887417218,
                 "roles": {
                     "WIDE_CENTER_BACK": {
-                        "weight": 0.6315789473684211,
-                        "score": 0.22930730489057496
+                        "weight": 0.6980392156862746,
+                        "score": 0.24197911844112704
                     },
                     "FULLBACK": {
-                        "weight": 0.7894736842105263,
-                        "score": 0.2563733607362978
+                        "weight": 0.8725490196078431,
+                        "score": 0.2705408789849165
                     },
                     "WING_BACK": {
-                        "weight": 0.6368421052631579,
-                        "score": 0.23026076973035142
+                        "weight": 0.6617647058823529,
+                        "score": 0.23560786279897505
                     },
                     "WIDE_MID": {
-                        "weight": 0.21052631578947367,
-                        "score": 0.13239063420572103
+                        "weight": 0.12745098039215685,
+                        "score": 0.10339738840208672
                     },
                     "WINGER": {
-                        "weight": 0.14736842105263157,
-                        "score": 0.11076595152742165
+                        "weight": 0.08921568627450979,
+                        "score": 0.08650846172404399
                     },
                     "UTILITY": {
-                        "weight": 2.4157894736842107,
-                        "score": 0.2885386977869986
+                        "weight": 2.4490196078431374,
+                        "score": 0.2896262887417218
                     }
                 }
             },
-            "score": 0.26,
-            "role_weight": 0.7895
-        },
-        {
-            "role": "DEFENSIVE_MID",
-            "player": {
-                "ID_transfermarkt": "765723",
-                "name": "R. Gómez",
-                "score": 0.27740758888888883,
-                "roles": {
-                    "DEFENSIVE_MID": {
-                        "weight": 0.8,
-                        "score": 0.2481208904919483
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 1.0,
-                        "score": 0.27740758888888883
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.8,
-                        "score": 0.2481208904919483
-                    },
-                    "WINGER": {
-                        "weight": 0.6,
-                        "score": 0.21487899437564403
-                    },
-                    "WING_BACK": {
-                        "weight": 0.4,
-                        "score": 0.17544796422090142
-                    },
-                    "UTILITY": {
-                        "weight": 3.6,
-                        "score": 0.27740758888888883
-                    }
-                }
-            },
-            "score": 0.25,
-            "role_weight": 0.8
-        },
-        {
-            "role": "DEFENSIVE_MID",
-            "player": {
-                "ID_transfermarkt": "84340",
-                "name": "R. Rojas",
-                "score": 0.26715067227488154,
-                "roles": {
-                    "DEFENSIVE_MID": {
-                        "weight": 0.6,
-                        "score": 0.20693402092974636
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 1.0,
-                        "score": 0.26715067227488154
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.4,
-                        "score": 0.1689609205667644
-                    },
-                    "UTILITY": {
-                        "weight": 2.0,
-                        "score": 0.26715067227488154
-                    }
-                }
-            },
-            "score": 0.21,
-            "role_weight": 0.6
-        },
-        {
-            "role": "FULLBACK",
-            "player": {
-                "ID_transfermarkt": "147410",
-                "name": "R. Cáceres",
-                "score": 0.26127304848484845,
-                "roles": {
-                    "WIDE_CENTER_BACK": {
-                        "weight": 0.8,
-                        "score": 0.23368971884028783
-                    },
-                    "FULLBACK": {
-                        "weight": 1.0,
-                        "score": 0.26127304848484845
-                    },
-                    "WING_BACK": {
-                        "weight": 0.7,
-                        "score": 0.21859671567797212
-                    },
-                    "UTILITY": {
-                        "weight": 2.5,
-                        "score": 0.26127304848484845
-                    }
-                }
-            },
-            "score": 0.26,
-            "role_weight": 1.0
-        },
-        {
-            "role": "WIDE_MID",
-            "player": {
-                "ID_transfermarkt": "130285",
-                "name": "J. Campos",
-                "score": 0.25406006111111107,
-                "roles": {
-                    "WIDE_MID": {
-                        "weight": 0.5333333333333333,
-                        "score": 0.18553923524226204
-                    },
-                    "WINGER": {
-                        "weight": 0.5666666666666667,
-                        "score": 0.19124946615004232
-                    },
-                    "WING_BACK": {
-                        "weight": 0.13333333333333333,
-                        "score": 0.09276961762113102
-                    },
-                    "CENTRAL_MID": {
-                        "weight": 0.2333333333333333,
-                        "score": 0.12272266872403409
-                    },
-                    "ATTACKING_MID": {
-                        "weight": 0.3333333333333333,
-                        "score": 0.14668164467283273
-                    },
-                    "SECOND_STRIKER": {
-                        "weight": 0.19999999999999998,
-                        "score": 0.11361911340243902
-                    },
-                    "UTILITY": {
-                        "weight": 2.0,
-                        "score": 0.25406006111111107
-                    }
-                }
-            },
-            "score": 0.19,
-            "role_weight": 0.5333
-        },
-        {
-            "role": "WIDE_MID",
-            "player": {
-                "ID_transfermarkt": "53948",
-                "name": "W. Fretes",
-                "score": 0.2537742407407407,
-                "roles": {
-                    "WING_BACK": {
-                        "weight": 0.4,
-                        "score": 0.16050092244412728
-                    },
-                    "WIDE_MID": {
-                        "weight": 1.0,
-                        "score": 0.2537742407407407
-                    },
-                    "WINGER": {
-                        "weight": 0.7,
-                        "score": 0.21232276299181296
-                    },
-                    "UTILITY": {
-                        "weight": 2.1,
-                        "score": 0.2537742407407407
-                    }
-                }
-            },
-            "score": 0.25,
-            "role_weight": 1.0
+            "score": 0.27,
+            "role_weight": 0.8725
         }
     ]
 }
