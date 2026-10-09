@@ -144,13 +144,13 @@ function add(
 
 export function calculateOverall(
     playerVersion: PlayerVersion,
-    player: Player,
+    //player: Player,
 ): number {
-    if (player.height === undefined) {
-        throw new Error(
-            `Cannot calculate Overall: player ${player.id} (${player.name}) has no height.`,
-        );
-    }
+    //if (player.height === undefined) {
+    //    throw new Error(
+    //        `Cannot calculate Overall: player ${player.id} (${player.name}) has no height.`,
+    //    );
+    //}
 
     const position = POSITION_INDEX[playerVersion.mainPosition];
 
