@@ -144,7 +144,11 @@ YEAR = [
     "fabinho",
     "sandro",
     "júnior-santos",
-    "denílson"
+    "denílson",
+    "ángel-romero",
+    "iván-ramírez",
+    "sebastián-rodríguez",
+    "miguel-torres"
 ]
 
 BIRTH_PLACE = [

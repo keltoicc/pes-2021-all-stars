@@ -18,6 +18,22 @@
     },
     "matches": [
         {
+            "game_id": "5074479",
+            "season": 2025,
+            "competition_type": "First Tier",
+            "club_id": "1450",
+            "opponent_id": "21170",
+            "position": "CMF",
+            "minutes": 74,
+            "started": true,
+            "captain": true,
+            "goals": 0,
+            "assists": 1,
+            "goals_conceded": 0,
+            "participation": "played",
+            "club_points": 3
+        },
+        {
             "game_id": "5052883",
             "season": 2026,
             "competition_type": "National Team",
@@ -103,7 +119,7 @@
             "competition_type": "National Team",
             "club_id": "3584",
             "opponent_id": "3505",
-            "position": "DMF",
+            "position": "CMF",
             "minutes": 76,
             "started": true,
             "captain": true,
@@ -6798,7 +6814,7 @@
             "goals": 0,
             "assists": 0,
             "goals_conceded": 0,
-            "participation": "not in squad",
+            "participation": "played for a different team",
             "club_points": 1
         },
         {
@@ -16581,6 +16597,92 @@
         }
     ],
     "clubs": {
+        "1450": {
+            "type": "club",
+            "seasons": [
+                2008,
+                2009,
+                2010,
+                2011,
+                2013,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
+            "stats": {
+                "matches": 439,
+                "participations": 439,
+                "minutes": 21772,
+                "starts": 250,
+                "captain_matches": 87,
+                "goals": 30,
+                "assists": 39,
+                "goals_conceded": 263,
+                "points": 732,
+                "clean_sheets": 275,
+                "wins": 208,
+                "draws": 108,
+                "losses": 123,
+                "goal_matches": 410,
+                "assist_matches": 407,
+                "goal_contributions": 69
+            },
+            "positions": {
+                "CMF": 88,
+                "DMF": 11,
+                "AMF": 15,
+                "LW": 18,
+                "LM": 11,
+                "LB": 80,
+                "RM": 1,
+                "RW": 3,
+                "CF": 1
+            },
+            "derived": {
+                "season_count": 10,
+                "points_per_match": 1.667,
+                "minutes_per_match": 49.6,
+                "win_rate": 0.4738,
+                "goals_per_90": 0.124,
+                "assists_per_90": 0.161,
+                "contributions_per_90": 0.285,
+                "primary_position": "CMF"
+            },
+            "competitions": {
+                "First Tier": {
+                    "matches": 357,
+                    "minutes": 17843,
+                    "goals": 25,
+                    "assists": 32
+                },
+                "Domestic Cup": {
+                    "matches": 28,
+                    "minutes": 889,
+                    "goals": 1,
+                    "assists": 3
+                },
+                "International Cup": {
+                    "matches": 42,
+                    "minutes": 2521,
+                    "goals": 4,
+                    "assists": 2
+                },
+                "Play-Offs": {
+                    "matches": 12,
+                    "minutes": 519,
+                    "goals": 0,
+                    "assists": 2
+                }
+            },
+            "awards": {
+                "team_titles": {
+                    "Peruvian champion": 1
+                },
+                "individual_titles": {}
+            }
+        },
         "3584": {
             "type": "national",
             "seasons": [
@@ -16621,10 +16723,10 @@
                 "goal_contributions": 22
             },
             "positions": {
-                "CMF": 62,
+                "CMF": 63,
                 "LM": 9,
                 "LW": 2,
-                "DMF": 24,
+                "DMF": 23,
                 "LB": 30,
                 "AMF": 1
             },
@@ -16654,92 +16756,6 @@
             },
             "awards": {
                 "team_titles": {},
-                "individual_titles": {}
-            }
-        },
-        "1450": {
-            "type": "club",
-            "seasons": [
-                2008,
-                2009,
-                2010,
-                2011,
-                2013,
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "stats": {
-                "matches": 438,
-                "participations": 438,
-                "minutes": 21698,
-                "starts": 249,
-                "captain_matches": 86,
-                "goals": 30,
-                "assists": 38,
-                "goals_conceded": 263,
-                "points": 729,
-                "clean_sheets": 274,
-                "wins": 207,
-                "draws": 108,
-                "losses": 123,
-                "goal_matches": 409,
-                "assist_matches": 407,
-                "goal_contributions": 68
-            },
-            "positions": {
-                "CMF": 87,
-                "DMF": 11,
-                "AMF": 15,
-                "LW": 18,
-                "LM": 11,
-                "LB": 80,
-                "RM": 1,
-                "RW": 3,
-                "CF": 1
-            },
-            "derived": {
-                "season_count": 10,
-                "points_per_match": 1.664,
-                "minutes_per_match": 49.5,
-                "win_rate": 0.4726,
-                "goals_per_90": 0.124,
-                "assists_per_90": 0.158,
-                "contributions_per_90": 0.282,
-                "primary_position": "CMF"
-            },
-            "competitions": {
-                "Domestic Cup": {
-                    "matches": 28,
-                    "minutes": 889,
-                    "goals": 1,
-                    "assists": 3
-                },
-                "First Tier": {
-                    "matches": 356,
-                    "minutes": 17769,
-                    "goals": 25,
-                    "assists": 31
-                },
-                "International Cup": {
-                    "matches": 42,
-                    "minutes": 2521,
-                    "goals": 4,
-                    "assists": 2
-                },
-                "Play-Offs": {
-                    "matches": 12,
-                    "minutes": 519,
-                    "goals": 0,
-                    "assists": 2
-                }
-            },
-            "awards": {
-                "team_titles": {
-                    "Peruvian champion": 1
-                },
                 "individual_titles": {}
             }
         },
@@ -17153,11 +17169,11 @@
     },
     "career": {
         "club": {
-            "matches": 838,
-            "minutes": 41352,
+            "matches": 839,
+            "minutes": 41426,
             "goals": 49,
-            "assists": 88,
-            "goal_contributions": 137,
+            "assists": 89,
+            "goal_contributions": 138,
             "team_titles": 7,
             "individual_titles": 0,
             "season_count": 19
