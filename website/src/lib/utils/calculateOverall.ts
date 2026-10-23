@@ -1,324 +1,201 @@
-import type { Player } from "../../types/player";
+
 import type { PlayerVersion } from "../../types/playerVersion";
 import { Position } from "../../enums/position";
 
-const POSITION_INDEX: Record<Position, number> = {
+type AbilityKey = keyof PlayerVersion["abilities"];
+
+// GK, CB, LB/RB, DMF, CMF, LMF/RMF, AMF, LWF/RWF, SS, CF
+type PositionGroup = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+
+const POSITION_GROUP: Record<Position, PositionGroup> = {
     [Position.GK]: 0,
-
-    [Position.SW]: 1,
+    [Position.SW]: 1, // Aproximación: tratar SW como CB
     [Position.CB]: 1,
+    [Position.LB]: 2,
     [Position.RB]: 2,
-    [Position.LB]: 3,
-
-    [Position.DMF]: 4,
-    [Position.CMF]: 5,
-    [Position.RMF]: 6,
-    [Position.LMF]: 7,
-    [Position.AMF]: 8,
-
-    [Position.RWF]: 9,
-    [Position.LWF]: 10,
-    [Position.SS]: 11,
-    [Position.CF]: 12,
+    [Position.DMF]: 3,
+    [Position.CMF]: 4,
+    [Position.LMF]: 5,
+    [Position.RMF]: 5,
+    [Position.AMF]: 6,
+    [Position.LWF]: 7,
+    [Position.RWF]: 7,
+    [Position.SS]: 8,
+    [Position.CF]: 9,
 };
 
-const HEIGHT = [
-    19, 14, 5, 5, 6, 4, 1, 1, 4, 5, 5, 6, 10,
+const POSITION_BONUS: Record<Position, number> = {
+    [Position.GK]: 8,
+    [Position.SW]: 8,
+    [Position.CB]: 8,
+    [Position.LB]: 9,
+    [Position.RB]: 9,
+    [Position.DMF]: 9,
+    [Position.CMF]: 8,
+    [Position.LMF]: 8,
+    [Position.RMF]: 8,
+    [Position.AMF]: 8,
+    [Position.LWF]: 10,
+    [Position.RWF]: 10,
+    [Position.SS]: 9,
+    [Position.CF]: 8,
+};
+
+// Cada fila contiene los pesos en el orden de POSITION_GROUP.
+const ABILITY_WEIGHTS: {
+    key: AbilityKey;
+    weights: number[];
+}[] = [
+    { key: "offensiveAwareness", weights: [0, 0, 6, 7, 5, 7, 14, 17, 15, 31] },
+    { key: "ballControl", weights: [0, 0, 9, 18, 23, 15, 23, 19, 19, 23] },
+    { key: "dribbling", weights: [0, 0, 9, 10, 16, 17, 17, 15, 13, 9] },
+    { key: "tightPossession", weights: [0, 0, 5, 5, 8, 8, 7, 7, 6, 5] },
+    { key: "lowPass", weights: [0, 0, 0, 18, 23, 7, 21, 5, 9, 0] },
+    { key: "loftedPass", weights: [0, 0, 14, 19, 21, 12, 14, 9, 9, 0] },
+    { key: "finishing", weights: [0, 0, 0, 0, 0, 0, 17, 11, 14, 36] },
+    { key: "heading", weights: [0, 22, 0, 0, 0, 0, 0, 0, 0, 3] },
+    { key: "placeKicking", weights: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] },
+    { key: "curl", weights: [0, 0, 0, 12, 0, 4, 0, 0, 0, 0] },
+    { key: "speed", weights: [0, 10, 16, 3, 4, 24, 5, 15, 9, 5] },
+    { key: "acceleration", weights: [0, 0, 14, 3, 6, 21, 7, 15, 21, 5] },
+    { key: "kickingPower", weights: [0, 0, 0, 0, 0, 0, 0, 5, 6, 3] },
+    { key: "jump", weights: [11, 19, 11, 5, 0, 0, 0, 0, 0, 3] },
+    { key: "physicalContact", weights: [11, 19, 8, 9, 3, 0, 2, 2, 2, 8] },
+    { key: "balance", weights: [0, 0, 4, 4, 2, 0, 3, 4, 5, 2] },
+    { key: "stamina", weights: [0, 9, 14, 14, 17, 13, 3, 6, 4, 0] },
+    { key: "defensiveAwareness", weights: [0, 25, 14, 7, 3, 0, 0, 0, 0, 0] },
+    { key: "ballWinning", weights: [0, 17, 8, 3, 0, 0, 0, 0, 0, 0] },
+    { key: "aggression", weights: [0, 8, 5, 1, 0, 0, 0, 0, 0, 0] },
 ];
 
-const OFFENSIVE_AWARENESS = [
-    0, 4, 8, 9, 10, 9, 11, 7, 13, 16, 14, 11, 24,
+const WEAK_FOOT_ACCURACY_WEIGHTS = [
+    0, 23, 56, 23, 23, 56, 37, 47, 37, 38,
 ];
 
-const BALL_CONTROL = [
-    0, 7, 12, 9, 17, 19, 13, 15, 19, 14, 15, 14, 17,
+const OUTFIELD_ABILITIES: AbilityKey[] = [
+    "offensiveAwareness",
+    "ballControl",
+    "dribbling",
+    "tightPossession",
+    "lowPass",
+    "loftedPass",
+    "finishing",
+    "heading",
+    "placeKicking",
+    "curl",
+    "speed",
+    "acceleration",
+    "kickingPower",
+    "jump",
+    "physicalContact",
+    "balance",
+    "stamina",
+    "defensiveAwareness",
+    "ballWinning",
+    "aggression",
 ];
 
-const DRIBBLING = [
-    0, 4, 8, 9, 11, 13, 14, 14, 14, 14, 14, 12, 9,
-];
+function getGkAwarenessComposite(player: PlayerVersion): number {
+    return Math.floor(
+        (player.abilities.gkAwareness + player.abilities.gkReach) / 2,
+    );
+}
 
-const TIGHT_POSSESSION = [
-    0, 4, 8, 8, 6, 8, 10, 10, 9, 9, 10, 9, 9,
-];
+function getGkReflexesComposite(player: PlayerVersion): number {
+    return Math.floor(
+        (
+            player.abilities.gkCatching
+            + player.abilities.gkClearing
+            + player.abilities.gkReflexes
+        ) / 3,
+    );
+}
 
-const LOW_PASS = [
-    0, 4, 3, 5, 14, 18, 10, 8, 16, 6, 7, 14, 4,
-];
-
-const LOFTED_PASS = [
-    0, 4, 13, 13, 16, 17, 11, 13, 14, 11, 12, 10, 6,
-];
-
-const FINISHING = [
-    0, 5, 6, 5, 5, 6, 6, 6, 14, 11, 12, 13, 25,
-];
-
-const HEADING = [
-    0, 17, 5, 4, 3, 3, 4, 3, 5, 5, 4, 7, 7,
-];
-
-const SET_PIECE_TAKING = [
-    0, 4, 5, 5, 5, 4, 4, 4, 4, 5, 3, 7, 4,
-];
-
-const CURL = [
-    0, 5, 5, 5, 12, 5, 7, 5, 4, 5, 6, 3, 5,
-];
-
-const SPEED = [
-    0, 9, 14, 13, 5, 7, 19, 16, 8, 14, 14, 11, 7,
-];
-
-const ACCELERATION = [
-    0, 5, 12, 13, 7, 8, 17, 17, 8, 13, 13, 16, 8,
-];
-
-const KICKING_POWER = [
-    0, 4, 4, 4, 4, 4, 4, 5, 5, 6, 6, 7, 6,
-];
-
-const JUMP = [
-    10, 17, 10, 11, 9, 5, 4, 4, 5, 4, 4, 4, 6,
-];
-
-const PHYSICAL_CONTACT = [
-    10, 17, 10, 11, 11, 6, 4, 7, 6, 7, 7, 6, 10,
-];
-
-const BALANCE = [
-    0, 5, 8, 7, 6, 6, 6, 5, 8, 9, 7, 7, 6,
-];
-
-const STAMINA = [
-    0, 12, 14, 14, 14, 16, 12, 13, 7, 10, 9, 10, 6,
-];
-
-const DEFENSIVE_AWARENESS = [
-    0, 20, 13, 15, 9, 8, 5, 4, 4, 4, 6, 4, 5,
-];
-
-const TACKLING = [
-    0, 15, 10, 9, 7, 5, 5, 4, 5, 6, 5, 4, 6,
-];
-
-const AGGRESSION = [
-    0, 9, 7, 7, 5, 4, 4, 5, 4, 4, 4, 5, 4,
-];
-
-const GK_AWARENESS = [
-    24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-];
-
-const GK_CATCHING = [
-    16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-];
-
-const GK_CLEARING = [
-    16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-];
-
-const GK_REFLEXES = [
-    17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-];
-
-const GK_REACH = [
-    25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-];
-
-const WEAK_FOOT_ACCURACY = [
-    0, 9, 32, 30, 7, 8, 25, 32, 21, 26, 26, 14, 20,
-];
-
-const POSITION_BONUS = [
-    8, -9, -9, -8, -8, -9, -9, -8, -9, -8, -8, -9, -10,
-];
-
-function add(
-    total: number,
-    value: number,
-    weight: number,
+function calculateWeightedAverage(
+    player: PlayerVersion,
+    group: PositionGroup,
 ): number {
-    return total + (value - 25) * weight;
+    let weightedSum = 0;
+
+    for (const { key, weights } of ABILITY_WEIGHTS) {
+        const value = player.abilities[key] as number;
+        weightedSum += (value - 25) * weights[group];
+    }
+
+    // Los atributos compuestos de portero sustituyen a Awareness y Reflexes.
+    weightedSum += (getGkAwarenessComposite(player) - 25)
+        * (group === 0 ? 50 : 0);
+
+    weightedSum += (getGkReflexesComposite(player) - 25)
+        * (group === 0 ? 48 : 0);
+
+    // Weak Foot Accuracy utiliza 1 como valor base, no 25.
+    weightedSum += (
+        player.weakFootAccuracy - 1
+    ) * WEAK_FOOT_ACCURACY_WEIGHTS[group];
+
+    return Math.floor((weightedSum + 50) / 100);
+}
+
+function calculateSumAverage(player: PlayerVersion): number {
+    let contributorSum = 0;
+
+    for (const key of OUTFIELD_ABILITIES) {
+        contributorSum += player.abilities[key] as number;
+    }
+
+    contributorSum += getGkAwarenessComposite(player);
+    contributorSum += getGkReflexesComposite(player);
+
+    const scaledAverage = Math.floor((contributorSum * 100) / 22);
+
+    return Math.floor((scaledAverage + 50) / 100);
+}
+
+function mapRating(sumAverage: number): number {
+    if (sumAverage <= 61) return sumAverage - 9;
+    if (sumAverage === 62) return sumAverage - 6;
+    if (sumAverage === 63) return sumAverage - 4;
+    if (sumAverage === 64) return sumAverage - 2;
+    if (sumAverage === 65) return sumAverage;
+    if (sumAverage === 66) return sumAverage + 1;
+    if (sumAverage === 67) return sumAverage + 3;
+    if (sumAverage === 68) return sumAverage + 5;
+    if (sumAverage === 69) return sumAverage + 6;
+    if (sumAverage === 70) return sumAverage + 7;
+    if (sumAverage === 71) return sumAverage + 8;
+    if (sumAverage <= 73) return sumAverage + 10;
+    if (sumAverage <= 75) return sumAverage + 12;
+    if (sumAverage <= 77) return sumAverage + 13;
+
+    return sumAverage + 14;
 }
 
 export function calculateOverall(
     playerVersion: PlayerVersion,
-    //player: Player,
 ): number {
-    //if (player.height === undefined) {
-    //    throw new Error(
-    //        `Cannot calculate Overall: player ${player.id} (${player.name}) has no height.`,
-    //    );
-    //}
+    const position = playerVersion.mainPosition;
+    const group = POSITION_GROUP[position];
 
-    const position = POSITION_INDEX[playerVersion.mainPosition];
+    if (group === undefined) {
+        throw new Error(
+            `Unsupported position for Overall calculation: ${position}`,
+        );
+    }
 
-    let total = 0;
+    const base = calculateWeightedAverage(playerVersion, group)
+        + POSITION_BONUS[position];
 
-    //total += (player.height - 111 - 25) * HEIGHT[position];
+    // Konami no combina la curva con el cálculo de porteros.
+    if (position === Position.GK) {
+        return Math.max(40, base);
+    }
 
-    total = add(
-        total,
-        playerVersion.abilities.offensiveAwareness,
-        OFFENSIVE_AWARENESS[position],
+    const curved = mapRating(calculateSumAverage(playerVersion));
+
+    const finalRating = Math.floor(
+        (base * 60 + curved * 40 + 50) / 100,
     );
 
-    total = add(
-        total,
-        playerVersion.abilities.ballControl,
-        BALL_CONTROL[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.dribbling,
-        DRIBBLING[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.tightPossession,
-        TIGHT_POSSESSION[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.lowPass,
-        LOW_PASS[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.loftedPass,
-        LOFTED_PASS[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.finishing,
-        FINISHING[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.placeKicking,
-        SET_PIECE_TAKING[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.curl,
-        CURL[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.heading,
-        HEADING[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.defensiveAwareness,
-        DEFENSIVE_AWARENESS[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.ballWinning,
-        TACKLING[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.aggression,
-        AGGRESSION[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.kickingPower,
-        KICKING_POWER[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.speed,
-        SPEED[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.acceleration,
-        ACCELERATION[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.physicalContact,
-        PHYSICAL_CONTACT[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.balance,
-        BALANCE[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.jump,
-        JUMP[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.stamina,
-        STAMINA[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.gkAwareness,
-        GK_AWARENESS[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.gkCatching,
-        GK_CATCHING[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.gkReach,
-        GK_REACH[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.gkReflexes,
-        GK_REFLEXES[position],
-    );
-
-    total = add(
-        total,
-        playerVersion.abilities.gkClearing,
-        GK_CLEARING[position],
-    );
-
-    //const weakFootAccuracy = Math.floor(
-    //    (WEAK_FOOT_ACCURACY[position] * playerVersion.weakFootAccuracy) / 3 + 40,
-    //);
-
-    total = add(
-        total,
-        WEAK_FOOT_ACCURACY[position],
-        playerVersion.weakFootAccuracy,
-    );
-
-    total = Math.floor(total / 100);
-
-    return total + POSITION_BONUS[position];
+    return Math.max(40, finalRating);
 }
