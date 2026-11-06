@@ -172,8 +172,8 @@ def get_player_data(row):
     player_version_data["slug"] = f"{name_slug}-{version_slug}"
     player_version_data["country"] = get_country_id(row["Country"])
     player_version_data["version"] = row["Version"]
-    player_version_data["fromSeason"] = row["FromSeason"]
-    player_version_data["toSeason"] = row["ToSeason"]
+    player_version_data["fromSeason"] = int(row["FromSeason"])
+    player_version_data["toSeason"] = int(row["ToSeason"])
 
     if playing_style:
         player_version_data["playingStyle"] = playing_style
