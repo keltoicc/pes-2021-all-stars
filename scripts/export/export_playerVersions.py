@@ -235,7 +235,7 @@ def main():
         reader = csv.DictReader(f, delimiter=',')
         for row in reader:
 
-            if not row["Version"]:
+            if not row["Add"]:
                 continue
 
             player_version_data = get_player_data(row)
