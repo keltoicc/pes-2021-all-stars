@@ -13,6 +13,8 @@ import TeamRepository from "../../lib/repositories/TeamRepository";
 
 import type { CareerEntrySummary } from "../../viewModels/CareerEntrySummary";
 
+import { calculateOverall } from "../../lib/utils/calculateOverall";
+
 export function getStaticPaths() {
     const players = PlayerRepository.getAll();
 
@@ -62,7 +64,13 @@ const career: CareerEntrySummary[] = (player.career ?? []).map(entry => {
             entry !== null
     );
 
-const versions = PlayerVersionRepository.getByPlayer(player.id);
+const versions = PlayerVersionRepository
+    .getByPlayer(player.id)
+    .map(version => ({
+        version,
+        calculatedOverall: calculateOverall(version),
+    }))
+    .sort((a, b) => b.calculatedOverall - a.calculatedOverall);
 ---
 
 <Layout title={player.name}>

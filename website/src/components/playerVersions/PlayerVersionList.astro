@@ -4,7 +4,10 @@ import PlayerVersionListItem from "./PlayerVersionListItem.astro";
 import type { PlayerVersion } from "../../types/playerVersion";
 
 interface Props {
-    versions: PlayerVersion[];
+    versions: {
+        version: PlayerVersion;
+        calculatedOverall: number;
+    }[];
 }
 
 const { versions } = Astro.props;
@@ -33,8 +36,11 @@ const { versions } = Astro.props;
             <ul>
 
                 {
-                    versions.map(version => (
-                        <PlayerVersionListItem version={version} />
+                    versions.map(({ version, calculatedOverall }) => (
+                        <PlayerVersionListItem
+                            version={version}
+                            calculatedOverall={calculatedOverall}
+                        />
                     ))
                 }
 

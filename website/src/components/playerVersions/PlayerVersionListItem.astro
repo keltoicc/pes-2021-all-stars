@@ -3,9 +3,13 @@ import type { PlayerVersion } from "../../types/playerVersion";
 
 interface Props {
     version: PlayerVersion;
+    calculatedOverall: number;
 }
 
-const { version } = Astro.props;
+const {
+    version,
+    calculatedOverall
+} = Astro.props;
 ---
 
 <li>
@@ -23,6 +27,10 @@ const { version } = Astro.props;
             </span>
 
         </div>
+
+        <span class="player-version-list-item__overall">
+            {calculatedOverall}
+        </span>
 
         <span
             class="player-version-list-item__arrow"
@@ -47,7 +55,7 @@ li:first-child {
 a {
     display: grid;
 
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr auto auto;
 
     align-items: center;
 
@@ -81,6 +89,12 @@ a {
     font-weight: var(--font-weight-medium);
 
     white-space: nowrap;
+}
+
+.player-version-list-item__overall {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    font-variant-numeric: tabular-nums;
 }
 
 .player-version-list-item__arrow {
